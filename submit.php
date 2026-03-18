@@ -250,8 +250,8 @@ What happens next:
 3. We will share a customised proposal within 24 hours
 
 If you need immediate assistance:
-📞 +91 22 6820 0000
-📧 desk@corpeasy.in
+📞 +91 98330 89993 (Dev Doshi)
+📧 devdoshi@corpeasy.in
 🏢 Level 18, One World Center, Lower Parel, Mumbai 400013
 
 Best regards,
@@ -260,8 +260,8 @@ Mumbai's Premium Managed Workspace Operator
 www.corpeasy.in
 ";
 
-$auto_headers = "From: desk@corpeasy.in\r\n";
-$auto_headers .= "Reply-To: desk@corpeasy.in\r\n";
+$auto_headers = "From: devdoshi@corpeasy.in\r\n";
+$auto_headers .= "Reply-To: devdoshi@corpeasy.in\r\n";
 
 @mail($email, $auto_subject, $auto_body, $auto_headers);
 
