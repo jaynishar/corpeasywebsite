@@ -1,5 +1,4 @@
 <?php
-// Super Simple Admin - Minimal Version
 session_start();
 
 $db_host = 'localhost';
@@ -12,6 +11,50 @@ if(isset($_GET['logout'])) {
     session_destroy();
     header('Location: admin_simple.php');
     exit;
+}
+
+// DELETE LEAD
+if(isset($_GET['delete']) && is_numeric($_GET['delete'])) {
+    try {
+        $pdo = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
+        $pdo->prepare("DELETE FROM leads WHERE id = ?")->execute([$_GET['delete']]);
+        header('Location: admin_simple.php?deleted=1');
+        exit;
+    } catch(PDOException $e) {}
+}
+
+// EXPORT CSV
+if(isset($_GET['export'])) {
+    try {
+        $pdo = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
+        $leads = $pdo->query("SELECT * FROM leads ORDER BY id DESC")->fetchAll();
+        
+        header('Content-Type: text/csv');
+        header('Content-Disposition: attachment; filename=corpeasy_leads_' . date('Y-m-d') . '.csv');
+        
+        $output = fopen('php://output', 'w');
+        fputcsv($output, ['ID', 'Date', 'Name', 'Company', 'Email', 'Phone', 'Form Type', 'Requirement', 'Property Location', 'Property Area', 'Message', 'Source Page', 'IP Address']);
+        
+        foreach($leads as $lead) {
+            fputcsv($output, [
+                $lead['id'],
+                $lead['created_at'],
+                $lead['full_name'],
+                $lead['company_name'],
+                $lead['email'],
+                $lead['phone'],
+                $lead['form_type'],
+                $lead['requirement'],
+                $lead['property_location'],
+                $lead['property_area'],
+                $lead['message'],
+                $lead['source_page'],
+                $lead['ip_address']
+            ]);
+        }
+        fclose($output);
+        exit;
+    } catch(PDOException $e) {}
 }
 
 // LOGIN
@@ -87,12 +130,16 @@ try {
         body { font-family: Arial, sans-serif; background: #f5f5f5; }
         .header { background: #667eea; color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
         .header h1 { font-size: 20px; }
-        .logout { background: rgba(255,255,255,0.2); color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; }
-        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .header-actions { display: flex; gap: 10px; }
+        .logout, .export-btn { background: rgba(255,255,255,0.2); color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; font-size: 14px; }
+        .logout:hover, .export-btn:hover { background: rgba(255,255,255,0.3); }
+        .container { max-width: 1400px; margin: 30px auto; padding: 0 20px; }
         .stats { display: flex; gap: 20px; margin-bottom: 30px; }
         .stat-box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex: 1; text-align: center; }
         .stat-box h2 { color: #667eea; font-size: 36px; }
         .stat-box p { color: #666; margin-top: 5px; }
+        .search-box { background: white; padding: 15px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .search-box input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; }
         .table-box { background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; }
         table { width: 100%; border-collapse: collapse; }
         th { background: #f8f9fa; padding: 12px 8px; text-align: left; font-weight: 600; color: #333; font-size: 12px; }
@@ -103,29 +150,36 @@ try {
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; }
         .modal.show { display: flex; align-items: center; justify-content: center; }
         .modal-content { background: white; padding: 30px; border-radius: 15px; max-width: 600px; width: 90%; max-height: 80vh; overflow-y: auto; }
-        .modal h2 { margin-bottom: 20px; color: #333; }
-        .modal-close { background: #667eea; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 20px; }
+        .modal h2 { margin-bottom: 20px; color: #333; display: flex; justify-content: space-between; align-items: center; }
+        .modal-close { background: #667eea; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        .modal-delete { background: #dc3545; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-right: 10px; }
         .detail-row { display: flex; padding: 10px 0; border-bottom: 1px solid #eee; }
         .detail-label { font-weight: 600; width: 150px; color: #666; }
         .detail-value { flex: 1; color: #333; }
+        .action-btn { padding: 5px 10px; border-radius: 4px; border: none; cursor: pointer; font-size: 12px; margin-right: 5px; }
+        .btn-view { background: #667eea; color: white; }
+        .btn-delete { background: #dc3545; color: white; }
+        .deleted-msg { background: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        @media (max-width: 768px) {
+            .table-box { overflow-x: auto; }
+            table { min-width: 800px; }
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>CorpEasy Admin</h1>
-        <a href="admin_simple.php?logout=1" class="logout">Logout</a>
-    </div>
-    
-    <!-- Lead Detail Modal -->
-    <div id="leadModal" class="modal">
-        <div class="modal-content">
-            <h2>Lead Details</h2>
-            <div id="leadDetails"></div>
-            <button class="modal-close" onclick="closeModal()">Close</button>
+        <div class="header-actions">
+            <a href="admin_simple.php?export=1" class="export-btn">Export CSV</a>
+            <a href="admin_simple.php?logout=1" class="logout">Logout</a>
         </div>
     </div>
     
     <div class="container">
+        <?php if(isset($_GET['deleted'])): ?>
+            <div class="deleted-msg">Lead deleted successfully!</div>
+        <?php endif; ?>
+        
         <div class="stats">
             <div class="stat-box">
                 <h2><?php echo $total; ?></h2>
@@ -133,29 +187,42 @@ try {
             </div>
         </div>
         
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search leads by name, email, company, or phone...">
+        </div>
+        
         <div class="table-box">
             <?php if($total > 0): ?>
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Date</th>
-                    <th>Name</th>
-                    <th>Company</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Type</th>
-                </tr>
-                <?php foreach($leads as $lead): ?>
-                <tr onclick="showLead(<?php echo htmlspecialchars(json_encode($lead)); ?>)">
-                    <td>#<?php echo $lead['id']; ?></td>
-                    <td><?php echo date('d M Y H:i', strtotime($lead['created_at'])); ?></td>
-                    <td><?php echo htmlspecialchars($lead['full_name']); ?></td>
-                    <td><?php echo htmlspecialchars($lead['company_name']); ?></td>
-                    <td><?php echo htmlspecialchars($lead['email']); ?></td>
-                    <td><?php echo htmlspecialchars($lead['phone']); ?></td>
-                    <td><span class="badge"><?php echo htmlspecialchars($lead['form_type']); ?></span></td>
-                </tr>
-                <?php endforeach; ?>
+            <table id="leadsTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Company</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($leads as $lead): ?>
+                    <tr>
+                        <td>#<?php echo $lead['id']; ?></td>
+                        <td><?php echo date('d M Y', strtotime($lead['created_at'])); ?></td>
+                        <td><?php echo htmlspecialchars($lead['full_name']); ?></td>
+                        <td><?php echo htmlspecialchars($lead['company_name']); ?></td>
+                        <td><?php echo htmlspecialchars($lead['email']); ?></td>
+                        <td><?php echo htmlspecialchars($lead['phone']); ?></td>
+                        <td><span class="badge"><?php echo htmlspecialchars($lead['form_type']); ?></span></td>
+                        <td>
+                            <button class="action-btn btn-view" onclick="showLead(<?php echo htmlspecialchars(json_encode($lead)); ?>)">View</button>
+                            <button class="action-btn btn-delete" onclick="confirmDelete(<?php echo $lead['id']; ?>, '<?php echo htmlspecialchars($lead['full_name']); ?>')">Delete</button>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
             </table>
             <?php else: ?>
             <div class="empty">No leads yet</div>
@@ -163,8 +230,26 @@ try {
         </div>
     </div>
     
+    <!-- Lead Detail Modal -->
+    <div id="leadModal" class="modal">
+        <div class="modal-content">
+            <h2>
+                <span>Lead Details</span>
+                <button class="modal-close" onclick="closeModal()">Close</button>
+            </h2>
+            <div id="leadDetails"></div>
+            <div style="margin-top: 20px; display: flex;">
+                <button class="modal-delete" id="deleteFromModal" onclick="deleteFromModal()">Delete Lead</button>
+                <button class="modal-close" onclick="closeModal()" style="margin-left: auto;">Close</button>
+            </div>
+        </div>
+    </div>
+    
     <script>
+    let currentLeadId = null;
+    
     function showLead(lead) {
+        currentLeadId = lead.id;
         let html = '';
         html += '<div class="detail-row"><div class="detail-label">ID</div><div class="detail-value">#' + lead.id + '</div></div>';
         html += '<div class="detail-row"><div class="detail-label">Date</div><div class="detail-value">' + lead.created_at + '</div></div>';
@@ -185,10 +270,35 @@ try {
     
     function closeModal() {
         document.getElementById('leadModal').classList.remove('show');
+        currentLeadId = null;
+    }
+    
+    function confirmDelete(id, name) {
+        if(confirm('Are you sure you want to delete lead #' + id + ' (' + name + ')? This cannot be undone.')) {
+            window.location.href = 'admin_simple.php?delete=' + id;
+        }
+    }
+    
+    function deleteFromModal() {
+        if(currentLeadId && confirm('Are you sure you want to delete this lead? This cannot be undone.')) {
+            window.location.href = 'admin_simple.php?delete=' + currentLeadId;
+        }
     }
     
     document.getElementById('leadModal').addEventListener('click', function(e) {
         if (e.target === this) closeModal();
+    });
+    
+    // Search functionality
+    document.getElementById('searchInput').addEventListener('keyup', function() {
+        let input = this.value.toLowerCase();
+        let table = document.getElementById('leadsTable');
+        let rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+        
+        for (let row of rows) {
+            let text = row.textContent.toLowerCase();
+            row.style.display = text.includes(input) ? '' : 'none';
+        }
     });
     </script>
 </body>
