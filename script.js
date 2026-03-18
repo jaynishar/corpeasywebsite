@@ -425,7 +425,7 @@ function handleLead(e) {
     const btn = form.querySelector('button[type="submit"]');
     const formType = btn.innerText.trim().toLowerCase().replace(/\s+/g, '_').substring(0, 50);
     
-    // Add hidden iframe for form submission
+    // Create hidden iframe for submission
     let iframe = document.getElementById('form_target');
     if (!iframe) {
         iframe = document.createElement('iframe');
@@ -435,69 +435,32 @@ function handleLead(e) {
         document.body.appendChild(iframe);
     }
     
-    // Add form_type and source_page as hidden fields
-    let formTypeInput = form.querySelector('input[name="form_type"]');
-    let sourcePageInput = form.querySelector('input[name="source_page"]');
+    // Add hidden fields
+    let typeField = document.createElement('input');
+    typeField.type = 'hidden';
+    typeField.name = 'form_type';
+    typeField.value = formType;
+    form.appendChild(typeField);
     
-    if (!formTypeInput) {
-        formTypeInput = document.createElement('input');
-        formTypeInput.type = 'hidden';
-        formTypeInput.name = 'form_type';
-        form.appendChild(formTypeInput);
-    }
-    formTypeInput.value = formType;
+    let sourceField = document.createElement('input');
+    sourceField.type = 'hidden';
+    sourceField.name = 'source_page';
+    sourceField.value = window.location.hash || '#home';
+    form.appendChild(sourceField);
     
-    if (!sourcePageInput) {
-        sourcePageInput = document.createElement('input');
-        sourcePageInput.type = 'hidden';
-        sourcePageInput.name = 'source_page';
-        form.appendChild(sourcePageInput);
-    }
-    sourcePageInput.value = window.location.hash || '#home';
-    
-    // Set form to target iframe
+    // Set form properties
     form.method = 'POST';
     form.action = 'submit.php';
     form.target = 'form_target';
     
     // UI feedback
     const originalHTML = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending your request...';
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
     btn.disabled = true;
     
-    // Timeout fallback
-    let completed = false;
-    
-    // Listen for iframe load (form submission complete)
+    // Handle completion
     iframe.onload = function() {
-        if (completed) return;
-        completed = true;
-        
-        try {
-            const content = iframe.contentDocument.body.innerText;
-            const data = JSON.parse(content);
-            
-            if (data.success) {
-                btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> ' + 
-                    (data.message || "Received! We'll be in touch within 4 hours.");
-                btn.classList.remove('bg-brand-electric', 'bg-brand-gold', 'bg-brand-cyan', 'bg-transparent', 'text-brand-electric');
-                btn.classList.add('bg-green-500', 'text-white', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 'border-transparent');
-                form.reset();
-                
-                // Reset after 8 seconds
-                setTimeout(() => {
-                    btn.innerHTML = originalHTML;
-                    btn.disabled = false;
-                    btn.classList.remove('bg-green-500', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 'border-transparent');
-                    btn.classList.add('bg-brand-electric');
-                }, 8000);
-            } else {
-                btn.innerHTML = '<i class="fas fa-exclamation-circle mr-2"></i> ' + (data.error || 'Submission failed');
-                btn.classList.add('bg-red-500', 'text-white');
-                btn.disabled = false;
-            }
-        } catch(err) {
-            // Assume success if we can't parse response
+        setTimeout(() => {
             btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Request received!';
             btn.classList.add('bg-green-500', 'text-white');
             btn.disabled = false;
@@ -506,29 +469,12 @@ function handleLead(e) {
                 btn.innerHTML = originalHTML;
                 btn.disabled = false;
                 btn.classList.remove('bg-green-500');
-                btn.classList.add('bg-brand-electric');
-            }, 8000);
-        }
+                form.reset();
+            }, 5000);
+        }, 500);
     };
     
     form.submit();
-    
-    // Fallback: if iframe doesn't load within 10 seconds, assume success
-    setTimeout(() => {
-        if (!completed) {
-            completed = true;
-            btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Request received!';
-            btn.classList.add('bg-green-500', 'text-white');
-            btn.disabled = false;
-            
-            setTimeout(() => {
-                btn.innerHTML = originalHTML;
-                btn.disabled = false;
-                btn.classList.remove('bg-green-500');
-                btn.classList.add('bg-brand-electric');
-            }, 8000);
-        }
-    }, 10000);
 }
 
 // Store original button text before any changes
