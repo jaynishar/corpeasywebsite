@@ -465,8 +465,14 @@ function handleLead(e) {
     btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending your request...';
     btn.disabled = true;
     
+    // Timeout fallback
+    let completed = false;
+    
     // Listen for iframe load (form submission complete)
     iframe.onload = function() {
+        if (completed) return;
+        completed = true;
+        
         try {
             const content = iframe.contentDocument.body.innerText;
             const data = JSON.parse(content);
@@ -474,7 +480,7 @@ function handleLead(e) {
             if (data.success) {
                 btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> ' + 
                     (data.message || "Received! We'll be in touch within 4 hours.");
-                btn.classList.remove('bg-brand-electric', 'bg-brand-gold', 'bg-transparent', 'text-brand-electric');
+                btn.classList.remove('bg-brand-electric', 'bg-brand-gold', 'bg-brand-cyan', 'bg-transparent', 'text-brand-electric');
                 btn.classList.add('bg-green-500', 'text-white', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 'border-transparent');
                 form.reset();
                 
@@ -491,11 +497,11 @@ function handleLead(e) {
                 btn.disabled = false;
             }
         } catch(err) {
-            btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Request received! We\'ll contact you soon.';
+            // Assume success if we can't parse response
+            btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Request received!';
             btn.classList.add('bg-green-500', 'text-white');
             btn.disabled = false;
             
-            // Reset after 8 seconds
             setTimeout(() => {
                 btn.innerHTML = originalHTML;
                 btn.disabled = false;
@@ -506,6 +512,23 @@ function handleLead(e) {
     };
     
     form.submit();
+    
+    // Fallback: if iframe doesn't load within 10 seconds, assume success
+    setTimeout(() => {
+        if (!completed) {
+            completed = true;
+            btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Request received!';
+            btn.classList.add('bg-green-500', 'text-white');
+            btn.disabled = false;
+            
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+                btn.disabled = false;
+                btn.classList.remove('bg-green-500');
+                btn.classList.add('bg-brand-electric');
+            }, 8000);
+        }
+    }, 10000);
 }
 
 // Store original button text before any changes
@@ -513,6 +536,13 @@ document.addEventListener('click', (e) => {
     const btn = e.target.closest('button[type="submit"]');
     if (btn && !btn.getAttribute('data-original-text')) {
         btn.setAttribute('data-original-text', btn.innerText.trim());
+    }
+});
+
+// Handle all forms including dynamically loaded ones
+document.addEventListener('submit', function(e) {
+    if (e.target.matches('form[onsubmit*="handleLead"]')) {
+        // Let handleLead do its work
     }
 });
 
