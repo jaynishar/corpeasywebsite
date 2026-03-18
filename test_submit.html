@@ -7,7 +7,7 @@
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
     <div class="bg-white p-8 rounded-xl shadow-lg w-96">
         <h1 class="text-2xl font-bold mb-6 text-center">Test Form</h1>
-        <form id="testForm">
+        <form id="testForm" action="submit.php" method="POST">
             <input type="text" name="full_name" placeholder="Your Name" required class="w-full p-3 border rounded mb-4">
             <input type="text" name="company_name" placeholder="Company Name" class="w-full p-3 border rounded mb-4">
             <input type="email" name="email" placeholder="Email" required class="w-full p-3 border rounded mb-4">
@@ -15,61 +15,6 @@
             <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded font-bold">Submit Test</button>
         </form>
         <div id="result" class="mt-4 text-center hidden"></div>
-        <div id="debug" class="mt-4 text-xs text-gray-500 break-all"></div>
     </div>
-
-    <script>
-    document.getElementById('testForm').addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const btn = e.target.querySelector('button');
-        const result = document.getElementById('result');
-        const debug = document.getElementById('debug');
-        
-        result.classList.add('hidden');
-        debug.textContent = '';
-        btn.disabled = true;
-        btn.textContent = 'Sending...';
-        
-        const formData = {
-            full_name: e.target.full_name.value,
-            company_name: e.target.company_name.value,
-            email: e.target.email.value,
-            phone: e.target.phone.value
-        };
-        
-        debug.textContent = 'Sending to: submit.php\nData: ' + JSON.stringify(formData, null, 2);
-        
-        try {
-            const response = await fetch('submit.php', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
-            });
-            
-            debug.textContent += '\n\nStatus: ' + response.status;
-            debug.textContent += '\nOK: ' + response.ok;
-            
-            const text = await response.text();
-            debug.textContent += '\n\nRaw Response:\n' + text.substring(0, 500);
-            
-            const data = JSON.parse(text);
-            
-            if (data.success) {
-                result.className = 'mt-4 text-center text-green-600 font-bold';
-                result.textContent = 'SUCCESS: ' + data.message;
-            } else {
-                result.className = 'mt-4 text-center text-red-600 font-bold';
-                result.textContent = 'ERROR: ' + data.error;
-            }
-        } catch(err) {
-            result.className = 'mt-4 text-center text-red-600 font-bold';
-            result.textContent = 'FAILED: ' + err.message;
-            debug.textContent += '\n\nError: ' + err.stack;
-        }
-        
-        btn.disabled = false;
-        btn.textContent = 'Submit Test';
-    });
-    </script>
 </body>
 </html>
