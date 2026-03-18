@@ -252,7 +252,9 @@ What happens next:
 If you need immediate assistance:
 📞 +91 98330 89993 (Dev Doshi)
 📧 devdoshi@corpeasy.in
-🏢 Level 18, One World Center, Lower Parel, Mumbai 400013
+🏢 Office No. 30, 2nd Floor, Gopal Bhavan,
+    Shamaldas Gandhi Marg, Marine Lines East,
+    Mumbai, Maharashtra 400002
 
 Best regards,
 CorpEasy Enterprise Solutions
