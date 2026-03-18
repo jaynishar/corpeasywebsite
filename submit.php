@@ -125,7 +125,7 @@ $rate_file = sys_get_temp_dir() . '/ce_rate_' . md5($ip) . '.json';
 $now = time();
 $rate_data = file_exists($rate_file) ? json_decode(file_get_contents($rate_file), true) : ['count' => 0, 'window_start' => $now];
 if ($now - $rate_data['window_start'] < 3600) {
-    if ($rate_data['count'] >= 5) { // max 5 submissions per hour per IP
+    if ($rate_data['count'] >= 20) { // max 20 submissions per hour per IP
         http_response_code(429);
         echo json_encode(['success' => false, 'error' => 'Too many requests. Please try again later.']);
         exit;
