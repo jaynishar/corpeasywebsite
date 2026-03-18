@@ -132,6 +132,7 @@ function navigateTo(pageId, fromHash = false) {
         portal.style.transform = 'translateY(0)';
         
         if (pageId === 'home' || !pageId) initHomeLogic();
+        if (pageId === 'blog') loadBlogPosts();
         initRevealObserver();
         initCountUps();
         initTiltCards();
@@ -417,6 +418,98 @@ function initCountUps() {
         });
     }, { threshold: 0.5 });
     document.querySelectorAll('.stat-val').forEach(el => observer.observe(el));
+}
+
+function loadBlogPosts() {
+    const container = document.getElementById('blogPosts');
+    const loading = document.getElementById('blogLoading');
+    
+    if (!container) return;
+    
+    fetch('get_posts.php')
+        .then(response => response.json())
+        .then(data => {
+            if (data.success && data.posts && data.posts.length > 0) {
+                let html = '';
+                
+                // Featured post (first one)
+                const featured = data.posts[0];
+                html += `
+                    <div class="group cursor-pointer mb-24 reveal delay-100" onclick="viewPost('${featured.id}')">
+                        <div class="glass-card p-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div class="rounded-[2rem] overflow-hidden h-[450px]">
+                                <img loading="lazy" src="${featured.image_url || 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200'}" alt="${featured.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90">
+                            </div>
+                            <div class="p-6 lg:p-10">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <span class="px-4 py-1.5 bg-brand-electric text-white text-[10px] font-black rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(99,102,241,0.4)]">Featured Report</span>
+                                    <span class="text-xs text-slate-600 font-bold flex items-center"><i class="far fa-clock mr-2"></i> ${featured.category}</span>
+                                </div>
+                                <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-tight group-hover:text-brand-electric transition-colors">${featured.title}</h2>
+                                <p class="text-lg text-slate-600 mb-10 leading-relaxed">${featured.excerpt || ''}</p>
+                                <a class="text-sm font-black uppercase tracking-widest text-brand-electric flex items-center gap-4 group-hover:gap-6 transition-all">Read Full Report <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                // Other posts grid
+                if (data.posts.length > 1) {
+                    html += '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">';
+                    
+                    data.posts.slice(1).forEach((post, index) => {
+                        const colors = ['brand-violet', 'brand-cyan', 'brand-rose'];
+                        const color = colors[index % colors.length];
+                        
+                        html += `
+                            <div class="blog-card group cursor-pointer reveal delay-${index}" onclick="viewPost('${post.id}')">
+                                <div class="h-56 overflow-hidden rounded-t-[2rem]">
+                                    <img loading="lazy" src="${post.image_url || 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800'}" alt="${post.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100">
+                                </div>
+                                <div class="p-8">
+                                    <p class="text-[10px] font-bold text-${color} uppercase tracking-widest mb-4">${post.category}</p>
+                                    <h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">${post.title}</h4>
+                                    <p class="text-sm text-slate-600 mb-8 leading-relaxed">${post.excerpt || ''}</p>
+                                    <span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    html += '</div>';
+                }
+                
+                container.innerHTML = html;
+                loading.style.display = 'none';
+                
+                // Re-initialize reveal animations for new elements
+                document.querySelectorAll('.reveal').forEach(el => {
+                    if (!el.classList.contains('revealed')) {
+                        observer.observe(el);
+                    }
+                });
+            } else {
+                // No posts - show placeholder
+                container.innerHTML = `
+                    <div class="glass-card p-12 text-center">
+                        <i class="fas fa-newspaper text-6xl text-slate-300 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-slate-700 mb-2">No Insights Yet</h3>
+                        <p class="text-slate-500">Check back soon for market intelligence and insights.</p>
+                    </div>
+                `;
+                loading.style.display = 'none';
+            }
+        })
+        .catch(error => {
+            console.error('Error loading blog posts:', error);
+            loading.style.display = 'none';
+        });
+}
+
+function viewPost(postId) {
+    // For now, show the post content in an alert or modal
+    // In a full implementation, this would open a detailed post view
+    alert('Post ID: ' + postId + '\n\nFull post view coming soon!');
 }
 
 function handleLead(e) {
@@ -865,60 +958,14 @@ const pages = {
                 </div>
             </div>
 
-            <!-- Featured Article -->
-            <div class="group cursor-pointer mb-24 reveal delay-100" onclick="viewPost('mumbai-outlook')">
-                <div class="glass-card p-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="rounded-[2rem] overflow-hidden h-[450px]">
-                        <img loading="lazy" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200" alt="The 2026 Mumbai GCC Outlook: Why Managed HQs are Winning." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90">
-                    </div>
-                    <div class="p-6 lg:p-10">
-                        <div class="flex items-center gap-4 mb-6">
-                            <span class="px-4 py-1.5 bg-brand-electric text-white text-[10px] font-black rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(99,102,241,0.4)]">Featured Report</span>
-                            <span class="text-xs text-slate-600 font-bold flex items-center"><i class="far fa-clock mr-2"></i> 8 Min Read</span>
-                        </div>
-                        <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-tight group-hover:text-brand-electric transition-colors">The 2026 Mumbai GCC Outlook: Why Managed HQs are Winning.</h2>
-                        <p class="text-lg text-slate-600 mb-10 leading-relaxed">Analyzing why 85% of incoming Global Capability Centers in Mumbai are choosing managed operating models over traditional leaseholds.</p>
-                        <a class="text-sm font-black uppercase tracking-widest text-brand-electric flex items-center gap-4 group-hover:gap-6 transition-all">Read Full Report <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+            <!-- Loading State -->
+            <div id="blogLoading" class="text-center py-20">
+                <i class="fas fa-spinner fa-spin text-4xl text-brand-electric"></i>
+                <p class="text-slate-600 mt-4">Loading insights...</p>
             </div>
 
-            <!-- Article Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="blog-card group cursor-pointer reveal" onclick="viewPost('neuro architecture')">
-                    <div class="h-56 overflow-hidden rounded-t-[2rem]">
-                        <img loading="lazy" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800" alt="Neuro Architecture: Boosting Productivity by 15%" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100">
-                    </div>
-                    <div class="p-8">
-                        <p class="text-[10px] font-bold text-brand-violet uppercase tracking-widest mb-4">Design Strategy</p>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">Neuro Architecture: Boosting Productivity by 15%</h4>
-                        <p class="text-sm text-slate-600 mb-8 leading-relaxed">How biophilic elements and light optimization reduce burnout in high intensity technical teams.</p>
-                        <span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
-                    </div>
-                </div>
-                <div class="blog-card group cursor-pointer reveal delay-100" onclick="viewPost('bkc-vs-goregaon')">
-                    <div class="h-56 overflow-hidden rounded-t-[2rem]">
-                        <img loading="lazy" src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=800" alt="BKC vs Goregaon: The Battle for Grade A Superiority" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100">
-                    </div>
-                    <div class="p-8">
-                        <p class="text-[10px] font-bold text-brand-cyan uppercase tracking-widest mb-4">Market Trends</p>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">BKC vs Goregaon: The Battle for Grade A Superiority</h4>
-                        <p class="text-sm text-slate-600 mb-8 leading-relaxed">A comparative rental yield analysis for enterprises expanding in the Mumbai MMR region.</p>
-                        <span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
-                    </div>
-                </div>
-                <div class="blog-card group cursor-pointer reveal delay-200" onclick="viewPost('gst-rental')">
-                    <div class="h-56 overflow-hidden rounded-t-[2rem]">
-                        <img loading="lazy" src="https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=800" alt="Impact of GST on Office Rental Outflows" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100">
-                    </div>
-                    <div class="p-8">
-                        <p class="text-[10px] font-bold text-brand-rose uppercase tracking-widest mb-4">Corporate Finance</p>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">Impact of GST on Office Rental Outflows</h4>
-                        <p class="text-sm text-slate-600 mb-8 leading-relaxed">Navigating the complex regulatory landscape for MNCs entering the Indian commercial market.</p>
-                        <span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
-                    </div>
-                </div>
-            </div>
+            <!-- Blog Posts Container -->
+            <div id="blogPosts"></div>
         </section>
     `,
 
