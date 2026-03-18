@@ -1,0 +1,65 @@
+# ═══════════════════════════════════════════════════════════════════
+# CORPEASY HOSTINGER OPTIMIZATION
+# ═══════════════════════════════════════════════════════════════════
+
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Block sensitive files
+<Files "leads_backup.json">
+  Order deny,allow
+  Deny from all
+</Files>
+<Files "db_setup.sql">
+  Order deny,allow
+  Deny from all
+</Files>
+<Files "setup.py">
+  Order deny,allow
+  Deny from all
+</Files>
+<Files "update.py">
+  Order deny,allow
+  Deny from all
+</Files>
+
+# ═══════════════════════════════════════════════════════════════════
+# SECURITY - Uncomment after enabling SSL certificate in Hostinger
+# ═══════════════════════════════════════════════════════════════════
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# SPA: serve index.html for all non-file requests
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(?!admin\.php|submit\.php|sitemap\.xml|robots\.txt).*$ index.html [L]
+
+# ═══════════════════════════════════════════════════════════════════
+# PERFORMANCE OPTIMIZATIONS
+# ═══════════════════════════════════════════════════════════════════
+
+# Enable GZIP compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Browser caching for static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Images - cache long
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  
+  # CSS/JS - cache medium
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  
+  # HTML - no cache (always fresh)
+  ExpiresByType text/html "access plus 0 seconds"
+ </IfModule>
