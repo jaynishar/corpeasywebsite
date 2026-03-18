@@ -419,100 +419,93 @@ function initCountUps() {
     document.querySelectorAll('.stat-val').forEach(el => observer.observe(el));
 }
 
-async function handleLead(e) {
+function handleLead(e) {
     e.preventDefault();
     const form = e.target;
     const btn = form.querySelector('button[type="submit"]');
+    const formType = btn.innerText.trim().toLowerCase().replace(/\s+/g, '_').substring(0, 50);
     
-    // Collect all form field values
-    const formData = {};
-    form.querySelectorAll('input, select, textarea').forEach(field => {
-        if (field.name && field.name !== 'website') {
-            formData[field.name] = field.value;
-        }
-    });
+    // Add hidden iframe for form submission
+    let iframe = document.getElementById('form_target');
+    if (!iframe) {
+        iframe = document.createElement('iframe');
+        iframe.id = 'form_target';
+        iframe.name = 'form_target';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+    }
     
-    // Add metadata
-    formData.form_type = btn.innerText.trim().toLowerCase()
-        .replace(/\s+/g, '_').substring(0, 50);
-    formData.source_page = window.location.hash || '#home';
+    // Add form_type and source_page as hidden fields
+    let formTypeInput = form.querySelector('input[name="form_type"]');
+    let sourcePageInput = form.querySelector('input[name="source_page"]');
+    
+    if (!formTypeInput) {
+        formTypeInput = document.createElement('input');
+        formTypeInput.type = 'hidden';
+        formTypeInput.name = 'form_type';
+        form.appendChild(formTypeInput);
+    }
+    formTypeInput.value = formType;
+    
+    if (!sourcePageInput) {
+        sourcePageInput = document.createElement('input');
+        sourcePageInput.type = 'hidden';
+        sourcePageInput.name = 'source_page';
+        form.appendChild(sourcePageInput);
+    }
+    sourcePageInput.value = window.location.hash || '#home';
+    
+    // Set form to target iframe
+    form.method = 'POST';
+    form.action = 'submit.php';
+    form.target = 'form_target';
     
     // UI feedback
+    const originalHTML = btn.innerHTML;
     btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending your request...';
     btn.disabled = true;
     
-    // GTM event
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-        event: 'generate_lead',
-        form_type: formData.form_type,
-        lead_source: 'website_form'
-    });
-    
-    try {
-        const response = await fetch('submit.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData)
-        });
-        
-        // Check if response is OK
-        if (!response.ok) {
-            throw new Error('Server returned ' + response.status);
-        }
-        
-        const result = await response.json();
-        
-        if (result.success) {
-            btn.innerHTML = 
-              '<i class="fas fa-check-circle mr-2"></i> ' + 
-              (result.message || "Received! We'll be in touch within 4 hours.");
-            btn.classList.remove(
-              'bg-brand-electric', 'bg-brand-gold', 
-              'bg-transparent', 'text-brand-electric'
-            );
-            btn.classList.add(
-              'bg-green-500', 'text-white', 
-              'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 
-              'border-transparent'
-            );
+    // Listen for iframe load (form submission complete)
+    iframe.onload = function() {
+        try {
+            const content = iframe.contentDocument.body.innerText;
+            const data = JSON.parse(content);
             
-            // Show reference number if provided
-            if (result.reference) {
-                const refEl = document.createElement('p');
-                refEl.className = 
-                  'text-center text-xs text-slate-500 mt-3 font-mono';
-                refEl.textContent = 'Reference: ' + result.reference;
-                btn.parentNode.insertBefore(refEl, btn.nextSibling);
-            }
-            
-            // Reset form after 8 seconds
-            setTimeout(() => {
+            if (data.success) {
+                btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> ' + 
+                    (data.message || "Received! We'll be in touch within 4 hours.");
+                btn.classList.remove('bg-brand-electric', 'bg-brand-gold', 'bg-transparent', 'text-brand-electric');
+                btn.classList.add('bg-green-500', 'text-white', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 'border-transparent');
                 form.reset();
-                btn.innerHTML = btn.getAttribute('data-original-text') || 
-                  'Schedule a Free Consultation';
+                
+                // Reset after 8 seconds
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.disabled = false;
+                    btn.classList.remove('bg-green-500', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 'border-transparent');
+                    btn.classList.add('bg-brand-electric');
+                }, 8000);
+            } else {
+                btn.innerHTML = '<i class="fas fa-exclamation-circle mr-2"></i> ' + (data.error || 'Submission failed');
+                btn.classList.add('bg-red-500', 'text-white');
                 btn.disabled = false;
-                btn.classList.remove(
-                  'bg-green-500', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]',
-                  'border-transparent'
-                );
-                btn.classList.add('bg-brand-electric');
-                const refEl = form.querySelector('.font-mono');
-                if (refEl) refEl.remove();
-            }, 8000);
+            }
+        } catch(err) {
+            btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Request received! We\'ll contact you soon.';
+            btn.classList.add('bg-green-500', 'text-white');
+            btn.disabled = false;
             
-        } else {
-            throw new Error(result.error || 'Submission failed');
+            // Reset after 8 seconds
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+                btn.disabled = false;
+                btn.classList.remove('bg-green-500');
+                btn.classList.add('bg-brand-electric');
+            }, 8000);
         }
-        
-    } catch (error) {
-        btn.innerHTML = 
-          '<i class="fas fa-exclamation-circle mr-2"></i> ' +
-          'Something went wrong. Please try again or call us.';
-        btn.classList.add('bg-red-500', 'text-white');
-        btn.disabled = false;
-        console.error('Form submission error:', error);
-    }
+    };
+    
+    form.submit();
 }
 
 // Store original button text before any changes
