@@ -72,13 +72,14 @@ try {
     
     // CREATE
     if(isset($_POST['create_post'])) {
-        $stmt = $pdo->prepare("INSERT INTO blog_posts (title, excerpt, content, image_url, category, published_at) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt = $pdo->prepare("INSERT INTO blog_posts (title, excerpt, content, image_url, category, read_time, published_at) VALUES (?, ?, ?, ?, ?, ?, ?)");
         $stmt->execute([
             $_POST['title'],
             $_POST['excerpt'],
             $_POST['content'],
             $_POST['image_url'],
             $_POST['category'],
+            $_POST['read_time'] ?: '5 Min Read',
             $_POST['published_at'] ?: date('Y-m-d H:i:s')
         ]);
         $message = "Post created successfully!";
@@ -86,13 +87,14 @@ try {
     
     // UPDATE
     if(isset($_POST['update_post'])) {
-        $stmt = $pdo->prepare("UPDATE blog_posts SET title = ?, excerpt = ?, content = ?, image_url = ?, category = ?, published_at = ? WHERE id = ?");
+        $stmt = $pdo->prepare("UPDATE blog_posts SET title = ?, excerpt = ?, content = ?, image_url = ?, category = ?, read_time = ?, published_at = ? WHERE id = ?");
         $stmt->execute([
             $_POST['title'],
             $_POST['excerpt'],
             $_POST['content'],
             $_POST['image_url'],
             $_POST['category'],
+            $_POST['read_time'] ?: '5 Min Read',
             $_POST['published_at'],
             $_POST['id']
         ]);
@@ -224,11 +226,21 @@ try {
                             <label>Category</label>
                             <select name="category">
                                 <option value="Insights" <?php echo (($edit_post['category'] ?? '') == 'Insights' ? 'selected' : ''); ?>>Insights</option>
-                                <option value="Market Report" <?php echo (($edit_post['category'] ?? '') == 'Market Report' ? 'selected' : ''); ?>>Market Report</option>
+                                <option value="Market Guide" <?php echo (($edit_post['category'] ?? '') == 'Market Guide' ? 'selected' : ''); ?>>Market Guide</option>
+                                <option value="Market Trends" <?php echo (($edit_post['category'] ?? '') == 'Market Trends' ? 'selected' : ''); ?>>Market Trends</option>
                                 <option value="Industry News" <?php echo (($edit_post['category'] ?? '') == 'Industry News' ? 'selected' : ''); ?>>Industry News</option>
                                 <option value="Tips & Guide" <?php echo (($edit_post['category'] ?? '') == 'Tips & Guide' ? 'selected' : ''); ?>>Tips & Guide</option>
+                                <option value="Finance & Compliance" <?php echo (($edit_post['category'] ?? '') == 'Finance & Compliance' ? 'selected' : ''); ?>>Finance & Compliance</option>
+                                <option value="Explainer" <?php echo (($edit_post['category'] ?? '') == 'Explainer' ? 'selected' : ''); ?>>Explainer</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label>Read Time</label>
+                            <input type="text" name="read_time" value="<?php echo $edit_post['read_time'] ?? '5 Min Read'; ?>" placeholder="e.g., 5 Min Read">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
                         <div class="form-group">
                             <label>Publish Date</label>
                             <input type="datetime-local" name="published_at" value="<?php echo $edit_post ? date('Y-m-d\TH:i', strtotime($edit_post['published_at'])) : ''; ?>">

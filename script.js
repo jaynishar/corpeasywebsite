@@ -1,35 +1,83 @@
 const portal = document.getElementById('view-portal');
 let activeChart = null;
 let heroWordInterval = null;
+let postData = {};
+let postsLoaded = false;
 
-const postData = {
+async function loadPosts() {
+    try {
+        const response = await fetch('get_posts.php');
+        const data = await response.json();
+        if(data.success && data.posts && data.posts.length > 0) {
+            postData = {};
+            data.posts.forEach(post => {
+                const slug = post.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                postData[slug] = {
+                    id: post.id,
+                    title: post.title,
+                    category: post.category || 'Insights',
+                    readTime: post.read_time || '5 Min Read',
+                    image: post.image_url || 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
+                    excerpt: post.excerpt || '',
+                    content: post.content || '',
+                    author: post.author || 'CorpEasy Team',
+                    published_at: post.published_at
+                };
+            });
+            postsLoaded = true;
+        }
+    } catch(e) {
+        console.error('Failed to load posts:', e);
+    }
+    return postData;
+}
+
+function getCategoryColor(category) {
+    const colors = {
+        'Market Guide': 'text-brand-violet',
+        'Market Trends': 'text-brand-cyan',
+        'Finance & Compliance': 'text-brand-rose',
+        'Explainer': 'text-brand-electric',
+        'Insights': 'text-brand-electric',
+        'Industry News': 'text-brand-amber',
+        'Tips & Guide': 'text-brand-emerald'
+    };
+    return colors[category] || 'text-brand-electric';
+}
+
+function formatDate(dateStr) {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+const fallbackPosts = {
 'mumbai-workspace-guide': {
 title: "How to Find the Right Office Space in Mumbai: A Practical Guide for 2026.",
 category: "Market Guide",
 readTime: "6 Min Read",
 image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-content: `<p>Finding <strong>office space in Mumbai</strong> looks straightforward on paper but becomes complicated in practice. Between understanding micro-market rent differences, negotiating lease terms, coordinating furniture and IT setup, and managing multiple vendors, most companies spend far more time on it than they budgeted for. This guide walks through what the process actually looks like — and where things go wrong.</p> <h3>Start With the Right Micro-Market</h3> <p>Mumbai's commercial office market is not one market — it is several, each with its own rent levels, building quality, commute dynamics, and tenant profile. BKC commands the highest rents at roughly ₹450–₹750 per sq ft per month for Grade A space. Lower Parel and Worli sit in the ₹250–₹450 range with strong Western Railway access. Goregaon East, particularly around Nirlon Knowledge Park, suits tech and mid-size companies at ₹150–₹300. Andheri East offers airport proximity at ₹150–₹400. Powai is ideal for campus-style spaces at ₹115–₹310.</p> <p>The right location depends on where your team commutes from, whether clients visit your office, and your realistic monthly cost tolerance. Getting this wrong creates expensive problems downstream.</p> <h3>What Office Space in Mumbai Actually Costs</h3> <p>The headline rent is rarely the full cost. On top of base rent, budget for a security deposit of three to six months' rent paid upfront, a maintenance charge of ₹15–₹30 per sq ft per month on top of rent, GST at 18% (claimable as ITC for most registered businesses), parking, and the workspace setup itself. If you take a bare shell and do your own fit-out, you can add ₹800–₹2,000 per sq ft and three to six months of setup time.</p> <h3>Why the Managed Office Model Is Growing</h3> <p>The managed office model exists because the traditional route is genuinely time-consuming. When a company takes a managed workspace, they are not dealing with the landlord, the furniture vendor, and the IT contractor as separate relationships. A single operator handles it and charges one per-seat monthly fee. The company gets a workspace that is ready from Day 1.</p> <p>This is particularly useful for companies that need to move quickly — a new team setting up in Mumbai, a business relocating from another city, or a company that has outgrown its space and cannot spend six months on a fit-out.</p> <h3>Questions to Ask Before You Sign Anything</h3> <p>Before committing to any commercial lease or managed workspace in Mumbai: What exactly is included in the monthly cost? Who handles maintenance issues? What is the exit process before the lease ends? What is the security deposit structure? These are not difficult questions, but the answers reveal a lot about whether the arrangement will work for you. At CorpEasy, we walk through every one of these before anything is signed.</p>`
+content: `<p>Finding <strong>office space in Mumbai</strong> looks straightforward on paper but becomes complicated in practice. Between understanding micro-market rent differences, negotiating lease terms, coordinating furniture and IT setup, and managing multiple vendors, most companies spend far more time on it than they budgeted for. This guide walks through what the process actually looks like — and where things go wrong.</p> <h3>Start With the Right Micro-Market</h3> <p>Mumbai's commercial office market is not one market — it is several, each with its own rent levels, building quality, commute dynamics, and tenant profile. BKC commands the highest rents at roughly ₹450–₹750 per sq ft per month for Grade A space. Lower Parel and Worli sit in the ₹250–₹450 range with strong Western Railway access. Goregaon East, particularly around Nirlon Knowledge Park, suits tech and mid-size companies at ₹150–₹300. Andheri East offers airport proximity at ₹150–₹400. Powai is ideal for campus-style spaces at ₹115–₹310.</p> <p>The right location depends on where your team commutes from, whether clients visit your office, and your realistic monthly cost tolerance. Getting this wrong creates expensive problems downstream.</p> <h3>What Office Space in Mumbai Actually Costs</h3> <p>The headline rent is rarely the full cost. On top of base rent, budget for a security deposit of three to six months' rent paid upfront, a maintenance charge of ₹15–₹30 per sq ft per month on top of rent, GST at 18% (claimable as ITC for most registered businesses), parking, and the workspace setup itself. If you take a bare shell and do your own fit-out, you can add ₹800–₹2,000 per sq ft and three to six months of setup time.</p> <h3>Why the Managed Office Model Is Growing</h3> <p>The managed office model exists because the traditional route is genuinely time-consuming. When a company takes a managed workspace, they are not dealing with the landlord, the furniture vendor, and the IT contractor as separate parties. They deal with one operator, pay one monthly fee, and move in to a workspace that is ready from Day 1.</p>`
 },
 'bkc-vs-goregaon': {
 title: "BKC or Goregaon? Choosing the Right Mumbai Location for Your Office.",
 category: "Market Trends",
 readTime: "5 Min Read",
 image: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200",
-content: `<p>One of the most common questions companies face when looking for <strong>office space in Mumbai</strong>: do we go to BKC for the address, or Goregaon for the value? Both are legitimate choices. The right answer depends on what actually matters for your business.</p> <h3>The Case for BKC</h3> <p>Bandra Kurla Complex is Mumbai's most recognised commercial address — home to major banks, global financial institutions, and professional services firms. If clients visit your office and an address shapes their perception of you, BKC is worth the premium. Metro Line 3 has improved access considerably, though road congestion during peak hours is a real issue for daily commuters. Rents currently run ₹450–₹750 per sq ft per month for Grade A space.</p> <h3>The Case for Goregaon</h3> <p>Goregaon East, particularly the Nirlon Knowledge Park and NESCO cluster, has matured significantly. It attracts tech companies, media businesses, and mid-size enterprises that need larger floor plates at prices that make operational sense. Rents typically sit at ₹150–₹300 per sq ft — a meaningful saving against BKC for equivalent building quality. Western Express Highway and Metro Line 2A provide solid western suburbs connectivity.</p> <h3>The Framework</h3> <p>If the address has direct commercial value — clients or partners will judge your credibility by it — BKC is worth considering seriously. If the office is primarily for your team rather than for external appearances, Goregaon gives you better space for the money. There is no universally correct answer. It depends on cost tolerance, team commute patterns, and what kind of work happens in the office day to day. If you are genuinely unsure, talk to someone who knows current available stock in both locations — which is exactly what we do at CorpEasy.</p>`
+content: `<p>One of the most common questions companies face when looking for <strong>office space in Mumbai</strong>: do we go to BKC for the address, or Goregaon for the value? Both are legitimate choices. The right answer depends on what actually matters for your business.</p> <h3>The Case for BKC</h3> <p>Bandra Kurla Complex is Mumbai's most recognised commercial address — home to major banks, global financial institutions, and professional services firms. If clients visit your office and an address shapes their perception of you, BKC is worth the premium. Metro Line 3 has improved access considerably, though road congestion during peak hours is a real issue for daily commuters. Rents currently run ₹450–₹750 per sq ft per month for Grade A space.</p> <h3>The Case for Goregaon</h3> <p>Goregaon East, particularly the Nirlon Knowledge Park and NESCO cluster, has matured significantly. It attracts tech companies, media businesses, and mid-size enterprises that need larger floor plates at prices that make operational sense. Rents typically sit at ₹150–₹300 per sq ft — a meaningful saving against BKC for equivalent building quality. Western Express Highway and Metro Line 2A provide solid western suburbs connectivity.</p>`
 },
 'managed-office-explainer': {
 title: "What Is a Managed Office Space — And Is It Right for Your Business?",
 category: "Explainer",
 readTime: "4 Min Read",
 image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200",
-content: `<p>The term "managed office" gets used loosely in the Indian commercial real estate market. Here is what it actually means — and what it does not.</p> <h3>What a Managed Office Actually Is</h3> <p>A <strong>managed office space</strong> is a commercially leased workspace that has been sourced, set up, and is maintained on your behalf by a workspace operator. Instead of you finding the property, negotiating with the landlord, coordinating workspace setup, and managing facility issues — all of that is handled by the operator. You pay a single monthly fee per seat and get a space that is ready to work in from Day 1. The key distinction from coworking is exclusivity: in a coworking space, you share with other companies. In a managed office, the space is yours alone.</p> <h3>How CorpEasy's Model Works</h3> <p>We are asset-light, which means we do not own pre-built offices waiting to be filled. When a company comes to us with a requirement, we go and find the right commercial property — in their preferred Mumbai location, sized for their team, priced for their budget. We take the lease, handle the basic workspace setup (furniture, internet, the essentials), and give the client a clear per-seat monthly cost for a fixed lease period. The client deals with us alone, not with the landlord or any other vendor.</p> <h3>Who It Makes Sense For</h3> <p>The managed model works best for companies that value speed and simplicity over controlling every design detail. If your priority is getting your team into a functional, professional <strong>office space in Mumbai</strong> within weeks rather than months — without coordinating contractors and landlords — then a managed arrangement is worth looking at seriously. We will tell you honestly if it makes sense for your specific situation, or whether a different structure would serve you better.</p>`
+content: `<p>The term "managed office" gets used loosely in the Indian commercial real estate market. Here is what it actually means — and what it does not.</p> <h3>What a Managed Office Actually Is</h3> <p>A <strong>managed office space</strong> is a commercially leased workspace that has been sourced, set up, and is maintained on your behalf by a workspace operator. Instead of you finding the property, negotiating with the landlord, coordinating workspace setup, and managing facility issues — all of that is handled by the operator. You pay a single monthly fee per seat and get a space that is ready to work in from Day 1. The key distinction from coworking is exclusivity: in a coworking space, you share with other companies. In a managed office, the space is yours alone.</p>`
 },
 'gst-office-rental': {
 title: "GST on Commercial Office Rentals in Mumbai: What You Need to Know.",
 category: "Finance & Compliance",
 readTime: "4 Min Read",
 image: "https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=800",
-content: `<p>GST on commercial property rentals comes up in most conversations about leasing <strong>office space in Mumbai</strong>. Understanding the basics saves confusion later in the process.</p> <h3>The Basics</h3> <p>Commercial office rentals in India attract GST at 18 percent. This is charged on top of your base rent. If your company is GST-registered and uses the office for business purposes, you are generally eligible to claim Input Tax Credit on the GST paid — meaning it offsets your outward GST liability rather than being a pure additional cost. For most registered businesses, the effective net GST burden is significantly lower than the headline 18 percent.</p> <h3>In a Managed Office Arrangement</h3> <p>In a managed workspace arrangement like CorpEasy's, you receive an invoice from the workspace operator rather than directly from the landlord. This covers the per-seat service fee. We always issue GST-compliant invoices and walk clients through the tax treatment before any agreement is signed. If you have specific questions about how this interacts with your company's tax position, your CA is the right person to advise — but we are happy to explain how our billing works at any point.</p> <h3>Security Deposits and Stamp Duty</h3> <p>Two other financial items worth knowing: security deposits for commercial space in Mumbai typically run three to six months of rent, paid upfront and refundable at lease end. Stamp duty is payable on registered leave and licence agreements. These are standard costs in the Mumbai commercial market. We factor both into the conversation early so there are no surprises when you are close to signing.</p>`
+content: `<p>GST on commercial property rentals comes up in most conversations about leasing <strong>office space in Mumbai</strong>. Understanding the basics saves confusion later in the process.</p> <h3>The Basics</h3> <p>Commercial office rentals in India attract GST at 18 percent. This is charged on top of your base rent. If your company is GST-registered and uses the office for business purposes, you are generally eligible to claim Input Tax Credit on the GST paid — meaning it offsets your outward GST liability rather than being a pure additional cost. For most registered businesses, the effective net GST burden is significantly lower than the headline 18 percent.</p>`
 }
 };
 
@@ -48,7 +96,7 @@ requestAnimationFrame(() => { toast.style.transform = 'translateX(0)'; });
 setTimeout(() => { toast.style.transform = 'translateX(120%)'; setTimeout(() => toast.remove(), 500); }, 4000);
 }
 
-function navigateTo(pageId, fromHash = false) {
+async function navigateTo(pageId, fromHash = false) {
 document.getElementById('mobile-menu').classList.add('hidden');
 const loader = document.getElementById('page-loader');
 if (loader) {
@@ -65,10 +113,14 @@ const existingSchema = document.getElementById('article-schema');
 if (existingSchema) existingSchema.remove();
 }
 portal.style.opacity = '0'; portal.style.transform = 'translateY(15px)';
-setTimeout(() => {
+const renderPage = async () => {
 window.scrollTo(0, 0);
 if(activeChart) { activeChart.destroy(); activeChart = null; }
-portal.innerHTML = `<div class="page-transition">${pages[pageId] || pages['home']}</div>`;
+let pageContent = pages[pageId] || pages['home'];
+if (typeof pageContent === 'function') {
+pageContent = await pageContent();
+}
+portal.innerHTML = `<div class="page-transition">${pageContent}</div>`;
 portal.style.opacity = '1'; portal.style.transform = 'translateY(0)';
 if (pageId === 'home' || !pageId) initHomeLogic();
 initRevealObserver(); initCountUps(); initTiltCards();
@@ -79,14 +131,22 @@ if (el.tagName === 'A' && el.classList.contains('text-xs')) el.classList.add('te
 const activeLinks = document.querySelectorAll(`[onclick="navigateTo('${pageId}')"]`);
 activeLinks.forEach(el => { el.classList.remove('text-slate-600'); el.classList.add('text-brand-electric', 'font-black'); });
 if (loader) { loader.style.width = '100%'; setTimeout(() => { loader.style.opacity = '0'; loader.style.width = '0%'; }, 400); }
+};
+setTimeout(renderPage, 150);
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({ 'event': 'virtual_pageview', 'page_path': '/' + (pageId || 'home'), 'page_title': 'CorpEasy | ' + (pageId || 'home').charAt(0).toUpperCase() + (pageId || 'home').slice(1) });
 }, 350);
 }
 
 function viewPost(postId) {
-const post = postData[postId];
-if(!post) return;
+let post = postData[postId];
+if(!post) {
+    post = fallbackPosts[postId];
+}
+if(!post) {
+    console.error('Post not found:', postId);
+    return;
+}
 const existingSchema = document.getElementById('article-schema');
 if (existingSchema) existingSchema.remove();
 const schemaScript = document.createElement('script');
@@ -551,8 +611,27 @@ Your details are safe with us. No spam, ever.
 </div>
 </section>
 `,
-blog: `
-<section class="max-w-7xl mx-auto px-6 py-24 reveal">
+blog: async () => {
+const posts = postsLoaded ? postData : fallbackPosts;
+const postKeys = Object.keys(posts);
+const featuredKey = postKeys[0];
+const featured = posts[featuredKey];
+const gridPosts = postKeys.slice(1);
+
+const gridHTML = gridPosts.map((key, i) => {
+    const p = posts[key];
+    return `<div class="blog-card group cursor-pointer reveal ${i === 1 ? 'delay-100' : i === 2 ? 'delay-200' : ''}" onclick="viewPost('${key}')">
+<div class="h-56 overflow-hidden rounded-t-[2rem]"><img loading="lazy" src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100"></div>
+<div class="p-8">
+<p class="text-[10px] font-bold ${getCategoryColor(p.category)} uppercase tracking-widest mb-4">${p.category}</p>
+<h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">${p.title}</h4>
+<p class="text-sm text-slate-600 mb-8 leading-relaxed">${p.excerpt || p.content.replace(/<[^>]*>/g, '').substring(0, 150)}...</p>
+<span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
+</div>
+</div>`;
+}).join('');
+
+return `<section class="max-w-7xl mx-auto px-6 py-24 reveal">
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
 <div class="max-w-2xl">
 <div class="inline-flex items-center space-x-2 mb-8 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
@@ -563,50 +642,24 @@ blog: `
 <p class="text-xl text-slate-600 mt-8 leading-relaxed">Practical articles on office space in Mumbai, commercial real estate, and workspace decisions — written plainly for business owners and operations teams.</p>
 </div>
 </div>
-<div class="group cursor-pointer mb-24 reveal delay-100" onclick="viewPost('mumbai-workspace-guide')">
+${featured ? `<div class="group cursor-pointer mb-24 reveal delay-100" onclick="viewPost('${featuredKey}')">
 <div class="glass-card p-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 <div class="rounded-[2rem] overflow-hidden h-[450px]">
-<img loading="lazy" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200" alt="How to Find Office Space in Mumbai 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90">
+<img loading="lazy" src="${featured.image}" alt="${featured.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90">
 </div>
 <div class="p-6 lg:p-10">
 <div class="flex items-center gap-4 mb-6">
 <span class="px-4 py-1.5 bg-brand-electric text-white text-[10px] font-black rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(99,102,241,0.4)]">Featured Guide</span>
-<span class="text-xs text-slate-600 font-bold flex items-center"><i class="far fa-clock mr-2"></i> 6 Min Read</span>
+<span class="text-xs text-slate-600 font-bold flex items-center"><i class="far fa-clock mr-2"></i> ${featured.readTime}</span>
 </div>
-<h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-tight group-hover:text-brand-electric transition-colors">How to Find the Right Office Space in Mumbai: A Practical Guide for 2026.</h2>
-<p class="text-lg text-slate-600 mb-10 leading-relaxed">A plain-language walkthrough of the process — micro-market differences, what things actually cost, and why more companies are choosing the managed route.</p>
+<h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-tight group-hover:text-brand-electric transition-colors">${featured.title}</h2>
+<p class="text-lg text-slate-600 mb-10 leading-relaxed">${featured.excerpt || featured.content.replace(/<[^>]*>/g, '').substring(0, 200)}...</p>
 <a class="text-sm font-black uppercase tracking-widest text-brand-electric flex items-center gap-4 group-hover:gap-6 transition-all">Read the Guide <i class="fas fa-arrow-right"></i></a>
 </div>
 </div>
-</div>
+</div>` : ''}
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-<div class="blog-card group cursor-pointer reveal" onclick="viewPost('managed-office-explainer')">
-<div class="h-56 overflow-hidden rounded-t-[2rem]"><img loading="lazy" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800" alt="What is a managed office space Mumbai" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100"></div>
-<div class="p-8">
-<p class="text-[10px] font-bold text-brand-violet uppercase tracking-widest mb-4">Explainer</p>
-<h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">What Is a Managed Office Space — And Is It Right for Your Business?</h4>
-<p class="text-sm text-slate-600 mb-8 leading-relaxed">A clear explanation of how the managed office model works, including how CorpEasy's asset-light approach differs from what most people expect.</p>
-<span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
-</div>
-</div>
-<div class="blog-card group cursor-pointer reveal delay-100" onclick="viewPost('bkc-vs-goregaon')">
-<div class="h-56 overflow-hidden rounded-t-[2rem]"><img loading="lazy" src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=800" alt="BKC vs Goregaon office space Mumbai" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100"></div>
-<div class="p-8">
-<p class="text-[10px] font-bold text-brand-cyan uppercase tracking-widest mb-4">Market Trends</p>
-<h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">BKC or Goregaon? Choosing the Right Mumbai Location for Your Office.</h4>
-<p class="text-sm text-slate-600 mb-8 leading-relaxed">A practical look at the differences between Mumbai's two most popular commercial corridors, and how to decide which makes more sense for your business.</p>
-<span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
-</div>
-</div>
-<div class="blog-card group cursor-pointer reveal delay-200" onclick="viewPost('gst-office-rental')">
-<div class="h-56 overflow-hidden rounded-t-[2rem]"><img loading="lazy" src="https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=800" alt="GST on office rentals Mumbai" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100"></div>
-<div class="p-8">
-<p class="text-[10px] font-bold text-brand-rose uppercase tracking-widest mb-4">Finance & Compliance</p>
-<h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">GST on Commercial Office Rentals in Mumbai: What You Need to Know.</h4>
-<p class="text-sm text-slate-600 mb-8 leading-relaxed">A plain explanation of how GST applies to commercial office leases in Mumbai — and what it means in practice for your monthly cost.</p>
-<span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
-</div>
-</div>
+${gridHTML}
 </div>
 </section>
 `,
