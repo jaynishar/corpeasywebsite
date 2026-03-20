@@ -209,7 +209,7 @@ try {
         <?php if(isset($message)) echo "<div class='message'>$message</div>"; ?>
         <?php if(isset($error)) echo "<div class='error'>$error</div>"; ?>
         
-        <a href="admin/admin_insights.php" class="btn-new">+ New Post</a>
+        <a href="admin_insights.php" class="btn-new">+ New Post</a>
         
         <div class="grid">
             <!-- Post List -->
