@@ -135,7 +135,6 @@ if (loader) { loader.style.width = '100%'; setTimeout(() => { loader.style.opaci
 setTimeout(renderPage, 150);
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({ 'event': 'virtual_pageview', 'page_path': '/' + (pageId || 'home'), 'page_title': 'CorpEasy | ' + (pageId || 'home').charAt(0).toUpperCase() + (pageId || 'home').slice(1) });
-}, 350);
 }
 
 function viewPost(postId) {
