@@ -238,7 +238,7 @@ try {
             <!-- Create/Edit Form -->
             <div class="card">
                 <h2><?php echo $edit_post ? 'Edit Post' : 'Create New Post'; ?></h2>
-                <form method="post">
+                <form method="post" enctype="multipart/form-data">
                     <?php if($edit_post): ?>
                     <input type="hidden" name="update_post" value="1">
                     <input type="hidden" name="id" value="<?php echo $edit_post['id']; ?>">

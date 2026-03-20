@@ -8,7 +8,8 @@ $db_pass = 'C0rpeasy1';
 
 try {
     $pdo = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
-    $posts = $pdo->query("SELECT id, title, excerpt, content, image_url, author, category, published_at FROM blog_posts ORDER BY published_at DESC LIMIT 20")->fetchAll();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $posts = $pdo->query("SELECT id, title, excerpt, content, image_url, author, category, published_at FROM blog_posts ORDER BY published_at DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
     
     echo json_encode(['success' => true, 'posts' => $posts]);
 } catch(PDOException $e) {
