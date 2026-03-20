@@ -2,1476 +2,974 @@ const portal = document.getElementById('view-portal');
 let activeChart = null;
 let heroWordInterval = null;
 
-// --- ARTICLE DATA REPOSITORY ---
 const postData = {
-    'mumbai outlook': {
-        title: "The 2026 Mumbai GCC Outlook: Why Managed HQs are Winning.",
-        category: "Market Report",
-        readTime: "8 Min Read",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-        content: `
-            <p>Global Capability Centers (GCCs) are undergoing a radical shift in their real estate procurement strategy. Traditionally, large scale multinationals entering the Mumbai market preferred long term leaseholds where they managed their own fit outs and operations. However, our 2026 Outlook report identifies a distinct trend towards Institutional Managed Workspaces.</p>
-            <h3>The Capital Efficiency Factor</h3>
-            <p>In a high interest rate environment, preserving treasury capital has become a priority for CFOs. Managed office providers like CorpEasy allow enterprises to move from a heavy CapEx model to a predictable OpEx model. By funding 100% of the fit out, we enable MNCs to deploy their capital into core business functions—R&D, talent acquisition, and digital transformation—rather than interior civil work.</p>
-            <h3>Speed to Market as a Competitive Advantage</h3>
-            <p>A traditional office setup in Mumbai takes 6 to 9 months from property identification to "power on" status. In contrast, the managed model promises delivery quickly. This agility is crucial for GCCs competing for talent in the BKC and Goregaon micro markets.</p>
-            <p>As we look towards the end of 2026, we expect over 70% of new office absorption in the 50,000+ sq ft bracket to be managed by institutional operators who can guarantee global ESG compliance and 99.9% operational uptime.</p>
-        `
-    },
-    'neuro architecture': {
-        title: "Neuro Architecture: Boosting Productivity by 15%",
-        category: "Design Strategy",
-        readTime: "5 Min Read",
-        image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200",
-        content: `
-            <p>The relationship between the physical environment and cognitive performance is no longer theoretical. Recent studies in neuro architecture demonstrate that workspace design directly impacts cortisol levels and focus durations.</p>
-            <h3>Biophilic Integration</h3>
-            <p>By incorporating specific patterns of natural light and greenery (biophilia), we've observed a 15% increase in creative problem solving capabilities within tech teams. This isn't just about putting plants on desks; it's about the fractal patterns in ceiling design and the spectral quality of lighting.</p>
-            <h3>Zonal Acoustics</h3>
-            <p>The "death of the open office" is being replaced by "Activity Based Working." In our Goregaon facility, we implemented acoustic baffles that create silent zones for deep work and high energy zones for collaboration, reducing cognitive load and increasing team satisfaction.</p>
-        `
-    },
-    'bkc vs-goregaon': {
-        title: "BKC vs Goregaon: The Battle for Grade A Superiority",
-        category: "Market Trends",
-        readTime: "6 Min Read",
-        image: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200",
-        content: `
-            <p>Mumbai's commercial landscape is split between the premium status of Bandra Kurla Complex (BKC) and the emerging, cost efficient infrastructure of Goregaon East. For enterprises planning a 500-seat expansion, the choice isn't just about the rent per square foot—it's about the "Total Cost of Occupancy."</p>
-            <h3>The BKC Premium</h3>
-            <p>BKC remains the global finance hub. Rental yields here are significantly higher, but the connectivity and prestige attract a specific tier of high value consulting and banking firms. However, congestion remains a challenge for employee retention.</p>
-            <h3>Goregaon's Strategic Value</h3>
-            <p>Goregaon, specifically near the Western Express Highway, offers newer Grade A assets with much larger floor plates. For GCCs requiring scale and modern campus style amenities, Goregaon provides a 30-40% rental discount compared to BKC while offering superior metro connectivity.</p>
-        `
-    },
-    'gst rental': {
-        title: "Impact of GST on Office Rental Outflows",
-        category: "Corporate Finance",
-        readTime: "4 Min Read",
-        image: "https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=800",
-        content: `
-            <p>Tax compliance is a critical component of institutional real estate. Understanding the flow of Input Tax Credit (ITC) on commercial rentals is essential for MNCs moving their headquarters to Mumbai.</p>
-            <h3>Reverse Charge Mechanisms</h3>
-            <p>With recent regulatory updates, the treatment of GST on commercial leases has become more nuanced. CorpEasy’s managed model simplifies this by providing a single, consolidated invoice that includes property tax, maintenance, and facility management—making tax reconciliation significantly easier for corporate finance departments.</p>
-        `
-    }
+'mumbai-workspace-guide': {
+title: "How to Find the Right Office Space in Mumbai: A Practical Guide for 2026.",
+category: "Market Guide",
+readTime: "6 Min Read",
+image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
+content: `<p>Finding <strong>office space in Mumbai</strong> looks straightforward on paper but becomes complicated in practice. Between understanding micro-market rent differences, negotiating lease terms, coordinating furniture and IT setup, and managing multiple vendors, most companies spend far more time on it than they budgeted for. This guide walks through what the process actually looks like — and where things go wrong.</p> <h3>Start With the Right Micro-Market</h3> <p>Mumbai's commercial office market is not one market — it is several, each with its own rent levels, building quality, commute dynamics, and tenant profile. BKC commands the highest rents at roughly ₹450–₹750 per sq ft per month for Grade A space. Lower Parel and Worli sit in the ₹250–₹450 range with strong Western Railway access. Goregaon East, particularly around Nirlon Knowledge Park, suits tech and mid-size companies at ₹150–₹300. Andheri East offers airport proximity at ₹150–₹400. Powai is ideal for campus-style spaces at ₹115–₹310.</p> <p>The right location depends on where your team commutes from, whether clients visit your office, and your realistic monthly cost tolerance. Getting this wrong creates expensive problems downstream.</p> <h3>What Office Space in Mumbai Actually Costs</h3> <p>The headline rent is rarely the full cost. On top of base rent, budget for a security deposit of three to six months' rent paid upfront, a maintenance charge of ₹15–₹30 per sq ft per month on top of rent, GST at 18% (claimable as ITC for most registered businesses), parking, and the workspace setup itself. If you take a bare shell and do your own fit-out, you can add ₹800–₹2,000 per sq ft and three to six months of setup time.</p> <h3>Why the Managed Office Model Is Growing</h3> <p>The managed office model exists because the traditional route is genuinely time-consuming. When a company takes a managed workspace, they are not dealing with the landlord, the furniture vendor, and the IT contractor as separate relationships. A single operator handles it and charges one per-seat monthly fee. The company gets a workspace that is ready from Day 1.</p> <p>This is particularly useful for companies that need to move quickly — a new team setting up in Mumbai, a business relocating from another city, or a company that has outgrown its space and cannot spend six months on a fit-out.</p> <h3>Questions to Ask Before You Sign Anything</h3> <p>Before committing to any commercial lease or managed workspace in Mumbai: What exactly is included in the monthly cost? Who handles maintenance issues? What is the exit process before the lease ends? What is the security deposit structure? These are not difficult questions, but the answers reveal a lot about whether the arrangement will work for you. At CorpEasy, we walk through every one of these before anything is signed.</p>`
+},
+'bkc-vs-goregaon': {
+title: "BKC or Goregaon? Choosing the Right Mumbai Location for Your Office.",
+category: "Market Trends",
+readTime: "5 Min Read",
+image: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200",
+content: `<p>One of the most common questions companies face when looking for <strong>office space in Mumbai</strong>: do we go to BKC for the address, or Goregaon for the value? Both are legitimate choices. The right answer depends on what actually matters for your business.</p> <h3>The Case for BKC</h3> <p>Bandra Kurla Complex is Mumbai's most recognised commercial address — home to major banks, global financial institutions, and professional services firms. If clients visit your office and an address shapes their perception of you, BKC is worth the premium. Metro Line 3 has improved access considerably, though road congestion during peak hours is a real issue for daily commuters. Rents currently run ₹450–₹750 per sq ft per month for Grade A space.</p> <h3>The Case for Goregaon</h3> <p>Goregaon East, particularly the Nirlon Knowledge Park and NESCO cluster, has matured significantly. It attracts tech companies, media businesses, and mid-size enterprises that need larger floor plates at prices that make operational sense. Rents typically sit at ₹150–₹300 per sq ft — a meaningful saving against BKC for equivalent building quality. Western Express Highway and Metro Line 2A provide solid western suburbs connectivity.</p> <h3>The Framework</h3> <p>If the address has direct commercial value — clients or partners will judge your credibility by it — BKC is worth considering seriously. If the office is primarily for your team rather than for external appearances, Goregaon gives you better space for the money. There is no universally correct answer. It depends on cost tolerance, team commute patterns, and what kind of work happens in the office day to day. If you are genuinely unsure, talk to someone who knows current available stock in both locations — which is exactly what we do at CorpEasy.</p>`
+},
+'managed-office-explainer': {
+title: "What Is a Managed Office Space — And Is It Right for Your Business?",
+category: "Explainer",
+readTime: "4 Min Read",
+image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200",
+content: `<p>The term "managed office" gets used loosely in the Indian commercial real estate market. Here is what it actually means — and what it does not.</p> <h3>What a Managed Office Actually Is</h3> <p>A <strong>managed office space</strong> is a commercially leased workspace that has been sourced, set up, and is maintained on your behalf by a workspace operator. Instead of you finding the property, negotiating with the landlord, coordinating workspace setup, and managing facility issues — all of that is handled by the operator. You pay a single monthly fee per seat and get a space that is ready to work in from Day 1. The key distinction from coworking is exclusivity: in a coworking space, you share with other companies. In a managed office, the space is yours alone.</p> <h3>How CorpEasy's Model Works</h3> <p>We are asset-light, which means we do not own pre-built offices waiting to be filled. When a company comes to us with a requirement, we go and find the right commercial property — in their preferred Mumbai location, sized for their team, priced for their budget. We take the lease, handle the basic workspace setup (furniture, internet, the essentials), and give the client a clear per-seat monthly cost for a fixed lease period. The client deals with us alone, not with the landlord or any other vendor.</p> <h3>Who It Makes Sense For</h3> <p>The managed model works best for companies that value speed and simplicity over controlling every design detail. If your priority is getting your team into a functional, professional <strong>office space in Mumbai</strong> within weeks rather than months — without coordinating contractors and landlords — then a managed arrangement is worth looking at seriously. We will tell you honestly if it makes sense for your specific situation, or whether a different structure would serve you better.</p>`
+},
+'gst-office-rental': {
+title: "GST on Commercial Office Rentals in Mumbai: What You Need to Know.",
+category: "Finance & Compliance",
+readTime: "4 Min Read",
+image: "https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=800",
+content: `<p>GST on commercial property rentals comes up in most conversations about leasing <strong>office space in Mumbai</strong>. Understanding the basics saves confusion later in the process.</p> <h3>The Basics</h3> <p>Commercial office rentals in India attract GST at 18 percent. This is charged on top of your base rent. If your company is GST-registered and uses the office for business purposes, you are generally eligible to claim Input Tax Credit on the GST paid — meaning it offsets your outward GST liability rather than being a pure additional cost. For most registered businesses, the effective net GST burden is significantly lower than the headline 18 percent.</p> <h3>In a Managed Office Arrangement</h3> <p>In a managed workspace arrangement like CorpEasy's, you receive an invoice from the workspace operator rather than directly from the landlord. This covers the per-seat service fee. We always issue GST-compliant invoices and walk clients through the tax treatment before any agreement is signed. If you have specific questions about how this interacts with your company's tax position, your CA is the right person to advise — but we are happy to explain how our billing works at any point.</p> <h3>Security Deposits and Stamp Duty</h3> <p>Two other financial items worth knowing: security deposits for commercial space in Mumbai typically run three to six months of rent, paid upfront and refundable at lease end. Stamp duty is payable on registered leave and licence agreements. These are standard costs in the Mumbai commercial market. We factor both into the conversation early so there are no surprises when you are close to signing.</p>`
+}
 };
 
 function showToast(message, type = 'success') {
-    const existing = document.getElementById('ce-toast');
-    if (existing) existing.remove();
-    
-    const colors = {
-        success: 'bg-green-500',
-        error: 'bg-red-500',
-        info: 'bg-brand-electric'
-    };
-    const icons = {
-        success: 'fa-check-circle',
-        error: 'fa-exclamation-circle', 
-        info: 'fa-info-circle'
-    };
-    
-    const toast = document.createElement('div');
-    toast.id = 'ce-toast';
-    toast.className = `fixed top-28 right-6 z-[500] ${colors[type]} text white px-6 py-4 rounded-2xl shadow-2xl flex items center gap-3 text sm font bold transition all duration-500 max w sm`;
-    toast.style.transform = 'translateX(120%)';
-    toast.innerHTML = `<i class="fas ${icons[type]}"></i> ${message}`;
-    document.body.appendChild(toast);
-    
-    requestAnimationFrame(() => {
-        toast.style.transform = 'translateX(0)';
-    });
-    setTimeout(() => {
-        toast.style.transform = 'translateX(120%)';
-        setTimeout(() => toast.remove(), 500);
-    }, 4000);
+const existing = document.getElementById('ce-toast');
+if (existing) existing.remove();
+const colors = { success: 'bg-green-500', error: 'bg-red-500', info: 'bg-brand-electric' };
+const icons = { success: 'fa-check-circle', error: 'fa-exclamation-circle', info: 'fa-info-circle' };
+const toast = document.createElement('div');
+toast.id = 'ce-toast';
+toast.className = `fixed top-28 right-6 z-[500] ${colors[type]} text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3 text-sm font-bold transition-all duration-500 max-w-sm`;
+toast.style.transform = 'translateX(120%)';
+toast.innerHTML = `<i class="fas ${icons[type]}"></i> ${message}`;
+document.body.appendChild(toast);
+requestAnimationFrame(() => { toast.style.transform = 'translateX(0)'; });
+setTimeout(() => { toast.style.transform = 'translateX(120%)'; setTimeout(() => toast.remove(), 500); }, 4000);
 }
 
-// --- NAVIGATION ENGINE ---
 function navigateTo(pageId, fromHash = false) {
-    document.getElementById('mobile-menu').classList.add('hidden');
-    
-    const loader = document.getElementById('page-loader');
-    if (loader) {
-        loader.style.transition = 'none';
-        loader.style.width = '0%';
-        loader.style.opacity = '1';
-        requestAnimationFrame(() => {
-            loader.style.transition = 'width 0.35s ease';
-            loader.style.width = '70%';
-        });
-    }
-
-    const existingProgress = document.getElementById('reading-progress');
-    if (existingProgress) existingProgress.remove();
-
-    // Robust SPA Hash Routing
-    if (!fromHash && pageId !== 'post-detail') {
-        if (window.location.hash !== '#' + pageId) {
-            window.location.hash = pageId;
-            return; // Exit and let the hashchange event trigger the UI rendering
-        }
-    }
-
-    // Clean up Article Schema if navigating away from a post
-    if (pageId !== 'post-detail') {
-        const existingSchema = document.getElementById('article-schema');
-        if (existingSchema) existingSchema.remove();
-    }
-
-    portal.style.opacity = '0';
-    portal.style.transform = 'translateY(15px)';
-    
-    setTimeout(() => {
-        window.scrollTo(0, 0);
-        if(activeChart) { activeChart.destroy(); activeChart = null; }
-        
-        portal.innerHTML = `<div class="page-transition">${pages[pageId] || pages['home']}</div>`;
-        portal.style.opacity = '1';
-        portal.style.transform = 'translateY(0)';
-        
-        if (pageId === 'home' || !pageId) initHomeLogic();
-        if (pageId === 'blog') loadBlogPosts();
-        initRevealObserver();
-        initCountUps();
-        initTiltCards();
-
-        // Highlight active nav item
-        document.querySelectorAll('[onclick^="navigateTo"]').forEach(el => {
-            el.classList.remove('text-brand-electric', 'font-black');
-            if (el.tagName === 'A' && el.classList.contains('text-xs')) {
-                el.classList.add('text-slate-600');
-            }
-        });
-        const activeLinks = document.querySelectorAll(`[onclick="navigateTo('${pageId}')"]`);
-        activeLinks.forEach(el => {
-            el.classList.remove('text-slate-600');
-            el.classList.add('text-brand-electric', 'font-black');
-        });
-
-        if (loader) {
-            loader.style.width = '100%';
-            setTimeout(() => { loader.style.opacity = '0'; loader.style.width = '0%'; }, 400);
-        }
-
-        // Pro Mode Tracking: Virtual Pageview for SPA
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-            'event': 'virtual_pageview',
-            'page_path': '/' + (pageId || 'home'),
-            'page_title': 'CorpEasy | ' + (pageId || 'home').charAt(0).toUpperCase() + (pageId || 'home').slice(1)
-        });
-    }, 350);
+document.getElementById('mobile-menu').classList.add('hidden');
+const loader = document.getElementById('page-loader');
+if (loader) {
+loader.style.transition = 'none'; loader.style.width = '0%'; loader.style.opacity = '1';
+requestAnimationFrame(() => { loader.style.transition = 'width 0.35s ease'; loader.style.width = '70%'; });
+}
+const existingProgress = document.getElementById('reading-progress');
+if (existingProgress) existingProgress.remove();
+if (!fromHash && pageId !== 'post-detail') {
+if (window.location.hash !== '#' + pageId) { window.location.hash = pageId; return; }
+}
+if (pageId !== 'post-detail') {
+const existingSchema = document.getElementById('article-schema');
+if (existingSchema) existingSchema.remove();
+}
+portal.style.opacity = '0'; portal.style.transform = 'translateY(15px)';
+setTimeout(() => {
+window.scrollTo(0, 0);
+if(activeChart) { activeChart.destroy(); activeChart = null; }
+portal.innerHTML = `<div class="page-transition">${pages[pageId] || pages['home']}</div>`;
+portal.style.opacity = '1'; portal.style.transform = 'translateY(0)';
+if (pageId === 'home' || !pageId) initHomeLogic();
+initRevealObserver(); initCountUps(); initTiltCards();
+document.querySelectorAll('[onclick^="navigateTo"]').forEach(el => {
+el.classList.remove('text-brand-electric', 'font-black');
+if (el.tagName === 'A' && el.classList.contains('text-xs')) el.classList.add('text-slate-600');
+});
+const activeLinks = document.querySelectorAll(`[onclick="navigateTo('${pageId}')"]`);
+activeLinks.forEach(el => { el.classList.remove('text-slate-600'); el.classList.add('text-brand-electric', 'font-black'); });
+if (loader) { loader.style.width = '100%'; setTimeout(() => { loader.style.opacity = '0'; loader.style.width = '0%'; }, 400); }
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({ 'event': 'virtual_pageview', 'page_path': '/' + (pageId || 'home'), 'page_title': 'CorpEasy | ' + (pageId || 'home').charAt(0).toUpperCase() + (pageId || 'home').slice(1) });
+}, 350);
 }
 
-// --- ARTICLE VIEWER ---
 function viewPost(postId) {
-    const post = postData[postId];
-    if(!post) return;
-
-    // Remove existing article schema if present
-    const existingSchema = document.getElementById('article-schema');
-    if (existingSchema) existingSchema.remove();
-
-    // Inject Article Schema
-    const schemaScript = document.createElement('script');
-    schemaScript.type = 'application/ld+json';
-    schemaScript.id = 'article-schema';
-    schemaScript.text = JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": post.title,
-        "datePublished": "2026-03-01",
-        "author": {"@type": "Organization", "name": "CorpEasy Research"},
-        "publisher": {"@id": "https://www.corpeasy.in/#organization"}
-    });
-    document.head.appendChild(schemaScript);
-
-    const postTemplate = `
-        <section class="max-w-4xl mx-auto px-6 py-12 lg:py-24">
-            <button onclick="navigateTo('blog')" class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-brand-electric transition-colors mb-12">
-                <i class="fas fa-arrow-left"></i> Back to Insights
-            </button>
-            
-            <div class="mb-12">
-                <span class="px-4 py-1.5 bg-brand-electric/10 border border-brand-electric/30 text-brand-electric text-[10px] font-bold rounded-full uppercase tracking-widest mb-6 inline-block">${post.category}</span>
-                <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 mb-8 leading-tight">${post.title}</h1>
-                <div class="flex items-center gap-6 text-slate-600 text-sm font-medium">
-                    <span><i class="far fa-clock mr-2 text-brand-electric"></i> ${post.readTime}</span>
-                    <span><i class="far fa-calendar-alt mr-2 text-brand-electric"></i> March 2026</span>
-                    <span><i class="far fa-user mr-2 text-brand-electric"></i> By CorpEasy Research</span>
-                </div>
-            </div>
-
-            <div class="rounded-[3rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] h-[400px] lg:h-[550px] mb-16 border border-white/80">
-                <img loading="lazy" src="${post.image}" alt="${post.title}" class="w-full h-full object-cover">
-            </div>
-
-            <div class="prose-content">
-                ${post.content}
-            </div>
-
-            <div class="mt-24 pt-16 border-t border-white/80 flex flex-col md:flex-row justify-between items-center gap-8">
-                <div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-4">Share this report</h4>
-                    <div class="flex gap-4">
-                        <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in text-lg"></i></a>
-                        <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-twitter text-lg"></i></a>
-                        <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fas fa-link text-lg"></i></a>
-                    </div>
-                </div>
-                <button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Discuss these findings</button>
-            </div>
-        </section>
-    `;
-
-    pages['post-detail'] = postTemplate;
-    navigateTo('post-detail');
-
-    // Pro Mode Tracking: Article View
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-        'event': 'article_view',
-        'article_id': postId,
-        'article_title': post.title
-    });
-
-    // Reading progress bar for articles
-    setTimeout(() => {
-        const article = document.querySelector('.prose-content');
-        if (!article) return;
-        const progressBar = document.createElement('div');
-        progressBar.id = 'reading-progress';
-        progressBar.className = 'fixed top-1 left-0 h-0.5 bg-brand-electric z-[998] w-0';
-        progressBar.style.transition = 'width 0.1s linear';
-        document.body.appendChild(progressBar);
-        
-        const updateProgress = () => {
-            const articleRect = article.getBoundingClientRect();
-            const articleHeight = article.offsetHeight;
-            const windowHeight = window.innerHeight;
-            const scrolled = Math.max(0, -articleRect.top);
-            const percent = Math.min(100, (scrolled / (articleHeight - windowHeight)) * 100);
-            if (document.getElementById('reading-progress')) document.getElementById('reading-progress').style.width = percent + '%';
-        };
-        
-        window.addEventListener('scroll', updateProgress, { passive: true });
-    }, 400);
+const post = postData[postId];
+if(!post) return;
+const existingSchema = document.getElementById('article-schema');
+if (existingSchema) existingSchema.remove();
+const schemaScript = document.createElement('script');
+schemaScript.type = 'application/ld+json'; schemaScript.id = 'article-schema';
+schemaScript.text = JSON.stringify({ "@context": "https://schema.org", "@type": "Article", "headline": post.title, "datePublished": "2026-03-01", "author": {"@type": "Organization", "name": "CorpEasy"}, "publisher": {"@id": "https://www.corpeasy.in/#organization"} });
+document.head.appendChild(schemaScript);
+const postTemplate = `<section class="max-w-4xl mx-auto px-6 py-12 lg:py-24"> <button onclick="navigateTo('blog')" class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-brand-electric transition-colors mb-12"> <i class="fas fa-arrow-left"></i> Back to Insights </button> <div class="mb-12"> <span class="px-4 py-1.5 bg-brand-electric/10 border border-brand-electric/30 text-brand-electric text-[10px] font-bold rounded-full uppercase tracking-widest mb-6 inline-block">${post.category}</span> <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 mb-8 leading-tight">${post.title}</h1> <div class="flex items-center gap-6 text-slate-600 text-sm font-medium"> <span><i class="far fa-clock mr-2 text-brand-electric"></i> ${post.readTime}</span> <span><i class="far fa-calendar-alt mr-2 text-brand-electric"></i> 2026</span> <span><i class="far fa-user mr-2 text-brand-electric"></i> CorpEasy</span> </div> </div> <div class="rounded-[3rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] h-[400px] lg:h-[550px] mb-16 border border-white/80"> <img loading="lazy" src="${post.image}" alt="${post.title}" class="w-full h-full object-cover"> </div> <div class="prose-content">${post.content}</div> <div class="mt-24 pt-16 border-t border-white/80 flex flex-col md:flex-row justify-between items-center gap-8"> <div> <h4 class="text-xl font-bold text-slate-900 mb-4">Share this article</h4> <div class="flex gap-4"> <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in text-lg"></i></a> <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-twitter text-lg"></i></a> <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fas fa-link text-lg"></i></a> </div> </div> <button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Talk to Us About Your Requirement</button> </div> </section>`;
+pages['post-detail'] = postTemplate;
+navigateTo('post-detail');
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({ 'event': 'article_view', 'article_id': postId, 'article_title': post.title });
+setTimeout(() => {
+const article = document.querySelector('.prose-content');
+if (!article) return;
+const progressBar = document.createElement('div');
+progressBar.id = 'reading-progress'; progressBar.className = 'fixed top-1 left-0 h-0.5 bg-brand-electric z-[998] w-0';
+progressBar.style.transition = 'width 0.1s linear';
+document.body.appendChild(progressBar);
+const updateProgress = () => {
+const articleRect = article.getBoundingClientRect(); const articleHeight = article.offsetHeight;
+const windowHeight = window.innerHeight; const scrolled = Math.max(0, -articleRect.top);
+const percent = Math.min(100, (scrolled / (articleHeight - windowHeight)) * 100);
+if (document.getElementById('reading-progress')) document.getElementById('reading-progress').style.width = percent + '%';
+};
+window.addEventListener('scroll', updateProgress, { passive: true });
+}, 400);
 }
 
 let roiEngaged = false;
-// --- ROI ENGINE ---
 function updateROI() {
-    const seats = parseInt(document.getElementById('roi-slider').value);
-    
-    if (!roiEngaged) {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event: 'roi_calculator_engaged', seat_count: seats});
-        roiEngaged = true;
-    }
-    
-    document.getElementById('roi-seat-count').innerText = seats.toLocaleString();
-    
-    const capexPreserved = (seats * 1.95).toFixed(0); 
-    const annualSavings = (seats * 5.4 * 12 / 100).toFixed(1);
-    
-    const capexVal = parseInt(capexPreserved);
-    const savingsVal = parseFloat(annualSavings);
-
-    document.getElementById('roi-capex').innerText = capexVal > 1000 ? (capexVal/100).toFixed(1) + " Cr" : capexVal.toLocaleString() + " L";
-    document.getElementById('roi-savings').innerText = savingsVal > 100 ? (savingsVal/100).toFixed(1) + " Cr" : savingsVal.toLocaleString() + " L";
-
-    if(activeChart) {
-        const modifier = seats / 400;
-        activeChart.data.datasets[1].data = [35, 60, 95, 130 + (modifier * 15), 170 + (modifier * 25)];
-        activeChart.update('none'); 
-    }
+const seats = parseInt(document.getElementById('roi-slider').value);
+if (!roiEngaged) { window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'roi_calculator_engaged', seat_count: seats}); roiEngaged = true; }
+document.getElementById('roi-seat-count').innerText = seats.toLocaleString();
+const capexPreserved = (seats * 1.95).toFixed(0); const annualSavings = (seats * 5.4 * 12 / 100).toFixed(1);
+const capexVal = parseInt(capexPreserved); const savingsVal = parseFloat(annualSavings);
+document.getElementById('roi-capex').innerText = capexVal > 1000 ? (capexVal/100).toFixed(1) + " Cr" : capexVal.toLocaleString() + " L";
+document.getElementById('roi-savings').innerText = savingsVal > 100 ? (savingsVal/100).toFixed(1) + " Cr" : savingsVal.toLocaleString() + " L";
+if(activeChart) { const modifier = seats / 400; activeChart.data.datasets[1].data = [35, 60, 95, 130 + (modifier * 15), 170 + (modifier * 25)]; activeChart.update('none'); }
 }
 
 function initHomeLogic() {
-    const ctx = document.getElementById('kineticChart');
-    if(ctx) {
-        Chart.defaults.color = '#475569';
-        Chart.defaults.font.family = 'Plus Jakarta Sans';
-        
-        activeChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Yr 1', 'Yr 2', 'Yr 3', 'Yr 4', 'Yr 5'],
-                datasets: [
-                    { label: 'Traditional Office', data: [80, 110, 150, 200, 260], borderColor: '#cbd5e1', borderWidth: 2, borderDash: [5, 5], tension: 0.4, pointRadius: 0 },
-                    { 
-                        label: 'CorpEasy Managed', 
-                        data: [35, 60, 95, 140, 180], 
-                        borderColor: '#6366f1', 
-                        borderWidth: 4, 
-                        tension: 0.4, 
-                        fill: true, 
-                        backgroundColor: (context) => {
-                            const chart = context.chart;
-                            const {ctx, chartArea} = chart;
-                            if (!chartArea) return null;
-                            const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
-                            gradient.addColorStop(0, 'rgba(99, 102, 241, 0)');
-                            gradient.addColorStop(1, 'rgba(99, 102, 241, 0.2)');
-                            return gradient;
-                        },
-                        pointRadius: 6, pointBackgroundColor: '#6366f1', pointBorderColor: '#ffffff', pointBorderWidth: 3
-                    }
-                ]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: { legend: { display: false } },
-                scales: { 
-                    y: { display: false }, 
-                    x: { 
-                        grid: { display: false }, 
-                        ticks: { font: { weight: '700', size: 11 }, color: '#94a3b8' } 
-                    } 
-                }
-            }
-        });
-        updateROI();
-    }
-
-    if (heroWordInterval) clearInterval(heroWordInterval);
-    const heroWords = ['Work.', 'Scale.', 'HQ.', 'Growth.'];
-    let wordIndex = 0;
-    const heroWordEl = document.getElementById('hero-word');
-    if (heroWordEl) {
-        heroWordInterval = setInterval(() => {
-            heroWordEl.style.opacity = '0';
-            heroWordEl.style.transform = 'translateY(-12px)';
-            setTimeout(() => {
-                wordIndex = (wordIndex + 1) % heroWords.length;
-                heroWordEl.textContent = heroWords[wordIndex];
-                heroWordEl.style.opacity = '1';
-                heroWordEl.style.transform = 'translateY(0)';
-            }, 400);
-        }, 2500);
-    }
+const ctx = document.getElementById('kineticChart');
+if(ctx) {
+Chart.defaults.color = '#475569'; Chart.defaults.font.family = 'Plus Jakarta Sans';
+activeChart = new Chart(ctx, {
+type: 'line',
+data: {
+labels: ['Yr 1', 'Yr 2', 'Yr 3', 'Yr 4', 'Yr 5'],
+datasets: [
+{ label: 'DIY Traditional Setup', data: [80, 110, 150, 200, 260], borderColor: '#cbd5e1', borderWidth: 2, borderDash: [5, 5], tension: 0.4, pointRadius: 0 },
+{ label: 'With CorpEasy', data: [35, 60, 95, 140, 180], borderColor: '#6366f1', borderWidth: 4, tension: 0.4, fill: true,
+backgroundColor: (context) => {
+const chart = context.chart; const {ctx, chartArea} = chart; if (!chartArea) return null;
+const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
+gradient.addColorStop(0, 'rgba(99, 102, 241, 0)'); gradient.addColorStop(1, 'rgba(99, 102, 241, 0.2)');
+return gradient;
+}, pointRadius: 6, pointBackgroundColor: '#6366f1', pointBorderColor: '#ffffff', pointBorderWidth: 3
+}
+]
+},
+options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { display: false }, x: { grid: { display: false }, ticks: { font: { weight: '700', size: 11 }, color: '#94a3b8' } } } }
+});
+updateROI();
+}
+if (heroWordInterval) clearInterval(heroWordInterval);
+const heroWords = ['Office.', 'Team.', 'Workspace.', 'Address.'];
+let wordIndex = 0;
+const heroWordEl = document.getElementById('hero-word');
+if (heroWordEl) {
+heroWordInterval = setInterval(() => {
+heroWordEl.style.opacity = '0'; heroWordEl.style.transform = 'translateY(-12px)';
+setTimeout(() => { wordIndex = (wordIndex + 1) % heroWords.length; heroWordEl.textContent = heroWords[wordIndex]; heroWordEl.style.opacity = '1'; heroWordEl.style.transform = 'translateY(0)'; }, 400);
+}, 2500);
+}
 }
 
 function initTiltCards() {
-    if (window.innerWidth < 1024) return; // Desktop only
-    document.querySelectorAll('.glass-card').forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateX = ((y - centerY) / centerY) * -6;
-            const rotateY = ((x - centerX) / centerX) * 6;
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
-            
-            let shine = card.querySelector('.tilt-shine');
-            if (!shine) {
-                shine = document.createElement('div');
-                shine.className = 'tilt-shine absolute inset-0 rounded-[2.5rem] pointer-events-none';
-                card.style.position = 'relative';
-                card.style.overflow = 'hidden';
-                card.appendChild(shine);
-            }
-            if (shine) {
-                shine.style.background = `radial gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.12), transparent 60%)`;
-            }
-        });
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-            const shine = card.querySelector('.tilt-shine');
-            if (shine) shine.style.background = 'none';
-        });
-    });
+if (window.innerWidth < 1024) return;
+document.querySelectorAll('.glass-card').forEach(card => {
+card.addEventListener('mousemove', (e) => {
+const rect = card.getBoundingClientRect(); const x = e.clientX - rect.left; const y = e.clientY - rect.top;
+const centerX = rect.width / 2; const centerY = rect.height / 2;
+const rotateX = ((y - centerY) / centerY) * -6; const rotateY = ((x - centerX) / centerX) * 6;
+card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+let shine = card.querySelector('.tilt-shine');
+if (!shine) { shine = document.createElement('div'); shine.className = 'tilt-shine absolute inset-0 rounded-[2.5rem] pointer-events-none'; card.style.position = 'relative'; card.style.overflow = 'hidden'; card.appendChild(shine); }
+if (shine) shine.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.12), transparent 60%)`;
+});
+card.addEventListener('mouseleave', () => { card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)'; const shine = card.querySelector('.tilt-shine'); if (shine) shine.style.background = 'none'; });
+});
 }
 
 function initRevealObserver() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) entry.target.classList.add('active');
-        });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); }); }, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
 
 function initCountUps() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target.dataset.counted) {
-                entry.target.dataset.counted = 'true';
-                const target = +entry.target.getAttribute('data-val');
-                let count = 0;
-                const inc = target / 40;
-                const timer = setInterval(() => {
-                    count += inc;
-                    if (count >= target) {
-                        entry.target.innerText = target;
-                        clearInterval(timer);
-                    } else {
-                        entry.target.innerText = Math.floor(count);
-                    }
-                }, 35);
-            }
-        });
-    }, { threshold: 0.5 });
-    document.querySelectorAll('.stat-val').forEach(el => observer.observe(el));
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting && !entry.target.dataset.counted) {
+entry.target.dataset.counted = 'true';
+const target = +entry.target.getAttribute('data-val'); let count = 0; const inc = target / 40;
+const timer = setInterval(() => { count += inc; if (count >= target) { entry.target.innerText = target; clearInterval(timer); } else { entry.target.innerText = Math.floor(count); } }, 35);
 }
-
-function loadBlogPosts() {
-    const container = document.getElementById('blogPosts');
-    const loading = document.getElementById('blogLoading');
-    
-    if (!container) return;
-    
-    fetch('get_posts.php')
-        .then(response => response.json())
-        .then(data => {
-            if (data.success && data.posts && data.posts.length > 0) {
-                let html = '';
-                
-                // Featured post (first one)
-                const featured = data.posts[0];
-                html += `
-                    <div class="group cursor-pointer mb-24 reveal delay-100" onclick="viewPost('${featured.id}')">
-                        <div class="glass-card p-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                            <div class="rounded-[2rem] overflow-hidden h-[450px]">
-                                <img loading="lazy" src="${featured.image_url || 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200'}" alt="${featured.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90">
-                            </div>
-                            <div class="p-6 lg:p-10">
-                                <div class="flex items-center gap-4 mb-6">
-                                    <span class="px-4 py-1.5 bg-brand-electric text-white text-[10px] font-black rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(99,102,241,0.4)]">Featured Report</span>
-                                    <span class="text-xs text-slate-600 font-bold flex items-center"><i class="far fa-clock mr-2"></i> ${featured.category}</span>
-                                </div>
-                                <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-tight group-hover:text-brand-electric transition-colors">${featured.title}</h2>
-                                <p class="text-lg text-slate-600 mb-10 leading-relaxed">${featured.excerpt || ''}</p>
-                                <a class="text-sm font-black uppercase tracking-widest text-brand-electric flex items-center gap-4 group-hover:gap-6 transition-all">Read Full Report <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                
-                // Other posts grid
-                if (data.posts.length > 1) {
-                    html += '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">';
-                    
-                    data.posts.slice(1).forEach((post, index) => {
-                        const colors = ['brand-violet', 'brand-cyan', 'brand-rose'];
-                        const color = colors[index % colors.length];
-                        
-                        html += `
-                            <div class="blog-card group cursor-pointer reveal delay-${index}" onclick="viewPost('${post.id}')">
-                                <div class="h-56 overflow-hidden rounded-t-[2rem]">
-                                    <img loading="lazy" src="${post.image_url || 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800'}" alt="${post.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100">
-                                </div>
-                                <div class="p-8">
-                                    <p class="text-[10px] font-bold text-${color} uppercase tracking-widest mb-4">${post.category}</p>
-                                    <h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">${post.title}</h4>
-                                    <p class="text-sm text-slate-600 mb-8 leading-relaxed">${post.excerpt || ''}</p>
-                                    <span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
-                                </div>
-                            </div>
-                        `;
-                    });
-                    
-                    html += '</div>';
-                }
-                
-                container.innerHTML = html;
-                loading.style.display = 'none';
-                
-                // Re-initialize reveal animations for new elements
-                document.querySelectorAll('.reveal').forEach(el => {
-                    if (!el.classList.contains('revealed')) {
-                        observer.observe(el);
-                    }
-                });
-            } else {
-                // No posts - show placeholder
-                container.innerHTML = `
-                    <div class="glass-card p-12 text-center">
-                        <i class="fas fa-newspaper text-6xl text-slate-300 mb-4"></i>
-                        <h3 class="text-2xl font-bold text-slate-700 mb-2">No Insights Yet</h3>
-                        <p class="text-slate-500">Check back soon for market intelligence and insights.</p>
-                    </div>
-                `;
-                loading.style.display = 'none';
-            }
-        })
-        .catch(error => {
-            console.error('Error loading blog posts:', error);
-            loading.style.display = 'none';
-        });
-}
-
-function viewPost(postId) {
-    // For now, show the post content in an alert or modal
-    // In a full implementation, this would open a detailed post view
-    alert('Post ID: ' + postId + '\n\nFull post view coming soon!');
-}
-
-function handleLead(e) {
-    e.preventDefault();
-    const form = e.target;
-    const btn = form.querySelector('button[type="submit"]');
-    const formType = btn.innerText.trim().toLowerCase().replace(/\s+/g, '_').substring(0, 50);
-    
-    // Create FormData object
-    const formData = new FormData(form);
-    formData.append('form_type', formType);
-    formData.append('source_page', window.location.hash || '#home');
-    
-    // UI feedback
-    const originalHTML = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
-    btn.disabled = true;
-    
-    // Submit using fetch
-    fetch('submit.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Request received!';
-        btn.classList.add('bg-green-500', 'text-white');
-        btn.disabled = false;
-        form.reset();
-        
-        setTimeout(() => {
-            btn.innerHTML = originalHTML;
-            btn.classList.remove('bg-green-500');
-        }, 5000);
-    })
-    .catch(error => {
-        // Even if fetch fails, show success (form likely still submitted)
-        btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Request received!';
-        btn.classList.add('bg-green-500', 'text-white');
-        btn.disabled = false;
-        form.reset();
-        
-        setTimeout(() => {
-            btn.innerHTML = originalHTML;
-            btn.classList.remove('bg-green-500');
-        }, 5000);
-    });
-}
-
-// Store original button text before any changes
-document.addEventListener('click', (e) => {
-    const btn = e.target.closest('button[type="submit"]');
-    if (btn && !btn.getAttribute('data-original-text')) {
-        btn.setAttribute('data-original-text', btn.innerText.trim());
-    }
 });
+}, { threshold: 0.5 });
+document.querySelectorAll('.stat-val').forEach(el => observer.observe(el));
+}
 
-// Handle all forms including dynamically loaded ones
-document.addEventListener('submit', function(e) {
-    if (e.target.matches('form[onsubmit*="handleLead"]')) {
-        // Let handleLead do its work
-    }
-});
+async function handleLead(e) {
+e.preventDefault();
+const form = e.target; const btn = form.querySelector('button[type="submit"]');
+const formData = {};
+form.querySelectorAll('input, select, textarea').forEach(field => { if (field.name && field.name !== 'website') formData[field.name] = field.value; });
+formData.form_type = btn.innerText.trim().toLowerCase().replace(/\s+/g, '_').substring(0, 50);
+formData.source_page = window.location.hash || '#home';
+btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...'; btn.disabled = true;
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({ event: 'generate_lead', form_type: formData.form_type, lead_source: 'website_form' });
+try {
+const response = await fetch('submit.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formData) });
+const result = await response.json();
+if (result.success) {
+btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Received. We will be in touch within 24 hours.';
+btn.classList.remove('bg-brand-electric', 'bg-brand-gold', 'bg-transparent', 'text-brand-electric');
+btn.classList.add('bg-green-500', 'text-white', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 'border-transparent');
+if (result.reference) { const refEl = document.createElement('p'); refEl.className = 'text-center text-xs text-slate-500 mt-3 font-mono'; refEl.textContent = 'Reference: ' + result.reference; btn.parentNode.insertBefore(refEl, btn.nextSibling); }
+setTimeout(() => { form.reset(); btn.innerHTML = btn.getAttribute('data-original-text') || 'Send My Requirement'; btn.disabled = false; btn.classList.remove('bg-green-500', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 'border-transparent'); btn.classList.add('bg-brand-electric'); const refEl = form.querySelector('.font-mono'); if (refEl) refEl.remove(); }, 8000);
+} else { throw new Error(result.error || 'Submission failed'); }
+} catch (error) {
+btn.innerHTML = '<i class="fas fa-exclamation-circle mr-2"></i> Something went wrong. Please call or WhatsApp us.';
+btn.classList.add('bg-red-500', 'text-white'); btn.disabled = false; console.error('Form error:', error);
+}
+}
+
+document.addEventListener('click', (e) => { const btn = e.target.closest('button[type="submit"]'); if (btn && !btn.getAttribute('data-original-text')) btn.setAttribute('data-original-text', btn.innerText.trim()); });
 
 function toggleFAQ(row) {
-    const answer = row.nextElementSibling;
-    const icon = row.querySelector('i');
-    const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
-    
-    document.querySelectorAll('.faq-answer').forEach(a => {
-        a.style.maxHeight = '0px';
-        a.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
-    });
-    
-    if (!isOpen) {
-        answer.style.maxHeight = answer.scrollHeight + 'px';
-        icon.style.transform = 'rotate(45deg)';
-    }
+const answer = row.nextElementSibling; const icon = row.querySelector('i');
+const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+document.querySelectorAll('.faq-answer').forEach(a => { a.style.maxHeight = '0px'; a.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)'; });
+if (!isOpen) { answer.style.maxHeight = answer.scrollHeight + 'px'; icon.style.transform = 'rotate(45deg)'; }
 }
 
-// --- PAGE REPOSITORY ---
 const pages = {
-    home: `
-        <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
-            <div class="orb-drift absolute w-[600px] h-[600px] rounded-full bg-brand-electric/6 blur-[120px] -top-32 -left-32" style="animation-duration:22s"></div>
-            <div class="orb-drift absolute w-[500px] h-[500px] rounded-full bg-brand-cyan/6 blur-[100px] bottom-0 right-0" style="animation-duration:28s; animation-delay: -8s"></div>
-            <div class="orb-drift absolute w-[400px] h-[400px] rounded-full bg-brand-violet/5 blur-[80px] top-1/2 left-1/2 -translate-x-1/2" style="animation-duration:18s; animation-delay: -4s"></div>
-        </div>
-        
-        <!-- Hero Section with Form at Top -->
-        <section class="max-w-7xl mx-auto px-6 py-12 lg:py-16">
-            <div class="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-12 lg:gap-16 items-center">
-                <!-- Left: Value Prop -->
-                <div class="reveal order-2 lg:order-1">
-                    <div class="glow-blob w-96 h-96 bg-brand-electric -top-20 -left-20 opacity-20"></div>
-                    <div class="flex items-center space-x-3 mb-8 bg-white/70 border border-white/80 w-max px-4 py-2 rounded-full backdrop-blur-md">
-                        <span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse shadow-[0_0_10px_rgba(0,240,255,1)]"></span>
-                        <span class="text-[10px] font-black uppercase tracking-[0.3em] text-brand-electric">Mumbai's Trusted Workspace Partner</span>
-                    </div>
-                    <h1 class="text-5xl lg:text-7xl text-slate-900 mb-6 leading-tight">Your Next <br><span id="hero-word" class="text-gradient-vibrant inline-block transition-all duration-500">Work.</span><br>Starts Here.</h1>
-                    <p class="text-lg text-slate-600 font-medium max-w-lg mb-8 leading-relaxed">Mumbai’s smartest workspace protocol. Whether you need a coworking desk for your startup or a 1,000-seat enterprise HQ — our fully managed offices adapt to your growth. Zero capital. <strong>Infinite scalability.</strong></p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Book a Free Consultation</button>
-                        <button onclick="navigateTo('managed')" class="bg-transparent text-slate-900 border-2 border-white/80 px-8 py-4 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-white/70 hover:border-white/20 transition-all flex items-center justify-center gap-3">
-                            Explore Our Solutions <i class="fas fa-arrow-right-long text-brand-electric"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Right: Form (Quick Inquiry) -->
-                <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
-                    <div class="glass-card p-8 border-t-4 border-t-brand-electric shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-                        <h3 class="text-xl font-black text-slate-900 mb-2 flex items-center gap-3">
-                            <i class="fas fa-bolt text-brand-electric"></i>
-                            Get Free Consultation
-                        </h3>
-                        <p class="text-sm text-slate-600 mb-6">Share your requirement. We’ll reach out within 4 hours with a tailored workspace plan.</p>
-                        <form onsubmit="handleLead(event)" class="space-y-4">
-                            <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
-                            <input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
-                                <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
-                            </div>
-                            <select name="requirement" class="input-premium">
-                                <option value="">I am looking for...</option>
-                                <option>Managed Office (50-200 seats)</option>
-                                <option>Managed Office (200-1000 seats)</option>
-                                <option>Custom Enterprise HQ (1000+ seats)</option>
-                                <option>Find a property for lease</option>
-                                <option>Lease my property</option>
-                            </select>
-                            <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-                            <button type="submit" class="w-full bg-brand-electric text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all">Submit Inquiry →</button>
-                        </form>
-                        <p class="text-xs text-slate-500 text-center mt-3 flex items-center justify-center gap-2">
-                            <i class="fas fa-lock text-brand-electric text-xs"></i>
-                            Your data is secure. No spam, ever.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stylish Image Section -->
-        <section class="py-12 px-6">
-            <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[600px] reveal group">
-                <img src="modern_office.png" alt="Modern Managed Office" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
-                <div class="absolute bottom-10 left-10 lg:bottom-16 lg:left-16 right-10">
-                    <h3 class="text-3xl lg:text-5xl font-black text-white mb-4 drop-shadow-lg tracking-tight">Where Ambition Meets Address.</h3>
-                    <p class="text-white/90 text-lg lg:text-xl max-w-2xl drop-shadow">Premium managed offices and coworking spaces crafted for high-performing teams across Mumbai.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Benefits Section -->
-        <section class="py-24 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-6 relative z-10">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="glass-card p-10 reveal">
-                        <div class="w-14 h-14 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-8 text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.2)]"><i class="fas fa-coins text-2xl"></i></div>
-                        <h4 class="text-xl font-bold mb-4 text-slate-900">Zero Upfront CapEx</h4>
-                        <p class="text-slate-600 leading-relaxed">Keep your capital where it matters. We fund 100% of your office build-out — furniture, IT, interiors — and convert it into a single predictable monthly payment.</p>
-                    </div>
-                    <div class="glass-card p-10 reveal delay-100">
-                        <div class="w-14 h-14 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-8 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-shield-halved text-2xl"></i></div>
-                        <h4 class="text-xl font-bold mb-4 text-slate-900">Enterprise Grade Infrastructure</h4>
-                        <p class="text-slate-600 leading-relaxed">Walk into spaces pre-certified for LEED Gold, ISO 27001, and fire safety compliance. Our managed offices meet audit standards demanded by global MNCs and GCCs.</p>
-                    </div>
-                    <div class="glass-card p-10 reveal delay-200">
-                        <div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-8 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-rocket text-2xl"></i></div>
-                        <h4 class="text-xl font-bold mb-4 text-slate-900">Rapid Setup, Zero Delays</h4>
-                        <p class="text-slate-600 leading-relaxed">Stop waiting months for contractors and approvals. Our plug and play office model delivers your custom workspace in Mumbai — operational and move-in ready — in record time.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-
-        <!-- Ticker -->
-        <section class="py-12 bg-white/70 border-y border-white/60 overflow-hidden backdrop-blur-sm">
-            <div class="ticker-track">
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-building"></i> Coworking Space in Mumbai</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-calendar-check"></i> Trusted Managed Office Solutions</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-ruler-combined"></i> Flexible Workspace India</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-bolt"></i> Plug and Play Offices</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-indian-rupee-sign"></i> Zero Upfront CapEx</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-leaf"></i> LEED Certified Workspaces</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-shield-check"></i> Enterprise Grade Compliance</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-globe-asia"></i> Office Space for Startups</span>
-                
-                <!-- duplicate for seamless scroll loop -->
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-building"></i> Coworking Space in Mumbai</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-calendar-check"></i> Trusted Managed Office Solutions</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-ruler-combined"></i> Flexible Workspace India</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-bolt"></i> Plug and Play Offices</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-indian-rupee-sign"></i> Zero Upfront CapEx</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-leaf"></i> LEED Certified Workspaces</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-shield-check"></i> Enterprise Grade Compliance</span>
-                <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-globe-asia"></i> Office Space for Startups</span>
-            </div>
-        </section>
-
-        <!-- How It Works -->
-        <section class="py-24 relative bg-white/40">
-            <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter text-center mb-6">From Brief to Boardroom.</h2>
-                <p class="text-xl text-slate-500 text-center mb-20">Three steps. One workspace partner. Zero friction.</p>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <div class="glass-card p-10 reveal relative overflow-hidden">
-                        <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">01</span>
-                        <div class="w-16 h-16 bg-brand-electric/10 border border-brand-electric/30 rounded-2xl flex items-center justify-center mb-6 text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.2)]"><i class="fas fa-clipboard-list text-2xl"></i></div>
-                        <p class="text-[10px] font-black uppercase tracking-widest text-brand-electric mb-4">Step 01 — Consult</p>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-4">Consult & Curate</h4>
-                        <p class="text-slate-600 leading-relaxed relative z-10">Share your team size, location preference, and timeline. Our workspace advisors build a tailored feasibility study and present curated options within 4 hours.</p>
-                    </div>
-                    <div class="glass-card p-10 reveal delay-100 relative overflow-hidden">
-                        <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">02</span>
-                        <div class="w-16 h-16 bg-brand-cyan/10 border border-brand-cyan/30 rounded-2xl flex items-center justify-center mb-6 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-drafting-compass text-2xl"></i></div>
-                        <p class="text-[10px] font-black uppercase tracking-widest text-brand-electric mb-4">Step 02 — Build</p>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-4">Design & Build</h4>
-                        <p class="text-slate-600 leading-relaxed relative z-10">CorpEasy secures the Grade A property and handles everything — from civil and electrical work to furniture and IT infrastructure. All funded by us, at zero cost to you.</p>
-                    </div>
-                    <div class="glass-card p-10 reveal delay-200 relative overflow-hidden">
-                        <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">03</span>
-                        <div class="w-16 h-16 bg-brand-violet/10 border border-brand-violet/30 rounded-2xl flex items-center justify-center mb-6 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-key text-2xl"></i></div>
-                        <p class="text-[10px] font-black uppercase tracking-widest text-brand-electric mb-4">Step 03 — Scale</p>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-4">Move In & Scale</h4>
-                        <p class="text-slate-600 leading-relaxed relative z-10">Walk into a fully managed, plug and play office. We handle operations, security, housekeeping, and maintenance — while you focus entirely on growing your business.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="py-24 relative">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-16 reveal">
-                    <div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-                        <span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Client Testimonials</span>
-                    </div>
-                    <h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">Trusted by Decision-Makers.</h2>
-                    <p class="text-xl text-slate-500">Hear from leaders who chose CorpEasy for their Mumbai operations.</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <div class="glass-card p-12 relative overflow-hidden reveal">
-                        <i class="fas fa-quote-left absolute top-8 left-8 text-8xl text-brand-electric/8"></i>
-                        <div class="flex text-brand-gold mb-6 space-x-1 relative z-10">
-                            <i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i>
-                        </div>
-                        <p class="text-lg text-slate-700 leading-relaxed mb-8 relative z-10">"CorpEasy set up our 400-seat managed office in Mumbai in just 38 days — a week ahead of schedule. The zero CapEx model freed up critical capital for our India expansion roadmap."</p>
-                        <div class="relative z-10">
-                            <p class="font-bold text-slate-900">VP, Real Estate & Facilities</p>
-                            <p class="text-[11px] font-bold text-brand-electric uppercase tracking-widest mt-1">Global Technology MNC, Mumbai</p>
-                        </div>
-                    </div>
-                    <div class="glass-card p-12 relative overflow-hidden reveal delay-100">
-                        <i class="fas fa-quote-left absolute top-8 left-8 text-8xl text-brand-electric/8"></i>
-                        <div class="flex text-brand-gold mb-6 space-x-1 relative z-10">
-                            <i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i>
-                        </div>
-                        <p class="text-lg text-slate-700 leading-relaxed mb-8 relative z-10">"From compliance documentation to IT infrastructure, everything was enterprise-ready on Day 1. This is exactly how flexible workspace in India should work — seamless and institutional."</p>
-                        <div class="relative z-10">
-                            <p class="font-bold text-slate-900">Head of GCC Operations</p>
-                            <p class="text-[11px] font-bold text-brand-electric uppercase tracking-widest mt-1">Fortune 500 Financial Services, Mumbai</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Locations Section -->
-        <section class="py-24 relative bg-white/40">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="mb-16 reveal text-center lg:text-left">
-                    <div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-                        <span class="text-[10px] font-black uppercase tracking-widest text-brand-cyan">Mumbai Micro Markets</span>
-                    </div>
-                    <h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">Located Where Business Happens.</h2>
-                    <p class="text-xl text-slate-500">Premium managed offices and coworking spaces in Mumbai’s most sought-after commercial corridors.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
-                    <!-- BKC -->
-                    <div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer" onclick="navigateTo('contact')">
-                        <div class="inline-block px-3 py-1 bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Premium Hub</div>
-                        <div class="w-16 h-16 bg-brand-gold/10 border border-brand-gold/30 rounded-2xl flex items-center justify-center mb-6 text-brand-gold shadow-[0_0_15px_rgba(251,191,36,0.2)]"><i class="fas fa-star text-2xl"></i></div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-3">Bandra Kurla Complex (BKC)</h4>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">The financial nerve center of India. Ideal for enterprise teams, consulting firms, and global banks seeking a premium managed office address in Mumbai.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-white/60">
-                            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Avg. Range</p>
-                            <p class="text-sm font-bold text-slate-900">₹180–₹260/sqft</p>
-                        </div>
-                    </div>
-                    <!-- Lower Parel -->
-                    <div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer delay-100" onclick="navigateTo('contact')">
-                        <div class="inline-block px-3 py-1 bg-brand-electric/10 border border-brand-electric/30 text-brand-electric text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Heritage Commercial</div>
-                        <div class="w-16 h-16 bg-brand-electric/10 border border-brand-electric/30 rounded-2xl flex items-center justify-center mb-6 text-brand-electric shadow-[0_0_15px_rgba(99,102,241,0.2)]"><i class="fas fa-building-columns text-2xl"></i></div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-3">Lower Parel & Worli</h4>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">Iconic Grade A towers with a legacy of prestige. A coveted corridor for companies seeking managed office solutions with unmatched connectivity and brand value.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-white/60">
-                            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Avg. Range</p>
-                            <p class="text-sm font-bold text-slate-900">₹140–₹200/sqft</p>
-                        </div>
-                    </div>
-                    <!-- Goregaon East -->
-                    <div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer delay-200" onclick="navigateTo('contact')">
-                        <div class="inline-block px-3 py-1 bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">High Growth</div>
-                        <div class="w-16 h-16 bg-brand-cyan/10 border border-brand-cyan/30 rounded-2xl flex items-center justify-center mb-6 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-chart-line text-2xl"></i></div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-3">Goregaon & Nirlon Park</h4>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">Mumbai’s GCC capital. Large floor plates built for tech hubs and 500+ seat scale-ups — at price points that maximize your enterprise workspace ROI.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-white/60">
-                            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Avg. Range</p>
-                            <p class="text-sm font-bold text-slate-900">₹100–₹140/sqft</p>
-                        </div>
-                    </div>
-                    <!-- Andheri East -->
-                    <div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer delay-300" onclick="navigateTo('contact')">
-                        <div class="inline-block px-3 py-1 bg-brand-violet/10 border border-brand-violet/30 text-brand-violet text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Airport Corridor</div>
-                        <div class="w-16 h-16 bg-brand-violet/10 border border-brand-violet/30 rounded-2xl flex items-center justify-center mb-6 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-plane-departure text-2xl"></i></div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-3">Andheri East & SEEPZ</h4>
-                        <p class="text-sm text-slate-500 leading-relaxed mb-6">The connectivity hub near the international airport. Ideal for startups and remote teams seeking an affordable coworking space in Mumbai with stellar access.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-white/60">
-                            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Avg. Range</p>
-                            <p class="text-sm font-bold text-slate-900">₹90–₹130/sqft</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Capital Intel Section -->
-        <section class="py-32 relative overflow-hidden bg-white/20">
-            <div class="glow-blob w-[600px] h-[600px] bg-brand-cyan opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div class="max-w-7xl mx-auto px-6 text-center">
-                <div class="mb-20 reveal">
-                    <h2 class="text-6xl text-slate-900 mb-8 font-black leading-tight">Capital Intel.</h2>
-                    <p class="text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">Maximize operational efficiency across Mumbai’s commercial landscape with CorpEasy’s data-driven managed office model.</p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal delay-100">
-                    <div class="glass-card p-12 group hover:border-brand-electric/50 transition-all text-left">
-                        <div class="w-16 h-16 bg-brand-electric/10 rounded-2xl flex items-center justify-center mb-8 text-brand-electric group-hover:bg-brand-electric group-hover:text-white transition-all duration-500">
-                            <i class="fas fa-microchip text-2xl"></i>
-                        </div>
-                        <h4 class="text-2xl font-black mb-4 text-slate-900">Strategic Sourcing</h4>
-                        <p class="text-slate-600 leading-relaxed font-medium">Our team scans 500+ commercial nodes daily across Mumbai. We identify high value Grade A assets before they hit the open market — giving you early access to prime managed office locations.</p>
-                    </div>
-                    
-                    <div class="glass-card p-12 group hover:border-brand-cyan/50 transition-all text-left">
-                        <div class="w-16 h-16 bg-brand-cyan/10 rounded-2xl flex items-center justify-center mb-8 text-brand-cyan group-hover:bg-brand-cyan group-hover:text-white transition-all duration-500">
-                            <i class="fas fa-chart-network text-2xl"></i>
-                        </div>
-                        <h4 class="text-2xl font-black mb-4 text-slate-900">Managed Operations</h4>
-                        <p class="text-slate-600 leading-relaxed font-medium">Real-time monitoring of facility health, energy consumption, and workspace utilization. Every rupee of your operating expenditure is tracked and optimized for maximum efficiency.</p>
-                    </div>
-                    
-                    <div class="glass-card p-12 group hover:border-brand-violet/50 transition-all text-left">
-                        <div class="w-16 h-16 bg-brand-violet/10 rounded-2xl flex items-center justify-center mb-8 text-brand-violet group-hover:bg-brand-violet group-hover:text-white transition-all duration-500">
-                            <i class="fas fa-shield-check text-2xl"></i>
-                        </div>
-                        <h4 class="text-2xl font-black mb-4 text-slate-900">Compliance Automation</h4>
-                        <p class="text-slate-600 leading-relaxed font-medium">Automated audit trails for ESG, SOC 2, and ISO readiness. We maintain institutional compliance standards across your entire portfolio — so you clear every audit, every time.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Comparison Table -->
-        <section class="py-24 relative bg-white/40">
-            <div class="max-w-5xl mx-auto px-6">
-                <div class="text-center mb-16 reveal">
-                    <div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-                        <span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">CorpEasy vs. Traditional Setup</span>
-                    </div>
-                    <p class="text-xl text-slate-500">See why enterprises choose the managed office model over traditional leasing.</p>
-                </div>
-                <div class="glass-card overflow-hidden reveal">
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-sm border-collapse whitespace-nowrap min-w-[600px]">
-                            <thead>
-                                <tr>
-                                    <th class="py-5 px-8 text-left text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60 w-1/3">Feature</th>
-                                    <th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60">Traditional Lease</th>
-                                    <th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-brand-electric bg-brand-electric/5 border-b border-brand-electric/20">
-                                        <span class="block">CorpEasy Managed</span>
-                                        <span class="text-[9px] bg-brand-electric text-white px-2 py-0.5 rounded-full mt-1 inline-block">★ Recommended</span>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="bg-white/20">
-                                    <td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Setup Time</td>
-                                    <td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">6–9 Months</td>
-                                    <td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Rapid</td>
-                                </tr>
-                                <tr class="bg-white/40">
-                                    <td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Upfront CapEx</td>
-                                    <td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">₹2,000–5,000 / seat</td>
-                                    <td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Zero</td>
-                                </tr>
-                                <tr class="bg-white/20">
-                                    <td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Operations</td>
-                                    <td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Multiple Vendors</td>
-                                    <td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Consolidated</td>
-                                </tr>
-                                <tr class="bg-white/40">
-                                    <td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">IT & Security</td>
-                                    <td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Self Managed</td>
-                                    <td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ SOC 2 Ready</td>
-                                </tr>
-                                <tr class="bg-white/20">
-                                    <td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Facility Management</td>
-                                    <td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Separate vendor</td>
-                                    <td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Integrated</td>
-                                </tr>
-                                <tr class="bg-white/40">
-                                    <td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Lease Liability</td>
-                                    <td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Full tenant risk</td>
-                                    <td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Operator backed</td>
-                                </tr>
-                                <tr class="bg-white/20">
-                                    <td class="py-5 px-8 text-slate-700 font-semibold">Scalability</td>
-                                    <td class="py-5 px-8 text-slate-500 text-center">Fixed term</td>
-                                    <td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5">✅ Flexible</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-    `,
-
-    blog: `
-        <section class="max-w-7xl mx-auto px-6 py-24 reveal">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
-                <div class="max-w-2xl">
-                    <div class="inline-flex items-center space-x-2 mb-8 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-                        <span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse"></span>
-                        <span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Market Intelligence</span>
-                    </div>
-                    <h1 class="text-6xl md:text-8xl font-extrabold text-slate-900 leading-none">The <span class="text-gradient-vibrant">Intel</span> Hub.</h1>
-                    <p class="text-xl text-slate-600 mt-8 leading-relaxed">Expert analysis on Mumbai commercial real estate, managed office trends, and enterprise workspace strategies.</p>
-                </div>
-            </div>
-
-            <!-- Loading State -->
-            <div id="blogLoading" class="text-center py-20">
-                <i class="fas fa-spinner fa-spin text-4xl text-brand-electric"></i>
-                <p class="text-slate-600 mt-4">Loading insights...</p>
-            </div>
-
-            <!-- Blog Posts Container -->
-            <div id="blogPosts"></div>
-        </section>
-    `,
-
-    managed: `
-        <section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-16 items-start min-h-[calc(100vh-96px)]">
-
-          <!-- LEFT: Value Prop -->
-          <div class="order-2 lg:order-1 flex flex-col justify-center">
-            <div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 backdrop-blur-md w-max">
-                <span class="text-[10px] font-black uppercase tracking-widest text-brand-cyan">Enterprise Workspace Solutions</span>
-            </div>
-            <h1 class="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter mb-6">Zero CapEx <br><span class="text-gradient-vibrant">Enterprise Offices.</span></h1>
-            
-            <div class="space-y-3 mb-4">
-                <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> Zero upfront CapEx — we fund 100% of fit out</p>
-                <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> Institutional standards (LEED, Fire Safety, ISO 27001)</p>
-                <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> Custom fit out with infinite scalability</p>
-            </div>
-            
-            <p class="text-lg text-slate-600 mt-4 leading-relaxed">Whether you need a coworking desk for your startup or a 1,000-seat enterprise HQ — our fully managed offices adapt to your growth. Zero capital. <strong>Infinite scalability.</strong></p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-                <div class="glass-card p-5">
-                    <h4 class="text-base font-bold text-slate-900">OpEx Model</h4>
-                    <p class="text-xs text-slate-600 mt-1">We fund the entire fit-out, converting your CapEx into a single monthly payment.</p>
-                </div>
-                <div class="glass-card p-5">
-                    <h4 class="text-base font-bold text-slate-900">99.9% Uptime</h4>
-                    <p class="text-xs text-slate-600 mt-1">Redundant power and dual ISP backbones for uninterrupted operations.</p>
-                </div>
-                <div class="glass-card p-5">
-                    <h4 class="text-base font-bold text-slate-900">ESG & Security</h4>
-                    <p class="text-xs text-slate-600 mt-1">LEED Gold, ISO 27001, and complete regulatory compliance built in.</p>
-                </div>
-            </div>
-          </div>
-
-          <!-- RIGHT: Form (sticky) -->
-          <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
-            <div class="glass-card p-8 border-t-4 border-t-brand-electric shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-              <h3 class="text-xl font-black text-slate-900 mb-6 flex items-center gap-3">
-                <i class="fas fa-building text-brand-electric"></i>
-                Request a Feasibility Study
-              </h3>
-              <form onsubmit="handleLead(event)" class="space-y-4">
-                <input type="text" name="full_name" placeholder="Full Name" class="input-premium" required>
-                <input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
-                <input type="email" name="email" placeholder="Work Email" class="input-premium" required>
-                <input type="tel" name="phone" placeholder="Phone Number" class="input-premium" required>
-                <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-                <button type="submit" class="w-full bg-brand-electric text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all">Get Free Consultation →</button>
-              </form>
-              
-              <p class="text-xs text-slate-500 text-center mt-3 flex items-center justify-center gap-2">
-                <i class="fas fa-lock text-brand-electric text-xs"></i>
-                Your data is secure. No spam, ever.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Workspace Showcase -->
-        <section class="py-12 px-6">
-            <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[550px] reveal group border border-white/60">
-                <img src="managed_workspace.png" alt="Managed Workspace Render" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
-                <div class="absolute inset-0 bg-gradient-to-tr from-brand-electric/40 via-transparent to-transparent"></div>
-                <!-- Interactive hotspots or subtle tags could go here to show features -->
-                <div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
-                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                    <span class="text-xs font-black uppercase tracking-widest text-slate-900">Custom Fit out Example</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Below the fold -->
-        <section class="py-24 bg-white/40">
-            <div class="max-w-7xl mx-auto px-6 relative z-10">
-                <div class="text-center">
-                     <h2 class="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter mb-6">An Operating System for Your Office.</h2>
-                     <p class="text-xl text-slate-500 mb-16 max-w-3xl mx-auto">Our managed office solutions go beyond four walls. They are high-performance environments engineered for enterprises that refuse to compromise.</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 reveal">
-                    <div class="glass-card p-10">
-                        <div class="w-16 h-16 bg-brand-blue/30 border border-brand-electric/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-electric shadow-[0_0_20px_rgba(0,240,255,0.2)]"><i class="fas fa-sitemap"></i></div>
-                        <h4 class="text-2xl font-bold mb-4 text-slate-900">OpEx Model</h4>
-                        <p class="text-slate-600 leading-relaxed">We fund 100% of the fit-out, IT infrastructure, and furnishing — converting heavy capital expenditure into a predictable, manageable monthly cost.</p>
-                    </div>
-                    <div class="glass-card p-10">
-                        <div class="w-16 h-16 bg-brand-cyan/20 border border-brand-cyan/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-cyan shadow-[0_0_20px_rgba(6,182,212,0.2)]"><i class="fas fa-wifi"></i></div>
-                        <h4 class="text-2xl font-bold mb-4 text-slate-900">99.9% Uptime</h4>
-                        <p class="text-slate-600 leading-relaxed">Redundant ISP backbones, enterprise firewalls, and integrated facility management ensure your team stays productive without interruption.</p>
-                    </div>
-                    <div class="glass-card p-10">
-                        <div class="w-16 h-16 bg-brand-violet/20 border border-brand-violet/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-violet shadow-[0_0_20px_rgba(139,92,246,0.2)]"><i class="fas fa-shield-alt"></i></div>
-                        <h4 class="text-2xl font-bold mb-4 text-slate-900">ESG & Security</h4>
-                        <p class="text-slate-600 leading-relaxed">Full adherence to global infosec policies, ISO certifications, occupational health standards, and LEED sustainability protocols.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    `,
-
-    find: `
-        <section class="py-16 lg:py-24 relative reveal">
-            <div class="glow-blob w-[600px] h-[600px] bg-brand-cyan opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            
-            <!-- Form at Top -->
-            <div class="max-w-2xl mx-auto px-6 mb-16 relative z-10">
-                <div class="glass-card p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-                    <h3 class="text-xl font-black text-slate-900 mb-2 flex items-center gap-3">
-                        <i class="fas fa-search-location text-brand-cyan"></i>
-                        Find a Property for Lease
-                    </h3>
-                    <p class="text-sm text-slate-600 mb-6">Tell us your ideal location, size, and budget. Our team will curate the best available options across Mumbai.</p>
-                    <form onsubmit="handleLead(event)" class="space-y-4">
-                        <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
-                        <input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
-                            <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
-                        </div>
-                        <input type="text" name="requirement" placeholder="Property Requirement (e.g., BKC, 5000 sqft)" class="input-premium">
-                        <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-                        <button type="submit" class="w-full bg-brand-cyan text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all">Search Properties →</button>
-                    </form>
-                </div>
-            </div>
-            
-            <!-- Info Below Form -->
-            <div class="max-w-4xl mx-auto px-6 text-center relative z-10 p-12 bg-white/40 backdrop-blur-md rounded-[3rem] border border-white/60">
-                <h1 class="text-5xl lg:text-7xl font-black text-slate-900 mb-8">Property <span class="text-gradient">Inventory.</span></h1>
-                <p class="text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">Off market and curated Grade A properties for managed offices and plug and play coworking spaces across Mumbai’s most prime commercial zones. Start your capital efficient journey here.</p>
-            </div>
-        </section>
-    `,
-
-    list: `
-        <section class="py-16 lg:py-24 relative">
-            <div class="glow-blob w-[800px] h-[800px] bg-brand-gold opacity-10 -top-20 -right-20"></div>
-            
-            <!-- Form at Top -->
-            <div class="max-w-2xl mx-auto px-6 mb-16 relative z-10">
-                <div class="glass-card p-8 border-t-4 border-t-brand-gold shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-                    <h3 class="text-xl font-black text-slate-900 mb-2 flex items-center gap-3">
-                        <i class="fas fa-building text-brand-gold"></i>
-                        Lease Your Property
-                    </h3>
-                    <p class="text-sm text-slate-600 mb-6">List your commercial asset with CorpEasy. We deliver guaranteed occupancy, institutional management, and long-term yield.</p>
-                    <form onsubmit="handleLead(event)" class="space-y-4">
-                        <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
-                        <input type="text" name="company_name" placeholder="Company / Property Owner Name" class="input-premium">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
-                            <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
-                        </div>
-                        <input type="text" name="property_location" placeholder="Property Address or Area *" class="input-premium" required>
-                        <input type="number" name="property_area" placeholder="Total Area (Sq Ft)" class="input-premium">
-                        <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-                        <button type="submit" class="w-full bg-brand-gold text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(251,191,36,0.4)] transition-all">Submit Property →</button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Strategic Content -->
-            <div class="max-w-4xl mx-auto px-6 text-center relative z-10 p-12 bg-white/40 backdrop-blur-md rounded-[3rem] border border-white/60 mb-20">
-                <h1 class="text-5xl lg:text-7xl font-black text-slate-900 mb-8">Asset <span class="text-gradient-gold">Partnership.</span></h1>
-                <p class="text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">Turn your commercial property into a high-yield managed workspace. We handle full build-out, operations, and tenant sourcing — delivering Fortune 500-grade occupants and stable long-term returns.</p>
-            </div>
-            
-            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
-                <div class="reveal">
-                    <h1 class="text-5xl lg:text-7xl font-black mb-8 leading-none tracking-tighter text-slate-900">Monetize <br><span class="text-gradient-gold text-brand-gold">Assets.</span></h1>
-                    <p class="text-xl text-slate-600 mb-10 leading-relaxed">Convert your Grade A real estate into an institutional grade managed workspace — with stabilized, high margin yields and zero vacancy risk.</p>
-                </div>
-                <div class="glass-card p-10 reveal delay-2 border border-brand-gold/20 shadow-[0_0_40px_rgba(251,191,36,0.1)]">
-                    <h4 class="text-xl font-black text-slate-900 mb-6 flex items-center gap-3"><i class="fas fa-star text-brand-gold"></i> Why Partner With Us?</h4>
-                    <div class="space-y-4">
-                        <p class="flex items-center gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold"></i> Guaranteed occupancy — zero vacancy risk</p>
-                        <p class="flex items-center gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold"></i> Institutional grade fit out funding</p>
-                        <p class="flex items-center gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold"></i> Full facility management included</p>
-                        <p class="flex items-center gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold"></i> Long term lease agreements</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    `,
-
-    about: `
-        <section class="max-w-7xl mx-auto px-6 py-32 text-center reveal min-h-[80vh] flex flex-col justify-center relative">
-            <div class="glow-blob w-[600px] h-[600px] bg-brand-blue opacity-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div class="relative z-10">
-                <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand-electric mb-6 block text-center">The CorpEasy Story</span>
-                <h1 class="text-6xl lg:text-8xl text-slate-900 font-black mb-12 text-center leading-[0.9]">Redefining How <span class="text-gradient-vibrant">India</span> Works.</h1>
-                <p class="text-xl text-slate-600 text-center max-w-3xl mx-auto leading-relaxed mb-20 font-medium italic">"We didn't just build an office company; We built a workspace engine designed to eliminate every barrier between a company’s ambition and its physical presence in India."</p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
-                    <div class="glass-card p-10 group hover:border-brand-electric/50">
-                        <p class="text-5xl lg:text-7xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-electric transition-colors">100%</p>
-                        <p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">OpEx Funded</p>
-                    </div>
-                    <div class="glass-card p-10 group hover:border-brand-cyan/50">
-                        <p class="text-5xl lg:text-7xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-cyan transition-colors">Zero</p>
-                        <p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">CapEx Risk</p>
-                    </div>
-                    <div class="glass-card p-10 group hover:border-brand-violet/50">
-                        <p class="text-5xl lg:text-7xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-violet transition-colors">Grade A</p>
-                        <p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Commercial Facilities</p>
-                    </div>
-                    <div class="glass-card p-10 group hover:border-brand-rose/50">
-                        <p class="text-5xl lg:text-7xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-rose transition-colors">24/7</p>
-                        <p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Enterprise Uptime</p>
-                    </div>
-                </div>
-
-                <!-- Team Graphic -->
-                <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] lg:h-[500px] mt-24 reveal group">
-                    <img src="professional_team.png" alt="CorpEasy Office Dynamics" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
-                    <div class="absolute inset-0 bg-brand-electric/10 mix-blend-multiply"></div>
-                </div>
-
-                <!-- Co-Founders -->
-                <div class="mt-32 text-center">
-                    <h3 class="text-4xl font-black text-slate-900 mb-4">Our Founders</h3>
-                    <p class="text-slate-500 max-w-2xl mx-auto mb-16 uppercase tracking-[0.2em] font-bold text-xs">Direct accountability. No layers. No friction.</p>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                        <!-- Dev Doshi -->
-                        <div class="glass-card p-10 group bg-white/50 border border-white/60">
-                            <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-                                <img src="DEV DOSHI.png" alt="Dev Doshi" class="w-full h-full object-cover">
-                            </div>
-                            <h4 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h4>
-                            <p class="text-brand-electric font-black text-[10px] uppercase tracking-widest mb-6">Strategic Alliances & Business Development</p>
-                            <p class="text-sm text-slate-600 leading-relaxed italic border-t border-white/40 pt-6">"Integrity isn’t a tagline — it’s our foundation. Every square foot we manage is designed to deliver measurable returns for our partners and tenants alike."</p>
-                        </div>
-                        <!-- Jay Nishar -->
-                        <div class="glass-card p-10 group bg-white/50 border border-white/60">
-                            <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-                                <img src="JAY NISHAR.png" alt="Jay Nishar" class="w-full h-full object-cover">
-                            </div>
-                            <h4 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h4>
-                            <p class="text-brand-electric font-black text-[10px] uppercase tracking-widest mb-6">Operations & Growth Infrastructure</p>
-                            <p class="text-sm text-slate-600 leading-relaxed italic border-t border-white/40 pt-6">"We built CorpEasy for the fast movers. If you’re ready to scale in Mumbai, your workspace should accelerate your growth — not hold it back."</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Timeline Section -->
-                <div class="mt-32 max-w-4xl mx-auto text-left">
-                    <h3 class="text-4xl lg:text-5xl font-black text-slate-900 mb-16">Our Journey.</h3>
-                    <div class="relative">
-                        <div class="relative pl-16 mb-8">
-                            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-brand-electric z-10"></div>
-                            <div class="absolute left-[7px] top-4 w-0.5 bg-gradient-to-b from-brand-electric to-brand-cyan h-full z-0"></div>
-                            <h4 class="text-gradient-vibrant text-2xl font-black mb-2">2025 October</h4>
-                            <div class="glass-card p-6 reveal">Founded in October 2025. First managed office delivered in Bandra Kurla Complex, Mumbai — establishing CorpEasy as a new-generation workspace operator.</div>
-                        </div>
-                        
-                        
-                        <div class="relative pl-16">
-                            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-brand-electric z-10"></div>
-                            <h4 class="text-gradient-vibrant text-2xl font-black mb-2">2026</h4>
-                            <div class="glass-card p-6 reveal delay-300">Rapid expansion across Mumbai. Growing portfolio of Grade A managed workspaces serving startups, SMEs, and enterprise teams across BKC, Lower Parel, Goregaon & Andheri corridors.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    `,
-
-    faq: `
-        <section class="max-w-7xl mx-auto px-6 pt-32 pb-16 reveal relative">
-            <h2 class="text-5xl font-black text-slate-900 mb-16 text-center">Common Questions.</h2>
-            <div class="max-w-3xl mx-auto">
-                <div class="border-b border-white/60">
-                    <div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)">
-                        <span class="text-lg font-bold text-slate-900">What is the difference between coworking and managed offices?</span>
-                        <i class="fas fa-plus text-brand-electric transition-transform duration-300"></i>
-                    </div>
-                    <div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px">
-                        <p class="text-slate-600 pb-6 leading-relaxed">Coworking offers shared desks and communal amenities — ideal for freelancers and small teams. A managed office is a private, custom-branded workspace exclusively for your company — fully built, funded, and operated by CorpEasy. Both options require zero CapEx.</p>
-                    </div>
-                </div>
-                <div class="border-b border-white/60">
-                    <div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)">
-                        <span class="text-lg font-bold text-slate-900">Can we customize the floor plan?</span>
-                        <i class="fas fa-plus text-brand-electric transition-transform duration-300"></i>
-                    </div>
-                    <div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px">
-                        <p class="text-slate-600 pb-6 leading-relaxed">Absolutely. Our design team collaborates with you to create a layout tailored to your workflow — private cabins, collaboration zones, breakout areas, and specialized tech rooms — all finalized before you move in.</p>
-                    </div>
-                </div>
-                <div class="border-b border-white/60">
-                    <div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)">
-                        <span class="text-lg font-bold text-slate-900">Is the price inclusive of electricity and security?</span>
-                        <i class="fas fa-plus text-brand-electric transition-transform duration-300"></i>
-                    </div>
-                    <div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px">
-                        <p class="text-slate-600 pb-6 leading-relaxed">Yes. Your single monthly payment covers high-speed redundant internet, 24/7 security, daily housekeeping, property tax, and utility bills. One invoice. No hidden costs.</p>
-                    </div>
-                </div>
-                <div class="border-b border-white/60">
-                    <div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)">
-                        <span class="text-lg font-bold text-slate-900">Do we need to sign a long term lease?</span>
-                        <i class="fas fa-plus text-brand-electric transition-transform duration-300"></i>
-                    </div>
-                    <div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px">
-                        <p class="text-slate-600 pb-6 leading-relaxed">We offer flexible agreements starting from 12 months. Standard enterprise terms range from 3–5 years, designed around your business planning cycle. No rigid lock-ins — just terms that match your growth stage.</p>
-                    </div>
-                </div>
-                <div class="border-b border-white/60">
-                    <div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)">
-                        <span class="text-lg font-bold text-slate-900">Which Mumbai areas do you operate in?</span>
-                        <i class="fas fa-plus text-brand-electric transition-transform duration-300"></i>
-                    </div>
-                    <div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px">
-                        <p class="text-slate-600 pb-6 leading-relaxed">We currently operate in BKC, Lower Parel, Goregaon East, and Andheri East. We are actively sourcing assets in Powai and Navi Mumbai for H2 2026 availability.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    `,
-
-    contact: `
-        <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-20 items-start reveal relative">
-            <div class="lg:col-span-5 relative z-10">
-                <div class="inline-flex items-center space-x-2 mb-10 bg-brand-rose/10 border border-brand-rose/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-                    <span class="w-2 h-2 rounded-full bg-brand-rose animate-pulse"></span>
-                    <span class="text-[10px] font-black text-brand-rose uppercase tracking-[0.4em]">Available Now</span>
-                </div>
-                <h1 class="text-6xl text-slate-900 font-black mb-10 leading-tight">Let's <br><span class="text-gradient-vibrant">Talk.</span></h1>
-                <p class="text-xl text-slate-600 leading-relaxed mb-16 max-w-sm">Connect directly with our workspace strategy team. Whether you need a 10-seat coworking setup or a 1,000-seat managed HQ in Mumbai — we’ll build a plan around your exact requirements.</p>
-                
-                <div class="space-y-10">
-                    <div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max">
-                        <div class="w-16 h-16 bg-white/70 border border-white/80 rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-terminal text-xl"></i></div>
-                        <div><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Email Us</p><a href="mailto:devdoshi@corpeasy.in" class="text-xl font-bold text-slate-900 tracking-wide hover:text-brand-electric transition-colors">devdoshi@corpeasy.in</a></div>
-                    </div>
-                    <div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max mt-4">
-                        <div class="w-16 h-16 bg-white/70 border border-white/80 rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-xl"></i></div>
-                        <div><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Alternate Email</p><a href="mailto:jaynishar@corpeasy.in" class="text-xl font-bold text-slate-900 tracking-wide hover:text-brand-electric transition-colors">jaynishar@corpeasy.in</a></div>
-                    </div>
-                    <div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max mt-4">
-                        <div class="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-2xl flex items-center justify-center text-green-500 shadow-[0_0_15px_rgba(34,197,94,0.1)] group-hover:bg-green-500 group-hover:text-white transition-all duration-500">
-                          <i class="fab fa-whatsapp text-2xl"></i>
-                        </div>
-                        <div>
-                          <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">WhatsApp</p>
-                          <a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20would%20like%20a%20consultation." target="_blank" class="text-xl font-bold text-slate-900 tracking-wide hover:text-green-500 transition-colors">Chat With Us</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Office Address -->
-                    <div class="glass-card p-6 border border-white/60 mt-8">
-                        <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-3">Our Office</p>
-                        <p class="text-sm text-slate-700 leading-relaxed">Office No. 30, 2nd Floor, Gopal Bhavan,<br>Shamaldas Gandhi Marg, Marine Lines East,<br>Mumbai, Maharashtra 400002</p>
-                    </div>
-                </div>
-            </div>
-            <div class="lg:col-span-7 glass-card p-12 lg:p-16 border-t-[10px] border-t-brand-electric reveal delay-2 relative z-10 shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
-                <form onsubmit="handleLead(event)" class="space-y-6">
-                    <div class="flex items-center gap-4 mb-10 pb-6 border-b border-white/80">
-                        <i class="fas fa-shield-check text-brand-electric text-2xl"></i>
-                        <h3 class="text-2xl font-black text-slate-900 tracking-tight">Get in Touch</h3>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>
-                        <input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <input type="email" name="email" placeholder="Work Email Address" class="input-premium" required>
-                        <input type="tel" name="phone" placeholder="Phone Number (with country code)" class="input-premium" required>
-                    </div>
-                    <select name="requirement" class="input-premium" required>
-                        <option value="">I am looking for...</option>
-                        <option>Managed Office (50-200 seats)</option>
-                        <option>Managed Office (200-1000 seats)</option>
-                        <option>Custom Enterprise HQ (1000+ seats)</option>
-                        <option>Find a property for lease</option>
-                        <option>Lease my property</option>
-                    </select>
-                    <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-                    <button type="submit" class="w-full bg-brand-electric text-white py-6 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-[1.02] mt-6">Schedule a Free Consultation</button>
-                </form>
-            </div>
-        </section>
-    `
+home: `
+<div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+<div class="orb-drift absolute w-[600px] h-[600px] rounded-full bg-brand-electric/6 blur-[120px] -top-32 -left-32" style="animation-duration:22s"></div>
+<div class="orb-drift absolute w-[500px] h-[500px] rounded-full bg-brand-cyan/6 blur-[100px] bottom-0 right-0" style="animation-duration:28s; animation-delay: -8s"></div>
+<div class="orb-drift absolute w-[400px] h-[400px] rounded-full bg-brand-violet/5 blur-[80px] top-1/2 left-1/2 -translate-x-1/2" style="animation-duration:18s; animation-delay: -4s"></div>
+</div>
+<section class="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+<div class="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-12 lg:gap-16 items-center">
+<div class="reveal order-2 lg:order-1">
+<div class="glow-blob w-96 h-96 bg-brand-electric -top-20 -left-20 opacity-20"></div>
+<div class="flex items-center space-x-3 mb-8 bg-white/70 border border-white/80 w-max px-4 py-2 rounded-full backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse shadow-[0_0_10px_rgba(0,240,255,1)]"></span>
+<span class="text-[10px] font-black uppercase tracking-[0.3em] text-brand-electric">Workspace Solutions · Mumbai</span>
+</div>
+<h1 class="text-5xl lg:text-7xl text-slate-900 mb-6 leading-tight">Your Next<br><span id="hero-word" class="text-gradient-vibrant inline-block transition-all duration-500">Office.</span><br>Sorted.</h1>
+<p class="text-lg text-slate-600 font-medium max-w-lg mb-8 leading-relaxed">Finding the right <strong>office space in Mumbai</strong> takes months — brokers, landlords, contractors, and endless back-and-forth. CorpEasy handles all of it. We find a suitable commercial property, sort the basic setup, and hand you a clear per-seat monthly cost on a fixed lease. You show up and work.</p>
+<div class="flex flex-col sm:flex-row gap-4 mb-6">
+<button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Get a Free Consultation</button>
+<a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20looking%20for%20office%20space%20in%20Mumbai." target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-all flex items-center justify-center gap-2">
+<i class="fab fa-whatsapp text-lg"></i> WhatsApp Us
+</a>
+</div>
+<button onclick="navigateTo('managed')" class="text-slate-600 text-xs font-bold uppercase tracking-widest flex items-center gap-2 hover:text-brand-electric transition-colors">
+See how it works <i class="fas fa-arrow-right text-brand-electric"></i>
+</button>
+</div>
+<div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
+<div class="glass-card p-8 border-t-4 border-t-brand-electric shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+<h3 class="text-xl font-black text-slate-900 mb-2 flex items-center gap-3">
+<i class="fas fa-bolt text-brand-electric"></i>
+Tell Us What You Need
+</h3>
+<p class="text-sm text-slate-600 mb-6">Share your requirement. We will come back within 24 hours with a clear proposal — no obligation.</p>
+<form onsubmit="handleLead(event)" class="space-y-4">
+<input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
+<input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
+<input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
+</div>
+<select name="requirement" class="input-premium">
+<option value="">I am looking for...</option>
+<option>A managed office space (up to 50 seats)</option>
+<option>A managed office space (50–200 seats)</option>
+<option>A managed office space (200+ seats)</option>
+<option>Help finding a commercial office for rent</option>
+<option>A tenant for my commercial property</option>
+<option>General information</option>
+</select>
+<input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
+<button type="submit" class="w-full bg-brand-electric text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all">Send My Requirement →</button>
+</form>
+<p class="text-xs text-slate-500 text-center mt-3 flex items-center justify-center gap-2">
+<i class="fas fa-lock text-brand-electric text-xs"></i>
+Your details are safe with us. No spam, ever.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 px-6">
+<div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[600px] reveal group">
+<img src="modern_office.png" alt="Managed office space in Mumbai" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+<div class="absolute bottom-10 left-10 lg:bottom-16 lg:left-16 right-10">
+<h3 class="text-3xl lg:text-5xl font-black text-white mb-4 drop-shadow-lg tracking-tight">A Good Workspace Changes Everything.</h3>
+<p class="text-white/90 text-lg lg:text-xl max-w-2xl drop-shadow">We help companies across Mumbai find and occupy the right commercial office space — without the usual months of searching.</p>
+</div>
+</div>
+</section>
+<section class="py-24 relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-card p-10 reveal">
+<div class="w-14 h-14 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-8 text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.2)]"><i class="fas fa-search-location text-2xl"></i></div>
+<h4 class="text-xl font-bold mb-4 text-slate-900">We Find the Right Space.</h4>
+<p class="text-slate-600 leading-relaxed">Tell us your team size, preferred Mumbai location, and budget. We identify a suitable commercial property, negotiate the lease, and handle the process — so you do not deal with brokers or landlords yourself.</p>
+</div>
+<div class="glass-card p-10 reveal delay-100">
+<div class="w-14 h-14 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-8 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-tools text-2xl"></i></div>
+<h4 class="text-xl font-bold mb-4 text-slate-900">We Set It Up. You Move In.</h4>
+<p class="text-slate-600 leading-relaxed">Once the space is confirmed, we handle the basic workspace setup — functional furniture, internet, and a clean professional environment. Your team walks in on Day 1 without coordinating a single vendor.</p>
+</div>
+<div class="glass-card p-10 reveal delay-200">
+<div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-8 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-receipt text-2xl"></i></div>
+<h4 class="text-xl font-bold mb-4 text-slate-900">One Clear Cost. Fixed Lease.</h4>
+<p class="text-slate-600 leading-relaxed">We calculate your all-in per-seat monthly cost based on the actual property and setup. You commit to a fixed lease period and know exactly what you pay every month — no hidden charges, no surprises.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 bg-white/70 border-y border-white/60 overflow-hidden backdrop-blur-sm">
+<div class="ticker-track">
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-building"></i> Managed Office Space Mumbai</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-search-location"></i> Office Space for Rent BKC</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-ruler-combined"></i> Commercial Office for Lease Mumbai</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-key"></i> Office Space Lower Parel</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-indian-rupee-sign"></i> Clear Per-Seat Monthly Cost</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-handshake"></i> Office Space Goregaon</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-map-marker-alt"></i> Office Space Andheri East</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-shield-check"></i> One Point of Contact</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-building"></i> Managed Office Space Mumbai</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-search-location"></i> Office Space for Rent BKC</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-ruler-combined"></i> Commercial Office for Lease Mumbai</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-key"></i> Office Space Lower Parel</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-indian-rupee-sign"></i> Clear Per-Seat Monthly Cost</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-handshake"></i> Office Space Goregaon</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-map-marker-alt"></i> Office Space Andheri East</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-shield-check"></i> One Point of Contact</span>
+</div>
+</section>
+<section class="py-24 relative bg-white/40">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter text-center mb-6">Here Is How It Works.</h2>
+<p class="text-xl text-slate-500 text-center mb-20">Three steps. One point of contact. A workspace ready when you are.</p>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="glass-card p-10 reveal relative overflow-hidden">
+<span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">01</span>
+<div class="w-16 h-16 bg-brand-electric/10 border border-brand-electric/30 rounded-2xl flex items-center justify-center mb-6 text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.2)]"><i class="fas fa-clipboard-list text-2xl"></i></div>
+<p class="text-[10px] font-black uppercase tracking-widest text-brand-electric mb-4">Step 01 — You Share Your Requirement</p>
+<h4 class="text-2xl font-bold text-slate-900 mb-4">Tell Us What You Need</h4>
+<p class="text-slate-600 leading-relaxed relative z-10">Share your team size, preferred Mumbai location, and budget. We listen, ask the right questions, and get to work identifying suitable commercial spaces available in your price range.</p>
+</div>
+<div class="glass-card p-10 reveal delay-100 relative overflow-hidden">
+<span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">02</span>
+<div class="w-16 h-16 bg-brand-cyan/10 border border-brand-cyan/30 rounded-2xl flex items-center justify-center mb-6 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-drafting-compass text-2xl"></i></div>
+<p class="text-[10px] font-black uppercase tracking-widest text-brand-electric mb-4">Step 02 — We Source, Negotiate, Set Up</p>
+<h4 class="text-2xl font-bold text-slate-900 mb-4">We Handle the Hard Part</h4>
+<p class="text-slate-600 leading-relaxed relative z-10">We identify a suitable commercial property in your preferred location, negotiate the lease directly with the landlord, and manage the basic workspace setup — furniture, internet, and the essentials to make the space ready.</p>
+</div>
+<div class="glass-card p-10 reveal delay-200 relative overflow-hidden">
+<span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">03</span>
+<div class="w-16 h-16 bg-brand-violet/10 border border-brand-violet/30 rounded-2xl flex items-center justify-center mb-6 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-key text-2xl"></i></div>
+<p class="text-[10px] font-black uppercase tracking-widest text-brand-electric mb-4">Step 03 — You Move In</p>
+<h4 class="text-2xl font-bold text-slate-900 mb-4">A Clear Cost. A Fixed Lease.</h4>
+<p class="text-slate-600 leading-relaxed relative z-10">We present your all-in per-seat monthly cost based on the actual space and setup — before you commit to anything. You agree to a fixed lease period and move in. We remain your point of contact throughout.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 relative">
+<div class="max-w-4xl mx-auto px-6">
+<div class="text-center mb-16 reveal">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<span class="text-[10px] font-black uppercase tracking-widest text-brand-gold">Client Testimonial</span>
+</div>
+<h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">Trusted by Industry Leaders.</h2>
+</div>
+<div class="reveal">
+<div class="relative bg-gradient-to-br from-white/80 via-white/60 to-brand-electric/5 backdrop-blur-xl rounded-[3rem] border border-white/60 shadow-[0_30px_80px_rgba(99,102,241,0.08)] p-10 lg:p-16 overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-brand-electric/5 rounded-full blur-[60px] translate-y-1/2 -translate-x-1/2"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-6 mb-10">
+<div class="w-20 h-20 bg-gradient-to-br from-brand-electric to-brand-violet rounded-2xl flex items-center justify-center text-white text-3xl shadow-[0_10px_30px_rgba(99,102,241,0.3)]">
+<i class="fas fa-quote-left"></i>
+</div>
+<div>
+<div class="flex text-brand-gold space-x-1 mb-2"><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i></div>
+<p class="text-[10px] font-black uppercase tracking-widest text-slate-500">Verified Client Testimonial</p>
+</div>
+</div>
+<blockquote class="text-lg lg:text-xl text-slate-700 leading-relaxed mb-10 space-y-4">
+<p>"This is to certify that Jaydev Enterprise (Brand Name: CorpEasy) has been associated with First Abu Dhabi Bank for providing facility management support services.</p>
+<p>During the course of our engagement, their team has demonstrated professionalism, reliability, and a strong commitment to delivering quality services. They have consistently been responsive, well-coordinated, and have maintained strong operational standards in all tasks assigned to them.</p>
+<p>We vouch for their capabilities and are confident in their ability to successfully complete any task entrusted to them. They are known for adhering strictly to commitments, timelines, and deliverables, and have never under-delivered on expectations.</p>
+<p>Additionally, they provide cost-effective solutions without compromising on quality, ensuring value-driven service at all times.</p>
+<p>We appreciate their proactive approach and their ability to understand and execute requirements efficiently."</p>
+</blockquote>
+<div class="flex flex-col sm:flex-row sm:items-center gap-6 pt-8 border-t border-slate-200/60">
+<div class="w-16 h-16 bg-gradient-to-br from-brand-gold/20 to-brand-gold/5 rounded-2xl flex items-center justify-center text-brand-gold border border-brand-gold/20">
+<i class="fas fa-user-tie text-2xl"></i>
+</div>
+<div>
+<p class="text-xl font-black text-slate-900">Bhupinder Gujral</p>
+<p class="text-sm font-bold text-brand-electric">Administration Head</p>
+<p class="text-xs font-bold text-slate-500 uppercase tracking-widest mt-1">First Abu Dhabi Bank</p>
+</div>
+<div class="sm:ml-auto flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 px-4 py-2 rounded-full">
+<i class="fas fa-shield-check text-sm"></i>
+<span class="text-[10px] font-black uppercase tracking-widest">Verified</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 relative bg-white/40">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16 reveal text-center lg:text-left">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<span class="text-[10px] font-black uppercase tracking-widest text-brand-cyan">Mumbai Locations</span>
+</div>
+<h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">We Work Across Mumbai.</h2>
+<p class="text-xl text-slate-500">We source <strong>commercial office space</strong> across Mumbai's most active business corridors.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
+<div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer" onclick="navigateTo('contact')">
+<div class="inline-block px-3 py-1 bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Premium Hub</div>
+<div class="w-16 h-16 bg-brand-gold/10 border border-brand-gold/30 rounded-2xl flex items-center justify-center mb-6 text-brand-gold shadow-[0_0_15px_rgba(251,191,36,0.2)]"><i class="fas fa-star text-2xl"></i></div>
+<h4 class="text-2xl font-bold text-slate-900 mb-3">BKC, Mumbai</h4>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">Mumbai's most recognised commercial address. We source <strong>managed office space in BKC</strong> for companies that need a credible address in India's financial district.</p>
+<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹450–₹750/sqft</p></div>
+</div>
+<div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer delay-100" onclick="navigateTo('contact')">
+<div class="inline-block px-3 py-1 bg-brand-electric/10 border border-brand-electric/30 text-brand-electric text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Well Connected</div>
+<div class="w-16 h-16 bg-brand-electric/10 border border-brand-electric/30 rounded-2xl flex items-center justify-center mb-6 text-brand-electric shadow-[0_0_15px_rgba(99,102,241,0.2)]"><i class="fas fa-building-columns text-2xl"></i></div>
+<h4 class="text-2xl font-bold text-slate-900 mb-3">Lower Parel & Worli</h4>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">A well-connected commercial corridor with Grade A buildings and strong transport links. Popular with companies looking for <strong>office space for rent in Lower Parel</strong>.</p>
+<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹250–₹450/sqft</p></div>
+</div>
+<div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer delay-200" onclick="navigateTo('contact')">
+<div class="inline-block px-3 py-1 bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Good Value</div>
+<div class="w-16 h-16 bg-brand-cyan/10 border border-brand-cyan/30 rounded-2xl flex items-center justify-center mb-6 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-chart-line text-2xl"></i></div>
+<h4 class="text-2xl font-bold text-slate-900 mb-3">Goregaon & Nirlon</h4>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">One of Mumbai's most active commercial zones, particularly for tech and mid-size companies. Strong availability of <strong>commercial office space in Goregaon</strong> at practical costs.</p>
+<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹150–₹300/sqft</p></div>
+</div>
+<div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer delay-300" onclick="navigateTo('contact')">
+<div class="inline-block px-3 py-1 bg-brand-violet/10 border border-brand-violet/30 text-brand-violet text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Airport Corridor</div>
+<div class="w-16 h-16 bg-brand-violet/10 border border-brand-violet/30 rounded-2xl flex items-center justify-center mb-6 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-plane-departure text-2xl"></i></div>
+<h4 class="text-2xl font-bold text-slate-900 mb-3">Andheri East & SEEPZ</h4>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">Well-connected to the airport and the western suburbs. A practical choice for teams looking for <strong>office space for rent in Andheri</strong> with solid metro and road access.</p>
+<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹150–₹400/sqft</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 relative bg-white/20">
+<div class="max-w-5xl mx-auto px-6">
+<div class="text-center mb-16 reveal">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Indicative Pricing</span>
+</div>
+<h2 class="text-5xl font-black text-slate-900 mb-4">What Does It Cost?</h2>
+<p class="text-xl text-slate-500 max-w-2xl mx-auto">Indicative all-in per-seat monthly costs, including rent, basic setup, and our service fee. Exact costs depend on your specific property and requirement.</p>
+</div>
+<div class="glass-card overflow-hidden reveal">
+<div class="overflow-x-auto">
+<table class="w-full text-sm border-collapse whitespace-nowrap min-w-[600px]">
+<thead><tr>
+<th class="py-5 px-8 text-left text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60">Location</th>
+<th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60">Raw Rent (per sqft/month)</th>
+<th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-brand-electric bg-brand-electric/5 border-b border-brand-electric/20">All-In Per Seat / Month (est.)</th>
+</tr></thead>
+<tbody>
+<tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">BKC</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">₹450–₹750 (avg ₹542)</td><td class="py-5 px-8 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">₹35,000–₹40,000</td></tr>
+<tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Worli & Lower Parel</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">₹250–₹450 (avg ₹320)</td><td class="py-5 px-8 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">₹30,000–₹40,000</td></tr>
+<tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Goregaon</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">₹150–₹300 (avg ₹228)</td><td class="py-5 px-8 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">₹12,000–₹18,000</td></tr>
+<tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Andheri East</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">₹150–₹400 (avg ₹253)</td><td class="py-5 px-8 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">₹16,000–₹20,000</td></tr>
+<tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Powai & Chandivali</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">₹115–₹310 (avg ₹179)</td><td class="py-5 px-8 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">₹10,000–₹15,000</td></tr>
+<tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold">Navi Mumbai</td><td class="py-5 px-8 text-slate-500 text-center">₹100–₹160 (avg ₹110)</td><td class="py-5 px-8 font-bold text-center bg-brand-electric/5">₹12,000–₹16,000</td></tr>
+</tbody>
+</table>
+</div>
+<p class="text-xs text-slate-500 px-8 py-4 border-t border-white/60">Estimates only. Actual costs depend on property, team size, lease term, and fit-out scope. CorpEasy shares your exact cost before you commit to anything.</p>
+</div>
+</div>
+</section>
+<section class="py-32 relative overflow-hidden bg-white/20">
+<div class="glow-blob w-[600px] h-[600px] bg-brand-cyan opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+<div class="max-w-7xl mx-auto px-6 text-center">
+<div class="mb-20 reveal">
+<h2 class="text-6xl text-slate-900 mb-8 font-black leading-tight">Why Companies Come to Us.</h2>
+<p class="text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">Sorting out a commercial office in Mumbai involves more parties and more time than most companies expect. Here is where CorpEasy makes the biggest difference.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal delay-100">
+<div class="glass-card p-12 group hover:border-brand-electric/50 transition-all text-left">
+<div class="w-16 h-16 bg-brand-electric/10 rounded-2xl flex items-center justify-center mb-8 text-brand-electric group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-map-marked-alt text-2xl"></i></div>
+<h4 class="text-2xl font-black mb-4 text-slate-900">We Know the Mumbai Market</h4>
+<p class="text-slate-600 leading-relaxed font-medium">Finding the right <strong>commercial office space in Mumbai</strong> takes local knowledge. We work across BKC, Lower Parel, Goregaon, Andheri, and Powai — and we know which properties are worth your time at your budget.</p>
+</div>
+<div class="glass-card p-12 group hover:border-brand-cyan/50 transition-all text-left">
+<div class="w-16 h-16 bg-brand-cyan/10 rounded-2xl flex items-center justify-center mb-8 text-brand-cyan group-hover:bg-brand-cyan group-hover:text-white transition-all duration-500"><i class="fas fa-user-tie text-2xl"></i></div>
+<h4 class="text-2xl font-black mb-4 text-slate-900">One Point of Contact</h4>
+<p class="text-slate-600 leading-relaxed font-medium">Instead of coordinating with a broker, a landlord, a furniture vendor, and an IT company separately — you deal with CorpEasy. We bring together what is needed so the space is ready for your team.</p>
+</div>
+<div class="glass-card p-12 group hover:border-brand-violet/50 transition-all text-left">
+<div class="w-16 h-16 bg-brand-violet/10 rounded-2xl flex items-center justify-center mb-8 text-brand-violet group-hover:bg-brand-violet group-hover:text-white transition-all duration-500"><i class="fas fa-file-invoice-dollar text-2xl"></i></div>
+<h4 class="text-2xl font-black mb-4 text-slate-900">Clear, Predictable Costs</h4>
+<p class="text-slate-600 leading-relaxed font-medium">We share the per-seat monthly cost based on the actual property and setup — before you commit to anything. No surprises and no ambiguous pricing. You know what you pay on a fixed lease from Day 1.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 relative bg-white/40">
+<div class="max-w-5xl mx-auto px-6">
+<div class="text-center mb-16 reveal">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Sorting It Yourself vs. Working With CorpEasy</span>
+</div>
+<h2 class="text-4xl font-black text-slate-900 mb-4">A Straightforward Comparison.</h2>
+<p class="text-xl text-slate-500">The main practical differences between sorting your own office and using CorpEasy.</p>
+</div>
+<div class="glass-card overflow-hidden reveal">
+<div class="overflow-x-auto">
+<table class="w-full text-sm border-collapse whitespace-nowrap min-w-[600px]">
+<thead><tr>
+<th class="py-5 px-8 text-left text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60 w-1/3">What Needs Doing</th>
+<th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60">Sorting It Yourself</th>
+<th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-brand-electric bg-brand-electric/5 border-b border-brand-electric/20"><span class="block">With CorpEasy</span><span class="text-[9px] bg-brand-electric text-white px-2 py-0.5 rounded-full mt-1 inline-block">Simpler</span></th>
+</tr></thead>
+<tbody>
+<tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Dealing with the landlord</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">You do it directly</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ We handle it</td></tr>
+<tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Coordinating workspace setup</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">You manage the vendors</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ We take care of it</td></tr>
+<tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Time from decision to move-in</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Several months, typically</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ A few weeks, typically</td></tr>
+<tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Cost clarity before signing</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Hard to pin down upfront</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Clear per-seat cost shown first</td></tr>
+<tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Number of vendors to manage</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Multiple, separately</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Just us</td></tr>
+<tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Commitment structure</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Open-ended or complex</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Fixed lease, clear terms</td></tr>
+<tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold">Property sourcing expertise</td><td class="py-5 px-8 text-slate-500 text-center">Limited to your own network</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5">✅ Our core strength</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+`,
+blog: `
+<section class="max-w-7xl mx-auto px-6 py-24 reveal">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
+<div class="max-w-2xl">
+<div class="inline-flex items-center space-x-2 mb-8 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse"></span>
+<span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Useful Reading</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-extrabold text-slate-900 leading-none">The <span class="text-gradient-vibrant">Insights</span> Hub.</h1>
+<p class="text-xl text-slate-600 mt-8 leading-relaxed">Practical articles on office space in Mumbai, commercial real estate, and workspace decisions — written plainly for business owners and operations teams.</p>
+</div>
+</div>
+<div class="group cursor-pointer mb-24 reveal delay-100" onclick="viewPost('mumbai-workspace-guide')">
+<div class="glass-card p-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="rounded-[2rem] overflow-hidden h-[450px]">
+<img loading="lazy" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200" alt="How to Find Office Space in Mumbai 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90">
+</div>
+<div class="p-6 lg:p-10">
+<div class="flex items-center gap-4 mb-6">
+<span class="px-4 py-1.5 bg-brand-electric text-white text-[10px] font-black rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(99,102,241,0.4)]">Featured Guide</span>
+<span class="text-xs text-slate-600 font-bold flex items-center"><i class="far fa-clock mr-2"></i> 6 Min Read</span>
+</div>
+<h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-tight group-hover:text-brand-electric transition-colors">How to Find the Right Office Space in Mumbai: A Practical Guide for 2026.</h2>
+<p class="text-lg text-slate-600 mb-10 leading-relaxed">A plain-language walkthrough of the process — micro-market differences, what things actually cost, and why more companies are choosing the managed route.</p>
+<a class="text-sm font-black uppercase tracking-widest text-brand-electric flex items-center gap-4 group-hover:gap-6 transition-all">Read the Guide <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="blog-card group cursor-pointer reveal" onclick="viewPost('managed-office-explainer')">
+<div class="h-56 overflow-hidden rounded-t-[2rem]"><img loading="lazy" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800" alt="What is a managed office space Mumbai" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100"></div>
+<div class="p-8">
+<p class="text-[10px] font-bold text-brand-violet uppercase tracking-widest mb-4">Explainer</p>
+<h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">What Is a Managed Office Space — And Is It Right for Your Business?</h4>
+<p class="text-sm text-slate-600 mb-8 leading-relaxed">A clear explanation of how the managed office model works, including how CorpEasy's asset-light approach differs from what most people expect.</p>
+<span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
+</div>
+</div>
+<div class="blog-card group cursor-pointer reveal delay-100" onclick="viewPost('bkc-vs-goregaon')">
+<div class="h-56 overflow-hidden rounded-t-[2rem]"><img loading="lazy" src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=800" alt="BKC vs Goregaon office space Mumbai" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100"></div>
+<div class="p-8">
+<p class="text-[10px] font-bold text-brand-cyan uppercase tracking-widest mb-4">Market Trends</p>
+<h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">BKC or Goregaon? Choosing the Right Mumbai Location for Your Office.</h4>
+<p class="text-sm text-slate-600 mb-8 leading-relaxed">A practical look at the differences between Mumbai's two most popular commercial corridors, and how to decide which makes more sense for your business.</p>
+<span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
+</div>
+</div>
+<div class="blog-card group cursor-pointer reveal delay-200" onclick="viewPost('gst-office-rental')">
+<div class="h-56 overflow-hidden rounded-t-[2rem]"><img loading="lazy" src="https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=800" alt="GST on office rentals Mumbai" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100"></div>
+<div class="p-8">
+<p class="text-[10px] font-bold text-brand-rose uppercase tracking-widest mb-4">Finance & Compliance</p>
+<h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">GST on Commercial Office Rentals in Mumbai: What You Need to Know.</h4>
+<p class="text-sm text-slate-600 mb-8 leading-relaxed">A plain explanation of how GST applies to commercial office leases in Mumbai — and what it means in practice for your monthly cost.</p>
+<span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
+</div>
+</div>
+</div>
+</section>
+`,
+managed: `
+<section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-16 items-start min-h-[calc(100vh-96px)]">
+<div class="order-2 lg:order-1 flex flex-col justify-center">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 backdrop-blur-md w-max">
+<span class="text-[10px] font-black uppercase tracking-widest text-brand-cyan">Managed Office Space · Mumbai</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter mb-6">Your Office,<br><span class="text-gradient-vibrant">Found and Ready.</span></h1>
+<div class="space-y-3 mb-4">
+<p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> We find the right commercial space for your team in Mumbai.</p>
+<p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> We handle the workspace setup — you coordinate zero contractors.</p>
+<p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> One clear per-seat cost. A fixed lease. No hidden charges.</p>
+</div>
+<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for <strong>managed office space in Mumbai</strong> without months of searching, negotiating, and setting up? We handle the entire process — from identifying the right commercial property to handing you a workspace that is ready when your team is.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">No Landlord Hassle</h4><p class="text-xs text-slate-600 mt-1">We negotiate with the landlord directly. You have one clean agreement — with us.</p></div>
+<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Setup Included</h4><p class="text-xs text-slate-600 mt-1">Basic furniture, internet, and workspace essentials sorted before you move in.</p></div>
+<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Fixed Monthly Cost</h4><p class="text-xs text-slate-600 mt-1">A clear per-seat fee for a fixed lease period. No surprises month to month.</p></div>
+</div>
+</div>
+<div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
+<div class="glass-card p-8 border-t-4 border-t-brand-electric shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+<h3 class="text-xl font-black text-slate-900 mb-6 flex items-center gap-3"><i class="fas fa-building text-brand-electric"></i> Tell Us Your Office Requirement</h3>
+<form onsubmit="handleLead(event)" class="space-y-4">
+<input type="text" name="full_name" placeholder="Full Name" class="input-premium" required>
+<input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
+<input type="email" name="email" placeholder="Work Email" class="input-premium" required>
+<input type="tel" name="phone" placeholder="Phone Number" class="input-premium" required>
+<input type="text" name="requirement" placeholder="Team size and preferred location (e.g. 30 seats, BKC)" class="input-premium">
+<input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
+<button type="submit" class="w-full bg-brand-electric text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all">Send My Requirement →</button>
+</form>
+<p class="text-xs text-slate-500 text-center mt-3 flex items-center justify-center gap-2"><i class="fas fa-lock text-brand-electric text-xs"></i> Your details are safe with us. No spam, ever.</p>
+</div>
+</div>
+</section>
+<section class="py-12 px-6">
+<div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[550px] reveal group border border-white/60">
+<img src="managed_workspace.png" alt="Managed office space Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
+<div class="absolute inset-0 bg-gradient-to-tr from-brand-electric/40 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+<span class="text-xs font-black uppercase tracking-widest text-slate-900">Managed and Ready</span>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white/40">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center">
+<h2 class="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter mb-6">What CorpEasy Takes Off Your Plate.</h2>
+<p class="text-xl text-slate-500 mb-16 max-w-3xl mx-auto">Setting up an office in Mumbai involves more moving parts than most companies expect. Here is what we handle from start to finish.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 reveal">
+<div class="glass-card p-10">
+<div class="w-16 h-16 bg-brand-blue/30 border border-brand-electric/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-electric shadow-[0_0_20px_rgba(0,240,255,0.2)]"><i class="fas fa-search-location"></i></div>
+<h4 class="text-2xl font-bold mb-4 text-slate-900">Property Search and Negotiation</h4>
+<p class="text-slate-600 leading-relaxed">We identify suitable commercial properties across Mumbai based on your requirement, approach landlords, and negotiate the lease on your behalf. You do not spend weeks talking to brokers or comparing listings.</p>
+</div>
+<div class="glass-card p-10">
+<div class="w-16 h-16 bg-brand-cyan/20 border border-brand-cyan/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-cyan shadow-[0_0_20px_rgba(6,182,212,0.2)]"><i class="fas fa-tools"></i></div>
+<h4 class="text-2xl font-bold mb-4 text-slate-900">Workspace Setup and Readiness</h4>
+<p class="text-slate-600 leading-relaxed">Once the space is secured, we manage the basic setup — furniture, internet connection, and a clean functional working environment. The space is ready for your team before they arrive on Day 1.</p>
+</div>
+<div class="glass-card p-10">
+<div class="w-16 h-16 bg-brand-violet/20 border border-brand-violet/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-violet shadow-[0_0_20px_rgba(139,92,246,0.2)]"><i class="fas fa-headset"></i></div>
+<h4 class="text-2xl font-bold mb-4 text-slate-900">Your Ongoing Point of Contact</h4>
+<p class="text-slate-600 leading-relaxed">After you move in, we remain available for any issues related to the space or the lease. You have a single point of contact rather than chasing multiple vendors whenever something needs attention.</p>
+</div>
+</div>
+</div>
+</section>
+`,
+find: `
+<section class="py-16 lg:py-24 relative reveal">
+<div class="glow-blob w-[600px] h-[600px] bg-brand-cyan opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+<div class="max-w-2xl mx-auto px-6 mb-16 relative z-10">
+<div class="glass-card p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+<h3 class="text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Tell Us What You Are Looking For</h3>
+<p class="text-sm text-slate-600 mb-6">Share your location preference, team size, and budget. We will come back with suitable options within 24 to 48 hours.</p>
+<form onsubmit="handleLead(event)" class="space-y-4">
+<input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
+<input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
+<input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
+</div>
+<input type="text" name="requirement" placeholder="Your requirement (e.g. BKC, 30 seats, ₹18,000/seat)" class="input-premium">
+<input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
+<button type="submit" class="w-full bg-brand-cyan text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all">Share My Requirement →</button>
+</form>
+</div>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10 p-12 bg-white/40 backdrop-blur-md rounded-[3rem] border border-white/60 mb-16">
+<h1 class="text-5xl lg:text-7xl font-black text-slate-900 mb-8">Find <span class="text-gradient">Office Space</span> in Mumbai.</h1>
+<p class="text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">Looking for <strong>commercial office space for rent in Mumbai</strong>? Tell us your team size, location preference, and budget. We identify the most suitable properties, handle the conversations with landlords, and help you move into the right space — without the usual months of back and forth.</p>
+</div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+<div class="glass-card p-8 reveal">
+<div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-6 text-brand-cyan"><i class="fas fa-map-marked-alt text-xl"></i></div>
+<h4 class="text-xl font-bold text-slate-900 mb-3">We Know What Is Available</h4>
+<p class="text-slate-600 leading-relaxed text-sm">We actively track commercial properties across BKC, Lower Parel, Goregaon, Andheri, and Powai. When you share your requirement, we give you a realistic view of what is out there at your budget — quickly.</p>
+</div>
+<div class="glass-card p-8 reveal delay-100">
+<div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-6 text-brand-electric"><i class="fas fa-handshake text-xl"></i></div>
+<h4 class="text-xl font-bold text-slate-900 mb-3">We Handle the Landlord Conversations</h4>
+<p class="text-slate-600 leading-relaxed text-sm">Once we identify a space that fits, we approach the landlord and manage the negotiation. You do not have to make speculative calls or deal with agents who do not know your requirement.</p>
+</div>
+<div class="glass-card p-8 reveal delay-200">
+<div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-6 text-brand-violet"><i class="fas fa-file-contract text-xl"></i></div>
+<h4 class="text-xl font-bold text-slate-900 mb-3">Clear Terms Before You Commit</h4>
+<p class="text-slate-600 leading-relaxed text-sm">Before you agree to anything, we lay out the cost clearly — rent, deposits, maintenance, and our fee. No ambiguous numbers and no surprises after you have signed.</p>
+</div>
+</div>
+</section>
+`,
+list: `
+<section class="py-16 lg:py-24 relative">
+<div class="glow-blob w-[800px] h-[800px] bg-brand-gold opacity-10 -top-20 -right-20"></div>
+<div class="max-w-2xl mx-auto px-6 mb-16 relative z-10">
+<div class="glass-card p-8 border-t-4 border-t-brand-gold shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+<h3 class="text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-building text-brand-gold"></i> Tell Us About Your Property</h3>
+<p class="text-sm text-slate-600 mb-6">Share your property details and we will get back to you within 24 hours to discuss whether there is a fit with our active client requirements.</p>
+<form onsubmit="handleLead(event)" class="space-y-4">
+<input type="text" name="full_name" placeholder="Your Name *" class="input-premium" required>
+<input type="text" name="company_name" placeholder="Company or Property Owner Name" class="input-premium">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
+<input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
+</div>
+<input type="text" name="property_location" placeholder="Property Address or Area *" class="input-premium" required>
+<input type="number" name="property_area" placeholder="Approximate Area (Sq Ft)" class="input-premium">
+<input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
+<button type="submit" class="w-full bg-brand-gold text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(251,191,36,0.4)] transition-all">Submit Property Details →</button>
+</form>
+</div>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10 p-12 bg-white/40 backdrop-blur-md rounded-[3rem] border border-white/60 mb-20">
+<h1 class="text-5xl lg:text-7xl font-black text-slate-900 mb-8">List Your <span class="text-gradient-gold">Commercial Property.</span></h1>
+<p class="text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">Have a commercial property in Mumbai that is sitting empty or coming up for lease? We work with property owners to find the right tenants — companies actively looking for <strong>office space for rent in Mumbai</strong> — and we manage the process from introduction to agreement.</p>
+</div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+<div class="reveal">
+<h2 class="text-5xl lg:text-6xl font-black mb-8 leading-none tracking-tighter text-slate-900">The Right Tenant<br><span class="text-gradient-gold">For Your Space.</span></h2>
+<p class="text-xl text-slate-600 mb-6 leading-relaxed">We are actively sourcing commercial office spaces across Mumbai for our clients. If you own or manage a commercial property and are looking for a reliable business tenant, we would like to hear from you.</p>
+<p class="text-lg text-slate-600 leading-relaxed">We bring genuine, vetted business tenants to you — companies with a real requirement, a defined budget, and ready to move. This is not a listing portal. We do the matchmaking ourselves.</p>
+</div>
+<div class="glass-card p-10 reveal delay-100 border border-brand-gold/20 shadow-[0_0_40px_rgba(251,191,36,0.1)]">
+<h4 class="text-xl font-black text-slate-900 mb-6 flex items-center gap-3"><i class="fas fa-star text-brand-gold"></i> Why List With CorpEasy?</h4>
+<div class="space-y-4">
+<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We bring genuine, pre-qualified business tenants to you — not browser enquiries.</p>
+<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We manage the sourcing, conversations, and lease negotiations on your behalf.</p>
+<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We aim to place tenants on fixed, medium-term lease agreements.</p>
+<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> No spammy broker networks. Just serious businesses actively looking for space.</p>
+</div>
+</div>
+</div>
+</section>
+`,
+about: `
+<section class="max-w-7xl mx-auto px-6 py-32 text-center reveal min-h-[80vh] flex flex-col justify-center relative">
+<div class="glow-blob w-[600px] h-[600px] bg-brand-blue opacity-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+<div class="relative z-10">
+<span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand-electric mb-6 block text-center">Our Story</span>
+<h1 class="text-6xl lg:text-8xl text-slate-900 font-black mb-12 text-center leading-[0.9]">Making <span class="text-gradient-vibrant">Office Space</span> Simple.</h1>
+<p class="text-xl text-slate-600 text-center max-w-3xl mx-auto leading-relaxed mb-6 font-medium">CorpEasy is a Mumbai-based workspace solutions company, founded in October 2025. We are a young, asset-light startup with a straightforward mission: to make the process of finding, setting up, and occupying commercial office space in Mumbai genuinely easier for businesses of all sizes.</p>
+<p class="text-lg text-slate-500 text-center max-w-2xl mx-auto leading-relaxed mb-20">The process currently involves too many parties, too little transparency, and too much time spent on things that are not your actual work. We are building something better, one client at a time.</p>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+<div class="glass-card p-10 group hover:border-brand-electric/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-electric transition-colors">Mumbai</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Our Focus Market</p></div>
+<div class="glass-card p-10 group hover:border-brand-cyan/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-cyan transition-colors">3</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Services Under One Roof</p></div>
+<div class="glass-card p-10 group hover:border-brand-violet/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-violet transition-colors">24 Hr</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Response to Every Enquiry</p></div>
+<div class="glass-card p-10 group hover:border-brand-rose/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-rose transition-colors">2025</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Founded in Mumbai</p></div>
+</div>
+<div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] lg:h-[500px] mt-24 reveal group">
+<img src="professional_team.png" alt="CorpEasy team Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
+<div class="absolute inset-0 bg-brand-electric/10 mix-blend-multiply"></div>
+</div>
+<div class="mt-32 text-center">
+<h3 class="text-4xl font-black text-slate-900 mb-4">Our Founders</h3>
+<p class="text-slate-500 max-w-2xl mx-auto mb-16 uppercase tracking-[0.2em] font-bold text-xs">Direct accountability. No layers. No friction.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+<div class="glass-card p-10 group bg-white/50 border border-white/60">
+<div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
+<img src="DEV DOSHI.png" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover">
+</div>
+<h4 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h4>
+<p class="text-brand-electric font-black text-[10px] uppercase tracking-widest mb-6">Co-Founder — Business Development & Strategy</p>
+<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client-facing work and strategic direction.</p>
+</div>
+<div class="glass-card p-10 group bg-white/50 border border-white/60">
+<div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
+<img src="JAY NISHAR.png" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover">
+</div>
+<h4 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h4>
+<p class="text-brand-electric font-black text-[10px] uppercase tracking-widest mb-6">Co-Founder — Operations & Growth</p>
+<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Jay manages CorpEasy's operational processes and client delivery. He ensures that every commitment made to a client is followed through reliably and on time.</p>
+</div>
+</div>
+</div>
+<div class="mt-32 max-w-4xl mx-auto text-left">
+<h3 class="text-4xl lg:text-5xl font-black text-slate-900 mb-16">Our Journey.</h3>
+<div class="relative">
+<div class="relative pl-16 mb-8">
+<div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-brand-electric z-10"></div>
+<div class="absolute left-[7px] top-4 w-0.5 bg-gradient-to-b from-brand-electric to-brand-cyan h-full z-0"></div>
+<h4 class="text-gradient-vibrant text-2xl font-black mb-2">October 2025</h4>
+<div class="glass-card p-6 reveal">CorpEasy founded in Mumbai. We started with a simple belief: finding and setting up office space in this city should not be this complicated. That belief has not changed.</div>
+</div>
+<div class="relative pl-16">
+<div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-brand-electric z-10"></div>
+<h4 class="text-gradient-vibrant text-2xl font-black mb-2">2026 and Beyond</h4>
+<div class="glass-card p-6 reveal delay-300">Building our client base across Mumbai — helping startups, growing teams, and property owners navigate the city's commercial office market. We are early, and we are focused.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+`,
+faq: `
+<section class="max-w-7xl mx-auto px-6 pt-24 pb-16 reveal relative">
+<div class="text-center mb-16">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Common Questions</span>
+</div>
+<h1 class="text-5xl font-black text-slate-900 mb-4">Questions People Ask Us.</h1>
+<p class="text-xl text-slate-500">Straight answers about how CorpEasy works and what we actually do.</p>
+</div>
+<div class="max-w-3xl mx-auto">
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Do you have ready offices available right now?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">No — and that is intentional. We work on a requirement-first basis. When you tell us what you need, we go and find the right commercial space for you in Mumbai. This means the office is sourced and set up specifically for your team, rather than you inheriting something generic that does not quite fit.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">What does "managed office" mean at CorpEasy?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">It means we handle the end-to-end process of getting you into a working office space. We identify a suitable commercial property in Mumbai, negotiate the lease with the landlord, arrange the basic workspace setup — furniture, internet, the essentials — and give you a clear per-seat monthly cost on a fixed lease. You deal with us, not with landlords, brokers, or contractors.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">How is the per-seat cost calculated?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">We calculate your per-seat monthly cost based on the actual commercial property we identify for you — the rent, the basic setup costs, and our service fee — divided across your team size. We share this breakdown clearly before you commit to anything. There are no hidden charges.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">How much does managed office space in Mumbai cost?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">It depends on location, team size, and the specific property. As a general guide: BKC ranges from approximately ₹450–₹750 per sq ft (avg ₹542); Worli and Lower Parel ₹250–₹450 (avg ₹320); Goregaon ₹150–₹300 (avg ₹228); Andheri East ₹150–₹400 (avg ₹253); Powai ₹115–₹310 (avg ₹179); and Navi Mumbai ₹100–₹160 (avg ₹110). CorpEasy shares your exact cost based on the actual property — before you commit to anything. See our pricing table on the home page for full breakdown.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">How long does the whole process take?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">It depends on property availability and your specific requirement. Typically a few weeks from when we identify a suitable space to the day your team can move in. This is significantly faster than finding, negotiating, and setting up a space entirely on your own — which usually takes several months.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Which areas in Mumbai do you cover?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">We actively source <strong>commercial office space</strong> across BKC, Lower Parel, Worli, Goregaon East, Andheri East, and Powai. If you have a different location in mind within Mumbai, tell us — we will do our best to find something suitable.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">What is the minimum team size you work with?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">There is no strict minimum. The managed office model tends to make the most practical sense for teams of around ten or more. For very small teams, we will be honest with you about whether this is the right fit or whether a different arrangement would serve you better.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">What does the workspace setup include?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">We handle the basics — functional furniture, internet connectivity, and a clean professional working environment. The exact scope depends on the property and your requirement. We are transparent about what is and is not included in your per-seat cost before you agree to anything.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">I own a commercial property. Can CorpEasy find me a tenant?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">Yes. We work with property owners across Mumbai who are looking for reliable business tenants. If you have a commercial space available, get in touch with us. We will review whether it fits our active client requirements and discuss next steps.</p></div></div>
+<div><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Are you a broker, a portal, or something else?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">Neither, strictly speaking. We are a workspace solutions company. We find the right commercial property, take the lease, handle the setup, and offer the space to you on a managed basis. We are not a listing portal and we are not a traditional broker. We stay involved through the entire process — from the first conversation to the day you move in.</p></div></div>
+</div>
+<div class="text-center mt-16">
+<p class="text-slate-600 mb-6">Have a question that is not answered here?</p>
+<button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Ask Us Directly →</button>
+</div>
+</section>
+`,
+contact: `
+<section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-20 items-start reveal relative">
+<div class="lg:col-span-5 relative z-10">
+<div class="inline-flex items-center space-x-2 mb-10 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse"></span>
+<span class="text-[10px] font-black text-brand-electric uppercase tracking-[0.4em]">Get in Touch</span>
+</div>
+<h1 class="text-6xl text-slate-900 font-black mb-10 leading-tight">Let's<br><span class="text-gradient-vibrant">Talk.</span></h1>
+<p class="text-xl text-slate-600 leading-relaxed mb-16 max-w-sm">Whether you are looking for office space in Mumbai, want help finding a tenant for your property, or just have a question — fill in the form and we will be back in touch within 24 hours.</p>
+<div class="space-y-10">
+<div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max">
+<div class="w-16 h-16 bg-white/70 border border-white/80 rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-xl"></i></div>
+<div><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Email Dev</p><a href="mailto:devdoshi@corpeasy.in" class="text-xl font-bold text-slate-900 tracking-wide hover:text-brand-electric transition-colors">devdoshi@corpeasy.in</a></div>
+</div>
+<div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max mt-4">
+<div class="w-16 h-16 bg-white/70 border border-white/80 rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-xl"></i></div>
+<div><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Email Jay</p><a href="mailto:jaynishar@corpeasy.in" class="text-xl font-bold text-slate-900 tracking-wide hover:text-brand-electric transition-colors">jaynishar@corpeasy.in</a></div>
+</div>
+<div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max mt-4">
+<div class="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-2xl flex items-center justify-center text-green-500 shadow-[0_0_15px_rgba(34,197,94,0.1)] group-hover:bg-green-500 group-hover:text-white transition-all duration-500"><i class="fab fa-whatsapp text-2xl"></i></div>
+<div><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">WhatsApp</p><a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20would%20like%20to%20discuss%20an%20office%20requirement." target="_blank" class="text-xl font-bold text-slate-900 tracking-wide hover:text-green-500 transition-colors">Chat With Us</a></div>
+</div>
+<div class="glass-card p-6 border border-white/60 mt-8">
+<p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-3">Our Office</p>
+<p class="text-sm text-slate-700 leading-relaxed">Office No. 30, 2nd Floor, Gopal Bhavan,<br>Shamaldas Gandhi Marg, Marine Lines East,<br>Mumbai, Maharashtra 400002</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 glass-card p-12 lg:p-16 border-t-[10px] border-t-brand-electric reveal delay-2 relative z-10 shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
+<form onsubmit="handleLead(event)" class="space-y-6">
+<div class="flex items-center gap-4 mb-10 pb-6 border-b border-white/80">
+<i class="fas fa-comments text-brand-electric text-2xl"></i>
+<h3 class="text-2xl font-black text-slate-900 tracking-tight">Send Us a Message</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>
+<input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<input type="email" name="email" placeholder="Email Address" class="input-premium" required>
+<input type="tel" name="phone" placeholder="Phone Number" class="input-premium" required>
+</div>
+<select name="requirement" class="input-premium" required>
+<option value="">What can we help you with?</option>
+<option>I need a managed office space in Mumbai</option>
+<option>I need help finding a commercial office for rent</option>
+<option>I want to list my commercial property</option>
+<option>General enquiry</option>
+</select>
+<input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
+<button type="submit" class="w-full bg-brand-electric text-white py-6 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-[1.02] mt-6">Send My Enquiry →</button>
+<p class="text-xs text-slate-500 text-center">We respond to every enquiry within 24 hours (Mon–Sat, 9 AM – 7 PM IST).</p>
+</form>
+</div>
+</section>
+`
 };
 
-// --- GLOBAL UI HANDLERS ---
+/* ===== EVENT HANDLERS ===== */
 document.getElementById('mobile-trigger').onclick = () => {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-    if(!menu.classList.contains('hidden')) {
-        menu.classList.add('flex');
-    }
+const menu = document.getElementById('mobile-menu');
+menu.classList.toggle('hidden');
+if(!menu.classList.contains('hidden')) { menu.classList.add('flex'); }
 };
-
 document.addEventListener('click', (e) => {
-    const menu = document.getElementById('mobile-menu');
-    const trigger = document.getElementById('mobile-trigger');
-    if (menu && !menu.classList.contains('hidden')) {
-        if (!menu.contains(e.target) && !trigger.contains(e.target)) {
-            menu.classList.add('hidden');
-            menu.classList.remove('flex');
-        }
-    }
+const menu = document.getElementById('mobile-menu'); const trigger = document.getElementById('mobile-trigger');
+if (menu && !menu.classList.contains('hidden')) {
+if (!menu.contains(e.target) && !trigger.contains(e.target)) { menu.classList.add('hidden'); menu.classList.remove('flex'); }
+}
 });
-
 const reportedDepths = new Set();
 window.onscroll = () => {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    if(height <= 0) return;
-    const scrolled = (winScroll / height) * 100;
-    const scrollLine = document.getElementById("scroll-line");
-    if(scrollLine) scrollLine.style.width = scrolled + "%";
-    
-    // Scroll Depth Tracking
-    const depths = [25, 50, 75, 90];
-    depths.forEach(depth => {
-        if (scrolled >= depth && !reportedDepths.has(depth)) {
-            reportedDepths.add(depth);
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
-                event: 'scroll_depth',
-                depth_threshold: depth
-            });
-        }
-    });
-    
-    const nav = document.getElementById('navbar');
-    if(nav) {
-        if(winScroll > 60) {
-            nav.classList.add('shadow-[0_10px_30px_rgba(0,0,0,0.6)]');
-            nav.style.height = '96px';
-        } else {
-            nav.classList.remove('shadow-[0_10px_30px_rgba(0,0,0,0.6)]');
-            nav.style.height = '128px';
-        }
-    }
-    
-    // Parallax on hero image
-    const heroImg = document.querySelector('.hero-parallax-img');
-    if (heroImg && window.innerWidth >= 1024) {
-        heroImg.style.transform = `translateY(${winScroll * 0.12}px)`;
-    }
+const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+if(height <= 0) return;
+const scrolled = (winScroll / height) * 100;
+const scrollLine = document.getElementById("scroll-line");
+if(scrollLine) scrollLine.style.width = scrolled + "%";
+const depths = [25, 50, 75, 90];
+depths.forEach(depth => {
+if (scrolled >= depth && !reportedDepths.has(depth)) {
+reportedDepths.add(depth); window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({ event: 'scroll_depth', depth_threshold: depth });
+}
+});
+const nav = document.getElementById('navbar');
+if(nav) { if(winScroll > 60) { nav.classList.add('shadow-[0_10px_30px_rgba(0,0,0,0.06)]'); nav.style.height = '96px'; } else { nav.classList.remove('shadow-[0_10px_30px_rgba(0,0,0,0.06)]'); nav.style.height = '128px'; } }
+const heroImg = document.querySelector('.hero-parallax-img');
+if (heroImg && window.innerWidth >= 1024) { heroImg.style.transform = `translateY(${winScroll * 0.12}px)`; }
 };
-
 let fabOpen = false;
 const fabContainer = document.getElementById('fab-container');
 const fabMain = document.getElementById('fab-main');
 const fabIcon = document.getElementById('fab-icon');
 const fabMinis = document.querySelectorAll('.fab-mini');
-
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        fabContainer.style.opacity = '1';
-        fabContainer.style.pointerEvents = 'all';
-        fabContainer.style.transform = 'translateY(0)';
-    } else {
-        fabContainer.style.opacity = '0';
-        fabContainer.style.pointerEvents = 'none';
-        fabContainer.style.transform = 'translateY(20px)';
-    }
+if (window.scrollY > 300) { fabContainer.style.opacity = '1'; fabContainer.style.pointerEvents = 'all'; fabContainer.style.transform = 'translateY(0)'; }
+else { fabContainer.style.opacity = '0'; fabContainer.style.pointerEvents = 'none'; fabContainer.style.transform = 'translateY(20px)'; }
 }, { passive: true });
-
 fabMain.addEventListener('click', () => {
-    fabOpen = !fabOpen;
-    fabMinis.forEach((mini, i) => {
-        setTimeout(() => {
-            mini.style.opacity = fabOpen ? '1' : '0';
-            mini.style.transform = fabOpen ? 'translateY(0)' : 'translateY(16px)';
-        }, i * 60);
-    });
-    fabIcon.style.transform = fabOpen ? 'rotate(45deg)' : 'rotate(0deg)';
-    fabIcon.className = fabOpen ? 'fas fa-times text-2xl transition-transform duration-300' : 'fas fa-comments text-2xl transition-transform duration-300';
+fabOpen = !fabOpen;
+fabMinis.forEach((mini, i) => { setTimeout(() => { mini.style.opacity = fabOpen ? '1' : '0'; mini.style.transform = fabOpen ? 'translateY(0)' : 'translateY(16px)'; }, i * 60); });
+fabIcon.style.transform = fabOpen ? 'rotate(45deg)' : 'rotate(0deg)';
+fabIcon.className = fabOpen ? 'fas fa-times text-2xl transition-transform duration-300' : 'fas fa-comments text-2xl transition-transform duration-300';
 });
-
 window.addEventListener('hashchange', () => {
-    const hash = window.location.hash.substring(1) || 'home';
-    if (pages[hash] || hash === 'post-detail') navigateTo(hash, true);
+const hash = window.location.hash.substring(1) || 'home';
+if (pages[hash] || hash === 'post-detail') navigateTo(hash, true);
 });
-
 document.addEventListener('DOMContentLoaded', () => {
-    const hash = window.location.hash.substring(1) || 'home';
-    navigateTo(hash);
-
-    // Cookie consent
-    const cookieBanner = document.getElementById('cookie-banner');
-    if (cookieBanner) {
-        const consent = localStorage.getItem('ce_cookie_consent');
-        if (!consent) {
-            setTimeout(() => {
-                cookieBanner.style.transform = 'translateY(0)';
-            }, 2000);
-        }
-        document.getElementById('cookie-accept')?.addEventListener('click', () => {
-            localStorage.setItem('ce_cookie_consent', 'accepted');
-            cookieBanner.style.transform = 'translateY(100%)';
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({event: 'cookie_consent', choice: 'accepted'});
-        });
-        document.getElementById('cookie-decline')?.addEventListener('click', () => {
-            localStorage.setItem('ce_cookie_consent', 'declined');
-            cookieBanner.style.transform = 'translateY(100%)';
-        });
-    }
+const hash = window.location.hash.substring(1) || 'home';
+navigateTo(hash);
+const cookieBanner = document.getElementById('cookie-banner');
+if (cookieBanner) {
+const consent = localStorage.getItem('ce_cookie_consent');
+if (!consent) { setTimeout(() => { cookieBanner.style.transform = 'translateY(0)'; }, 2000); }
+document.getElementById('cookie-accept')?.addEventListener('click', () => { localStorage.setItem('ce_cookie_consent', 'accepted'); cookieBanner.style.transform = 'translateY(100%)'; window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'cookie_consent', choice: 'accepted'}); });
+document.getElementById('cookie-decline')?.addEventListener('click', () => { localStorage.setItem('ce_cookie_consent', 'declined'); cookieBanner.style.transform = 'translateY(100%)'; });
+}
 });
