@@ -307,7 +307,7 @@ home: `
 <span class="text-[10px] font-black uppercase tracking-[0.3em] text-brand-electric">Workspace Solutions · Mumbai</span>
 </div>
 <h1 class="text-5xl lg:text-7xl text-slate-900 mb-6 leading-tight">Your Next<br><span id="hero-word" class="text-gradient-vibrant inline-block transition-all duration-500">Office.</span><br>Sorted.</h1>
-<p class="text-lg text-slate-600 font-medium max-w-lg mb-8 leading-relaxed">Finding the right <strong>office space in Mumbai</strong> takes months. Brokers, landlords, contractors, and endless back-and-forth. CorpEasy handles all of it. We find a suitable commercial property, sort the basic setup, and hand you a clear per-seat monthly cost on a fixed lease. You show up and work.</p>
+<p class="text-lg text-slate-600 font-medium max-w-lg mb-8 leading-relaxed">Finding the right <strong>office space in Mumbai</strong> takes months. Brokers, landlords, contractors, and endless back and forth. CorpEasy handles all of it. We find a suitable commercial property, sort the basic setup, and hand you a clear per seat monthly cost on a fixed lease. You show up and work.</p>
 <div class="flex flex-col sm:flex-row gap-4 mb-6">
 <button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Get a Free Consultation</button>
 <a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20looking%20for%20office%20space%20in%20Mumbai." target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-all flex items-center justify-center gap-2">
@@ -358,7 +358,7 @@ Your details are safe with us. No spam, ever.
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 <div class="absolute bottom-10 left-10 lg:bottom-16 lg:left-16 right-10">
 <h3 class="text-3xl lg:text-5xl font-black text-white mb-4 drop-shadow-lg tracking-tight">A Good Workspace Changes Everything.</h3>
-<p class="text-white/90 text-lg lg:text-xl max-w-2xl drop-shadow">We help companies across Mumbai find and occupy the right commercial office space. No months of searching.</p>
+<p class="text-white/90 text-lg lg:text-xl max-w-2xl drop-shadow">We help companies across Mumbai find and occupy the right commercial office space quickly.</p>
 </div>
 </div>
 </section>
@@ -378,7 +378,7 @@ Your details are safe with us. No spam, ever.
 <div class="glass-card p-10 reveal delay-200">
 <div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-8 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-receipt text-2xl"></i></div>
 <h4 class="text-xl font-bold mb-4 text-slate-900">One Clear Cost. Fixed Lease.</h4>
-<p class="text-slate-600 leading-relaxed">We calculate your all-in per-seat monthly cost based on the actual property and setup. You commit to a fixed lease period and know exactly what you pay every month. No hidden charges. No surprises.</p>
+<p class="text-slate-600 leading-relaxed">We calculate your all-in per seat monthly cost based on the actual property and setup. You commit to a fixed lease period and know exactly what you pay every month. No hidden charges. No surprises.</p>
 </div>
 </div>
 </div>
@@ -387,19 +387,19 @@ Your details are safe with us. No spam, ever.
 <div class="ticker-track">
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-building"></i> Managed Office Space Mumbai</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-search-location"></i> Office Space for Rent BKC</span>
-<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-ruler-combined"></i> Commercial Office for Lease Mumbai</span>
-<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-key"></i> Office Space Lower Parel</span>
-<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-indian-rupee-sign"></i> Clear Per-Seat Monthly Cost</span>
-<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-handshake"></i> Office Space Goregaon</span>
-<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-map-marker-alt"></i> Office Space Andheri East</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-ruler-combined"></i> Commercial Office for Lease in Mumbai</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-key"></i> Office Space in Lower Parel</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-indian-rupee-sign"></i> Clear Per Seat Monthly Cost</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-handshake"></i> Office Space in Goregaon</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-map-marker-alt"></i> Office Space in Andheri East</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-shield-check"></i> One Point of Contact</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-building"></i> Managed Office Space Mumbai</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-search-location"></i> Office Space for Rent BKC</span>
-<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-ruler-combined"></i> Commercial Office for Lease Mumbai</span>
-<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-key"></i> Office Space Lower Parel</span>
-<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-indian-rupee-sign"></i> Clear Per-Seat Monthly Cost</span>
-<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-handshake"></i> Office Space Goregaon</span>
-<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-map-marker-alt"></i> Office Space Andheri East</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-ruler-combined"></i> Commercial Office for Lease in Mumbai</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-key"></i> Office Space in Lower Parel</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-indian-rupee-sign"></i> Clear Per Seat Monthly Cost</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-handshake"></i> Office Space in Goregaon</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-map-marker-alt"></i> Office Space in Andheri East</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-shield-check"></i> One Point of Contact</span>
 </div>
 </section>
@@ -427,7 +427,7 @@ Your details are safe with us. No spam, ever.
 <div class="w-16 h-16 bg-brand-violet/10 border border-brand-violet/30 rounded-2xl flex items-center justify-center mb-6 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-key text-2xl"></i></div>
 <p class="text-[10px] font-black uppercase tracking-widest text-brand-electric mb-4">Step 03: You Move In</p>
 <h4 class="text-2xl font-bold text-slate-900 mb-4">A Clear Cost. A Fixed Lease.</h4>
-<p class="text-slate-600 leading-relaxed relative z-10">We present your all-in per-seat monthly cost based on the actual space and setup, before you commit to anything. You agree to a fixed lease period and move in. We remain your point of contact throughout.</p>
+<p class="text-slate-600 leading-relaxed relative z-10">We present your all-in per seat monthly cost based on the actual space and setup, before you commit to anything. You agree to a fixed lease period and move in. We remain your point of contact throughout.</p>
 </div>
 </div>
 </div>
@@ -501,7 +501,7 @@ Your details are safe with us. No spam, ever.
 <div class="inline-block px-3 py-1 bg-brand-electric/10 border border-brand-electric/30 text-brand-electric text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Well Connected</div>
 <div class="w-16 h-16 bg-brand-electric/10 border border-brand-electric/30 rounded-2xl flex items-center justify-center mb-6 text-brand-electric shadow-[0_0_15px_rgba(99,102,241,0.2)]"><i class="fas fa-building-columns text-2xl"></i></div>
 <h4 class="text-2xl font-bold text-slate-900 mb-3">Lower Parel & Worli</h4>
-<p class="text-sm text-slate-500 leading-relaxed mb-6">A well-connected commercial corridor with Grade A buildings and strong transport links. Popular with companies looking for <strong>office space for rent in Lower Parel</strong>.</p>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">A well connected commercial corridor with Grade A buildings and strong transport links. Popular with companies looking for <strong>office space for rent in Lower Parel</strong>.</p>
 <div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹250 to ₹450/sqft</p></div>
 </div>
 <div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer delay-200" onclick="navigateTo('contact')">
@@ -515,7 +515,7 @@ Your details are safe with us. No spam, ever.
 <div class="inline-block px-3 py-1 bg-brand-violet/10 border border-brand-violet/30 text-brand-violet text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Airport Corridor</div>
 <div class="w-16 h-16 bg-brand-violet/10 border border-brand-violet/30 rounded-2xl flex items-center justify-center mb-6 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-plane-departure text-2xl"></i></div>
 <h4 class="text-2xl font-bold text-slate-900 mb-3">Andheri East & SEEPZ</h4>
-<p class="text-sm text-slate-500 leading-relaxed mb-6">Well-connected to the airport and the western suburbs. A practical choice for teams looking for <strong>office space for rent in Andheri</strong> with solid metro and road access.</p>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">Well connected to the airport and the western suburbs. A practical choice for teams looking for <strong>office space for rent in Andheri</strong> with solid metro and road access.</p>
 <div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹150 to ₹400/sqft</p></div>
 </div>
 </div>
@@ -528,7 +528,7 @@ Your details are safe with us. No spam, ever.
 <span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Indicative Pricing</span>
 </div>
 <h2 class="text-5xl font-black text-slate-900 mb-4">What Does It Cost?</h2>
-<p class="text-xl text-slate-500 max-w-2xl mx-auto">Indicative all-in per-seat monthly costs, including rent, basic setup, and our service fee. Exact costs depend on your specific property and requirement.</p>
+<p class="text-xl text-slate-500 max-w-2xl mx-auto">Indicative all in per seat monthly costs, including rent, basic setup, and our service fee. Exact costs depend on your specific property and requirement.</p>
 </div>
 <div class="glass-card overflow-hidden reveal">
 <div class="overflow-x-auto">
@@ -536,7 +536,7 @@ Your details are safe with us. No spam, ever.
 <thead><tr>
 <th class="py-5 px-8 text-left text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60">Location</th>
 <th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60">Raw Rent (per sqft/month)</th>
-<th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-brand-electric bg-brand-electric/5 border-b border-brand-electric/20">All-In Per Seat / Month (est.)</th>
+<th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-brand-electric bg-brand-electric/5 border-b border-brand-electric/20">All In Per Seat / Month (est.)</th>
 </tr></thead>
 <tbody>
 <tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">BKC</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">₹450 to ₹750 (avg ₹542)</td><td class="py-5 px-8 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">₹35,000 to ₹40,000</td></tr>
@@ -573,7 +573,7 @@ Your details are safe with us. No spam, ever.
 <div class="glass-card p-12 group hover:border-brand-violet/50 transition-all text-left">
 <div class="w-16 h-16 bg-brand-violet/10 rounded-2xl flex items-center justify-center mb-8 text-brand-violet group-hover:bg-brand-violet group-hover:text-white transition-all duration-500"><i class="fas fa-file-invoice-dollar text-2xl"></i></div>
 <h4 class="text-2xl font-black mb-4 text-slate-900">Clear, Predictable Costs</h4>
-<p class="text-slate-600 leading-relaxed font-medium">We share the per-seat monthly cost based on the actual property and setup, before you commit to anything. No surprises and no ambiguous pricing. You know what you pay on a fixed lease from Day 1.</p>
+<p class="text-slate-600 leading-relaxed font-medium">We share the per seat monthly cost based on the actual property and setup, before you commit to anything. No surprises and no ambiguous pricing. You know what you pay on a fixed lease from Day 1.</p>
 </div>
 </div>
 </div>
@@ -582,7 +582,7 @@ Your details are safe with us. No spam, ever.
 <div class="max-w-5xl mx-auto px-6">
 <div class="text-center mb-16 reveal">
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-<span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Sorting It Yourself vs. Working With CorpEasy</span>
+<span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Sorting It Yourself vs Working With CorpEasy</span>
 </div>
 <h2 class="text-4xl font-black text-slate-900 mb-4">A Straightforward Comparison.</h2>
 <p class="text-xl text-slate-500">The main practical differences between sorting your own office and using CorpEasy.</p>
@@ -598,10 +598,10 @@ Your details are safe with us. No spam, ever.
 <tbody>
 <tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Dealing with the landlord</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">You do it directly</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ We handle it</td></tr>
 <tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Coordinating workspace setup</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">You manage the vendors</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ We take care of it</td></tr>
-<tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Time from decision to move-in</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Several months, typically</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ A few weeks, typically</td></tr>
-<tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Cost clarity before signing</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Hard to pin down upfront</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Clear per-seat cost shown first</td></tr>
+<tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Time from decision to move in</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Several months, typically</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ A few weeks, typically</td></tr>
+<tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Cost clarity before signing</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Hard to pin down upfront</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Clear per seat cost shown first</td></tr>
 <tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Number of vendors to manage</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Multiple, separately</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Just us</td></tr>
-<tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Commitment structure</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Open-ended or complex</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Fixed lease, clear terms</td></tr>
+<tr class="bg-white/40"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Commitment structure</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">Open ended or complex</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ Fixed lease, clear terms</td></tr>
 <tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold">Property sourcing expertise</td><td class="py-5 px-8 text-slate-500 text-center">Limited to your own network</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5">✅ Our core strength</td></tr>
 </tbody>
 </table>
@@ -673,13 +673,13 @@ managed: `
 <div class="space-y-3 mb-4">
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> We find the right commercial space for your team in Mumbai.</p>
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> We handle the workspace setup. You coordinate zero contractors.</p>
-<p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> One clear per-seat cost. A fixed lease. No hidden charges.</p>
+<p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> One clear per seat cost. A fixed lease. No hidden charges.</p>
 </div>
 <p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for <strong>managed office space in Mumbai</strong> without months of searching, negotiating, and setting up? We handle the entire process. From identifying the right commercial property to handing you a workspace that is ready when your team is.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
 <div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">No Landlord Hassle</h4><p class="text-xs text-slate-600 mt-1">We negotiate with the landlord directly. You have one clean agreement with us.</p></div>
 <div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Setup Included</h4><p class="text-xs text-slate-600 mt-1">Basic furniture, internet, and workspace essentials sorted before you move in.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Fixed Monthly Cost</h4><p class="text-xs text-slate-600 mt-1">A clear per-seat fee for a fixed lease period. No surprises month to month.</p></div>
+<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Fixed Monthly Cost</h4><p class="text-xs text-slate-600 mt-1">A clear per seat fee for a fixed lease period. No surprises month to month.</p></div>
 </div>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
@@ -811,9 +811,9 @@ list: `
 <div class="glass-card p-10 reveal delay-100 border border-brand-gold/20 shadow-[0_0_40px_rgba(251,191,36,0.1)]">
 <h4 class="text-xl font-black text-slate-900 mb-6 flex items-center gap-3"><i class="fas fa-star text-brand-gold"></i> Why List With CorpEasy?</h4>
 <div class="space-y-4">
-<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We bring genuine, pre-qualified business tenants to you. Not browser enquiries.</p>
+<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We bring genuine, pre qualified business tenants to you. Not browser enquiries.</p>
 <p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We manage the sourcing, conversations, and lease negotiations on your behalf.</p>
-<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We aim to place tenants on fixed, medium-term lease agreements.</p>
+<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We aim to place tenants on fixed, medium term lease agreements.</p>
 <p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> No spammy broker networks. Just serious businesses actively looking for space.</p>
 </div>
 </div>
@@ -826,7 +826,7 @@ about: `
 <div class="relative z-10">
 <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand-electric mb-6 block text-center">Our Story</span>
 <h1 class="text-6xl lg:text-8xl text-slate-900 font-black mb-12 text-center leading-[0.9]">Making <span class="text-gradient-vibrant">Office Space</span> Simple.</h1>
-<p class="text-xl text-slate-600 text-center max-w-3xl mx-auto leading-relaxed mb-6 font-medium">CorpEasy is a Mumbai-based workspace solutions company, founded in October 2025. We are a young, asset-light startup with a straightforward mission: to make the process of finding, setting up, and occupying commercial office space in Mumbai genuinely easier for businesses of all sizes.</p>
+<p class="text-xl text-slate-600 text-center max-w-3xl mx-auto leading-relaxed mb-6 font-medium">CorpEasy is a Mumbai based workspace solutions company, founded in October 2025. We are a young, asset-light startup with a straightforward mission: to make the process of finding, setting up, and occupying commercial office space in Mumbai genuinely easier for businesses of all sizes.</p>
 <p class="text-lg text-slate-500 text-center max-w-2xl mx-auto leading-relaxed mb-20">The process currently involves too many parties, too little transparency, and too much time spent on things that are not your actual work. We are building something better, one client at a time.</p>
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
 <div class="glass-card p-10 group hover:border-brand-electric/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-electric transition-colors">Mumbai</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Our Focus Market</p></div>
@@ -847,15 +847,15 @@ about: `
 <img src="DEV DOSHI.png" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h4>
-<p class="text-brand-electric font-black text-[10px] uppercase tracking-widest mb-6">Co-Founder: Business Development & Strategy</p>
-<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client-facing work and strategic direction.</p>
+<p class="text-brand-electric font-black text-[10px] uppercase tracking-widest mb-6">Co Founder: Business Development & Strategy</p>
+<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
 </div>
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
 <img src="JAY NISHAR.png" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h4>
-<p class="text-brand-electric font-black text-[10px] uppercase tracking-widest mb-6">Co-Founder: Operations & Growth</p>
+<p class="text-brand-electric font-black text-[10px] uppercase tracking-widest mb-6">Co Founder: Operations & Growth</p>
 <p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Jay manages CorpEasy's operational processes and client delivery. He ensures that every commitment made to a client is followed through reliably and on time.</p>
 </div>
 </div>
@@ -889,12 +889,12 @@ faq: `
 <p class="text-xl text-slate-500">Straight answers about how CorpEasy works and what we actually do.</p>
 </div>
 <div class="max-w-3xl mx-auto">
-<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Do you have ready offices available right now?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">No, and that is intentional. We work on a requirement-first basis. When you tell us what you need, we go and find the right commercial space for you in Mumbai. This means the office is sourced and set up specifically for your team, rather than you inheriting something generic that does not quite fit.</p></div></div>
-<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">What does "managed office" mean at CorpEasy?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">It means we handle the end-to-end process of getting you into a working office space. We identify a suitable commercial property in Mumbai, negotiate the lease with the landlord, arrange the basic workspace setup. Furniture, internet, the essentials, and give you a clear per-seat monthly cost on a fixed lease. You deal with us, not with landlords, brokers, or contractors.</p></div></div>
-<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">How is the per-seat cost calculated?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">We calculate your per-seat monthly cost based on the actual commercial property we identify for you. The rent, the basic setup costs, and our service fee, divided across your team size. We share this breakdown clearly before you commit to anything. There are no hidden charges.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Do you have ready offices available right now?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">No, and that is intentional. We work on a requirement first basis. When you tell us what you need, we go and find the right commercial space for you in Mumbai. This means the office is sourced and set up specifically for your team, rather than you inheriting something generic that does not quite fit.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">What does "managed office" mean at CorpEasy?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">It means we handle the end to end process of getting you into a working office space. We identify a suitable commercial property in Mumbai, negotiate the lease with the landlord, arrange the basic workspace setup. Furniture, internet, the essentials, and give you a clear per seat monthly cost on a fixed lease. You deal with us, not with landlords, brokers, or contractors.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">How is the per seat cost calculated?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">We calculate your per seat monthly cost based on the actual commercial property we identify for you. The rent, the basic setup costs, and our service fee, divided across your team size. We share this breakdown clearly before you commit to anything. There are no hidden charges.</p></div></div>
 <div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">How much does managed office space in Mumbai cost?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">It depends on location, team size, and the specific property. As a general guide: BKC ranges from approximately ₹450 to ₹750 per sq ft (avg ₹542); Worli and Lower Parel ₹250 to ₹450 (avg ₹320); Goregaon ₹150 to ₹300 (avg ₹228); Andheri East ₹150 to ₹400 (avg ₹253); Powai ₹115 to ₹310 (avg ₹179); and Navi Mumbai ₹100 to ₹160 (avg ₹110). CorpEasy shares your exact cost based on the actual property, before you commit to anything. See our pricing table on the home page for full breakdown.</p></div></div>
 <div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">How long does the whole process take?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">It depends on property availability and your specific requirement. Typically a few weeks from when we identify a suitable space to the day your team can move in. This is significantly faster than finding, negotiating, and setting up a space entirely on your own, which usually takes several months.</p></div></div>
-<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Which areas in Mumbai do you cover?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">We actively source <strong>commercial office space</strong> across BKC, Lower Parel, Worli, Goregaon East, Andheri East, and Powai. If you have a different location in mind within Mumbai, tell us — we will do our best to find something suitable.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Which areas in Mumbai do you cover?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">We actively source <strong>commercial office space</strong> across BKC, Lower Parel, Worli, Goregaon East, Andheri East, and Powai. If you have a different location in mind within Mumbai, tell us, we will do our best to find something suitable.</p></div></div>
 <div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">What is the minimum team size you work with?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">There is no strict minimum. The managed office model tends to make the most practical sense for teams of around ten or more. For very small teams, we will be honest with you about whether this is the right fit or whether a different arrangement would serve you better.</p></div></div>
 <div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">What does the workspace setup include?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">We handle the basics. Functional furniture, internet connectivity, and a clean professional working environment. The exact scope depends on the property and your requirement. We are transparent about what is and is not included in your per-seat cost before you agree to anything.</p></div></div>
 <div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">I own a commercial property. Can CorpEasy find me a tenant?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">Yes. We work with property owners across Mumbai who are looking for reliable business tenants. If you have a commercial space available, get in touch with us. We will review whether it fits our active client requirements and discuss next steps.</p></div></div>
