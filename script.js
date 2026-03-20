@@ -661,7 +661,8 @@ ${featured ? `<div class="group cursor-pointer mb-24 reveal delay-100" onclick="
 ${gridHTML}
 </div>
 </section>
-`,
+`;
+},
 managed: `
 <section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-16 items-start min-h-[calc(100vh-96px)]">
 <div class="order-2 lg:order-1 flex flex-col justify-center">
