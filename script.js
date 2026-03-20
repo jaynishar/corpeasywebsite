@@ -1014,8 +1014,9 @@ window.addEventListener('hashchange', () => {
 const hash = window.location.hash.substring(1) || 'home';
 if (pages[hash] || hash === 'post-detail') navigateTo(hash, true);
 });
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
 const hash = window.location.hash.substring(1) || 'home';
+await loadPosts();
 navigateTo(hash);
 const cookieBanner = document.getElementById('cookie-banner');
 if (cookieBanner) {
