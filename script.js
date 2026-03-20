@@ -456,9 +456,9 @@ Your details are safe with us. No spam, ever.
 </div>
 <blockquote class="text-lg lg:text-xl text-slate-700 leading-relaxed mb-10 space-y-4">
 <p>"This is to certify that Jaydev Enterprise (Brand Name: CorpEasy) has been associated with First Abu Dhabi Bank for providing facility management support services.</p>
-<p>During the course of our engagement, their team has demonstrated professionalism, reliability, and a strong commitment to delivering quality services. They have consistently been responsive, well-coordinated, and have maintained strong operational standards in all tasks assigned to them.</p>
-<p>We vouch for their capabilities and are confident in their ability to successfully complete any task entrusted to them. They are known for adhering strictly to commitments, timelines, and deliverables, and have never under-delivered on expectations.</p>
-<p>Additionally, they provide cost-effective solutions without compromising on quality, ensuring value-driven service at all times.</p>
+<p>During the course of our engagement, their team has demonstrated professionalism, reliability, and a strong commitment to delivering quality services. They have consistently been responsive, well coordinated, and have maintained strong operational standards in all tasks assigned to them.</p>
+<p>We vouch for their capabilities and are confident in their ability to successfully complete any task entrusted to them. They are known for adhering strictly to commitments, timelines, and deliverables, and have never under delivered on expectations.</p>
+<p>Additionally, they provide cost effective solutions without compromising on quality, ensuring value driven service at all times.</p>
 <p>We appreciate their proactive approach and their ability to understand and execute requirements efficiently."</p>
 </blockquote>
 <div class="flex flex-col sm:flex-row sm:items-center gap-6 pt-8 border-t border-slate-200/60">
