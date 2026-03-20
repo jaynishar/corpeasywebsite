@@ -119,11 +119,24 @@
     }
     </script>
     
-    <!-- Dependencies -->
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" as="image" href="modern_office.png">
+    
+    <!-- Font with display swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 
     <script>
         tailwind.config = {
@@ -169,58 +182,65 @@
         <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
             <!-- Brand -->
             <div class="flex items-center cursor-pointer group" onclick="navigateTo('home')">
-                <img src="CORPEASYHEADER.png" alt="CorpEasy Header Logo" class="logo-img h-24 lg:h-32 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300 drop-shadow-xl mix-blend-multiply">
+                <img src="CORPEASYHEADER.png" alt="CorpEasy Header Logo" class="logo-img h-24 lg:h-32 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300 drop-shadow-xl mix-blend-multiply" width="180" height="128" fetchpriority="high">
             </div>
 
             <!-- Navigation Links -->
-            <div class="hidden xl:flex space-x-10 items-center">
+            <div class="hidden xl:flex items-center gap-8">
                 <div class="relative group">
-                    <button class="text-xs font-bold uppercase tracking-widest text-slate-600 flex items-center gap-2 group-hover:text-slate-900 transition-colors">
-                        Solutions <i class="fas fa-chevron-down text-[8px] text-brand-electric"></i>
+                    <button class="text-sm font-semibold text-slate-700 flex items-center gap-2 group-hover:text-brand-electric transition-colors">
+                        Solutions <i class="fas fa-chevron-down text-xs text-slate-400"></i>
                     </button>
-                    <div class="absolute top-full -left-10 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-4 group-hover:translate-y-0 z-50">
-                        <div class="bg-white/90 backdrop-blur-2xl rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.1)] border border-white/80 p-6 w-72">
-                            <a onclick="navigateTo('managed')" class="flex items-start gap-4 p-3 hover:bg-white/70 rounded-xl transition-colors cursor-pointer">
-                                <div class="w-10 h-10 bg-brand-blue/20 rounded-lg flex items-center justify-center text-brand-electric border border-brand-electric/20"><i class="fas fa-building"></i></div>
-                                <div><p class="text-sm font-bold text-slate-900">Managed Offices</p><p class="text-[10px] text-slate-600">Fully Managed Workspaces</p></div>
+                    <div class="absolute top-full -left-6 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0 z-50">
+                        <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-4 w-64">
+                            <a onclick="navigateTo('managed')" class="flex items-center gap-3 p-3 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer">
+                                <div class="w-9 h-9 bg-brand-blue/10 rounded-lg flex items-center justify-center text-brand-electric"><i class="fas fa-building"></i></div>
+                                <div><p class="text-sm font-medium text-slate-800">Managed Offices</p><p class="text-xs text-slate-500">Fully managed workspaces</p></div>
                             </a>
-                            <a onclick="navigateTo('find')" class="flex items-start gap-4 p-3 hover:bg-white/70 rounded-xl transition-colors cursor-pointer mt-2">
-                                <div class="w-10 h-10 bg-brand-cyan/20 rounded-lg flex items-center justify-center text-brand-cyan border border-brand-cyan/20"><i class="fas fa-search-location"></i></div>
-                                <div><p class="text-sm font-bold text-slate-900">Find a Property for Lease</p><p class="text-[10px] text-slate-600">Tenant Representation</p></div>
+                            <a onclick="navigateTo('find')" class="flex items-center gap-3 p-3 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer mt-1">
+                                <div class="w-9 h-9 bg-brand-cyan/10 rounded-lg flex items-center justify-center text-brand-cyan"><i class="fas fa-search-location"></i></div>
+                                <div><p class="text-sm font-medium text-slate-800">Find a Property</p><p class="text-xs text-slate-500">Tenant representation</p></div>
                             </a>
-                            <a onclick="navigateTo('list')" class="flex items-start gap-4 p-3 hover:bg-white/70 rounded-xl transition-colors cursor-pointer mt-2">
-                                <div class="w-10 h-10 bg-brand-gold/20 rounded-lg flex items-center justify-center text-brand-gold border border-brand-gold/20"><i class="fas fa-handshake"></i></div>
-                                <div><p class="text-sm font-bold text-slate-900">Lease your property</p><p class="text-[10px] text-slate-600">Institutional Listing</p></div>
+                            <a onclick="navigateTo('list')" class="flex items-center gap-3 p-3 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer mt-1">
+                                <div class="w-9 h-9 bg-brand-gold/10 rounded-lg flex items-center justify-center text-brand-gold"><i class="fas fa-handshake"></i></div>
+                                <div><p class="text-sm font-medium text-slate-800">Lease Your Property</p><p class="text-xs text-slate-500">Property listing services</p></div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <a onclick="navigateTo('blog')" class="text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-brand-electric cursor-pointer transition-colors">Insights</a>
-                <a onclick="navigateTo('about')" class="text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-brand-electric cursor-pointer transition-colors">Our Story</a>
-                <a onclick="navigateTo('faq')" class="text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-brand-electric cursor-pointer transition-colors">FAQs</a>
-                <a onclick="navigateTo('contact')" class="text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-brand-electric cursor-pointer">Contact Us</a>
+                <a onclick="navigateTo('blog')" class="text-sm font-medium text-slate-600 hover:text-brand-electric cursor-pointer transition-colors">Insights</a>
+                <a onclick="navigateTo('about')" class="text-sm font-medium text-slate-600 hover:text-brand-electric cursor-pointer transition-colors">About Us</a>
+                <a onclick="navigateTo('faq')" class="text-sm font-medium text-slate-600 hover:text-brand-electric cursor-pointer transition-colors">FAQ</a>
+                <a onclick="navigateTo('contact')" class="text-sm font-medium text-slate-600 hover:text-brand-electric cursor-pointer">Contact</a>
             </div>
 
             <!-- Action -->
-            <div class="flex items-center space-x-6">
-                <button onclick="navigateTo('contact')" class="hidden md:flex items-center gap-2 bg-transparent border border-brand-electric/50 text-brand-electric px-8 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-electric hover:text-white hover:shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all">
-                    Free Consultation <i class="fas fa-arrow-right"></i>
+            <div class="flex items-center gap-4">
+                <button onclick="navigateTo('contact')" class="hidden md:flex items-center gap-2 bg-brand-electric text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-brand-blue transition-all shadow-sm">
+                    Get Free Consultation
                 </button>
-                <button id="mobile-trigger" aria-label="Toggle Mobile Menu" class="xl:hidden text-slate-900 p-2"><i class="fas fa-bars-staggered text-2xl"></i></button>
+                <button id="mobile-trigger" aria-label="Toggle Mobile Menu" class="xl:hidden text-slate-700 p-2"><i class="fas fa-bars text-xl"></i></button>
             </div>
         </div>
     </nav>
 
     <!-- MOBILE MENU -->
-    <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-3xl z-[90] hidden flex-col p-10 pt-32 transition-all">
-        <ul class="space-y-8">
-            <li><a onclick="navigateTo('home')" class="text-4xl font-extrabold text-slate-900 hover:text-brand-electric cursor-pointer">Home</a></li>
-            <li><a onclick="navigateTo('managed')" class="text-4xl font-extrabold text-slate-900 hover:text-brand-electric cursor-pointer">Managed Offices</a></li>
-            <li><a onclick="navigateTo('blog')" class="text-4xl font-extrabold text-slate-900 hover:text-brand-electric cursor-pointer">Insights</a></li>
-            <li><a onclick="navigateTo('find')" class="text-4xl font-extrabold text-slate-900 hover:text-brand-electric cursor-pointer">Find a Property for Lease</a></li>
-            <li><a onclick="navigateTo('list')" class="text-4xl font-extrabold text-slate-900 hover:text-brand-electric cursor-pointer">Lease your property</a></li>
-            <li><a onclick="navigateTo('about')" class="text-4xl font-extrabold text-slate-900 hover:text-brand-electric cursor-pointer">Our Story</a></li>
-            <li><a onclick="navigateTo('faq')" class="text-4xl font-extrabold text-slate-900 hover:text-brand-electric cursor-pointer">FAQs</a></li>
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[90] hidden flex-col p-8 pt-28 transition-all">
+        <div class="flex justify-between items-center mb-8">
+            <img src="CORPEASYHEADER.png" alt="CorpEasy" class="h-12 w-auto">
+            <button onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="text-slate-500 p-2">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <ul class="space-y-1">
+            <li><a onclick="navigateTo('home')" class="block py-3 text-lg font-medium text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100">Home</a></li>
+            <li><a onclick="navigateTo('managed')" class="block py-3 text-lg font-medium text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100">Managed Offices</a></li>
+            <li><a onclick="navigateTo('blog')" class="block py-3 text-lg font-medium text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100">Insights</a></li>
+            <li><a onclick="navigateTo('find')" class="block py-3 text-lg font-medium text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100">Find a Property</a></li>
+            <li><a onclick="navigateTo('list')" class="block py-3 text-lg font-medium text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100">Lease Your Property</a></li>
+            <li><a onclick="navigateTo('about')" class="block py-3 text-lg font-medium text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100">About Us</a></li>
+            <li><a onclick="navigateTo('faq')" class="block py-3 text-lg font-medium text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100">FAQ</a></li>
+            <li><a onclick="navigateTo('contact')" class="block py-4 text-lg font-medium text-brand-electric cursor-pointer">Contact Us</a></li>
         </ul>
     </div>
 
@@ -237,7 +257,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
                 <div class="lg:col-span-5">
                     <div class="mb-8">
-                        <img src="CORPEASYFOOTER.png" alt="CorpEasy Footer Logo" class="logo-img h-40 lg:h-56 w-auto object-contain object-left drop-shadow-xl mix-blend-multiply">
+                        <img src="CORPEASYFOOTER.png" alt="CorpEasy Footer Logo" class="logo-img h-40 lg:h-56 w-auto object-contain object-left drop-shadow-xl mix-blend-multiply" width="220" height="160">
                     </div>
                     <p class="text-slate-600 text-lg font-medium leading-relaxed max-w-sm mb-10">Strategic workspace solutions for startups, SMEs, and global enterprises across Mumbai. Managed offices, coworking spaces, and custom enterprise HQs — all under one roof.</p>
                     <div class="flex space-x-4">

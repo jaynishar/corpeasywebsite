@@ -7,6 +7,9 @@ body {
     color: #0f172a; 
 }
 
+/* Performance: skip rendering off-screen content */
+main section:not(:first-child) { content-visibility: auto; contain-intrinsic-size: 1px 500px; }
+
 /* Abstract Tech Background */
 .bg-tech-mesh {
     background-color: #f8fafc;

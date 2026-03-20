@@ -152,7 +152,7 @@ const schemaScript = document.createElement('script');
 schemaScript.type = 'application/ld+json'; schemaScript.id = 'article-schema';
 schemaScript.text = JSON.stringify({ "@context": "https://schema.org", "@type": "Article", "headline": post.title, "datePublished": "2026-03-01", "author": {"@type": "Organization", "name": "CorpEasy"}, "publisher": {"@id": "https://www.corpeasy.in/#organization"} });
 document.head.appendChild(schemaScript);
-const postTemplate = `<section class="max-w-4xl mx-auto px-6 py-12 lg:py-24"> <button onclick="navigateTo('blog')" class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-brand-electric transition-colors mb-12"> <i class="fas fa-arrow-left"></i> Back to Insights </button> <div class="mb-12"> <span class="px-4 py-1.5 bg-brand-electric/10 border border-brand-electric/30 text-brand-electric text-[10px] font-bold rounded-full uppercase tracking-widest mb-6 inline-block">${post.category}</span> <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 mb-8 leading-tight">${post.title}</h1> <div class="flex items-center gap-6 text-slate-600 text-sm font-medium"> <span><i class="far fa-clock mr-2 text-brand-electric"></i> ${post.readTime}</span> <span><i class="far fa-calendar-alt mr-2 text-brand-electric"></i> 2026</span> <span><i class="far fa-user mr-2 text-brand-electric"></i> CorpEasy</span> </div> </div> <div class="rounded-[3rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] h-[400px] lg:h-[550px] mb-16 border border-white/80"> <img loading="lazy" src="${post.image}" alt="${post.title}" class="w-full h-full object-cover"> </div> <div class="prose-content">${post.content}</div> <div class="mt-24 pt-16 border-t border-white/80 flex flex-col md:flex-row justify-between items-center gap-8"> <div> <h4 class="text-xl font-bold text-slate-900 mb-4">Share this article</h4> <div class="flex gap-4"> <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in text-lg"></i></a> <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-twitter text-lg"></i></a> <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fas fa-link text-lg"></i></a> </div> </div> <button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Talk to Us About Your Requirement</button> </div> </section>`;
+const postTemplate = `<section class="max-w-4xl mx-auto px-6 py-12 lg:py-24"> <button onclick="navigateTo('blog')" class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-brand-electric transition-colors mb-12"> <i class="fas fa-arrow-left"></i> Back to Insights </button> <div class="mb-12"> <span class="px-4 py-1.5 bg-brand-electric/10 border border-brand-electric/30 text-brand-electric text-xs font-medium rounded-full mb-6 inline-block">${post.category}</span> <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 mb-8 leading-tight">${post.title}</h1> <div class="flex items-center gap-6 text-slate-600 text-sm font-medium"> <span><i class="far fa-clock mr-2 text-brand-electric"></i> ${post.readTime}</span> <span><i class="far fa-calendar-alt mr-2 text-brand-electric"></i> 2026</span> <span><i class="far fa-user mr-2 text-brand-electric"></i> CorpEasy</span> </div> </div> <div class="rounded-[3rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] h-[400px] lg:h-[550px] mb-16 border border-white/80"> <img loading="lazy" src="${post.image}" alt="${post.title}" class="w-full h-full object-cover"> </div> <div class="prose-content">${post.content}</div> <div class="mt-24 pt-16 border-t border-white/80 flex flex-col md:flex-row justify-between items-center gap-8"> <div> <h4 class="text-xl font-bold text-slate-900 mb-4">Share this article</h4> <div class="flex gap-4"> <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in text-lg"></i></a> <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-twitter text-lg"></i></a> <a href="#" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fas fa-link text-lg"></i></a> </div> </div> <button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-10 py-5 rounded-lg font-medium text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Talk to Us About Your Requirement</button> </div> </section>`;
 pages['post-detail'] = postTemplate;
 navigateTo('post-detail');
 window.dataLayer = window.dataLayer || [];
@@ -302,20 +302,19 @@ home: `
 <div class="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-12 lg:gap-16 items-center">
 <div class="reveal order-2 lg:order-1">
 <div class="glow-blob w-96 h-96 bg-brand-electric -top-20 -left-20 opacity-20"></div>
-<div class="flex items-center space-x-3 mb-8 bg-white/70 border border-white/80 w-max px-4 py-2 rounded-full backdrop-blur-md">
-<span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse shadow-[0_0_10px_rgba(0,240,255,1)]"></span>
-<span class="text-[10px] font-black uppercase tracking-[0.3em] text-brand-electric">Workspace Solutions · Mumbai</span>
+<div class="mb-6">
+<span class="text-sm text-slate-500 font-medium">Managed Office Space in Mumbai</span>
 </div>
-<h1 class="text-5xl lg:text-7xl text-slate-900 mb-6 leading-tight">Your Next<br><span id="hero-word" class="text-gradient-vibrant inline-block transition-all duration-500">Office.</span><br>Sorted.</h1>
-<p class="text-lg text-slate-600 font-medium max-w-lg mb-8 leading-relaxed">Finding the right <strong>office space in Mumbai</strong> takes months. Brokers, landlords, contractors, and endless back and forth. CorpEasy handles all of it. We find a suitable commercial property, sort the basic setup, and hand you a clear per seat monthly cost on a fixed lease. You show up and work.</p>
-<div class="flex flex-col sm:flex-row gap-4 mb-6">
-<button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Get a Free Consultation</button>
-<a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20looking%20for%20office%20space%20in%20Mumbai." target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-all flex items-center justify-center gap-2">
-<i class="fab fa-whatsapp text-lg"></i> WhatsApp Us
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">Find Your Perfect<br><span id="hero-word" class="text-brand-electric">Office Space</span></h1>
+<p class="text-lg text-slate-600 max-w-lg mb-8 leading-relaxed">CorpEasy helps businesses find, set up, and manage office spaces across Mumbai. Get a clear per-seat monthly cost with one point of contact.</p>
+<div class="flex flex-col sm:flex-row gap-3 mb-6">
+<button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all">Get a Free Consultation</button>
+<a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20looking%20for%20office%20space%20in%20Mumbai." target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-green-600 transition-all flex items-center justify-center gap-2">
+<i class="fab fa-whatsapp"></i> WhatsApp
 </a>
 </div>
-<button onclick="navigateTo('managed')" class="text-slate-600 text-xs font-bold uppercase tracking-widest flex items-center gap-2 hover:text-brand-electric transition-colors">
-See how it works <i class="fas fa-arrow-right text-brand-electric"></i>
+<button onclick="navigateTo('managed')" class="text-slate-600 text-sm font-medium flex items-center gap-2 hover:text-brand-electric transition-colors">
+Learn how it works <i class="fas fa-arrow-right text-sm"></i>
 </button>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
@@ -342,7 +341,7 @@ Tell Us What You Need
 <option>General information</option>
 </select>
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-<button type="submit" class="w-full bg-brand-electric text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all">Send My Requirement →</button>
+<button type="submit" class="w-full bg-brand-electric text-white py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all">Submit Your Requirement</button>
 </form>
 <p class="text-xs text-slate-500 text-center mt-3 flex items-center justify-center gap-2">
 <i class="fas fa-lock text-brand-electric text-xs"></i>
@@ -354,7 +353,7 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-12 px-6">
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[600px] reveal group">
-<img src="modern_office.png" alt="Managed office space in Mumbai" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
+<img src="modern_office.png" alt="Managed office space in Mumbai" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" width="1200" height="600" fetchpriority="high">
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 <div class="absolute bottom-10 left-10 lg:bottom-16 lg:left-16 right-10">
 <h3 class="text-3xl lg:text-5xl font-black text-white mb-4 drop-shadow-lg tracking-tight">A Good Workspace Changes Everything.</h3>
@@ -411,21 +410,21 @@ Your details are safe with us. No spam, ever.
 <div class="glass-card p-10 reveal relative overflow-hidden">
 <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">01</span>
 <div class="w-16 h-16 bg-brand-electric/10 border border-brand-electric/30 rounded-2xl flex items-center justify-center mb-6 text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.2)]"><i class="fas fa-clipboard-list text-2xl"></i></div>
-<p class="text-[10px] font-black uppercase tracking-widest text-brand-electric mb-4">Step 01: You Share Your Requirement</p>
+<p class="text-xs font-semibold uppercase tracking-wide text-brand-electric mb-4">Step 01: You Share Your Requirement</p>
 <h4 class="text-2xl font-bold text-slate-900 mb-4">Tell Us What You Need</h4>
 <p class="text-slate-600 leading-relaxed relative z-10">Share your team size, preferred Mumbai location, and budget. We listen, ask the right questions, and get to work identifying suitable commercial spaces available in your price range.</p>
 </div>
 <div class="glass-card p-10 reveal delay-100 relative overflow-hidden">
 <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">02</span>
 <div class="w-16 h-16 bg-brand-cyan/10 border border-brand-cyan/30 rounded-2xl flex items-center justify-center mb-6 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-drafting-compass text-2xl"></i></div>
-<p class="text-[10px] font-black uppercase tracking-widest text-brand-electric mb-4">Step 02: We Source, Negotiate, Set Up</p>
+<p class="text-xs font-semibold uppercase tracking-wide text-brand-electric mb-4">Step 02: We Source, Negotiate, Set Up</p>
 <h4 class="text-2xl font-bold text-slate-900 mb-4">We Handle the Hard Part</h4>
 <p class="text-slate-600 leading-relaxed relative z-10">We identify a suitable commercial property in your preferred location, negotiate the lease directly with the landlord, and manage the basic workspace setup. Furniture, internet, and the essentials to make the space ready.</p>
 </div>
 <div class="glass-card p-10 reveal delay-200 relative overflow-hidden">
 <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">03</span>
 <div class="w-16 h-16 bg-brand-violet/10 border border-brand-violet/30 rounded-2xl flex items-center justify-center mb-6 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-key text-2xl"></i></div>
-<p class="text-[10px] font-black uppercase tracking-widest text-brand-electric mb-4">Step 03: You Move In</p>
+<p class="text-xs font-semibold uppercase tracking-wide text-brand-electric mb-4">Step 03: You Move In</p>
 <h4 class="text-2xl font-bold text-slate-900 mb-4">A Clear Cost. A Fixed Lease.</h4>
 <p class="text-slate-600 leading-relaxed relative z-10">We present your all-in per seat monthly cost based on the actual space and setup, before you commit to anything. You agree to a fixed lease period and move in. We remain your point of contact throughout.</p>
 </div>
@@ -436,7 +435,7 @@ Your details are safe with us. No spam, ever.
 <div class="max-w-4xl mx-auto px-6">
 <div class="text-center mb-16 reveal">
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-<span class="text-[10px] font-black uppercase tracking-widest text-brand-gold">Client Testimonial</span>
+<span class="text-xs font-semibold uppercase tracking-wide text-brand-gold">Client Testimonial</span>
 </div>
 <h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">Trusted by Industry Leaders.</h2>
 </div>
@@ -451,7 +450,7 @@ Your details are safe with us. No spam, ever.
 </div>
 <div>
 <div class="flex text-brand-gold space-x-1 mb-2"><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i></div>
-<p class="text-[10px] font-black uppercase tracking-widest text-slate-500">Verified Client Testimonial</p>
+<p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Verified Client Testimonial</p>
 </div>
 </div>
 <blockquote class="text-lg lg:text-xl text-slate-700 leading-relaxed mb-10 space-y-4">
@@ -472,7 +471,7 @@ Your details are safe with us. No spam, ever.
 </div>
 <div class="sm:ml-auto flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 px-4 py-2 rounded-full">
 <i class="fas fa-shield-check text-sm"></i>
-<span class="text-[10px] font-black uppercase tracking-widest">Verified</span>
+<span class="text-xs font-semibold uppercase tracking-wide">Verified</span>
 </div>
 </div>
 </div>
@@ -484,39 +483,39 @@ Your details are safe with us. No spam, ever.
 <div class="max-w-7xl mx-auto px-6">
 <div class="mb-16 reveal text-center lg:text-left">
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-<span class="text-[10px] font-black uppercase tracking-widest text-brand-cyan">Mumbai Locations</span>
+<span class="text-xs font-semibold uppercase tracking-wide text-brand-cyan">Mumbai Locations</span>
 </div>
 <h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">We Work Across Mumbai.</h2>
 <p class="text-xl text-slate-500">We source <strong>commercial office space</strong> across Mumbai's most active business corridors.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
 <div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer" onclick="navigateTo('contact')">
-<div class="inline-block px-3 py-1 bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Premium Hub</div>
+<div class="inline-block px-3 py-1 bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-medium uppercase rounded-full mb-6">Premium Hub</div>
 <div class="w-16 h-16 bg-brand-gold/10 border border-brand-gold/30 rounded-2xl flex items-center justify-center mb-6 text-brand-gold shadow-[0_0_15px_rgba(251,191,36,0.2)]"><i class="fas fa-star text-2xl"></i></div>
 <h4 class="text-2xl font-bold text-slate-900 mb-3">BKC, Mumbai</h4>
 <p class="text-sm text-slate-500 leading-relaxed mb-6">Mumbai's most recognised commercial address. We source <strong>managed office space in BKC</strong> for companies that need a credible address in India's financial district.</p>
-<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹450 to ₹750/sqft</p></div>
+<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-xs text-slate-500 font-medium">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹450 to ₹750/sqft</p></div>
 </div>
 <div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer delay-100" onclick="navigateTo('contact')">
-<div class="inline-block px-3 py-1 bg-brand-electric/10 border border-brand-electric/30 text-brand-electric text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Well Connected</div>
+<div class="inline-block px-3 py-1 bg-brand-electric/10 border border-brand-electric/30 text-brand-electric text-xs font-medium uppercase rounded-full mb-6">Well Connected</div>
 <div class="w-16 h-16 bg-brand-electric/10 border border-brand-electric/30 rounded-2xl flex items-center justify-center mb-6 text-brand-electric shadow-[0_0_15px_rgba(99,102,241,0.2)]"><i class="fas fa-building-columns text-2xl"></i></div>
 <h4 class="text-2xl font-bold text-slate-900 mb-3">Lower Parel & Worli</h4>
 <p class="text-sm text-slate-500 leading-relaxed mb-6">A well connected commercial corridor with Grade A buildings and strong transport links. Popular with companies looking for <strong>office space for rent in Lower Parel</strong>.</p>
-<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹250 to ₹450/sqft</p></div>
+<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-xs text-slate-500 font-medium">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹250 to ₹450/sqft</p></div>
 </div>
 <div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer delay-200" onclick="navigateTo('contact')">
-<div class="inline-block px-3 py-1 bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Good Value</div>
+<div class="inline-block px-3 py-1 bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan text-xs font-medium uppercase rounded-full mb-6">Good Value</div>
 <div class="w-16 h-16 bg-brand-cyan/10 border border-brand-cyan/30 rounded-2xl flex items-center justify-center mb-6 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-chart-line text-2xl"></i></div>
 <h4 class="text-2xl font-bold text-slate-900 mb-3">Goregaon & Nirlon</h4>
 <p class="text-sm text-slate-500 leading-relaxed mb-6">One of Mumbai's most active commercial zones, particularly for tech and mid-size companies. Strong availability of <strong>commercial office space in Goregaon</strong> at practical costs.</p>
-<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹150 to ₹300/sqft</p></div>
+<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-xs text-slate-500 font-medium">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹150 to ₹300/sqft</p></div>
 </div>
 <div class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer delay-300" onclick="navigateTo('contact')">
-<div class="inline-block px-3 py-1 bg-brand-violet/10 border border-brand-violet/30 text-brand-violet text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Airport Corridor</div>
+<div class="inline-block px-3 py-1 bg-brand-violet/10 border border-brand-violet/30 text-brand-violet text-xs font-medium uppercase rounded-full mb-6">Airport Corridor</div>
 <div class="w-16 h-16 bg-brand-violet/10 border border-brand-violet/30 rounded-2xl flex items-center justify-center mb-6 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-plane-departure text-2xl"></i></div>
 <h4 class="text-2xl font-bold text-slate-900 mb-3">Andheri East & SEEPZ</h4>
 <p class="text-sm text-slate-500 leading-relaxed mb-6">Well connected to the airport and the western suburbs. A practical choice for teams looking for <strong>office space for rent in Andheri</strong> with solid metro and road access.</p>
-<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹150 to ₹400/sqft</p></div>
+<div class="flex items-center justify-between pt-4 border-t border-white/60"><p class="text-xs text-slate-500 font-medium">Typical Rent</p><p class="text-sm font-bold text-slate-900">₹150 to ₹400/sqft</p></div>
 </div>
 </div>
 </div>
@@ -525,7 +524,7 @@ Your details are safe with us. No spam, ever.
 <div class="max-w-5xl mx-auto px-6">
 <div class="text-center mb-16 reveal">
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-<span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Indicative Pricing</span>
+<span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Indicative Pricing</span>
 </div>
 <h2 class="text-5xl font-black text-slate-900 mb-4">What Does It Cost?</h2>
 <p class="text-xl text-slate-500 max-w-2xl mx-auto">Indicative all in per seat monthly costs, including rent, basic setup, and our service fee. Exact costs depend on your specific property and requirement.</p>
@@ -534,9 +533,9 @@ Your details are safe with us. No spam, ever.
 <div class="overflow-x-auto">
 <table class="w-full text-sm border-collapse whitespace-nowrap min-w-[600px]">
 <thead><tr>
-<th class="py-5 px-8 text-left text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60">Location</th>
-<th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60">Raw Rent (per sqft/month)</th>
-<th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-brand-electric bg-brand-electric/5 border-b border-brand-electric/20">All In Per Seat / Month (est.)</th>
+<th class="py-5 px-8 text-left text-xs font-semibold uppercase text-slate-500 bg-white/30 border-b border-white/60">Location</th>
+<th class="py-5 px-8 text-center text-xs font-semibold uppercase text-slate-500 bg-white/30 border-b border-white/60">Raw Rent (per sqft/month)</th>
+<th class="py-5 px-8 text-center text-xs font-semibold uppercase text-brand-electric bg-brand-electric/5 border-b border-brand-electric/20">All In Per Seat / Month (est.)</th>
 </tr></thead>
 <tbody>
 <tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">BKC</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">₹450 to ₹750 (avg ₹542)</td><td class="py-5 px-8 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">₹35,000 to ₹40,000</td></tr>
@@ -582,7 +581,7 @@ Your details are safe with us. No spam, ever.
 <div class="max-w-5xl mx-auto px-6">
 <div class="text-center mb-16 reveal">
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-<span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Sorting It Yourself vs Working With CorpEasy</span>
+<span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Sorting It Yourself vs Working With CorpEasy</span>
 </div>
 <h2 class="text-4xl font-black text-slate-900 mb-4">A Straightforward Comparison.</h2>
 <p class="text-xl text-slate-500">The main practical differences between sorting your own office and using CorpEasy.</p>
@@ -591,9 +590,9 @@ Your details are safe with us. No spam, ever.
 <div class="overflow-x-auto">
 <table class="w-full text-sm border-collapse whitespace-nowrap min-w-[600px]">
 <thead><tr>
-<th class="py-5 px-8 text-left text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60 w-1/3">What Needs Doing</th>
-<th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white/30 border-b border-white/60">Sorting It Yourself</th>
-<th class="py-5 px-8 text-center text-[11px] font-black uppercase tracking-widest text-brand-electric bg-brand-electric/5 border-b border-brand-electric/20"><span class="block">With CorpEasy</span><span class="text-[9px] bg-brand-electric text-white px-2 py-0.5 rounded-full mt-1 inline-block">Simpler</span></th>
+<th class="py-5 px-8 text-left text-xs font-semibold uppercase text-slate-500 bg-white/30 border-b border-white/60 w-1/3">What Needs Doing</th>
+<th class="py-5 px-8 text-center text-xs font-semibold uppercase text-slate-500 bg-white/30 border-b border-white/60">Sorting It Yourself</th>
+<th class="py-5 px-8 text-center text-xs font-semibold uppercase text-brand-electric bg-brand-electric/5 border-b border-brand-electric/20"><span class="block">With CorpEasy</span><span class="text-[9px] bg-brand-electric text-white px-2 py-0.5 rounded-full mt-1 inline-block">Simpler</span></th>
 </tr></thead>
 <tbody>
 <tr class="bg-white/20"><td class="py-5 px-8 text-slate-700 font-semibold border-b border-white/60">Dealing with the landlord</td><td class="py-5 px-8 text-slate-500 text-center border-b border-white/60">You do it directly</td><td class="py-5 px-8 text-green-600 font-bold text-center bg-brand-electric/5 border-b border-brand-electric/20">✅ We handle it</td></tr>
@@ -622,10 +621,10 @@ const gridHTML = gridPosts.map((key, i) => {
     return `<div class="blog-card group cursor-pointer reveal ${i === 1 ? 'delay-100' : i === 2 ? 'delay-200' : ''}" onclick="viewPost('${key}')">
 <div class="h-56 overflow-hidden rounded-t-[2rem]"><img loading="lazy" src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100"></div>
 <div class="p-8">
-<p class="text-[10px] font-bold ${getCategoryColor(p.category)} uppercase tracking-widest mb-4">${p.category}</p>
+<p class="text-xs font-medium ${getCategoryColor(p.category)} uppercase mb-3">${p.category}</p>
 <h4 class="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-brand-electric transition-colors">${p.title}</h4>
 <p class="text-sm text-slate-600 mb-8 leading-relaxed">${p.excerpt || p.content.replace(/<[^>]*>/g, '').substring(0, 150)}...</p>
-<span class="text-xs font-black uppercase tracking-widest text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
+<span class="text-sm font-medium text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fas fa-arrow-right"></i></span>
 </div>
 </div>`;
 }).join('');
@@ -635,7 +634,7 @@ return `<section class="max-w-7xl mx-auto px-6 py-24 reveal">
 <div class="max-w-2xl">
 <div class="inline-flex items-center space-x-2 mb-8 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
 <span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse"></span>
-<span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Useful Reading</span>
+<span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Useful Reading</span>
 </div>
 <h1 class="text-6xl md:text-8xl font-extrabold text-slate-900 leading-none">The <span class="text-gradient-vibrant">Insights</span> Hub.</h1>
 <p class="text-xl text-slate-600 mt-8 leading-relaxed">Practical articles on office space in Mumbai, commercial real estate, and workspace decisions. Written plainly for business owners and operations teams.</p>
@@ -648,7 +647,7 @@ ${featured ? `<div class="group cursor-pointer mb-24 reveal delay-100" onclick="
 </div>
 <div class="p-6 lg:p-10">
 <div class="flex items-center gap-4 mb-6">
-<span class="px-4 py-1.5 bg-brand-electric text-white text-[10px] font-black rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(99,102,241,0.4)]">Featured Guide</span>
+<span class="px-4 py-1.5 bg-brand-electric text-white text-xs font-semibold rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(99,102,241,0.4)]">Featured Guide</span>
 <span class="text-xs text-slate-600 font-bold flex items-center"><i class="far fa-clock mr-2"></i> ${featured.readTime}</span>
 </div>
 <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-tight group-hover:text-brand-electric transition-colors">${featured.title}</h2>
@@ -667,7 +666,7 @@ managed: `
 <section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-16 items-start min-h-[calc(100vh-96px)]">
 <div class="order-2 lg:order-1 flex flex-col justify-center">
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 backdrop-blur-md w-max">
-<span class="text-[10px] font-black uppercase tracking-widest text-brand-cyan">Managed Office Space · Mumbai</span>
+<span class="text-xs font-semibold uppercase tracking-wide text-brand-cyan">Managed Office Space · Mumbai</span>
 </div>
 <h1 class="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter mb-6">Your Office,<br><span class="text-gradient-vibrant">Found and Ready.</span></h1>
 <div class="space-y-3 mb-4">
@@ -692,7 +691,7 @@ managed: `
 <input type="tel" name="phone" placeholder="Phone Number" class="input-premium" required>
 <input type="text" name="requirement" placeholder="Team size and preferred location (e.g. 30 seats, BKC)" class="input-premium">
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-<button type="submit" class="w-full bg-brand-electric text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all">Send My Requirement →</button>
+<button type="submit" class="w-full bg-brand-electric text-white py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all">Submit Your Requirement</button>
 </form>
 <p class="text-xs text-slate-500 text-center mt-3 flex items-center justify-center gap-2"><i class="fas fa-lock text-brand-electric text-xs"></i> Your details are safe with us. No spam, ever.</p>
 </div>
@@ -700,11 +699,11 @@ managed: `
 </section>
 <section class="py-12 px-6">
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[550px] reveal group border border-white/60">
-<img src="managed_workspace.png" alt="Managed office space Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
+<img src="managed_workspace.png" alt="Managed office space Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="550">
 <div class="absolute inset-0 bg-gradient-to-tr from-brand-electric/40 via-transparent to-transparent"></div>
 <div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-<span class="text-xs font-black uppercase tracking-widest text-slate-900">Managed and Ready</span>
+<span class="text-sm font-medium text-slate-900">Managed and Ready</span>
 </div>
 </div>
 </section>
@@ -824,7 +823,7 @@ about: `
 <section class="max-w-7xl mx-auto px-6 py-32 text-center reveal min-h-[80vh] flex flex-col justify-center relative">
 <div class="glow-blob w-[600px] h-[600px] bg-brand-blue opacity-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
 <div class="relative z-10">
-<span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand-electric mb-6 block text-center">Our Story</span>
+<span class="text-xs font-semibold uppercase tracking-[0.4em] text-brand-electric mb-6 block text-center">Our Story</span>
 <h1 class="text-6xl lg:text-8xl text-slate-900 font-black mb-12 text-center leading-[0.9]">Making <span class="text-gradient-vibrant">Office Space</span> Simple.</h1>
 <p class="text-xl text-slate-600 text-center max-w-3xl mx-auto leading-relaxed mb-6 font-medium">CorpEasy is a Mumbai based workspace solutions company, founded in October 2025. We are a young, asset-light startup with a straightforward mission: to make the process of finding, setting up, and occupying commercial office space in Mumbai genuinely easier for businesses of all sizes.</p>
 <p class="text-lg text-slate-500 text-center max-w-2xl mx-auto leading-relaxed mb-20">The process currently involves too many parties, too little transparency, and too much time spent on things that are not your actual work. We are building something better, one client at a time.</p>
@@ -835,7 +834,7 @@ about: `
 <div class="glass-card p-10 group hover:border-brand-rose/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-rose transition-colors">2025</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Founded in Mumbai</p></div>
 </div>
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] lg:h-[500px] mt-24 reveal group">
-<img src="professional_team.png" alt="CorpEasy team Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
+<img src="professional_team.png" alt="CorpEasy team Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="500">
 <div class="absolute inset-0 bg-brand-electric/10 mix-blend-multiply"></div>
 </div>
 <div class="mt-32 text-center">
@@ -844,18 +843,18 @@ about: `
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="DEV DOSHI.png" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover">
+<img src="DEV DOSHI.png" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h4>
-<p class="text-brand-electric font-black text-[10px] uppercase tracking-widest mb-6">Co Founder: Business Development & Strategy</p>
+<p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Business Development & Strategy</p>
 <p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
 </div>
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="JAY NISHAR.png" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover">
+<img src="JAY NISHAR.png" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h4>
-<p class="text-brand-electric font-black text-[10px] uppercase tracking-widest mb-6">Co Founder: Operations & Growth</p>
+<p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Operations & Growth</p>
 <p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Jay manages CorpEasy's operational processes and client delivery. He ensures that every commitment made to a client is followed through reliably and on time.</p>
 </div>
 </div>
@@ -883,7 +882,7 @@ faq: `
 <section class="max-w-7xl mx-auto px-6 pt-24 pb-16 reveal relative">
 <div class="text-center mb-16">
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
-<span class="text-[10px] font-black uppercase tracking-widest text-brand-electric">Common Questions</span>
+<span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Common Questions</span>
 </div>
 <h1 class="text-5xl font-black text-slate-900 mb-4">Questions People Ask Us.</h1>
 <p class="text-xl text-slate-500">Straight answers about how CorpEasy works and what we actually do.</p>
@@ -902,7 +901,7 @@ faq: `
 </div>
 <div class="text-center mt-16">
 <p class="text-slate-600 mb-6">Have a question that is not answered here?</p>
-<button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Ask Us Directly →</button>
+<button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-10 py-5 rounded-lg font-medium text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:scale-105 transition-all">Ask Us Directly →</button>
 </div>
 </section>
 `,
@@ -911,25 +910,25 @@ contact: `
 <div class="lg:col-span-5 relative z-10">
 <div class="inline-flex items-center space-x-2 mb-10 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
 <span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse"></span>
-<span class="text-[10px] font-black text-brand-electric uppercase tracking-[0.4em]">Get in Touch</span>
+<span class="text-xs font-semibold text-brand-electric uppercase tracking-[0.4em]">Get in Touch</span>
 </div>
 <h1 class="text-6xl text-slate-900 font-black mb-10 leading-tight">Let's<br><span class="text-gradient-vibrant">Talk.</span></h1>
 <p class="text-xl text-slate-600 leading-relaxed mb-16 max-w-sm">Whether you are looking for office space in Mumbai, want help finding a tenant for your property, or just have a question, fill in the form and we will be back in touch within 24 hours.</p>
 <div class="space-y-10">
 <div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max">
 <div class="w-16 h-16 bg-white/70 border border-white/80 rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-xl"></i></div>
-<div><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Email Dev</p><a href="mailto:devdoshi@corpeasy.in" class="text-xl font-bold text-slate-900 tracking-wide hover:text-brand-electric transition-colors">devdoshi@corpeasy.in</a></div>
+<div><p class="text-xs text-slate-500 font-medium mb-1">Email Dev</p><a href="mailto:devdoshi@corpeasy.in" class="text-xl font-bold text-slate-900 tracking-wide hover:text-brand-electric transition-colors">devdoshi@corpeasy.in</a></div>
 </div>
 <div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max mt-4">
 <div class="w-16 h-16 bg-white/70 border border-white/80 rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-xl"></i></div>
-<div><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Email Jay</p><a href="mailto:jaynishar@corpeasy.in" class="text-xl font-bold text-slate-900 tracking-wide hover:text-brand-electric transition-colors">jaynishar@corpeasy.in</a></div>
+<div><p class="text-xs text-slate-500 font-medium mb-1">Email Jay</p><a href="mailto:jaynishar@corpeasy.in" class="text-xl font-bold text-slate-900 tracking-wide hover:text-brand-electric transition-colors">jaynishar@corpeasy.in</a></div>
 </div>
 <div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max mt-4">
 <div class="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-2xl flex items-center justify-center text-green-500 shadow-[0_0_15px_rgba(34,197,94,0.1)] group-hover:bg-green-500 group-hover:text-white transition-all duration-500"><i class="fab fa-whatsapp text-2xl"></i></div>
-<div><p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">WhatsApp</p><a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20would%20like%20to%20discuss%20an%20office%20requirement." target="_blank" class="text-xl font-bold text-slate-900 tracking-wide hover:text-green-500 transition-colors">Chat With Us</a></div>
+<div><p class="text-xs text-slate-500 font-medium mb-1">WhatsApp</p><a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20would%20like%20to%20discuss%20an%20office%20requirement." target="_blank" class="text-xl font-bold text-slate-900 tracking-wide hover:text-green-500 transition-colors">Chat With Us</a></div>
 </div>
 <div class="glass-card p-6 border border-white/60 mt-8">
-<p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-3">Our Office</p>
+<p class="text-xs text-slate-500 font-medium mb-3">Our Office</p>
 <p class="text-sm text-slate-700 leading-relaxed">Office No. 30, 2nd Floor, Gopal Bhavan,<br>Shamaldas Gandhi Marg, Marine Lines East,<br>Mumbai, Maharashtra 400002</p>
 </div>
 </div>
@@ -956,7 +955,7 @@ contact: `
 <option>General enquiry</option>
 </select>
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-<button type="submit" class="w-full bg-brand-electric text-white py-6 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-[1.02] mt-6">Send My Enquiry →</button>
+<button type="submit" class="w-full bg-brand-electric text-white py-6 rounded-lg font-medium text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-[1.02] mt-6">Send My Enquiry →</button>
 <p class="text-xs text-slate-500 text-center">We respond to every enquiry within 24 hours (Mon to Sat, 9 AM to 7 PM IST).</p>
 </form>
 </div>
