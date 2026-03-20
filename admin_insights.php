@@ -100,14 +100,13 @@ try {
     // CREATE
     if(isset($_POST['create_post'])) {
         $image_url = handleImage($_FILES['image_file'] ?? null, $_POST['image_url'] ?? '');
-        $stmt = $pdo->prepare("INSERT INTO blog_posts (title, excerpt, content, image_url, category, read_time, published_at) VALUES (?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $pdo->prepare("INSERT INTO blog_posts (title, excerpt, content, image_url, category, published_at) VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->execute([
             $_POST['title'],
             $_POST['excerpt'],
             $_POST['content'],
             $image_url,
             $_POST['category'],
-            $_POST['read_time'] ?: '5 Min Read',
             $_POST['published_at'] ?: date('Y-m-d H:i:s')
         ]);
         $message = "Post created successfully!";
@@ -119,14 +118,13 @@ try {
         if($image_url === null && !empty($_POST['image_url'])) {
             $image_url = $_POST['image_url'];
         }
-        $stmt = $pdo->prepare("UPDATE blog_posts SET title = ?, excerpt = ?, content = ?, image_url = ?, category = ?, read_time = ?, published_at = ? WHERE id = ?");
+        $stmt = $pdo->prepare("UPDATE blog_posts SET title = ?, excerpt = ?, content = ?, image_url = ?, category = ?, published_at = ? WHERE id = ?");
         $stmt->execute([
             $_POST['title'],
             $_POST['excerpt'],
             $_POST['content'],
             $image_url,
             $_POST['category'],
-            $_POST['read_time'] ?: '5 Min Read',
             $_POST['published_at'],
             $_POST['id']
         ]);
@@ -265,10 +263,6 @@ try {
                                 <option value="Finance & Compliance" <?php echo (($edit_post['category'] ?? '') == 'Finance & Compliance' ? 'selected' : ''); ?>>Finance & Compliance</option>
                                 <option value="Explainer" <?php echo (($edit_post['category'] ?? '') == 'Explainer' ? 'selected' : ''); ?>>Explainer</option>
                             </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Read Time</label>
-                            <input type="text" name="read_time" value="<?php echo $edit_post['read_time'] ?? '5 Min Read'; ?>" placeholder="e.g., 5 Min Read">
                         </div>
                     </div>
                     
