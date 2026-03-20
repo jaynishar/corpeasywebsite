@@ -202,8 +202,8 @@ try {
     <div class="header">
         <h1>CorpEasy Insights Manager</h1>
         <div class="header-links">
-            <a href="admin/admin_simple.php">View Leads</a>
-            <a href="admin/admin_insights.php?logout=1" onclick="window.location.href='admin/admin_insights.php?logout=1'; return false;">Logout</a>
+            <a href="admin_simple.php">View Leads</a>
+            <a href="admin_insights.php?logout=1" onclick="window.location.href='admin_insights.php?logout=1'; return false;">Logout</a>
         </div>
     </div>
     
@@ -211,7 +211,7 @@ try {
         <?php if(isset($message)) echo "<div class='message'>$message</div>"; ?>
         <?php if(isset($error)) echo "<div class='error'>$error</div>"; ?>
         
-        <a href="admin/admin/admin_insights.php" class="btn-new">+ New Post</a>
+        <a href="admin/admin_insights.php" class="btn-new">+ New Post</a>
         
         <div class="grid">
             <!-- Post List -->
@@ -226,8 +226,8 @@ try {
                             <span><?php echo date('d M Y', strtotime($post['published_at'])); ?> • <?php echo htmlspecialchars($post['category']); ?></span>
                         </div>
                         <div class="post-actions">
-                            <a href="admin/admin_insights.php?edit=<?php echo $post['id']; ?>" class="btn btn-edit">Edit</a>
-                            <a href="admin/admin_insights.php?delete=<?php echo $post['id']; ?>" class="btn btn-delete" onclick="return confirm('Delete this post?')">Delete</a>
+                            <a href="admin_insights.php?edit=<?php echo $post['id']; ?>" class="btn btn-edit">Edit</a>
+                            <a href="admin_insights.php?delete=<?php echo $post['id']; ?>" class="btn btn-delete" onclick="return confirm('Delete this post?')">Delete</a>
                         </div>
                     </div>
                     <?php endforeach; ?>
@@ -328,7 +328,7 @@ try {
                     <div style="display: flex; gap: 15px; margin-top: 20px;">
                         <button type="submit" class="btn-submit"><?php echo $edit_post ? 'Update Post' : 'Create Post'; ?></button>
                         <?php if($edit_post): ?>
-                        <a href="admin/admin_insights.php" class="btn-cancel">Cancel</a>
+                        <a href="admin_insights.php" class="btn-cancel">Cancel</a>
                         <?php endif; ?>
                     </div>
                 </form>
