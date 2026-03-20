@@ -70,14 +70,42 @@ if(!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true
 try {
     $pdo = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
     
+    // Helper function to handle image upload or URL
+    function handleImage($file, $url) {
+        if(!empty($url)) {
+            return $url;
+        }
+        if(isset($file) && $file['error'] === UPLOAD_ERR_OK) {
+            $upload_dir = __DIR__ . '/uploads/blog/';
+            if(!is_dir($upload_dir)) {
+                mkdir($upload_dir, 0755, true);
+            }
+            $allowed = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+            $finfo = finfo_open(FILEINFO_MIME_TYPE);
+            $mime = finfo_file($finfo, $file['tmp_name']);
+            finfo_close($finfo);
+            if(!in_array($mime, $allowed)) {
+                return null;
+            }
+            $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
+            $filename = uniqid('blog_') . '.' . $ext;
+            $destination = $upload_dir . $filename;
+            if(move_uploaded_file($file['tmp_name'], $destination)) {
+                return 'uploads/blog/' . $filename;
+            }
+        }
+        return null;
+    }
+    
     // CREATE
     if(isset($_POST['create_post'])) {
+        $image_url = handleImage($_FILES['image_file'] ?? null, $_POST['image_url'] ?? '');
         $stmt = $pdo->prepare("INSERT INTO blog_posts (title, excerpt, content, image_url, category, read_time, published_at) VALUES (?, ?, ?, ?, ?, ?, ?)");
         $stmt->execute([
             $_POST['title'],
             $_POST['excerpt'],
             $_POST['content'],
-            $_POST['image_url'],
+            $image_url,
             $_POST['category'],
             $_POST['read_time'] ?: '5 Min Read',
             $_POST['published_at'] ?: date('Y-m-d H:i:s')
@@ -87,12 +115,16 @@ try {
     
     // UPDATE
     if(isset($_POST['update_post'])) {
+        $image_url = handleImage($_FILES['image_file'] ?? null, $_POST['image_url'] ?? '');
+        if($image_url === null && !empty($_POST['image_url'])) {
+            $image_url = $_POST['image_url'];
+        }
         $stmt = $pdo->prepare("UPDATE blog_posts SET title = ?, excerpt = ?, content = ?, image_url = ?, category = ?, read_time = ?, published_at = ? WHERE id = ?");
         $stmt->execute([
             $_POST['title'],
             $_POST['excerpt'],
             $_POST['content'],
-            $_POST['image_url'],
+            $image_url,
             $_POST['category'],
             $_POST['read_time'] ?: '5 Min Read',
             $_POST['published_at'],
@@ -170,8 +202,8 @@ try {
     <div class="header">
         <h1>CorpEasy Insights Manager</h1>
         <div class="header-links">
-            <a href="admin_simple.php">View Leads</a>
-            <a href="admin_insights.php?logout=1">Logout</a>
+            <a href="admin/admin_simple.php">View Leads</a>
+            <a href="admin/admin_insights.php?logout=1" onclick="window.location.href='admin/admin_insights.php?logout=1'; return false;">Logout</a>
         </div>
     </div>
     
@@ -179,7 +211,7 @@ try {
         <?php if(isset($message)) echo "<div class='message'>$message</div>"; ?>
         <?php if(isset($error)) echo "<div class='error'>$error</div>"; ?>
         
-        <a href="admin_insights.php" class="btn-new">+ New Post</a>
+        <a href="admin/admin/admin_insights.php" class="btn-new">+ New Post</a>
         
         <div class="grid">
             <!-- Post List -->
@@ -194,8 +226,8 @@ try {
                             <span><?php echo date('d M Y', strtotime($post['published_at'])); ?> • <?php echo htmlspecialchars($post['category']); ?></span>
                         </div>
                         <div class="post-actions">
-                            <a href="admin_insights.php?edit=<?php echo $post['id']; ?>" class="btn btn-edit">Edit</a>
-                            <a href="admin_insights.php?delete=<?php echo $post['id']; ?>" class="btn btn-delete" onclick="return confirm('Delete this post?')">Delete</a>
+                            <a href="admin/admin_insights.php?edit=<?php echo $post['id']; ?>" class="btn btn-edit">Edit</a>
+                            <a href="admin/admin_insights.php?delete=<?php echo $post['id']; ?>" class="btn btn-delete" onclick="return confirm('Delete this post?')">Delete</a>
                         </div>
                     </div>
                     <?php endforeach; ?>
@@ -248,9 +280,39 @@ try {
                     </div>
                     
                     <div class="form-group">
-                        <label>Image URL</label>
-                        <input type="url" name="image_url" value="<?php echo $edit_post['image_url'] ?? ''; ?>" placeholder="https://images.unsplash.com/...">
-                        <p class="help-text">Use Unsplash URLs: images.unsplash.com/photo-{id}?auto=format&fit=crop&q=80&w=1200</p>
+                        <label>Image</label>
+                        <div style="display: flex; gap: 15px; align-items: flex-start; flex-wrap: wrap;">
+                            <div style="flex: 1; min-width: 200px;">
+                                <input type="url" name="image_url" id="image_url" value="<?php echo $edit_post['image_url'] ?? ''; ?>" placeholder="https://example.com/image.jpg">
+                                <p class="help-text">Or enter any image URL (Pexels, Pixabay, etc.)</p>
+                            </div>
+                            <div style="flex: 1; min-width: 200px;">
+                                <input type="file" name="image_file" id="image_file" accept="image/*" onchange="toggleImageFields()">
+                                <p class="help-text">Or upload an image file (jpg, png, webp)</p>
+                            </div>
+                        </div>
+                        <script>
+                        function toggleImageFields() {
+                            var urlField = document.getElementById('image_url');
+                            var fileField = document.getElementById('image_file');
+                            if(fileField.files.length > 0) {
+                                urlField.value = '';
+                                urlField.placeholder = 'File upload selected - URL disabled';
+                                urlField.disabled = true;
+                            } else {
+                                urlField.disabled = false;
+                                urlField.placeholder = 'https://example.com/image.jpg';
+                            }
+                        }
+                        document.getElementById('image_url').addEventListener('input', function() {
+                            if(this.value) {
+                                document.getElementById('image_file').value = '';
+                                document.getElementById('image_file').disabled = true;
+                            } else {
+                                document.getElementById('image_file').disabled = false;
+                            }
+                        });
+                        </script>
                     </div>
                     
                     <div class="form-group">
@@ -266,7 +328,7 @@ try {
                     <div style="display: flex; gap: 15px; margin-top: 20px;">
                         <button type="submit" class="btn-submit"><?php echo $edit_post ? 'Update Post' : 'Create Post'; ?></button>
                         <?php if($edit_post): ?>
-                        <a href="admin_insights.php" class="btn-cancel">Cancel</a>
+                        <a href="admin/admin_insights.php" class="btn-cancel">Cancel</a>
                         <?php endif; ?>
                     </div>
                 </form>

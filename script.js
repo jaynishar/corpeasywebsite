@@ -6,7 +6,7 @@ let postsLoaded = false;
 
 async function loadPosts() {
     try {
-        const response = await fetch('get_posts.php');
+        const response = await fetch('includes/get_posts.php');
         const data = await response.json();
         if(data.success && data.posts && data.posts.length > 0) {
             postData = {};
@@ -267,7 +267,7 @@ btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...'; btn.di
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({ event: 'generate_lead', form_type: formData.form_type, lead_source: 'website_form' });
 try {
-const response = await fetch('submit.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formData) });
+const response = await fetch('includes/submit.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formData) });
 const result = await response.json();
 if (result.success) {
 btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Received. We will be in touch within 24 hours.';
@@ -354,7 +354,7 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-12 px-6">
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[600px] reveal group">
-<img src="modern_office.png" alt="Managed office space in Mumbai" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
+<img src="assets/images/modern_office.png" alt="Managed office space in Mumbai" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 <div class="absolute bottom-10 left-10 lg:bottom-16 lg:left-16 right-10">
 <h3 class="text-3xl lg:text-5xl font-black text-white mb-4 drop-shadow-lg tracking-tight">A Good Workspace Changes Everything.</h3>
@@ -700,7 +700,7 @@ managed: `
 </section>
 <section class="py-12 px-6">
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[550px] reveal group border border-white/60">
-<img src="managed_workspace.png" alt="Managed office space Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
+<img src="assets/images/managed_workspace.png" alt="Managed office space Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
 <div class="absolute inset-0 bg-gradient-to-tr from-brand-electric/40 via-transparent to-transparent"></div>
 <div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
@@ -835,7 +835,7 @@ about: `
 <div class="glass-card p-10 group hover:border-brand-rose/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-rose transition-colors">2025</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Founded in Mumbai</p></div>
 </div>
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] lg:h-[500px] mt-24 reveal group">
-<img src="professional_team.png" alt="CorpEasy team Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
+<img src="assets/images/professional_team.png" alt="CorpEasy team Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]">
 <div class="absolute inset-0 bg-brand-electric/10 mix-blend-multiply"></div>
 </div>
 <div class="mt-32 text-center">

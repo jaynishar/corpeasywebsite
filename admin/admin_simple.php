@@ -9,7 +9,7 @@ $db_pass = 'C0rpeasy1';
 // LOGOUT
 if(isset($_GET['logout'])) {
     session_destroy();
-    header('Location: admin_simple.php');
+    header('Location: admin/admin_simple.php');
     exit;
 }
 
@@ -18,7 +18,7 @@ if(isset($_GET['delete']) && is_numeric($_GET['delete'])) {
     try {
         $pdo = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
         $pdo->prepare("DELETE FROM leads WHERE id = ?")->execute([$_GET['delete']]);
-        header('Location: admin_simple.php?deleted=1');
+        header('Location: admin/admin_simple.php?deleted=1');
         exit;
     } catch(PDOException $e) {}
 }
@@ -170,8 +170,8 @@ try {
     <div class="header">
         <h1>CorpEasy Admin</h1>
         <div class="header-actions">
-            <a href="admin_simple.php?export=1" class="export-btn">Export CSV</a>
-            <a href="admin_simple.php?logout=1" class="logout">Logout</a>
+            <a href="admin/admin_simple.php?export=1" class="export-btn">Export CSV</a>
+            <a href="admin/admin_simple.php?logout=1" class="logout">Logout</a>
         </div>
     </div>
     
@@ -275,13 +275,13 @@ try {
     
     function confirmDelete(id, name) {
         if(confirm('Are you sure you want to delete lead #' + id + ' (' + name + ')? This cannot be undone.')) {
-            window.location.href = 'admin_simple.php?delete=' + id;
+            window.location.href = 'admin/admin_simple.php?delete=' + id;
         }
     }
     
     function deleteFromModal() {
         if(currentLeadId && confirm('Are you sure you want to delete this lead? This cannot be undone.')) {
-            window.location.href = 'admin_simple.php?delete=' + currentLeadId;
+            window.location.href = 'admin/admin_simple.php?delete=' + currentLeadId;
         }
     }
     
