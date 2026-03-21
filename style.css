@@ -34,10 +34,16 @@ main section:not(:first-child) { content-visibility: auto; contain-intrinsic-siz
 
 /* Glassmorphism Navigation */
 .glass-nav { 
-    background: rgba(255, 255, 255, 0.65); 
+    background: rgba(255, 255, 255, 0.85); 
     backdrop-filter: blur(24px); 
     -webkit-backdrop-filter: blur(24px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+#mobile-trigger {
+    z-index: 101;
+    flex-shrink: 0;
 }
 
 /* Premium Light Inputs */
@@ -83,7 +89,7 @@ h1, h2, h3 { letter-spacing: -0.03em; line-height: 1.1; font-weight: 800; }
 }
 
 /* Ticker Animation */
-.ticker-track { display: flex; animation: ticker-scroll 40s linear infinite; width: max-content; }
+.ticker-track { display: flex; animation: ticker-scroll 25s linear infinite; width: max-content; }
 @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
 /* Custom Scrollbar */
@@ -179,61 +185,88 @@ input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.15); }
 }
 
 .logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-img-light {
+    mix-blend-mode: normal;
+    filter: none;
+}
+
+.logo-img-dark {
     mix-blend-mode: multiply;
     filter: brightness(1) contrast(1);
-    background: transparent;
 }
 
 /* Mobile touch improvements */
 @media (max-width: 768px) {
     .input-premium {
-        font-size: 16px; /* Prevents iOS zoom on focus */
+        font-size: 16px;
         padding: 1rem 1.25rem;
     }
     
     select.input-premium {
-        font-size: 16px; /* Prevents iOS zoom */
+        font-size: 16px;
     }
     
-    /* Larger touch targets on mobile */
     button[type="submit"] {
         min-height: 54px;
     }
     
-    /* Better glass cards on mobile */
     .glass-card {
         border-radius: 1.5rem;
     }
     
-    /* Prevent text overflow on mobile */
     h1, h2, h3 {
         word-break: break-word;
         overflow-wrap: break-word;
     }
-}/* Mobile touch improvements */
-@media (max-width: 768px) {
-    .input-premium {
-        font-size: 16px; /* Prevents iOS zoom on focus */
-        padding: 1rem 1.25rem;
+    
+    h1 {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+        line-height: 1.1;
     }
     
-    select.input-premium {
-        font-size: 16px; /* Prevents iOS zoom */
+    h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
     }
     
-    /* Larger touch targets on mobile */
-    button[type="submit"] {
-        min-height: 54px;
+    .hero-form {
+        padding: 1.5rem;
     }
     
-    /* Better glass cards on mobile */
+    .mobile-nav-text {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
     .glass-card {
-        border-radius: 1.5rem;
+        padding: 1.25rem !important;
     }
     
-    /* Prevent text overflow on mobile */
-    h1, h2, h3 {
-        word-break: break-word;
-        overflow-wrap: break-word;
+    .hero-buttons {
+        flex-direction: column;
     }
+    
+    .hero-buttons > * {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile Menu Fixed Position */
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    max-height: 100vh;
+    max-height: 100dvh;
 }

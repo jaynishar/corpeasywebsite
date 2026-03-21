@@ -298,18 +298,18 @@ home: `
 <div class="orb-drift absolute w-[500px] h-[500px] rounded-full bg-brand-cyan/6 blur-[100px] bottom-0 right-0" style="animation-duration:28s; animation-delay: -8s"></div>
 <div class="orb-drift absolute w-[400px] h-[400px] rounded-full bg-brand-violet/5 blur-[80px] top-1/2 left-1/2 -translate-x-1/2" style="animation-duration:18s; animation-delay: -4s"></div>
 </div>
-<section class="max-w-7xl mx-auto px-6 py-12 lg:py-16">
-<div class="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-12 lg:gap-16 items-center">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 lg:py-16">
+<div class="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-8 lg:gap-12 items-start">
 <div class="reveal order-2 lg:order-1">
 <div class="glow-blob w-96 h-96 bg-brand-electric -top-20 -left-20 opacity-20"></div>
-<div class="mb-6">
-<span class="text-sm text-slate-500 font-medium">Managed Office Space in Mumbai</span>
+<div class="mb-4 lg:mb-6">
+<span class="text-xs sm:text-sm text-slate-500 font-medium">Managed Office Space in Mumbai</span>
 </div>
-<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">Find Your Perfect<br><span id="hero-word" class="text-brand-electric">Office Space</span></h1>
-<p class="text-lg text-slate-600 max-w-lg mb-8 leading-relaxed">CorpEasy helps businesses find, set up, and manage office spaces across Mumbai. Get a clear per-seat monthly cost with one point of contact.</p>
-<div class="flex flex-col sm:flex-row gap-3 mb-6">
-<button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all">Get a Free Consultation</button>
-<a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20looking%20for%20office%20space%20in%20Mumbai." target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-green-600 transition-all flex items-center justify-center gap-2">
+<h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 lg:mb-6 leading-tight">Find Your Perfect<br><span id="hero-word" class="text-brand-electric">Office Space</span></h1>
+<p class="text-base lg:text-lg text-slate-600 max-w-lg mb-6 lg:mb-8 leading-relaxed">CorpEasy helps businesses find, set up, and manage office spaces across Mumbai. Get a clear per-seat monthly cost with one point of contact.</p>
+<div class="hero-buttons flex flex-col sm:flex-row gap-3 mb-6">
+<button onclick="navigateTo('contact')" class="bg-brand-electric text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all w-full sm:w-auto">Get a Free Consultation</button>
+<a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20looking%20for%20office%20space%20in%20Mumbai." target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-green-600 transition-all flex items-center justify-center gap-2 w-full sm:w-auto">
 <i class="fab fa-whatsapp"></i> WhatsApp
 </a>
 </div>
@@ -317,13 +317,13 @@ home: `
 Learn how it works <i class="fas fa-arrow-right text-sm"></i>
 </button>
 </div>
-<div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
-<div class="glass-card p-8 border-t-4 border-t-brand-electric shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-<h3 class="text-xl font-black text-slate-900 mb-2 flex items-center gap-3">
+<div class="order-1 lg:order-2 lg:sticky lg:top-[100px] self-start">
+<div class="hero-form glass-card p-6 lg:p-8 border-t-4 border-t-brand-electric shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+<h3 class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3">
 <i class="fas fa-bolt text-brand-electric"></i>
 Tell Us What You Need
 </h3>
-<p class="text-sm text-slate-600 mb-6">Share your requirement. We will come back within 24 hours with a clear proposal. No obligation.</p>
+<p class="text-sm text-slate-600 mb-4 lg:mb-6">Share your requirement. We will come back within 24 hours with a clear proposal. No obligation.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
@@ -351,13 +351,13 @@ Your details are safe with us. No spam, ever.
 </div>
 </div>
 </section>
-<section class="py-12 px-6">
-<div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[600px] reveal group">
-<img src="modern_office.png" alt="Managed office space in Mumbai" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" width="1200" height="600" fetchpriority="high">
+<section class="py-8 lg:py-12 px-4 sm:px-6">
+<div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] sm:h-[400px] lg:h-[600px] reveal group">
+<img src="modern_office.png?v=2026032102" alt="Managed office space in Mumbai" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" width="1200" height="600" fetchpriority="high">
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
-<div class="absolute bottom-10 left-10 lg:bottom-16 lg:left-16 right-10">
-<h3 class="text-3xl lg:text-5xl font-black text-white mb-4 drop-shadow-lg tracking-tight">A Good Workspace Changes Everything.</h3>
-<p class="text-white/90 text-lg lg:text-xl max-w-2xl drop-shadow">We help companies across Mumbai find and occupy the right commercial office space quickly.</p>
+<div class="absolute bottom-6 sm:bottom-10 left-6 sm:left-10 right-6 sm:right-10">
+<h3 class="text-2xl sm:text-3xl lg:text-5xl font-black text-white mb-2 sm:mb-4 drop-shadow-lg tracking-tight">A Good Workspace Changes Everything.</h3>
+<p class="text-white/90 text-base sm:text-lg lg:text-xl max-w-2xl drop-shadow hidden sm:block">We help companies across Mumbai find and occupy the right commercial office space quickly.</p>
 </div>
 </div>
 </section>
@@ -991,7 +991,7 @@ window.dataLayer.push({ event: 'scroll_depth', depth_threshold: depth });
 }
 });
 const nav = document.getElementById('navbar');
-if(nav) { if(winScroll > 60) { nav.classList.add('shadow-[0_10px_30px_rgba(0,0,0,0.06)]'); nav.style.height = '96px'; } else { nav.classList.remove('shadow-[0_10px_30px_rgba(0,0,0,0.06)]'); nav.style.height = '128px'; } }
+if(nav) { if(winScroll > 60) { nav.classList.add('shadow-[0_10px_30px_rgba(0,0,0,0.06)]'); } else { nav.classList.remove('shadow-[0_10px_30px_rgba(0,0,0,0.06)]'); } }
 const heroImg = document.querySelector('.hero-parallax-img');
 if (heroImg && window.innerWidth >= 1024) { heroImg.style.transform = `translateY(${winScroll * 0.12}px)`; }
 };
