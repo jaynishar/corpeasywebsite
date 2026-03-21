@@ -353,11 +353,11 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-8 lg:py-12 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] sm:h-[400px] lg:h-[600px] reveal group">
-<img src="modern_office.png?v=2026032102" alt="Managed office space in Mumbai" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" width="1200" height="600" fetchpriority="high">
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" alt="Modern workspace in Mumbai - collaborative office design" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" width="1920" height="1080" fetchpriority="high">
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 <div class="absolute bottom-6 sm:bottom-10 left-6 sm:left-10 right-6 sm:right-10">
-<h3 class="text-2xl sm:text-3xl lg:text-5xl font-black text-white mb-2 sm:mb-4 drop-shadow-lg tracking-tight">A Good Workspace Changes Everything.</h3>
-<p class="text-white/90 text-base sm:text-lg lg:text-xl max-w-2xl drop-shadow hidden sm:block">We help companies across Mumbai find and occupy the right commercial office space quickly.</p>
+<h3 class="text-2xl sm:text-3xl lg:text-5xl font-black text-white mb-2 sm:mb-4 drop-shadow-lg tracking-tight">Where Teams Thrive & <br class="hidden sm:block"/>Businesses Grow.</h3>
+<p class="text-white/90 text-base sm:text-lg lg:text-xl max-w-2xl drop-shadow hidden sm:block">Premium managed office spaces across Mumbai. Your workspace, perfected.</p>
 </div>
 </div>
 </section>
@@ -616,6 +616,15 @@ Your details are safe with us. No spam, ever.
 </table>
 </div>
 </div>
+</section>
+<section class="py-12 px-4 sm:px-6">
+<div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[350px] lg:h-[500px] reveal group border border-white/60">
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920" alt="Commercial buildings in Mumbai BKC financial district" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1920" height="1080">
+<div class="absolute inset-0 bg-gradient-to-tr from-brand-cyan/30 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 lg:bottom-10 lg:left-10 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+<span class="text-sm font-medium text-slate-900">Mumbai Commercial Real Estate</span>
+</div>
 </div>
 </section>
 `,
@@ -625,7 +634,6 @@ const postKeys = Object.keys(posts);
 const featuredKey = postKeys[0];
 const featured = posts[featuredKey];
 const gridPosts = postKeys.slice(1);
-
 const gridHTML = gridPosts.map((key, i) => {
     const p = posts[key];
     return `<div class="blog-card group cursor-pointer reveal ${i === 1 ? 'delay-100' : i === 2 ? 'delay-200' : ''}" onclick="viewPost('${key}')">
@@ -638,7 +646,6 @@ const gridHTML = gridPosts.map((key, i) => {
 </div>
 </div>`;
 }).join('');
-
 return `<section class="max-w-7xl mx-auto px-6 py-24 reveal">
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
 <div class="max-w-2xl">
@@ -709,7 +716,7 @@ managed: `
 </section>
 <section class="py-12 px-6">
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[550px] reveal group border border-white/60">
-<img src="managed_workspace.png" alt="Managed office space Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="550">
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" alt="Managed office space Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="550">
 <div class="absolute inset-0 bg-gradient-to-tr from-brand-electric/40 via-transparent to-transparent"></div>
 <div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
@@ -727,17 +734,17 @@ managed: `
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-blue/30 border border-brand-electric/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-electric shadow-[0_0_20px_rgba(0,240,255,0.2)]"><i class="fas fa-search-location"></i></div>
 <h4 class="text-2xl font-bold mb-4 text-slate-900">Property Search and Negotiation</h4>
-<p class="text-slate-600 leading-relaxed">We identify suitable commercial properties across Mumbai based on your requirement, approach landlords, and negotiate the lease on your behalf. You do not spend weeks talking to brokers or comparing listings.</p>
+<p class="text-slate-600 leading-relaxed">We identify suitable commercial properties across Mumbai based on your requirement, approach landlords, and negotiate the lease on your behalf.</p>
 </div>
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-cyan/20 border border-brand-cyan/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-cyan shadow-[0_0_20px_rgba(6,182,212,0.2)]"><i class="fas fa-tools"></i></div>
 <h4 class="text-2xl font-bold mb-4 text-slate-900">Workspace Setup and Readiness</h4>
-<p class="text-slate-600 leading-relaxed">Once the space is secured, we manage the basic setup. Furniture, internet connection, and a clean functional working environment. The space is ready for your team before they arrive on Day 1.</p>
+<p class="text-slate-600 leading-relaxed">Once the space is secured, we manage the basic setup. Furniture, internet connection, and a clean functional working environment ready for Day 1.</p>
 </div>
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-violet/20 border border-brand-violet/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-violet shadow-[0_0_20px_rgba(139,92,246,0.2)]"><i class="fas fa-headset"></i></div>
 <h4 class="text-2xl font-bold mb-4 text-slate-900">Your Ongoing Point of Contact</h4>
-<p class="text-slate-600 leading-relaxed">After you move in, we remain available for any issues related to the space or the lease. You have a single point of contact rather than chasing multiple vendors whenever something needs attention.</p>
+<p class="text-slate-600 leading-relaxed">After you move in, we remain available for any issues related to the space or the lease. You have a single point of contact.</p>
 </div>
 </div>
 </div>
@@ -825,6 +832,15 @@ list: `
 <p class="flex items-start gap-3 text-slate-700 text-sm sm:text-base"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We aim to place tenants on fixed, medium term lease agreements.</p>
 <p class="flex items-start gap-3 text-slate-700 text-sm sm:text-base"><i class="fas fa-check-circle text-brand-gold mt-1"></i> No spammy broker networks. Just serious businesses.</p>
 </div>
+</div>
+</section>
+<section class="py-12 px-4 sm:px-6">
+<div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[350px] lg:h-[500px] reveal group border border-white/60">
+<img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=1920" alt="Premium commercial building for lease in Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1920" height="1080">
+<div class="absolute inset-0 bg-gradient-to-l from-brand-gold/30 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+<span class="text-sm font-medium text-slate-900">Premium Property Portfolio</span>
 </div>
 </div>
 </section>
@@ -921,6 +937,16 @@ facility: `
 <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-6">Built for Companies That Are Done<br><span class="text-gradient-vibrant">Thinking About Their Office.</span></h2>
 <p class="text-lg text-slate-500 mb-12 max-w-2xl mx-auto">If your HR team is handling AMC complaints, your finance team is chasing vendor invoices, or your ops head is managing housekeeping — you need CorpEasy Facility Management.</p>
 <button onclick="navigateTo('contact')" class="inline-flex items-center gap-3 bg-brand-rose text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_25px_rgba(244,63,94,0.35)] hover:scale-105 transition-all">Talk to Our Team <i class="fas fa-arrow-right"></i></button>
+</div>
+</section>
+<section class="py-16 px-4 lg:px-6">
+<div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] lg:h-[450px] reveal group border border-white/60">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1920" alt="Professional facility management team in action" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1920" height="1080">
+<div class="absolute inset-0 bg-gradient-to-r from-brand-rose/30 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 lg:bottom-10 lg:left-10 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-brand-rose animate-pulse"></span>
+<span class="text-sm font-medium text-slate-900">Professional Operations Team</span>
+</div>
 </div>
 </section>
 `,
@@ -1058,6 +1084,7 @@ contact: `
 <option>I need a managed office space in Mumbai</option>
 <option>I need help finding a commercial office for rent</option>
 <option>I want to list my commercial property</option>
+<option>I need facility management for my office</option>
 <option>General enquiry</option>
 </select>
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
