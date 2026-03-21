@@ -734,104 +734,104 @@ managed: `
 </section>
 `,
 find: `
-<section class="py-16 lg:py-24 relative reveal">
-<div class="glow-blob w-[600px] h-[600px] bg-brand-cyan opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-<div class="max-w-2xl mx-auto px-6 mb-16 relative z-10">
-<div class="glass-card p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-<h3 class="text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Tell Us What You Are Looking For</h3>
-<p class="text-sm text-slate-600 mb-6">Share your location preference, team size, and budget. We will come back with suitable options within 24 to 48 hours.</p>
+<section class="py-12 lg:py-24 px-4 sm:px-6 relative reveal">
+<div class="glow-blob w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] bg-brand-cyan opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+<div class="max-w-2xl mx-auto mb-12 relative z-10">
+<div class="glass-card p-6 sm:p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+<h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Tell Us What You Are Looking For</h3>
+<p class="text-sm text-slate-600 mb-4 sm:mb-6">Share your location preference, team size, and budget. We will come back with suitable options within 24 to 48 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
 <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
 </div>
-<input type="text" name="requirement" placeholder="Your requirement (e.g. BKC, 30 seats, ₹18,000/seat)" class="input-premium">
+<input type="text" name="requirement" placeholder="Your requirement (e.g. BKC, 30 seats)" class="input-premium">
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-<button type="submit" class="w-full bg-brand-cyan text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all">Share My Requirement →</button>
+<button type="submit" class="w-full bg-brand-cyan text-white py-3 sm:py-4 rounded-xl font-bold uppercase tracking-wider text-xs sm:text-sm hover:scale-[1.02] shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all">Share My Requirement</button>
 </form>
 </div>
 </div>
-<div class="max-w-4xl mx-auto px-6 text-center relative z-10 p-12 bg-white/40 backdrop-blur-md rounded-[3rem] border border-white/60 mb-16">
-<h1 class="text-5xl lg:text-7xl font-black text-slate-900 mb-8">Find <span class="text-gradient">Office Space</span> in Mumbai.</h1>
-<p class="text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">Looking for <strong>commercial office space for rent in Mumbai</strong>? Tell us your team size, location preference, and budget. We identify the most suitable properties, handle the conversations with landlords, and help you move into the right space. No months of back and forth.</p>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 p-6 sm:p-10 lg:p-12 bg-white/40 backdrop-blur-md rounded-2xl sm:rounded-[2rem] lg:rounded-[3rem] border border-white/60 mb-12">
+<h1 class="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-black text-slate-900 mb-6 sm:mb-8">Find <span class="text-gradient">Office Space</span> in Mumbai.</h1>
+<p class="text-base sm:text-lg lg:text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">Looking for <strong>commercial office space for rent in Mumbai</strong>? Tell us your team size, location preference, and budget.</p>
 </div>
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-<div class="glass-card p-8 reveal">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 relative z-10">
+<div class="glass-card p-6 sm:p-8 reveal">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-6 text-brand-cyan"><i class="fas fa-map-marked-alt text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">We Know What Is Available</h4>
-<p class="text-slate-600 leading-relaxed text-sm">We actively track commercial properties across BKC, Lower Parel, Goregaon, Andheri, and Powai. When you share your requirement, we give you a realistic view of what is out there at your budget. Quickly.</p>
+<h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">We Know What Is Available</h4>
+<p class="text-slate-600 leading-relaxed text-sm">We actively track commercial properties across BKC, Lower Parel, Goregaon, Andheri, and Powai.</p>
 </div>
-<div class="glass-card p-8 reveal delay-100">
+<div class="glass-card p-6 sm:p-8 reveal delay-100">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-6 text-brand-electric"><i class="fas fa-handshake text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">We Handle the Landlord Conversations</h4>
-<p class="text-slate-600 leading-relaxed text-sm">Once we identify a space that fits, we approach the landlord and manage the negotiation. You do not have to make speculative calls or deal with agents who do not know your requirement.</p>
+<h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">We Handle the Landlord Conversations</h4>
+<p class="text-slate-600 leading-relaxed text-sm">Once we identify a space that fits, we approach the landlord and manage the negotiation.</p>
 </div>
-<div class="glass-card p-8 reveal delay-200">
+<div class="glass-card p-6 sm:p-8 reveal delay-200">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-6 text-brand-violet"><i class="fas fa-file-contract text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Clear Terms Before You Commit</h4>
-<p class="text-slate-600 leading-relaxed text-sm">Before you agree to anything, we lay out the cost clearly. Rent, deposits, maintenance, and our fee. No ambiguous numbers and no surprises after you have signed.</p>
+<h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">Clear Terms Before You Commit</h4>
+<p class="text-slate-600 leading-relaxed text-sm">Before you agree to anything, we lay out the cost clearly. No surprises after you have signed.</p>
 </div>
 </div>
 </section>
 `,
 list: `
-<section class="py-16 lg:py-24 relative">
-<div class="glow-blob w-[800px] h-[800px] bg-brand-gold opacity-10 -top-20 -right-20"></div>
-<div class="max-w-2xl mx-auto px-6 mb-16 relative z-10">
-<div class="glass-card p-8 border-t-4 border-t-brand-gold shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-<h3 class="text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-building text-brand-gold"></i> Tell Us About Your Property</h3>
-<p class="text-sm text-slate-600 mb-6">Share your property details and we will get back to you within 24 hours to discuss whether there is a fit with our active client requirements.</p>
+<section class="py-12 lg:py-24 px-4 sm:px-6 relative">
+<div class="glow-blob w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] lg:w-[800px] lg:h-[800px] bg-brand-gold opacity-10 top-0 right-0 lg:-top-20 lg:-right-20"></div>
+<div class="max-w-2xl mx-auto mb-12 relative z-10">
+<div class="glass-card p-6 sm:p-8 border-t-4 border-t-brand-gold shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+<h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-building text-brand-gold"></i> Tell Us About Your Property</h3>
+<p class="text-sm text-slate-600 mb-4 sm:mb-6">Share your property details and we will get back to you within 24 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Your Name *" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company or Property Owner Name" class="input-premium">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
 <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
 </div>
 <input type="text" name="property_location" placeholder="Property Address or Area *" class="input-premium" required>
 <input type="number" name="property_area" placeholder="Approximate Area (Sq Ft)" class="input-premium">
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-<button type="submit" class="w-full bg-brand-gold text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] shadow-[0_0_20px_rgba(251,191,36,0.4)] transition-all">Submit Property Details →</button>
+<button type="submit" class="w-full bg-brand-gold text-white py-3 sm:py-4 rounded-xl font-bold uppercase tracking-wider text-xs sm:text-sm hover:scale-[1.02] shadow-[0_0_20px_rgba(251,191,36,0.4)] transition-all">Submit Property Details</button>
 </form>
 </div>
 </div>
-<div class="max-w-4xl mx-auto px-6 text-center relative z-10 p-12 bg-white/40 backdrop-blur-md rounded-[3rem] border border-white/60 mb-20">
-<h1 class="text-5xl lg:text-7xl font-black text-slate-900 mb-8">List Your <span class="text-gradient-gold">Commercial Property.</span></h1>
-<p class="text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">Have a commercial property in Mumbai that is sitting empty or coming up for lease? We work with property owners to find the right tenants. Companies actively looking for <strong>office space for rent in Mumbai</strong>, and we manage the process from introduction to agreement.</p>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 p-6 sm:p-10 lg:p-12 bg-white/40 backdrop-blur-md rounded-2xl sm:rounded-[2rem] lg:rounded-[3rem] border border-white/60 mb-12 lg:mb-20">
+<h1 class="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-black text-slate-900 mb-6 sm:mb-8">List Your <span class="text-gradient-gold">Commercial Property.</span></h1>
+<p class="text-base sm:text-lg lg:text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">Have a commercial property in Mumbai that is sitting empty or coming up for lease? We work with property owners to find the right tenants.</p>
 </div>
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center relative z-10">
 <div class="reveal">
-<h2 class="text-5xl lg:text-6xl font-black mb-8 leading-none tracking-tighter text-slate-900">The Right Tenant<br><span class="text-gradient-gold">For Your Space.</span></h2>
-<p class="text-xl text-slate-600 mb-6 leading-relaxed">We are actively sourcing commercial office spaces across Mumbai for our clients. If you own or manage a commercial property and are looking for a reliable business tenant, we would like to hear from you.</p>
-<p class="text-lg text-slate-600 leading-relaxed">We bring genuine, vetted business tenants to you. Companies with a real requirement, a defined budget, and ready to move. This is not a listing portal. We do the matchmaking ourselves.</p>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black mb-6 sm:mb-8 leading-tight lg:leading-none tracking-tight lg:tracking-tighter text-slate-900">The Right Tenant<br><span class="text-gradient-gold">For Your Space.</span></h2>
+<p class="text-base sm:text-lg lg:text-xl text-slate-600 mb-4 sm:mb-6 leading-relaxed">We are actively sourcing commercial office spaces across Mumbai for our clients. If you own or manage a commercial property and are looking for a reliable business tenant, we would like to hear from you.</p>
+<p class="text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed">We bring genuine, vetted business tenants to you. This is not a listing portal. We do the matchmaking ourselves.</p>
 </div>
-<div class="glass-card p-10 reveal delay-100 border border-brand-gold/20 shadow-[0_0_40px_rgba(251,191,36,0.1)]">
-<h4 class="text-xl font-black text-slate-900 mb-6 flex items-center gap-3"><i class="fas fa-star text-brand-gold"></i> Why List With CorpEasy?</h4>
-<div class="space-y-4">
-<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We bring genuine, pre qualified business tenants to you. Not browser enquiries.</p>
-<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We manage the sourcing, conversations, and lease negotiations on your behalf.</p>
-<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We aim to place tenants on fixed, medium term lease agreements.</p>
-<p class="flex items-start gap-3 text-slate-700"><i class="fas fa-check-circle text-brand-gold mt-1"></i> No spammy broker networks. Just serious businesses actively looking for space.</p>
+<div class="glass-card p-6 sm:p-8 lg:p-10 reveal delay-100 border border-brand-gold/20 shadow-[0_0_40px_rgba(251,191,36,0.1)]">
+<h4 class="text-lg sm:text-xl font-black text-slate-900 mb-4 sm:mb-6 flex items-center gap-3"><i class="fas fa-star text-brand-gold"></i> Why List With CorpEasy?</h4>
+<div class="space-y-3 sm:space-y-4">
+<p class="flex items-start gap-3 text-slate-700 text-sm sm:text-base"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We bring genuine, pre qualified business tenants to you.</p>
+<p class="flex items-start gap-3 text-slate-700 text-sm sm:text-base"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We manage the sourcing, conversations, and lease negotiations.</p>
+<p class="flex items-start gap-3 text-slate-700 text-sm sm:text-base"><i class="fas fa-check-circle text-brand-gold mt-1"></i> We aim to place tenants on fixed, medium term lease agreements.</p>
+<p class="flex items-start gap-3 text-slate-700 text-sm sm:text-base"><i class="fas fa-check-circle text-brand-gold mt-1"></i> No spammy broker networks. Just serious businesses.</p>
 </div>
 </div>
 </div>
 </section>
 `,
 about: `
-<section class="max-w-7xl mx-auto px-6 py-32 text-center reveal min-h-[80vh] flex flex-col justify-center relative">
-<div class="glow-blob w-[600px] h-[600px] bg-brand-blue opacity-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-32 text-center reveal relative">
+<div class="glow-blob w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] bg-brand-blue opacity-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
 <div class="relative z-10">
-<span class="text-xs font-semibold uppercase tracking-[0.4em] text-brand-electric mb-6 block text-center">Our Story</span>
-<h1 class="text-6xl lg:text-8xl text-slate-900 font-black mb-12 text-center leading-[0.9]">Making <span class="text-gradient-vibrant">Office Space</span> Simple.</h1>
-<p class="text-xl text-slate-600 text-center max-w-3xl mx-auto leading-relaxed mb-6 font-medium">CorpEasy is a Mumbai based workspace solutions company, founded in October 2025. We are a young, asset-light startup with a straightforward mission: to make the process of finding, setting up, and occupying commercial office space in Mumbai genuinely easier for businesses of all sizes.</p>
-<p class="text-lg text-slate-500 text-center max-w-2xl mx-auto leading-relaxed mb-20">The process currently involves too many parties, too little transparency, and too much time spent on things that are not your actual work. We are building something better, one client at a time.</p>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
-<div class="glass-card p-10 group hover:border-brand-electric/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-electric transition-colors">Mumbai</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Our Focus Market</p></div>
-<div class="glass-card p-10 group hover:border-brand-cyan/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-cyan transition-colors">3</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Services Under One Roof</p></div>
-<div class="glass-card p-10 group hover:border-brand-violet/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-violet transition-colors">24 Hr</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Response to Every Enquiry</p></div>
-<div class="glass-card p-10 group hover:border-brand-rose/50"><p class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tighter group-hover:text-brand-rose transition-colors">2025</p><p class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Founded in Mumbai</p></div>
+<span class="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.4em] text-brand-electric mb-4 sm:mb-6 block text-center">Our Story</span>
+<h1 class="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl text-slate-900 font-black mb-8 sm:mb-12 text-center leading-[0.95]">Making <span class="text-gradient-vibrant">Office Space</span> Simple.</h1>
+<p class="text-base sm:text-lg lg:text-xl text-slate-600 text-center max-w-3xl mx-auto leading-relaxed mb-4 sm:mb-6 font-medium">CorpEasy is a Mumbai based workspace solutions company, founded in October 2025. We are a young, asset-light startup with a straightforward mission: to make the process of finding, setting up, and occupying commercial office space in Mumbai genuinely easier for businesses of all sizes.</p>
+<p class="text-sm sm:text-base lg:text-lg text-slate-500 text-center max-w-2xl mx-auto leading-relaxed mb-12 sm:mb-20">We are building something better, one client at a time.</p>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-12 text-center">
+<div class="glass-card p-4 sm:p-6 lg:p-10 group hover:border-brand-electric/50"><p class="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-black text-slate-900 mb-2 sm:mb-4 lg:mb-6 tracking-tighter group-hover:text-brand-electric transition-colors">Mumbai</p><p class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold text-slate-600 uppercase tracking-wider lg:tracking-widest">Focus Market</p></div>
+<div class="glass-card p-4 sm:p-6 lg:p-10 group hover:border-brand-cyan/50"><p class="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-black text-slate-900 mb-2 sm:mb-4 lg:mb-6 tracking-tighter group-hover:text-brand-cyan transition-colors">3</p><p class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold text-slate-600 uppercase tracking-wider lg:tracking-widest">Services</p></div>
+<div class="glass-card p-4 sm:p-6 lg:p-10 group hover:border-brand-violet/50"><p class="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-black text-slate-900 mb-2 sm:mb-4 lg:mb-6 tracking-tighter group-hover:text-brand-violet transition-colors">24 Hr</p><p class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold text-slate-600 uppercase tracking-wider lg:tracking-widest">Response</p></div>
+<div class="glass-card p-4 sm:p-6 lg:p-10 group hover:border-brand-rose/50"><p class="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-black text-slate-900 mb-2 sm:mb-4 lg:mb-6 tracking-tighter group-hover:text-brand-rose transition-colors">2025</p><p class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold text-slate-600 uppercase tracking-wider lg:tracking-widest">Founded</p></div>
 </div>
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] lg:h-[500px] mt-24 reveal group">
 <img src="professional_team.png" alt="CorpEasy team Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="500">
@@ -906,44 +906,44 @@ faq: `
 </section>
 `,
 contact: `
-<section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-20 items-start reveal relative">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-20 items-start reveal relative">
 <div class="lg:col-span-5 relative z-10">
-<div class="inline-flex items-center space-x-2 mb-10 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<div class="inline-flex items-center space-x-2 mb-6 sm:mb-10 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-3 sm:px-4 py-1.5 backdrop-blur-md">
 <span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse"></span>
-<span class="text-xs font-semibold text-brand-electric uppercase tracking-[0.4em]">Get in Touch</span>
+<span class="text-[10px] sm:text-xs font-semibold text-brand-electric uppercase tracking-[0.2em] sm:tracking-[0.4em]">Get in Touch</span>
 </div>
-<h1 class="text-6xl text-slate-900 font-black mb-10 leading-tight">Let's<br><span class="text-gradient-vibrant">Talk.</span></h1>
-<p class="text-xl text-slate-600 leading-relaxed mb-16 max-w-sm">Whether you are looking for office space in Mumbai, want help finding a tenant for your property, or just have a question, fill in the form and we will be back in touch within 24 hours.</p>
-<div class="space-y-10">
-<div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max">
-<div class="w-16 h-16 bg-white/70 border border-white/80 rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-xl"></i></div>
-<div><p class="text-xs text-slate-500 font-medium mb-1">Email Dev</p><a href="mailto:devdoshi@corpeasy.in" class="text-xl font-bold text-slate-900 tracking-wide hover:text-brand-electric transition-colors">devdoshi@corpeasy.in</a></div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl text-slate-900 font-black mb-6 sm:mb-10 leading-tight">Let's<br><span class="text-gradient-vibrant">Talk.</span></h1>
+<p class="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed mb-8 sm:mb-16 max-w-sm">Whether you are looking for office space in Mumbai, want help finding a tenant for your property, or just have a question, fill in the form and we will be back in touch within 24 hours.</p>
+<div class="space-y-4 sm:space-y-6 lg:space-y-10">
+<div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
+<div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/70 border border-white/80 rounded-xl sm:rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-lg sm:text-xl"></i></div>
+<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">Email Dev</p><a href="mailto:devdoshi@corpeasy.in" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-brand-electric transition-colors">devdoshi@corpeasy.in</a></div>
 </div>
-<div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max mt-4">
-<div class="w-16 h-16 bg-white/70 border border-white/80 rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-xl"></i></div>
-<div><p class="text-xs text-slate-500 font-medium mb-1">Email Jay</p><a href="mailto:jaynishar@corpeasy.in" class="text-xl font-bold text-slate-900 tracking-wide hover:text-brand-electric transition-colors">jaynishar@corpeasy.in</a></div>
+<div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
+<div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/70 border border-white/80 rounded-xl sm:rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-lg sm:text-xl"></i></div>
+<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">Email Jay</p><a href="mailto:jaynishar@corpeasy.in" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-brand-electric transition-colors">jaynishar@corpeasy.in</a></div>
 </div>
-<div class="flex items-center gap-8 group glass-card p-6 border border-white/60 w-max mt-4">
-<div class="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-2xl flex items-center justify-center text-green-500 shadow-[0_0_15px_rgba(34,197,94,0.1)] group-hover:bg-green-500 group-hover:text-white transition-all duration-500"><i class="fab fa-whatsapp text-2xl"></i></div>
-<div><p class="text-xs text-slate-500 font-medium mb-1">WhatsApp</p><a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20would%20like%20to%20discuss%20an%20office%20requirement." target="_blank" class="text-xl font-bold text-slate-900 tracking-wide hover:text-green-500 transition-colors">Chat With Us</a></div>
+<div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
+<div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-green-500/10 border border-green-500/30 rounded-xl sm:rounded-2xl flex items-center justify-center text-green-500 shadow-[0_0_15px_rgba(34,197,94,0.1)] group-hover:bg-green-500 group-hover:text-white transition-all duration-500"><i class="fab fa-whatsapp text-xl sm:text-2xl"></i></div>
+<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">WhatsApp</p><a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20would%20like%20to%20discuss%20an%20office%20requirement." target="_blank" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-green-500 transition-colors">Chat With Us</a></div>
 </div>
-<div class="glass-card p-6 border border-white/60 mt-8">
-<p class="text-xs text-slate-500 font-medium mb-3">Our Office</p>
-<p class="text-sm text-slate-700 leading-relaxed">Office No. 30, 2nd Floor, Gopal Bhavan,<br>Shamaldas Gandhi Marg, Marine Lines East,<br>Mumbai, Maharashtra 400002</p>
+<div class="glass-card p-4 sm:p-6 border border-white/60">
+<p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-2 sm:mb-3">Our Office</p>
+<p class="text-xs sm:text-sm text-slate-700 leading-relaxed">Office No. 30, 2nd Floor, Gopal Bhavan,<br>Shamaldas Gandhi Marg, Marine Lines East,<br>Mumbai, Maharashtra 400002</p>
 </div>
 </div>
 </div>
-<div class="lg:col-span-7 glass-card p-12 lg:p-16 border-t-[10px] border-t-brand-electric reveal delay-2 relative z-10 shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
-<form onsubmit="handleLead(event)" class="space-y-6">
-<div class="flex items-center gap-4 mb-10 pb-6 border-b border-white/80">
-<i class="fas fa-comments text-brand-electric text-2xl"></i>
-<h3 class="text-2xl font-black text-slate-900 tracking-tight">Send Us a Message</h3>
+<div class="lg:col-span-7 glass-card p-6 sm:p-8 lg:p-12 xl:p-16 border-t-[6px] sm:border-t-[8px] lg:border-t-[10px] border-t-brand-electric reveal delay-2 relative z-10 shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
+<form onsubmit="handleLead(event)" class="space-y-4 sm:space-y-6">
+<div class="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-10 pb-4 sm:pb-6 border-b border-white/80">
+<i class="fas fa-comments text-brand-electric text-xl sm:text-2xl"></i>
+<h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">Send Us a Message</h3>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
 <input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
 <input type="email" name="email" placeholder="Email Address" class="input-premium" required>
 <input type="tel" name="phone" placeholder="Phone Number" class="input-premium" required>
 </div>
@@ -955,8 +955,8 @@ contact: `
 <option>General enquiry</option>
 </select>
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-<button type="submit" class="w-full bg-brand-electric text-white py-6 rounded-lg font-medium text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-[1.02] mt-6">Send My Enquiry →</button>
-<p class="text-xs text-slate-500 text-center">We respond to every enquiry within 24 hours (Mon to Sat, 9 AM to 7 PM IST).</p>
+<button type="submit" class="w-full bg-brand-electric text-white py-4 sm:py-6 rounded-lg font-bold sm:font-medium text-sm sm:text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-[1.02] mt-4 sm:mt-6">Send My Enquiry</button>
+<p class="text-[10px] sm:text-xs text-slate-500 text-center">We respond to every enquiry within 24 hours (Mon to Sat, 9 AM to 7 PM IST).</p>
 </form>
 </div>
 </section>
