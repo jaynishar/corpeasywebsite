@@ -62,7 +62,7 @@
           "@type": "LocalBusiness",
           "@id": "https://www.corpeasy.in/#organization",
           "name": "CorpEasy",
-          "description": "CorpEasy finds, sets up, and manages office space in Mumbai for businesses of all sizes. One point of contact. Clear per-seat monthly cost. Fixed lease.",
+          "description": "CorpEasy provides managed office spaces, coworking, lease advisory, and facility management services for startups, SMEs, and enterprises across Mumbai.",
           "url": "https://www.corpeasy.in/",
           "logo": "https://www.corpeasy.in/CORPEASYHEADER.png",
           "telephone": "+919833089993",
@@ -96,7 +96,17 @@
             "https://www.linkedin.com/company/corpeasy",
             "https://www.instagram.com/corpeasy",
             "https://twitter.com/corpeasy"
-          ]
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "CorpEasy Services",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Managed Office Space Mumbai"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Coworking Space Mumbai"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lease Advisory Mumbai"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Facility Management Services Mumbai"}}
+            ]
+          }
         },
         {
           "@type": "WebSite",
@@ -216,7 +226,7 @@
         }
     </script>
 
-    <link rel="stylesheet" href="style.css?v=2026032104">
+    <link rel="stylesheet" href="style.css?v=2026032201">
 </head>
 <body class="font-sans flex flex-col min-h-screen bg-tech-mesh">
     
@@ -268,6 +278,16 @@
                                 <div class="w-9 h-9 bg-brand-gold/10 rounded-lg flex items-center justify-center text-brand-gold"><i class="fas fa-handshake"></i></div>
                                 <div><p class="text-sm font-medium text-slate-800">Lease Your Property</p><p class="text-xs text-slate-500">Property listing services</p></div>
                             </a>
+                            <div class="border-t border-slate-100/80 my-2"></div>
+                            <a onclick="navigateTo('facility')" class="flex items-start gap-4 p-3 hover:bg-white/70 rounded-xl transition-colors cursor-pointer mt-2">
+                                <div class="w-10 h-10 bg-brand-rose/20 rounded-lg flex items-center justify-center text-brand-rose border border-brand-rose/20">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-slate-900">Facility Management</p>
+                                    <p class="text-[10px] text-slate-600">Full office operations support</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -304,6 +324,7 @@
                 <li><a onclick="navigateTo('blog')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Insights</a></li>
                 <li><a onclick="navigateTo('find')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Find a Property</a></li>
                 <li><a onclick="navigateTo('list')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Lease Your Property</a></li>
+                <li><a onclick="navigateTo('facility')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-rose cursor-pointer border-b border-slate-100/50">Facility Management</a></li>
                 <li><a onclick="navigateTo('about')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">About Us</a></li>
                 <li><a onclick="navigateTo('faq')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">FAQ</a></li>
                 <li><a onclick="navigateTo('contact')" class="block py-4 text-base font-bold text-brand-electric cursor-pointer">Contact Us</a></li>
@@ -350,6 +371,7 @@
                         <li><a onclick="navigateTo('blog')" class="hover:text-brand-electric transition-colors cursor-pointer">Insights</a></li>
                         <li><a onclick="navigateTo('find')" class="hover:text-brand-electric transition-colors cursor-pointer">Find a Property</a></li>
                         <li><a onclick="navigateTo('list')" class="hover:text-brand-electric transition-colors cursor-pointer">Lease Your Property</a></li>
+                        <li><a onclick="navigateTo('facility')" class="hover:text-brand-electric transition-colors cursor-pointer">Facility Management</a></li>
                         <li><a onclick="navigateTo('faq')" class="hover:text-brand-electric transition-colors cursor-pointer">FAQ</a></li>
                     </ul>
                 </div>
@@ -419,7 +441,7 @@
     </div>
 
     <!-- INTERACTIVE ENGINE -->
-    <script src="script.js?v=2026032104"></script>
+    <script src="script.js?v=2026032201"></script>
     
     <!-- Hide Initial Loader After Load -->
     <script>

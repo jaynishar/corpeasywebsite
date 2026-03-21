@@ -363,7 +363,7 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-24 relative overflow-hidden">
 <div class="max-w-7xl mx-auto px-6 relative z-10">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-10 reveal">
 <div class="w-14 h-14 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-8 text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.2)]"><i class="fas fa-search-location text-2xl"></i></div>
 <h4 class="text-xl font-bold mb-4 text-slate-900">We Find the Right Space.</h4>
@@ -379,6 +379,12 @@ Your details are safe with us. No spam, ever.
 <h4 class="text-xl font-bold mb-4 text-slate-900">One Clear Cost. Fixed Lease.</h4>
 <p class="text-slate-600 leading-relaxed">We calculate your all-in per seat monthly cost based on the actual property and setup. You commit to a fixed lease period and know exactly what you pay every month. No hidden charges. No surprises.</p>
 </div>
+<div class="glass-card p-10 reveal delay-300">
+<div class="w-14 h-14 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center mb-8 text-brand-rose shadow-[0_0_15px_rgba(244,63,94,0.15)]"><i class="fas fa-tools text-2xl"></i></div>
+<h4 class="text-xl font-bold mb-4 text-slate-900">Facility Management</h4>
+<p class="text-slate-600 leading-relaxed">Already have an office? We run it for you. Housekeeping, vendors, compliance — one team, one invoice.</p>
+<a onclick="navigateTo('facility')" class="inline-flex items-center gap-2 mt-6 text-xs font-black uppercase tracking-widest text-brand-rose hover:gap-4 transition-all cursor-pointer">Learn More <i class="fas fa-arrow-right"></i></a>
+</div>
 </div>
 </div>
 </section>
@@ -392,6 +398,8 @@ Your details are safe with us. No spam, ever.
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-handshake"></i> Office Space in Goregaon</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-map-marker-alt"></i> Office Space in Andheri East</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-shield-check"></i> One Point of Contact</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-tools"></i> Facility Management</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-building"></i> Managed Operations</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-building"></i> Managed Office Space Mumbai</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-search-location"></i> Office Space for Rent BKC</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-ruler-combined"></i> Commercial Office for Lease in Mumbai</span>
@@ -400,6 +408,8 @@ Your details are safe with us. No spam, ever.
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-handshake"></i> Office Space in Goregaon</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-map-marker-alt"></i> Office Space in Andheri East</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-shield-check"></i> One Point of Contact</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-tools"></i> Facility Management</span>
+<span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-building"></i> Managed Operations</span>
 </div>
 </section>
 <section class="py-24 relative bg-white/40">
@@ -819,6 +829,101 @@ list: `
 </div>
 </section>
 `,
+facility: `
+<section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-16 items-start min-h-[calc(100vh-96px)]">
+<div class="order-2 lg:order-1 flex flex-col justify-center reveal">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-rose/10 border border-brand-rose/30 rounded-full px-4 py-1.5 backdrop-blur-md w-max">
+<span class="w-2 h-2 rounded-full bg-brand-rose animate-pulse"></span>
+<span class="text-[9px] font-black uppercase tracking-[0.4em] text-brand-rose">Facility Management</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 tracking-tighter mb-6 leading-none">Your Office, <br><span class="text-gradient-vibrant">Perfectly Run.</span></h1>
+<p class="text-base lg:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg">Stop letting office management distract your team from real work. CorpEasy takes over the complete day-to-day operations of your existing office — from housekeeping and security to vendor contracts and compliance — so you never have to think about it again.</p>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-brand-rose/10 border border-brand-rose/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-rose text-[9px]"></i></div>
+<p class="text-sm font-semibold text-slate-700">Housekeeping, security & pantry — fully managed</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-brand-rose/10 border border-brand-rose/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-rose text-[9px]"></i></div>
+<p class="text-sm font-semibold text-slate-700">AMC contracts & vendor negotiation handled by us</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-brand-rose/10 border border-brand-rose/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-rose text-[9px]"></i></div>
+<p class="text-sm font-semibold text-slate-700">Fire safety, compliance & statutory requirements covered</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-brand-rose/10 border border-brand-rose/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-rose text-[9px]"></i></div>
+<p class="text-sm font-semibold text-slate-700">Single monthly invoice — no vendor chaos</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal delay-100">
+<div class="glass-card p-5">
+<div class="w-10 h-10 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center mb-3 text-brand-rose"><i class="fas fa-broom text-sm"></i></div>
+<h4 class="text-base font-bold text-slate-900 mb-1">Daily Operations</h4>
+<p class="text-xs text-slate-500 leading-relaxed">Housekeeping, pantry, and reception management</p>
+</div>
+<div class="glass-card p-5">
+<div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-3 text-brand-electric"><i class="fas fa-file-contract text-sm"></i></div>
+<h4 class="text-base font-bold text-slate-900 mb-1">Vendor & AMC</h4>
+<p class="text-xs text-slate-500 leading-relaxed">AC, electrical, plumbing, and IT vendor contracts</p>
+</div>
+<div class="glass-card p-5">
+<div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-3 text-brand-cyan"><i class="fas fa-shield-alt text-sm"></i></div>
+<h4 class="text-base font-bold text-slate-900 mb-1">Compliance & Safety</h4>
+<p class="text-xs text-slate-500 leading-relaxed">Fire NOC, statutory audits, and security management</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
+<div class="glass-card p-6 lg:p-8 border-t-4 border-t-brand-rose shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+<h3 class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-tools text-brand-rose"></i> Get a Facility Management Quote</h3>
+<p class="text-xs text-slate-500 mb-6 leading-relaxed">Tell us about your office. We will send a detailed proposal within 24 hours.</p>
+<form onsubmit="handleLead(event)" class="space-y-4 relative">
+<input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>
+<input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
+<input type="email" name="email" placeholder="Work Email Address" class="input-premium" required>
+<input type="tel" name="phone" placeholder="+91 Phone Number" class="input-premium" required>
+<select name="requirement" class="input-premium" required>
+<option value="" disabled selected>Office Size</option>
+<option>Small Office (Up to 20 seats)</option>
+<option>Mid-Size Office (20–100 seats)</option>
+<option>Large Office (100–500 seats)</option>
+<option>Enterprise Campus (500+ seats)</option>
+</select>
+<input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
+<button type="submit" class="w-full bg-brand-rose text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(244,63,94,0.35)] hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(244,63,94,0.5)] transition-all">Request Facility Quote</button>
+<p class="text-xs text-slate-400 text-center flex items-center justify-center gap-1.5 mt-2"><i class="fas fa-lock text-brand-rose text-[10px]"></i> No spam. Response within 24 hours.</p>
+</form>
+</div>
+</div>
+</section>
+<section class="py-20 relative bg-white/40">
+<div class="max-w-7xl mx-auto px-4 lg:px-6">
+<div class="text-center mb-14 reveal">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-rose/10 border border-brand-rose/30 rounded-full px-4 py-1.5"><span class="text-[9px] font-black uppercase tracking-[0.4em] text-brand-rose">What We Handle</span></div>
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-4">Everything Your Office Needs.</h2>
+<p class="text-lg text-slate-500 max-w-2xl mx-auto">One team. One invoice. Zero headaches.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+<div class="glass-card p-7"><i class="fas fa-broom text-brand-rose text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Housekeeping</h4><p class="text-sm text-slate-500 leading-relaxed">Daily cleaning, washroom upkeep, deep cleaning, and waste management</p></div>
+<div class="glass-card p-7"><i class="fas fa-shield-alt text-brand-electric text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Security</h4><p class="text-sm text-slate-500 leading-relaxed">Trained security personnel, CCTV monitoring, access control management</p></div>
+<div class="glass-card p-7"><i class="fas fa-coffee text-brand-cyan text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Pantry & Cafe</h4><p class="text-sm text-slate-500 leading-relaxed">Tea, coffee, snack stations, catering coordination and vendor tie-ups</p></div>
+<div class="glass-card p-7"><i class="fas fa-tools text-brand-violet text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Maintenance</h4><p class="text-sm text-slate-500 leading-relaxed">Electrical, plumbing, AC servicing, and preventive maintenance schedules</p></div>
+<div class="glass-card p-7"><i class="fas fa-file-contract text-brand-gold text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">AMC Contracts</h4><p class="text-sm text-slate-500 leading-relaxed">Annual maintenance contracts negotiated, managed, and tracked on your behalf</p></div>
+<div class="glass-card p-7"><i class="fas fa-fire-extinguisher text-brand-rose text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Fire & Safety</h4><p class="text-sm text-slate-500 leading-relaxed">Fire NOC renewals, safety drills, first aid kits, and compliance audits</p></div>
+<div class="glass-card p-7"><i class="fas fa-users text-brand-electric text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Reception & Admin</h4><p class="text-sm text-slate-500 leading-relaxed">Front desk management, visitor handling, couriers, and office supplies</p></div>
+<div class="glass-card p-7"><i class="fas fa-chart-bar text-brand-cyan text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Monthly Reports</h4><p class="text-sm text-slate-500 leading-relaxed">Detailed monthly MIS reports on costs, vendor performance, and incidents</p></div>
+</div>
+</div>
+</section>
+<section class="py-20 relative">
+<div class="max-w-5xl mx-auto px-4 lg:px-6 text-center reveal">
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-6">Built for Companies That Are Done<br><span class="text-gradient-vibrant">Thinking About Their Office.</span></h2>
+<p class="text-lg text-slate-500 mb-12 max-w-2xl mx-auto">If your HR team is handling AMC complaints, your finance team is chasing vendor invoices, or your ops head is managing housekeeping — you need CorpEasy Facility Management.</p>
+<button onclick="navigateTo('contact')" class="inline-flex items-center gap-3 bg-brand-rose text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_25px_rgba(244,63,94,0.35)] hover:scale-105 transition-all">Talk to Our Team <i class="fas fa-arrow-right"></i></button>
+</div>
+</section>
+`,
 about: `
 <section class="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-32 text-center reveal relative">
 <div class="glow-blob w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] bg-brand-blue opacity-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
@@ -898,6 +1003,7 @@ faq: `
 <div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">What does the workspace setup include?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">We handle the basics. Functional furniture, internet connectivity, and a clean professional working environment. The exact scope depends on the property and your requirement. We are transparent about what is and is not included in your per-seat cost before you agree to anything.</p></div></div>
 <div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">I own a commercial property. Can CorpEasy find me a tenant?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">Yes. We work with property owners across Mumbai who are looking for reliable business tenants. If you have a commercial space available, get in touch with us. We will review whether it fits our active client requirements and discuss next steps.</p></div></div>
 <div><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Are you a broker, a portal, or something else?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">Neither, strictly speaking. We are a workspace solutions company. We find the right commercial property, take the lease, handle the setup, and offer the space to you on a managed basis. We are not a listing portal and we are not a traditional broker. We stay involved through the entire process. From the first conversation to the day you move in.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Do you offer facility management for existing offices?</span><i class="fas fa-plus text-brand-rose transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">Yes. CorpEasy Facility Management is designed for companies that already have their own office space but want to outsource day-to-day operations — including housekeeping, security, vendor management, AMC contracts, and compliance. We handle everything under one monthly invoice so your team can focus entirely on your business.</p></div></div>
 </div>
 <div class="text-center mt-16">
 <p class="text-slate-600 mb-6">Have a question that is not answered here?</p>
