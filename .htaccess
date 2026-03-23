@@ -2,121 +2,16 @@
 # CORPEASY HOSTINGER OPTIMIZATION
 # ═══════════════════════════════════════════════════════════════════
 
-Options -MultiViews
 RewriteEngine On
 RewriteBase /
 
-# ═══════════════════════════════════════════════════════════════════
-# CACHE BUSTING - NO CACHE FOR HTML FILES
-# Update version number when you upload new content
-# ═══════════════════════════════════════════════════════════════════
-<IfModule mod_headers.c>
-    # Disable caching for HTML files - always fresh
-    <FilesMatch "\.(html?)$">
-        Header set Cache-Control "no-cache, no-store, must-revalidate"
-        Header set Pragma "no-cache"
-        Header set Expires 0
-    </FilesMatch>
-    
-    # Short cache for CSS/JS - will refresh with version query string
-    <FilesMatch "\.(css|js)$">
-        Header set Cache-Control "public, max-age=86400"
-    </FilesMatch>
-    
-    # Long cache for images
-    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
-        Header set Cache-Control "public, max-age=2592000"
-    </FilesMatch>
-</IfModule>
-
-# Block sensitive files
-<Files "leads_backup.json">
-  Order deny,allow
-  Deny from all
-</Files>
-<Files "db_setup.sql">
-  Order deny,allow
-  Deny from all
-</Files>
-
-# SPA: serve index.html for all non-file requests
+# SPA: serve index.php for all non-file requests
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(?!admin\.php|submit\.php|get_posts\.php|sitemap\.xml|robots\.txt).*$ index.html [L]
-
-# ═══════════════════════════════════════════════════════════════════
-# PERFORMANCE OPTIMIZATIONS
-# ═══════════════════════════════════════════════════════════════════
-
-# Enable GZIP compression
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html
-  AddOutputFilterByType DEFLATE text/plain
-  AddOutputFilterByType DEFLATE text/xml
-  AddOutputFilterByType DEFLATE text/css
-  AddOutputFilterByType DEFLATE text/javascript
-  AddOutputFilterByType DEFLATE application/javascript
-  AddOutputFilterByType DEFLATE application/json
-  AddOutputFilterByType DEFLATE application/xml
-  AddOutputFilterByType DEFLATE image/svg+xml
-  AddOutputFilterByType DEFLATE font/woff2
-  AddOutputFilterByType DEFLATE font/woff
-  AddOutputFilterByType DEFLATE application/font-woff2
-  AddOutputFilterByType DEFLATE application/font-woff
-  # Remove old compressions
-  RemoveOutputFilter DEFLATE
-  SetOutputFilter DEFLATE
-</IfModule>
-
-# Browser caching for static assets
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresDefault "access plus 1 week"
-  
-  # Images - cache for 1 year
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType image/x-icon "access plus 1 year"
-  
-  # Fonts - cache for 1 year
-  ExpiresByType font/woff2 "access plus 1 year"
-  ExpiresByType font/woff "access plus 1 year"
-  ExpiresByType application/font-woff2 "access plus 1 year"
-  ExpiresByType application/font-woff "access plus 1 year"
-  
-  # CSS/JS - cache for 1 month
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType text/javascript "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
-  ExpiresByType application/x-javascript "access plus 1 month"
-  
-  # HTML - short cache
-  ExpiresByType text/html "access plus 1 hour"
-</IfModule>
-
-# Cache-Control headers
-<IfModule mod_headers.c>
-  # Disable caching for dynamic PHP files
-  <FilesMatch "\.php$">
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
-    Header set Pragma "no-cache"
-    Header set Expires "0"
-  </FilesMatch>
-  
-  # Enable caching for static assets
-  <FilesMatch "\.(css|js|jpg|jpeg|png|gif|webp|svg|ico|woff|woff2)$">
-    Header set Cache-Control "public, max-age=31536000"
-  </FilesMatch>
-  
-  # Keep-Alive for faster connections
-  Header set Connection keep-alive
-</IfModule>
+RewriteRule ^(?!admin_simple\.php|submit\.php|get_posts\.php|sitemap\.xml|robots\.txt).*$ index.php [L]
 
 # Prevent directory listing
 Options -Indexes
 
 # Custom error page
-ErrorDocument 404 /index.html
+ErrorDocument 404 /index.php
