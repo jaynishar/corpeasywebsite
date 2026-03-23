@@ -1,17 +1,17 @@
-# ═══════════════════════════════════════════════════════════════════
-# CORPEASY HOSTINGER OPTIMIZATION
-# ═══════════════════════════════════════════════════════════════════
-
 RewriteEngine On
 RewriteBase /
 
-# SPA: serve index.php for all non-file requests
+# Route requests to appropriate PHP files
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(?!admin_simple\.php|submit\.php|get_posts\.php|sitemap\.xml|robots\.txt).*$ index.php [L]
+RewriteRule ^blog/?$ blog.php [L]
+RewriteRule ^blog/([^/]+)/?$ blog-post.php?slug=$1 [L]
+RewriteRule ^about/?$ about.php [L]
+RewriteRule ^contact/?$ contact.php [L]
+RewriteRule ^faq/?$ faq.php [L]
+RewriteRule ^submit/?$ submit.php [L]
 
 # Prevent directory listing
 Options -Indexes
 
-# Custom error page
 ErrorDocument 404 /index.php
