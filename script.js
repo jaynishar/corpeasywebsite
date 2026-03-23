@@ -353,7 +353,7 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-8 lg:py-12 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] sm:h-[400px] lg:h-[600px] reveal group">
-<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" alt="Modern workspace in Mumbai - collaborative office design" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" width="1920" height="1080" fetchpriority="high">
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200" alt="Modern workspace in Mumbai - collaborative office design" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" width="1200" height="675" fetchpriority="high">
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 <div class="absolute bottom-6 sm:bottom-10 left-6 sm:left-10 right-6 sm:right-10">
 <h3 class="text-2xl sm:text-3xl lg:text-5xl font-black text-white mb-2 sm:mb-4 drop-shadow-lg tracking-tight">Where Teams Thrive & <br class="hidden sm:block"/>Businesses Grow.</h3>
@@ -974,7 +974,7 @@ about: `
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="DEV DOSHI.png" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
+<img src="https://ui-avatars.com/api/?name=Dev+Doshi&background=0D9488&color=fff&size=256" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h4>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Business Development & Strategy</p>
@@ -982,7 +982,7 @@ about: `
 </div>
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="JAY NISHAR.png" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
+<img src="https://ui-avatars.com/api/?name=Jay+Nishar&background=6366F1&color=fff&size=256" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h4>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Operations & Growth</p>

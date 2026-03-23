@@ -3,13 +3,13 @@
 // $page_title, $page_description, $page_keywords, $page_canonical, $page_og_title, $page_og_description, $page_og_image, $page_schema
 
 // Defaults
-$page_title = $page_title ?? 'CorpEasy │ Managed Office Space in Mumbai · BKC, Lower Parel, Goregaon, Andheri';
-$page_description = $page_description ?? 'CorpEasy finds, sets up, and manages your office space in Mumbai. One point of contact. Clear per-seat monthly cost. Fixed lease. BKC, Lower Parel, Goregaon, Andheri & Powai.';
+$page_title = $page_title ?? 'CorpEasy │ Managed Office Space in Mumbai · BKC, Lower Parel, Goregaon';
+$page_description = $page_description ?? 'CorpEasy finds, sets up, and manages your office space in Mumbai. One point of contact. Clear per-seat monthly cost. Fixed lease. BKC, Lower Parel & Goregaon.';
 $page_keywords = $page_keywords ?? 'managed office space Mumbai, office space for rent in Mumbai, commercial office space Mumbai, office space BKC, office space Lower Parel, office space Goregaon, managed workspace Mumbai, office space Andheri East, coworking space Mumbai, commercial property for lease Mumbai';
 $page_canonical = $page_canonical ?? 'https://www.corpeasy.in/';
 $page_og_title = $page_og_title ?? $page_title;
 $page_og_description = $page_og_description ?? $page_description;
-$page_og_image = $page_og_image ?? 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200';
+$page_og_image = $page_og_image ?? 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800';
 $page_schema = $page_schema ?? '';
 $page_id = $page_id ?? 'home';
 ?>

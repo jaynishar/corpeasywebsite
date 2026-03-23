@@ -31,7 +31,7 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="DEV DOSHI.png" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
+<img src="https://ui-avatars.com/api/?name=Dev+Doshi&background=0D9488&color=fff&size=256" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h4>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Business Development & Strategy</p>
@@ -39,7 +39,7 @@ include 'templates/header.php';
 </div>
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="JAY NISHAR.png" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
+<img src="https://ui-avatars.com/api/?name=Jay+Nishar&background=6366F1&color=fff&size=256" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h4>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Operations & Growth</p>
