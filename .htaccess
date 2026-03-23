@@ -10,10 +10,10 @@ RewriteRule ^about/?$ about.php [L]
 RewriteRule ^contact/?$ contact.php [L]
 RewriteRule ^faq/?$ faq.php [L]
 RewriteRule ^submit/?$ submit.php [L]
-RewriteRule ^solutions/list-commercial-property-mumbai/?$ list-commercial-property-mumbai.php [L]
-RewriteRule ^solutions/office-space-for-rent-mumbai/?$ office-space-for-rent-mumbai.php [L]
-RewriteRule ^solutions/facility-management-mumbai/?$ facility-management-mumbai.php [L]
-RewriteRule ^solutions/managed-office-space-mumbai/?$ managed-office-space-mumbai.php [L]
+RewriteRule ^list-commercial-property-mumbai/?$ list-commercial-property-mumbai.php [L]
+RewriteRule ^office-space-for-rent-mumbai/?$ office-space-for-rent-mumbai.php [L]
+RewriteRule ^facility-management-mumbai/?$ facility-management-mumbai.php [L]
+RewriteRule ^managed-office-space-mumbai/?$ managed-office-space-mumbai.php [L]
 
 # Prevent directory listing
 Options -Indexes
