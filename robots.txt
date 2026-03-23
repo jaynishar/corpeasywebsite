@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin.php
+Disallow: /admin_simple.php
+Disallow: /submit.php
+Disallow: /get_posts.php
+Disallow: /leads_backup.json
+Disallow: /db_setup.sql
+Disallow: /templates/
+
+Sitemap: https://www.corpeasy.in/sitemap.xml

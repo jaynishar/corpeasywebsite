@@ -1,0 +1,446 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="IN-MH">
+    <meta name="geo.placename" content="Mumbai, Maharashtra">
+    <meta name="geo.position" content="19.0176;72.8562">
+    <meta name="ICBM" content="19.0176, 72.8562">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e3a8a'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='sans-serif' fill='white' font-weight='900'>CE</text></svg>">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- CRITICAL CSS - Prevents blank page flash -->
+    <style>
+        body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:#f8fafc;color:#0f172a}
+        .init-loader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#f8fafc;z-index:9999}
+        .init-loader::after{content:"Loading...";font-size:14px;color:#6366f1;font-weight:500}
+    </style>
+    
+    <!-- SEO & Google Ads Optimization -->
+    <title>CorpEasy │ Managed Office Space in Mumbai · BKC, Lower Parel, Goregaon, Andheri</title>
+    <meta name="description" content="CorpEasy finds, sets up, and manages your office space in Mumbai. One point of contact. Clear per-seat monthly cost. Fixed lease. BKC, Lower Parel, Goregaon, Andheri & Powai.">
+    <meta name="keywords" content="managed office space Mumbai, office space for rent in Mumbai, commercial office space Mumbai, office space BKC, office space Lower Parel, office space Goregaon, managed workspace Mumbai, office space Andheri East, coworking space Mumbai, commercial property for lease Mumbai">
+    <link rel="canonical" href="https://corpeasy.in/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MNJ99CDR');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="CorpEasy │ Managed Office Space in Mumbai · BKC, Lower Parel, Goregaon, Andheri">
+    <meta property="og:description" content="CorpEasy finds, sets up, and manages your office space in Mumbai. One point of contact. Clear per-seat monthly cost. Fixed lease.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://corpeasy.in/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:site_name" content="CorpEasy">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CorpEasy │ Managed Office Space in Mumbai · BKC, Lower Parel, Goregaon, Andheri">
+    <meta name="twitter:description" content="CorpEasy finds, sets up, and manages your office space in Mumbai. One point of contact. Clear per-seat monthly cost. Fixed lease.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200">
+    
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://www.corpeasy.in/#organization",
+          "name": "CorpEasy",
+          "description": "CorpEasy provides managed office spaces, coworking, lease advisory, and facility management services for startups, SMEs, and enterprises across Mumbai.",
+          "url": "https://www.corpeasy.in/",
+          "logo": "https://www.corpeasy.in/CORPEASYHEADER.png",
+          "telephone": "+919833089993",
+          "email": "devdoshi@corpeasy.in",
+          "foundingDate": "2025-10",
+          "foundingLocation": "Mumbai, Maharashtra, India",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Office No. 30, 2nd Floor, Gopal Bhavan, Shamaldas Gandhi Marg, Marine Lines",
+            "addressLocality": "Mumbai",
+            "addressRegion": "Maharashtra",
+            "postalCode": "400002",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 19.0176,
+            "longitude": 72.8562
+          },
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200",
+          "priceRange": "₹10,000 - ₹40,000 per seat/month",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "09:00",
+              "closes": "19:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/company/corpeasy",
+            "https://www.instagram.com/corpeasy",
+            "https://twitter.com/corpeasy"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "CorpEasy Services",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Managed Office Space Mumbai"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Coworking Space Mumbai"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lease Advisory Mumbai"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Facility Management Services Mumbai"}}
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.corpeasy.in/#website",
+          "url": "https://www.corpeasy.in/",
+          "name": "CorpEasy",
+          "publisher": {
+            "@id": "https://www.corpeasy.in/#organization"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.corpeasy.in/#organization",
+          "name": "CorpEasy",
+          "alternateName": "CorpEasy Enterprise Solutions",
+          "founder": [
+            {
+              "@type": "Person",
+              "name": "Dev Doshi",
+              "jobTitle": "Co-Founder: Business Development & Strategy"
+            },
+            {
+              "@type": "Person",
+              "name": "Jay Nishar",
+              "jobTitle": "Co-Founder: Operations & Growth"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is a managed office space in Mumbai?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A managed office is a commercially leased workspace that has been sourced, set up, and is maintained on your behalf by a workspace operator like CorpEasy. You pay a single per-seat monthly fee and get a space that is ready from Day 1."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to get an office through CorpEasy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Typically a few weeks from when we identify a suitable space to the day your team can move in. This is significantly faster than finding, negotiating, and setting up a space entirely on your own."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which areas in Mumbai does CorpEasy cover?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CorpEasy sources commercial office space across BKC, Lower Parel, Worli, Goregaon East, Andheri East, and Powai."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does managed office space in Mumbai cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Costs vary by location: BKC approximately ₹450-750 per sq ft (avg ₹542), Worli and Lower Parel ₹250-450 (avg ₹320), Goregaon ₹150-300 (avg ₹228), Andheri East ₹150-400 (avg ₹253), Powai ₹115-310 (avg ₹179), and Navi Mumbai ₹100-160 (avg ₹110). CorpEasy shares your exact cost before you commit."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can CorpEasy help me find a tenant for my commercial property?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. CorpEasy works with property owners across Mumbai to find reliable business tenants. We bring genuine, pre-qualified companies with real requirements."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" as="image" href="modern_office.png?v=2026032102">
+    
+    <!-- Font with display swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans serif'] },
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a',
+                            electric: '#6366f1',
+                            navy: '#f0f9ff',
+                            cyan: '#06b6d4',
+                            gold: '#fbbf24',
+                            rose: '#f43f5e',
+                            violet: '#8b5cf6',
+                            slate: '#64748b',
+                            ice: '#ffffff'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css?v=2026032201">
+</head>
+<body class="font-sans flex flex-col min-h-screen bg-tech-mesh">
+    
+    <!-- Initial Page Loader (prevents blank page flash) -->
+    <div id="init-loader" class="init-loader">
+        <div class="flex flex-col items-center gap-4">
+            <div class="w-12 h-12 border-4 border-brand-electric/20 border-t-brand-electric rounded-full animate-spin"></div>
+            <span class="text-sm text-slate-500 font-medium">Loading CorpEasy...</span>
+        </div>
+    </div>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNJ99CDR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Progress Line -->
+    <div id="scroll-line" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-brand-electric via-brand-cyan to-brand-violet z-[1000] w-0 transition-all duration-100 shadow-[0_0_15px_rgba(99,102,241,0.5)]"></div>
+    <!-- Loading Bar -->
+    <div id="page-loader" class="fixed top-1 left-0 h-0.5 bg-brand-cyan z-[999] w-0 transition-none opacity-0"></div>
+
+    <!-- HEADER -->
+    <nav role="navigation" class="fixed w-full z-[100] glass-nav transition-all duration-500 h-16 md:h-20 lg:h-28 flex items-center" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full flex justify-between items-center">
+            <!-- Brand -->
+            <div class="flex items-center cursor-pointer group" onclick="navigateTo('home')">
+                <img src="CORPEASYHEADER.png" alt="CorpEasy Header Logo" class="logo-img logo-img-light h-10 sm:h-14 lg:h-20 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300" width="140" height="80" fetchpriority="high">
+            </div>
+            <!-- Navigation Links (Desktop) -->
+            <div class="hidden xl:flex items-center gap-8">
+                <div class="relative group">
+                    <button class="text-sm font-semibold text-slate-700 flex items-center gap-2 group-hover:text-brand-electric transition-colors">
+                        Solutions <i class="fas fa-chevron-down text-xs text-slate-400"></i>
+                    </button>
+                    <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0 z-50">
+                        <div class="bg-white rounded-3xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] border border-slate-100 p-4 w-[460px] min-w-[460px] space-y-2 !max-w-none">
+                            <a onclick="navigateTo('managed')" class="flex items-center gap-5 p-4 rounded-2xl hover:bg-brand-navy border border-transparent hover:border-brand-electric/10 transition-all cursor-pointer group">
+                                <div class="w-12 h-12 bg-white shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-brand-electric group-hover:bg-brand-electric group-hover:text-white transition-all duration-300"><i class="fas fa-building text-lg"></i></div>
+                                <div><p class="text-[15px] font-bold text-slate-800 group-hover:text-brand-electric transition-colors">Managed Office Space</p><p class="text-xs text-slate-500 font-medium">End-to-end workspace setup & operation</p></div>
+                            </a>
+                            <a onclick="navigateTo('find')" class="flex items-center gap-5 p-4 rounded-2xl hover:bg-brand-navy border border-transparent hover:border-brand-cyan/10 transition-all cursor-pointer group">
+                                <div class="w-12 h-12 bg-white shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-brand-cyan group-hover:bg-brand-cyan group-hover:text-white transition-all duration-300"><i class="fas fa-search-location text-lg"></i></div>
+                                <div><p class="text-[15px] font-bold text-slate-800 group-hover:text-brand-cyan transition-colors">Find a Property</p><p class="text-xs text-slate-500 font-medium">Expert negotiation & tenant representation</p></div>
+                            </a>
+                            <a onclick="navigateTo('list')" class="flex items-center gap-5 p-4 rounded-2xl hover:bg-brand-navy border border-transparent hover:border-brand-gold/10 transition-all cursor-pointer group">
+                                <div class="w-12 h-12 bg-white shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-all duration-300"><i class="fas fa-handshake text-lg"></i></div>
+                                <div><p class="text-[15px] font-bold text-slate-800 group-hover:text-brand-gold transition-colors">Lease Your Property</p><p class="text-xs text-slate-500 font-medium">Quality tenants for your commercial asset</p></div>
+                            </a>
+                            <div class="h-px bg-slate-100/80 mx-4 my-1"></div>
+                            <a onclick="navigateTo('facility')" class="flex items-center gap-5 p-4 rounded-2xl hover:bg-brand-navy border border-transparent hover:border-brand-rose/10 transition-all cursor-pointer group">
+                                <div class="w-12 h-12 bg-white shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-brand-rose group-hover:bg-brand-rose group-hover:text-white transition-all duration-300"><i class="fas fa-tools text-lg"></i></div>
+                                <div><p class="text-[15px] font-bold text-slate-800 group-hover:text-brand-rose transition-colors">Facility Management</p><p class="text-xs text-slate-500 font-medium">Professional office maintenance & logistics</p></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a onclick="navigateTo('blog')" class="text-sm font-medium text-slate-600 hover:text-brand-electric cursor-pointer transition-colors">Insights</a>
+                <a onclick="navigateTo('about')" class="text-sm font-medium text-slate-600 hover:text-brand-electric cursor-pointer transition-colors">About Us</a>
+                <a onclick="navigateTo('faq')" class="text-sm font-medium text-slate-600 hover:text-brand-electric cursor-pointer transition-colors">FAQ</a>
+                <a onclick="navigateTo('contact')" class="text-sm font-medium text-slate-600 hover:text-brand-electric cursor-pointer">Contact</a>
+            </div>
+
+            <!-- Action -->
+            <div class="flex items-center gap-2 sm:gap-4">
+                <button onclick="navigateTo('contact')" class="hidden md:flex items-center gap-2 bg-brand-electric text-white px-4 py-2 rounded-lg text-xs sm:text-sm font-medium hover:bg-brand-blue transition-all shadow-sm">
+                    Get Free Consultation
+                </button>
+                <button id="mobile-trigger" aria-label="Toggle Mobile Menu" class="xl:hidden flex items-center justify-center w-10 h-10 bg-white/80 hover:bg-white rounded-lg border border-slate-200 text-slate-700 transition-all shadow-sm">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-xl z-[90] hidden flex-col overflow-y-auto" style="padding-top: env(safe-area-inset-top, 0);">
+        <div class="flex justify-between items-center px-6 py-4">
+            <img src="CORPEASYHEADER.png" alt="CorpEasy" class="h-10 w-auto">
+            <button onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.getElementById('mobile-menu').classList.remove('flex');" class="w-10 h-10 flex items-center justify-center text-slate-500 hover:text-slate-800 transition-colors">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="px-6 pb-8">
+            <ul class="space-y-1">
+                <li><a onclick="navigateTo('home')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50 active:text-brand-electric">Home</a></li>
+                <li><a onclick="navigateTo('managed')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Managed Offices</a></li>
+                <li><a onclick="navigateTo('blog')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Insights</a></li>
+                <li><a onclick="navigateTo('find')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Find a Property</a></li>
+                <li><a onclick="navigateTo('list')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Lease Your Property</a></li>
+                <li><a onclick="navigateTo('facility')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-rose cursor-pointer border-b border-slate-100/50">Facility Management</a></li>
+                <li><a onclick="navigateTo('about')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">About Us</a></li>
+                <li><a onclick="navigateTo('faq')" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">FAQ</a></li>
+                <li><a onclick="navigateTo('contact')" class="block py-4 text-base font-bold text-brand-electric cursor-pointer">Contact Us</a></li>
+            </ul>
+            <div class="mt-8 pt-8 border-t border-slate-200">
+                <a href="tel:+919833089993" class="flex items-center gap-3 py-3 text-slate-700 font-medium">
+                    <i class="fas fa-phone-alt text-brand-electric"></i>
+                    Dev Doshi: +91 98330 89993
+                </a>
+                <a href="tel:+917021134176" class="flex items-center gap-3 py-3 text-slate-700 font-medium">
+                    <i class="fas fa-phone-alt text-brand-cyan"></i>
+                    Jay Nishar: +91 70211 34176
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- MAIN PORTAL -->
+    <main id="view-portal" class="flex-grow pt-16 md:pt-20 lg:pt-28">
+        <!-- Dynamic content injected here -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white/50 backdrop-blur-xl text-slate-900 pt-24 pb-12 relative overflow-hidden border-t border-white/60">
+        <div class="glow-blob w-[400px] h-[400px] bg-brand-electric -bottom-48 -right-48 opacity-10"></div>
+        <div class="glow-blob w-[300px] h-[300px] bg-brand-blue top-0 -left-24 opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
+                <div class="lg:col-span-5">
+                    <div class="mb-8">
+                        <img src="CORPEASYFOOTER.png" alt="CorpEasy Footer Logo" class="logo-img h-32 lg:h-44 w-auto object-contain object-left" width="220" height="160">
+                    </div>
+                    <p class="text-slate-600 text-lg font-medium leading-relaxed max-w-sm mb-10">Strategic workspace solutions for startups, SMEs, and global enterprises across Mumbai. Managed offices, coworking spaces, and custom enterprise HQs — all under one roof.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/corpeasy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 bg-white/70 rounded-lg flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/corpeasy" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 bg-white/70 rounded-lg flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/corpeasy" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="w-10 h-10 bg-white/70 rounded-lg flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="lg:col-span-3">
+                    <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-slate-500 mb-8">Navigation</h4>
+                    <ul class="space-y-4 text-sm font-semibold text-slate-600">
+                        <li><a onclick="navigateTo('managed')" class="hover:text-brand-electric transition-colors cursor-pointer">Managed Solutions</a></li>
+                        <li><a onclick="navigateTo('blog')" class="hover:text-brand-electric transition-colors cursor-pointer">Insights</a></li>
+                        <li><a onclick="navigateTo('find')" class="hover:text-brand-electric transition-colors cursor-pointer">Find a Property</a></li>
+                        <li><a onclick="navigateTo('list')" class="hover:text-brand-electric transition-colors cursor-pointer">Lease Your Property</a></li>
+                        <li><a onclick="navigateTo('facility')" class="hover:text-brand-electric transition-colors cursor-pointer">Facility Management</a></li>
+                        <li><a onclick="navigateTo('faq')" class="hover:text-brand-electric transition-colors cursor-pointer">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-4 flex flex-col items-start lg:items-end">
+                    <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-slate-500 mb-8">Contact Us</h4>
+                    <p class="text-sm text-slate-600 lg:text-right leading-loose mb-4">Office No. 30, 2nd Floor, Gopal Bhavan,<br>Shamaldas Gandhi Marg, Marine Lines East,<br>Mumbai, Maharashtra 400002</p>
+                    <div class="space-y-2 mb-4">
+                        <a href="tel:+919833089993" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'phone_click', location: 'footer'});" class="text-lg font-bold text-slate-900 tracking-tight hover:text-brand-electric transition-colors cursor-pointer block">Dev Doshi: +91 98330 89993</a>
+                        <a href="tel:+917021134176" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'phone_click', location: 'footer'});" class="text-lg font-bold text-slate-900 tracking-tight hover:text-brand-electric transition-colors cursor-pointer block">Jay Nishar: +91 70211 34176</a>
+                    </div>
+                    <a href="mailto:devdoshi@corpeasy.in" class="text-base font-bold text-brand-electric hover:text-slate-900 transition-colors">devdoshi@corpeasy.in</a>
+                </div>
+            </div>
+            <div class="pt-10 border-t border-white/80 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                <p>&copy; 2026 CorpEasy Enterprise Solutions. All Rights Reserved.</p>
+                <div class="flex space-x-10 mt-6 md:mt-0">
+                    <a class="hover:text-slate-900 transition-colors cursor-pointer">Privacy Policy</a>
+                    <a class="hover:text-slate-900 transition-colors cursor-pointer">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div id="fab-container" class="fixed bottom-8 right-8 z-50 flex flex-col items-center gap-3 opacity-0 pointer-events-none transition-all duration-500" style="transform: translateY(20px)">
+        <a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20interested%20in%20a%20managed%20office%20space%20in%20Mumbai.%20Please%20get%20in%20touch." target="_blank" id="fab-whatsapp" class="fab-mini w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg opacity-0 translate-y-4 transition-all duration-300 hover:scale-110" aria-label="WhatsApp"><i class="fab fa-whatsapp text-xl"></i></a>
+        <a href="javascript:void(0)" id="fab-email" onclick="navigateTo('contact')" class="fab-mini w-12 h-12 rounded-full bg-brand-cyan text-white flex items-center justify-center shadow-lg opacity-0 translate-y-4 transition-all duration-300 hover:scale-110" aria-label="Email"><i class="fas fa-envelope text-lg"></i></a>
+        <a href="tel:+919833089993" id="fab-phone" class="fab-mini w-12 h-12 rounded-full bg-brand-electric text-white flex items-center justify-center shadow-lg opacity-0 translate-y-4 transition-all duration-300 hover:scale-110" aria-label="Call Us"><i class="fas fa-phone-alt text-lg"></i></a>
+        <button id="fab-main" aria-label="Contact Us" class="w-16 h-16 rounded-full bg-brand-electric text-white flex items-center justify-center shadow-[0_0_30px_rgba(99,102,241,0.5)] hover:scale-110 transition-all duration-300 relative">
+            <i id="fab-icon" class="fas fa-comments text-2xl transition-transform duration-300"></i>
+            <span class="absolute inset-0 rounded-full bg-brand-electric/40 animate-ping"></span>
+        </button>
+    </div>
+
+    <div id="cookie-banner" 
+      class="fixed bottom-0 left-0 right-0 z-[200] 
+      bg-white/95 backdrop-blur-xl border-t border-white/60 
+      shadow-[0_-10px_30px_rgba(0,0,0,0.08)] p-6 
+      flex flex-col md:flex-row items-center justify-between gap-6
+      transition-all duration-500"
+      style="transform: translateY(100%)">
+      <div class="flex items-start gap-4">
+        <i class="fas fa-cookie-bite text-brand-electric text-2xl mt-1 
+        flex-shrink-0"></i>
+        <p class="text-sm text-slate-600 max-w-xl leading-relaxed">
+          We use cookies to enhance your browsing experience and analyze site traffic. 
+          By continuing, you agree to our 
+          <a href="#" class="text-brand-electric font-bold 
+          hover:underline">Privacy Policy</a>.
+        </p>
+      </div>
+      <div class="flex gap-4 flex-shrink-0">
+        <button id="cookie-decline" 
+          class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest 
+          border border-slate-200 rounded-xl text-slate-600 
+          hover:bg-slate-50 transition-all">
+          Decline
+        </button>
+        <button id="cookie-accept" 
+          class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest 
+          bg-brand-electric text-white rounded-xl 
+          shadow-[0_0_15px_rgba(99,102,241,0.3)] 
+          hover:scale-105 transition-all">
+          Accept All
+        </button>
+      </div>
+    </div>
+
+    <!-- INTERACTIVE ENGINE -->
+    <script src="script.js?v=2026032201"></script>
+    
+    <!-- Hide Initial Loader After Load -->
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var loader = document.getElementById('init-loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    loader.style.transition = 'opacity 0.4s ease';
+                    setTimeout(function() { loader.remove(); }, 400);
+                }
+            }, 300);
+        });
+    </script>
+</body>
+</html>

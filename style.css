@@ -1,0 +1,367 @@
+/* FROSTED GLASS & COOL MODERN DESIGN SYSTEM */
+body { 
+    -webkit-font-smoothing: antialiased; 
+    scroll-behavior: smooth; 
+    overflow-x: hidden; 
+    background: #f8fafc; 
+    color: #0f172a; 
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Performance: skip rendering off-screen content */
+main section:not(:first-child) { content-visibility: auto; contain-intrinsic-size: 1px 500px; }
+
+/* Prevent horizontal overflow on media elements */
+img, video, iframe, canvas, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Explicit hide mobile trigger on desktop */
+@media (min-width: 1280px) {
+    #mobile-trigger {
+        display: none !important;
+    }
+}
+
+/* Page sections - ensure full width */
+section {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Abstract Tech Background */
+.bg-tech-mesh {
+    background-color: #f8fafc;
+    background-image: 
+    radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.12), transparent 30%), /* Indigo glow */
+    radial-gradient(circle at 85% 30%, rgba(6, 182, 212, 0.12), transparent 30%), /* Cyan glow */
+    linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 30px 30px, 30px 30px;
+    background-position: 0 0, 0 0, -1px -1px, -1px -1px;
+}
+
+/* Animations */
+.page-transition { animation: slideUpFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+@keyframes slideUpFade {
+    from { opacity: 0; transform: translateY(30px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.reveal { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* Glassmorphism Navigation */
+.glass-nav { 
+    background: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(24px); 
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+#mobile-trigger {
+    z-index: 101;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+/* Premium Light Inputs */
+.input-premium {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    padding: 1.25rem 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    color: #0f172a;
+    font-weight: 500;
+}
+.input-premium:focus {
+    background-color: #ffffff;
+    border-color: #6366f1;
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+    outline: none;
+}
+.input-premium::placeholder { color: #94a3b8; }
+
+/* Typography Gradients */
+h1, h2, h3 { letter-spacing: -0.03em; line-height: 1.1; font-weight: 800; word-break: break-word; overflow-wrap: break-word; }
+.text-gradient {
+    background: linear-gradient(135deg, #334155 0%, #0f172a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-gradient-vibrant {
+    background: linear-gradient(135deg, #6366f1 0%, #06b6d4 50%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-gradient-gold {
+    background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Mobile Typography - Global */
+@media (max-width: 640px) {
+    h1 { font-size: clamp(2rem, 10vw, 3rem) !important; line-height: 1.1 !important; }
+    h2 { font-size: clamp(1.75rem, 8vw, 2.5rem) !important; line-height: 1.15 !important; }
+    h3 { font-size: clamp(1.25rem, 6vw, 1.75rem) !important; line-height: 1.2 !important; }
+    h4 { font-size: clamp(1.1rem, 5vw, 1.25rem) !important; line-height: 1.3 !important; }
+}
+
+#hero-word { 
+    transition: opacity 0.4s ease, transform 0.4s ease; 
+    display: inline-block; 
+}
+
+/* Ticker Animation */
+.ticker-track { display: flex; animation: ticker-scroll 25s linear infinite; width: max-content; }
+@keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f8fafc; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* ROI Slider Customization */
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; background: transparent; }
+input[type=range]:focus { outline: none; }
+input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 6px; cursor: pointer; background: rgba(0,0,0,0.05); border-radius: 10px; }
+input[type=range]::-webkit-slider-thumb { 
+    height: 24px; width: 24px; border-radius: 50%; 
+    background: #6366f1; cursor: pointer; -webkit-appearance: none; 
+    margin-top: -9px; box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+    border: 2px solid #fff; transition: transform 0.2s;
+}
+input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+
+/* Glowing Decorative Elements */
+.glow-blob {
+    position: absolute;
+    filter: blur(100px);
+    z-index: -1;
+    opacity: 0.3;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    animation: drift 15s ease-in-out infinite alternate;
+}
+@keyframes drift {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(30px, -30px) scale(1.1); }
+}
+
+@keyframes orb-drift {
+    0%   { transform: translate(0, 0) scale(1); }
+    33%  { transform: translate(40px, -30px) scale(1.05); }
+    66%  { transform: translate(-20px, 20px) scale(0.97); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+.orb-drift {
+    animation: orb-drift var(--duration, 20s) ease-in-out infinite;
+}
+
+/* Neumorphic / Glass Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 1);
+    backdrop-filter: blur(24px); 
+    -webkit-backdrop-filter: blur(24px);
+    border-radius: 2.5rem;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05), inset 0 0 0 1px rgba(255,255,255,0.5);
+    transform-style: preserve-3d;
+}
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: #ffffff;
+    box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.1), inset 0 0 0 1px rgba(255,255,255,0.8);
+}
+
+/* Blog Card Overrides */
+.blog-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 1);
+    backdrop-filter: blur(20px);
+    border-radius: 2rem;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 25px -10px rgba(15, 23, 42, 0.05);
+}
+.blog-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffffff;
+    box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.12);
+}
+
+/* Article Reading Mode */
+.prose-content p { margin-bottom: 2rem; line-height: 1.8; color: #475569; font-size: 1.125rem; }
+.prose-content h3 { margin-top: 3rem; margin-bottom: 1.5rem; color: #0f172a; font-size: 1.75rem; font-weight: 700; }
+
+/* FAQ Accordion */
+.faq-answer { transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+
+/* FAB */
+.fab-mini { transition: opacity 0.3s ease, transform 0.3s ease; }
+
+@media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    .glass-card { transform: none !important; transition: none !important; }
+    #hero-word { transition: none !important; }
+    .fab-mini { transition: none !important; }
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-img-light {
+    mix-blend-mode: normal;
+    filter: none;
+}
+
+.logo-img-dark {
+    mix-blend-mode: multiply;
+    filter: brightness(1) contrast(1);
+}
+
+/* Mobile touch improvements */
+@media (max-width: 768px) {
+    .input-premium {
+        font-size: 16px;
+        padding: 1rem 1.25rem;
+    }
+    
+    select.input-premium {
+        font-size: 16px;
+    }
+    
+    button[type="submit"] {
+        min-height: 54px;
+    }
+    
+    .glass-card {
+        border-radius: 1.5rem;
+    }
+    
+    h1, h2, h3 {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    h1 {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+        line-height: 1.1;
+    }
+    
+    h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+    
+    .hero-form {
+        padding: 1.5rem;
+    }
+    
+    .mobile-nav-text {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .glass-card {
+        padding: 1.25rem !important;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .hero-buttons > * {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile Menu Fixed Position */
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    max-height: 100vh;
+    max-height: 100dvh;
+}
+
+/* Mobile responsive padding */
+@media (max-width: 640px) {
+    section {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    .glass-card {
+        padding: 1.25rem !important;
+        border-radius: 1.25rem !important;
+    }
+    
+    .glass-card p-8, .glass-card p-10, .glass-card p-12 {
+        padding: 1rem !important;
+    }
+    
+    .input-premium {
+        font-size: 16px;
+        padding: 0.875rem 1rem;
+    }
+    
+    button[type="submit"] {
+        min-height: 52px;
+        font-size: 14px;
+    }
+    
+    /* Fix tables on mobile */
+    .overflow-x-auto {
+        max-width: 100%;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    table th, table td {
+        padding: 0.5rem 0.75rem !important;
+    }
+}
+
+/* Ensure navbar stays fixed and visible */
+#navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Hide desktop nav elements below xl breakpoint */
+@media (max-width: 1279px) {
+    #navbar .hidden.xl\:flex {
+        display: none !important;
+    }
+}
