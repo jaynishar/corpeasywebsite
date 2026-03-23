@@ -2,55 +2,27 @@
 # CORPEASY HOSTINGER OPTIMIZATION
 # ═══════════════════════════════════════════════════════════════════
 
-# PRIORITY: Serve index.php only
-DirectoryIndex index.php
-
 Options -MultiViews
 RewriteEngine On
 RewriteBase /
 
-# Serve existing files/directories
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Force index.php for root
-RewriteRule ^$ index.php [L]
-
 # ═══════════════════════════════════════════════════════════════════
-# CLEAN URL REWRITES - SEO-friendly URLs
-# ═══════════════════════════════════════════════════════════════════
-
-# Service pages
-RewriteRule ^managed-office-space-mumbai/?$ managed-office-space-mumbai.php [L]
-RewriteRule ^facility-management-mumbai/?$ facility-management-mumbai.php [L]
-RewriteRule ^office-space-for-rent-mumbai/?$ office-space-for-rent-mumbai.php [L]
-RewriteRule ^list-commercial-property-mumbai/?$ list-commercial-property-mumbai.php [L]
-
-# Blog
-RewriteRule ^blog/?$ blog.php [L]
-RewriteRule ^blog/([a-z0-9-]+)/?$ blog-post.php?slug=$1 [L,QSA]
-
-# Other pages
-RewriteRule ^about/?$ about.php [L]
-RewriteRule ^faq/?$ faq.php [L]
-RewriteRule ^contact/?$ contact.php [L]
-
-# ═══════════════════════════════════════════════════════════════════
-# CACHE BUSTING - NO CACHE FOR HTML/PHP FILES
+# CACHE BUSTING - NO CACHE FOR HTML FILES
+# Update version number when you upload new content
 # ═══════════════════════════════════════════════════════════════════
 <IfModule mod_headers.c>
-    # Disable caching for HTML and PHP files - always fresh
-    <FilesMatch "\.(html?|php)$">
+    # Disable caching for HTML files - always fresh
+    <FilesMatch "\.(html?)$">
         Header set Cache-Control "no-cache, no-store, must-revalidate"
         Header set Pragma "no-cache"
         Header set Expires 0
     </FilesMatch>
-
+    
     # Short cache for CSS/JS - will refresh with version query string
     <FilesMatch "\.(css|js)$">
         Header set Cache-Control "public, max-age=86400"
     </FilesMatch>
-
+    
     # Long cache for images
     <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
         Header set Cache-Control "public, max-age=2592000"
@@ -67,10 +39,10 @@ RewriteRule ^contact/?$ contact.php [L]
   Deny from all
 </Files>
 
-# Fallback: serve index.php for unmatched non-file requests
+# SPA: serve index.html for all non-file requests
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(?!admin\.php|admin_simple\.php|submit\.php|get_posts\.php|sitemap\.xml|robots\.txt).*$ index.php [L]
+RewriteRule ^(?!admin\.php|submit\.php|get_posts\.php|sitemap\.xml|robots\.txt).*$ index.html [L]
 
 # ═══════════════════════════════════════════════════════════════════
 # PERFORMANCE OPTIMIZATIONS
@@ -91,13 +63,16 @@ RewriteRule ^(?!admin\.php|admin_simple\.php|submit\.php|get_posts\.php|sitemap\
   AddOutputFilterByType DEFLATE font/woff
   AddOutputFilterByType DEFLATE application/font-woff2
   AddOutputFilterByType DEFLATE application/font-woff
+  # Remove old compressions
+  RemoveOutputFilter DEFLATE
+  SetOutputFilter DEFLATE
 </IfModule>
 
 # Browser caching for static assets
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 week"
-
+  
   # Images - cache for 1 year
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
@@ -105,29 +80,37 @@ RewriteRule ^(?!admin\.php|admin_simple\.php|submit\.php|get_posts\.php|sitemap\
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/x-icon "access plus 1 year"
-
+  
   # Fonts - cache for 1 year
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType font/woff "access plus 1 year"
   ExpiresByType application/font-woff2 "access plus 1 year"
   ExpiresByType application/font-woff "access plus 1 year"
-
+  
   # CSS/JS - cache for 1 month
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType text/javascript "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType application/x-javascript "access plus 1 month"
-
-  # HTML/PHP - short cache
+  
+  # HTML - short cache
   ExpiresByType text/html "access plus 1 hour"
 </IfModule>
 
-# Cache-Control headers for static assets
+# Cache-Control headers
 <IfModule mod_headers.c>
+  # Disable caching for dynamic PHP files
+  <FilesMatch "\.php$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+  
+  # Enable caching for static assets
   <FilesMatch "\.(css|js|jpg|jpeg|png|gif|webp|svg|ico|woff|woff2)$">
     Header set Cache-Control "public, max-age=31536000"
   </FilesMatch>
-
+  
   # Keep-Alive for faster connections
   Header set Connection keep-alive
 </IfModule>
@@ -135,5 +118,5 @@ RewriteRule ^(?!admin\.php|admin_simple\.php|submit\.php|get_posts\.php|sitemap\
 # Prevent directory listing
 Options -Indexes
 
-# Custom 404
-ErrorDocument 404 /index.php
+# Custom error page
+ErrorDocument 404 /index.html
