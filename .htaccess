@@ -1,6 +1,9 @@
 RewriteEngine On
 RewriteBase /
 
+# Force index.php as the homepage (not index.html)
+DirectoryIndex index.php index.html
+
 # Route requests to appropriate PHP files
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
