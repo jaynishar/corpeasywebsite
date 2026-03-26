@@ -12,6 +12,15 @@ $page_schema = '{
   "description": "Complete office facility management including housekeeping, security, AMC contracts, fire safety compliance, and vendor management.",
   "areaServed": {"@type": "City", "name": "Mumbai"},
   "serviceType": "Facility Management"
+},
+{
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the minimum office size you manage?", "acceptedAnswer": {"@type": "Answer", "text": "We typically work with offices of 20 seats and above. We also offer a shared FM model for offices with 10-20 seats."}},
+    {"@type": "Question", "name": "How much does facility management cost?", "acceptedAnswer": {"@type": "Answer", "text": "For a 50-seat office in Mumbai, expect ₹800 to ₹1,500 per seat per month for comprehensive facility management."}},
+    {"@type": "Question", "name": "Do you handle fire safety and BMC compliance?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We manage fire NOC renewals, conduct safety drills, maintain fire systems, and ensure all BMC compliance."}},
+    {"@type": "Question", "name": "Can I choose which services I need?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can pick individual services like housekeeping and AMC management. We customize scope and pricing."}}
+  ]
 }';
 
 include 'templates/header.php';
@@ -117,6 +126,131 @@ include 'templates/header.php';
 <div class="absolute bottom-6 left-6 lg:bottom-10 lg:left-10 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
 <span class="w-2 h-2 rounded-full bg-brand-rose animate-pulse"></span>
 <span class="text-sm font-medium text-slate-900">Professional Operations Team</span>
+</div>
+</div>
+</section>
+
+<section class="py-20 bg-white/40">
+<div class="max-w-4xl mx-auto px-6">
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Why Outsource Your<br><span class="text-gradient-vibrant">Facility Management?</span></h2>
+<p class="text-lg text-slate-600 leading-relaxed mb-6">Most companies with 20-200 employees do not have a dedicated facility management team. Instead, the responsibility falls on HR managers, admin assistants, or even founders — people whose actual job has nothing to do with managing AC vendors or tracking fire safety compliance.</p>
+<p class="text-lg text-slate-600 leading-relaxed mb-6">The result: vendor invoices pile up, AMC renewals get missed, housekeeping quality drops, and small maintenance issues become expensive problems. A leaking AC unit ignored for two weeks can damage ceiling panels worth ₹50,000. A missed fire NOC renewal can result in a ₹1,00,000 penalty from the BMC.</p>
+<p class="text-lg text-slate-600 leading-relaxed">Outsourcing facility management to CorpEasy means one team handles everything — from daily cleaning to annual compliance audits. Your team gets back the 15-20 hours per week they currently spend on office operations. And you get a single monthly invoice instead of chasing 8-12 different vendors.</p>
+</div>
+</section>
+
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-6 text-center">How We Onboard Your Office.</h2>
+<p class="text-lg text-slate-500 mb-16 text-center max-w-3xl mx-auto">From the first site visit to full operational handover, here is what the transition looks like.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="glass-card p-8">
+<div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose text-xl font-black mb-6">1</div>
+<h4 class="text-xl font-bold text-slate-900 mb-3">Site Assessment</h4>
+<p class="text-slate-600 leading-relaxed">We visit your office, audit the current state of operations, identify gaps in maintenance, and document all existing vendor contracts and their renewal dates.</p>
+</div>
+<div class="glass-card p-8">
+<div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose text-xl font-black mb-6">2</div>
+<h4 class="text-xl font-bold text-slate-900 mb-3">Proposal and Scope</h4>
+<p class="text-slate-600 leading-relaxed">Within 48 hours, we send a detailed proposal with scope of services, staffing plan, vendor recommendations, and a clear monthly cost. No hidden charges.</p>
+</div>
+<div class="glass-card p-8">
+<div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose text-xl font-black mb-6">3</div>
+<h4 class="text-xl font-bold text-slate-900 mb-3">Team Deployment</h4>
+<p class="text-slate-600 leading-relaxed">Once approved, we deploy trained housekeeping, security, and maintenance staff within 7 days. We also begin the vendor transition process for AMCs and service contracts.</p>
+</div>
+<div class="glass-card p-8">
+<div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose text-xl font-black mb-6">4</div>
+<h4 class="text-xl font-bold text-slate-900 mb-3">Ongoing Management</h4>
+<p class="text-slate-600 leading-relaxed">A dedicated facility manager handles day-to-day operations. You receive monthly MIS reports covering costs, incidents, vendor performance, and compliance status.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-20 bg-white/40">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-16 text-center">Industries We Serve.</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="glass-card p-8 text-center">
+<div class="w-14 h-14 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mx-auto mb-6"><i class="fas fa-laptop-code text-2xl"></i></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2">IT & Tech Companies</h4>
+<p class="text-sm text-slate-600 leading-relaxed">Server room maintenance, UPS management, cable management, and 24/7 AC uptime for your tech infrastructure.</p>
+</div>
+<div class="glass-card p-8 text-center">
+<div class="w-14 h-14 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mx-auto mb-6"><i class="fas fa-university text-2xl"></i></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2">Financial Services</h4>
+<p class="text-sm text-slate-600 leading-relaxed">Compliance-ready facility management with access control, visitor management, and secure document storage areas.</p>
+</div>
+<div class="glass-card p-8 text-center">
+<div class="w-14 h-14 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose mx-auto mb-6"><i class="fas fa-briefcase-medical text-2xl"></i></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2">Healthcare Offices</h4>
+<p class="text-sm text-slate-600 leading-relaxed">Hygiene-focused cleaning protocols, biomedical waste coordination, and regulatory compliance for medical offices and labs.</p>
+</div>
+<div class="glass-card p-8 text-center">
+<div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mx-auto mb-6"><i class="fas fa-building text-2xl"></i></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2">Coworking Spaces</h4>
+<p class="text-sm text-slate-600 leading-relaxed">We partner with coworking operators to handle back-end operations — cleaning, security, maintenance — so you focus on community and growth.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-20">
+<div class="max-w-4xl mx-auto px-6">
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-16 text-center">Frequently Asked Questions.</h2>
+<div class="space-y-4">
+<div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-bold text-slate-900">What is the minimum office size you manage?</h3>
+<i class="fas fa-chevron-down text-brand-rose faq-icon transition-transform"></i>
+</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">We typically work with offices of 20 seats and above. For smaller offices, the cost of a dedicated facility management team may not be justified. However, we offer a "shared FM" model for offices with 10-20 seats where our team visits on a scheduled basis rather than being present full-time.</div>
+</div>
+<div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-bold text-slate-900">How much does facility management cost?</h3>
+<i class="fas fa-chevron-down text-brand-rose faq-icon transition-transform"></i>
+</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Cost depends on your office size, location, and the services you need. For a 50-seat office in Mumbai, expect ₹800 to ₹1,500 per seat per month for comprehensive facility management including housekeeping, security, pantry management, and AMC coordination. We provide a detailed quote after the site assessment.</div>
+</div>
+<div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-bold text-slate-900">Do you handle fire safety and BMC compliance?</h3>
+<i class="fas fa-chevron-down text-brand-rose faq-icon transition-transform"></i>
+</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Yes. We manage fire NOC renewals, conduct regular fire safety drills, maintain fire extinguishers and detection systems, and ensure your office meets all BMC and fire department requirements. We also handle statutory audits and keep all compliance documentation up to date.</div>
+</div>
+<div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-bold text-slate-900">Can I choose which services I need?</h3>
+<i class="fas fa-chevron-down text-brand-rose faq-icon transition-transform"></i>
+</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Absolutely. While most clients opt for comprehensive facility management, you can pick individual services. For example, you might only need housekeeping and AMC management while handling security yourself. We customize the scope and pricing based on what you actually need.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 bg-white/40">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-black text-slate-900 tracking-tighter mb-8 text-center">Related Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<a href="/managed-office-space-mumbai" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
+<div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-building text-lg"></i></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space</h4>
+<p class="text-sm text-slate-600">Need a new office? We find, set up, and manage your workspace from Day 1.</p>
+</a>
+<a href="/office-space-for-rent-mumbai" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
+<div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-search-location text-lg"></i></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Find Office Space for Rent</h4>
+<p class="text-sm text-slate-600">Looking for a new space? We help with property search and landlord negotiation.</p>
+</a>
+<a href="/contact" class="glass-card p-8 hover:border-brand-rose/30 transition-all group">
+<div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose mb-4 group-hover:bg-brand-rose group-hover:text-white transition-all"><i class="fas fa-phone-alt text-lg"></i></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-rose transition-colors">Get a Free Site Assessment</h4>
+<p class="text-sm text-slate-600">Our team visits your office and provides a detailed facility management proposal within 48 hours.</p>
+</a>
 </div>
 </div>
 </section>

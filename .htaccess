@@ -15,6 +15,16 @@ RewriteRule ^office-space-for-rent-mumbai/?$ office-space-for-rent-mumbai.php [L
 RewriteRule ^facility-management-mumbai/?$ facility-management-mumbai.php [L]
 RewriteRule ^managed-office-space-mumbai/?$ managed-office-space-mumbai.php [L]
 
+# Location pages - Managed Office
+RewriteRule ^managed-office-bkc/?$ managed-office-bkc.php [L]
+RewriteRule ^managed-office-lower-parel/?$ managed-office-lower-parel.php [L]
+RewriteRule ^managed-office-goregaon/?$ managed-office-goregaon.php [L]
+RewriteRule ^managed-office-andheri/?$ managed-office-andheri.php [L]
+
+# Location pages - Office for Rent
+RewriteRule ^office-for-rent-bkc/?$ office-for-rent-bkc.php [L]
+RewriteRule ^office-for-rent-lower-parel/?$ office-for-rent-lower-parel.php [L]
+
 # Prevent directory listing
 Options -Indexes
 

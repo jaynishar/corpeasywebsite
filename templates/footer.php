@@ -18,14 +18,28 @@
                     </div>
                 </div>
                 <div class="lg:col-span-3">
-                    <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-slate-500 mb-8">Navigation</h4>
-                    <ul class="space-y-4 text-sm font-semibold text-slate-600">
-                        <li><a href="/managed-office-space-mumbai" class="hover:text-brand-electric transition-colors cursor-pointer">Managed Solutions</a></li>
-                        <li><a href="/blog" class="hover:text-brand-electric transition-colors cursor-pointer">Insights</a></li>
-                        <li><a href="/office-space-for-rent-mumbai" class="hover:text-brand-electric transition-colors cursor-pointer">Find a Property</a></li>
-                        <li><a href="/list-commercial-property-mumbai" class="hover:text-brand-electric transition-colors cursor-pointer">Lease Your Property</a></li>
-                        <li><a href="/facility-management-mumbai" class="hover:text-brand-electric transition-colors cursor-pointer">Facility Management</a></li>
-                        <li><a href="/faq" class="hover:text-brand-electric transition-colors cursor-pointer">FAQ</a></li>
+                    <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-slate-500 mb-8">Services</h4>
+                    <ul class="space-y-3 text-sm font-semibold text-slate-600">
+                        <li><a href="/managed-office-space-mumbai" class="hover:text-brand-electric transition-colors">Managed Office Space</a></li>
+                        <li><a href="/office-space-for-rent-mumbai" class="hover:text-brand-electric transition-colors">Office Space for Rent</a></li>
+                        <li><a href="/facility-management-mumbai" class="hover:text-brand-electric transition-colors">Facility Management</a></li>
+                        <li><a href="/list-commercial-property-mumbai" class="hover:text-brand-electric transition-colors">List Your Property</a></li>
+                    </ul>
+                    <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-slate-500 mt-8 mb-4">Locations</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="/managed-office-bkc" class="hover:text-brand-electric transition-colors">Managed Office BKC</a></li>
+                        <li><a href="/managed-office-lower-parel" class="hover:text-brand-electric transition-colors">Managed Office Lower Parel</a></li>
+                        <li><a href="/managed-office-andheri" class="hover:text-brand-electric transition-colors">Managed Office Andheri</a></li>
+                        <li><a href="/managed-office-goregaon" class="hover:text-brand-electric transition-colors">Managed Office Goregaon</a></li>
+                        <li><a href="/office-for-rent-bkc" class="hover:text-brand-electric transition-colors">Office for Rent BKC</a></li>
+                        <li><a href="/office-for-rent-lower-parel" class="hover:text-brand-electric transition-colors">Office for Rent Lower Parel</a></li>
+                    </ul>
+                    <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-slate-500 mt-8 mb-4">Company</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="/blog" class="hover:text-brand-electric transition-colors">Insights</a></li>
+                        <li><a href="/about" class="hover:text-brand-electric transition-colors">About Us</a></li>
+                        <li><a href="/faq" class="hover:text-brand-electric transition-colors">FAQ</a></li>
+                        <li><a href="/contact" class="hover:text-brand-electric transition-colors">Contact</a></li>
                     </ul>
                 </div>
                 <div class="lg:col-span-4 flex flex-col items-start lg:items-end">
