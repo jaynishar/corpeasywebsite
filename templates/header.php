@@ -9,7 +9,7 @@ $page_keywords = $page_keywords ?? 'managed office space Mumbai, office space fo
 $page_canonical = $page_canonical ?? 'https://www.corpeasy.in/';
 $page_og_title = $page_og_title ?? $page_title;
 $page_og_description = $page_og_description ?? $page_description;
-$page_og_image = $page_og_image ?? 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&h=630';
+$page_og_image = $page_og_image ?? 'https://www.corpeasy.in/CORPEASYHEADER.png';
 $page_schema = $page_schema ?? '';
 $page_id = $page_id ?? 'home';
 ?>

@@ -99,7 +99,7 @@ $gridPosts = array_slice($posts, 1, null, true);
 <span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse"></span>
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Useful Reading</span>
 </div>
-<h1 class="text-6xl md:text-8xl font-extrabold text-slate-900 leading-none">The <span class="text-gradient-vibrant">Insights</span> Hub.</h1>
+<h1 class="text-6xl md:text-8xl font-extrabold text-slate-900 leading-none">Mumbai <span class="text-gradient-vibrant">Office Space</span> Insights</h1>
 <p class="text-xl text-slate-600 mt-8 leading-relaxed">Practical articles on office space in Mumbai, commercial real estate, and workspace decisions. Written plainly for business owners and operations teams.</p>
 </div>
 </div>

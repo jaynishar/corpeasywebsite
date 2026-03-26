@@ -65,7 +65,7 @@ include 'templates/header.php';
 <div class="mb-4 lg:mb-6">
 <span class="text-xs sm:text-sm text-slate-500 font-medium">Managed Office Space in Mumbai</span>
 </div>
-<h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 lg:mb-6 leading-tight">Find Your Perfect<br><span id="hero-word" class="text-brand-electric">Office Space</span></h1>
+<h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 lg:mb-6 leading-tight">Managed Office Space<br><span id="hero-word" class="text-brand-electric">in Mumbai</span></h1>
 <p class="text-base lg:text-lg text-slate-600 max-w-lg mb-6 lg:mb-8 leading-relaxed">CorpEasy helps businesses find, set up, and manage office spaces across Mumbai. Get a clear per-seat monthly cost with one point of contact.</p>
 <div class="hero-buttons flex flex-col sm:flex-row gap-3 mb-6">
 <a href="/contact" class="bg-brand-electric text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all w-full sm:w-auto text-center">Get a Free Consultation</a>
