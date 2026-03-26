@@ -1,17 +1,21 @@
 <?php
 $page_id = 'faq';
-$page_title = 'FAQ | Managed Office Space & Facility Management Questions | CorpEasy';
-$page_description = 'Common questions about managed office space in Mumbai, pricing, facility management, and how CorpEasy works. Straight answers for business owners.';
-$page_keywords = 'managed office space FAQ, office space Mumbai questions, CorpEasy FAQ, facility management questions';
+$page_title = 'FAQ | Managed Office Space Mumbai - Pricing, Process & Facility Management';
+$page_description = 'Answers to common questions about managed office space in Mumbai — pricing by location, how the process works, facility management costs, and areas covered.';
+$page_keywords = 'managed office space FAQ Mumbai, office space Mumbai cost, managed office pricing Mumbai, facility management Mumbai FAQ, office space questions Mumbai, how to get office space Mumbai, managed office vs coworking';
 $page_canonical = 'https://www.corpeasy.in/faq';
+$page_og_image = 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&h=630';
 $page_schema = '{
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do you have ready offices available right now?", "acceptedAnswer": {"@type": "Answer", "text": "No, and that is intentional. We work on a requirement first basis..."}},
-    {"@type": "Question", "name": "What does managed office mean at CorpEasy?", "acceptedAnswer": {"@type": "Answer", "text": "It means we handle the end to end process..."}},
-    {"@type": "Question", "name": "How much does managed office space in Mumbai cost?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on location, team size, and the specific property..."}},
-    {"@type": "Question", "name": "Which areas in Mumbai do you cover?", "acceptedAnswer": {"@type": "Answer", "text": "We actively source commercial office space across BKC, Lower Parel, Worli, Goregaon East, Andheri East, and Powai."}},
-    {"@type": "Question", "name": "Do you offer facility management for existing offices?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. CorpEasy Facility Management is designed for companies that already have their own office space but want to outsource day-to-day operations."}}
+    {"@type": "Question", "name": "Do you have ready offices available right now?", "acceptedAnswer": {"@type": "Answer", "text": "No, and that is intentional. We work on a requirement-first basis. When you tell us what you need, we source the right commercial space for your team in Mumbai. This means the office is sourced and set up specifically for your team, rather than you inheriting something generic that does not quite fit."}},
+    {"@type": "Question", "name": "What does managed office mean at CorpEasy?", "acceptedAnswer": {"@type": "Answer", "text": "It means we handle the end-to-end process of getting you into a working office space. We identify a suitable commercial property in Mumbai, negotiate the lease with the landlord, arrange the basic workspace setup including furniture, internet, and essentials, and give you a clear per-seat monthly cost on a fixed lease. You deal with us, not with landlords, brokers, or contractors."}},
+    {"@type": "Question", "name": "How much does managed office space in Mumbai cost?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on location, team size, and the specific property. As a general guide: BKC ranges from approximately ₹18,000 to ₹35,000 per seat per month; Lower Parel ₹14,000 to ₹28,000; Goregaon ₹10,000 to ₹18,000; Andheri ₹12,000 to ₹22,000. CorpEasy shares your exact cost based on the actual property before you commit to anything."}},
+    {"@type": "Question", "name": "Which areas in Mumbai do you cover?", "acceptedAnswer": {"@type": "Answer", "text": "We actively source commercial office space across BKC, Lower Parel, Worli, Goregaon East, Andheri East, and Powai. We also cover Thane, Navi Mumbai, and Malad for the office-for-rent service."}},
+    {"@type": "Question", "name": "How long does the whole process take?", "acceptedAnswer": {"@type": "Answer", "text": "Typically 2-4 weeks from when we identify a suitable space to the day your team can move in. Pre-fitted spaces can be ready within 7-10 days. This is significantly faster than finding, negotiating, and setting up a space entirely on your own, which usually takes 3-6 months."}},
+    {"@type": "Question", "name": "What is the minimum team size you work with?", "acceptedAnswer": {"@type": "Answer", "text": "There is no strict minimum. The managed office model tends to make the most practical sense for teams of around 10 or more. For very small teams, a coworking space is usually more cost-effective."}},
+    {"@type": "Question", "name": "I own a commercial property. Can CorpEasy find me a tenant?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We work with property owners across Mumbai who are looking for reliable business tenants. If you have a commercial space available, get in touch with us and we will review whether it fits our active client requirements."}},
+    {"@type": "Question", "name": "Do you offer facility management for existing offices?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. CorpEasy Facility Management is designed for companies that already have their own office space but want to outsource day-to-day operations — including housekeeping, security, vendor management, AMC contracts, and compliance. We handle everything under one monthly invoice."}}
   ]
 }';
 

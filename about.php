@@ -1,9 +1,33 @@
 <?php
 $page_id = 'about';
-$page_title = 'About CorpEasy | Mumbai Office Space Solutions Company';
-$page_description = 'CorpEasy is a Mumbai-based workspace solutions company founded in 2025. We make finding, setting up, and occupying commercial office space genuinely easier.';
-$page_keywords = 'CorpEasy, about CorpEasy, Mumbai office space company, workspace solutions Mumbai, Dev Doshi, Jay Nishar';
+$page_title = 'About CorpEasy | Mumbai Office Space & Workspace Solutions Company';
+$page_description = 'CorpEasy is a Mumbai-based workspace solutions company founded in 2025 by Dev Doshi and Jay Nishar. We make finding, setting up, and managing commercial office space in Mumbai genuinely easier.';
+$page_keywords = 'about CorpEasy, CorpEasy Mumbai, workspace solutions company Mumbai, managed office company Mumbai, office space solutions Mumbai, Dev Doshi CorpEasy, Jay Nishar CorpEasy, commercial real estate Mumbai startup';
 $page_canonical = 'https://www.corpeasy.in/about';
+$page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&h=630';
+$page_schema = '{
+  "@type": "AboutPage",
+  "name": "About CorpEasy",
+  "url": "https://www.corpeasy.in/about",
+  "description": "CorpEasy is a Mumbai-based workspace solutions company founded in October 2025.",
+  "about": {"@id": "https://www.corpeasy.in/#organization"}
+},
+{
+  "@type": "Person",
+  "@id": "https://www.corpeasy.in/#dev-doshi",
+  "name": "Dev Doshi",
+  "jobTitle": "Co-Founder, Business Development & Strategy",
+  "worksFor": {"@id": "https://www.corpeasy.in/#organization"},
+  "url": "https://www.corpeasy.in/about"
+},
+{
+  "@type": "Person",
+  "@id": "https://www.corpeasy.in/#jay-nishar",
+  "name": "Jay Nishar",
+  "jobTitle": "Co-Founder, Operations & Growth",
+  "worksFor": {"@id": "https://www.corpeasy.in/#organization"},
+  "url": "https://www.corpeasy.in/about"
+}';
 
 include 'templates/header.php';
 ?>

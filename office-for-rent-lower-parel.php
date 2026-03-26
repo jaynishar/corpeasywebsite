@@ -1,8 +1,8 @@
 <?php
 $page_id = 'rent-lower-parel';
-$page_title = 'Office Space for Rent in Lower Parel | Mumbai | CorpEasy';
-$page_description = 'Office space for rent in Lower Parel Mumbai. Grade A commercial properties from Rs 150/sq ft. Marathon Futurex, Peninsula. Free tenant representation.';
-$page_keywords = 'office space for rent Lower Parel, commercial office Lower Parel Mumbai, office on rent Lower Parel, commercial property Lower Parel';
+$page_title = 'Office Space for Rent in Lower Parel Mumbai | From ₹150/sq ft | CorpEasy';
+$page_description = 'Find office space for rent in Lower Parel Mumbai from ₹150/sq ft/month. Verified properties in Marathon Futurex, Peninsula Business Park, One World Center. Free landlord negotiation.';
+$page_keywords = 'office space for rent Lower Parel, commercial office Lower Parel Mumbai, office on rent Lower Parel, commercial property Lower Parel, Lower Parel office rent per sq ft, office lease Lower Parel, office near Lower Parel station, commercial office Marathon Futurex, office space Peninsula Business Park';
 $page_canonical = 'https://www.corpeasy.in/office-for-rent-lower-parel';
 $page_schema = '{
   "@type": "Service",

@@ -1,10 +1,10 @@
 <?php
 $page_id = 'managed-lower-parel';
-$page_title = 'Managed Office Space in Lower Parel | Mumbai | CorpEasy';
-$page_description = 'Managed office space in Lower Parel Mumbai from Rs 14,000/seat/month. Near Marathon Futurex, Peninsula Business Park. Setup included. Get a quote.';
-$page_keywords = 'managed office space Lower Parel, office space Lower Parel Mumbai, serviced office Lower Parel, coworking Lower Parel';
+$page_title = 'Managed Office Space in Lower Parel Mumbai | From ₹14,000/Seat | CorpEasy';
+$page_description = 'Managed office space in Lower Parel Mumbai from ₹14,000/seat/month. Near Marathon Futurex, Peninsula Business Park, One World Center. Full setup included. Move in 2-4 weeks.';
+$page_keywords = 'managed office space Lower Parel, office space Lower Parel Mumbai, serviced office Lower Parel, private office Lower Parel, managed office Lower Parel 2026, office near Marathon Futurex, office near Peninsula Business Park, Lower Parel office cost per seat, commercial office Lower Parel';
 $page_canonical = 'https://www.corpeasy.in/managed-office-lower-parel';
-$page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200';
+$page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&h=630';
 $page_schema = '{
   "@type": "Service",
   "name": "Managed Office Space in Lower Parel",

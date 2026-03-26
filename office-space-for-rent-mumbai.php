@@ -1,8 +1,8 @@
 <?php
 $page_id = 'find';
-$page_title = 'Office Space for Rent in Mumbai | Commercial Property | CorpEasy';
-$page_description = 'Find commercial office space for rent in Mumbai. BKC, Lower Parel, Goregaon, Andheri, Powai. Expert negotiation and tenant representation. Free consultation.';
-$page_keywords = 'office space for rent in Mumbai, commercial office space Mumbai, office space BKC rent, office space Lower Parel rent, commercial property for lease Mumbai';
+$page_title = 'Office Space for Rent in Mumbai | BKC, Lower Parel, Andheri | Free Consultation';
+$page_description = 'Find commercial office space for rent in Mumbai — BKC, Lower Parel, Goregaon, Andheri, Powai. Verified listings, landlord negotiation & lease review. Free tenant representation service.';
+$page_keywords = 'office space for rent in Mumbai, commercial office space Mumbai, office space BKC rent, office space Lower Parel rent, commercial property for lease Mumbai, office on rent Mumbai, office space Mumbai 2026, commercial office rent BKC, office space Andheri rent, find office space Mumbai, tenant representation Mumbai, commercial property search Mumbai';
 $page_canonical = 'https://www.corpeasy.in/office-space-for-rent-mumbai';
 $page_schema = '{
   "@type": "Service",

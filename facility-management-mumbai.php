@@ -1,8 +1,8 @@
 <?php
 $page_id = 'facility';
-$page_title = 'Facility Management Services in Mumbai | Office Maintenance | CorpEasy';
-$page_description = 'Professional facility management for your Mumbai office. Housekeeping, security, AMC contracts, fire safety compliance. Single monthly invoice. Get a quote today.';
-$page_keywords = 'facility management services Mumbai, office housekeeping services Mumbai, commercial building maintenance Mumbai, AMC management services, office security services Mumbai';
+$page_title = 'Facility Management Services Mumbai | Housekeeping, AMC, Fire Safety | CorpEasy';
+$page_description = 'Professional facility management for Mumbai offices from ₹800/seat/month. Housekeeping, security, AMC contracts, fire safety & BMC compliance. Single monthly invoice. Free site assessment.';
+$page_keywords = 'facility management services Mumbai, office housekeeping services Mumbai, commercial building maintenance Mumbai, AMC management services, office security services Mumbai, facility management company Mumbai, office maintenance Mumbai, fire NOC Mumbai office, BMC compliance Mumbai, outsource facility management Mumbai, integrated facility management Mumbai';
 $page_canonical = 'https://www.corpeasy.in/facility-management-mumbai';
 $page_og_image = 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1200';
 $page_schema = '{

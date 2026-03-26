@@ -1,8 +1,8 @@
 <?php
 $page_id = 'rent-bkc';
-$page_title = 'Office Space for Rent in BKC | Bandra Kurla Complex | CorpEasy';
-$page_description = 'Find office space for rent in BKC Mumbai. Commercial properties from Rs 250/sq ft. Verified listings, landlord negotiation, lease review. Free consultation.';
-$page_keywords = 'office space for rent BKC, commercial office BKC, office on rent Bandra Kurla Complex, commercial property BKC Mumbai';
+$page_title = 'Office Space for Rent in BKC Mumbai | From ₹250/sq ft | CorpEasy';
+$page_description = 'Find commercial office space for rent in BKC (Bandra Kurla Complex) Mumbai from ₹250/sq ft/month. Verified properties in Platina, One BKC, Trade World. Free landlord negotiation & lease review.';
+$page_keywords = 'office space for rent BKC, commercial office BKC, office on rent Bandra Kurla Complex, commercial property BKC Mumbai, BKC office rent per sq ft, office lease BKC Mumbai, BKC commercial property 2026, office space near SEBI BKC, office rent Platina BKC, office rent One BKC';
 $page_canonical = 'https://www.corpeasy.in/office-for-rent-bkc';
 $page_schema = '{
   "@type": "Service",

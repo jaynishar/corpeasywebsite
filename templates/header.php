@@ -3,13 +3,13 @@
 // $page_title, $page_description, $page_keywords, $page_canonical, $page_og_title, $page_og_description, $page_og_image, $page_schema
 
 // Defaults
-$page_title = $page_title ?? 'CorpEasy │ Managed Office Space in Mumbai · BKC, Lower Parel, Goregaon';
+$page_title = $page_title ?? 'CorpEasy | Managed Office Space in Mumbai - BKC, Lower Parel, Goregaon';
 $page_description = $page_description ?? 'CorpEasy finds, sets up, and manages your office space in Mumbai. One point of contact. Clear per-seat monthly cost. Fixed lease. BKC, Lower Parel & Goregaon.';
-$page_keywords = $page_keywords ?? 'managed office space Mumbai, office space for rent in Mumbai, commercial office space Mumbai, office space BKC, office space Lower Parel, office space Goregaon, managed workspace Mumbai, office space Andheri East, coworking space Mumbai, commercial property for lease Mumbai';
+$page_keywords = $page_keywords ?? 'managed office space Mumbai, office space for rent in Mumbai, commercial office space Mumbai, office space BKC, office space Lower Parel, office space Goregaon, managed workspace Mumbai, office space Andheri East, coworking space Mumbai, commercial property for lease Mumbai, workspace solutions Mumbai, office space Mumbai 2026, turnkey office space Mumbai, per seat office Mumbai';
 $page_canonical = $page_canonical ?? 'https://www.corpeasy.in/';
 $page_og_title = $page_og_title ?? $page_title;
 $page_og_description = $page_og_description ?? $page_description;
-$page_og_image = $page_og_image ?? 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800';
+$page_og_image = $page_og_image ?? 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&h=630';
 $page_schema = $page_schema ?? '';
 $page_id = $page_id ?? 'home';
 ?>
@@ -37,7 +37,10 @@ $page_id = $page_id ?? 'home';
     <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
     <meta name="keywords" content="<?php echo htmlspecialchars($page_keywords); ?>">
     <link rel="canonical" href="<?php echo htmlspecialchars($page_canonical); ?>">
+    <link rel="alternate" hreflang="en-IN" href="<?php echo htmlspecialchars($page_canonical); ?>">
+    <link rel="alternate" hreflang="en" href="<?php echo htmlspecialchars($page_canonical); ?>">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="CorpEasy">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -52,8 +55,14 @@ $page_id = $page_id ?? 'home';
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?php echo htmlspecialchars($page_canonical); ?>">
     <meta property="og:image" content="<?php echo htmlspecialchars($page_og_image); ?>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="<?php echo htmlspecialchars($page_og_title); ?>">
+    <meta property="og:locale" content="en_IN">
     <meta property="og:site_name" content="CorpEasy">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@corpeasy">
+    <meta name="twitter:creator" content="@corpeasy">
     <meta name="twitter:title" content="<?php echo htmlspecialchars($page_og_title); ?>">
     <meta name="twitter:description" content="<?php echo htmlspecialchars($page_og_description); ?>">
     <meta name="twitter:image" content="<?php echo htmlspecialchars($page_og_image); ?>">
@@ -64,16 +73,27 @@ $page_id = $page_id ?? 'home';
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "LocalBusiness",
+          "@type": ["LocalBusiness", "ProfessionalService"],
           "@id": "https://www.corpeasy.in/#organization",
           "name": "CorpEasy",
-          "description": "CorpEasy provides managed office spaces, coworking, lease advisory, and facility management services for startups, SMEs, and enterprises across Mumbai.",
+          "alternateName": "CorpEasy Enterprise Solutions",
+          "description": "CorpEasy provides managed office spaces, tenant representation, lease advisory, and facility management services for startups, SMEs, and enterprises across Mumbai.",
           "url": "https://www.corpeasy.in/",
-          "logo": "https://www.corpeasy.in/CORPEASYHEADER.png",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.corpeasy.in/CORPEASYHEADER.png",
+            "width": 280,
+            "height": 80
+          },
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&h=630",
           "telephone": "+919833089993",
           "email": "devdoshi@corpeasy.in",
           "foundingDate": "2025-10",
           "foundingLocation": "Mumbai, Maharashtra, India",
+          "founder": [
+            { "@type": "Person", "name": "Dev Doshi", "jobTitle": "Co-Founder, Business Development & Strategy" },
+            { "@type": "Person", "name": "Jay Nishar", "jobTitle": "Co-Founder, Operations & Growth" }
+          ],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Office No. 30, 2nd Floor, Gopal Bhavan, Shamaldas Gandhi Marg, Marine Lines",
@@ -87,7 +107,35 @@ $page_id = $page_id ?? 'home';
             "latitude": 19.0176,
             "longitude": 72.8562
           },
-          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200",
+          "areaServed": [
+            {"@type": "City", "name": "Mumbai"},
+            {"@type": "Place", "name": "BKC, Mumbai"},
+            {"@type": "Place", "name": "Lower Parel, Mumbai"},
+            {"@type": "Place", "name": "Goregaon, Mumbai"},
+            {"@type": "Place", "name": "Andheri, Mumbai"}
+          ],
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+919833089993",
+              "contactType": "sales",
+              "areaServed": "IN",
+              "availableLanguage": ["English", "Hindi"],
+              "hoursAvailable": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "09:00",
+                "closes": "19:00"
+              }
+            },
+            {
+              "@type": "ContactPoint",
+              "telephone": "+917021134176",
+              "contactType": "customer service",
+              "areaServed": "IN",
+              "availableLanguage": ["English", "Hindi"]
+            }
+          ],
           "priceRange": "₹10,000 - ₹40,000 per seat/month",
           "openingHoursSpecification": [
             {
@@ -96,6 +144,14 @@ $page_id = $page_id ?? 'home';
               "opens": "09:00",
               "closes": "19:00"
             }
+          ],
+          "knowsAbout": [
+            "Managed Office Space",
+            "Commercial Real Estate Mumbai",
+            "Office Space for Rent Mumbai",
+            "Facility Management",
+            "Tenant Representation",
+            "Commercial Lease Negotiation"
           ],
           "sameAs": [
             "https://www.linkedin.com/company/corpeasy",
@@ -106,10 +162,10 @@ $page_id = $page_id ?? 'home';
             "@type": "OfferCatalog",
             "name": "CorpEasy Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Managed Office Space Mumbai"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Coworking Space Mumbai"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lease Advisory Mumbai"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Facility Management Services Mumbai"}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Managed Office Space Mumbai", "url": "https://www.corpeasy.in/managed-office-space-mumbai"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Office Space for Rent Mumbai", "url": "https://www.corpeasy.in/office-space-for-rent-mumbai"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Facility Management Services Mumbai", "url": "https://www.corpeasy.in/facility-management-mumbai"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "List Commercial Property Mumbai", "url": "https://www.corpeasy.in/list-commercial-property-mumbai"}}
             ]
           }
         },
@@ -118,17 +174,8 @@ $page_id = $page_id ?? 'home';
           "@id": "https://www.corpeasy.in/#website",
           "url": "https://www.corpeasy.in/",
           "name": "CorpEasy",
+          "description": "Managed office space, commercial property search, and facility management in Mumbai.",
           "publisher": { "@id": "https://www.corpeasy.in/#organization" }
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://www.corpeasy.in/#organization",
-          "name": "CorpEasy",
-          "alternateName": "CorpEasy Enterprise Solutions",
-          "founder": [
-            { "@type": "Person", "name": "Dev Doshi", "jobTitle": "Co-Founder: Business Development & Strategy" },
-            { "@type": "Person", "name": "Jay Nishar", "jobTitle": "Co-Founder: Operations & Growth" }
-          ]
         },
         {
           "@type": "BreadcrumbList",
@@ -160,7 +207,7 @@ $page_id = $page_id ?? 'home';
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnls.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>

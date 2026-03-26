@@ -1,0 +1,33 @@
+# Deploy folder (local Hostinger upload copy — not needed in git)
+_deploy/
+
+# Non-website files
+not imp/
+
+# AI tool configs (local only)
+.agents/
+.claude/
+.codebuddy/
+.commandcode/
+.continue/
+.crush/
+.factory/
+.goose/
+.junie/
+.kilocode/
+.kiro/
+.kode/
+.mcpjam/
+.mux/
+.neovate/
+.openhands/
+.pi/
+.pochi/
+.qoder/
+.qwen/
+.roo/
+.trae/
+.windsurf/
+.zencoder/
+skills/
+skills-lock.json

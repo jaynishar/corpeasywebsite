@@ -1,9 +1,16 @@
 <?php
 $page_id = 'contact';
-$page_title = 'Contact CorpEasy | Office Space Consultation Mumbai';
-$page_description = 'Get in touch with CorpEasy for managed office space, facility management, or commercial property enquiries in Mumbai. We respond within 24 hours.';
-$page_keywords = 'contact CorpEasy, office space consultation Mumbai, managed office enquiry, facility management quote Mumbai';
+$page_title = 'Contact CorpEasy | Free Office Space Consultation Mumbai';
+$page_description = 'Contact CorpEasy for managed office space, facility management, or commercial property enquiries in Mumbai. We respond within 24 hours, Mon-Sat 9AM-7PM.';
+$page_keywords = 'contact CorpEasy, office space consultation Mumbai, managed office enquiry Mumbai, facility management quote Mumbai, free office consultation Mumbai, office space advice Mumbai';
 $page_canonical = 'https://www.corpeasy.in/contact';
+$page_og_image = 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&h=630';
+$page_schema = '{
+  "@type": "ContactPage",
+  "name": "Contact CorpEasy",
+  "url": "https://www.corpeasy.in/contact",
+  "description": "Contact CorpEasy for managed office space, facility management, or commercial property enquiries in Mumbai."
+}';
 
 include 'templates/header.php';
 ?>

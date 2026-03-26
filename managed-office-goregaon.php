@@ -1,10 +1,10 @@
 <?php
 $page_id = 'managed-goregaon';
-$page_title = 'Managed Office Space in Goregaon | Mumbai | CorpEasy';
-$page_description = 'Affordable managed office space in Goregaon Mumbai from Rs 10,000/seat/month. NESCO IT Park area. Full setup included. Get a free quote today.';
-$page_keywords = 'managed office space Goregaon, office space Goregaon Mumbai, serviced office Goregaon, NESCO IT Park office';
+$page_title = 'Managed Office Space in Goregaon Mumbai | From ₹10,000/Seat | CorpEasy';
+$page_description = 'Most affordable managed office space in Goregaon Mumbai from ₹10,000/seat/month. NESCO IT Park, Western Express Highway. Grade A offices at best-value pricing. Full setup included.';
+$page_keywords = 'managed office space Goregaon, office space Goregaon Mumbai, serviced office Goregaon, NESCO IT Park office space, cheap managed office Mumbai, affordable office space Goregaon, managed office Goregaon East, office space Western Express Highway Mumbai';
 $page_canonical = 'https://www.corpeasy.in/managed-office-goregaon';
-$page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200';
+$page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&h=630';
 $page_schema = '{
   "@type": "Service",
   "name": "Managed Office Space in Goregaon",
