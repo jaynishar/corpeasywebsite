@@ -4,6 +4,8 @@ $page_title = 'Office Space for Rent in Mumbai | BKC, Lower Parel, Andheri | Fre
 $page_description = 'Find commercial office space for rent in Mumbai — BKC, Lower Parel, Goregaon, Andheri, Powai. Verified listings, landlord negotiation & lease review. Free tenant representation service.';
 $page_keywords = 'office space for rent in Mumbai, commercial office space Mumbai, office space BKC rent, office space Lower Parel rent, commercial property for lease Mumbai, office on rent Mumbai, office space Mumbai 2026, commercial office rent BKC, office space Andheri rent, find office space Mumbai, tenant representation Mumbai, commercial property search Mumbai';
 $page_canonical = 'https://www.corpeasy.in/office-space-for-rent-mumbai';
+$page_og_image = 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200&fm=webp';
+$page_lcp_image = 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200&fm=webp';
 $page_schema = '{
   "@type": "Service",
   "name": "Office Space for Rent Mumbai",
@@ -26,44 +28,64 @@ $page_schema = '{
 include 'templates/header.php';
 ?>
 
-<section class="py-12 lg:py-24 px-4 sm:px-6 relative reveal">
-<div class="glow-blob w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] bg-brand-cyan opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-<div class="max-w-2xl mx-auto mb-12 relative z-10">
-<div class="glass-card p-6 sm:p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-<h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Tell Us What You Are Looking For</h3>
-<p class="text-sm text-slate-600 mb-4 sm:mb-6">Share your location preference, team size, and budget. We will come back with suitable options within 24 to 48 hours.</p>
-<form onsubmit="handleLead(event)" class="space-y-4">
-<input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
-<input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
-<input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
+<section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-16 items-start min-h-[calc(100vh-96px)]">
+<div class="order-2 lg:order-1 flex flex-col justify-center reveal">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 backdrop-blur-md w-max">
+<span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+<span class="text-[9px] font-black uppercase tracking-[0.4em] text-brand-cyan">Find Office Space</span>
 </div>
-<input type="text" name="requirement" placeholder="Your requirement (e.g. BKC, 30 seats)" class="input-premium">
+<h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 tracking-tighter mb-6 leading-none">Office Space for Rent<br><span class="text-gradient-vibrant">in Mumbai.</span></h1>
+<p class="text-base lg:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg">Looking for <strong>commercial office space for rent in Mumbai</strong>? Tell us your team size, preferred location, and budget. We shortlist verified, available spaces within 48 hours — and negotiate the lease on your behalf.</p>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
+<p class="text-sm font-semibold text-slate-700">Free for tenants — we are compensated by the landlord</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
+<p class="text-sm font-semibold text-slate-700">Curated shortlist of 3–5 verified properties within 48 hours</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
+<p class="text-sm font-semibold text-slate-700">We handle site visits and all landlord negotiations</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
+<p class="text-sm font-semibold text-slate-700">Lease reviewed before you sign — no surprises</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal delay-100">
+<div class="glass-card p-5">
+<div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-3 text-brand-cyan"><i class="fas fa-map-marked-alt text-sm"></i></div>
+<h4 class="text-base font-bold text-slate-900 mb-1">We Know What's Available</h4>
+<p class="text-xs text-slate-500 leading-relaxed">BKC, Lower Parel, Goregaon, Andheri, Powai — we track the market daily</p>
+</div>
+<div class="glass-card p-5">
+<div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-3 text-brand-electric"><i class="fas fa-handshake text-sm"></i></div>
+<h4 class="text-base font-bold text-slate-900 mb-1">Landlord Negotiations</h4>
+<p class="text-xs text-slate-500 leading-relaxed">We negotiate rent, deposit, and lease terms directly with the building</p>
+</div>
+<div class="glass-card p-5">
+<div class="w-10 h-10 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-3 text-brand-violet"><i class="fas fa-file-contract text-sm"></i></div>
+<h4 class="text-base font-bold text-slate-900 mb-1">Lease Review</h4>
+<p class="text-xs text-slate-500 leading-relaxed">We flag unfavorable clauses before you commit to anything</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
+<div class="glass-card p-6 lg:p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+<h3 class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Tell Us What You Are Looking For</h3>
+<p class="text-xs text-slate-500 mb-6 leading-relaxed">Share your requirement and we will come back with verified options within 24–48 hours.</p>
+<form onsubmit="handleLead(event)" class="space-y-4 relative">
+<input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>
+<input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
+<input type="email" name="email" placeholder="Work Email Address" class="input-premium" required>
+<input type="tel" name="phone" placeholder="+91 Phone Number" class="input-premium" required>
+<input type="text" name="requirement" placeholder="Requirement (e.g. BKC, 30 seats, ₹2L budget)" class="input-premium">
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-<button type="submit" class="w-full bg-brand-cyan text-white py-3 sm:py-4 rounded-xl font-bold uppercase tracking-wider text-xs sm:text-sm hover:scale-[1.02] shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all">Share My Requirement</button>
+<button type="submit" class="w-full bg-brand-cyan text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(6,182,212,0.35)] hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] transition-all">Find My Office Space</button>
+<p class="text-xs text-slate-400 text-center flex items-center justify-center gap-1.5 mt-2"><i class="fas fa-lock text-brand-cyan text-[10px]"></i> Free for tenants. Response within 48 hours.</p>
 </form>
-</div>
-</div>
-<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 p-6 sm:p-10 lg:p-12 bg-white/40 backdrop-blur-md rounded-2xl sm:rounded-[2rem] lg:rounded-[3rem] border border-white/60 mb-12">
-<h1 class="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-black text-slate-900 mb-6 sm:mb-8">Find <span class="text-gradient">Office Space</span> in Mumbai.</h1>
-<p class="text-base sm:text-lg lg:text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">Looking for <strong>commercial office space for rent in Mumbai</strong>? Tell us your team size, location preference, and budget.</p>
-</div>
-<div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 relative z-10">
-<div class="glass-card p-6 sm:p-8 reveal">
-<div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-6 text-brand-cyan"><i class="fas fa-map-marked-alt text-xl"></i></div>
-<h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">We Know What Is Available</h4>
-<p class="text-slate-600 leading-relaxed text-sm">We actively track commercial properties across BKC, Lower Parel, Goregaon, Andheri, and Powai.</p>
-</div>
-<div class="glass-card p-6 sm:p-8 reveal delay-100">
-<div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-6 text-brand-electric"><i class="fas fa-handshake text-xl"></i></div>
-<h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">We Handle the Landlord Conversations</h4>
-<p class="text-slate-600 leading-relaxed text-sm">Once we identify a space that fits, we approach the landlord and manage the negotiation.</p>
-</div>
-<div class="glass-card p-6 sm:p-8 reveal delay-200">
-<div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-6 text-brand-violet"><i class="fas fa-file-contract text-xl"></i></div>
-<h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">Clear Terms Before You Commit</h4>
-<p class="text-slate-600 leading-relaxed text-sm">Before you agree to anything, we lay out the cost clearly. No surprises after you have signed.</p>
 </div>
 </div>
 </section>

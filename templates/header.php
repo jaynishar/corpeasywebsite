@@ -65,6 +65,10 @@ $page_lcp_image = $page_lcp_image ?? '';
         /* Prevent image overflow */
         img,video,iframe,canvas,svg{max-width:100%}
         section{max-width:100vw;overflow-x:hidden}
+        /* Logo fixed size — prevents FOUC/enlarge before tailwind.min.css loads */
+        .logo-img{height:2.5rem!important;width:auto!important}
+        @media(min-width:640px){.logo-img{height:3.5rem!important;width:auto!important}}
+        @media(min-width:1024px){.logo-img{height:5rem!important;width:auto!important}}
     </style>
 
     <!-- SEO -->
