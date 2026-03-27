@@ -234,23 +234,24 @@ if (fabContainer && fabMain) {
 
 /* ===== Smooth Page Transitions ===== */
 function initPageTransitions() {
+    // Full-page overlay — covers navbar, dropdown, FAB, everything (z:9999)
+    const overlay = document.createElement('div');
+    overlay.id = 'page-overlay';
+    overlay.style.cssText = 'position:fixed;inset:0;background:#f8fafc;opacity:0;pointer-events:none;z-index:9999;transition:opacity 0.18s ease';
+    document.body.appendChild(overlay);
+
     document.addEventListener('click', (e) => {
         const link = e.target.closest('a[href]');
         if (!link) return;
         const href = link.getAttribute('href');
-        // Skip: anchors, external links, mailto/tel, new tabs, ctrl/cmd clicks
         if (!href || href.startsWith('#') || href.startsWith('mailto:') ||
             href.startsWith('tel:') || href.startsWith('http') ||
             link.target === '_blank' || e.ctrlKey || e.metaKey || e.shiftKey) return;
 
         e.preventDefault();
-        const main = document.querySelector('main');
-        if (main) {
-            main.style.transition = 'opacity 0.18s ease, transform 0.18s ease';
-            main.style.opacity = '0';
-            main.style.transform = 'translateY(-8px)';
-        }
-        setTimeout(() => { window.location.href = link.href; }, 170);
+        overlay.style.opacity = '1';
+        overlay.style.pointerEvents = 'all';
+        setTimeout(() => { window.location.href = link.href; }, 185);
     });
 }
 
