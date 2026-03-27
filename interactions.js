@@ -274,20 +274,12 @@ function initSolutionsDropdown() {
         if (chevron) chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
     });
 
-    // Close on outside click
-    document.addEventListener('click', (e) => {
-        if (!nav.contains(e.target)) {
-            nav.classList.remove('is-open');
-            if (chevron) chevron.style.transform = '';
-        }
-    });
-
-    // Close when a menu link is clicked
-    nav.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => {
-            nav.classList.remove('is-open');
-            if (chevron) chevron.style.transform = '';
-        });
+    // Close on any click that isn't the toggle button itself.
+    // stopPropagation on btn ensures this never fires for button clicks,
+    // so it safely handles both outside-clicks AND link clicks inside the panel.
+    document.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        if (chevron) chevron.style.transform = '';
     });
 }
 
