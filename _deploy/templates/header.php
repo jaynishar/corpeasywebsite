@@ -200,9 +200,9 @@ $page_id = $page_id ?? 'home';
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://images.unsplash.com">
 
-    <!-- Compiled Tailwind CSS (replaces CDN — no JS render-blocking) -->
-    <link rel="stylesheet" href="tailwind.min.css?v=20260327">
+    <!-- CSS load order: style.css first (custom), then tailwind utilities override where needed — mirrors original CDN behaviour -->
     <link rel="stylesheet" href="style.css?v=20260327">
+    <link rel="stylesheet" href="tailwind.min.css?v=20260327">
 
     <!-- Font (non-blocking) -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
