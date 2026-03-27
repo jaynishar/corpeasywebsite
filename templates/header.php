@@ -73,6 +73,9 @@ $page_lcp_image = $page_lcp_image ?? '';
         .logo-img{height:2.5rem!important;width:auto!important}
         @media(min-width:640px){.logo-img{height:3.5rem!important;width:auto!important}}
         @media(min-width:1024px){.logo-img{height:5rem!important;width:auto!important}}
+        /* Hide JS-controlled elements before Tailwind loads — prevents flash */
+        #solutions-panel{opacity:0;visibility:hidden}
+        #fab-container{opacity:0;pointer-events:none}
     </style>
 
     <!-- SEO -->
