@@ -1,6 +1,4 @@
 node_modules/
-_deploy/node_modules/
-.claude/
 *.log
 .DS_Store
 Thumbs.db
