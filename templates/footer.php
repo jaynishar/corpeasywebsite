@@ -8,7 +8,10 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
                 <div class="lg:col-span-5">
                     <div class="mb-8">
-                        <img src="/CORPEASYFOOTER.png" alt="CorpEasy Footer Logo" class="logo-img h-32 lg:h-44 w-auto object-contain object-left" width="220" height="160" loading="lazy">
+                        <picture>
+                            <source srcset="/CORPEASYFOOTER.webp" type="image/webp">
+                            <img src="/CORPEASYFOOTER.png" alt="CorpEasy Footer Logo" class="logo-img h-32 lg:h-44 w-auto object-contain object-left" width="220" height="160" loading="lazy">
+                        </picture>
                     </div>
                     <p class="text-slate-600 text-lg font-medium leading-relaxed max-w-sm mb-10">Strategic workspace solutions for startups, SMEs, and global enterprises across Mumbai. Managed offices, coworking spaces, and custom enterprise HQs — all under one roof.</p>
                     <div class="flex space-x-4">
@@ -56,7 +59,7 @@
                 <p>&copy; 2026 CorpEasy Enterprise Solutions. All Rights Reserved.</p>
                 <div class="flex space-x-10 mt-6 md:mt-0">
                     <a href="/privacy-policy" class="hover:text-slate-900 transition-colors cursor-pointer">Privacy Policy</a>
-                    <a href="/contact" class="hover:text-slate-900 transition-colors cursor-pointer">Terms of Service</a>
+                    <a href="/sitemap.xml" class="hover:text-slate-900 transition-colors cursor-pointer">Sitemap</a>
                 </div>
             </div>
         </div>

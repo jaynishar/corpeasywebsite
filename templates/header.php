@@ -253,8 +253,8 @@ $page_lcp_image = $page_lcp_image ?? '';
     <?php endif; ?>
 
     <!-- Full CSS loaded non-blocking (critical CSS inlined above handles FCP) -->
-    <link rel="stylesheet" href="/style.css?v=20260328" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="/style.css?v=20260328"></noscript>
+    <link rel="stylesheet" href="/style.css?v=20260327b" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/style.css?v=20260327b"></noscript>
     <link rel="stylesheet" href="/tailwind.min.css?v=20260327" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="/tailwind.min.css?v=20260327"></noscript>
 
@@ -281,7 +281,10 @@ $page_lcp_image = $page_lcp_image ?? '';
             <!-- Brand -->
             <div class="flex items-center cursor-pointer group">
                 <a href="/">
-                    <img src="/CORPEASYHEADER.png" alt="CorpEasy Header Logo" class="logo-img logo-img-light h-10 sm:h-14 lg:h-20 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300" width="140" height="80" fetchpriority="high">
+                    <picture>
+                        <source srcset="/CORPEASYHEADER.webp" type="image/webp">
+                        <img src="/CORPEASYHEADER.png" alt="CorpEasy Header Logo" class="logo-img logo-img-light h-10 sm:h-14 lg:h-20 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300" width="140" height="80" fetchpriority="high">
+                    </picture>
                 </a>
             </div>
             <!-- Navigation Links (Desktop) -->
@@ -333,7 +336,10 @@ $page_lcp_image = $page_lcp_image ?? '';
     <!-- MOBILE MENU -->
     <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-xl z-[90] hidden flex-col overflow-y-auto" style="padding-top: env(safe-area-inset-top, 0);">
         <div class="flex justify-between items-center px-6 py-4">
-            <img src="/CORPEASYHEADER.png" alt="CorpEasy" class="h-10 w-auto" width="140" height="40">
+            <picture>
+                <source srcset="/CORPEASYHEADER.webp" type="image/webp">
+                <img src="/CORPEASYHEADER.png" alt="CorpEasy" class="h-10 w-auto" width="140" height="40">
+            </picture>
             <button onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.getElementById('mobile-menu').classList.remove('flex');" class="w-10 h-10 flex items-center justify-center text-slate-500 hover:text-slate-800 transition-colors">
                 <i class="fas fa-times text-xl"></i>
             </button>

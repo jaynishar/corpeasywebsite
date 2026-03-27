@@ -5,12 +5,21 @@ $page_description = 'Contact CorpEasy for managed office space, facility managem
 $page_keywords = 'contact CorpEasy, office space consultation Mumbai, managed office enquiry Mumbai, facility management quote Mumbai, free office consultation Mumbai, office space advice Mumbai';
 $page_canonical = 'https://www.corpeasy.in/contact';
 $page_og_image = 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
-$page_schema = '{
-  "@type": "ContactPage",
-  "name": "Contact CorpEasy",
-  "url": "https://www.corpeasy.in/contact",
-  "description": "Contact CorpEasy for managed office space, facility management, or commercial property enquiries in Mumbai."
-}';
+$page_schema = json_encode([
+  "@type" => "ContactPage",
+  "name" => "Contact CorpEasy",
+  "url" => "https://www.corpeasy.in/contact",
+  "description" => "Contact CorpEasy for managed office space, facility management, or commercial property enquiries in Mumbai.",
+  "mainEntityOfPage" => ["@id" => "https://www.corpeasy.in/#organization"],
+  "potentialAction" => [
+    "@type" => "CommunicateAction",
+    "target" => [
+      "@type" => "EntryPoint",
+      "urlTemplate" => "https://www.corpeasy.in/contact",
+      "actionPlatform" => "https://schema.org/DesktopWebPlatform"
+    ]
+  ]
+], JSON_UNESCAPED_SLASHES);
 
 include 'templates/header.php';
 ?>
@@ -49,14 +58,19 @@ include 'templates/header.php';
 <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">Send Us a Message</h3>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-<input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>
-<input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
+<label class="sr-only" for="full_name">Your Full Name</label>
+<input id="full_name" type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required autocomplete="name">
+<label class="sr-only" for="company_name">Company Name</label>
+<input id="company_name" type="text" name="company_name" placeholder="Company Name" class="input-premium" required autocomplete="organization">
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-<input type="email" name="email" placeholder="Email Address" class="input-premium" required>
-<input type="tel" name="phone" placeholder="Phone Number" class="input-premium" required>
+<label class="sr-only" for="email">Email Address</label>
+<input id="email" type="email" name="email" placeholder="Email Address" class="input-premium" required autocomplete="email">
+<label class="sr-only" for="phone">Phone Number</label>
+<input id="phone" type="tel" name="phone" placeholder="Phone Number" class="input-premium" required autocomplete="tel">
 </div>
-<select name="requirement" class="input-premium" required>
+<label class="sr-only" for="requirement">What can we help you with?</label>
+<select id="requirement" name="requirement" class="input-premium" required>
 <option value="">What can we help you with?</option>
 <option>I need a managed office space in Mumbai</option>
 <option>I need help finding a commercial office for rent</option>

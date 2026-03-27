@@ -3,6 +3,7 @@ $page_id = 'blog';
 $page_title = 'Commercial Real Estate Insights Mumbai | CorpEasy Blog';
 $page_description = 'Practical articles on office space in Mumbai, commercial real estate, and workspace decisions. Written for business owners and operations teams.';
 $page_canonical = 'https://www.corpeasy.in/blog';
+$page_og_image = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
 
 include 'templates/header.php';
 

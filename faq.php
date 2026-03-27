@@ -4,8 +4,24 @@ $page_title = 'FAQ | Managed Office Space Mumbai | CorpEasy';
 $page_description = 'Common questions about managed office space in Mumbai — pricing by location, how the process works, facility management costs and areas covered.';
 $page_keywords = 'managed office space FAQ Mumbai, office space Mumbai cost, managed office pricing Mumbai, facility management Mumbai FAQ, office space questions Mumbai, how to get office space Mumbai, managed office vs coworking';
 $page_canonical = 'https://www.corpeasy.in/faq';
-$page_og_image = 'https://www.corpeasy.in/CORPEASYHEADER.png';
-$page_schema = '';
+$page_og_image = 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
+$page_schema = json_encode([
+  "@type" => "FAQPage",
+  "name" => "Managed Office Space Mumbai — FAQ",
+  "url" => "https://www.corpeasy.in/faq",
+  "mainEntity" => [
+    ["@type"=>"Question","name"=>"Do you have ready offices available right now?","acceptedAnswer"=>["@type"=>"Answer","text"=>"No, and that is intentional. We work on a requirement first basis. When you tell us what you need, we go and find the right commercial space for you in Mumbai."]],
+    ["@type"=>"Question","name"=>"What does managed office mean at CorpEasy?","acceptedAnswer"=>["@type"=>"Answer","text"=>"It means we handle the end to end process of getting you into a working office space. We identify a suitable commercial property in Mumbai, negotiate the lease with the landlord, arrange the basic workspace setup, and give you a clear per seat monthly cost on a fixed lease."]],
+    ["@type"=>"Question","name"=>"How much does managed office space in Mumbai cost?","acceptedAnswer"=>["@type"=>"Answer","text"=>"It depends on location and team size. BKC ranges from ₹450 to ₹750 per sq ft per month; Lower Parel ₹250 to ₹450; Goregaon ₹150 to ₹300; Andheri East ₹150 to ₹400; Powai ₹115 to ₹310."]],
+    ["@type"=>"Question","name"=>"How long does the whole process take?","acceptedAnswer"=>["@type"=>"Answer","text"=>"Typically a few weeks from when we identify a suitable space to the day your team can move in, significantly faster than finding and setting up a space entirely on your own."]],
+    ["@type"=>"Question","name"=>"Which areas in Mumbai do you cover?","acceptedAnswer"=>["@type"=>"Answer","text"=>"We actively source commercial office space across BKC, Lower Parel, Worli, Goregaon East, Andheri East, and Powai."]],
+    ["@type"=>"Question","name"=>"What is the minimum team size you work with?","acceptedAnswer"=>["@type"=>"Answer","text"=>"There is no strict minimum. The managed office model tends to make the most practical sense for teams of around ten or more."]],
+    ["@type"=>"Question","name"=>"Do you offer facility management for existing offices?","acceptedAnswer"=>["@type"=>"Answer","text"=>"Yes. CorpEasy Facility Management is designed for companies that already have their own office space but want to outsource day-to-day operations including housekeeping, security, vendor management, AMC contracts, and compliance."]],
+    ["@type"=>"Question","name"=>"I own a commercial property. Can CorpEasy find me a tenant?","acceptedAnswer"=>["@type"=>"Answer","text"=>"Yes. We work with property owners across Mumbai who are looking for reliable business tenants. If you have a commercial space available, get in touch with us."]],
+    ["@type"=>"Question","name"=>"Are you a broker, a portal, or something else?","acceptedAnswer"=>["@type"=>"Answer","text"=>"Neither. We are a workspace solutions company. We find the right commercial property, take the lease, handle the setup, and offer the space to you on a managed basis. We stay involved through the entire process."]],
+    ["@type"=>"Question","name"=>"How is the per seat cost calculated?","acceptedAnswer"=>["@type"=>"Answer","text"=>"We calculate your per seat monthly cost based on the actual commercial property we identify for you — the rent, basic setup costs, and our service fee, divided across your team size. There are no hidden charges."]]
+  ]
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 include 'templates/header.php';
 ?>
@@ -15,7 +31,7 @@ include 'templates/header.php';
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Common Questions</span>
 </div>
-<h1 class="text-5xl font-black text-slate-900 mb-4">Managed Office Space Mumbai — Frequently Asked Questions</h1>
+<h1 class="text-5xl font-black text-slate-900 mb-4">Managed Office Space Mumbai — FAQ</h1>
 <p class="text-xl text-slate-500">Straight answers about how CorpEasy works and what we actually do.</p>
 </div>
 <div class="max-w-3xl mx-auto">

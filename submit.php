@@ -65,10 +65,9 @@ define('ALLOWED_ORIGIN', 'https://www.corpeasy.in');        // CHANGE THIS
 
 // ── SECURITY HEADERS ────────────────────────────
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: https://www.corpeasy.in');
+header('Access-Control-Allow-Origin: ' . ALLOWED_ORIGIN);
 header('Access-Control-Allow-Methods: POST');
 header('Access-Control-Allow-Headers: Content-Type');
-header('Access-Control-Allow-Origin: https://corpeasy.in');
 header('X-Content-Type-Options: nosniff');
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {

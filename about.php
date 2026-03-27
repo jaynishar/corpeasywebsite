@@ -5,29 +5,31 @@ $page_description = 'CorpEasy is a Mumbai-based workspace solutions company by D
 $page_keywords = 'about CorpEasy, CorpEasy Mumbai, workspace solutions company Mumbai, managed office company Mumbai, office space solutions Mumbai, Dev Doshi CorpEasy, Jay Nishar CorpEasy, commercial real estate Mumbai startup';
 $page_canonical = 'https://www.corpeasy.in/about';
 $page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
-$page_schema = '{
-  "@type": "AboutPage",
-  "name": "About CorpEasy",
-  "url": "https://www.corpeasy.in/about",
-  "description": "CorpEasy is a Mumbai-based workspace solutions company founded in October 2025.",
-  "about": {"@id": "https://www.corpeasy.in/#organization"}
-},
-{
-  "@type": "Person",
-  "@id": "https://www.corpeasy.in/#dev-doshi",
-  "name": "Dev Doshi",
-  "jobTitle": "Co-Founder, Business Development & Strategy",
-  "worksFor": {"@id": "https://www.corpeasy.in/#organization"},
-  "url": "https://www.corpeasy.in/about"
-},
-{
-  "@type": "Person",
-  "@id": "https://www.corpeasy.in/#jay-nishar",
-  "name": "Jay Nishar",
-  "jobTitle": "Co-Founder, Operations & Growth",
-  "worksFor": {"@id": "https://www.corpeasy.in/#organization"},
-  "url": "https://www.corpeasy.in/about"
-}';
+$page_schema = implode(',', array_map(fn($s) => json_encode($s, JSON_UNESCAPED_SLASHES), [
+  [
+    "@type" => "AboutPage",
+    "name" => "About CorpEasy",
+    "url" => "https://www.corpeasy.in/about",
+    "description" => "CorpEasy is a Mumbai-based workspace solutions company founded in October 2025.",
+    "about" => ["@id" => "https://www.corpeasy.in/#organization"]
+  ],
+  [
+    "@type" => "Person",
+    "@id" => "https://www.corpeasy.in/#dev-doshi",
+    "name" => "Dev Doshi",
+    "jobTitle" => "Co-Founder, Business Development & Strategy",
+    "worksFor" => ["@id" => "https://www.corpeasy.in/#organization"],
+    "url" => "https://www.corpeasy.in/about"
+  ],
+  [
+    "@type" => "Person",
+    "@id" => "https://www.corpeasy.in/#jay-nishar",
+    "name" => "Jay Nishar",
+    "jobTitle" => "Co-Founder, Operations & Growth",
+    "worksFor" => ["@id" => "https://www.corpeasy.in/#organization"],
+    "url" => "https://www.corpeasy.in/about"
+  ]
+]));
 
 include 'templates/header.php';
 ?>
@@ -46,7 +48,10 @@ include 'templates/header.php';
 <div class="glass-card p-4 sm:p-6 lg:p-10 group hover:border-brand-rose/50"><p class="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-black text-slate-900 mb-2 sm:mb-4 lg:mb-6 tracking-tighter group-hover:text-brand-rose transition-colors">2025</p><p class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold text-slate-600 uppercase tracking-wider lg:tracking-widest">Founded</p></div>
 </div>
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] lg:h-[500px] mt-24 reveal group">
-<img src="professional_team.png" alt="CorpEasy team Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="500">
+<picture>
+    <source srcset="/professional_team.webp" type="image/webp">
+    <img src="/professional_team.png" alt="Dev Doshi and Jay Nishar, co-founders of CorpEasy, in a modern Mumbai office" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="500">
+</picture>
 <div class="absolute inset-0 bg-brand-electric/10 mix-blend-multiply"></div>
 </div>
 <div class="mt-32 text-center">

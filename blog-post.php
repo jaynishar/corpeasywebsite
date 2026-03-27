@@ -130,6 +130,7 @@ include 'templates/header.php';
     <a href="/blog" class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-brand-electric transition-colors mb-12">
         <i class="fas fa-arrow-left"></i> Back to Insights
     </a>
+    <article itemscope itemtype="https://schema.org/Article">
     <div class="mb-12">
         <span class="px-4 py-1.5 bg-brand-electric/10 border border-brand-electric/30 text-brand-electric text-xs font-medium rounded-full mb-6 inline-block"><?php echo htmlspecialchars($post['category']); ?></span>
         <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 mb-8 leading-tight"><?php echo htmlspecialchars($post['title']); ?></h1>
@@ -147,13 +148,14 @@ include 'templates/header.php';
         <div>
             <h4 class="text-xl font-bold text-slate-900 mb-4">Share this article</h4>
             <div class="flex gap-4">
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode('https://www.corpeasy.in/blog/' . $slug); ?>" target="_blank" rel="noopener" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in text-lg"></i></a>
-                <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode('https://www.corpeasy.in/blog/' . $slug); ?>&text=<?php echo urlencode($post['title']); ?>" target="_blank" rel="noopener" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-twitter text-lg"></i></a>
-                <a href="#" onclick="navigator.clipboard.writeText(window.location.href);return false;" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fas fa-link text-lg"></i></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode('https://www.corpeasy.in/blog/' . $slug); ?>" target="_blank" rel="noopener" aria-label="Share on LinkedIn" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in text-lg"></i></a>
+                <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode('https://www.corpeasy.in/blog/' . $slug); ?>&text=<?php echo urlencode($post['title']); ?>" target="_blank" rel="noopener" aria-label="Share on Twitter" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-twitter text-lg"></i></a>
+                <a href="#" onclick="navigator.clipboard.writeText(window.location.href);showToast('Link copied!','success');return false;" aria-label="Copy link" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fas fa-link text-lg"></i></a>
             </div>
         </div>
         <a href="/contact" class="bg-brand-electric text-white px-10 py-5 rounded-lg font-medium text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:scale-105 transition-all inline-block">Talk to Us About Your Requirement</a>
     </div>
+    </article>
 </section>
 
 <?php include 'templates/footer.php'; ?>
