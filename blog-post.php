@@ -104,7 +104,7 @@ if (!$post) {
 // Dynamic SEO
 $page_id = 'blog-post';
 $page_title = htmlspecialchars($post['title']) . ' | CorpEasy Blog';
-$page_description = substr(strip_tags($post['content']), 0, 160);
+$page_description = substr(strip_tags($post['content']), 0, 155);
 $page_canonical = 'https://www.corpeasy.in/blog/' . htmlspecialchars($slug);
 
 // Article schema

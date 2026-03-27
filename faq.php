@@ -1,7 +1,7 @@
 <?php
 $page_id = 'faq';
-$page_title = 'FAQ | Managed Office Space Mumbai - Pricing, Process & Facility Management';
-$page_description = 'Answers to common questions about managed office space in Mumbai — pricing by location, how the process works, facility management costs, and areas covered.';
+$page_title = 'FAQ | Managed Office Space Mumbai | CorpEasy';
+$page_description = 'Common questions about managed office space in Mumbai — pricing by location, how the process works, facility management costs and areas covered.';
 $page_keywords = 'managed office space FAQ Mumbai, office space Mumbai cost, managed office pricing Mumbai, facility management Mumbai FAQ, office space questions Mumbai, how to get office space Mumbai, managed office vs coworking';
 $page_canonical = 'https://www.corpeasy.in/faq';
 $page_og_image = 'https://www.corpeasy.in/CORPEASYHEADER.png';

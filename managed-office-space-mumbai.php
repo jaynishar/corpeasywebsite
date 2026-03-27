@@ -1,7 +1,7 @@
 <?php
 $page_id = 'managed';
-$page_title = 'Managed Office Space in Mumbai | From ₹10,000/Seat | BKC, Lower Parel, Goregaon';
-$page_description = 'Get a fully managed office space in Mumbai from ₹10,000/seat/month. CorpEasy handles property search, setup & ongoing operations. BKC, Lower Parel, Goregaon, Andheri. Move in 2-4 weeks.';
+$page_title = 'Managed Office Space Mumbai | CorpEasy';
+$page_description = 'Managed office space in Mumbai from ₹10,000/seat/month. CorpEasy handles property search, setup & operations. BKC, Lower Parel, Goregaon, Andheri.';
 $page_keywords = 'managed office space Mumbai, managed workspace Mumbai, turnkey office Mumbai, office space per seat Mumbai, managed office BKC, managed office Lower Parel, managed office Goregaon, managed office Andheri, managed office space Mumbai 2026, fully managed office Mumbai, office space setup Mumbai, commercial office space Mumbai, private office space Mumbai';
 $page_canonical = 'https://www.corpeasy.in/managed-office-space-mumbai';
 $page_og_image = 'https://www.corpeasy.in/CORPEASYHEADER.png';

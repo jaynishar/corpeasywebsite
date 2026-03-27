@@ -253,10 +253,10 @@ $page_lcp_image = $page_lcp_image ?? '';
     <?php endif; ?>
 
     <!-- Full CSS loaded non-blocking (critical CSS inlined above handles FCP) -->
-    <link rel="stylesheet" href="style.css?v=20260328" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="style.css?v=20260328"></noscript>
-    <link rel="stylesheet" href="tailwind.min.css?v=20260327" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="tailwind.min.css?v=20260327"></noscript>
+    <link rel="stylesheet" href="/style.css?v=20260328" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/style.css?v=20260328"></noscript>
+    <link rel="stylesheet" href="/tailwind.min.css?v=20260327" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/tailwind.min.css?v=20260327"></noscript>
 
     <!-- Font (non-blocking) -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -281,7 +281,7 @@ $page_lcp_image = $page_lcp_image ?? '';
             <!-- Brand -->
             <div class="flex items-center cursor-pointer group">
                 <a href="/">
-                    <img src="CORPEASYHEADER.png" alt="CorpEasy Header Logo" class="logo-img logo-img-light h-10 sm:h-14 lg:h-20 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300" width="140" height="80" fetchpriority="high">
+                    <img src="/CORPEASYHEADER.png" alt="CorpEasy Header Logo" class="logo-img logo-img-light h-10 sm:h-14 lg:h-20 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300" width="140" height="80" fetchpriority="high">
                 </a>
             </div>
             <!-- Navigation Links (Desktop) -->
@@ -333,29 +333,29 @@ $page_lcp_image = $page_lcp_image ?? '';
     <!-- MOBILE MENU -->
     <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-xl z-[90] hidden flex-col overflow-y-auto" style="padding-top: env(safe-area-inset-top, 0);">
         <div class="flex justify-between items-center px-6 py-4">
-            <img src="CORPEASYHEADER.png" alt="CorpEasy" class="h-10 w-auto" width="140" height="40" loading="lazy">
+            <img src="/CORPEASYHEADER.png" alt="CorpEasy" class="h-10 w-auto" width="140" height="40">
             <button onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.getElementById('mobile-menu').classList.remove('flex');" class="w-10 h-10 flex items-center justify-center text-slate-500 hover:text-slate-800 transition-colors">
                 <i class="fas fa-times text-xl"></i>
             </button>
         </div>
         <nav class="px-6 pb-8">
             <ul class="space-y-1">
-                <li><a href="/" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Home</a></li>
-                <li><a href="/managed-office-space-mumbai" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Managed Offices</a></li>
-                <li><a href="/blog" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Insights</a></li>
-                <li><a href="/office-space-for-rent-mumbai" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Find a Property</a></li>
-                <li><a href="/list-commercial-property-mumbai" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Lease Your Property</a></li>
-                <li><a href="/facility-management-mumbai" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-rose cursor-pointer border-b border-slate-100/50">Facility Management</a></li>
-                <li><a href="/about" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">About Us</a></li>
-                <li><a href="/faq" class="block py-4 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">FAQ</a></li>
-                <li><a href="/contact" class="block py-4 text-base font-bold text-brand-electric cursor-pointer">Contact Us</a></li>
+                <li><a href="/" class="flex items-center min-h-[48px] py-2 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Home</a></li>
+                <li><a href="/managed-office-space-mumbai" class="flex items-center min-h-[48px] py-2 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Managed Offices</a></li>
+                <li><a href="/blog" class="flex items-center min-h-[48px] py-2 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Insights</a></li>
+                <li><a href="/office-space-for-rent-mumbai" class="flex items-center min-h-[48px] py-2 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Find a Property</a></li>
+                <li><a href="/list-commercial-property-mumbai" class="flex items-center min-h-[48px] py-2 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">Lease Your Property</a></li>
+                <li><a href="/facility-management-mumbai" class="flex items-center min-h-[48px] py-2 text-base font-semibold text-slate-800 hover:text-brand-rose cursor-pointer border-b border-slate-100/50">Facility Management</a></li>
+                <li><a href="/about" class="flex items-center min-h-[48px] py-2 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">About Us</a></li>
+                <li><a href="/faq" class="flex items-center min-h-[48px] py-2 text-base font-semibold text-slate-800 hover:text-brand-electric cursor-pointer border-b border-slate-100/50">FAQ</a></li>
+                <li><a href="/contact" class="flex items-center min-h-[48px] py-2 text-base font-bold text-brand-electric cursor-pointer">Contact Us</a></li>
             </ul>
             <div class="mt-8 pt-8 border-t border-slate-200">
-                <a href="tel:+919833089993" class="flex items-center gap-3 py-3 text-slate-700 font-medium">
+                <a href="tel:+919833089993" class="flex items-center gap-3 min-h-[48px] py-2 text-slate-700 font-medium">
                     <i class="fas fa-phone-alt text-brand-electric"></i>
                     Dev Doshi: +91 98330 89993
                 </a>
-                <a href="tel:+917021134176" class="flex items-center gap-3 py-3 text-slate-700 font-medium">
+                <a href="tel:+917021134176" class="flex items-center gap-3 min-h-[48px] py-2 text-slate-700 font-medium">
                     <i class="fas fa-phone-alt text-brand-cyan"></i>
                     Jay Nishar: +91 70211 34176
                 </a>

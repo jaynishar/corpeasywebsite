@@ -8,7 +8,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
                 <div class="lg:col-span-5">
                     <div class="mb-8">
-                        <img src="CORPEASYFOOTER.png" alt="CorpEasy Footer Logo" class="logo-img h-32 lg:h-44 w-auto object-contain object-left" width="220" height="160">
+                        <img src="/CORPEASYFOOTER.png" alt="CorpEasy Footer Logo" class="logo-img h-32 lg:h-44 w-auto object-contain object-left" width="220" height="160" loading="lazy">
                     </div>
                     <p class="text-slate-600 text-lg font-medium leading-relaxed max-w-sm mb-10">Strategic workspace solutions for startups, SMEs, and global enterprises across Mumbai. Managed offices, coworking spaces, and custom enterprise HQs — all under one roof.</p>
                     <div class="flex space-x-4">
@@ -107,6 +107,6 @@
     </div>
 
     <!-- Interactions JS (deferred — non-blocking) -->
-    <script src="interactions.js?v=20260328" defer></script>
+    <script src="/interactions.js?v=20260328" defer></script>
 </body>
 </html>

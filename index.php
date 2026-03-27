@@ -1,7 +1,7 @@
 <?php
 $page_id = 'home';
 $page_title = 'CorpEasy | Managed Office Space in Mumbai - BKC, Lower Parel, Goregaon';
-$page_description = 'CorpEasy finds, sets up & manages your office space in Mumbai. From ₹10,000/seat/month. One point of contact. BKC, Lower Parel, Goregaon & Andheri. Free consultation.';
+$page_description = 'CorpEasy finds, sets up & manages your office space in Mumbai from ₹10,000/seat/month. One contact. BKC, Lower Parel, Goregaon & Andheri.';
 $page_keywords = 'managed office space Mumbai, office space for rent Mumbai, commercial office space Mumbai, office space BKC, office space Lower Parel, office space Goregaon, managed workspace Mumbai, office space Andheri East, per seat office Mumbai, workspace solutions Mumbai, turnkey office Mumbai, office space Mumbai 2026, office on rent Mumbai, commercial property Mumbai';
 $page_canonical = 'https://www.corpeasy.in/';
 $page_lcp_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp';
@@ -100,7 +100,7 @@ Your details are safe with us. No spam, ever.
 <div class="w-14 h-14 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center mb-8 text-brand-rose shadow-[0_0_15px_rgba(244,63,94,0.15)]"><i class="fas fa-tools text-2xl"></i></div>
 <h4 class="text-xl font-bold mb-4 text-slate-900">Facility Management</h4>
 <p class="text-slate-600 leading-relaxed">Already have an office? We run it for you. Housekeeping, vendors, compliance — one team, one invoice.</p>
-<a href="/facility-management-mumbai" class="inline-flex items-center gap-2 mt-6 text-xs font-black uppercase tracking-widest text-brand-rose hover:gap-4 transition-all cursor-pointer">Learn More <i class="fas fa-arrow-right"></i></a>
+<a href="/facility-management-mumbai" class="inline-flex items-center gap-2 mt-6 text-xs font-black uppercase tracking-widest text-brand-rose hover:gap-4 transition-all cursor-pointer">Explore Facility Management <i class="fas fa-arrow-right"></i></a>
 </div>
 </div>
 </div>
