@@ -124,11 +124,20 @@ function initRevealObserver() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                observer.unobserve(entry.target); // fire once, then stop watching
+                observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        // Already in viewport on page load — activate immediately, no animation delay
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('active');
+        } else {
+            observer.observe(el);
+        }
+    });
 }
 
 /* ===== Count-Up Animation ===== */
@@ -223,6 +232,28 @@ if (fabContainer && fabMain) {
     });
 }
 
+/* ===== Smooth Page Transitions ===== */
+function initPageTransitions() {
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a[href]');
+        if (!link) return;
+        const href = link.getAttribute('href');
+        // Skip: anchors, external links, mailto/tel, new tabs, ctrl/cmd clicks
+        if (!href || href.startsWith('#') || href.startsWith('mailto:') ||
+            href.startsWith('tel:') || href.startsWith('http') ||
+            link.target === '_blank' || e.ctrlKey || e.metaKey || e.shiftKey) return;
+
+        e.preventDefault();
+        const main = document.querySelector('main');
+        if (main) {
+            main.style.transition = 'opacity 0.18s ease, transform 0.18s ease';
+            main.style.opacity = '0';
+            main.style.transform = 'translateY(-8px)';
+        }
+        setTimeout(() => { window.location.href = link.href; }, 170);
+    });
+}
+
 /* ===== Solutions Dropdown — click toggle (fixes touch/glitch) ===== */
 function initSolutionsDropdown() {
     const nav = document.getElementById('solutions-nav');
@@ -299,6 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTiltCards();
     initSolutionsDropdown();
     initMobileMenu();
+    initPageTransitions();
 
     // Cookie banner
     const cookieBanner = document.getElementById('cookie-banner');
