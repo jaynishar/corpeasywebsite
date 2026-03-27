@@ -37,7 +37,7 @@ try {
             'title' => $row['title'],
             'category' => $row['category'] ?? 'Insights',
             'readTime' => $row['read_time'] ?? '5 Min Read',
-            'image' => $row['image_url'] ?? 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
+            'image' => $row['image_url'] ?? 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp',
             'excerpt' => $row['excerpt'] ?? '',
             'content' => $row['content'] ?? '',
             'author' => $row['author'] ?? 'CorpEasy Team',
@@ -55,7 +55,7 @@ if (empty($posts)) {
             'title' => 'Beyond Four Walls: How Managed Workspaces Power Business Growth',
             'category' => 'Insights',
             'readTime' => '5 Min Read',
-            'image' => 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200',
+            'image' => 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp',
             'excerpt' => 'For growing businesses in Mumbai, the workspace has become a direct lever for talent attraction, operational efficiency, and client perception.',
             'content' => ''
         ],
@@ -63,7 +63,7 @@ if (empty($posts)) {
             'title' => 'How to Find the Right Office Space in Mumbai: A Practical Guide for 2026.',
             'category' => 'Market Guide',
             'readTime' => '6 Min Read',
-            'image' => 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
+            'image' => 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp',
             'excerpt' => 'Finding office space in Mumbai looks straightforward on paper but becomes complicated in practice. This guide walks through what the process actually looks like.',
             'content' => ''
         ],
@@ -71,7 +71,7 @@ if (empty($posts)) {
             'title' => 'BKC or Goregaon? Choosing the Right Mumbai Location for Your Office.',
             'category' => 'Market Trends',
             'readTime' => '5 Min Read',
-            'image' => 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200',
+            'image' => 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200&fm=webp',
             'excerpt' => 'One of the most common questions companies face when looking for office space in Mumbai: do we go to BKC for the address, or Goregaon for the value?',
             'content' => ''
         ],
@@ -79,7 +79,7 @@ if (empty($posts)) {
             'title' => 'What Is a Managed Office Space and Is It Right for Your Business?',
             'category' => 'Explainer',
             'readTime' => '4 Min Read',
-            'image' => 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200',
+            'image' => 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200&fm=webp',
             'excerpt' => 'The term managed office gets used loosely in the Indian commercial real estate market. Here is what it actually means, and what it does not.',
             'content' => ''
         ],

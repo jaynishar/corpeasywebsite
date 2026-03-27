@@ -4,6 +4,7 @@ $page_title = 'CorpEasy | Managed Office Space in Mumbai - BKC, Lower Parel, Gor
 $page_description = 'CorpEasy finds, sets up & manages your office space in Mumbai. From ₹10,000/seat/month. One point of contact. BKC, Lower Parel, Goregaon & Andheri. Free consultation.';
 $page_keywords = 'managed office space Mumbai, office space for rent Mumbai, commercial office space Mumbai, office space BKC, office space Lower Parel, office space Goregaon, managed workspace Mumbai, office space Andheri East, per seat office Mumbai, workspace solutions Mumbai, turnkey office Mumbai, office space Mumbai 2026, office on rent Mumbai, commercial property Mumbai';
 $page_canonical = 'https://www.corpeasy.in/';
+$page_lcp_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp';
 $page_schema = '';
 
 include 'templates/header.php';
@@ -69,7 +70,7 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-8 lg:py-12 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] sm:h-[400px] lg:h-[600px] reveal group">
-<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200" alt="Modern workspace in Mumbai - collaborative office design" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" width="1200" height="675" fetchpriority="high">
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Modern workspace in Mumbai - collaborative office design" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" width="1200" height="675" fetchpriority="high">
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 <div class="absolute bottom-6 sm:bottom-10 left-6 sm:left-10 right-6 sm:right-10">
 <h3 class="text-2xl sm:text-3xl lg:text-5xl font-black text-white mb-2 sm:mb-4 drop-shadow-lg tracking-tight">Where Teams Thrive & <br class="hidden sm:block"/>Businesses Grow.</h3>
@@ -335,7 +336,7 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-12 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[350px] lg:h-[500px] reveal group border border-white/60">
-<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920" alt="Commercial buildings in Mumbai BKC financial district" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1920" height="1080">
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Commercial buildings in Mumbai BKC financial district" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1920" height="1080">
 <div class="absolute inset-0 bg-gradient-to-tr from-brand-cyan/30 via-transparent to-transparent"></div>
 <div class="absolute bottom-6 left-6 lg:bottom-10 lg:left-10 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
 <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>

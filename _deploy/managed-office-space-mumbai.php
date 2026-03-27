@@ -5,6 +5,7 @@ $page_description = 'Get a fully managed office space in Mumbai from ₹10,000/s
 $page_keywords = 'managed office space Mumbai, managed workspace Mumbai, turnkey office Mumbai, office space per seat Mumbai, managed office BKC, managed office Lower Parel, managed office Goregaon, managed office Andheri, managed office space Mumbai 2026, fully managed office Mumbai, office space setup Mumbai, commercial office space Mumbai, private office space Mumbai';
 $page_canonical = 'https://www.corpeasy.in/managed-office-space-mumbai';
 $page_og_image = 'https://www.corpeasy.in/CORPEASYHEADER.png';
+$page_lcp_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp';
 $page_schema = '{
   "@type": "Service",
   "name": "Managed Office Space Mumbai",
@@ -53,7 +54,7 @@ include 'templates/header.php';
 </section>
 <section class="py-12 px-6">
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[550px] reveal group border border-white/60">
-<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" alt="Managed office space Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="550">
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Managed office space Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="550">
 <div class="absolute inset-0 bg-gradient-to-tr from-brand-electric/40 via-transparent to-transparent"></div>
 <div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>

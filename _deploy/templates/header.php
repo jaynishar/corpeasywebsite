@@ -12,6 +12,7 @@ $page_og_description = $page_og_description ?? $page_description;
 $page_og_image = $page_og_image ?? 'https://www.corpeasy.in/CORPEASYHEADER.png';
 $page_schema = $page_schema ?? '';
 $page_id = $page_id ?? 'home';
+$page_lcp_image = $page_lcp_image ?? '';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,11 +26,45 @@ $page_id = $page_id ?? 'home';
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e3a8a'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='sans-serif' fill='white' font-weight='900'>CE</text></svg>">
     <meta name="theme-color" content="#1e3a8a">
 
-    <!-- CRITICAL CSS - Prevents blank page flash -->
+    <!-- CRITICAL CSS — above-the-fold only, eliminates render-blocking for FCP -->
     <style>
-        body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:#f8fafc;color:#0f172a}
-        .init-loader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#f8fafc;z-index:9999}
-        .init-loader::after{content:"Loading...";font-size:14px;color:#6366f1;font-weight:500}
+        *,*::before,*::after{box-sizing:border-box}
+        html{max-width:100vw;overflow-x:hidden;scroll-behavior:smooth}
+        body{margin:0;padding:0;font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;background:#f8fafc;color:#0f172a;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+        /* Navbar */
+        #navbar{position:fixed!important;top:0;left:0;right:0;width:100%;z-index:100;background:rgba(255,255,255,0.85);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,0.8);box-shadow:0 2px 20px rgba(0,0,0,0.05);height:4rem;display:flex;align-items:center;transition:all 0.5s}
+        @media(min-width:768px){#navbar{height:5rem}}
+        @media(min-width:1024px){#navbar{height:7rem}}
+        /* Main offset */
+        main.flex-grow{padding-top:4rem}
+        @media(min-width:768px){main.flex-grow{padding-top:5rem}}
+        @media(min-width:1024px){main.flex-grow{padding-top:7rem}}
+        /* Layout */
+        .flex{display:flex}.flex-col{flex-direction:column}.min-h-screen{min-height:100vh}.flex-grow{flex-grow:1}.items-center{align-items:center}.justify-between{justify-content:space-between}.w-full{width:100%}
+        /* Background */
+        .bg-tech-mesh{background-color:#f8fafc;background-image:radial-gradient(circle at 15% 50%,rgba(99,102,241,.12),transparent 30%),radial-gradient(circle at 85% 30%,rgba(6,182,212,.12),transparent 30%),linear-gradient(rgba(15,23,42,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.03) 1px,transparent 1px);background-size:100% 100%,100% 100%,30px 30px,30px 30px}
+        /* Typography */
+        h1,h2,h3{letter-spacing:-.03em;line-height:1.1;font-weight:800;word-break:break-word;overflow-wrap:break-word}
+        @media(max-width:640px){h1{font-size:clamp(2rem,10vw,3rem)!important;line-height:1.1!important}h2{font-size:clamp(1.75rem,8vw,2.5rem)!important}}
+        /* Glass card (hero form visible immediately) */
+        .glass-card{background:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,1);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:2.5rem;box-shadow:0 10px 30px -10px rgba(15,23,42,.05),inset 0 0 0 1px rgba(255,255,255,.5)}
+        /* Input */
+        .input-premium{background:rgba(255,255,255,0.8);border:1px solid rgba(203,213,225,0.8);padding:1.25rem 1.5rem;border-radius:1rem;width:100%;color:#0f172a;font-weight:500;font-size:1rem;transition:all .3s ease}
+        @media(max-width:768px){.input-premium{font-size:16px;padding:1rem 1.25rem}}
+        /* Text gradients */
+        .text-gradient-vibrant{background:linear-gradient(135deg,#6366f1 0%,#06b6d4 50%,#8b5cf6 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+        .text-gradient{background:linear-gradient(135deg,#334155 0%,#0f172a 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+        /* Reveal animation */
+        .reveal{opacity:0;transform:translateY(40px);transition:all 1s cubic-bezier(.16,1,.3,1)}
+        .reveal.active{opacity:1;transform:translateY(0)}
+        /* Scroll progress bar */
+        #scroll-line{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,#6366f1,#06b6d4,#8b5cf6);z-index:1000;width:0;transition:width .1s;box-shadow:0 0 15px rgba(99,102,241,.5)}
+        /* Font Awesome font-display fix */
+        @font-face{font-family:'Font Awesome 6 Free';font-display:swap}
+        @font-face{font-family:'Font Awesome 6 Brands';font-display:swap}
+        /* Prevent image overflow */
+        img,video,iframe,canvas,svg{max-width:100%}
+        section{max-width:100vw;overflow-x:hidden}
     </style>
 
     <!-- SEO -->
@@ -200,9 +235,16 @@ $page_id = $page_id ?? 'home';
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://images.unsplash.com">
 
-    <!-- CSS load order: style.css first (custom), then tailwind utilities override where needed — mirrors original CDN behaviour -->
-    <link rel="stylesheet" href="style.css?v=20260327">
-    <link rel="stylesheet" href="tailwind.min.css?v=20260327">
+    <?php if (!empty($page_lcp_image)): ?>
+    <!-- LCP image preload — tells browser to fetch hero image immediately -->
+    <link rel="preload" as="image" href="<?php echo htmlspecialchars($page_lcp_image); ?>" fetchpriority="high">
+    <?php endif; ?>
+
+    <!-- Full CSS loaded non-blocking (critical CSS inlined above handles FCP) -->
+    <link rel="stylesheet" href="style.css?v=20260327" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css?v=20260327"></noscript>
+    <link rel="stylesheet" href="tailwind.min.css?v=20260327" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="tailwind.min.css?v=20260327"></noscript>
 
     <!-- Font (non-blocking) -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
