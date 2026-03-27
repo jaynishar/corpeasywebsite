@@ -1,5 +1,4 @@
 /* ===== CorpEasy Interactions JS ===== */
-/* Extracted interactive behaviors from SPA script.js for PHP multi-page site */
 
 /* ===== Toast Notifications ===== */
 function showToast(message, type = 'success') {
@@ -9,12 +8,12 @@ function showToast(message, type = 'success') {
     const icons = { success: 'fa-check-circle', error: 'fa-exclamation-circle', info: 'fa-info-circle' };
     const toast = document.createElement('div');
     toast.id = 'ce-toast';
-    toast.className = `fixed top-28 right-6 z-[500] ${colors[type]} text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3 text-sm font-bold transition-all duration-500 max-w-sm`;
-    toast.style.transform = 'translateX(120%)';
+    toast.className = `fixed top-28 right-6 z-[500] ${colors[type]} text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3 text-sm font-bold max-w-sm`;
+    toast.style.cssText = 'transform:translateX(120%);transition:transform 0.4s cubic-bezier(0.16,1,0.3,1);will-change:transform';
     toast.innerHTML = `<i class="fas ${icons[type]}"></i> ${message}`;
     document.body.appendChild(toast);
-    requestAnimationFrame(() => { toast.style.transform = 'translateX(0)'; });
-    setTimeout(() => { toast.style.transform = 'translateX(120%)'; setTimeout(() => toast.remove(), 500); }, 4000);
+    requestAnimationFrame(() => requestAnimationFrame(() => { toast.style.transform = 'translateX(0)'; }));
+    setTimeout(() => { toast.style.transform = 'translateX(120%)'; setTimeout(() => toast.remove(), 400); }, 4000);
 }
 
 /* ===== Form Submission Handler ===== */
@@ -37,7 +36,7 @@ async function handleLead(e) {
         const result = await response.json();
         if (result.success) {
             btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Received. We will be in touch within 24 hours.';
-            btn.classList.remove('bg-brand-electric', 'bg-brand-gold', 'bg-transparent', 'text-brand-electric');
+            btn.classList.remove('bg-brand-electric', 'bg-brand-gold', 'bg-brand-cyan', 'bg-brand-rose', 'bg-transparent', 'text-brand-electric');
             btn.classList.add('bg-green-500', 'text-white', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 'border-transparent');
             if (result.reference) {
                 const refEl = document.createElement('p');
@@ -78,42 +77,44 @@ function toggleFAQ(row) {
     const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
     document.querySelectorAll('.faq-answer').forEach(a => {
         a.style.maxHeight = '0px';
-        a.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+        const prevIcon = a.previousElementSibling?.querySelector('i');
+        if (prevIcon) prevIcon.style.transform = 'rotate(0deg)';
     });
     if (!isOpen) {
         answer.style.maxHeight = answer.scrollHeight + 'px';
-        icon.style.transform = 'rotate(45deg)';
+        if (icon) icon.style.transform = 'rotate(45deg)';
     }
 }
 
-/* ===== Tilt Cards (desktop only) ===== */
+/* ===== Tilt Cards (desktop only, GPU-composited) ===== */
 function initTiltCards() {
     if (window.innerWidth < 1024) return;
     document.querySelectorAll('.glass-card').forEach(card => {
+        card.addEventListener('mouseenter', () => { card.style.willChange = 'transform'; }, { passive: true });
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateX = ((y - centerY) / centerY) * -6;
-            const rotateY = ((x - centerX) / centerX) * 6;
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+            const rotateX = ((y - rect.height / 2) / rect.height) * -5;
+            const rotateY = ((x - rect.width / 2) / rect.width) * 5;
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
             let shine = card.querySelector('.tilt-shine');
             if (!shine) {
                 shine = document.createElement('div');
-                shine.className = 'tilt-shine absolute inset-0 rounded-[2.5rem] pointer-events-none';
+                shine.className = 'tilt-shine';
+                shine.style.cssText = 'position:absolute;inset:0;border-radius:inherit;pointer-events:none';
                 card.style.position = 'relative';
                 card.style.overflow = 'hidden';
                 card.appendChild(shine);
             }
-            if (shine) shine.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.12), transparent 60%)`;
-        });
+            shine.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.1), transparent 55%)`;
+        }, { passive: true });
         card.addEventListener('mouseleave', () => {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+            card.style.transform = '';
+            card.style.willChange = '';
             const shine = card.querySelector('.tilt-shine');
             if (shine) shine.style.background = 'none';
-        });
+        }, { passive: true });
     });
 }
 
@@ -121,9 +122,12 @@ function initTiltCards() {
 function initRevealObserver() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) entry.target.classList.add('active');
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // fire once, then stop watching
+            }
         });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
 
@@ -138,57 +142,54 @@ function initCountUps() {
                 const inc = target / 40;
                 const timer = setInterval(() => {
                     count += inc;
-                    if (count >= target) {
-                        entry.target.innerText = target;
-                        clearInterval(timer);
-                    } else {
-                        entry.target.innerText = Math.floor(count);
-                    }
-                }, 35);
+                    if (count >= target) { entry.target.innerText = target; clearInterval(timer); }
+                    else { entry.target.innerText = Math.floor(count); }
+                }, 30);
             }
         });
     }, { threshold: 0.5 });
     document.querySelectorAll('.stat-val').forEach(el => observer.observe(el));
 }
 
-/* ===== Scroll Event Handlers ===== */
+/* ===== Passive RAF-throttled scroll handler ===== */
+let scrollTicking = false;
 const reportedDepths = new Set();
-window.onscroll = () => {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+function onScrollFrame() {
+    const winScroll = window.scrollY;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    if (height <= 0) return;
-    const scrolled = (winScroll / height) * 100;
+    if (height <= 0) { scrollTicking = false; return; }
+    const pct = (winScroll / height) * 100;
 
-    // Scroll progress bar
+    // Scroll progress bar (no transition — instant, looks crisp)
     const scrollLine = document.getElementById('scroll-line');
-    if (scrollLine) scrollLine.style.width = scrolled + '%';
+    if (scrollLine) scrollLine.style.width = pct + '%';
 
-    // Scroll depth tracking (GTM dataLayer)
-    const depths = [25, 50, 75, 90];
-    depths.forEach(depth => {
-        if (scrolled >= depth && !reportedDepths.has(depth)) {
+    // Navbar shadow
+    const nav = document.getElementById('navbar');
+    if (nav) nav.classList.toggle('shadow-[0_10px_30px_rgba(0,0,0,0.06)]', winScroll > 60);
+
+    // Parallax hero image
+    const heroImg = document.querySelector('.hero-parallax-img');
+    if (heroImg && window.innerWidth >= 1024) heroImg.style.transform = `translateY(${winScroll * 0.1}px)`;
+
+    // Scroll depth tracking (GTM)
+    [25, 50, 75, 90].forEach(depth => {
+        if (pct >= depth && !reportedDepths.has(depth)) {
             reportedDepths.add(depth);
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ event: 'scroll_depth', depth_threshold: depth });
+            (window.dataLayer = window.dataLayer || []).push({ event: 'scroll_depth', depth_threshold: depth });
         }
     });
 
-    // Navbar shadow on scroll
-    const nav = document.getElementById('navbar');
-    if (nav) {
-        if (winScroll > 60) {
-            nav.classList.add('shadow-[0_10px_30px_rgba(0,0,0,0.06)]');
-        } else {
-            nav.classList.remove('shadow-[0_10px_30px_rgba(0,0,0,0.06)]');
-        }
-    }
+    scrollTicking = false;
+}
 
-    // Parallax for hero image
-    const heroImg = document.querySelector('.hero-parallax-img');
-    if (heroImg && window.innerWidth >= 1024) {
-        heroImg.style.transform = `translateY(${winScroll * 0.12}px)`;
+window.addEventListener('scroll', () => {
+    if (!scrollTicking) {
+        requestAnimationFrame(onScrollFrame);
+        scrollTicking = true;
     }
-};
+}, { passive: true });
 
 /* ===== FAB (Floating Action Button) ===== */
 let fabOpen = false;
@@ -199,15 +200,10 @@ const fabMinis = document.querySelectorAll('.fab-mini');
 
 if (fabContainer && fabMain) {
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            fabContainer.style.opacity = '1';
-            fabContainer.style.pointerEvents = 'all';
-            fabContainer.style.transform = 'translateY(0)';
-        } else {
-            fabContainer.style.opacity = '0';
-            fabContainer.style.pointerEvents = 'none';
-            fabContainer.style.transform = 'translateY(20px)';
-        }
+        const show = window.scrollY > 300;
+        fabContainer.style.opacity = show ? '1' : '0';
+        fabContainer.style.pointerEvents = show ? 'all' : 'none';
+        fabContainer.style.transform = show ? 'translateY(0)' : 'translateY(20px)';
     }, { passive: true });
 
     fabMain.addEventListener('click', () => {
@@ -216,7 +212,7 @@ if (fabContainer && fabMain) {
             setTimeout(() => {
                 mini.style.opacity = fabOpen ? '1' : '0';
                 mini.style.transform = fabOpen ? 'translateY(0)' : 'translateY(16px)';
-            }, i * 60);
+            }, i * 50);
         });
         if (fabIcon) {
             fabIcon.style.transform = fabOpen ? 'rotate(45deg)' : 'rotate(0deg)';
@@ -227,66 +223,93 @@ if (fabContainer && fabMain) {
     });
 }
 
-/* ===== Mobile Menu Toggle ===== */
-const mobileTrigger = document.getElementById('mobile-trigger');
-if (mobileTrigger) {
-    mobileTrigger.onclick = () => {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('hidden');
-        if (!menu.classList.contains('hidden')) {
-            menu.classList.add('flex');
+/* ===== Solutions Dropdown — click toggle (fixes touch/glitch) ===== */
+function initSolutionsDropdown() {
+    const nav = document.getElementById('solutions-nav');
+    const btn = document.getElementById('solutions-btn');
+    const chevron = document.getElementById('solutions-chevron');
+    if (!nav || !btn) return;
+
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = nav.classList.toggle('is-open');
+        if (chevron) chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target)) {
+            nav.classList.remove('is-open');
+            if (chevron) chevron.style.transform = '';
         }
-    };
+    });
+
+    // Close when a menu link is clicked
+    nav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            nav.classList.remove('is-open');
+            if (chevron) chevron.style.transform = '';
+        });
+    });
 }
 
-document.addEventListener('click', (e) => {
-    const menu = document.getElementById('mobile-menu');
-    const trigger = document.getElementById('mobile-trigger');
-    if (menu && !menu.classList.contains('hidden')) {
-        if (!menu.contains(e.target) && trigger && !trigger.contains(e.target)) {
+/* ===== Mobile Menu Toggle ===== */
+function initMobileMenu() {
+    const mobileTrigger = document.getElementById('mobile-trigger');
+    if (!mobileTrigger) return;
+    mobileTrigger.addEventListener('click', () => {
+        const menu = document.getElementById('mobile-menu');
+        const isHidden = menu.classList.contains('hidden');
+        if (isHidden) {
+            menu.classList.remove('hidden');
+            menu.classList.add('flex');
+        } else {
             menu.classList.add('hidden');
             menu.classList.remove('flex');
         }
-    }
-});
+    });
+
+    document.addEventListener('click', (e) => {
+        const menu = document.getElementById('mobile-menu');
+        const trigger = document.getElementById('mobile-trigger');
+        if (menu && !menu.classList.contains('hidden')) {
+            if (!menu.contains(e.target) && trigger && !trigger.contains(e.target)) {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+            }
+        }
+    });
+}
 
 /* ===== DOMContentLoaded Initialization ===== */
 document.addEventListener('DOMContentLoaded', () => {
-    // Redirect old hash URLs to new clean URLs
+    // Redirect old hash URLs
     const hashMap = {
-        '#home': '/',
-        '#managed': '/managed-office-space-mumbai',
-        '#facility': '/facility-management-mumbai',
-        '#find': '/office-space-for-rent-mumbai',
-        '#list': '/list-commercial-property-mumbai',
-        '#blog': '/blog',
-        '#about': '/about',
-        '#faq': '/faq',
-        '#contact': '/contact'
+        '#home': '/', '#managed': '/managed-office-space-mumbai',
+        '#facility': '/facility-management-mumbai', '#find': '/office-space-for-rent-mumbai',
+        '#list': '/list-commercial-property-mumbai', '#blog': '/blog',
+        '#about': '/about', '#faq': '/faq', '#contact': '/contact'
     };
     if (window.location.hash && hashMap[window.location.hash]) {
         window.location.replace(hashMap[window.location.hash]);
     }
 
-    // Initialize interactive components
     initRevealObserver();
     initCountUps();
     initTiltCards();
+    initSolutionsDropdown();
+    initMobileMenu();
 
     // Cookie banner
     const cookieBanner = document.getElementById('cookie-banner');
     if (cookieBanner) {
-        const consent = localStorage.getItem('ce_cookie_consent');
-        if (!consent) {
-            setTimeout(() => {
-                cookieBanner.style.transform = 'translateY(0)';
-            }, 2000);
+        if (!localStorage.getItem('ce_cookie_consent')) {
+            setTimeout(() => { cookieBanner.style.transform = 'translateY(0)'; }, 2000);
         }
         document.getElementById('cookie-accept')?.addEventListener('click', () => {
             localStorage.setItem('ce_cookie_consent', 'accepted');
             cookieBanner.style.transform = 'translateY(100%)';
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ event: 'cookie_consent', choice: 'accepted' });
+            (window.dataLayer = window.dataLayer || []).push({ event: 'cookie_consent', choice: 'accepted' });
         });
         document.getElementById('cookie-decline')?.addEventListener('click', () => {
             localStorage.setItem('ce_cookie_consent', 'declined');
