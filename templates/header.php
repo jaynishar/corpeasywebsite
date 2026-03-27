@@ -282,11 +282,11 @@ $page_lcp_image = $page_lcp_image ?? '';
             </div>
             <!-- Navigation Links (Desktop) -->
             <div class="hidden xl:flex items-center gap-8">
-                <div class="relative group" id="solutions-nav">
-                    <button id="solutions-btn" class="text-sm font-semibold text-slate-700 flex items-center gap-2 group-hover:text-brand-electric transition-colors">
+                <div class="relative" id="solutions-nav">
+                    <button id="solutions-btn" class="text-sm font-semibold text-slate-700 flex items-center gap-2 hover:text-brand-electric transition-colors">
                         Solutions <i id="solutions-chevron" class="fas fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
                     </button>
-                    <div id="solutions-panel" class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-[opacity,transform,visibility] duration-200 translate-y-2 group-hover:translate-y-0 z-50">
+                    <div id="solutions-panel" class="absolute top-full left-0 pt-4 opacity-0 invisible transition-[opacity,transform,visibility] duration-200 translate-y-2 z-50">
                         <div class="bg-white rounded-3xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] border border-slate-100 p-4 w-[460px] min-w-[460px] space-y-2 !max-w-none">
                             <a href="/managed-office-space-mumbai" class="flex items-center gap-5 p-4 rounded-2xl hover:bg-brand-navy border border-transparent hover:border-brand-electric/10 transition-all cursor-pointer group/item">
                                 <div class="w-12 h-12 bg-white shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-brand-electric group-hover/item:bg-brand-electric group-hover/item:text-white transition-all duration-300"><i class="fas fa-building text-lg"></i></div>
