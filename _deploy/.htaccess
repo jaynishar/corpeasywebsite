@@ -1,0 +1,83 @@
+RewriteEngine On
+RewriteBase /
+
+# Force index.php as the homepage (not index.html)
+DirectoryIndex index.php index.html
+
+# Route requests to appropriate PHP files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/?$ blog.php [L]
+RewriteRule ^blog/([^/]+)/?$ blog-post.php?slug=$1 [L]
+RewriteRule ^about/?$ about.php [L]
+RewriteRule ^contact/?$ contact.php [L]
+RewriteRule ^faq/?$ faq.php [L]
+RewriteRule ^submit/?$ submit.php [L]
+RewriteRule ^list-commercial-property-mumbai/?$ list-commercial-property-mumbai.php [L]
+RewriteRule ^office-space-for-rent-mumbai/?$ office-space-for-rent-mumbai.php [L]
+RewriteRule ^facility-management-mumbai/?$ facility-management-mumbai.php [L]
+RewriteRule ^managed-office-space-mumbai/?$ managed-office-space-mumbai.php [L]
+
+# Location pages - Managed Office
+RewriteRule ^managed-office-bkc/?$ managed-office-bkc.php [L]
+RewriteRule ^managed-office-lower-parel/?$ managed-office-lower-parel.php [L]
+RewriteRule ^managed-office-goregaon/?$ managed-office-goregaon.php [L]
+RewriteRule ^managed-office-andheri/?$ managed-office-andheri.php [L]
+
+# Location pages - Office for Rent
+RewriteRule ^office-for-rent-bkc/?$ office-for-rent-bkc.php [L]
+RewriteRule ^office-for-rent-lower-parel/?$ office-for-rent-lower-parel.php [L]
+
+# Privacy Policy page routing
+RewriteRule ^privacy-policy/?$ privacy-policy.php [L]
+
+# Prevent directory listing
+Options -Indexes
+
+ErrorDocument 404 /index.php
+
+# ── Force HTTPS ────────────────────────────────────────────
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} !^localhost [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ── GZIP Compression ─────────────────────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE application/json image/svg+xml font/woff font/woff2
+</IfModule>
+
+# ── Browser Caching ───────────────────────────────────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html                 "access plus 1 hour"
+    ExpiresByType text/css                  "access plus 1 year"
+    ExpiresByType application/javascript    "access plus 1 year"
+    ExpiresByType text/javascript           "access plus 1 year"
+    ExpiresByType image/jpeg                "access plus 1 year"
+    ExpiresByType image/png                 "access plus 1 year"
+    ExpiresByType image/webp                "access plus 1 year"
+    ExpiresByType image/svg+xml             "access plus 1 year"
+    ExpiresByType font/woff                 "access plus 1 year"
+    ExpiresByType font/woff2                "access plus 1 year"
+</IfModule>
+
+# ── Cache-Control & Security Headers ─────────────────────
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js|woff|woff2)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "public, max-age=31536000"
+    </FilesMatch>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ── Block access to sensitive files ──────────────────────
+<FilesMatch "(db_config\.php|leads_backup\.json|\.env)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

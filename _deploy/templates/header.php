@@ -198,44 +198,19 @@ $page_id = $page_id ?? 'home';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <link rel="dns-prefetch" href="https://images.unsplash.com">
-    <link rel="preload" as="image" href="modern_office.png?v=2026032102">
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <!-- Compiled Tailwind CSS (replaces CDN — no JS render-blocking) -->
+    <link rel="stylesheet" href="tailwind.min.css?v=20260327">
+    <link rel="stylesheet" href="style.css?v=20260327">
 
-    <!-- Icons -->
+    <!-- Font (non-blocking) -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Icons (non-blocking) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans serif'] },
-                    colors: {
-                        brand: {
-                            blue: '#1e3a8a',
-                            electric: '#6366f1',
-                            navy: '#f0f9ff',
-                            cyan: '#06b6d4',
-                            gold: '#fbbf24',
-                            rose: '#f43f5e',
-                            violet: '#8b5cf6',
-                            slate: '#64748b',
-                            ice: '#ffffff'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-
-    <link rel="stylesheet" href="style.css?v=2026032301">
 </head>
 <body class="font-sans flex flex-col min-h-screen bg-tech-mesh">
 
@@ -304,7 +279,7 @@ $page_id = $page_id ?? 'home';
     <!-- MOBILE MENU -->
     <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-xl z-[90] hidden flex-col overflow-y-auto" style="padding-top: env(safe-area-inset-top, 0);">
         <div class="flex justify-between items-center px-6 py-4">
-            <img src="CORPEASYHEADER.png" alt="CorpEasy" class="h-10 w-auto">
+            <img src="CORPEASYHEADER.png" alt="CorpEasy" class="h-10 w-auto" width="140" height="40" loading="lazy">
             <button onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.getElementById('mobile-menu').classList.remove('flex');" class="w-10 h-10 flex items-center justify-center text-slate-500 hover:text-slate-800 transition-colors">
                 <i class="fas fa-times text-xl"></i>
             </button>
