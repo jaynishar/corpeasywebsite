@@ -219,8 +219,17 @@ input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.15); }
 /* FAB */
 .fab-mini { transition: opacity 0.3s cubic-bezier(0.16,1,0.3,1), transform 0.3s cubic-bezier(0.16,1,0.3,1); will-change: transform, opacity; }
 
+/* Re-enable transitions ONLY after JS has loaded (prevents flash on async CSS load) */
+/* html.js-loaded has specificity (0,1,0,1) > #solutions-panel (0,1,0,0) — wins over critical CSS transition:none */
+html.js-loaded #solutions-panel {
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+}
+html.js-loaded #fab-container {
+    transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
 /* Solutions dropdown open state (JS-controlled for touch/click) */
-#solutions-nav.is-open #solutions-panel {
+html.js-loaded #solutions-nav.is-open #solutions-panel {
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateY(0) !important;

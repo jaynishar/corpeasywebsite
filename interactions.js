@@ -208,6 +208,12 @@ const fabIcon = document.getElementById('fab-icon');
 const fabMinis = document.querySelectorAll('.fab-mini');
 
 if (fabContainer && fabMain) {
+    // Explicitly lock FAB to hidden state via inline style — this overrides critical CSS
+    // once JS loads, so scroll handler can then smoothly show/hide via inline style changes
+    fabContainer.style.opacity = '0';
+    fabContainer.style.pointerEvents = 'none';
+    fabContainer.style.transform = 'translateY(20px)';
+
     window.addEventListener('scroll', () => {
         const show = window.scrollY > 300;
         fabContainer.style.opacity = show ? '1' : '0';
@@ -315,6 +321,14 @@ function initMobileMenu() {
 
 /* ===== DOMContentLoaded Initialization ===== */
 document.addEventListener('DOMContentLoaded', () => {
+    // Mark JS as loaded — unlocks CSS transitions (prevents flash on async CSS load)
+    // Must run first, before any transition-triggering init
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            document.documentElement.classList.add('js-loaded');
+        });
+    });
+
     // Redirect old hash URLs
     const hashMap = {
         '#home': '/', '#managed': '/managed-office-space-mumbai',

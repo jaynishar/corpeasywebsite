@@ -74,8 +74,9 @@ $page_lcp_image = $page_lcp_image ?? '';
         @media(min-width:640px){.logo-img{height:3.5rem!important;width:auto!important}}
         @media(min-width:1024px){.logo-img{height:5rem!important;width:auto!important}}
         /* Hide JS-controlled elements before Tailwind loads — prevents flash */
-        #solutions-panel{opacity:0;visibility:hidden}
-        #fab-container{opacity:0;pointer-events:none}
+        /* transition:none!important blocks any CSS transition firing during async CSS load */
+        #solutions-panel{opacity:0;visibility:hidden;transition:none!important}
+        #fab-container{opacity:0;pointer-events:none;transition:none!important}
     </style>
 
     <!-- SEO -->
@@ -252,8 +253,8 @@ $page_lcp_image = $page_lcp_image ?? '';
     <?php endif; ?>
 
     <!-- Full CSS loaded non-blocking (critical CSS inlined above handles FCP) -->
-    <link rel="stylesheet" href="style.css?v=20260327" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="style.css?v=20260327"></noscript>
+    <link rel="stylesheet" href="style.css?v=20260328" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css?v=20260328"></noscript>
     <link rel="stylesheet" href="tailwind.min.css?v=20260327" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="tailwind.min.css?v=20260327"></noscript>
 
