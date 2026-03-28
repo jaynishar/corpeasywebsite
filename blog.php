@@ -44,14 +44,6 @@ try {
 // Fallback posts if DB fails or is empty
 if (empty($posts)) {
     $posts = [
-        'beyond-four-walls-how-managed-workspaces-power-business-growth' => [
-            'title' => 'Beyond Four Walls: How Managed Workspaces Power Business Growth',
-            'category' => 'Insights',
-            'readTime' => '5 Min Read',
-            'image' => 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp',
-            'excerpt' => 'For growing businesses in Mumbai, the workspace has become a direct lever for talent attraction, operational efficiency, and client perception.',
-            'content' => ''
-        ],
         'mumbai-workspace-guide' => [
             'title' => 'How to Find the Right Office Space in Mumbai: A Practical Guide for 2026.',
             'category' => 'Market Guide',
