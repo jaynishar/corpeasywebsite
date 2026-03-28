@@ -115,7 +115,7 @@ include 'templates/header.php';
 <section class="max-w-7xl mx-auto px-6 py-24 reveal">
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
 <div class="max-w-2xl">
-<div class="inline-flex items-center space-x-2 mb-8 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<div class="inline-flex items-center space-x-2 mb-8 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5">
 <span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse"></span>
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Useful Reading</span>
 </div>

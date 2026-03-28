@@ -9,7 +9,7 @@ function showToast(message, type = 'success') {
     const toast = document.createElement('div');
     toast.id = 'ce-toast';
     toast.className = `fixed top-28 right-6 z-[500] ${colors[type]} text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3 text-sm font-bold max-w-sm`;
-    toast.style.cssText = 'transform:translateX(120%);transition:transform 0.4s cubic-bezier(0.16,1,0.3,1);will-change:transform';
+    toast.style.cssText = 'transform:translateX(120%);transition:transform 0.4s cubic-bezier(0.16,1,0.3,1)';
     toast.innerHTML = `<i class="fas ${icons[type]}"></i> ${message}`;
     document.body.appendChild(toast);
     requestAnimationFrame(() => requestAnimationFrame(() => { toast.style.transform = 'translateX(0)'; }));
@@ -88,32 +88,18 @@ function toggleFAQ(row) {
 
 /* ===== Tilt Cards (desktop only, GPU-composited) ===== */
 function initTiltCards() {
-    if (window.innerWidth < 1024) return;
+    if (window.innerWidth < 1024 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     document.querySelectorAll('.glass-card').forEach(card => {
-        card.addEventListener('mouseenter', () => { card.style.willChange = 'transform'; }, { passive: true });
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-            const rotateX = ((y - rect.height / 2) / rect.height) * -5;
-            const rotateY = ((x - rect.width / 2) / rect.width) * 5;
+            const rotateX = ((y - rect.height / 2) / rect.height) * -4;
+            const rotateY = ((x - rect.width / 2) / rect.width) * 4;
             card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
-            let shine = card.querySelector('.tilt-shine');
-            if (!shine) {
-                shine = document.createElement('div');
-                shine.className = 'tilt-shine';
-                shine.style.cssText = 'position:absolute;inset:0;border-radius:inherit;pointer-events:none';
-                card.style.position = 'relative';
-                card.style.overflow = 'hidden';
-                card.appendChild(shine);
-            }
-            shine.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.1), transparent 55%)`;
         }, { passive: true });
         card.addEventListener('mouseleave', () => {
             card.style.transform = '';
-            card.style.willChange = '';
-            const shine = card.querySelector('.tilt-shine');
-            if (shine) shine.style.background = 'none';
         }, { passive: true });
     });
 }
@@ -131,7 +117,6 @@ function initRevealObserver() {
 
     document.querySelectorAll('.reveal').forEach(el => {
         const rect = el.getBoundingClientRect();
-        // Already in viewport on page load — activate immediately, no animation delay
         if (rect.top < window.innerHeight && rect.bottom > 0) {
             el.classList.add('active');
         } else {
@@ -140,20 +125,28 @@ function initRevealObserver() {
     });
 }
 
-/* ===== Count-Up Animation ===== */
+/* ===== Count-Up Animation (uses RAF instead of setInterval) ===== */
 function initCountUps() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !entry.target.dataset.counted) {
                 entry.target.dataset.counted = 'true';
                 const target = +entry.target.getAttribute('data-val');
-                let count = 0;
-                const inc = target / 40;
-                const timer = setInterval(() => {
-                    count += inc;
-                    if (count >= target) { entry.target.innerText = target; clearInterval(timer); }
-                    else { entry.target.innerText = Math.floor(count); }
-                }, 30);
+                const duration = 800; // ms
+                const start = performance.now();
+                function tick(now) {
+                    const elapsed = now - start;
+                    const progress = Math.min(elapsed / duration, 1);
+                    // Ease-out curve for smooth deceleration
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    entry.target.innerText = Math.floor(target * eased);
+                    if (progress < 1) {
+                        requestAnimationFrame(tick);
+                    } else {
+                        entry.target.innerText = target;
+                    }
+                }
+                requestAnimationFrame(tick);
             }
         });
     }, { threshold: 0.5 });
@@ -170,17 +163,34 @@ function onScrollFrame() {
     if (height <= 0) { scrollTicking = false; return; }
     const pct = (winScroll / height) * 100;
 
-    // Scroll progress bar (no transition — instant, looks crisp)
+    // Scroll progress bar
     const scrollLine = document.getElementById('scroll-line');
     if (scrollLine) scrollLine.style.width = pct + '%';
 
     // Navbar shadow
     const nav = document.getElementById('navbar');
-    if (nav) nav.classList.toggle('shadow-[0_10px_30px_rgba(0,0,0,0.06)]', winScroll > 60);
+    if (nav) {
+        if (winScroll > 60) {
+            nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)';
+        } else {
+            nav.style.boxShadow = '';
+        }
+    }
 
-    // Parallax hero image
+    // Parallax hero image (desktop only, instant — no CSS transition)
     const heroImg = document.querySelector('.hero-parallax-img');
-    if (heroImg && window.innerWidth >= 1024) heroImg.style.transform = `translateY(${winScroll * 0.1}px)`;
+    if (heroImg && window.innerWidth >= 1024) heroImg.style.transform = `translateY(${winScroll * 0.08}px) scale(1.05)`;
+
+    // FAB show/hide (merged into single RAF handler — no separate listener)
+    if (fabContainer) {
+        const show = winScroll > 300;
+        if (show !== fabVisible) {
+            fabVisible = show;
+            fabContainer.style.opacity = show ? '1' : '0';
+            fabContainer.style.pointerEvents = show ? 'all' : 'none';
+            fabContainer.style.transform = show ? 'translateY(0)' : 'translateY(20px)';
+        }
+    }
 
     // Scroll depth tracking (GTM)
     [25, 50, 75, 90].forEach(depth => {
@@ -202,24 +212,16 @@ window.addEventListener('scroll', () => {
 
 /* ===== FAB (Floating Action Button) ===== */
 let fabOpen = false;
+let fabVisible = false;
 const fabContainer = document.getElementById('fab-container');
 const fabMain = document.getElementById('fab-main');
 const fabIcon = document.getElementById('fab-icon');
 const fabMinis = document.querySelectorAll('.fab-mini');
 
 if (fabContainer && fabMain) {
-    // Explicitly lock FAB to hidden state via inline style — this overrides critical CSS
-    // once JS loads, so scroll handler can then smoothly show/hide via inline style changes
     fabContainer.style.opacity = '0';
     fabContainer.style.pointerEvents = 'none';
     fabContainer.style.transform = 'translateY(20px)';
-
-    window.addEventListener('scroll', () => {
-        const show = window.scrollY > 300;
-        fabContainer.style.opacity = show ? '1' : '0';
-        fabContainer.style.pointerEvents = show ? 'all' : 'none';
-        fabContainer.style.transform = show ? 'translateY(0)' : 'translateY(20px)';
-    }, { passive: true });
 
     fabMain.addEventListener('click', () => {
         fabOpen = !fabOpen;
@@ -238,12 +240,11 @@ if (fabContainer && fabMain) {
     });
 }
 
-/* ===== Smooth Page Transitions ===== */
+/* ===== Fast Page Transitions (80ms, down from 185ms) ===== */
 function initPageTransitions() {
-    // Full-page overlay — covers navbar, dropdown, FAB, everything (z:9999)
     const overlay = document.createElement('div');
     overlay.id = 'page-overlay';
-    overlay.style.cssText = 'position:fixed;inset:0;background:#f8fafc;opacity:0;pointer-events:none;z-index:9999;transition:opacity 0.18s ease';
+    overlay.style.cssText = 'position:fixed;inset:0;background:#f8fafc;opacity:0;pointer-events:none;z-index:9999;transition:opacity 0.12s ease';
     document.body.appendChild(overlay);
 
     document.addEventListener('click', (e) => {
@@ -257,11 +258,11 @@ function initPageTransitions() {
         e.preventDefault();
         overlay.style.opacity = '1';
         overlay.style.pointerEvents = 'all';
-        setTimeout(() => { window.location.href = link.href; }, 185);
+        setTimeout(() => { window.location.href = link.href; }, 80);
     });
 }
 
-/* ===== Solutions Dropdown — click toggle (fixes touch/glitch) ===== */
+/* ===== Solutions Dropdown ===== */
 function initSolutionsDropdown() {
     const nav = document.getElementById('solutions-nav');
     const btn = document.getElementById('solutions-btn');
@@ -274,9 +275,6 @@ function initSolutionsDropdown() {
         if (chevron) chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
     });
 
-    // Close on any click that isn't the toggle button itself.
-    // stopPropagation on btn ensures this never fires for button clicks,
-    // so it safely handles both outside-clicks AND link clicks inside the panel.
     document.addEventListener('click', () => {
         nav.classList.remove('is-open');
         if (chevron) chevron.style.transform = '';
@@ -313,8 +311,7 @@ function initMobileMenu() {
 
 /* ===== DOMContentLoaded Initialization ===== */
 document.addEventListener('DOMContentLoaded', () => {
-    // Mark JS as loaded — unlocks CSS transitions (prevents flash on async CSS load)
-    // Must run first, before any transition-triggering init
+    // Mark JS as loaded — unlocks CSS transitions
     requestAnimationFrame(() => {
         requestAnimationFrame(() => {
             document.documentElement.classList.add('js-loaded');

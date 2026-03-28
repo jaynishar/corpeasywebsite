@@ -20,7 +20,7 @@ include 'templates/header.php';
 
 <section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-16 items-start min-h-[calc(100vh-96px)]">
 <div class="order-2 lg:order-1 flex flex-col justify-center reveal">
-<div class="inline-flex items-center space-x-2 mb-6 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-4 py-1.5 backdrop-blur-md w-max">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-4 py-1.5 w-max">
 <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
 <span class="text-[9px] font-black uppercase tracking-[0.4em] text-brand-gold">Lease Your Property</span>
 </div>
@@ -85,7 +85,7 @@ include 'templates/header.php';
 <div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[350px] lg:h-[500px] reveal group border border-white/60">
 <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Premium commercial building for lease in Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1920" height="1080">
 <div class="absolute inset-0 bg-gradient-to-l from-brand-gold/30 via-transparent to-transparent"></div>
-<div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+<div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/90 px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
 <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
 <span class="text-sm font-medium text-slate-900">Premium Property Portfolio</span>
 </div>

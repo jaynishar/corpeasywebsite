@@ -28,7 +28,7 @@ include 'templates/header.php';
 
 <section class="max-w-7xl mx-auto px-6 pt-24 pb-16 reveal relative">
 <div class="text-center mb-16">
-<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5">
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Common Questions</span>
 </div>
 <h1 class="text-5xl font-black text-slate-900 mb-4">Managed Office Space Mumbai — FAQ</h1>

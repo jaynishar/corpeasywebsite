@@ -20,7 +20,7 @@ include 'templates/header.php';
 
 <section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-16 items-start min-h-[calc(100vh-96px)]">
 <div class="order-2 lg:order-1 flex flex-col justify-center">
-<div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 backdrop-blur-md w-max">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 w-max">
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-cyan">Managed Office Space · Mumbai</span>
 </div>
 <h1 class="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter mb-6">Managed Office Space<br><span class="text-gradient-vibrant">in Mumbai.</span></h1>
@@ -56,7 +56,7 @@ include 'templates/header.php';
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[400px] lg:h-[550px] reveal group border border-white/60">
 <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Managed office space Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="550">
 <div class="absolute inset-0 bg-gradient-to-tr from-brand-electric/40 via-transparent to-transparent"></div>
-<div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+<div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 bg-white/90 px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
 <span class="text-sm font-medium text-slate-900">Managed and Ready</span>
 </div>

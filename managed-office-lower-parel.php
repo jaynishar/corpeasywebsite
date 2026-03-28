@@ -27,7 +27,7 @@ include 'templates/header.php';
 
 <section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-16 items-start min-h-[calc(100vh-96px)]">
 <div class="order-2 lg:order-1 flex flex-col justify-center">
-<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md w-max">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 w-max">
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Managed Office Space · Lower Parel</span>
 </div>
 <h1 class="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter mb-6">Managed Office Space<br><span class="text-gradient-vibrant">in Lower Parel.</span></h1>

@@ -1,7 +1,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-white/50 backdrop-blur-xl text-slate-900 pt-24 pb-12 relative overflow-hidden border-t border-white/60">
+    <footer class="bg-white/95 text-slate-900 pt-24 pb-12 relative overflow-hidden border-t border-slate-200/60">
         <div class="glow-blob w-[400px] h-[400px] bg-brand-electric -bottom-48 -right-48 opacity-10"></div>
         <div class="glow-blob w-[300px] h-[300px] bg-brand-blue top-0 -left-24 opacity-10"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -13,7 +13,7 @@
                             <img src="/CORPEASYFOOTER-sm.png" alt="CorpEasy Footer Logo" class="logo-img h-32 lg:h-44 w-auto object-contain object-left" width="220" height="124" loading="lazy">
                         </picture>
                     </div>
-                    <p class="text-slate-600 text-lg font-medium leading-relaxed max-w-sm mb-10">Strategic workspace solutions for startups, SMEs, and global enterprises across Mumbai. Managed offices, coworking spaces, and custom enterprise HQs — all under one roof.</p>
+                    <p class="text-slate-600 text-lg font-medium leading-relaxed max-w-sm mb-10">We help businesses across Mumbai find, set up, and run their office spaces — without the usual headaches. One team, one monthly cost, and a workspace that is ready when you are.</p>
                     <div class="flex space-x-4">
                         <a href="https://www.linkedin.com/company/corpeasy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 bg-white/70 rounded-lg flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://www.instagram.com/corpeasy" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 bg-white/70 rounded-lg flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
@@ -79,7 +79,7 @@
     <!-- Cookie Banner -->
     <div id="cookie-banner"
       class="fixed bottom-0 left-0 right-0 z-[200]
-      bg-white/95 backdrop-blur-xl border-t border-white/60
+      bg-white border-t border-slate-200/60
       shadow-[0_-10px_30px_rgba(0,0,0,0.08)] p-6
       flex flex-col md:flex-row items-center justify-between gap-6
       transition-all duration-500"
@@ -110,6 +110,6 @@
     </div>
 
     <!-- Interactions JS (deferred — non-blocking) -->
-    <script src="/interactions.js?v=20260328" defer></script>
+    <script src="/interactions.js?v=20260328b" defer></script>
 </body>
 </html>

@@ -43,7 +43,7 @@ include 'templates/header.php';
 </form>
 </div>
 </div>
-<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 p-6 sm:p-10 lg:p-12 bg-white/40 backdrop-blur-md rounded-2xl sm:rounded-[2rem] lg:rounded-[3rem] border border-white/60 mb-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 p-6 sm:p-10 lg:p-12 bg-white/90 rounded-2xl sm:rounded-[2rem] lg:rounded-[3rem] border border-white/60 mb-12">
 <h1 class="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-black text-slate-900 mb-6 sm:mb-8">Office Space for Rent<br>in <span class="text-gradient">BKC.</span></h1>
 <p class="text-base sm:text-lg lg:text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto">Looking for <strong>commercial office space for rent in Bandra Kurla Complex</strong>? We work directly with landlords in BKC to find you the right space at the right price.</p>
 </div>

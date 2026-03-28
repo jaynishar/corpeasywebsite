@@ -94,11 +94,11 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-8 lg:py-12 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] sm:h-[400px] lg:h-[600px] reveal group">
-<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Modern workspace in Mumbai - collaborative office design" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" width="1200" height="675" fetchpriority="high">
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Modern workspace in Mumbai - collaborative office design" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105" width="1200" height="675" fetchpriority="high">
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 <div class="absolute bottom-6 sm:bottom-10 left-6 sm:left-10 right-6 sm:right-10">
-<h3 class="text-2xl sm:text-3xl lg:text-5xl font-black text-white mb-2 sm:mb-4 drop-shadow-lg tracking-tight">Where Teams Thrive & <br class="hidden sm:block"/>Businesses Grow.</h3>
-<p class="text-white/90 text-base sm:text-lg lg:text-xl max-w-2xl drop-shadow hidden sm:block">Premium managed office spaces across Mumbai. Your workspace, perfected.</p>
+<h3 class="text-2xl sm:text-3xl lg:text-5xl font-black text-white mb-2 sm:mb-4 drop-shadow-lg tracking-tight">Your team deserves a space <br class="hidden sm:block"/>that actually works.</h3>
+<p class="text-white/90 text-base sm:text-lg lg:text-xl max-w-2xl drop-shadow hidden sm:block">We handle the hard stuff — finding the right property, setting it up, running it — so you can focus on building your business.</p>
 </div>
 </div>
 </section>
@@ -108,17 +108,17 @@ Your details are safe with us. No spam, ever.
 <div class="glass-card p-10 reveal">
 <div class="w-14 h-14 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-8 text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.2)]"><i class="fas fa-search-location text-2xl"></i></div>
 <h4 class="text-xl font-bold mb-4 text-slate-900">We Find the Right Space.</h4>
-<p class="text-slate-600 leading-relaxed">Tell us your team size, preferred Mumbai location, and budget. We identify a suitable commercial property, negotiate the lease, and handle the process. You do not deal with brokers or landlords yourself.</p>
+<p class="text-slate-600 leading-relaxed">Tell us your team size, where in Mumbai you want to be, and what you can spend. We will shortlist properties, negotiate with landlords, and handle the paperwork. You never have to chase a broker.</p>
 </div>
 <div class="glass-card p-10 reveal delay-100">
 <div class="w-14 h-14 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-8 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-tools text-2xl"></i></div>
 <h4 class="text-xl font-bold mb-4 text-slate-900">We Set It Up. You Move In.</h4>
-<p class="text-slate-600 leading-relaxed">Once the space is confirmed, we handle the basic workspace setup. Functional furniture, internet, and a clean professional environment. Your team walks in on Day 1 without coordinating a single vendor.</p>
+<p class="text-slate-600 leading-relaxed">Once we have the space locked in, we get it ready — furniture, internet, everything your team needs on Day 1. No vendor calls, no delays, no headaches. Just walk in and start working.</p>
 </div>
 <div class="glass-card p-10 reveal delay-200">
 <div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-8 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-receipt text-2xl"></i></div>
 <h4 class="text-xl font-bold mb-4 text-slate-900">One Clear Cost. Fixed Lease.</h4>
-<p class="text-slate-600 leading-relaxed">We calculate your all-in per seat monthly cost based on the actual property and setup. You commit to a fixed lease period and know exactly what you pay every month. No hidden charges. No surprises.</p>
+<p class="text-slate-600 leading-relaxed">Before you commit, we share the exact per-seat monthly cost — rent, setup, maintenance, everything included. What you see is what you pay. Every month. No fine print, no surprises down the road.</p>
 </div>
 <div class="glass-card p-10 reveal delay-300">
 <div class="w-14 h-14 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center mb-8 text-brand-rose shadow-[0_0_15px_rgba(244,63,94,0.15)]"><i class="fas fa-tools text-2xl"></i></div>
@@ -129,7 +129,7 @@ Your details are safe with us. No spam, ever.
 </div>
 </div>
 </section>
-<section class="py-12 bg-white/70 border-y border-white/60 overflow-hidden backdrop-blur-sm">
+<section class="py-12 bg-white/90 border-y border-slate-200/40 overflow-hidden">
 <div class="ticker-track">
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-building"></i> Managed Office Space Mumbai</span>
 <span class="text-3xl font-extrabold text-slate-700 mx-16 flex items-center gap-6"><i class="fas fa-search-location"></i> Office Space for Rent BKC</span>
@@ -163,14 +163,14 @@ Your details are safe with us. No spam, ever.
 <div class="w-16 h-16 bg-brand-electric/10 border border-brand-electric/30 rounded-2xl flex items-center justify-center mb-6 text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.2)]"><i class="fas fa-clipboard-list text-2xl"></i></div>
 <p class="text-xs font-semibold uppercase tracking-wide text-brand-electric mb-4">Step 01: You Share Your Requirement</p>
 <h4 class="text-2xl font-bold text-slate-900 mb-4">Tell Us What You Need</h4>
-<p class="text-slate-600 leading-relaxed relative z-10">Share your team size, preferred Mumbai location, and budget. We listen, ask the right questions, and get to work identifying suitable commercial spaces available in your price range.</p>
+<p class="text-slate-600 leading-relaxed relative z-10">Just tell us how big your team is, where in Mumbai you would like to be, and roughly what you can spend. That is genuinely all we need. We will ask the right follow-up questions and start looking right away.</p>
 </div>
 <div class="glass-card p-10 reveal delay-100 relative overflow-hidden">
 <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">02</span>
 <div class="w-16 h-16 bg-brand-cyan/10 border border-brand-cyan/30 rounded-2xl flex items-center justify-center mb-6 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-drafting-compass text-2xl"></i></div>
 <p class="text-xs font-semibold uppercase tracking-wide text-brand-electric mb-4">Step 02: We Source, Negotiate, Set Up</p>
 <h4 class="text-2xl font-bold text-slate-900 mb-4">We Handle the Hard Part</h4>
-<p class="text-slate-600 leading-relaxed relative z-10">We identify a suitable commercial property in your preferred location, negotiate the lease directly with the landlord, and manage the basic workspace setup. Furniture, internet, and the essentials to make the space ready.</p>
+<p class="text-slate-600 leading-relaxed relative z-10">This is where most companies get stuck — chasing brokers, negotiating leases, coordinating fit-outs. We take all of that off your plate. We find the right property, close the deal, and get the space ready so your team can move in.</p>
 </div>
 <div class="glass-card p-10 reveal delay-200 relative overflow-hidden">
 <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">03</span>
@@ -185,13 +185,13 @@ Your details are safe with us. No spam, ever.
 <section class="py-24 relative">
 <div class="max-w-4xl mx-auto px-6">
 <div class="text-center mb-16 reveal">
-<div class="inline-flex items-center space-x-2 mb-6 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-4 py-1.5">
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-gold">Client Testimonial</span>
 </div>
 <h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">Trusted by Industry Leaders.</h2>
 </div>
 <div class="reveal">
-<div class="relative bg-gradient-to-br from-white/80 via-white/60 to-brand-electric/5 backdrop-blur-xl rounded-[3rem] border border-white/60 shadow-[0_30px_80px_rgba(99,102,241,0.08)] p-10 lg:p-16 overflow-hidden">
+<div class="relative bg-gradient-to-br from-white via-white/95 to-brand-electric/5 rounded-[3rem] border border-white/60 shadow-[0_30px_80px_rgba(99,102,241,0.08)] p-10 lg:p-16 overflow-hidden">
 <div class="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"></div>
 <div class="absolute bottom-0 left-0 w-48 h-48 bg-brand-electric/5 rounded-full blur-[60px] translate-y-1/2 -translate-x-1/2"></div>
 <div class="relative z-10">
@@ -233,7 +233,7 @@ Your details are safe with us. No spam, ever.
 <section class="py-24 relative bg-white/40">
 <div class="max-w-7xl mx-auto px-6">
 <div class="mb-16 reveal text-center lg:text-left">
-<div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5">
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-cyan">Mumbai Locations</span>
 </div>
 <h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">We Work Across Mumbai.</h2>
@@ -274,7 +274,7 @@ Your details are safe with us. No spam, ever.
 <section class="py-24 relative bg-white/20">
 <div class="max-w-5xl mx-auto px-6">
 <div class="text-center mb-16 reveal">
-<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5">
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Indicative Pricing</span>
 </div>
 <h2 class="text-5xl font-black text-slate-900 mb-4">What Does It Cost?</h2>
@@ -307,23 +307,23 @@ Your details are safe with us. No spam, ever.
 <div class="max-w-7xl mx-auto px-6 text-center">
 <div class="mb-20 reveal">
 <h2 class="text-6xl text-slate-900 mb-8 font-black leading-tight">Why Companies Come to Us.</h2>
-<p class="text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">Sorting out a commercial office in Mumbai involves more parties and more time than most companies expect. Here is where CorpEasy makes the biggest difference.</p>
+<p class="text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">Getting a commercial office sorted in Mumbai usually takes longer than anyone plans for. Between brokers, landlords, fit-out vendors, and IT providers — it adds up fast. Here is what we do differently.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal delay-100">
 <div class="glass-card p-12 group hover:border-brand-electric/50 transition-all text-left">
 <div class="w-16 h-16 bg-brand-electric/10 rounded-2xl flex items-center justify-center mb-8 text-brand-electric group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-map-marked-alt text-2xl"></i></div>
 <h4 class="text-2xl font-black mb-4 text-slate-900">We Know the Mumbai Market</h4>
-<p class="text-slate-600 leading-relaxed font-medium">Finding the right <strong>commercial office space in Mumbai</strong> takes local knowledge. We work across BKC, Lower Parel, Goregaon, Andheri, and Powai, and we know which properties are worth your time at your budget.</p>
+<p class="text-slate-600 leading-relaxed font-medium">We have walked these buildings ourselves. We know which ones have good lifts, reliable power, and reasonable landlords — and which ones look great online but waste your time. That saves you weeks of visits.</p>
 </div>
 <div class="glass-card p-12 group hover:border-brand-cyan/50 transition-all text-left">
 <div class="w-16 h-16 bg-brand-cyan/10 rounded-2xl flex items-center justify-center mb-8 text-brand-cyan group-hover:bg-brand-cyan group-hover:text-white transition-all duration-500"><i class="fas fa-user-tie text-2xl"></i></div>
 <h4 class="text-2xl font-black mb-4 text-slate-900">One Point of Contact</h4>
-<p class="text-slate-600 leading-relaxed font-medium">Instead of coordinating with a broker, a landlord, a furniture vendor, and an IT company separately, you deal with CorpEasy. We bring together what is needed so the space is ready for your team.</p>
+<p class="text-slate-600 leading-relaxed font-medium">Most companies end up juggling 4-5 different people just to get an office ready. With us, you have one person to call. We coordinate everything behind the scenes — you just get updates and make decisions.</p>
 </div>
 <div class="glass-card p-12 group hover:border-brand-violet/50 transition-all text-left">
 <div class="w-16 h-16 bg-brand-violet/10 rounded-2xl flex items-center justify-center mb-8 text-brand-violet group-hover:bg-brand-violet group-hover:text-white transition-all duration-500"><i class="fas fa-file-invoice-dollar text-2xl"></i></div>
 <h4 class="text-2xl font-black mb-4 text-slate-900">Clear, Predictable Costs</h4>
-<p class="text-slate-600 leading-relaxed font-medium">We share the per seat monthly cost based on the actual property and setup, before you commit to anything. No surprises and no ambiguous pricing. You know what you pay on a fixed lease from Day 1.</p>
+<p class="text-slate-600 leading-relaxed font-medium">Before you sign anything, you will see the exact monthly cost per seat — including rent, setup, and maintenance. No vague "starting from" pricing. What we quote is what you pay, every month, for the full lease term.</p>
 </div>
 </div>
 </div>
@@ -331,7 +331,7 @@ Your details are safe with us. No spam, ever.
 <section class="py-24 relative bg-white/40">
 <div class="max-w-5xl mx-auto px-6">
 <div class="text-center mb-16 reveal">
-<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5 backdrop-blur-md">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5">
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Sorting It Yourself vs Working With CorpEasy</span>
 </div>
 <h2 class="text-4xl font-black text-slate-900 mb-4">A Straightforward Comparison.</h2>
@@ -360,9 +360,9 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-12 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[350px] lg:h-[500px] reveal group border border-white/60">
-<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Commercial buildings in Mumbai BKC financial district" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1920" height="1080">
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Commercial buildings in Mumbai BKC financial district" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700" loading="lazy" width="1920" height="1080">
 <div class="absolute inset-0 bg-gradient-to-tr from-brand-cyan/30 via-transparent to-transparent"></div>
-<div class="absolute bottom-6 left-6 lg:bottom-10 lg:left-10 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+<div class="absolute bottom-6 left-6 lg:bottom-10 lg:left-10 bg-white/95 px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
 <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
 <span class="text-sm font-medium text-slate-900">Mumbai Commercial Real Estate</span>
 </div>

@@ -26,7 +26,7 @@ include 'templates/header.php';
 
 <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-20 items-start reveal relative">
 <div class="lg:col-span-5 relative z-10">
-<div class="inline-flex items-center space-x-2 mb-6 sm:mb-10 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-3 sm:px-4 py-1.5 backdrop-blur-md">
+<div class="inline-flex items-center space-x-2 mb-6 sm:mb-10 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-3 sm:px-4 py-1.5">
 <span class="w-2 h-2 rounded-full bg-brand-electric animate-pulse"></span>
 <span class="text-[10px] sm:text-xs font-semibold text-brand-electric uppercase tracking-[0.2em] sm:tracking-[0.4em]">Get in Touch</span>
 </div>

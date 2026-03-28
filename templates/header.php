@@ -32,7 +32,7 @@ $page_lcp_image = $page_lcp_image ?? '';
         html{max-width:100vw;overflow-x:hidden;scroll-behavior:smooth}
         body{margin:0;padding:0;font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;background:#f8fafc;color:#0f172a;overflow-x:hidden;-webkit-font-smoothing:antialiased}
         /* Navbar */
-        #navbar{position:fixed!important;top:0;left:0;right:0;width:100%;z-index:100;background:rgba(255,255,255,0.85);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,0.8);box-shadow:0 2px 20px rgba(0,0,0,0.05);height:4rem;display:flex;align-items:center;transition:all 0.5s}
+        #navbar{position:fixed!important;top:0;left:0;right:0;width:100%;z-index:100;background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(226,232,240,0.6);box-shadow:0 1px 8px rgba(0,0,0,0.04);height:4rem;display:flex;align-items:center;transition:box-shadow 0.3s}
         @media(min-width:768px){#navbar{height:5rem}}
         @media(min-width:1024px){#navbar{height:7rem}}
         /* Main offset */
@@ -47,7 +47,7 @@ $page_lcp_image = $page_lcp_image ?? '';
         h1,h2,h3{letter-spacing:-.03em;line-height:1.1;font-weight:800;word-break:break-word;overflow-wrap:break-word}
         @media(max-width:640px){h1{font-size:clamp(2rem,10vw,3rem)!important;line-height:1.1!important}h2{font-size:clamp(1.75rem,8vw,2.5rem)!important}}
         /* Glass card (hero form visible immediately) */
-        .glass-card{background:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,1);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:2.5rem;box-shadow:0 10px 30px -10px rgba(15,23,42,.05),inset 0 0 0 1px rgba(255,255,255,.5)}
+        .glass-card{background:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,1);border-radius:2.5rem;box-shadow:0 10px 30px -10px rgba(15,23,42,.05),inset 0 0 0 1px rgba(255,255,255,.5)}
         /* Input */
         .input-premium{background:rgba(255,255,255,0.8);border:1px solid rgba(203,213,225,0.8);padding:1.25rem 1.5rem;border-radius:1rem;width:100%;color:#0f172a;font-weight:500;font-size:1rem;transition:all .3s ease}
         @media(max-width:768px){.input-premium{font-size:16px;padding:1rem 1.25rem}}
@@ -267,11 +267,11 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link rel="preload" as="image" href="<?php echo htmlspecialchars($page_lcp_image); ?>" fetchpriority="high">
     <?php endif; ?>
 
-    <!-- Full CSS loaded non-blocking (critical CSS inlined above handles FCP) -->
-    <link rel="stylesheet" href="/style.css?v=20260327b" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="/style.css?v=20260327b"></noscript>
-    <link rel="stylesheet" href="/tailwind.min.css?v=20260328" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="/tailwind.min.css?v=20260328"></noscript>
+    <!-- Tailwind = render-blocking (controls all layout — async causes FOUC) -->
+    <link rel="stylesheet" href="/tailwind.min.css?v=20260328b">
+    <!-- Style.css = non-blocking (decorative animations, card styles, etc.) -->
+    <link rel="stylesheet" href="/style.css?v=20260328" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/style.css?v=20260328"></noscript>
 
     <!-- Font (non-blocking) -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -349,7 +349,7 @@ $page_lcp_image = $page_lcp_image ?? '';
     </nav>
 
     <!-- MOBILE MENU -->
-    <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-xl z-[90] hidden flex-col overflow-y-auto" style="padding-top: env(safe-area-inset-top, 0);">
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[90] hidden flex-col overflow-y-auto" style="padding-top: env(safe-area-inset-top, 0);">
         <div class="flex justify-between items-center px-6 py-4">
             <picture>
                 <source srcset="/CORPEASYHEADER.webp" type="image/webp">
