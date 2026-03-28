@@ -94,9 +94,18 @@ if (!$post) {
 
 // Dynamic SEO
 $page_id = 'blog-post';
-$page_title = htmlspecialchars($post['title']) . ' | CorpEasy Blog';
+// Cap <title> at ~65 chars for SERP display — full title stays in H1
+$titleSuffix = ' | CorpEasy';
+$maxPostTitle = 65 - strlen($titleSuffix);
+$titleText = htmlspecialchars(rtrim($post['title'], '.'));
+if (mb_strlen($titleText) > $maxPostTitle) {
+    $titleText = mb_substr($titleText, 0, $maxPostTitle);
+    $titleText = preg_replace('/\s+\S*$/', '', $titleText);
+}
+$page_title = $titleText . $titleSuffix;
 $page_description = substr(strip_tags($post['content']), 0, 155);
 $page_canonical = 'https://www.corpeasy.in/blog/' . htmlspecialchars($slug);
+$page_lcp_image = $post['image']; // Preload hero image for LCP
 
 // Article schema
 $wordCount = str_word_count(strip_tags($post['content']));
@@ -140,7 +149,7 @@ include 'templates/header.php';
         </div>
     </div>
     <div class="rounded-[3rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] h-[400px] lg:h-[550px] mb-16 border border-white/80">
-        <img loading="lazy" src="<?php echo htmlspecialchars($post['image']); ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" class="w-full h-full object-cover">
+        <img fetchpriority="high" src="<?php echo htmlspecialchars($post['image']); ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" class="w-full h-full object-cover">
     </div>
     <div class="prose-content"><?php echo $post['content']; ?></div>
     <div class="mt-24 pt-16 border-t border-white/80 flex flex-col md:flex-row justify-between items-center gap-8">

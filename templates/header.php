@@ -73,6 +73,10 @@ $page_lcp_image = $page_lcp_image ?? '';
         .logo-img{height:2.5rem!important;width:auto!important}
         @media(min-width:640px){.logo-img{height:3.5rem!important;width:auto!important}}
         @media(min-width:1024px){.logo-img{height:5rem!important;width:auto!important}}
+        /* Prevent CLS: ensure positioning classes work before Tailwind loads */
+        .glow-blob,.orb-drift{position:absolute;pointer-events:none;overflow:hidden}
+        .fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}
+        .inset-0{inset:0}.pointer-events-none{pointer-events:none}.overflow-hidden{overflow:hidden}.z-0{z-index:0}
         /* Hide JS-controlled elements before Tailwind loads — prevents flash */
         /* transition:none!important blocks any CSS transition firing during async CSS load */
         #solutions-panel{opacity:0;visibility:hidden;transition:none!important}
@@ -246,6 +250,9 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://images.unsplash.com">
+
+    <!-- Preload critical font (weight 800 for H1 LCP) — cuts 1-2s off LCP for text-based pages -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" onload="this.rel='stylesheet'">
 
     <?php if (!empty($page_lcp_image)): ?>
     <!-- LCP image preload — tells browser to fetch hero image immediately -->

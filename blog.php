@@ -128,7 +128,7 @@ include 'templates/header.php';
 <a href="/blog/<?php echo htmlspecialchars($featuredKey); ?>" class="group cursor-pointer mb-24 reveal delay-100 block">
 <div class="glass-card p-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 <div class="rounded-[2rem] overflow-hidden h-[450px]">
-<img loading="lazy" src="<?php echo htmlspecialchars($featured['image']); ?>" alt="<?php echo htmlspecialchars($featured['title']); ?>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90">
+<img fetchpriority="high" src="<?php echo htmlspecialchars($featured['image']); ?>" alt="<?php echo htmlspecialchars($featured['title']); ?>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90">
 </div>
 <div class="p-6 lg:p-10">
 <div class="flex items-center gap-4 mb-6">
