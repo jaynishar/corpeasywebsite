@@ -9,8 +9,8 @@
                 <div class="lg:col-span-5">
                     <div class="mb-8">
                         <picture>
-                            <source srcset="/CORPEASYFOOTER.webp" type="image/webp">
-                            <img src="/CORPEASYFOOTER.png" alt="CorpEasy Footer Logo" class="logo-img h-32 lg:h-44 w-auto object-contain object-left" width="220" height="160" loading="lazy">
+                            <source srcset="/CORPEASYFOOTER-sm.webp" type="image/webp">
+                            <img src="/CORPEASYFOOTER-sm.png" alt="CorpEasy Footer Logo" class="logo-img h-32 lg:h-44 w-auto object-contain object-left" width="220" height="124" loading="lazy">
                         </picture>
                     </div>
                     <p class="text-slate-600 text-lg font-medium leading-relaxed max-w-sm mb-10">Strategic workspace solutions for startups, SMEs, and global enterprises across Mumbai. Managed offices, coworking spaces, and custom enterprise HQs — all under one roof.</p>

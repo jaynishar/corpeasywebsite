@@ -36,15 +36,23 @@ include 'templates/header.php';
 <div class="reveal order-2 lg:order-1">
 <div class="glow-blob w-96 h-96 bg-brand-electric -top-20 -left-20 opacity-20"></div>
 <div class="mb-4 lg:mb-6">
-<span class="text-xs sm:text-sm text-slate-500 font-medium">Managed Office Space in Mumbai</span>
+<div class="inline-flex items-center gap-2 bg-brand-electric/8 border border-brand-electric/20 rounded-full px-4 py-1.5">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+<span class="text-xs font-semibold text-brand-electric">Trusted by First Abu Dhabi Bank &amp; 50+ businesses</span>
+</div>
 </div>
 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 lg:mb-6 leading-tight">Managed Office Space<br><span id="hero-word" class="text-brand-electric">in Mumbai</span></h1>
-<p class="text-base lg:text-lg text-slate-600 max-w-lg mb-6 lg:mb-8 leading-relaxed">CorpEasy helps businesses find, set up, and manage office spaces across Mumbai. Get a clear per-seat monthly cost with one point of contact.</p>
+<p class="text-base lg:text-lg text-slate-600 max-w-lg mb-6 lg:mb-8 leading-relaxed">We find the space, negotiate the lease, set it up, and manage it — so your team moves in ready to work on Day 1. One contact. Clear per-seat cost from <strong class="text-slate-800">₹10,000/seat/month</strong>.</p>
 <div class="hero-buttons flex flex-col sm:flex-row gap-3 mb-6">
 <a href="/contact" class="bg-brand-electric text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all w-full sm:w-auto text-center">Get a Free Consultation</a>
 <a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20looking%20for%20office%20space%20in%20Mumbai." target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-green-600 transition-all flex items-center justify-center gap-2 w-full sm:w-auto">
 <i class="fab fa-whatsapp"></i> WhatsApp
 </a>
+</div>
+<div class="flex flex-wrap gap-x-6 gap-y-2 mb-4 text-xs font-semibold text-slate-500">
+<span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-green-500"></i> BKC · Lower Parel · Goregaon · Andheri</span>
+<span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-green-500"></i> Response within 24 hours</span>
+<span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-green-500"></i> No broker fees</span>
 </div>
 <a href="/managed-office-space-mumbai" class="text-slate-600 text-sm font-medium flex items-center gap-2 hover:text-brand-electric transition-colors">
 Learn how it works <i class="fas fa-arrow-right text-sm"></i>
@@ -56,7 +64,7 @@ Learn how it works <i class="fas fa-arrow-right text-sm"></i>
 <i class="fas fa-bolt text-brand-electric"></i>
 Tell Us What You Need
 </h3>
-<p class="text-sm text-slate-600 mb-4 lg:mb-6">Share your requirement. We will come back within 24 hours with a clear proposal. No obligation.</p>
+<p class="text-sm text-slate-600 mb-4 lg:mb-6">Share your requirement. We respond within <strong>24 hours</strong> with a clear proposal — no broker jargon, no hidden charges. No obligation.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>

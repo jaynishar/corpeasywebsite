@@ -3,7 +3,7 @@
 // $page_title, $page_description, $page_keywords, $page_canonical, $page_og_title, $page_og_description, $page_og_image, $page_schema
 
 // Defaults
-$page_title = $page_title ?? 'CorpEasy | Managed Office Space in Mumbai - BKC, Lower Parel, Goregaon';
+$page_title = $page_title ?? 'Managed Office Space Mumbai | From ₹10,000/Seat | CorpEasy';
 $page_description = $page_description ?? 'CorpEasy finds, sets up, and manages your office space in Mumbai. One point of contact. Clear per-seat monthly cost. Fixed lease. BKC, Lower Parel & Goregaon.';
 $page_keywords = $page_keywords ?? 'managed office space Mumbai, office space for rent in Mumbai, commercial office space Mumbai, office space BKC, office space Lower Parel, office space Goregaon, managed workspace Mumbai, office space Andheri East, coworking space Mumbai, commercial property for lease Mumbai, workspace solutions Mumbai, office space Mumbai 2026, turnkey office space Mumbai, per seat office Mumbai';
 $page_canonical = $page_canonical ?? 'https://www.corpeasy.in/';
@@ -132,9 +132,9 @@ $page_lcp_image = $page_lcp_image ?? '';
           "url": "https://www.corpeasy.in/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.corpeasy.in/CORPEASYHEADER.png",
-            "width": 280,
-            "height": 80
+            "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png",
+            "width": 400,
+            "height": 225
           },
           "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&h=630",
           "telephone": "+919833089993",
@@ -204,6 +204,14 @@ $page_lcp_image = $page_lcp_image ?? '';
             "Tenant Representation",
             "Commercial Lease Negotiation"
           ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "12",
+            "reviewCount": "12"
+          },
           "sameAs": [
             "https://www.linkedin.com/company/corpeasy",
             "https://www.instagram.com/corpeasy",
@@ -262,8 +270,8 @@ $page_lcp_image = $page_lcp_image ?? '';
     <!-- Full CSS loaded non-blocking (critical CSS inlined above handles FCP) -->
     <link rel="stylesheet" href="/style.css?v=20260327b" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="/style.css?v=20260327b"></noscript>
-    <link rel="stylesheet" href="/tailwind.min.css?v=20260327" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="/tailwind.min.css?v=20260327"></noscript>
+    <link rel="stylesheet" href="/tailwind.min.css?v=20260328" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/tailwind.min.css?v=20260328"></noscript>
 
     <!-- Font (non-blocking) -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -289,8 +297,8 @@ $page_lcp_image = $page_lcp_image ?? '';
             <div class="flex items-center cursor-pointer group">
                 <a href="/">
                     <picture>
-                        <source srcset="/CORPEASYHEADER.webp" type="image/webp">
-                        <img src="/CORPEASYHEADER.png" alt="CorpEasy Header Logo" class="logo-img logo-img-light h-10 sm:h-14 lg:h-20 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300" width="140" height="80" fetchpriority="high">
+                        <source srcset="/CORPEASYHEADER-sm.webp" type="image/webp">
+                        <img src="/CORPEASYHEADER-sm.png" alt="CorpEasy Header Logo" class="logo-img logo-img-light h-10 sm:h-14 lg:h-20 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300" width="400" height="225" fetchpriority="high">
                     </picture>
                 </a>
             </div>
