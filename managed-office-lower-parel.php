@@ -156,7 +156,7 @@ include 'templates/header.php';
 <section class="py-16 bg-white/40">
 <div class="max-w-7xl mx-auto px-6">
 <h2 class="text-3xl font-black text-slate-900 tracking-tighter mb-8 text-center">Explore Other Locations and Services</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <a href="/managed-office-space-mumbai" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-city text-lg"></i></div>
 <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space Mumbai</h4>
@@ -171,6 +171,11 @@ include 'templates/header.php';
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-4 group-hover:bg-brand-violet group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
 <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Goregaon</h4>
 <p class="text-sm text-slate-600">Best value Grade A offices near NESCO IT Park from ₹10,000/seat. Ideal for IT and BPO teams.</p>
+</a>
+<a href="/managed-office-andheri" class="glass-card p-8 hover:border-brand-emerald/30 transition-all group">
+<div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">Managed Office in Andheri</h4>
+<p class="text-sm text-slate-600">Airport-adjacent offices with metro connectivity from ₹12,000/seat. Ideal for IT and traveling teams.</p>
 </a>
 </div>
 <div class="text-center mt-8">

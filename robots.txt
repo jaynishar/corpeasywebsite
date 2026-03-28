@@ -10,4 +10,29 @@ Disallow: /db_setup.sql
 Disallow: /blog_sql/
 Disallow: /blog_posts_insert.sql
 
+# AI Web Crawlers — allow content indexing for AI-generated answers
+User-agent: GPTBot
+Allow: /
+Disallow: /admin.php
+Disallow: /submit.php
+Disallow: /db_config.php
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Googlebot-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://www.corpeasy.in/sitemap.xml

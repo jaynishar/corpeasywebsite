@@ -1,11 +1,27 @@
 <?php
 $page_id = 'home';
-$page_title = 'CorpEasy | Managed Office Space in Mumbai - BKC, Lower Parel, Goregaon';
+$page_title = 'Managed Office Space Mumbai | From ₹10,000/Seat | CorpEasy';
 $page_description = 'CorpEasy finds, sets up & manages your office space in Mumbai from ₹10,000/seat/month. One contact. BKC, Lower Parel, Goregaon & Andheri.';
 $page_keywords = 'managed office space Mumbai, office space for rent Mumbai, commercial office space Mumbai, office space BKC, office space Lower Parel, office space Goregaon, managed workspace Mumbai, office space Andheri East, per seat office Mumbai, workspace solutions Mumbai, turnkey office Mumbai, office space Mumbai 2026, office on rent Mumbai, commercial property Mumbai';
 $page_canonical = 'https://www.corpeasy.in/';
 $page_lcp_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp';
-$page_schema = '';
+$page_schema = '{
+  "@type": "Review",
+  "itemReviewed": {"@id": "https://www.corpeasy.in/#organization"},
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": 5,
+    "bestRating": 5
+  },
+  "reviewBody": "CorpEasy has been associated with First Abu Dhabi Bank for providing facility management support services. Their team has demonstrated professionalism, reliability, and a strong commitment to delivering quality services. They have been consistently responsive, well coordinated, and have maintained strong operational standards. They adhere strictly to commitments, timelines, and deliverables, and provide cost effective solutions without compromising on quality.",
+  "author": {
+    "@type": "Person",
+    "name": "Bhupinder Gujral",
+    "jobTitle": "Administration Head",
+    "worksFor": {"@type": "Organization", "name": "First Abu Dhabi Bank"}
+  },
+  "datePublished": "2025-01-01"
+}';
 
 include 'templates/header.php';
 ?>

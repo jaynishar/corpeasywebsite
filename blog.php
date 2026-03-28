@@ -1,12 +1,4 @@
 <?php
-$page_id = 'blog';
-$page_title = 'Commercial Real Estate Insights Mumbai | CorpEasy Blog';
-$page_description = 'Practical articles on office space in Mumbai, commercial real estate, and workspace decisions. Written for business owners and operations teams.';
-$page_canonical = 'https://www.corpeasy.in/blog';
-$page_og_image = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
-
-include 'templates/header.php';
-
 // Category color mapping
 function getCategoryColor($category) {
     $colors = [
@@ -99,6 +91,33 @@ $postKeys = array_keys($posts);
 $featuredKey = $postKeys[0] ?? null;
 $featured = $featuredKey ? $posts[$featuredKey] : null;
 $gridPosts = array_slice($posts, 1, null, true);
+
+// Build ItemList schema for blog post collection
+$itemListElements = [];
+$pos = 1;
+foreach ($posts as $postSlug => $p) {
+    $itemListElements[] = [
+        '@type' => 'ListItem',
+        'position' => $pos++,
+        'url' => 'https://www.corpeasy.in/blog/' . $postSlug,
+        'name' => $p['title']
+    ];
+}
+
+$page_id = 'blog';
+$page_title = 'Commercial Real Estate Insights Mumbai | CorpEasy Blog';
+$page_description = 'Practical articles on office space in Mumbai, commercial real estate, and workspace decisions. Written for business owners and operations teams.';
+$page_canonical = 'https://www.corpeasy.in/blog';
+$page_og_image = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
+$page_schema = json_encode([
+    '@type' => 'ItemList',
+    'name' => 'CorpEasy Blog — Mumbai Office Space Insights',
+    'description' => 'Practical articles on office space in Mumbai, commercial real estate, and workspace decisions.',
+    'url' => 'https://www.corpeasy.in/blog',
+    'itemListElement' => $itemListElements
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+include 'templates/header.php';
 ?>
 
 <section class="max-w-7xl mx-auto px-6 py-24 reveal">

@@ -1,6 +1,6 @@
 <?php
 $page_id = 'managed-goregaon';
-$page_title = 'Managed Office Space in Goregaon Mumbai | From ₹10,000/Seat | CorpEasy';
+$page_title = 'Managed Office Goregaon Mumbai | From ₹10,000/Seat | CorpEasy';
 $page_description = 'Managed office space in Goregaon Mumbai from ₹10,000/seat/month. NESCO IT Park, Western Express Highway. Grade A offices at best-value pricing.';
 $page_keywords = 'managed office space Goregaon, office space Goregaon Mumbai, serviced office Goregaon, NESCO IT Park office space, cheap managed office Mumbai, affordable office space Goregaon, managed office Goregaon East, office space Western Express Highway Mumbai';
 $page_canonical = 'https://www.corpeasy.in/managed-office-goregaon';
@@ -156,20 +156,25 @@ include 'templates/header.php';
 <section class="py-16 bg-white/40">
 <div class="max-w-7xl mx-auto px-6">
 <h2 class="text-3xl font-black text-slate-900 tracking-tighter mb-8 text-center">Explore Other Locations and Services</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <a href="/managed-office-space-mumbai" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-city text-lg"></i></div>
 <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space Mumbai</h4>
 <p class="text-sm text-slate-600">See all managed office locations across Mumbai including BKC, Lower Parel, Andheri, and more.</p>
 </a>
-<a href="/managed-office-andheri" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
+<a href="/managed-office-bkc" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Managed Office in Andheri</h4>
+<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Managed Office in BKC</h4>
+<p class="text-sm text-slate-600">Mumbai's financial nerve center. Premium Grade A offices from ₹18,000/seat for finance and consulting firms.</p>
+</a>
+<a href="/managed-office-andheri" class="glass-card p-8 hover:border-brand-violet/30 transition-all group">
+<div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-4 group-hover:bg-brand-violet group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Andheri</h4>
 <p class="text-sm text-slate-600">Airport-adjacent offices with metro connectivity from ₹12,000/seat. Ideal for IT and traveling teams.</p>
 </a>
-<a href="/managed-office-lower-parel" class="glass-card p-8 hover:border-brand-violet/30 transition-all group">
-<div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-4 group-hover:bg-brand-violet group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Lower Parel</h4>
+<a href="/managed-office-lower-parel" class="glass-card p-8 hover:border-brand-emerald/30 transition-all group">
+<div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">Managed Office in Lower Parel</h4>
 <p class="text-sm text-slate-600">Mumbai's creative and media hub. Managed offices from ₹14,000/seat near Marathon Futurex.</p>
 </a>
 </div>

@@ -108,20 +108,28 @@ $page_description = substr(strip_tags($post['content']), 0, 155);
 $page_canonical = 'https://www.corpeasy.in/blog/' . htmlspecialchars($slug);
 
 // Article schema
+$wordCount = str_word_count(strip_tags($post['content']));
+$datePublished = $post['published_at'] ?? '2026-03-01';
 $page_schema = json_encode([
-    '@type' => 'Article',
+    '@type' => 'BlogPosting',
     'headline' => $post['title'],
-    'datePublished' => $post['published_at'] ?? '2026-03-01',
+    'description' => substr(strip_tags($post['content']), 0, 160),
+    'datePublished' => $datePublished,
+    'dateModified' => $datePublished,
+    'wordCount' => $wordCount > 0 ? $wordCount : null,
     'author' => [
         '@type' => 'Organization',
+        '@id' => 'https://www.corpeasy.in/#organization',
         'name' => 'CorpEasy'
     ],
     'publisher' => [
         '@id' => 'https://www.corpeasy.in/#organization'
     ],
     'image' => $post['image'],
-    'url' => 'https://www.corpeasy.in/blog/' . $slug
-], JSON_UNESCAPED_SLASHES);
+    'url' => 'https://www.corpeasy.in/blog/' . $slug,
+    'mainEntityOfPage' => 'https://www.corpeasy.in/blog/' . $slug,
+    'inLanguage' => 'en-IN'
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 include 'templates/header.php';
 ?>
