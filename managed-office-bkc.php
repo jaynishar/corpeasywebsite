@@ -12,14 +12,6 @@ $page_schema = '{
   "description": "Fully managed office spaces in Bandra Kurla Complex, Mumbai. Property search, workspace setup, and ongoing management.",
   "areaServed": {"@type": "Place", "name": "BKC, Bandra Kurla Complex, Mumbai"},
   "serviceType": "Managed Office Space"
-},
-{
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much does a managed office cost in BKC?", "acceptedAnswer": {"@type": "Answer", "text": "Per-seat costs in BKC range from ₹18,000 to ₹35,000/month depending on the building grade and floor. This includes rent, furniture, internet, and maintenance."}},
-    {"@type": "Question", "name": "What is the minimum team size for a managed office in BKC?", "acceptedAnswer": {"@type": "Answer", "text": "We work with teams starting from 10 seats in BKC. Given the premium location, our sweet spot is 15-80 seats."}},
-    {"@type": "Question", "name": "Which buildings in BKC does CorpEasy operate in?", "acceptedAnswer": {"@type": "Answer", "text": "We source spaces across BKC including buildings near Platina, One BKC, Trade World, and surrounding commercial complexes. The specific building depends on your requirements and availability."}}
-  ]
 }';
 
 include 'templates/header.php';

@@ -94,15 +94,8 @@ if (!$post) {
 
 // Dynamic SEO
 $page_id = 'blog-post';
-// Cap <title> at ~65 chars for SERP display — full title stays in H1
-$titleSuffix = ' | CorpEasy';
-$maxPostTitle = 65 - strlen($titleSuffix);
-$titleText = htmlspecialchars(rtrim($post['title'], '.'));
-if (mb_strlen($titleText) > $maxPostTitle) {
-    $titleText = mb_substr($titleText, 0, $maxPostTitle);
-    $titleText = preg_replace('/\s+\S*$/', '', $titleText);
-}
-$page_title = $titleText . $titleSuffix;
+// Use full title — Google handles display truncation; cutting keywords hurts SEO
+$page_title = htmlspecialchars(rtrim($post['title'], '.')) . ' | CorpEasy';
 $page_description = substr(strip_tags($post['content']), 0, 155);
 $page_canonical = 'https://www.corpeasy.in/blog/' . htmlspecialchars($slug);
 $page_lcp_image = $post['image']; // Preload hero image for LCP

@@ -12,14 +12,6 @@ $page_schema = '{
   "description": "Affordable managed office spaces in Goregaon, Mumbai. Property search, workspace setup, and ongoing management near NESCO IT Park and Western Express Highway.",
   "areaServed": {"@type": "Place", "name": "Goregaon, Mumbai"},
   "serviceType": "Managed Office Space"
-},
-{
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Why choose Goregaon for a managed office?", "acceptedAnswer": {"@type": "Answer", "text": "Goregaon offers Grade A office space at significantly lower per-seat costs than BKC or Lower Parel. With excellent connectivity via Western Express Highway and Goregaon railway station, plus commercial hubs like NESCO IT Park and Oberoi Commerz, it delivers strong value for IT companies, BPOs, and mid-size enterprises."}},
-    {"@type": "Question", "name": "What is the per-seat cost for a managed office in Goregaon?", "acceptedAnswer": {"@type": "Answer", "text": "Per-seat costs in Goregaon range from ₹10,000 to ₹18,000/month. This all-inclusive price covers rent, furniture, internet, electricity, and maintenance. It is one of the most affordable managed office markets in Mumbai for Grade A space."}},
-    {"@type": "Question", "name": "Is Goregaon well-connected for office commutes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Goregaon is on the Western Railway line with frequent local trains. The Western Express Highway runs through the area, and it is well-connected to the airport (20-25 minutes). The upcoming metro lines will further improve connectivity."}}
-  ]
 }';
 
 include 'templates/header.php';

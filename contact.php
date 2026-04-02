@@ -66,8 +66,8 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
 <label class="sr-only" for="email">Email Address</label>
 <input id="email" type="email" name="email" placeholder="Email Address" class="input-premium" required autocomplete="email">
-<label class="sr-only" for="phone">Phone Number</label>
-<input id="phone" type="tel" name="phone" placeholder="Phone Number" class="input-premium" required autocomplete="tel">
+<label class="sr-only" for="phone">Phone / WhatsApp</label>
+<input id="phone" type="tel" name="phone" placeholder="Phone / WhatsApp (optional)" class="input-premium" autocomplete="tel">
 </div>
 <label class="sr-only" for="requirement">What can we help you with?</label>
 <select id="requirement" name="requirement" class="input-premium" required>
@@ -78,9 +78,18 @@ include 'templates/header.php';
 <option>I need facility management for my office</option>
 <option>General enquiry</option>
 </select>
+<label class="sr-only" for="team_size">Team Size</label>
+<select id="team_size" name="team_size" class="input-premium">
+<option value="">Team size (optional)</option>
+<option>1–10 seats</option>
+<option>11–25 seats</option>
+<option>26–50 seats</option>
+<option>51–100 seats</option>
+<option>100+ seats</option>
+</select>
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-<button type="submit" class="w-full bg-brand-electric text-white py-4 sm:py-6 rounded-lg font-bold sm:font-medium text-sm sm:text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-[1.02] mt-4 sm:mt-6">Send My Enquiry</button>
-<p class="text-[10px] sm:text-xs text-slate-500 text-center">We respond to every enquiry within 24 hours (Mon to Sat, 9 AM to 7 PM IST).</p>
+<p class="text-[10px] sm:text-xs text-slate-500 text-center flex items-center justify-center gap-1.5"><i class="fas fa-clock text-brand-electric"></i> We respond within 24 hours — Mon to Sat, 9 AM to 7 PM IST.</p>
+<button type="submit" class="w-full bg-brand-electric text-white py-4 sm:py-6 rounded-lg font-bold sm:font-medium text-sm sm:text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-[1.02]">Get Free Consultation</button>
 </form>
 </div>
 </section>

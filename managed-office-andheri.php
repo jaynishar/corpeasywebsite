@@ -12,14 +12,6 @@ $page_schema = '{
   "description": "Fully managed office spaces in Andheri East, Mumbai. Property search, workspace setup, and ongoing management with airport proximity and metro connectivity.",
   "areaServed": {"@type": "Place", "name": "Andheri, Mumbai"},
   "serviceType": "Managed Office Space"
-},
-{
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much does a managed office in Andheri cost?", "acceptedAnswer": {"@type": "Answer", "text": "Per-seat costs in Andheri range from ₹12,000 to ₹22,000/month depending on the building, floor, and team size. This all-inclusive price covers rent, furniture, internet, electricity, and maintenance."}},
-    {"@type": "Question", "name": "How far is the managed office from the airport?", "acceptedAnswer": {"@type": "Answer", "text": "Most commercial buildings in Andheri East are 10-15 minutes from Mumbai's domestic airport and 20-25 minutes from the international terminal. This makes Andheri the best location in Mumbai for teams that travel frequently."}},
-    {"@type": "Question", "name": "Is Andheri East or West better for offices?", "acceptedAnswer": {"@type": "Answer", "text": "Andheri East is the established commercial hub with MIDC, Chakala junction, and most Grade A office buildings. Andheri West is more residential and retail-oriented. For managed offices, Andheri East offers better options, more commercial inventory, and direct metro connectivity."}}
-  ]
 }';
 
 include 'templates/header.php';

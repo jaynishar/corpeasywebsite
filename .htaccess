@@ -98,3 +98,9 @@ ErrorDocument 404 /404.php
     Order Allow,Deny
     Deny from all
 </FilesMatch>
+
+# ── Block direct access to markdown/docs ──────────────────────
+<FilesMatch "\.md$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

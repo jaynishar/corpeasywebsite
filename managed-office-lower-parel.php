@@ -12,14 +12,6 @@ $page_schema = '{
   "description": "Fully managed office spaces in Lower Parel, Mumbai. Property search, workspace setup, and ongoing management near Marathon Futurex and Peninsula Business Park.",
   "areaServed": {"@type": "Place", "name": "Lower Parel, Mumbai"},
   "serviceType": "Managed Office Space"
-},
-{
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much does managed office cost in Lower Parel?", "acceptedAnswer": {"@type": "Answer", "text": "Per-seat costs in Lower Parel range from ₹14,000 to ₹28,000/month depending on the building, floor, and team size. This includes rent, furniture, internet, electricity, and maintenance."}},
-    {"@type": "Question", "name": "How far is Lower Parel from the railway station?", "acceptedAnswer": {"@type": "Answer", "text": "Most commercial buildings in Lower Parel are within a 5-10 minute walk from Lower Parel railway station on the Western Line. This makes it one of the best-connected office districts in Mumbai."}},
-    {"@type": "Question", "name": "What size teams work from Lower Parel managed offices?", "acceptedAnswer": {"@type": "Answer", "text": "We work with teams from 10 to 100+ seats in Lower Parel. The area has a wide range of building options, so we can accommodate startups as well as mid-size companies scaling their operations."}}
-  ]
 }';
 
 include 'templates/header.php';

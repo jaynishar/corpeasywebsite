@@ -11,14 +11,6 @@ $page_schema = '{
   "description": "Expert tenant representation for finding office space for rent in Bandra Kurla Complex, Mumbai.",
   "areaServed": {"@type": "Place", "name": "BKC, Mumbai"},
   "serviceType": "Commercial Property Search"
-},
-{
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "What is the average office rent in BKC?", "acceptedAnswer": {"@type": "Answer", "text": "Office rent in BKC ranges from ₹250 to ₹380 per sq ft per month depending on the building grade, floor, and furnishing status. Premium towers like One BKC and Maker Maxity command the higher end, while older buildings near the Connector road start around ₹250."}},
-    {"@type": "Question", "name": "Do you charge tenants for finding office space?", "acceptedAnswer": {"@type": "Answer", "text": "No. CorpEasy is a tenant representation service. Our fee is paid by the landlord as part of the transaction. You pay nothing extra for our search, negotiation, and lease review services."}},
-    {"@type": "Question", "name": "What lease terms are standard in BKC?", "acceptedAnswer": {"@type": "Answer", "text": "Most BKC leases are 3 to 5 years with a lock-in period of 12 to 36 months. Security deposits are typically 4 to 6 months rent (interest-free). Rent escalation is usually 5% per annum, applied every 12 months."}}
-  ]
 }';
 
 include 'templates/header.php';

@@ -11,14 +11,6 @@ $page_schema = '{
   "description": "Expert tenant representation for finding office space for rent in Lower Parel, Mumbai.",
   "areaServed": {"@type": "Place", "name": "Lower Parel, Mumbai"},
   "serviceType": "Commercial Property Search"
-},
-{
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "What is the average rent in Lower Parel?", "acceptedAnswer": {"@type": "Answer", "text": "Office rent in Lower Parel ranges from ₹150 to ₹280 per sq ft per month. Grade A buildings like Marathon Futurex and Peninsula Business Park fall in the ₹200-280 range, while older or smaller buildings start around ₹150."}},
-    {"@type": "Question", "name": "Is Lower Parel better than BKC for startups?", "acceptedAnswer": {"@type": "Answer", "text": "For most startups, yes. Lower Parel offers 30-40% lower rents than BKC, better public transport via Lower Parel railway station, a younger and more creative business community, and more flexible lease terms from landlords accustomed to working with growing companies."}},
-    {"@type": "Question", "name": "How quickly can we move into an office in Lower Parel?", "acceptedAnswer": {"@type": "Answer", "text": "For a fully furnished office, you can move in within 1-2 weeks of signing the lease. Warm shell spaces take 4-8 weeks after fit-out. Bare shell requires 3-6 months for complete interior work. We help expedite the process by having shortlists ready within 48 hours."}}
-  ]
 }';
 
 include 'templates/header.php';

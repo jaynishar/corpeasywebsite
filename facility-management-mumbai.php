@@ -12,15 +12,6 @@ $page_schema = '{
   "description": "Complete office facility management including housekeeping, security, AMC contracts, fire safety compliance, and vendor management.",
   "areaServed": {"@type": "City", "name": "Mumbai"},
   "serviceType": "Facility Management"
-},
-{
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "What is the minimum office size you manage?", "acceptedAnswer": {"@type": "Answer", "text": "We typically work with offices of 20 seats and above. We also offer a shared FM model for offices with 10-20 seats."}},
-    {"@type": "Question", "name": "How much does facility management cost?", "acceptedAnswer": {"@type": "Answer", "text": "For a 50-seat office in Mumbai, expect ₹800 to ₹1,500 per seat per month for comprehensive facility management."}},
-    {"@type": "Question", "name": "Do you handle fire safety and BMC compliance?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We manage fire NOC renewals, conduct safety drills, maintain fire systems, and ensure all BMC compliance."}},
-    {"@type": "Question", "name": "Can I choose which services I need?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can pick individual services like housekeeping and AMC management. We customize scope and pricing."}}
-  ]
 }';
 
 include 'templates/header.php';

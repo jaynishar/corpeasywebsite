@@ -13,16 +13,6 @@ $page_schema = '{
   "description": "Expert office space search and tenant representation services across Mumbai.",
   "areaServed": {"@type": "City", "name": "Mumbai"},
   "serviceType": "Commercial Property Search"
-},
-{
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Do you charge the tenant a fee?", "acceptedAnswer": {"@type": "Answer", "text": "No. Our service is free for tenants. We are compensated by the landlord."}},
-    {"@type": "Question", "name": "How is CorpEasy different from 99Acres or MagicBricks?", "acceptedAnswer": {"@type": "Answer", "text": "We are a tenant representation service, not a listing portal. We verify availability, negotiate terms, and review leases on your behalf."}},
-    {"@type": "Question", "name": "What areas in Mumbai do you cover?", "acceptedAnswer": {"@type": "Answer", "text": "BKC, Lower Parel, Andheri East, Goregaon, Powai, Malad, Vikhroli, Thane, and Navi Mumbai."}},
-    {"@type": "Question", "name": "How long does it take to find an office?", "acceptedAnswer": {"@type": "Answer", "text": "Initial shortlist within 48 hours. Entire process from first call to lease signing typically takes 2-4 weeks."}},
-    {"@type": "Question", "name": "Can you help with office interiors and setup?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We can manage interior fit-out through our Managed Office service, or provide ongoing facility management."}}
-  ]
 }';
 
 include 'templates/header.php';
