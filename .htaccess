@@ -4,9 +4,29 @@ RewriteBase /
 # Force index.php as the homepage (not index.html)
 DirectoryIndex index.php index.html
 
-# Route requests to appropriate PHP files
+# ══════════════════════════════════════════════════════════════
+# CANONICAL REDIRECT — must be FIRST, before any routing rules
+# All variants → https://www.corpeasy.in in a SINGLE 301 hop
+# ══════════════════════════════════════════════════════════════
+
+# 1) Non-www (any protocol) → https://www — ONE hop, no chain
+RewriteCond %{HTTP_HOST} !^www\.corpeasy\.in$ [NC]
+RewriteCond %{HTTP_HOST} !^localhost [NC]
+RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
+
+# 2) http://www → https://www (Hostinger uses X-Forwarded-Proto)
+RewriteCond %{HTTP_HOST} ^www\.corpeasy\.in$ [NC]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
+
+# ══════════════════════════════════════════════════════════════
+# URL ROUTING
+# ══════════════════════════════════════════════════════════════
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+
 RewriteRule ^blog/?$ blog.php [L]
 RewriteRule ^blog/([^/]+)/?$ blog-post.php?slug=$1 [L]
 RewriteRule ^about/?$ about.php [L]
@@ -17,46 +37,31 @@ RewriteRule ^list-commercial-property-mumbai/?$ list-commercial-property-mumbai.
 RewriteRule ^office-space-for-rent-mumbai/?$ office-space-for-rent-mumbai.php [L]
 RewriteRule ^facility-management-mumbai/?$ facility-management-mumbai.php [L]
 RewriteRule ^managed-office-space-mumbai/?$ managed-office-space-mumbai.php [L]
-
-# Location pages - Managed Office
 RewriteRule ^managed-office-bkc/?$ managed-office-bkc.php [L]
 RewriteRule ^managed-office-lower-parel/?$ managed-office-lower-parel.php [L]
 RewriteRule ^managed-office-goregaon/?$ managed-office-goregaon.php [L]
 RewriteRule ^managed-office-andheri/?$ managed-office-andheri.php [L]
-
-# Location pages - Office for Rent
 RewriteRule ^office-for-rent-bkc/?$ office-for-rent-bkc.php [L]
 RewriteRule ^office-for-rent-lower-parel/?$ office-for-rent-lower-parel.php [L]
-
-# Privacy Policy page routing
 RewriteRule ^privacy-policy/?$ privacy-policy.php [L]
 
 # Prevent directory listing
 Options -Indexes
 
-ErrorDocument 404 /index.php
+# Proper 404 — returns real HTTP 404 (not soft-404 via index.php)
+ErrorDocument 404 /404.php
 
-# ── Force HTTPS (works with Hostinger LiteSpeed proxy) ────
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteCond %{HTTP_HOST} !^localhost [NC]
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# ── Force www ─────────────────────────────────────────────
-RewriteCond %{HTTP_HOST} ^corpeasy\.in$ [NC]
-RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
-
-# ── GZIP Compression ─────────────────────────────────────
+# ── GZIP Compression ─────────────────────────────────────────
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
     AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
     AddOutputFilterByType DEFLATE application/json image/svg+xml font/woff font/woff2
 </IfModule>
 
-# ── Browser Caching ───────────────────────────────────────
+# ── Browser Caching ───────────────────────────────────────────
 <IfModule mod_expires.c>
     ExpiresActive On
-    ExpiresByType text/html                 "access plus 1 hour"
+    ExpiresByType text/html                 "access plus 0 seconds"
     ExpiresByType text/css                  "access plus 1 year"
     ExpiresByType application/javascript    "access plus 1 year"
     ExpiresByType text/javascript           "access plus 1 year"
@@ -68,8 +73,13 @@ RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
     ExpiresByType font/woff2                "access plus 1 year"
 </IfModule>
 
-# ── Cache-Control & Security Headers ─────────────────────
+# ── Cache-Control & Security Headers ─────────────────────────
 <IfModule mod_headers.c>
+    # HTML — never cache (ensures fresh PHP on every request, kills FOUC from stale cache)
+    <FilesMatch "\.php$">
+        Header set Cache-Control "no-cache, must-revalidate"
+        Header unset ETag
+    </FilesMatch>
     <FilesMatch "\.(css|js|woff|woff2)$">
         Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
@@ -83,8 +93,8 @@ RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
     Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
 </IfModule>
 
-# ── Block access to sensitive files ──────────────────────
-<FilesMatch "(db_config\.php|leads_backup\.json|\.env)$">
+# ── Block access to sensitive files ──────────────────────────
+<FilesMatch "(db_config\.php|leads_backup\.json|\.env|resize-logos\.php)$">
     Order Allow,Deny
     Deny from all
 </FilesMatch>

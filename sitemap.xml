@@ -1,124 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://www.corpeasy.in/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Core Service Pages -->
   <url>
     <loc>https://www.corpeasy.in/managed-office-space-mumbai</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/office-space-for-rent-mumbai</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/facility-management-mumbai</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/list-commercial-property-mumbai</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
+
+  <!-- Location Pages — Managed Office -->
   <url>
     <loc>https://www.corpeasy.in/managed-office-bkc</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/managed-office-lower-parel</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/managed-office-goregaon</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/managed-office-andheri</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Location Pages — Office for Rent -->
   <url>
     <loc>https://www.corpeasy.in/office-for-rent-bkc</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/office-for-rent-lower-parel</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog -->
   <url>
     <loc>https://www.corpeasy.in/blog</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/blog/mumbai-workspace-guide</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/blog/bkc-vs-goregaon</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/blog/managed-office-explainer</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/blog/gst-office-rental</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- Company Pages -->
+  <url>
+    <loc>https://www.corpeasy.in/about</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://www.corpeasy.in/faq</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.corpeasy.in/contact</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.corpeasy.in/about</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.corpeasy.in/privacy-policy</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
 </urlset>

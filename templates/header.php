@@ -63,9 +63,12 @@ $page_lcp_image = $page_lcp_image ?? '';
         .page-enter{animation:pageEnter 0.45s cubic-bezier(.16,1,.3,1) 0.04s both}
         /* Scroll progress bar */
         #scroll-line{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,#6366f1,#06b6d4,#8b5cf6);z-index:1000;width:0;transition:width .1s;box-shadow:0 0 15px rgba(99,102,241,.5)}
-        /* Font Awesome font-display fix */
-        @font-face{font-family:'Font Awesome 6 Free';font-display:swap}
-        @font-face{font-family:'Font Awesome 6 Brands';font-display:swap}
+        /* Font Awesome — block display prevents icon boxes; icons invisible until loaded */
+        @font-face{font-family:'Font Awesome 6 Free';font-display:block}
+        @font-face{font-family:'Font Awesome 6 Brands';font-display:block}
+        @font-face{font-family:'Font Awesome 6 Free';font-style:normal;font-weight:900;font-display:block}
+        /* Plus Jakarta Sans fallback — prevents font-swap layout shift */
+        @font-face{font-family:'Plus Jakarta Sans';font-display:optional}
         /* Prevent image overflow */
         img,video,iframe,canvas,svg{max-width:100%}
         section{max-width:100vw;overflow-x:hidden}
@@ -277,7 +280,8 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
-    <!-- Icons (non-blocking) -->
+    <!-- Font Awesome — preload webfont so icons appear fast, not as boxes -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
