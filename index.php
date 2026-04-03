@@ -298,7 +298,7 @@ Your details are safe with us. No spam, ever.
 </tbody>
 </table>
 </div>
-<p class="text-xs text-slate-500 px-8 py-4 border-t border-white/60">Estimates only. Actual costs depend on property, team size, lease term, and fit-out scope. CorpEasy shares your exact cost before you commit to anything.</p>
+<p class="text-xs text-slate-500 px-8 py-4 border-t border-white/60">Estimates only. Actual costs depend on property, team size, lease term, and fit-out scope. CorpEasy shares your exact cost before you commit to anything. <a href="/office-space-cost-mumbai-2026" class="text-brand-electric hover:underline font-medium">See complete cost breakdown →</a></p>
 </div>
 </div>
 </section>
@@ -370,5 +370,42 @@ Your details are safe with us. No spam, ever.
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+
+<section class="py-24 relative bg-white/60">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 reveal">
+<div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5">
+<span class="text-xs font-semibold uppercase tracking-wide text-brand-cyan">Insights & Guides</span>
+</div>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 mb-4">Learn Before You Decide.</h2>
+<p class="text-xl text-slate-500 max-w-2xl mx-auto">Practical articles on office space in Mumbai, commercial real estate, and workspace decisions. No fluff, no generic content.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+<a href="/blog/mumbai-workspace-guide" class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer block">
+<div class="w-14 h-14 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-6 text-brand-electric"><i class="fas fa-book-open text-xl"></i></div>
+<h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-electric transition-colors">How to Find the Right Office Space in Mumbai: A Practical Guide for 2026.</h3>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">Finding office space in Mumbai looks straightforward on paper but becomes complicated in practice. This guide walks through what the process actually looks like.</p>
+<span class="text-xs font-semibold text-brand-electric flex items-center gap-2 group-hover:gap-4 transition-all">Read the Guide <i class="fas fa-arrow-right"></i></span>
+</a>
+<a href="/managed-office-vs-coworking" class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer block">
+<div class="w-14 h-14 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-6 text-brand-cyan"><i class="fas fa-balance-scale text-xl"></i></div>
+<h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-electric transition-colors">Managed Office vs Coworking Space: Which Is Right for Your Business?</h3>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">Both offer flexible alternatives to traditional leases. But they serve very different types of businesses. Here is how to choose.</p>
+<span class="text-xs font-semibold text-brand-cyan flex items-center gap-2 group-hover:gap-4 transition-all">Read the Comparison <i class="fas fa-arrow-right"></i></span>
+</a>
+<a href="/office-space-cost-mumbai-2026" class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer block">
+<div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-6 text-brand-violet"><i class="fas fa-chart-bar text-xl"></i></div>
+<h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-electric transition-colors">Office Space Cost in Mumbai 2026: Complete Area-by-Area Breakdown.</h3>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">Real numbers — not "starting from" estimates. Detailed breakdown of rents, managed office costs, and hidden charges across Mumbai.</p>
+<span class="text-xs font-semibold text-brand-violet flex items-center gap-2 group-hover:gap-4 transition-all">See the Numbers <i class="fas fa-arrow-right"></i></span>
+</a>
+</div>
+<div class="text-center mt-12">
+<a href="/blog" class="text-slate-600 text-sm font-medium flex items-center justify-center gap-2 hover:text-brand-electric transition-colors">
+View All Articles <i class="fas fa-arrow-right text-sm"></i>
+</a>
+</div>
+</div>
+</section>
 
 <?php include 'templates/footer.php'; ?>

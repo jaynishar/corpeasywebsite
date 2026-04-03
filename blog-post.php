@@ -43,6 +43,18 @@ try {
     // DB failed, fall through to hardcoded
 }
 
+// Redirect to standalone article pages for SEO
+$standaloneArticles = [
+    'mumbai-workspace-guide',
+    'bkc-vs-goregaon',
+    'managed-office-explainer',
+    'gst-office-rental',
+];
+if (in_array($slug, $standaloneArticles, true)) {
+    header('Location: /blog/' . $slug, true, 301);
+    exit;
+}
+
 // Fallback to hardcoded posts
 if (!$post) {
     $fallbackPosts = [

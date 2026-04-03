@@ -47,7 +47,7 @@ if (empty($posts)) {
         'mumbai-workspace-guide' => [
             'title' => 'How to Find the Right Office Space in Mumbai: A Practical Guide for 2026.',
             'category' => 'Market Guide',
-            'readTime' => '6 Min Read',
+            'readTime' => '8 Min Read',
             'image' => 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp',
             'excerpt' => 'Finding office space in Mumbai looks straightforward on paper but becomes complicated in practice. This guide walks through what the process actually looks like.',
             'content' => ''
@@ -55,7 +55,7 @@ if (empty($posts)) {
         'bkc-vs-goregaon' => [
             'title' => 'BKC or Goregaon? Choosing the Right Mumbai Location for Your Office.',
             'category' => 'Market Trends',
-            'readTime' => '5 Min Read',
+            'readTime' => '6 Min Read',
             'image' => 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200&fm=webp',
             'excerpt' => 'One of the most common questions companies face when looking for office space in Mumbai: do we go to BKC for the address, or Goregaon for the value?',
             'content' => ''
@@ -63,7 +63,7 @@ if (empty($posts)) {
         'managed-office-explainer' => [
             'title' => 'What Is a Managed Office Space and Is It Right for Your Business?',
             'category' => 'Explainer',
-            'readTime' => '4 Min Read',
+            'readTime' => '5 Min Read',
             'image' => 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200&fm=webp',
             'excerpt' => 'The term managed office gets used loosely in the Indian commercial real estate market. Here is what it actually means, and what it does not.',
             'content' => ''
@@ -71,7 +71,7 @@ if (empty($posts)) {
         'gst-office-rental' => [
             'title' => 'GST on Commercial Office Rentals in Mumbai: What You Need to Know.',
             'category' => 'Finance & Compliance',
-            'readTime' => '4 Min Read',
+            'readTime' => '5 Min Read',
             'image' => 'https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=800',
             'excerpt' => 'GST on commercial property rentals comes up in most conversations about leasing office space in Mumbai. Understanding the basics saves confusion later.',
             'content' => ''

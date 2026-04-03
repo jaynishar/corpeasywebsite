@@ -51,6 +51,28 @@ include 'templates/header.php';
 <p class="text-slate-600 mb-6">Have a question that is not answered here?</p>
 <a href="/contact" class="bg-brand-electric text-white px-10 py-5 rounded-lg font-medium text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:scale-105 transition-all inline-block">Ask Us Directly &rarr;</a>
 </div>
+
+<div class="max-w-3xl mx-auto mt-16 reveal">
+<h3 class="text-2xl font-bold text-slate-900 mb-6 text-center">Further Reading</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<a href="/managed-office-vs-coworking" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
+<p class="text-xs font-bold uppercase tracking-widest text-brand-cyan mb-2">Comparison</p>
+<h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">Managed Office vs Coworking Space</h4>
+</a>
+<a href="/what-is-a-managed-office" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
+<p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-2">Guide</p>
+<h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">What Is a Managed Office? Complete Guide</h4>
+</a>
+<a href="/office-space-cost-mumbai-2026" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
+<p class="text-xs font-bold uppercase tracking-widest text-brand-violet mb-2">Market Data</p>
+<h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">Office Space Cost in Mumbai 2026</h4>
+</a>
+<a href="/blog/gst-office-rental" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
+<p class="text-xs font-bold uppercase tracking-widest text-brand-rose mb-2">Finance</p>
+<h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">GST on Commercial Office Rentals</h4>
+</a>
+</div>
+</div>
 </section>
 
 <?php include 'templates/footer.php'; ?>
