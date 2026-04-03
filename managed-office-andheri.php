@@ -1,6 +1,6 @@
 <?php
 $page_id = 'managed-andheri';
-$page_title = 'Managed Office Andheri Mumbai | From ₹12,000/Seat | CorpEasy';
+$page_title = 'Managed Office Space Andheri Mumbai | From ₹12,000/Seat | CorpEasy';
 $page_description = 'Managed office space in Andheri East Mumbai from ₹12,000/seat/month. 10-15 min from airport, Metro Line 1, MIDC belt. Zero setup hassle. Move in 2-4 weeks.';
 $page_keywords = 'managed office space Andheri, office space Andheri East Mumbai, serviced office Andheri, managed workspace Andheri, office near Mumbai airport, office space MIDC Andheri, Andheri office per seat cost, managed office Andheri East 2026, metro connected office Andheri';
 $page_canonical = 'https://www.corpeasy.in/managed-office-andheri';
@@ -176,4 +176,14 @@ include 'templates/header.php';
 </div>
 </section>
 
+<section class="py-10 bg-white/30">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-5">From Our Blog</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="/blog/managed-office-vs-coworking-space" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Managed Office vs Coworking Space</a>
+<a href="/blog/how-much-does-office-space-cost-in-mumbai-2026" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Office Space Costs in Mumbai 2026</a>
+<a href="/blog/managed-office-explainer" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">What Is a Managed Office?</a>
+</div>
+</div>
+</section>
 <?php include 'templates/footer.php'; ?>

@@ -1,7 +1,7 @@
 <?php
 $page_id = 'find';
-$page_title = 'Office Space for Rent in Mumbai | CorpEasy';
-$page_description = 'Commercial office space for rent in Mumbai — BKC, Lower Parel, Goregaon, Andheri, Powai. Verified listings, landlord negotiation & lease review.';
+$page_title = 'Office Space for Rent Mumbai | Managed Office Options | CorpEasy';
+$page_description = 'Find office space for rent in Mumbai — BKC, Lower Parel, Goregaon, Andheri. Also explore managed office solutions from ₹10,000/seat. Tenant representation free.';
 $page_keywords = 'office space for rent in Mumbai, commercial office space Mumbai, office space BKC rent, office space Lower Parel rent, commercial property for lease Mumbai, office on rent Mumbai, office space Mumbai 2026, commercial office rent BKC, office space Andheri rent, find office space Mumbai, tenant representation Mumbai, commercial property search Mumbai';
 $page_canonical = 'https://www.corpeasy.in/office-space-for-rent-mumbai';
 $page_og_image = 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200&fm=webp';
@@ -275,4 +275,14 @@ include 'templates/header.php';
 </div>
 </section>
 
+<section class="py-10 bg-white/30">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-5">From Our Blog</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="/blog/questions-before-renting-office-space-mumbai" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Questions to Ask Before Renting Office Space</a>
+<a href="/blog/how-much-does-office-space-cost-in-mumbai-2026" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Office Space Costs in Mumbai 2026</a>
+<a href="/blog/gst-office-rental" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">GST on Commercial Office Rentals</a>
+</div>
+</div>
+</section>
 <?php include 'templates/footer.php'; ?>

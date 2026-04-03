@@ -273,8 +273,8 @@ $page_lcp_image = $page_lcp_image ?? '';
     <!-- Tailwind = render-blocking (controls all layout — async causes FOUC) -->
     <link rel="stylesheet" href="/tailwind.min.css?v=20260328b">
     <!-- Style.css = non-blocking (decorative animations, card styles, etc.) -->
-    <link rel="stylesheet" href="/style.css?v=20260328" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="/style.css?v=20260328"></noscript>
+    <link rel="stylesheet" href="/style.min.css?v=20260402" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/style.min.css?v=20260402"></noscript>
 
     <!-- Font (non-blocking) -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">

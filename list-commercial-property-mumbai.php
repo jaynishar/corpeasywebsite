@@ -92,4 +92,57 @@ include 'templates/header.php';
 </div>
 </section>
 
+<section class="py-16 lg:py-24 bg-white/40">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3 text-center">How We Find You the Right Tenant</h2>
+<p class="text-slate-500 text-center max-w-2xl mx-auto mb-12 text-base">We do not blast your property on every listing portal and hope for the best. We match your space to the right type of business tenant from our active pipeline.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="glass-card p-7">
+<div class="w-10 h-10 bg-brand-gold/10 border border-brand-gold/30 rounded-xl flex items-center justify-center text-brand-gold mb-5"><span class="font-black text-sm">1</span></div>
+<h3 class="font-black text-slate-900 mb-3">Property Briefing</h3>
+<p class="text-sm text-slate-600 leading-relaxed">We understand your space — location, size, configuration, asking rent, and your timeline. We visit if needed. This takes one conversation and sets clear expectations on both sides.</p>
+</div>
+<div class="glass-card p-7">
+<div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-5"><span class="font-black text-sm">2</span></div>
+<h3 class="font-black text-slate-900 mb-3">Active Matching</h3>
+<p class="text-sm text-slate-600 leading-relaxed">We match your property against our current pipeline of businesses looking for commercial office space in Mumbai. Our focus is on managed office operators, growing startups, and established SMEs who need reliable, medium-term leases.</p>
+</div>
+<div class="glass-card p-7">
+<div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-5"><span class="font-black text-sm">3</span></div>
+<h3 class="font-black text-slate-900 mb-3">Negotiation</h3>
+<p class="text-sm text-slate-600 leading-relaxed">We handle the commercial conversations, manage tenant due diligence, and negotiate lease terms on your behalf. You get a final term sheet to review — no back-and-forth without your input.</p>
+</div>
+<div class="glass-card p-7">
+<div class="w-10 h-10 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-5"><span class="font-black text-sm">4</span></div>
+<h3 class="font-black text-slate-900 mb-3">Lease Placement</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Once terms are agreed, we support the documentation process through to signed lease. Our goal is a clean, fixed-term commercial lease with a serious business tenant — not a short-term occupant who leaves in 3 months.</p>
+</div>
+</div>
+<div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<div>
+<h2 class="text-2xl font-black text-slate-900 mb-6">What Types of Properties Do We List?</h2>
+<p class="text-slate-600 leading-relaxed mb-4">We work with commercial office properties in Mumbai that are suited to business tenants — from small 500 sq ft units ideal for a 5-10 person office, up to full-floor commercial spaces of 5,000 sq ft and above suitable for managed office operators or large corporate teams.</p>
+<p class="text-slate-600 leading-relaxed">We do not handle residential properties. Our focus is exclusively on commercial office space — bare shell, semi-furnished, and fully furnished properties across BKC, Lower Parel, Andheri, Goregaon, Powai, and Thane.</p>
+</div>
+<div>
+<h2 class="text-2xl font-black text-slate-900 mb-6">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div>
+<h3 class="font-bold text-slate-900 mb-1">What is your brokerage fee?</h3>
+<p class="text-sm text-slate-600">Standard commercial brokerage is one month's rent, paid on successful lease signing. We discuss this upfront — no surprises.</p>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 mb-1">How long does it take to find a tenant?</h3>
+<p class="text-sm text-slate-600">For well-priced commercial spaces in active micro-markets like BKC or Lower Parel, we typically present qualified tenant interest within 2–4 weeks. Lease signing generally follows within 4–8 weeks depending on due diligence.</p>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 mb-1">Do you only work with managed office operators?</h3>
+<p class="text-sm text-slate-600">No. We place all types of business tenants — direct corporate occupiers, managed office operators, professional services firms, and growing startups. The right tenant depends on your space and lease expectations.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
 <?php include 'templates/footer.php'; ?>

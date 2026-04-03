@@ -1,6 +1,6 @@
 <?php
 $page_id = 'managed';
-$page_title = 'Managed Office Space Mumbai | CorpEasy';
+$page_title = 'Managed Office Space Mumbai | From ₹10,000/Seat | CorpEasy';
 $page_description = 'Managed office space in Mumbai from ₹10,000/seat/month. CorpEasy handles property search, setup & operations. BKC, Lower Parel, Goregaon, Andheri.';
 $page_keywords = 'managed office space Mumbai, managed workspace Mumbai, turnkey office Mumbai, office space per seat Mumbai, managed office BKC, managed office Lower Parel, managed office Goregaon, managed office Andheri, managed office space Mumbai 2026, fully managed office Mumbai, office space setup Mumbai, commercial office space Mumbai, private office space Mumbai';
 $page_canonical = 'https://www.corpeasy.in/managed-office-space-mumbai';
@@ -273,6 +273,17 @@ include 'templates/header.php';
 <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Talk to Our Team</h4>
 <p class="text-sm text-slate-600">Not sure what you need? Schedule a free 15-minute consultation with our workspace experts.</p>
 </a>
+</div>
+</div>
+</section>
+
+<section class="py-12 bg-white/30">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<p class="text-sm font-semibold uppercase tracking-widest text-brand-electric mb-6">From Our Blog</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="/blog/managed-office-vs-coworking-space" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Managed Office vs Coworking Space</a>
+<a href="/blog/how-much-does-office-space-cost-in-mumbai-2026" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Office Space Costs in Mumbai 2026</a>
+<a href="/blog/managed-office-explainer" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">What Is a Managed Office?</a>
 </div>
 </div>
 </section>

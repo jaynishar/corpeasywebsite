@@ -1,6 +1,6 @@
 <?php
 $page_id = 'managed-goregaon';
-$page_title = 'Managed Office Goregaon Mumbai | From ₹10,000/Seat | CorpEasy';
+$page_title = 'Managed Office Space Goregaon Mumbai | From ₹10,000/Seat | CorpEasy';
 $page_description = 'Managed office space in Goregaon Mumbai from ₹10,000/seat/month. NESCO IT Park, Western Express Highway. Grade A offices at best-value pricing.';
 $page_keywords = 'managed office space Goregaon, office space Goregaon Mumbai, serviced office Goregaon, NESCO IT Park office space, cheap managed office Mumbai, affordable office space Goregaon, managed office Goregaon East, office space Western Express Highway Mumbai';
 $page_canonical = 'https://www.corpeasy.in/managed-office-goregaon';
@@ -176,4 +176,14 @@ include 'templates/header.php';
 </div>
 </section>
 
+<section class="py-10 bg-white/30">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-5">From Our Blog</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="/blog/bkc-vs-goregaon" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">BKC or Goregaon? Choosing the Right Location</a>
+<a href="/blog/managed-office-vs-coworking-space" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Managed Office vs Coworking Space</a>
+<a href="/blog/managed-office-explainer" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">What Is a Managed Office?</a>
+</div>
+</div>
+</section>
 <?php include 'templates/footer.php'; ?>

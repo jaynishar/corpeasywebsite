@@ -97,8 +97,8 @@ foreach ($posts as $postSlug => $p) {
 }
 
 $page_id = 'blog';
-$page_title = 'Commercial Real Estate Insights Mumbai | CorpEasy Blog';
-$page_description = 'Practical articles on office space in Mumbai, commercial real estate, and workspace decisions. Written for business owners and operations teams.';
+$page_title = 'Managed Office Insights Mumbai | CorpEasy Blog';
+$page_description = 'Expert articles on managed office space, commercial real estate, and workspace decisions in Mumbai. Written for business owners and operations teams.';
 $page_canonical = 'https://www.corpeasy.in/blog';
 $page_og_image = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
 $page_schema = json_encode([
@@ -155,6 +155,45 @@ include 'templates/header.php';
 </div>
 </a>
 <?php $i++; endforeach; ?>
+</div>
+</section>
+
+<section class="py-16 bg-white/40">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-black text-slate-900 tracking-tight mb-4 text-center">What We Write About</h2>
+<p class="text-slate-500 text-center max-w-2xl mx-auto mb-12">All articles are written for business owners, operations leads, and founders navigating commercial office decisions in Mumbai. No fluff, no generic content.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+<div class="glass-card p-6">
+<i class="fas fa-building text-brand-electric mb-4 text-xl"></i>
+<h3 class="font-black text-slate-900 mb-2">Managed Office Space</h3>
+<p class="text-sm text-slate-600 leading-relaxed">How managed office space works in Mumbai, who it suits, what it costs, and how it compares to coworking and traditional leases.</p>
+</div>
+<div class="glass-card p-6">
+<i class="fas fa-map-marker-alt text-brand-cyan mb-4 text-xl"></i>
+<h3 class="font-black text-slate-900 mb-2">Mumbai Micro-Markets</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Honest breakdowns of BKC, Lower Parel, Goregaon, Andheri, and Powai — rent levels, building quality, commute dynamics, and who each area suits.</p>
+</div>
+<div class="glass-card p-6">
+<i class="fas fa-file-contract text-brand-violet mb-4 text-xl"></i>
+<h3 class="font-black text-slate-900 mb-2">Leases and Costs</h3>
+<p class="text-sm text-slate-600 leading-relaxed">What commercial leases actually say, what hidden costs to watch for, how GST applies to office rentals, and how to negotiate better terms.</p>
+</div>
+<div class="glass-card p-6">
+<i class="fas fa-tools text-brand-gold mb-4 text-xl"></i>
+<h3 class="font-black text-slate-900 mb-2">Facility Management</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Practical guides for managing office operations, vendor coordination, maintenance schedules, and running a productive 20–200 seat office in Mumbai.</p>
+</div>
+</div>
+<div class="text-center">
+<p class="text-slate-500 mb-6 text-sm">Looking for a managed office space in Mumbai? Start here.</p>
+<div class="flex flex-wrap gap-4 justify-center">
+<a href="/managed-office-space-mumbai" class="bg-brand-electric text-white px-6 py-3 rounded-lg text-sm font-semibold hover:scale-105 transition-all">Managed Office Space Mumbai</a>
+<a href="/managed-office-bkc" class="glass-card px-6 py-3 rounded-lg text-sm font-semibold text-slate-700 hover:text-brand-electric transition-colors">BKC</a>
+<a href="/managed-office-lower-parel" class="glass-card px-6 py-3 rounded-lg text-sm font-semibold text-slate-700 hover:text-brand-electric transition-colors">Lower Parel</a>
+<a href="/managed-office-goregaon" class="glass-card px-6 py-3 rounded-lg text-sm font-semibold text-slate-700 hover:text-brand-electric transition-colors">Goregaon</a>
+<a href="/managed-office-andheri" class="glass-card px-6 py-3 rounded-lg text-sm font-semibold text-slate-700 hover:text-brand-electric transition-colors">Andheri</a>
+</div>
+</div>
 </div>
 </section>
 

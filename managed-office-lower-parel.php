@@ -1,6 +1,6 @@
 <?php
 $page_id = 'managed-lower-parel';
-$page_title = 'Managed Office Lower Parel Mumbai | CorpEasy';
+$page_title = 'Managed Office Space Lower Parel Mumbai | CorpEasy';
 $page_description = 'Managed office space in Lower Parel Mumbai from ₹14,000/seat/month. Near Marathon Futurex, Peninsula Business Park. Full setup. Move in 2–4 weeks.';
 $page_keywords = 'managed office space Lower Parel, office space Lower Parel Mumbai, serviced office Lower Parel, private office Lower Parel, managed office Lower Parel 2026, office near Marathon Futurex, office near Peninsula Business Park, Lower Parel office cost per seat, commercial office Lower Parel';
 $page_canonical = 'https://www.corpeasy.in/managed-office-lower-parel';
@@ -176,4 +176,14 @@ include 'templates/header.php';
 </div>
 </section>
 
+<section class="py-10 bg-white/30">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-5">From Our Blog</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="/blog/managed-office-vs-coworking-space" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Managed Office vs Coworking Space</a>
+<a href="/blog/how-much-does-office-space-cost-in-mumbai-2026" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Office Space Costs in Mumbai 2026</a>
+<a href="/blog/questions-before-renting-office-space-mumbai" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Questions to Ask Before Renting Office Space</a>
+</div>
+</div>
+</section>
 <?php include 'templates/footer.php'; ?>

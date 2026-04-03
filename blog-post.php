@@ -94,8 +94,14 @@ if (!$post) {
 
 // Dynamic SEO
 $page_id = 'blog-post';
-// Use full title — Google handles display truncation; cutting keywords hurts SEO
-$page_title = htmlspecialchars(rtrim($post['title'], '.')) . ' | CorpEasy';
+// SEO title overrides for posts with long DB titles (keeps keyword-rich H1 intact)
+$seoTitleOverrides = [
+    'facility-management-guide-small-offices'    => 'Facility Management Guide for Small Offices Mumbai | CorpEasy',
+    'managed-office-vs-coworking-space'          => 'Managed Office vs Coworking Space Mumbai | CorpEasy',
+    'how-much-does-office-space-cost-in-mumbai-2026' => 'Office Space Cost in Mumbai 2026 | CorpEasy',
+    'questions-before-renting-office-space-mumbai'   => 'Questions to Ask Before Renting Office Space Mumbai | CorpEasy',
+];
+$page_title = $seoTitleOverrides[$slug] ?? (htmlspecialchars(rtrim($post['title'], '.')) . ' | CorpEasy');
 $page_description = substr(strip_tags($post['content']), 0, 155);
 $page_canonical = 'https://www.corpeasy.in/blog/' . htmlspecialchars($slug);
 $page_lcp_image = $post['image']; // Preload hero image for LCP
@@ -157,6 +163,43 @@ include 'templates/header.php';
         <a href="/contact" class="bg-brand-electric text-white px-10 py-5 rounded-lg font-medium text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:scale-105 transition-all inline-block">Talk to Us About Your Requirement</a>
     </div>
     </article>
+</section>
+
+<?php
+// Related articles — curated by topic
+$relatedBySlug = [
+    'mumbai-workspace-guide' => ['managed-office-vs-coworking-space', 'how-much-does-office-space-cost-in-mumbai-2026', 'bkc-vs-goregaon'],
+    'bkc-vs-goregaon' => ['mumbai-workspace-guide', 'managed-office-vs-coworking-space', 'how-much-does-office-space-cost-in-mumbai-2026'],
+    'managed-office-explainer' => ['managed-office-vs-coworking-space', 'mumbai-workspace-guide', 'facility-management-guide-small-offices'],
+    'gst-office-rental' => ['questions-before-renting-office-space-mumbai', 'how-much-does-office-space-cost-in-mumbai-2026', 'mumbai-workspace-guide'],
+    'how-much-does-office-space-cost-in-mumbai-2026' => ['managed-office-vs-coworking-space', 'bkc-vs-goregaon', 'questions-before-renting-office-space-mumbai'],
+    'managed-office-vs-coworking-space' => ['how-much-does-office-space-cost-in-mumbai-2026', 'managed-office-explainer', 'mumbai-workspace-guide'],
+    'facility-management-guide-small-offices' => ['managed-office-explainer', 'managed-office-vs-coworking-space', 'questions-before-renting-office-space-mumbai'],
+    'questions-before-renting-office-space-mumbai' => ['how-much-does-office-space-cost-in-mumbai-2026', 'gst-office-rental', 'mumbai-workspace-guide'],
+];
+$allPostTitles = [
+    'mumbai-workspace-guide' => 'How to Find the Right Office Space in Mumbai',
+    'bkc-vs-goregaon' => 'BKC or Goregaon? Choosing the Right Mumbai Location',
+    'managed-office-explainer' => 'What Is a Managed Office Space?',
+    'gst-office-rental' => 'GST on Commercial Office Rentals in Mumbai',
+    'how-much-does-office-space-cost-in-mumbai-2026' => 'How Much Does Office Space Cost in Mumbai in 2026?',
+    'managed-office-vs-coworking-space' => 'Managed Office vs Coworking Space: Which Is Right for You?',
+    'facility-management-guide-small-offices' => 'Complete Guide to Facility Management for Small Offices',
+    'questions-before-renting-office-space-mumbai' => 'Top 5 Questions to Ask Before Renting Office Space in Mumbai',
+];
+$related = $relatedBySlug[$slug] ?? array_filter(array_keys($allPostTitles), fn($k) => $k !== $slug);
+$related = array_slice(array_values($related), 0, 3);
+?>
+<section class="max-w-4xl mx-auto px-6 py-16 border-t border-white/60">
+<h3 class="text-2xl font-black text-slate-900 mb-8 tracking-tight">Related Articles</h3>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<?php foreach ($related as $relSlug): if (!isset($allPostTitles[$relSlug])) continue; ?>
+<a href="/blog/<?php echo htmlspecialchars($relSlug); ?>" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
+<p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-3 group-hover:text-brand-blue transition-colors">Read Next</p>
+<h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors"><?php echo htmlspecialchars($allPostTitles[$relSlug]); ?></h4>
+</a>
+<?php endforeach; ?>
+</div>
 </section>
 
 <?php include 'templates/footer.php'; ?>
