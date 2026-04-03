@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $page_id = 'home';
 $page_title = 'CorpEasy — Managed Office Space Mumbai from ₹10,000/Seat';
 $page_description = 'CorpEasy finds, sets up & manages your office space in Mumbai from ₹10,000/seat/month. One contact. BKC, Lower Parel, Goregaon & Andheri.';
@@ -13,7 +13,7 @@ $page_schema = '{
     "ratingValue": 5,
     "bestRating": 5
   },
-  "reviewBody": "CorpEasy has been associated with First Abu Dhabi Bank for providing facility management support services. Their team has demonstrated professionalism, reliability, and a strong commitment to delivering quality services. They've been consistently responsive, well coordinated, and have maintained strong operational standards. They adhere strictly to commitments, timelines, and deliverables, and provide cost effective solutions without compromising on quality.",
+  "reviewBody": "CorpEasy has been associated with First Abu Dhabi Bank for providing facility management support services. Their team has demonstrated professionalism, reliability, and a strong commitment to delivering quality services. They have been consistently responsive, well coordinated, and have maintained strong operational standards. They adhere strictly to commitments, timelines, and deliverables, and provide cost effective solutions without compromising on quality.",
   "author": {
     "@type": "Person",
     "name": "Bhupinder Gujral",
@@ -38,7 +38,7 @@ include 'templates/header.php';
 <div class="mb-4 lg:mb-6">
 <div class="inline-flex items-center gap-2 bg-brand-electric/8 border border-brand-electric/20 rounded-full px-4 py-1.5">
 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-<span class="text-xs font-semibold text-brand-electric">Trusted by First Abu Dhabi Bank &amp; 50+ businesses across Mumbai</span>
+<span class="text-xs font-semibold text-brand-electric">Trusted by First Abu Dhabi Bank &amp; 50+ businesses</span>
 </div>
 </div>
 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 lg:mb-6 leading-tight">Managed Office Space<br><span id="hero-word" class="text-brand-electric">in Mumbai</span></h1>
@@ -51,7 +51,7 @@ include 'templates/header.php';
 </div>
 <div class="flex flex-wrap gap-x-6 gap-y-2 mb-4 text-xs font-semibold text-slate-500">
 <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-green-500"></i> BKC · Lower Parel · Goregaon · Andheri</span>
-<span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-green-500"></i> Response in 24 hours</span>
+<span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-green-500"></i> Response within 24 hours</span>
 <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-green-500"></i> No broker fees</span>
 </div>
 <a href="/managed-office-space-mumbai" class="text-slate-600 text-sm font-medium flex items-center gap-2 hover:text-brand-electric transition-colors">
@@ -64,7 +64,7 @@ Learn how it works <i class="fas fa-arrow-right text-sm"></i>
 <i class="fas fa-bolt text-brand-electric"></i>
 Tell Us What You Need
 </h2>
-<p class="text-sm text-slate-600 mb-4 lg:mb-6">Tell us what you need. We'll get back in <strong>24 hours</strong> with a straight answer — no broker jargon, no hidden charges. Zero obligation.</p>
+<p class="text-sm text-slate-600 mb-4 lg:mb-6">Share your requirement. We respond within <strong>24 hours</strong> with a clear proposal — no broker jargon, no hidden charges. No obligation.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
@@ -108,12 +108,12 @@ Your details are safe with us. No spam, ever.
 <div class="glass-card p-10 reveal">
 <div class="w-14 h-14 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-8 text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.2)]"><i class="fas fa-search-location text-2xl"></i></div>
 <h3 class="text-xl font-bold mb-4 text-slate-900">We Find the Right Space.</h3>
-<p class="text-slate-600 leading-relaxed">Tell us your team size, where in Mumbai you want to be, and what you can spend. We'll shortlist properties, negotiate with landlords, and handle the paperwork. You never have to chase a broker.</p>
+<p class="text-slate-600 leading-relaxed">Tell us your team size, where in Mumbai you want to be, and what you can spend. We will shortlist properties, negotiate with landlords, and handle the paperwork. You never have to chase a broker.</p>
 </div>
 <div class="glass-card p-10 reveal delay-100">
 <div class="w-14 h-14 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-8 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-tools text-2xl"></i></div>
 <h3 class="text-xl font-bold mb-4 text-slate-900">We Set It Up. You Move In.</h3>
-<p class="text-slate-600 leading-relaxed">Once we've got the space locked in, we get it ready — furniture, internet, everything your team needs on Day 1. No vendor calls, no delays, no headaches. Just walk in and start working.</p>
+<p class="text-slate-600 leading-relaxed">Once we have the space locked in, we get it ready — furniture, internet, everything your team needs on Day 1. No vendor calls, no delays, no headaches. Just walk in and start working.</p>
 </div>
 <div class="glass-card p-10 reveal delay-200">
 <div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-8 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-receipt text-2xl"></i></div>
@@ -156,14 +156,14 @@ Your details are safe with us. No spam, ever.
 <section class="py-24 relative bg-white/40">
 <div class="max-w-7xl mx-auto px-6">
 <h2 class="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter text-center mb-6">Here Is How It Works.</h2>
-<p class="text-xl text-slate-500 text-center mb-20">Three steps. One person to call. A workspace ready when you are.</p>
+<p class="text-xl text-slate-500 text-center mb-20">Three steps. One point of contact. A workspace ready when you are.</p>
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 <div class="glass-card p-10 reveal relative overflow-hidden">
 <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">01</span>
 <div class="w-16 h-16 bg-brand-electric/10 border border-brand-electric/30 rounded-2xl flex items-center justify-center mb-6 text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.2)]"><i class="fas fa-clipboard-list text-2xl"></i></div>
 <p class="text-xs font-semibold uppercase tracking-wide text-brand-electric mb-4">Step 01: You Share Your Requirement</p>
 <h3 class="text-2xl font-bold text-slate-900 mb-4">Tell Us What You Need</h3>
-<p class="text-slate-600 leading-relaxed relative z-10">Just tell us how big your team is, where in Mumbai you would like to be, and roughly what you can spend. That's genuinely all we need. We'll ask the right follow-up questions and start looking right away.</p>
+<p class="text-slate-600 leading-relaxed relative z-10">Just tell us how big your team is, where in Mumbai you would like to be, and roughly what you can spend. That is genuinely all we need. We will ask the right follow-up questions and start looking right away.</p>
 </div>
 <div class="glass-card p-10 reveal delay-100 relative overflow-hidden">
 <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">02</span>
@@ -188,7 +188,7 @@ Your details are safe with us. No spam, ever.
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-4 py-1.5">
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-gold">Client Testimonial</span>
 </div>
-<h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">What Our Clients Say.</h2>
+<h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">Trusted by Industry Leaders.</h2>
 </div>
 <div class="reveal">
 <div class="relative bg-gradient-to-br from-white via-white/95 to-brand-electric/5 rounded-[3rem] border border-white/60 shadow-[0_30px_80px_rgba(99,102,241,0.08)] p-10 lg:p-16 overflow-hidden">
@@ -206,9 +206,9 @@ Your details are safe with us. No spam, ever.
 </div>
 <blockquote class="text-lg lg:text-xl text-slate-700 leading-relaxed mb-10 space-y-4">
 <p>"This is to certify that Jaydev Enterprise (Brand Name: CorpEasy) has been associated with First Abu Dhabi Bank for providing facility management support services.</p>
-<p>During our engagement, their team has shown professionalism, reliability, and a strong commitment to delivering quality services. They've consistently been responsive, well coordinated, and have maintained strong operational standards in all tasks assigned to them.</p>
-<p>We vouch for their capabilities and are confident in their ability to successfully complete any task entrusted to them. They're known for adhering strictly to commitments, timelines, and deliverables, and have never under delivered on expectations.</p>
-<p>Also, they provide cost effective solutions without compromising on quality, ensuring value driven service at all times.</p>
+<p>During the course of our engagement, their team has demonstrated professionalism, reliability, and a strong commitment to delivering quality services. They have consistently been responsive, well coordinated, and have maintained strong operational standards in all tasks assigned to them.</p>
+<p>We vouch for their capabilities and are confident in their ability to successfully complete any task entrusted to them. They are known for adhering strictly to commitments, timelines, and deliverables, and have never under delivered on expectations.</p>
+<p>Additionally, they provide cost effective solutions without compromising on quality, ensuring value driven service at all times.</p>
 <p>We appreciate their proactive approach and their ability to understand and execute requirements efficiently."</p>
 </blockquote>
 <div class="flex flex-col sm:flex-row sm:items-center gap-6 pt-8 border-t border-slate-200/60">
@@ -237,7 +237,7 @@ Your details are safe with us. No spam, ever.
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-cyan">Mumbai Locations</span>
 </div>
 <h2 class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">We Work Across Mumbai.</h2>
-<p class="text-xl text-slate-500">We find <strong>commercial office space</strong> across Mumbai's busiest business corridors.</p>
+<p class="text-xl text-slate-500">We source <strong>commercial office space</strong> across Mumbai's most active business corridors.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
 <a href="/contact" class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer block">
@@ -313,17 +313,17 @@ Your details are safe with us. No spam, ever.
 <div class="glass-card p-12 group hover:border-brand-electric/50 transition-all text-left">
 <div class="w-16 h-16 bg-brand-electric/10 rounded-2xl flex items-center justify-center mb-8 text-brand-electric group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-map-marked-alt text-2xl"></i></div>
 <h3 class="text-2xl font-black mb-4 text-slate-900">We Know the Mumbai Market</h3>
-<p class="text-slate-600 leading-relaxed">We've walked these buildings ourselves. We know which ones have good lifts, reliable power, and reasonable landlords — and which ones look great online but waste your time. That saves you weeks of visits.</p>
+<p class="text-slate-600 leading-relaxed font-medium">We have walked these buildings ourselves. We know which ones have good lifts, reliable power, and reasonable landlords — and which ones look great online but waste your time. That saves you weeks of visits.</p>
 </div>
 <div class="glass-card p-12 group hover:border-brand-cyan/50 transition-all text-left">
 <div class="w-16 h-16 bg-brand-cyan/10 rounded-2xl flex items-center justify-center mb-8 text-brand-cyan group-hover:bg-brand-cyan group-hover:text-white transition-all duration-500"><i class="fas fa-user-tie text-2xl"></i></div>
 <h3 class="text-2xl font-black mb-4 text-slate-900">One Point of Contact</h3>
-<p class="text-slate-600 leading-relaxed font-medium">Most companies end up juggling 4-5 different people just to get an office ready. With us, you've got one person to call. We coordinate everything behind the scenes — you just get updates and make decisions.</p>
+<p class="text-slate-600 leading-relaxed font-medium">Most companies end up juggling 4-5 different people just to get an office ready. With us, you have one person to call. We coordinate everything behind the scenes — you just get updates and make decisions.</p>
 </div>
 <div class="glass-card p-12 group hover:border-brand-violet/50 transition-all text-left">
 <div class="w-16 h-16 bg-brand-violet/10 rounded-2xl flex items-center justify-center mb-8 text-brand-violet group-hover:bg-brand-violet group-hover:text-white transition-all duration-500"><i class="fas fa-file-invoice-dollar text-2xl"></i></div>
 <h3 class="text-2xl font-black mb-4 text-slate-900">Clear, Predictable Costs</h3>
-<p class="text-slate-600 leading-relaxed font-medium">Before you sign anything, you'll see the exact monthly cost per seat — including rent, setup, and maintenance. No vague "starting from" pricing. What we quote is what you pay, every month, for the full lease term.</p>
+<p class="text-slate-600 leading-relaxed font-medium">Before you sign anything, you will see the exact monthly cost per seat — including rent, setup, and maintenance. No vague "starting from" pricing. What we quote is what you pay, every month, for the full lease term.</p>
 </div>
 </div>
 </div>

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $page_id = 'managed';
 $page_title = 'Managed Office Space in Mumbai | From ₹10,000/Seat | CorpEasy';
 $page_description = 'Managed office space in Mumbai from ₹10,000/seat/month. CorpEasy handles property search, setup & operations. BKC, Lower Parel, Goregaon, Andheri.';
@@ -29,7 +29,7 @@ include 'templates/header.php';
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> We handle the workspace setup. You coordinate zero contractors.</p>
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> One clear per seat cost. A fixed lease. No hidden charges.</p>
 </div>
-<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for <strong>managed office space in Mumbai</strong> without months of searching, negotiating, and setting up? We handle the entire process. From identifying the right commercial property to handing you a workspace that's ready when your team is.</p>
+<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for <strong>managed office space in Mumbai</strong> without months of searching, negotiating, and setting up? We handle the entire process. From identifying the right commercial property to handing you a workspace that is ready when your team is.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
 <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">No Landlord Hassle</h3><p class="text-xs text-slate-600 mt-1">We negotiate with the landlord directly. You have one clean agreement with us.</p></div>
 <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Setup Included</h3><p class="text-xs text-slate-600 mt-1">Basic furniture, internet, and workspace essentials sorted before you move in.</p></div>
@@ -72,17 +72,17 @@ include 'templates/header.php';
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-blue/30 border border-brand-electric/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-electric shadow-[0_0_20px_rgba(0,240,255,0.2)]"><i class="fas fa-search-location"></i></div>
 <h3 class="text-2xl font-bold mb-4 text-slate-900">Property Search and Negotiation</h3>
-<p class="text-slate-600 leading-relaxed">We identify suitable commercial properties across Mumbai based on your requirement, approach landlords, and negotiate the lease on your behalf. Think of us as your personal real estate team — minus the broker drama.</p>
+<p class="text-slate-600 leading-relaxed">We identify suitable commercial properties across Mumbai based on your requirement, approach landlords, and negotiate the lease on your behalf.</p>
 </div>
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-cyan/20 border border-brand-cyan/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-cyan shadow-[0_0_20px_rgba(6,182,212,0.2)]"><i class="fas fa-tools"></i></div>
 <h3 class="text-2xl font-bold mb-4 text-slate-900">Workspace Setup and Readiness</h3>
-<p class="text-slate-600 leading-relaxed">Once the space is secured, we manage the basic setup. Furniture, internet connection, and a clean functional working environment ready for Day 1. You just show up and start working.</p>
+<p class="text-slate-600 leading-relaxed">Once the space is secured, we manage the basic setup. Furniture, internet connection, and a clean functional working environment ready for Day 1.</p>
 </div>
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-violet/20 border border-brand-violet/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-violet shadow-[0_0_20px_rgba(139,92,246,0.2)]"><i class="fas fa-headset"></i></div>
 <h3 class="text-2xl font-bold mb-4 text-slate-900">Your Ongoing Point of Contact</h3>
-<p class="text-slate-600 leading-relaxed">After you move in, we remain available for any issues related to the space or the lease. You've got a single point of contact — one person to call when something comes up.</p>
+<p class="text-slate-600 leading-relaxed">After you move in, we remain available for any issues related to the space or the lease. You have a single point of contact.</p>
 </div>
 </div>
 </div>
@@ -91,8 +91,8 @@ include 'templates/header.php';
 <section class="py-20 bg-white/40">
 <div class="max-w-4xl mx-auto px-6">
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">What Is a Managed Office Space?</h2>
-<p class="text-lg text-slate-600 leading-relaxed mb-6">A managed office is a workspace where the provider handles everything beyond your core business operations. Unlike traditional leases where you deal with landlords, interior designers, IT vendors, and maintenance staff separately, a managed office bundles all of this into one agreement with one monthly payment. No juggling five different vendors — just one call when something needs fixing.</p>
-<p class="text-lg text-slate-600 leading-relaxed mb-6">For growing companies in Mumbai, this means you can move into a fully functional office in 2-4 weeks instead of the typical 3-6 months it takes to set up a traditional office. You get a dedicated space (not shared desks), your own branding on the walls, and complete control over who enters your office.</p>
+<p class="text-lg text-slate-600 leading-relaxed mb-6">A managed office is a workspace where the provider handles everything beyond your core business operations. Unlike traditional leases where you deal with landlords, interior designers, IT vendors, and maintenance staff separately, a managed office bundles all of this into one agreement with one monthly payment.</p>
+<p class="text-lg text-slate-600 leading-relaxed mb-6">For growing companies in Mumbai, this means you can move into a fully functional office within 2-4 weeks instead of the typical 3-6 months it takes to set up a traditional office. You get a dedicated space (not shared desks), your own branding on the walls, and complete control over who enters your office.</p>
 <p class="text-lg text-slate-600 leading-relaxed">The managed office model has grown rapidly in Mumbai since 2020, especially among IT companies, fintech startups, and businesses expanding from other cities who need a Mumbai presence without the overhead of managing a commercial lease.</p>
 </div>
 </section>
@@ -195,7 +195,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-rocket text-xl"></i></div>
     <h3 class="text-xl font-bold text-slate-900 mb-3">Startups Scaling Up</h3>
-<p class="text-slate-600 leading-relaxed">You have outgrown your coworking space and need a proper office, but you can't afford to spend 3 months setting one up. A managed office lets you scale from 10 seats to 50 seats without operational headaches.</p>
+<p class="text-slate-600 leading-relaxed">You have outgrown your coworking space and need a proper office, but you cannot afford to spend 3 months setting one up. A managed office lets you scale from 10 seats to 50 seats without operational headaches.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-globe text-xl"></i></div>
@@ -234,14 +234,14 @@ include 'templates/header.php';
 <h3 class="text-lg font-bold text-slate-900">How quickly can I move into a managed office?</h3>
 <i class="fas fa-chevron-down text-brand-electric faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Typically 2-4 weeks from the day you confirm. This includes property selection, lease negotiation, and basic workspace setup. If you need a faster move-in, we can work with pre-fitted spaces that are ready in 7-10 days.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Typically 2-4 weeks from the day you confirm. This includes property selection, lease negotiation, and basic workspace setup. If you need a faster move-in, we can work with pre-fitted spaces that are ready within 7-10 days.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">
 <h3 class="text-lg font-bold text-slate-900">Can I put my company branding in a managed office?</h3>
 <i class="fas fa-chevron-down text-brand-electric faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Yes. Unlike coworking spaces, a managed office is your dedicated space. You can add your company signage, brand colors, and logo at the entrance and in the office. The space looks and feels like your own office — because it is.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Yes. Unlike coworking spaces, a managed office is your dedicated space. You can add your company signage, brand colors, and logo at the entrance and within the office. The space looks and feels like your own office — because it is.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">

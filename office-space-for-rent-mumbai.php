@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $page_id = 'find';
 $page_title = 'Office Space for Rent Mumbai | Managed Office Options | CorpEasy';
 $page_description = 'Find office space for rent in Mumbai — BKC, Lower Parel, Goregaon, Andheri. Also explore managed office solutions from ₹10,000/seat. Tenant representation free.';
@@ -25,15 +25,15 @@ include 'templates/header.php';
 <span class="text-[9px] font-black uppercase tracking-[0.4em] text-brand-cyan">Find Office Space</span>
 </div>
 <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 tracking-tighter mb-6 leading-none">Office Space for Rent<br><span class="text-gradient-vibrant">in Mumbai.</span></h1>
-<p class="text-base lg:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg">Looking for <strong>commercial office space for rent in Mumbai</strong>? Tell us your team size, preferred location, and budget. We shortlist verified, available spaces in 48 hours — and negotiate the lease on your behalf.</p>
+<p class="text-base lg:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg">Looking for <strong>commercial office space for rent in Mumbai</strong>? Tell us your team size, preferred location, and budget. We shortlist verified, available spaces within 48 hours — and negotiate the lease on your behalf.</p>
 <div class="space-y-3 mb-8">
 <div class="flex items-center gap-3">
 <div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
-<p class="text-sm font-semibold text-slate-700">Free for tenants — we're compensated by the landlord</p>
+<p class="text-sm font-semibold text-slate-700">Free for tenants — we are compensated by the landlord</p>
 </div>
 <div class="flex items-center gap-3">
 <div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
-<p class="text-sm font-semibold text-slate-700">Curated shortlist of 3–5 verified properties in 48 hours</p>
+<p class="text-sm font-semibold text-slate-700">Curated shortlist of 3–5 verified properties within 48 hours</p>
 </div>
 <div class="flex items-center gap-3">
 <div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
@@ -65,7 +65,7 @@ include 'templates/header.php';
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
 <div class="glass-card p-6 lg:p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
 <h3 class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Tell Us What You Are Looking For</h3>
-<p class="text-xs text-slate-500 mb-6 leading-relaxed">Share your requirement and we'll come back with verified options in 24–48 hours.</p>
+<p class="text-xs text-slate-500 mb-6 leading-relaxed">Share your requirement and we will come back with verified options within 24–48 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4 relative">
 <input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
@@ -74,7 +74,7 @@ include 'templates/header.php';
 <input type="text" name="requirement" placeholder="Requirement (e.g. BKC, 30 seats, ₹2L budget)" class="input-premium">
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
 <button type="submit" class="w-full bg-brand-cyan text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(6,182,212,0.35)] hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] transition-all">Find My Office Space</button>
-<p class="text-xs text-slate-400 text-center flex items-center justify-center gap-1.5 mt-2"><i class="fas fa-lock text-brand-cyan text-[10px]"></i> Free for tenants. Response in 48 hours.</p>
+<p class="text-xs text-slate-400 text-center flex items-center justify-center gap-1.5 mt-2"><i class="fas fa-lock text-brand-cyan text-[10px]"></i> Free for tenants. Response within 48 hours.</p>
 </form>
 </div>
 </div>
@@ -85,7 +85,7 @@ include 'templates/header.php';
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Mumbai Office Rental<br><span class="text-gradient-vibrant">Market in 2026.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Mumbai's commercial real estate market remains one of India's most active, with over 75 million square feet of Grade A office space across the city. Despite new supply from areas like Thane and Navi Mumbai, demand for prime locations like BKC, Lower Parel, and Andheri continues to outpace availability.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Average commercial rent in Mumbai ranges from ₹80 per sq ft/month in emerging areas like Thane to ₹350+ per sq ft/month in BKC's premium towers. For a 2,000 sq ft office (roughly 30 seats), monthly rent alone can range from ₹1.6 lakh to ₹7 lakh depending on the location and building grade.</p>
-<p class="text-lg text-slate-600 leading-relaxed mb-6">The biggest challenge for businesses looking for office space in Mumbai isn't finding available properties — it's finding the right one. Most commercial listings on portals like 99Acres and MagicBricks are outdated, duplicated, or posted by brokers who add their own commission. The actual rent and terms often differ significantly from what's advertised online.</p>
+<p class="text-lg text-slate-600 leading-relaxed mb-6">The biggest challenge for businesses looking for office space in Mumbai is not finding available properties — it is finding the right one. Most commercial listings on portals like 99Acres and MagicBricks are outdated, duplicated, or posted by brokers who add their own commission. The actual rent and terms often differ significantly from what is advertised online.</p>
 <p class="text-lg text-slate-600 leading-relaxed">This is where working with a tenant representative like CorpEasy makes a difference. We deal directly with landlords and building managers, verify availability in real-time, and negotiate terms that protect your interests — not the landlord's.</p>
 </div>
 </section>
@@ -103,7 +103,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <h3 class="text-xl font-bold text-slate-900 mb-2">Lower Parel</h3>
 <p class="text-xs text-brand-cyan font-bold uppercase tracking-wider mb-3">₹150 - ₹280 per sq ft/month</p>
-<p class="text-slate-600 leading-relaxed">The transformed mill district that's now a creative and tech hub. Buildings like Marathon Futurex, Peninsula Business Park, and One World Center offer Grade A spaces. Well-connected by local train (Lower Parel station on Western Line). Popular with media, advertising, e-commerce, and tech companies.</p>
+<p class="text-slate-600 leading-relaxed">The transformed mill district that is now a creative and tech hub. Buildings like Marathon Futurex, Peninsula Business Park, and One World Center offer Grade A spaces. Well-connected by local train (Lower Parel station on Western Line). Popular with media, advertising, e-commerce, and tech companies.</p>
 </div>
 <div class="glass-card p-8">
 <h3 class="text-xl font-bold text-slate-900 mb-2">Andheri East</h3>
@@ -132,7 +132,7 @@ include 'templates/header.php';
 <section class="py-20 bg-white/40">
 <div class="max-w-7xl mx-auto px-6">
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-6 text-center">How CorpEasy Helps You<br><span class="text-gradient-vibrant">Find the Right Space.</span></h2>
-<p class="text-lg text-slate-500 mb-16 text-center max-w-3xl mx-auto">We're not a listing portal. We're your tenant representative.</p>
+<p class="text-lg text-slate-500 mb-16 text-center max-w-3xl mx-auto">We are not a listing portal. We are your tenant representative.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan text-xl font-black mb-6">1</div>
@@ -152,7 +152,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan text-xl font-black mb-6">4</div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Lease Finalization</h3>
-<p class="text-slate-600 leading-relaxed">We review the lease agreement, flag unfavorable clauses, make sure the security deposit terms are fair, and make sure the rent escalation is in market norms before you sign anything.</p>
+<p class="text-slate-600 leading-relaxed">We review the lease agreement, flag unfavorable clauses, ensure the security deposit terms are fair, and make sure the rent escalation is within market norms before you sign anything.</p>
 </div>
 </div>
 </div>
@@ -195,7 +195,7 @@ include 'templates/header.php';
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-lock text-sm"></i></div>
-<div><h3 class="text-lg font-bold text-slate-900 mb-1">Lock-in Period</h3><p class="text-slate-600 leading-relaxed">The lock-in period means you can't vacate without paying rent for the remaining lock-in months. Standard is 12-36 months. If you're a startup, negotiate for a shorter lock-in or a break clause after 12 months.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Lock-in Period</h3><p class="text-slate-600 leading-relaxed">The lock-in period means you cannot vacate without paying rent for the remaining lock-in months. Standard is 12-36 months. If you are a startup, negotiate for a shorter lock-in or a break clause after 12 months.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-money-bill-wave text-sm"></i></div>
@@ -218,35 +218,35 @@ include 'templates/header.php';
 <h3 class="text-lg font-bold text-slate-900">Do you charge the tenant a fee?</h3>
 <i class="fas fa-chevron-down text-brand-cyan faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">No. Our service is free for tenants. We're compensated by the landlord as part of the transaction. You pay nothing extra — the rent and terms you get through us are the same (often better) than going directly to the landlord.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">No. Our service is free for tenants. We are compensated by the landlord as part of the transaction. You pay nothing extra — the rent and terms you get through us are the same (often better) than going directly to the landlord.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">
 <h3 class="text-lg font-bold text-slate-900">How is CorpEasy different from 99Acres or MagicBricks?</h3>
 <i class="fas fa-chevron-down text-brand-cyan faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Portals show you listings — often outdated or duplicated. We're a tenant representation service. We personally verify availability, accompany you on visits, negotiate terms on your behalf, and review the lease agreement before you sign. Think of us as your real estate advisor, not a property search engine.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Portals show you listings — often outdated or duplicated. We are a tenant representation service. We personally verify availability, accompany you on visits, negotiate terms on your behalf, and review the lease agreement before you sign. Think of us as your real estate advisor, not a property search engine.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">
 <h3 class="text-lg font-bold text-slate-900">What areas in Mumbai do you cover?</h3>
 <i class="fas fa-chevron-down text-brand-cyan faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">We cover all major commercial zones in Mumbai: BKC, Lower Parel, Andheri East, Goregaon, Powai, Malad, Vikhroli, Thane, and Navi Mumbai. If you have a specific area in mind that isn't listed, ask us — we likely have contacts there as well.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">We cover all major commercial zones in Mumbai: BKC, Lower Parel, Andheri East, Goregaon, Powai, Malad, Vikhroli, Thane, and Navi Mumbai. If you have a specific area in mind that is not listed, ask us — we likely have contacts there as well.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">
 <h3 class="text-lg font-bold text-slate-900">How long does it take to find an office?</h3>
 <i class="fas fa-chevron-down text-brand-cyan faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">We send an initial shortlist in 48 hours. Site visits can be scheduled in the same week. The entire process from first call to lease signing typically takes 2-4 weeks, depending on how quickly you make decisions and how complex the negotiation is. For urgent requirements, we can expedite this to under 10 days.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">We send an initial shortlist within 48 hours. Site visits can be scheduled within the same week. The entire process from first call to lease signing typically takes 2-4 weeks, depending on how quickly you make decisions and how complex the negotiation is. For urgent requirements, we can expedite this to under 10 days.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">
 <h3 class="text-lg font-bold text-slate-900">Can you help with office interiors and setup after the lease?</h3>
 <i class="fas fa-chevron-down text-brand-cyan faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Yes. If you take a bare shell or warm shell space, we can manage the interior fit-out and workspace setup through our Managed Office service. If you take a fully furnished space, we can provide ongoing facility management. We're a full-stack workspace solutions provider.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Yes. If you take a bare shell or warm shell space, we can manage the interior fit-out and workspace setup through our Managed Office service. If you take a fully furnished space, we can provide ongoing facility management. We are a full-stack workspace solutions provider.</div>
 </div>
 </div>
 </div>

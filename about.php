@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $page_id = 'about';
 $page_title = 'About CorpEasy | Managed Office Space Experts Mumbai';
 $page_description = 'CorpEasy is Mumbai\'s managed office space company — founded by Dev Doshi & Jay Nishar. We find, set up, and manage office space for growing businesses.';
@@ -39,8 +39,8 @@ include 'templates/header.php';
 <div class="relative z-10">
 <span class="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.4em] text-brand-electric mb-4 sm:mb-6 block text-center">Our Story</span>
 <h1 class="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl text-slate-900 font-black mb-8 sm:mb-12 text-center leading-[0.95]">Making <span class="text-gradient-vibrant">Office Space</span> Simple.</h1>
-<p class="text-base sm:text-lg lg:text-xl text-slate-600 text-center max-w-3xl mx-auto leading-relaxed mb-4 sm:mb-6 font-medium">CorpEasy is a Mumbai-based workspace solutions company, founded in October 2025. We're a young, asset-light startup with a straightforward mission: to make finding, setting up, and occupying commercial office space in Mumbai genuinely easier for businesses of all sizes.</p>
-<p class="text-sm sm:text-base lg:text-lg text-slate-500 text-center max-w-2xl mx-auto leading-relaxed mb-12 sm:mb-20">We're building something better, one client at a time.</p>
+<p class="text-base sm:text-lg lg:text-xl text-slate-600 text-center max-w-3xl mx-auto leading-relaxed mb-4 sm:mb-6 font-medium">CorpEasy is a Mumbai based workspace solutions company, founded in October 2025. We are a young, asset-light startup with a straightforward mission: to make the process of finding, setting up, and occupying commercial office space in Mumbai genuinely easier for businesses of all sizes.</p>
+<p class="text-sm sm:text-base lg:text-lg text-slate-500 text-center max-w-2xl mx-auto leading-relaxed mb-12 sm:mb-20">We are building something better, one client at a time.</p>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-12 text-center">
 <div class="glass-card p-4 sm:p-6 lg:p-10 group hover:border-brand-electric/50"><p class="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-black text-slate-900 mb-2 sm:mb-4 lg:mb-6 tracking-tighter group-hover:text-brand-electric transition-colors">Mumbai</p><p class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold text-slate-600 uppercase tracking-wider lg:tracking-widest">Focus Market</p></div>
 <div class="glass-card p-4 sm:p-6 lg:p-10 group hover:border-brand-cyan/50"><p class="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-black text-slate-900 mb-2 sm:mb-4 lg:mb-6 tracking-tighter group-hover:text-brand-cyan transition-colors">3</p><p class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold text-slate-600 uppercase tracking-wider lg:tracking-widest">Services</p></div>
@@ -64,7 +64,7 @@ include 'templates/header.php';
 </div>
 <h3 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h3>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Business Development & Strategy</p>
-<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client-facing work and strategic direction — basically, he's the one who makes sure you're taken care of.</p>
+<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
 </div>
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
@@ -72,7 +72,7 @@ include 'templates/header.php';
 </div>
 <h3 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h3>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Operations & Growth</p>
-<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Jay manages CorpEasy's operational processes and client delivery. He's the one who makes sure everything we promise actually happens — on time, every time.</p>
+<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Jay manages CorpEasy's operational processes and client delivery. He ensures that every commitment made to a client is followed through reliably and on time.</p>
 </div>
 </div>
 </div>
@@ -83,12 +83,12 @@ include 'templates/header.php';
 <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-brand-electric z-10"></div>
 <div class="absolute left-[7px] top-4 w-0.5 bg-gradient-to-b from-brand-electric to-brand-cyan h-full z-0"></div>
 <h3 class="text-gradient-vibrant text-2xl font-black mb-2">October 2025</h3>
-<div class="glass-card p-6 reveal">CorpEasy founded in Mumbai. We started with a simple belief: finding and setting up office space in this city shouldn't be this complicated. That belief hasn't changed.</div>
+<div class="glass-card p-6 reveal">CorpEasy founded in Mumbai. We started with a simple belief: finding and setting up office space in this city should not be this complicated. That belief has not changed.</div>
 </div>
 <div class="relative pl-16">
 <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-brand-electric z-10"></div>
 <h3 class="text-gradient-vibrant text-2xl font-black mb-2">2026 and Beyond</h3>
-<div class="glass-card p-6 reveal delay-300">Building our client base across Mumbai. Helping startups, growing teams, and property owners navigate the city's commercial office market. We're early, and we're focused.</div>
+<div class="glass-card p-6 reveal delay-300">Building our client base across Mumbai. Helping startups, growing teams, and property owners navigate the city's commercial office market. We are early, and we are focused.</div>
 </div>
 </div>
 </div>
@@ -109,7 +109,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-search text-xl"></i></div>
 <h3 class="text-xl font-black text-slate-900 mb-3">Office for Rent</h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4">For companies that want to lease their own space, we handle the search, shortlisting, landlord negotiations, and lease review. Free for tenants — we're paid by the landlord on successful placement.</p>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">For companies that want to lease their own space, we handle the search, shortlisting, landlord negotiations, and lease review. Free for tenants — we are paid by the landlord on successful placement.</p>
 <a href="/office-space-for-rent-mumbai" class="text-brand-electric text-sm font-semibold hover:underline">Find Office Space for Rent →</a>
 </div>
 <div class="glass-card p-8">
@@ -121,7 +121,7 @@ include 'templates/header.php';
 </div>
 <div class="glass-card p-8 lg:p-12 text-center">
 <h3 class="text-2xl font-black text-slate-900 mb-4">Why Businesses Choose CorpEasy for Managed Office Space in Mumbai</h3>
-<p class="text-slate-600 leading-relaxed max-w-3xl mx-auto mb-6">Setting up an office in Mumbai involves multiple decision points — the right micro-market, the right building, lease terms that don't trap you, furniture procurement, IT setup, and then ongoing maintenance. Most companies spend 3–6 months on this process and still get parts of it wrong. CorpEasy exists to make that process simple. We've worked with teams ranging from 10 seats to over 100 seats, across BKC, Lower Parel, Goregaon, and Andheri. Every engagement is handled directly by our founding team — no middlemen, no junior staff passing messages.</p>
+<p class="text-slate-600 leading-relaxed max-w-3xl mx-auto mb-6">Setting up an office in Mumbai involves multiple decision points — the right micro-market, the right building, lease terms that do not trap you, furniture procurement, IT setup, and then ongoing maintenance. Most companies spend 3–6 months on this process and still get parts of it wrong. CorpEasy exists to make that process simple. We have worked with teams ranging from 10 seats to over 100 seats, across BKC, Lower Parel, Goregaon, and Andheri. Every engagement is handled directly by our founding team.</p>
 <a href="/contact" class="bg-brand-electric text-white px-8 py-4 rounded-lg font-semibold text-sm hover:scale-105 transition-all inline-block">Talk to Our Team</a>
 </div>
 </div>
