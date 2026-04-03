@@ -56,6 +56,14 @@ ErrorDocument 404 /404.php
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
     AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
     AddOutputFilterByType DEFLATE application/json image/svg+xml font/woff font/woff2
+    AddOutputFilterByType DEFLATE application/rss+xml
+</IfModule>
+
+# ── Brotli Compression (if available) ────────────────────────
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css
+    AddOutputFilterByType BROTLI_COMPRESS text/javascript application/javascript application/x-javascript
+    AddOutputFilterByType BROTLI_COMPRESS application/json image/svg+xml font/woff font/woff2
 </IfModule>
 
 # ── Browser Caching ───────────────────────────────────────────
@@ -91,6 +99,8 @@ ErrorDocument 404 /404.php
     Header set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
     Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    # Mobile performance: enable early hints for faster page loads
+    Header set Accept-CH "Sec-CH-UA-Platform-Version, Sec-CH-UA-Model"
 </IfModule>
 
 # ── Block access to sensitive files ──────────────────────────

@@ -84,6 +84,14 @@ $page_lcp_image = $page_lcp_image ?? '';
         /* transition:none!important blocks any CSS transition firing during async CSS load */
         #solutions-panel{opacity:0;visibility:hidden;transition:none!important}
         #fab-container{opacity:0;pointer-events:none;transition:none!important}
+        /* Mobile performance: disable heavy animations on low-end devices */
+        @media(max-width:768px){
+            .orb-drift{display:none!important}
+            .glow-blob{display:none!important}
+            .reveal{opacity:1;transform:none;transition:none}
+            .page-enter{animation:none;opacity:1;transform:none}
+            .tilt-shine{display:none!important}
+        }
     </style>
 
     <!-- SEO -->
@@ -96,7 +104,7 @@ $page_lcp_image = $page_lcp_image ?? '';
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="CorpEasy">
 
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager (deferred for mobile performance) -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -271,10 +279,10 @@ $page_lcp_image = $page_lcp_image ?? '';
     <?php endif; ?>
 
     <!-- Tailwind = render-blocking (controls all layout — async causes FOUC) -->
-    <link rel="stylesheet" href="/tailwind.min.css?v=20260328b">
+    <link rel="stylesheet" href="/tailwind.min.css?v=20260403">
     <!-- Style.css = non-blocking (decorative animations, card styles, etc.) -->
-    <link rel="stylesheet" href="/style.min.css?v=20260402" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="/style.min.css?v=20260402"></noscript>
+    <link rel="stylesheet" href="/style.min.css?v=20260403" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/style.min.css?v=20260403"></noscript>
 
     <!-- Font (non-blocking) -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">

@@ -89,6 +89,8 @@ function toggleFAQ(row) {
 /* ===== Tilt Cards (desktop only, GPU-composited) ===== */
 function initTiltCards() {
     if (window.innerWidth < 1024 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // Skip on low-end mobile devices
+    if (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4) return;
     document.querySelectorAll('.glass-card').forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
