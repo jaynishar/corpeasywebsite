@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_id = 'managed-andheri';
 $page_title = 'Managed Office Space Andheri Mumbai | From ₹12,000/Seat | CorpEasy';
 $page_description = 'Managed office space in Andheri East Mumbai from ₹12,000/seat/month. 10-15 min from airport, Metro Line 1, MIDC belt. Zero setup hassle. Move in 2-4 weeks.';
@@ -28,10 +28,10 @@ include 'templates/header.php';
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> Complete workspace setup handled end to end. Zero contractors to manage.</p>
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> One all-inclusive per seat cost. No hidden charges, no surprises.</p>
 </div>
-<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Andheri</strong> with airport proximity and metro connectivity? Andheri East is one of Mumbai's largest and most diverse commercial zones — home to IT parks, multinational offices, and a thriving startup ecosystem. From the MIDC belt to Chakala junction, we source the right space and deliver a workspace that is ready when your team walks in on Day 1.</p>
+<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Andheri</strong> with airport proximity and metro connectivity? Andheri East is one of Mumbai's largest and most diverse commercial zones — home to IT parks, multinational offices, and a thriving startup ecosystem. From the MIDC belt to Chakala junction, we source the right space and deliver a workspace that's ready when your team walks in on Day 1.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
 <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">From ₹12,000/seat</h3><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing for commercial buildings in Andheri East.</p></div>
-    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h3><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
+    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h3><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in in 7-10 days.</p></div>
     <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">10-120+ Seats</h3><p class="text-xs text-slate-600 mt-1">Wide range of options from startup-size to large enterprise teams.</p></div>
 </div>
 </div>
@@ -72,10 +72,10 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-industry text-xl"></i></div>
     <h3 class="text-xl font-bold text-slate-900 mb-3">Diverse Commercial Ecosystem</h3>
-<p class="text-slate-600 leading-relaxed">The MIDC industrial area, Chakala junction, and Marol belt form one of Mumbai's largest commercial clusters. IT companies, pharmaceutical firms, logistics businesses, and consulting offices all operate here. This diversity means you get mature commercial infrastructure — reliable internet, multiple food courts, banking services, and courier hubs within walking distance.</p>
+<p class="text-slate-600 leading-relaxed">The MIDC industrial area, Chakala junction, and Marol belt form one of Mumbai's largest commercial clusters. IT companies, pharmaceutical firms, logistics businesses, and consulting offices all operate here. This diversity means you get mature commercial infrastructure — reliable internet, multiple food courts, banking services, and courier hubs in walking distance.</p>
 </div>
 </div>
-<p class="text-lg text-slate-600 leading-relaxed mt-12 max-w-4xl mx-auto text-center">Andheri also benefits from being centrally located on Mumbai's map. Employees commuting from Thane, Navi Mumbai (via the metro to Ghatkopar), Borivali, or even South Mumbai can reach Andheri within reasonable timeframes. This central positioning makes it easier to hire and retain talent from across the city.</p>
+<p class="text-lg text-slate-600 leading-relaxed mt-12 max-w-4xl mx-auto text-center">Andheri also benefits from being centrally located on Mumbai's map. Employees commuting from Thane, Navi Mumbai (via the metro to Ghatkopar), Borivali, or even South Mumbai can reach Andheri in reasonable timeframes. This central positioning makes it easier to hire and retain talent from across the city.</p>
 </div>
 </section>
 
@@ -84,7 +84,7 @@ include 'templates/header.php';
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Andheri Office Market —<br><span class="text-gradient-vibrant">What to Expect.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Andheri East offers a broad pricing spectrum for managed offices. Per-seat costs range from <strong>₹12,000 to ₹22,000 per month</strong>, all-inclusive. Buildings closer to the metro station and Chakala junction command higher rates, while those in the MIDC interior or Marol belt offer more competitive pricing with similar infrastructure quality.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Managed offices in Andheri are available in configurations from <strong>10 to 120+ seats</strong>. The area has a healthy mix of modern commercial towers and well-maintained IT parks. Pre-fitted spaces can be ready in 7-10 days, while bare shell setups with custom interiors take 3-4 weeks. We handle the full fit-out process — furniture, networking, electrical, access control, and pantry setup.</p>
-<p class="text-lg text-slate-600 leading-relaxed">Lease terms typically start at <strong>11-12 months</strong>. Security deposits range from 3-5 months depending on the building and landlord. We negotiate lock-in periods, exit clauses, and escalation caps on your behalf. For growing companies, we also identify buildings where adjacent space is available for future expansion, so you do not have to relocate when your team grows.</p>
+<p class="text-lg text-slate-600 leading-relaxed">Lease terms typically start at <strong>11-12 months</strong>. Security deposits range from 3-5 months depending on the building and landlord. We negotiate lock-in periods, exit clauses, and escalation caps on your behalf. For growing companies, we also identify buildings where adjacent space is available for future expansion, so you don't have to relocate when your team grows.</p>
 </div>
 </section>
 
@@ -110,7 +110,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-blue/10 border border-brand-blue/30 rounded-xl flex items-center justify-center text-brand-blue mb-6"><i class="fas fa-users text-xl"></i></div>
     <h3 class="text-xl font-bold text-slate-900 mb-3">Distributed Teams</h3>
-<p class="text-slate-600 leading-relaxed">Companies with employees spread across Mumbai benefit from Andheri's central location and dual transit options (metro and railway). It is one of the few locations accessible within 45 minutes from Thane, Navi Mumbai, Borivali, and Bandra alike.</p>
+<p class="text-slate-600 leading-relaxed">Companies with employees spread across Mumbai benefit from Andheri's central location and dual transit options (metro and railway). It's one of the few locations accessible in 45 minutes from Thane, Navi Mumbai, Borivali, and Bandra alike.</p>
 </div>
 </div>
 </div>

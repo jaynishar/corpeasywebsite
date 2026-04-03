@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_id = 'managed-lower-parel';
 $page_title = 'Managed Office Space Lower Parel Mumbai | CorpEasy';
 $page_description = 'Managed office space in Lower Parel Mumbai from ₹14,000/seat/month. Near Marathon Futurex, Peninsula Business Park. Full setup. Move in 2–4 weeks.';
@@ -28,10 +28,10 @@ include 'templates/header.php';
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> Complete workspace setup handled end to end. Zero contractors to coordinate.</p>
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> One all-inclusive per seat cost. No hidden charges, no surprises.</p>
 </div>
-<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Lower Parel</strong> without the headache of property visits, landlord negotiations, and interior fit-outs? Lower Parel has transformed from Mumbai's historic mill district into one of the city's most dynamic commercial corridors. We handle everything — from sourcing space near Marathon Futurex or Peninsula Business Park to delivering a workspace that is ready when your team walks in on Day 1.</p>
+<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Lower Parel</strong> without the headache of property visits, landlord negotiations, and interior fit-outs? Lower Parel has transformed from Mumbai's historic mill district into one of the city's most dynamic commercial corridors. We handle everything — from sourcing space near Marathon Futurex or Peninsula Business Park to delivering a workspace that's ready when your team walks in on Day 1.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
 <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">From ₹14,000/seat</h3><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing across Grade A buildings in Lower Parel.</p></div>
-    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h3><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
+    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h3><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in in 7-10 days.</p></div>
     <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">10-100+ Seats</h3><p class="text-xs text-slate-600 mt-1">Flexible team sizes across a wide range of building options.</p></div>
 </div>
 </div>
@@ -67,7 +67,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-train text-xl"></i></div>
     <h3 class="text-xl font-bold text-slate-900 mb-3">Railway Station at Your Doorstep</h3>
-<p class="text-slate-600 leading-relaxed">Lower Parel railway station on the Western Line puts your office within walking distance of one of Mumbai's busiest commuter routes. Most commercial buildings are 5-10 minutes on foot from the station. This makes daily commutes manageable for teams living anywhere along the Western corridor.</p>
+<p class="text-slate-600 leading-relaxed">Lower Parel railway station on the Western Line puts your office in walking distance of one of Mumbai's busiest commuter routes. Most commercial buildings are 5-10 minutes on foot from the station. This makes daily commutes manageable for teams living anywhere along the Western corridor.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-building text-xl"></i></div>
@@ -84,7 +84,7 @@ include 'templates/header.php';
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Lower Parel Office Market —<br><span class="text-gradient-vibrant">What to Expect.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Lower Parel sits in a sweet spot between South Mumbai's premium pricing and the suburbs' affordability. Per-seat costs for a managed office in Lower Parel typically range from <strong>₹14,000 to ₹28,000 per month</strong>. The variation depends on the building — a seat in Peninsula Business Park or One World Center will cost more than one in a smaller commercial complex off the main road.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Managed offices in Lower Parel are available in configurations from <strong>10 to 100+ seats</strong>. The area has a healthy inventory of both pre-fitted and bare shell spaces. Pre-fitted offices can be ready in 7-10 days. For bare shell setups with custom interiors, expect a 3-4 week timeline. We handle the entire fit-out process including furniture, networking, electrical work, and access systems.</p>
-<p class="text-lg text-slate-600 leading-relaxed">Standard lease terms start at <strong>11-12 months</strong>, with many landlords offering 24-month agreements for managed office tenants. Security deposits typically range from 3-6 months. We negotiate lock-in periods and exit clauses to protect your flexibility, especially important for growing companies that may need to scale up within 12-18 months.</p>
+<p class="text-lg text-slate-600 leading-relaxed">Standard lease terms start at <strong>11-12 months</strong>, with many landlords offering 24-month agreements for managed office tenants. Security deposits typically range from 3-6 months. We negotiate lock-in periods and exit clauses to protect your flexibility, especially important for growing companies that may need to scale up in 12-18 months.</p>
 </div>
 </section>
 
@@ -132,7 +132,7 @@ include 'templates/header.php';
 <h3 class="text-lg font-bold text-slate-900">How far is Lower Parel from the railway station?</h3>
 <i class="fas fa-chevron-down text-brand-electric faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Most commercial buildings in Lower Parel are within a 5-10 minute walk from Lower Parel railway station on the Western Line. Buildings closer to the main road like Peninsula Business Park are practically at the station doorstep. Elphinstone Road station on the Western Line is also nearby, giving your team two station options for daily commutes.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Most commercial buildings in Lower Parel are in a 5-10 minute walk from Lower Parel railway station on the Western Line. Buildings closer to the main road like Peninsula Business Park are practically at the station doorstep. Elphinstone Road station on the Western Line is also nearby, giving your team two station options for daily commutes.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">

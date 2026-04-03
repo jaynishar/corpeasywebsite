@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 $page_id = 'privacy';
 $page_title = 'Privacy Policy | CorpEasy — Managed Office Space Mumbai';
-$page_description = 'CorpEasy privacy policy covering data collection, use, cookies, and your rights regarding personal information shared through our website.';
+$page_description = 'CorpEasy privacy policy covering data collection, use, cookies, and your rights about personal information shared through our website.';
 $page_keywords = 'CorpEasy privacy policy, data protection, GDPR, cookies policy';
 $page_canonical = 'https://www.corpeasy.in/privacy-policy';
 
@@ -46,7 +46,7 @@ include 'templates/header.php';
     <h2 class="text-2xl font-bold text-slate-900 mb-4">3. How We Use Your Information</h2>
     <ul class="list-disc pl-6 space-y-2">
       <li>To respond to your office space enquiry and provide relevant options</li>
-      <li>To call or email you regarding your requirement</li>
+      <li>To call or email you about your requirement</li>
       <li>To improve website performance and user experience</li>
       <li>To measure which pages and content are most useful</li>
     </ul>
@@ -77,12 +77,12 @@ include 'templates/header.php';
       <li>Request deletion of your data</li>
       <li>Withdraw consent to marketing communications at any time</li>
     </ul>
-    <p class="mt-3">To exercise any of these rights, email us at <a href="mailto:devdoshi@corpeasy.in" class="text-brand-electric hover:underline">devdoshi@corpeasy.in</a> with "Privacy Request" in the subject line. We will respond within 30 days.</p>
+    <p class="mt-3">To exercise any of these rights, email us at <a href="mailto:devdoshi@corpeasy.in" class="text-brand-electric hover:underline">devdoshi@corpeasy.in</a> with "Privacy Request" in the subject line. We'll respond in 30 days.</p>
   </div>
 
   <div>
     <h2 class="text-2xl font-bold text-slate-900 mb-4">7. Third-Party Links</h2>
-    <p>Our website contains links to external websites including LinkedIn, Instagram, and WhatsApp. This Privacy Policy does not apply to those sites. We encourage you to review the privacy policies of any third-party sites you visit.</p>
+    <p>Our website contains links to external websites including LinkedIn, Instagram, and WhatsApp. This Privacy Policy doesn't apply to those sites. We encourage you to review the privacy policies of any third-party sites you visit.</p>
   </div>
 
   <div>

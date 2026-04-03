@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_id = 'rent-bkc';
 $page_title = 'Office Space for Rent in BKC Mumbai | From ₹250/sq ft | CorpEasy';
 $page_description = 'Office space for rent in BKC Mumbai from ₹250/sqft/month. Verified properties in Platina, One BKC, Trade World. Free landlord negotiation & lease review.';
@@ -21,7 +21,7 @@ include 'templates/header.php';
 <div class="max-w-2xl mx-auto mb-12 relative z-10">
 <div class="glass-card p-6 sm:p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
 <h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Looking for Office Space in BKC?</h3>
-<p class="text-sm text-slate-600 mb-4 sm:mb-6">Share your team size and budget. We will send you verified BKC options within 48 hours.</p>
+<p class="text-sm text-slate-600 mb-4 sm:mb-6">Share your team size and budget. We'll send you verified BKC options in 48 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
@@ -70,7 +70,7 @@ include 'templates/header.php';
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">BKC Office Rental<br><span class="text-gradient-vibrant">Market Overview.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">BKC commands the highest commercial rents in Mumbai, ranging from <strong>₹250 to ₹380 per sq ft per month</strong> depending on the building, floor level, and furnishing status. Premium towers like One BKC and Maker Maxity sit at the top end, while slightly older buildings and lower floors start closer to ₹250.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Typical office sizes in BKC range from <strong>2,000 to 20,000 sq ft</strong>. A 5,000 sq ft office (roughly 60-70 seats) in a mid-range BKC building costs approximately ₹15-17 lakh per month in rent alone. Add CAM charges of ₹25-40 per sq ft and parking at ₹10,000-15,000 per spot, and the total occupancy cost is significantly higher than the base rent.</p>
-<p class="text-lg text-slate-600 leading-relaxed mb-6">Despite the premium pricing, vacancy rates in BKC remain low. Most available inventory is absorbed within 2-3 months of hitting the market. If you are seriously looking, acting quickly on verified options matters more here than in any other Mumbai micro-market.</p>
+<p class="text-lg text-slate-600 leading-relaxed mb-6">Despite the premium pricing, vacancy rates in BKC remain low. Most available inventory is absorbed in 2-3 months of hitting the market. If you're seriously looking, acting quickly on verified options matters more here than in any other Mumbai micro-market.</p>
 <p class="text-lg text-slate-600 leading-relaxed">Security deposits in BKC are typically <strong>4 to 6 months</strong> of rent (interest-free), with lease terms of 3-5 years and a standard rent escalation of 5% per annum. Some landlords in premium buildings push for 6-month deposits — this is negotiable, and we help you bring it down.</p>
 </div>
 </section>
@@ -98,7 +98,7 @@ include 'templates/header.php';
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-couch text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Fully Furnished</h3>
 <p class="text-xs text-brand-violet font-bold uppercase tracking-wider mb-3">₹320 - ₹380 per sq ft/month</p>
-<p class="text-slate-600 leading-relaxed mb-3">Move-in ready with workstations, cabins, meeting rooms, reception, pantry, and IT cabling. Zero setup cost and occupancy within 1-2 weeks. Ideal for teams that need to start operations immediately.</p>
+<p class="text-slate-600 leading-relaxed mb-3">Move-in ready with workstations, cabins, meeting rooms, reception, pantry, and IT cabling. Zero setup cost and occupancy in 1-2 weeks. Ideal for teams that need to start operations immediately.</p>
 <p class="text-sm text-brand-violet font-semibold">Best for: Startups, project offices, and quick expansions</p>
 </div>
 </div>
@@ -112,7 +112,7 @@ include 'templates/header.php';
 <div class="space-y-6">
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-rupee-sign text-sm"></i></div>
-<div><h3 class="text-lg font-bold text-slate-900 mb-1">CAM Charges Are Steep</h3><p class="text-slate-600 leading-relaxed">Common Area Maintenance in BKC ranges from ₹25 to ₹40 per sq ft per month. On a 5,000 sq ft office, that is ₹1.25-2 lakh per month on top of rent. Always ask for the total cost of occupancy, not just the base rent. CAM covers lobby maintenance, lift operations, security, and common area utilities.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">CAM Charges Are Steep</h3><p class="text-slate-600 leading-relaxed">Common Area Maintenance in BKC ranges from ₹25 to ₹40 per sq ft per month. On a 5,000 sq ft office, that's ₹1.25-2 lakh per month on top of rent. Always ask for the total cost of occupancy, not just the base rent. CAM covers lobby maintenance, lift operations, security, and common area utilities.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-parking text-sm"></i></div>
@@ -120,11 +120,11 @@ include 'templates/header.php';
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-money-bill-wave text-sm"></i></div>
-<div><h3 class="text-lg font-bold text-slate-900 mb-1">Deposit Negotiation</h3><p class="text-slate-600 leading-relaxed">Standard security deposit in BKC is 4-6 months rent (interest-free). On a ₹15 lakh/month office, that is ₹60-90 lakh locked up. Some landlords start at 6 months — we typically negotiate this down to 4 months for our clients, freeing up working capital.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Deposit Negotiation</h3><p class="text-slate-600 leading-relaxed">Standard security deposit in BKC is 4-6 months rent (interest-free). On a ₹15 lakh/month office, that's ₹60-90 lakh locked up. Some landlords start at 6 months — we typically negotiate this down to 4 months for our clients, freeing up working capital.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-lock text-sm"></i></div>
-<div><h3 class="text-lg font-bold text-slate-900 mb-1">Lock-in and Escalation</h3><p class="text-slate-600 leading-relaxed">Most BKC leases have a 24-36 month lock-in and 5% annual escalation. If you are a growing company, negotiate a right of first refusal for adjacent floors and ensure the escalation clause is capped. Some landlords try to apply escalation on CAM as well — push back on this.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Lock-in and Escalation</h3><p class="text-slate-600 leading-relaxed">Most BKC leases have a 24-36 month lock-in and 5% annual escalation. If you're a growing company, negotiate a right of first refusal for adjacent floors and make sure the escalation clause is capped. Some landlords try to apply escalation on CAM as well — push back on this.</p></div>
 </div>
 </div>
 </div>

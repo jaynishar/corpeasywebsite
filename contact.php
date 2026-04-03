@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 $page_id = 'contact';
 $page_title = 'Contact CorpEasy | Free Office Space Consultation Mumbai';
-$page_description = 'Contact CorpEasy for managed office space, facility management, or commercial property enquiries in Mumbai. We respond within 24 hours, Mon-Sat 9AM-7PM.';
+$page_description = 'Contact CorpEasy for managed office space, facility management, or commercial property enquiries in Mumbai. We respond in 24 hours, Mon-Sat 9AM-7PM.';
 $page_keywords = 'contact CorpEasy, office space consultation Mumbai, managed office enquiry Mumbai, facility management quote Mumbai, free office consultation Mumbai, office space advice Mumbai';
 $page_canonical = 'https://www.corpeasy.in/contact';
 $page_og_image = 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
@@ -31,7 +31,7 @@ include 'templates/header.php';
 <span class="text-[10px] sm:text-xs font-semibold text-brand-electric uppercase tracking-[0.2em] sm:tracking-[0.4em]">Get in Touch</span>
 </div>
 <h1 class="text-4xl sm:text-5xl lg:text-6xl text-slate-900 font-black mb-6 sm:mb-10 leading-tight">Let's<br><span class="text-gradient-vibrant">Talk.</span></h1>
-<p class="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed mb-8 sm:mb-16 max-w-sm">Whether you are looking for office space in Mumbai, want help finding a tenant for your property, or just have a question, fill in the form and we will be back in touch within 24 hours.</p>
+<p class="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed mb-8 sm:mb-16 max-w-sm">Whether you're looking for office space in Mumbai, want help finding a tenant for your property, or just have a question, fill in the form and we'll be back in touch in 24 hours.</p>
 <div class="space-y-4 sm:space-y-6 lg:space-y-10">
 <div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
 <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/70 border border-white/80 rounded-xl sm:rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-lg sm:text-xl"></i></div>
@@ -88,7 +88,7 @@ include 'templates/header.php';
 <option>100+ seats</option>
 </select>
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
-<p class="text-[10px] sm:text-xs text-slate-500 text-center flex items-center justify-center gap-1.5"><i class="fas fa-clock text-brand-electric"></i> We respond within 24 hours — Mon to Sat, 9 AM to 7 PM IST.</p>
+<p class="text-[10px] sm:text-xs text-slate-500 text-center flex items-center justify-center gap-1.5"><i class="fas fa-clock text-brand-electric"></i> We respond in 24 hours — Mon to Sat, 9 AM to 7 PM IST.</p>
 <button type="submit" class="w-full bg-brand-electric text-white py-4 sm:py-6 rounded-lg font-bold sm:font-medium text-sm sm:text-xs shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-[1.02]">Get Free Consultation</button>
 </form>
 </div>
@@ -97,7 +97,7 @@ include 'templates/header.php';
 <section class="py-16 sm:py-20 bg-white/40">
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
 <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3 text-center">What to Expect</h2>
-<p class="text-slate-500 text-center max-w-2xl mx-auto mb-12">Most enquiries get a response within a few hours. Here is what happens after you fill in the form.</p>
+<p class="text-slate-500 text-center max-w-2xl mx-auto mb-12">Most enquiries get a response in a few hours. Here is what happens after you fill in the form.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 <div class="glass-card p-8">
 <div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-5"><span class="font-black text-sm">1</span></div>
@@ -111,7 +111,7 @@ include 'templates/header.php';
 </div>
 <div class="glass-card p-8">
 <div class="w-10 h-10 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-5"><span class="font-black text-sm">3</span></div>
-<h3 class="text-lg font-black text-slate-900 mb-3">Options Within 48 Hours</h3>
+<h3 class="text-lg font-black text-slate-900 mb-3">Options In 48 Hours</h3>
 <p class="text-sm text-slate-600 leading-relaxed">Based on your brief, we put together a shortlist of suitable commercial spaces or managed office options across Mumbai — with pricing, availability, and our honest recommendation for each.</p>
 </div>
 </div>
@@ -120,15 +120,15 @@ include 'templates/header.php';
 <div class="space-y-4">
 <div class="glass-card p-6">
 <h3 class="font-bold text-slate-900 mb-2">Is the consultation really free?</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Yes, completely free for tenants. CorpEasy is a tenant representation service — we are paid by landlords and managed office operators as part of the transaction, so our search, shortlisting, and negotiation services cost you nothing.</p>
+<p class="text-sm text-slate-600 leading-relaxed">Yes, completely free for tenants. CorpEasy is a tenant representation service — we're paid by landlords and managed office operators as part of the transaction, so our search, shortlisting, and negotiation services cost you nothing.</p>
 </div>
 <div class="glass-card p-6">
 <h3 class="font-bold text-slate-900 mb-2">How quickly can we move into a managed office space in Mumbai?</h3>
-<p class="text-sm text-slate-600 leading-relaxed">For pre-fitted managed offices, move-in can happen in as little as 7–10 working days. For custom setup, the typical timeline is 3–6 weeks depending on the size and fit-out requirements. We will give you a realistic timeline at the initial consultation stage.</p>
+<p class="text-sm text-slate-600 leading-relaxed">For pre-fitted managed offices, move-in can happen in as little as 7–10 working days. For custom setup, the typical timeline is 3–6 weeks depending on the size and fit-out requirements. We'll give you a realistic timeline at the initial consultation stage.</p>
 </div>
 <div class="glass-card p-6">
 <h3 class="font-bold text-slate-900 mb-2">What areas do you cover in Mumbai?</h3>
-<p class="text-sm text-slate-600 leading-relaxed">We work across all major commercial zones in Mumbai — BKC, Lower Parel, Andheri East, Goregaon East, Powai, Worli, and Thane. If your preferred location is not listed here, ask us anyway — we have contacts across the city.</p>
+<p class="text-sm text-slate-600 leading-relaxed">We work across all major commercial zones in Mumbai — BKC, Lower Parel, Andheri East, Goregaon East, Powai, Worli, and Thane. If your preferred location isn't listed here, ask us anyway — we've contacts across the city.</p>
 </div>
 </div>
 </div>

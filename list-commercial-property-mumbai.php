@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_id = 'list';
 $page_title = 'List Commercial Property Mumbai | CorpEasy';
 $page_description = 'List your commercial office in Mumbai with CorpEasy. We find pre-qualified business tenants, manage lease negotiations & place on fixed-term agreements.';
@@ -65,7 +65,7 @@ include 'templates/header.php';
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
 <div class="glass-card p-6 lg:p-8 border-t-4 border-t-brand-gold shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
 <h3 class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-building text-brand-gold"></i> Tell Us About Your Property</h3>
-<p class="text-xs text-slate-500 mb-6 leading-relaxed">Share your property details and we will get back to you within 24 hours.</p>
+<p class="text-xs text-slate-500 mb-6 leading-relaxed">Share your property details and we'll get back to you in 24 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4 relative">
 <input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company or Property Owner Name" class="input-premium">
@@ -75,7 +75,7 @@ include 'templates/header.php';
 <input type="number" name="property_area" placeholder="Approximate Area (Sq Ft)" class="input-premium">
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
 <button type="submit" class="w-full bg-brand-gold text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(251,191,36,0.35)] hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(251,191,36,0.5)] transition-all">Submit Property Details</button>
-<p class="text-xs text-slate-400 text-center flex items-center justify-center gap-1.5 mt-2"><i class="fas fa-lock text-brand-gold text-[10px]"></i> No spam. We respond within 24 hours.</p>
+<p class="text-xs text-slate-400 text-center flex items-center justify-center gap-1.5 mt-2"><i class="fas fa-lock text-brand-gold text-[10px]"></i> No spam. We respond in 24 hours.</p>
 </form>
 </div>
 </div>
@@ -95,7 +95,7 @@ include 'templates/header.php';
 <section class="py-16 lg:py-24 bg-white/40">
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
 <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3 text-center">How We Find You the Right Tenant</h2>
-<p class="text-slate-500 text-center max-w-2xl mx-auto mb-12 text-base">We do not blast your property on every listing portal and hope for the best. We match your space to the right type of business tenant from our active pipeline.</p>
+<p class="text-slate-500 text-center max-w-2xl mx-auto mb-12 text-base">We don't blast your property on every listing portal and hope for the best. We match your space to the right type of business tenant from our active pipeline.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <div class="glass-card p-7">
 <div class="w-10 h-10 bg-brand-gold/10 border border-brand-gold/30 rounded-xl flex items-center justify-center text-brand-gold mb-5"><span class="font-black text-sm">1</span></div>
@@ -122,7 +122,7 @@ include 'templates/header.php';
 <div>
 <h2 class="text-2xl font-black text-slate-900 mb-6">What Types of Properties Do We List?</h2>
 <p class="text-slate-600 leading-relaxed mb-4">We work with commercial office properties in Mumbai that are suited to business tenants — from small 500 sq ft units ideal for a 5-10 person office, up to full-floor commercial spaces of 5,000 sq ft and above suitable for managed office operators or large corporate teams.</p>
-<p class="text-slate-600 leading-relaxed">We do not handle residential properties. Our focus is exclusively on commercial office space — bare shell, semi-furnished, and fully furnished properties across BKC, Lower Parel, Andheri, Goregaon, Powai, and Thane.</p>
+<p class="text-slate-600 leading-relaxed">We don't handle residential properties. Our focus is exclusively on commercial office space — bare shell, semi-furnished, and fully furnished properties across BKC, Lower Parel, Andheri, Goregaon, Powai, and Thane.</p>
 </div>
 <div>
 <h2 class="text-2xl font-black text-slate-900 mb-6">Frequently Asked Questions</h2>
@@ -133,7 +133,7 @@ include 'templates/header.php';
 </div>
 <div>
 <h3 class="font-bold text-slate-900 mb-1">How long does it take to find a tenant?</h3>
-<p class="text-sm text-slate-600">For well-priced commercial spaces in active micro-markets like BKC or Lower Parel, we typically present qualified tenant interest within 2–4 weeks. Lease signing generally follows within 4–8 weeks depending on due diligence.</p>
+<p class="text-sm text-slate-600">For well-priced commercial spaces in active micro-markets like BKC or Lower Parel, we typically present qualified tenant interest in 2–4 weeks. Lease signing generally follows in 4–8 weeks depending on due diligence.</p>
 </div>
 <div>
 <h3 class="font-bold text-slate-900 mb-1">Do you only work with managed office operators?</h3>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_id = 'rent-lower-parel';
 $page_title = 'Office for Rent in Lower Parel Mumbai | CorpEasy';
 $page_description = 'Office space for rent in Lower Parel Mumbai from ₹150/sqft/month. Marathon Futurex, Peninsula Business Park. Free landlord negotiation & lease review.';
@@ -21,7 +21,7 @@ include 'templates/header.php';
 <div class="max-w-2xl mx-auto mb-12 relative z-10">
 <div class="glass-card p-6 sm:p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
 <h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Looking for Office Space in Lower Parel?</h3>
-<p class="text-sm text-slate-600 mb-4 sm:mb-6">Tell us your team size and budget. We will share verified Lower Parel options within 48 hours.</p>
+<p class="text-sm text-slate-600 mb-4 sm:mb-6">Tell us your team size and budget. We'll share verified Lower Parel options in 48 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
@@ -98,7 +98,7 @@ include 'templates/header.php';
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-couch text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Fully Furnished</h3>
 <p class="text-xs text-brand-violet font-bold uppercase tracking-wider mb-3">₹220 - ₹280 per sq ft/month</p>
-<p class="text-slate-600 leading-relaxed mb-3">Plug-and-play space with workstations, cabins, meeting rooms, pantry, and IT cabling ready. Zero setup cost, move in within 1-2 weeks. Lower Parel has one of Mumbai's largest inventories of furnished offices due to its startup ecosystem.</p>
+<p class="text-slate-600 leading-relaxed mb-3">Plug-and-play space with workstations, cabins, meeting rooms, pantry, and IT cabling ready. Zero setup cost, move in in 1-2 weeks. Lower Parel has one of Mumbai's largest inventories of furnished offices due to its startup ecosystem.</p>
 <p class="text-sm text-brand-violet font-semibold">Best for: Startups, satellite offices, and project teams</p>
 </div>
 </div>
@@ -153,7 +153,7 @@ include 'templates/header.php';
 <h3 class="text-lg font-bold text-slate-900">How quickly can we move into an office in Lower Parel?</h3>
 <i class="fas fa-chevron-down text-brand-cyan faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">It depends on the space type. Fully furnished offices can be occupied within 1-2 weeks of signing. Warm shell spaces need 4-8 weeks for furniture and IT setup. Bare shell requires 3-6 months for full interior work. We send an initial shortlist within 48 hours and can schedule site visits the same week, so the overall process from first call to move-in can be as fast as 2-3 weeks for furnished spaces.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">It depends on the space type. Fully furnished offices can be occupied in 1-2 weeks of signing. Warm shell spaces need 4-8 weeks for furniture and IT setup. Bare shell requires 3-6 months for full interior work. We send an initial shortlist in 48 hours and can schedule site visits the same week, so the overall process from first call to move-in can be as fast as 2-3 weeks for furnished spaces.</div>
 </div>
 </div>
 </div>
