@@ -30,9 +30,9 @@ include 'templates/header.php';
 </div>
 <p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Lower Parel</strong> without the headache of property visits, landlord negotiations, and interior fit-outs? Lower Parel has transformed from Mumbai's historic mill district into one of the city's most dynamic commercial corridors. We handle everything — from sourcing space near Marathon Futurex or Peninsula Business Park to delivering a workspace that is ready when your team walks in on Day 1.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">From ₹14,000/seat</h4><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing across Grade A buildings in Lower Parel.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h4><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">10-100+ Seats</h4><p class="text-xs text-slate-600 mt-1">Flexible team sizes across a wide range of building options.</p></div>
+<div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">From ₹14,000/seat</h3><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing across Grade A buildings in Lower Parel.</p></div>
+    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h3><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
+    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">10-100+ Seats</h3><p class="text-xs text-slate-600 mt-1">Flexible team sizes across a wide range of building options.</p></div>
 </div>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
@@ -61,17 +61,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-paint-brush text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Creative and Tech Hub</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Creative and Tech Hub</h3>
 <p class="text-slate-600 leading-relaxed">Lower Parel is home to some of Mumbai's most prominent media houses, advertising agencies, and tech startups. The area's mill-district heritage gives it a creative energy that attracts talent from across the city. Companies like Times Group, major ad agencies, and fast-growing e-commerce brands have set up base here.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-train text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Railway Station at Your Doorstep</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Railway Station at Your Doorstep</h3>
 <p class="text-slate-600 leading-relaxed">Lower Parel railway station on the Western Line puts your office within walking distance of one of Mumbai's busiest commuter routes. Most commercial buildings are 5-10 minutes on foot from the station. This makes daily commutes manageable for teams living anywhere along the Western corridor.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-building text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Landmark Commercial Towers</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Landmark Commercial Towers</h3>
 <p class="text-slate-600 leading-relaxed">Marathon Futurex, Peninsula Business Park, One World Center, and Lodha Excelus are among the Grade A commercial towers in Lower Parel. These buildings offer modern lobbies, high-speed elevators, ample parking, and the kind of infrastructure that impresses clients and retains employees.</p>
 </div>
 </div>
@@ -94,22 +94,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-bullhorn text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Media and Advertising</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Media and Advertising</h3>
 <p class="text-slate-600 leading-relaxed">Ad agencies, media companies, PR firms, and content studios thrive in Lower Parel's creative ecosystem. Proximity to major media houses and production facilities makes collaboration and client meetings effortless.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-shopping-cart text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">E-Commerce Brands</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">E-Commerce Brands</h3>
 <p class="text-slate-600 leading-relaxed">D2C brands and e-commerce companies find Lower Parel ideal. The area offers a balance of prestige and practicality — close to logistics hubs, well-connected for vendor meetings, and attractive enough to draw top marketing and tech talent.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-laptop-code text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Tech Startups</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Tech Startups</h3>
 <p class="text-slate-600 leading-relaxed">Funded startups that have outgrown coworking spaces and need a dedicated office find Lower Parel compelling. The pricing is more approachable than BKC while the address still carries weight with investors and partners.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-blue/10 border border-brand-blue/30 rounded-xl flex items-center justify-center text-brand-blue mb-6"><i class="fas fa-film text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Entertainment and Production</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Entertainment and Production</h3>
 <p class="text-slate-600 leading-relaxed">Production houses, OTT platform teams, and entertainment companies benefit from Lower Parel's proximity to Film City access routes and the concentration of post-production and creative talent in the area.</p>
 </div>
 </div>
@@ -151,22 +151,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <a href="/managed-office-space-mumbai" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-city text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space Mumbai</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space Mumbai</h3>
 <p class="text-sm text-slate-600">See all managed office locations across Mumbai including BKC, Andheri, Goregaon, and more.</p>
 </a>
 <a href="/managed-office-bkc" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Managed Office in BKC</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Managed Office in BKC</h3>
 <p class="text-sm text-slate-600">Mumbai's financial nerve center. Premium Grade A offices from ₹18,000/seat for finance and consulting firms.</p>
 </a>
 <a href="/managed-office-goregaon" class="glass-card p-8 hover:border-brand-violet/30 transition-all group">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-4 group-hover:bg-brand-violet group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Goregaon</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Goregaon</h3>
 <p class="text-sm text-slate-600">Best value Grade A offices near NESCO IT Park from ₹10,000/seat. Ideal for IT and BPO teams.</p>
 </a>
 <a href="/managed-office-andheri" class="glass-card p-8 hover:border-brand-emerald/30 transition-all group">
 <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">Managed Office in Andheri</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">Managed Office in Andheri</h3>
 <p class="text-sm text-slate-600">Airport-adjacent offices with metro connectivity from ₹12,000/seat. Ideal for IT and traveling teams.</p>
 </a>
 </div>

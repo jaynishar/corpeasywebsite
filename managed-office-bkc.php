@@ -30,9 +30,9 @@ include 'templates/header.php';
 </div>
 <p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in BKC</strong> without spending months on property visits, landlord negotiations, and interior fit-outs? We handle everything. From sourcing the right commercial space in Bandra Kurla Complex to setting up a workspace that is ready when your team walks in on Day 1.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">From ₹18,000/seat</h4><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing for Grade A buildings in BKC.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Move In 2-4 Weeks</h4><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">15-80 Seat Sweet Spot</h4><p class="text-xs text-slate-600 mt-1">Ideal team sizes for the managed office model in this micro-market.</p></div>
+<div class="glass-card p-5"><p class="text-base font-bold text-slate-900">From ₹18,000/seat</p><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing for Grade A buildings in BKC.</p></div>
+<div class="glass-card p-5"><p class="text-base font-bold text-slate-900">Move In 2-4 Weeks</p><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
+<div class="glass-card p-5"><p class="text-base font-bold text-slate-900">15-80 Seat Sweet Spot</p><p class="text-xs text-slate-600 mt-1">Ideal team sizes for the managed office model in this micro-market.</p></div>
 </div>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
@@ -61,17 +61,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-landmark text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Financial Capital of India</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Financial Capital of India</h3>
 <p class="text-slate-600 leading-relaxed">BKC is home to SEBI, the National Stock Exchange, major banks like ICICI, Axis, and Bank of Baroda, and the Bharat Diamond Bourse. If your business operates in financial services, this is where your clients and regulators already are.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-building text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Grade A Commercial Buildings</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Grade A Commercial Buildings</h3>
 <p class="text-slate-600 leading-relaxed">BKC offers some of Mumbai's finest commercial real estate. Buildings here feature modern lobbies, high-speed elevators, 24/7 security, and power backup. The infrastructure matches global standards, which matters when international clients visit.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-train text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Excellent Connectivity</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Excellent Connectivity</h3>
 <p class="text-slate-600 leading-relaxed">The BKC connector links directly to the Western Express Highway. The upcoming BKC metro station on Line 3 will further improve access. Bandra station (Western Railway) is 10 minutes away, and the domestic airport is a 20-minute drive.</p>
 </div>
 </div>
@@ -86,17 +86,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 reveal">
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-blue/30 border border-brand-electric/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-electric shadow-[0_0_20px_rgba(0,240,255,0.2)]"><i class="fas fa-couch"></i></div>
-<h4 class="text-2xl font-bold mb-4 text-slate-900">Fully Set Up Workspace</h4>
+<h3 class="text-2xl font-bold mb-4 text-slate-900">Fully Set Up Workspace</h3>
 <p class="text-slate-600 leading-relaxed">We source commercial space in BKC, negotiate the lease, and set up your office with furniture, internet, electrical fittings, and access control. You walk into a workspace that is ready from Day 1 — desks, chairs, meeting rooms, and pantry included.</p>
 </div>
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-cyan/20 border border-brand-cyan/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-cyan shadow-[0_0_20px_rgba(6,182,212,0.2)]"><i class="fas fa-file-invoice-dollar"></i></div>
-<h4 class="text-2xl font-bold mb-4 text-slate-900">All-Inclusive Monthly Cost</h4>
+<h3 class="text-2xl font-bold mb-4 text-slate-900">All-Inclusive Monthly Cost</h3>
 <p class="text-slate-600 leading-relaxed">One per-seat price covers everything: rent, CAM charges, electricity, internet, housekeeping, and basic maintenance. No separate vendor bills, no surprise invoices at month end. You know exactly what you are paying every single month.</p>
 </div>
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-violet/20 border border-brand-violet/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-violet shadow-[0_0_20px_rgba(139,92,246,0.2)]"><i class="fas fa-headset"></i></div>
-<h4 class="text-2xl font-bold mb-4 text-slate-900">Single Point of Contact</h4>
+<h3 class="text-2xl font-bold mb-4 text-slate-900">Single Point of Contact</h3>
 <p class="text-slate-600 leading-relaxed">After move-in, you deal with one person for everything related to your workspace. AC not working? Internet down? Need to add seats? One call or message to your CorpEasy account manager. No chasing landlords, no coordinating with five different vendors.</p>
 </div>
 </div>
@@ -118,22 +118,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-chart-line text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Financial Services</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Financial Services</h3>
 <p class="text-slate-600 leading-relaxed">Banks, NBFCs, asset management firms, and fintech companies that need to be close to regulators like SEBI and RBI, and within walking distance of the stock exchange ecosystem.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-briefcase text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Consulting Firms</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Consulting Firms</h3>
 <p class="text-slate-600 leading-relaxed">Management consultancies, strategy firms, and advisory businesses whose clients are headquartered in BKC. Being in the same district as your clients cuts down travel time and signals commitment.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-balance-scale text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Legal Practices</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Legal Practices</h3>
 <p class="text-slate-600 leading-relaxed">Law firms and legal consultancies that serve corporate clients in the BKC belt. Proximity to the Diamond Bourse, major banks, and corporate headquarters makes BKC a natural choice for legal professionals.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-blue/10 border border-brand-blue/30 rounded-xl flex items-center justify-center text-brand-blue mb-6"><i class="fas fa-globe text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">MNCs Entering Mumbai</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">MNCs Entering Mumbai</h3>
 <p class="text-slate-600 leading-relaxed">International companies setting up their India or Mumbai office who want a premium address without navigating the local commercial real estate market. BKC delivers the credibility and infrastructure global firms expect.</p>
 </div>
 </div>
@@ -175,22 +175,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <a href="/managed-office-space-mumbai" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-city text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space Mumbai</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space Mumbai</h3>
 <p class="text-sm text-slate-600">See all managed office locations across Mumbai including Lower Parel, Goregaon, Andheri, and more.</p>
 </a>
 <a href="/managed-office-lower-parel" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Managed Office in Lower Parel</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Managed Office in Lower Parel</h3>
 <p class="text-sm text-slate-600">A more budget-friendly alternative to BKC with excellent local train connectivity and a creative vibe.</p>
 </a>
 <a href="/managed-office-goregaon" class="glass-card p-8 hover:border-brand-emerald/30 transition-all group">
 <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">Managed Office in Goregaon</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">Managed Office in Goregaon</h3>
 <p class="text-sm text-slate-600">Mumbai's best value Grade A offices near NESCO IT Park from ₹10,000/seat. Ideal for IT and BPO teams.</p>
 </a>
 <a href="/managed-office-andheri" class="glass-card p-8 hover:border-brand-violet/30 transition-all group">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-4 group-hover:bg-brand-violet group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Andheri</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Andheri</h3>
 <p class="text-sm text-slate-600">Metro-connected offices near the airport. Competitive pricing from ₹12,000/seat for teams that travel frequently.</p>
 </a>
 </div>

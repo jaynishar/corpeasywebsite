@@ -30,9 +30,9 @@ include 'templates/header.php';
 </div>
 <p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Andheri</strong> with airport proximity and metro connectivity? Andheri East is one of Mumbai's largest and most diverse commercial zones — home to IT parks, multinational offices, and a thriving startup ecosystem. From the MIDC belt to Chakala junction, we source the right space and deliver a workspace that is ready when your team walks in on Day 1.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">From ₹12,000/seat</h4><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing for commercial buildings in Andheri East.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h4><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">10-120+ Seats</h4><p class="text-xs text-slate-600 mt-1">Wide range of options from startup-size to large enterprise teams.</p></div>
+<div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">From ₹12,000/seat</h3><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing for commercial buildings in Andheri East.</p></div>
+    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h3><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
+    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">10-120+ Seats</h3><p class="text-xs text-slate-600 mt-1">Wide range of options from startup-size to large enterprise teams.</p></div>
 </div>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
@@ -61,17 +61,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-plane text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Airport at Your Doorstep</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Airport at Your Doorstep</h3>
 <p class="text-slate-600 leading-relaxed">Andheri East is the closest major commercial zone to Mumbai airport. The domestic terminal is 10-15 minutes away, and the international terminal is 20-25 minutes. For companies with teams that travel frequently — client visits, investor meetings, or multi-city operations — no other location in Mumbai matches this convenience.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-subway text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Metro Line 1 Connectivity</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Metro Line 1 Connectivity</h3>
 <p class="text-slate-600 leading-relaxed">Andheri is the key interchange station on Mumbai Metro Line 1, connecting Versova to Ghatkopar. This east-west metro line supplements the north-south Western Railway, giving your employees two rapid transit options. The result: a wider hiring radius and shorter commute times for your team.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-industry text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Diverse Commercial Ecosystem</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Diverse Commercial Ecosystem</h3>
 <p class="text-slate-600 leading-relaxed">The MIDC industrial area, Chakala junction, and Marol belt form one of Mumbai's largest commercial clusters. IT companies, pharmaceutical firms, logistics businesses, and consulting offices all operate here. This diversity means you get mature commercial infrastructure — reliable internet, multiple food courts, banking services, and courier hubs within walking distance.</p>
 </div>
 </div>
@@ -94,22 +94,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-laptop-code text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">IT and ITES Companies</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">IT and ITES Companies</h3>
 <p class="text-slate-600 leading-relaxed">Software development firms, IT services companies, and ITES businesses thrive in Andheri's established tech corridor. The MIDC and Marol belt already house dozens of IT companies, so infrastructure, talent availability, and vendor ecosystems are well-developed.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-suitcase-rolling text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Companies with Traveling Teams</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Companies with Traveling Teams</h3>
 <p class="text-slate-600 leading-relaxed">Consulting firms, sales organizations, and businesses with leaders who fly frequently benefit most from Andheri's airport proximity. Being 10-15 minutes from the domestic terminal means less time in transit and more productive hours in the office.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-plane-arrival text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Businesses Needing Airport Access</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Businesses Needing Airport Access</h3>
 <p class="text-slate-600 leading-relaxed">Import-export firms, logistics companies, and businesses that regularly receive international clients or shipments find Andheri's airport proximity indispensable. Quick access to both terminals streamlines operations and client meetings.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-blue/10 border border-brand-blue/30 rounded-xl flex items-center justify-center text-brand-blue mb-6"><i class="fas fa-users text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Distributed Teams</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Distributed Teams</h3>
 <p class="text-slate-600 leading-relaxed">Companies with employees spread across Mumbai benefit from Andheri's central location and dual transit options (metro and railway). It is one of the few locations accessible within 45 minutes from Thane, Navi Mumbai, Borivali, and Bandra alike.</p>
 </div>
 </div>
@@ -151,22 +151,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <a href="/managed-office-space-mumbai" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-city text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space Mumbai</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space Mumbai</h3>
 <p class="text-sm text-slate-600">See all managed office locations across Mumbai including BKC, Lower Parel, Goregaon, and more.</p>
 </a>
 <a href="/managed-office-goregaon" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Managed Office in Goregaon</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Managed Office in Goregaon</h3>
 <p class="text-sm text-slate-600">Mumbai's best value Grade A offices near NESCO IT Park from ₹10,000/seat for IT and BPO teams.</p>
 </a>
 <a href="/managed-office-bkc" class="glass-card p-8 hover:border-brand-violet/30 transition-all group">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-4 group-hover:bg-brand-violet group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in BKC</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in BKC</h3>
 <p class="text-sm text-slate-600">Mumbai's financial nerve center. Premium Grade A offices from ₹18,000/seat for finance and consulting firms.</p>
 </a>
 <a href="/managed-office-lower-parel" class="glass-card p-8 hover:border-brand-emerald/30 transition-all group">
 <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">Managed Office in Lower Parel</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">Managed Office in Lower Parel</h3>
 <p class="text-sm text-slate-600">Mumbai's creative and media hub. Managed offices from ₹14,000/seat near Marathon Futurex.</p>
 </a>
 </div>

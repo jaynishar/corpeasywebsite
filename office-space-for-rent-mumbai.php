@@ -47,17 +47,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal delay-100">
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-3 text-brand-cyan"><i class="fas fa-map-marked-alt text-sm"></i></div>
-<h4 class="text-base font-bold text-slate-900 mb-1">We Know What's Available</h4>
+<h3 class="text-base font-bold text-slate-900 mb-1">We Know What's Available</h3>
 <p class="text-xs text-slate-500 leading-relaxed">BKC, Lower Parel, Goregaon, Andheri, Powai — we track the market daily</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-3 text-brand-electric"><i class="fas fa-handshake text-sm"></i></div>
-<h4 class="text-base font-bold text-slate-900 mb-1">Landlord Negotiations</h4>
+<h3 class="text-base font-bold text-slate-900 mb-1">Landlord Negotiations</h3>
 <p class="text-xs text-slate-500 leading-relaxed">We negotiate rent, deposit, and lease terms directly with the building</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-3 text-brand-violet"><i class="fas fa-file-contract text-sm"></i></div>
-<h4 class="text-base font-bold text-slate-900 mb-1">Lease Review</h4>
+<h3 class="text-base font-bold text-slate-900 mb-1">Lease Review</h3>
 <p class="text-xs text-slate-500 leading-relaxed">We flag unfavorable clauses before you commit to anything</p>
 </div>
 </div>
@@ -96,32 +96,32 @@ include 'templates/header.php';
 <p class="text-lg text-slate-500 mb-16 text-center max-w-3xl mx-auto">Each micro-market in Mumbai has its own characteristics. Here is what you need to know about the top commercial districts.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-2">BKC (Bandra Kurla Complex)</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-2">BKC (Bandra Kurla Complex)</h3>
 <p class="text-xs text-brand-cyan font-bold uppercase tracking-wider mb-3">₹250 - ₹380 per sq ft/month</p>
 <p class="text-slate-600 leading-relaxed">Mumbai's financial district. Home to the Diamond Bourse, SEBI headquarters, and offices of most major banks and consulting firms. Best for financial services, legal firms, and companies that need to be close to regulators. Excellent road connectivity but limited metro access (upcoming Bandra North metro station will improve this).</p>
 </div>
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-2">Lower Parel</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-2">Lower Parel</h3>
 <p class="text-xs text-brand-cyan font-bold uppercase tracking-wider mb-3">₹150 - ₹280 per sq ft/month</p>
 <p class="text-slate-600 leading-relaxed">The transformed mill district that is now a creative and tech hub. Buildings like Marathon Futurex, Peninsula Business Park, and One World Center offer Grade A spaces. Well-connected by local train (Lower Parel station on Western Line). Popular with media, advertising, e-commerce, and tech companies.</p>
 </div>
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-2">Andheri East</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-2">Andheri East</h3>
 <p class="text-xs text-brand-cyan font-bold uppercase tracking-wider mb-3">₹120 - ₹220 per sq ft/month</p>
 <p class="text-slate-600 leading-relaxed">One of Mumbai's largest and most diverse commercial zones. MIDC area near the airport houses many IT/ITES companies. The Andheri metro station (Line 1) provides connectivity to Ghatkopar and Versova. A practical choice for businesses that need airport proximity or have teams spread across the Western suburbs.</p>
 </div>
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-2">Goregaon</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-2">Goregaon</h3>
 <p class="text-xs text-brand-cyan font-bold uppercase tracking-wider mb-3">₹100 - ₹180 per sq ft/month</p>
 <p class="text-slate-600 leading-relaxed">A rapidly growing commercial hub anchored by NESCO IT Park, Ackruti Trade Centre, and the upcoming Oberoi Commerz III. Located on the Western Express Highway with local train connectivity. Offers the best value for companies that need Grade A space without BKC or Lower Parel price tags.</p>
 </div>
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-2">Powai</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-2">Powai</h3>
 <p class="text-xs text-brand-cyan font-bold uppercase tracking-wider mb-3">₹110 - ₹200 per sq ft/month</p>
 <p class="text-slate-600 leading-relaxed">Mumbai's tech ecosystem centered around Hiranandani Business Park, Chromium, and Powai Plaza. Near IIT Bombay, which makes it attractive for deep-tech and research-driven companies. The location is slightly off the main rail lines, so road access matters. Best for IT companies and startups with a technical workforce.</p>
 </div>
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-2">Thane</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-2">Thane</h3>
 <p class="text-xs text-brand-cyan font-bold uppercase tracking-wider mb-3">₹80 - ₹140 per sq ft/month</p>
 <p class="text-slate-600 leading-relaxed">An emerging business destination with significantly lower costs. Buildings like Lodha Supremus, Ashar IT Park, and Hiranandani Estate offer modern office infrastructure. Excellent for companies with teams based in Thane, Navi Mumbai, or those looking to reduce rental costs without compromising on workspace quality.</p>
 </div>
@@ -136,22 +136,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan text-xl font-black mb-6">1</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Understand Your Needs</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Understand Your Needs</h3>
 <p class="text-slate-600 leading-relaxed">We start with your team size, budget, preferred areas, lease duration, and any specific requirements like a server room, parking, or a specific building grade.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan text-xl font-black mb-6">2</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Curated Shortlist</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Curated Shortlist</h3>
 <p class="text-slate-600 leading-relaxed">Within 48 hours, we send you 3-5 verified, currently available properties. Each includes actual rent (not inflated portal prices), building details, floor plans, and our honest assessment.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan text-xl font-black mb-6">3</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Site Visits and Negotiation</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Site Visits and Negotiation</h3>
 <p class="text-slate-600 leading-relaxed">We accompany you on site visits, point out things you might miss (like maintenance charges, parking allocation, or lock-in clauses), and negotiate the best possible terms with the landlord.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan text-xl font-black mb-6">4</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Lease Finalization</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Lease Finalization</h3>
 <p class="text-slate-600 leading-relaxed">We review the lease agreement, flag unfavorable clauses, ensure the security deposit terms are fair, and make sure the rent escalation is within market norms before you sign anything.</p>
 </div>
 </div>
@@ -164,19 +164,19 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-warehouse text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Bare Shell</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Bare Shell</h3>
 <p class="text-slate-600 leading-relaxed mb-3">A raw space with basic structure — walls, flooring, and electrical points. You handle all interior work: false ceiling, partitions, furniture, AC ducting, and IT infrastructure. Lowest rent but highest setup cost and longest move-in time (3-6 months).</p>
 <p class="text-sm text-brand-electric font-semibold">Best for: Large enterprises with specific design requirements</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-th-large text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Warm Shell</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Warm Shell</h3>
 <p class="text-slate-600 leading-relaxed mb-3">A partially done space with false ceiling, flooring, AC, and basic electrical completed. You add furniture, IT, and any custom interiors. Moderate rent with lower setup cost and faster move-in (4-8 weeks).</p>
 <p class="text-sm text-brand-cyan font-semibold">Best for: Mid-size companies wanting some customization</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-couch text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Fully Furnished</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Fully Furnished</h3>
 <p class="text-slate-600 leading-relaxed mb-3">Move-in ready space with furniture, AC, internet connectivity, and sometimes even a pantry setup. Highest rent per sq ft but zero setup cost and immediate occupancy (1-2 weeks). Includes desks, chairs, meeting rooms, and reception.</p>
 <p class="text-sm text-brand-violet font-semibold">Best for: Startups, project teams, and quick expansions</p>
 </div>
@@ -191,19 +191,19 @@ include 'templates/header.php';
 <div class="space-y-6">
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-rupee-sign text-sm"></i></div>
-<div><h4 class="text-lg font-bold text-slate-900 mb-1">Rent Escalation Clause</h4><p class="text-slate-600 leading-relaxed">Most Mumbai leases include a 5% annual rent increase, but some landlords push for 10-15%. Negotiate this upfront — over a 5-year lease, the difference between 5% and 10% escalation is massive.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Rent Escalation Clause</h3><p class="text-slate-600 leading-relaxed">Most Mumbai leases include a 5% annual rent increase, but some landlords push for 10-15%. Negotiate this upfront — over a 5-year lease, the difference between 5% and 10% escalation is massive.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-lock text-sm"></i></div>
-<div><h4 class="text-lg font-bold text-slate-900 mb-1">Lock-in Period</h4><p class="text-slate-600 leading-relaxed">The lock-in period means you cannot vacate without paying rent for the remaining lock-in months. Standard is 12-36 months. If you are a startup, negotiate for a shorter lock-in or a break clause after 12 months.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Lock-in Period</h3><p class="text-slate-600 leading-relaxed">The lock-in period means you cannot vacate without paying rent for the remaining lock-in months. Standard is 12-36 months. If you are a startup, negotiate for a shorter lock-in or a break clause after 12 months.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-money-bill-wave text-sm"></i></div>
-<div><h4 class="text-lg font-bold text-slate-900 mb-1">Security Deposit</h4><p class="text-slate-600 leading-relaxed">Typical security deposits in Mumbai are 3-6 months rent (interest-free). Some landlords ask for 10-12 months. Always negotiate this — a 6-month deposit on a ₹5 lakh/month rent means ₹30 lakh locked up doing nothing.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Security Deposit</h3><p class="text-slate-600 leading-relaxed">Typical security deposits in Mumbai are 3-6 months rent (interest-free). Some landlords ask for 10-12 months. Always negotiate this — a 6-month deposit on a ₹5 lakh/month rent means ₹30 lakh locked up doing nothing.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-parking text-sm"></i></div>
-<div><h4 class="text-lg font-bold text-slate-900 mb-1">Parking and Maintenance</h4><p class="text-slate-600 leading-relaxed">Parking in Mumbai commercial buildings is charged separately (₹5,000-15,000/spot/month in BKC). Maintenance charges (CAM) add ₹15-40 per sq ft/month. These are often not included in the quoted rent, so always ask for the total cost of occupancy.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Parking and Maintenance</h3><p class="text-slate-600 leading-relaxed">Parking in Mumbai commercial buildings is charged separately (₹5,000-15,000/spot/month in BKC). Maintenance charges (CAM) add ₹15-40 per sq ft/month. These are often not included in the quoted rent, so always ask for the total cost of occupancy.</p></div>
 </div>
 </div>
 </div>
@@ -258,17 +258,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <a href="/managed-office-space-mumbai" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-building text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space</h3>
 <p class="text-sm text-slate-600">Don't want to deal with setup and operations? We handle everything — from finding the space to managing it daily.</p>
 </a>
 <a href="/facility-management-mumbai" class="glass-card p-8 hover:border-brand-rose/30 transition-all group">
 <div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose mb-4 group-hover:bg-brand-rose group-hover:text-white transition-all"><i class="fas fa-tools text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-rose transition-colors">Facility Management</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-rose transition-colors">Facility Management</h3>
 <p class="text-sm text-slate-600">Already have a space? We manage housekeeping, security, AMC contracts, and daily office operations.</p>
 </a>
 <a href="/contact" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-phone-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Free Consultation</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Free Consultation</h3>
 <p class="text-sm text-slate-600">Tell us what you need. A 15-minute call is enough for us to start searching.</p>
 </a>
 </div>

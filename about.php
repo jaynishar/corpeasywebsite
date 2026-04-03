@@ -55,14 +55,14 @@ include 'templates/header.php';
 <div class="absolute inset-0 bg-brand-electric/10 mix-blend-multiply"></div>
 </div>
 <div class="mt-32 text-center">
-<h3 class="text-4xl font-black text-slate-900 mb-4">Our Founders</h3>
+<h2 class="text-4xl font-black text-slate-900 mb-4">Our Founders</h2>
 <p class="text-slate-500 max-w-2xl mx-auto mb-16 uppercase tracking-[0.2em] font-bold text-xs">Direct accountability. No layers. No friction.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
 <img src="https://ui-avatars.com/api/?name=Dev+Doshi&background=0D9488&color=fff&size=256" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
 </div>
-<h4 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h4>
+<h3 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h3>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Business Development & Strategy</p>
 <p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
 </div>
@@ -70,24 +70,24 @@ include 'templates/header.php';
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
 <img src="https://ui-avatars.com/api/?name=Jay+Nishar&background=6366F1&color=fff&size=256" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
 </div>
-<h4 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h4>
+<h3 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h3>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Operations & Growth</p>
 <p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Jay manages CorpEasy's operational processes and client delivery. He ensures that every commitment made to a client is followed through reliably and on time.</p>
 </div>
 </div>
 </div>
 <div class="mt-32 max-w-4xl mx-auto text-left">
-<h3 class="text-4xl lg:text-5xl font-black text-slate-900 mb-16">Our Journey.</h3>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 mb-16">Our Journey.</h2>
 <div class="relative">
 <div class="relative pl-16 mb-8">
 <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-brand-electric z-10"></div>
 <div class="absolute left-[7px] top-4 w-0.5 bg-gradient-to-b from-brand-electric to-brand-cyan h-full z-0"></div>
-<h4 class="text-gradient-vibrant text-2xl font-black mb-2">October 2025</h4>
+<h3 class="text-gradient-vibrant text-2xl font-black mb-2">October 2025</h3>
 <div class="glass-card p-6 reveal">CorpEasy founded in Mumbai. We started with a simple belief: finding and setting up office space in this city should not be this complicated. That belief has not changed.</div>
 </div>
 <div class="relative pl-16">
 <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-brand-electric z-10"></div>
-<h4 class="text-gradient-vibrant text-2xl font-black mb-2">2026 and Beyond</h4>
+<h3 class="text-gradient-vibrant text-2xl font-black mb-2">2026 and Beyond</h3>
 <div class="glass-card p-6 reveal delay-300">Building our client base across Mumbai. Helping startups, growing teams, and property owners navigate the city's commercial office market. We are early, and we are focused.</div>
 </div>
 </div>
@@ -104,19 +104,19 @@ include 'templates/header.php';
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-building text-xl"></i></div>
 <h3 class="text-xl font-black text-slate-900 mb-3">Managed Office Space</h3>
 <p class="text-sm text-slate-600 leading-relaxed mb-4">We find the right commercial space in Mumbai, negotiate the lease, set up the office end-to-end, and handle ongoing management. You pay a single monthly fee per seat. Move-in ready in 2–4 weeks.</p>
-<a href="/managed-office-space-mumbai" class="text-brand-electric text-sm font-semibold hover:underline">Learn more →</a>
+<a href="/managed-office-space-mumbai" class="text-brand-electric text-sm font-semibold hover:underline">Explore Managed Office Space →</a>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-search text-xl"></i></div>
 <h3 class="text-xl font-black text-slate-900 mb-3">Office for Rent</h3>
 <p class="text-sm text-slate-600 leading-relaxed mb-4">For companies that want to lease their own space, we handle the search, shortlisting, landlord negotiations, and lease review. Free for tenants — we are paid by the landlord on successful placement.</p>
-<a href="/office-space-for-rent-mumbai" class="text-brand-electric text-sm font-semibold hover:underline">Learn more →</a>
+<a href="/office-space-for-rent-mumbai" class="text-brand-electric text-sm font-semibold hover:underline">Find Office Space for Rent →</a>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-cogs text-xl"></i></div>
 <h3 class="text-xl font-black text-slate-900 mb-3">Facility Management</h3>
 <p class="text-sm text-slate-600 leading-relaxed mb-4">We manage day-to-day office operations for businesses in Mumbai — housekeeping, maintenance, vendor management, security, and IT support — from ₹2,500 per seat per month.</p>
-<a href="/facility-management-mumbai" class="text-brand-electric text-sm font-semibold hover:underline">Learn more →</a>
+<a href="/facility-management-mumbai" class="text-brand-electric text-sm font-semibold hover:underline">View Facility Management Services →</a>
 </div>
 </div>
 <div class="glass-card p-8 lg:p-12 text-center">

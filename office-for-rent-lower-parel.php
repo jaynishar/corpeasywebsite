@@ -48,17 +48,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
 <div class="glass-card p-6 sm:p-8 reveal">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-6 text-brand-cyan"><i class="fas fa-train text-xl"></i></div>
-<h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">Railway Connectivity</h4>
+<h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">Railway Connectivity</h3>
 <p class="text-slate-600 leading-relaxed text-sm">Lower Parel station on the Western Line is a 5-minute walk from most commercial buildings. This gives your team direct access to Churchgate, Dadar, Bandra, Andheri, and Borivali without fighting Mumbai traffic. For a workforce spread across the western suburbs, this is a major advantage.</p>
 </div>
 <div class="glass-card p-6 sm:p-8 reveal delay-100">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-6 text-brand-electric"><i class="fas fa-lightbulb text-xl"></i></div>
-<h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">Creative and Tech Hub</h4>
+<h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">Creative and Tech Hub</h3>
 <p class="text-slate-600 leading-relaxed text-sm">Lower Parel is home to media houses, advertising agencies, e-commerce companies, and tech startups. The neighbourhood has a younger, more dynamic energy compared to BKC or Nariman Point. Restaurants, cafes, and social infrastructure around High Street Phoenix make it an attractive location for talent.</p>
 </div>
 <div class="glass-card p-6 sm:p-8 reveal delay-200">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-6 text-brand-violet"><i class="fas fa-tags text-xl"></i></div>
-<h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">Better Value Than BKC</h4>
+<h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">Better Value Than BKC</h3>
 <p class="text-slate-600 leading-relaxed text-sm">Grade A office space in Lower Parel costs 30-40% less than equivalent space in BKC. You get the same building quality — Marathon Futurex, Peninsula Business Park, One World Center — at ₹150-280 per sq ft versus BKC's ₹250-380 range.</p>
 </div>
 </div>
@@ -82,21 +82,21 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-warehouse text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Bare Shell</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Bare Shell</h3>
 <p class="text-xs text-brand-electric font-bold uppercase tracking-wider mb-3">₹150 - ₹200 per sq ft/month</p>
 <p class="text-slate-600 leading-relaxed mb-3">Raw commercial space with basic structure. You build out the interiors from scratch — false ceiling, partitions, AC, furniture, and IT infrastructure. Lowest rent but 3-6 months to occupy. Fit-out costs range from ₹2,000-3,500 per sq ft.</p>
 <p class="text-sm text-brand-electric font-semibold">Best for: Companies wanting a fully custom workspace</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-th-large text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Warm Shell</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Warm Shell</h3>
 <p class="text-xs text-brand-cyan font-bold uppercase tracking-wider mb-3">₹180 - ₹240 per sq ft/month</p>
 <p class="text-slate-600 leading-relaxed mb-3">Space with false ceiling, flooring, AC, and electrical completed. Add your furniture, IT setup, and branding. Move-in in 4-8 weeks with a fit-out cost of ₹800-1,500 per sq ft. Good balance of customization and speed.</p>
 <p class="text-sm text-brand-cyan font-semibold">Best for: Growing companies that need some flexibility</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-couch text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Fully Furnished</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Fully Furnished</h3>
 <p class="text-xs text-brand-violet font-bold uppercase tracking-wider mb-3">₹220 - ₹280 per sq ft/month</p>
 <p class="text-slate-600 leading-relaxed mb-3">Plug-and-play space with workstations, cabins, meeting rooms, pantry, and IT cabling ready. Zero setup cost, move in within 1-2 weeks. Lower Parel has one of Mumbai's largest inventories of furnished offices due to its startup ecosystem.</p>
 <p class="text-sm text-brand-violet font-semibold">Best for: Startups, satellite offices, and project teams</p>
@@ -112,19 +112,19 @@ include 'templates/header.php';
 <div class="space-y-6">
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-rupee-sign text-sm"></i></div>
-<div><h4 class="text-lg font-bold text-slate-900 mb-1">Maintenance Charges Vary Widely</h4><p class="text-slate-600 leading-relaxed">CAM charges in Lower Parel range from ₹20 to ₹35 per sq ft per month. Premium buildings like One World Center charge closer to ₹35, while older buildings in the Kamala Mills area may be ₹20-25. This can mean a difference of ₹50,000+ per month on a 5,000 sq ft office, so always factor it into your comparison.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Maintenance Charges Vary Widely</h3><p class="text-slate-600 leading-relaxed">CAM charges in Lower Parel range from ₹20 to ₹35 per sq ft per month. Premium buildings like One World Center charge closer to ₹35, while older buildings in the Kamala Mills area may be ₹20-25. This can mean a difference of ₹50,000+ per month on a 5,000 sq ft office, so always factor it into your comparison.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-parking text-sm"></i></div>
-<div><h4 class="text-lg font-bold text-slate-900 mb-1">Parking Is More Affordable</h4><p class="text-slate-600 leading-relaxed">Parking in Lower Parel costs ₹5,000 to ₹10,000 per spot per month — significantly cheaper than BKC. Most buildings allocate 1 spot per 1,000 sq ft. Since many employees use the railway station, you may need fewer parking spots than you think. Negotiate a mix of reserved and on-demand spots.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Parking Is More Affordable</h3><p class="text-slate-600 leading-relaxed">Parking in Lower Parel costs ₹5,000 to ₹10,000 per spot per month — significantly cheaper than BKC. Most buildings allocate 1 spot per 1,000 sq ft. Since many employees use the railway station, you may need fewer parking spots than you think. Negotiate a mix of reserved and on-demand spots.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-money-bill-wave text-sm"></i></div>
-<div><h4 class="text-lg font-bold text-slate-900 mb-1">Flexible Deposit Terms</h4><p class="text-slate-600 leading-relaxed">Security deposits in Lower Parel are typically 3 to 6 months rent. Unlike BKC where 6 months is common, many Lower Parel landlords accept 3-4 months, especially for furnished spaces and shorter lease terms. We negotiate deposit reductions as part of every deal.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Flexible Deposit Terms</h3><p class="text-slate-600 leading-relaxed">Security deposits in Lower Parel are typically 3 to 6 months rent. Unlike BKC where 6 months is common, many Lower Parel landlords accept 3-4 months, especially for furnished spaces and shorter lease terms. We negotiate deposit reductions as part of every deal.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-traffic-light text-sm"></i></div>
-<div><h4 class="text-lg font-bold text-slate-900 mb-1">Traffic During Peak Hours</h4><p class="text-slate-600 leading-relaxed">Road traffic in Lower Parel during 9-11 AM and 6-8 PM can be severe, especially around the Senapati Bapat Marg junction. If most of your team commutes by road, factor this in. The railway station largely offsets this issue for employees on the Western Line.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Traffic During Peak Hours</h3><p class="text-slate-600 leading-relaxed">Road traffic in Lower Parel during 9-11 AM and 6-8 PM can be severe, especially around the Senapati Bapat Marg junction. If most of your team commutes by road, factor this in. The railway station largely offsets this issue for employees on the Western Line.</p></div>
 </div>
 </div>
 </div>
@@ -165,17 +165,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <a href="/office-space-for-rent-mumbai" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-city text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Office Space in Mumbai</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Office Space in Mumbai</h3>
 <p class="text-sm text-slate-600">Explore all commercial zones across Mumbai — BKC, Andheri, Goregaon, Powai, Thane, and more.</p>
 </a>
 <a href="/office-for-rent-bkc" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-landmark text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Office Space in BKC</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Office Space in BKC</h3>
 <p class="text-sm text-slate-600">Premium offices from ₹250/sq ft in Mumbai's financial district. Platina, One BKC, Maker Maxity.</p>
 </a>
 <a href="/managed-office-lower-parel" class="glass-card p-8 hover:border-brand-violet/30 transition-all group">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-4 group-hover:bg-brand-violet group-hover:text-white transition-all"><i class="fas fa-concierge-bell text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Lower Parel</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Lower Parel</h3>
 <p class="text-sm text-slate-600">We find, furnish, and manage your Lower Parel office. Zero setup hassle.</p>
 </a>
 </div>

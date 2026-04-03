@@ -100,6 +100,10 @@ $seoTitleOverrides = [
     'managed-office-vs-coworking-space'          => 'Managed Office vs Coworking Space Mumbai | CorpEasy',
     'how-much-does-office-space-cost-in-mumbai-2026' => 'Office Space Cost in Mumbai 2026 | CorpEasy',
     'questions-before-renting-office-space-mumbai'   => 'Questions to Ask Before Renting Office Space Mumbai | CorpEasy',
+    'mumbai-workspace-guide'                     => 'Office Space Guide Mumbai 2026 | CorpEasy',
+    'bkc-vs-goregaon'                            => 'BKC vs Goregaon: Office Location Guide | CorpEasy',
+    'managed-office-explainer'                   => 'What Is a Managed Office Space? | CorpEasy',
+    'gst-office-rental'                          => 'GST on Office Rentals Mumbai | CorpEasy',
 ];
 $page_title = $seoTitleOverrides[$slug] ?? (htmlspecialchars(rtrim($post['title'], '.')) . ' | CorpEasy');
 $page_description = substr(strip_tags($post['content']), 0, 155);

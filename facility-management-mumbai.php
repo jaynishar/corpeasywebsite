@@ -46,17 +46,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal delay-100">
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center mb-3 text-brand-rose"><i class="fas fa-broom text-sm"></i></div>
-<h4 class="text-base font-bold text-slate-900 mb-1">Daily Operations</h4>
+<h3 class="text-base font-bold text-slate-900 mb-1">Daily Operations</h3>
 <p class="text-xs text-slate-500 leading-relaxed">Housekeeping, pantry, and reception management</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-3 text-brand-electric"><i class="fas fa-file-contract text-sm"></i></div>
-<h4 class="text-base font-bold text-slate-900 mb-1">Vendor & AMC</h4>
+<h3 class="text-base font-bold text-slate-900 mb-1">Vendor & AMC</h3>
 <p class="text-xs text-slate-500 leading-relaxed">AC, electrical, plumbing, and IT vendor contracts</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-3 text-brand-cyan"><i class="fas fa-shield-alt text-sm"></i></div>
-<h4 class="text-base font-bold text-slate-900 mb-1">Compliance & Safety</h4>
+<h3 class="text-base font-bold text-slate-900 mb-1">Compliance & Safety</h3>
 <p class="text-xs text-slate-500 leading-relaxed">Fire NOC, statutory audits, and security management</p>
 </div>
 </div>
@@ -92,14 +92,14 @@ include 'templates/header.php';
 <p class="text-lg text-slate-500 max-w-2xl mx-auto">One team. One invoice. Zero headaches.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
-<div class="glass-card p-7"><i class="fas fa-broom text-brand-rose text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Housekeeping</h4><p class="text-sm text-slate-500 leading-relaxed">Daily cleaning, washroom upkeep, deep cleaning, and waste management</p></div>
-<div class="glass-card p-7"><i class="fas fa-shield-alt text-brand-electric text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Security</h4><p class="text-sm text-slate-500 leading-relaxed">Trained security personnel, CCTV monitoring, access control management</p></div>
-<div class="glass-card p-7"><i class="fas fa-coffee text-brand-cyan text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Pantry & Cafe</h4><p class="text-sm text-slate-500 leading-relaxed">Tea, coffee, snack stations, catering coordination and vendor tie-ups</p></div>
-<div class="glass-card p-7"><i class="fas fa-tools text-brand-violet text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Maintenance</h4><p class="text-sm text-slate-500 leading-relaxed">Electrical, plumbing, AC servicing, and preventive maintenance schedules</p></div>
-<div class="glass-card p-7"><i class="fas fa-file-contract text-brand-gold text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">AMC Contracts</h4><p class="text-sm text-slate-500 leading-relaxed">Annual maintenance contracts negotiated, managed, and tracked on your behalf</p></div>
-<div class="glass-card p-7"><i class="fas fa-fire-extinguisher text-brand-rose text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Fire & Safety</h4><p class="text-sm text-slate-500 leading-relaxed">Fire NOC renewals, safety drills, first aid kits, and compliance audits</p></div>
-<div class="glass-card p-7"><i class="fas fa-users text-brand-electric text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Reception & Admin</h4><p class="text-sm text-slate-500 leading-relaxed">Front desk management, visitor handling, couriers, and office supplies</p></div>
-<div class="glass-card p-7"><i class="fas fa-chart-bar text-brand-cyan text-2xl mb-4"></i><h4 class="text-lg font-bold text-slate-900 mb-2">Monthly Reports</h4><p class="text-sm text-slate-500 leading-relaxed">Detailed monthly MIS reports on costs, vendor performance, and incidents</p></div>
+<div class="glass-card p-7"><i class="fas fa-broom text-brand-rose text-2xl mb-4"></i><h3 class="text-lg font-bold text-slate-900 mb-2">Housekeeping</h3><p class="text-sm text-slate-500 leading-relaxed">Daily cleaning, washroom upkeep, deep cleaning, and waste management</p></div>
+<div class="glass-card p-7"><i class="fas fa-shield-alt text-brand-electric text-2xl mb-4"></i><h3 class="text-lg font-bold text-slate-900 mb-2">Security</h3><p class="text-sm text-slate-500 leading-relaxed">Trained security personnel, CCTV monitoring, access control management</p></div>
+<div class="glass-card p-7"><i class="fas fa-coffee text-brand-cyan text-2xl mb-4"></i><h3 class="text-lg font-bold text-slate-900 mb-2">Pantry & Cafe</h3><p class="text-sm text-slate-500 leading-relaxed">Tea, coffee, snack stations, catering coordination and vendor tie-ups</p></div>
+<div class="glass-card p-7"><i class="fas fa-tools text-brand-violet text-2xl mb-4"></i><h3 class="text-lg font-bold text-slate-900 mb-2">Maintenance</h3><p class="text-sm text-slate-500 leading-relaxed">Electrical, plumbing, AC servicing, and preventive maintenance schedules</p></div>
+<div class="glass-card p-7"><i class="fas fa-file-contract text-brand-gold text-2xl mb-4"></i><h3 class="text-lg font-bold text-slate-900 mb-2">AMC Contracts</h3><p class="text-sm text-slate-500 leading-relaxed">Annual maintenance contracts negotiated, managed, and tracked on your behalf</p></div>
+<div class="glass-card p-7"><i class="fas fa-fire-extinguisher text-brand-rose text-2xl mb-4"></i><h3 class="text-lg font-bold text-slate-900 mb-2">Fire & Safety</h3><p class="text-sm text-slate-500 leading-relaxed">Fire NOC renewals, safety drills, first aid kits, and compliance audits</p></div>
+<div class="glass-card p-7"><i class="fas fa-users text-brand-electric text-2xl mb-4"></i><h3 class="text-lg font-bold text-slate-900 mb-2">Reception & Admin</h3><p class="text-sm text-slate-500 leading-relaxed">Front desk management, visitor handling, couriers, and office supplies</p></div>
+<div class="glass-card p-7"><i class="fas fa-chart-bar text-brand-cyan text-2xl mb-4"></i><h3 class="text-lg font-bold text-slate-900 mb-2">Monthly Reports</h3><p class="text-sm text-slate-500 leading-relaxed">Detailed monthly MIS reports on costs, vendor performance, and incidents</p></div>
 </div>
 </div>
 </section>
@@ -137,22 +137,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose text-xl font-black mb-6">1</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Site Assessment</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Site Assessment</h3>
 <p class="text-slate-600 leading-relaxed">We visit your office, audit the current state of operations, identify gaps in maintenance, and document all existing vendor contracts and their renewal dates.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose text-xl font-black mb-6">2</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Proposal and Scope</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Proposal and Scope</h3>
 <p class="text-slate-600 leading-relaxed">Within 48 hours, we send a detailed proposal with scope of services, staffing plan, vendor recommendations, and a clear monthly cost. No hidden charges.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose text-xl font-black mb-6">3</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Team Deployment</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Team Deployment</h3>
 <p class="text-slate-600 leading-relaxed">Once approved, we deploy trained housekeeping, security, and maintenance staff within 7 days. We also begin the vendor transition process for AMCs and service contracts.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose text-xl font-black mb-6">4</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Ongoing Management</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Ongoing Management</h3>
 <p class="text-slate-600 leading-relaxed">A dedicated facility manager handles day-to-day operations. You receive monthly MIS reports covering costs, incidents, vendor performance, and compliance status.</p>
 </div>
 </div>
@@ -165,22 +165,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-8 text-center">
 <div class="w-14 h-14 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mx-auto mb-6"><i class="fas fa-laptop-code text-2xl"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2">IT & Tech Companies</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2">IT & Tech Companies</h3>
 <p class="text-sm text-slate-600 leading-relaxed">Server room maintenance, UPS management, cable management, and 24/7 AC uptime for your tech infrastructure.</p>
 </div>
 <div class="glass-card p-8 text-center">
 <div class="w-14 h-14 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mx-auto mb-6"><i class="fas fa-university text-2xl"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2">Financial Services</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Financial Services</h3>
 <p class="text-sm text-slate-600 leading-relaxed">Compliance-ready facility management with access control, visitor management, and secure document storage areas.</p>
 </div>
 <div class="glass-card p-8 text-center">
 <div class="w-14 h-14 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose mx-auto mb-6"><i class="fas fa-briefcase-medical text-2xl"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2">Healthcare Offices</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Healthcare Offices</h3>
 <p class="text-sm text-slate-600 leading-relaxed">Hygiene-focused cleaning protocols, biomedical waste coordination, and regulatory compliance for medical offices and labs.</p>
 </div>
 <div class="glass-card p-8 text-center">
 <div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mx-auto mb-6"><i class="fas fa-building text-2xl"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2">Coworking Spaces</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Coworking Spaces</h3>
 <p class="text-sm text-slate-600 leading-relaxed">We partner with coworking operators to handle back-end operations — cleaning, security, maintenance — so you focus on community and growth.</p>
 </div>
 </div>
@@ -229,17 +229,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <a href="/managed-office-space-mumbai" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-building text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space</h3>
 <p class="text-sm text-slate-600">Need a new office? We find, set up, and manage your workspace from Day 1.</p>
 </a>
 <a href="/office-space-for-rent-mumbai" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-search-location text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Find Office Space for Rent</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Find Office Space for Rent</h3>
 <p class="text-sm text-slate-600">Looking for a new space? We help with property search and landlord negotiation.</p>
 </a>
 <a href="/contact" class="glass-card p-8 hover:border-brand-rose/30 transition-all group">
 <div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose mb-4 group-hover:bg-brand-rose group-hover:text-white transition-all"><i class="fas fa-phone-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-rose transition-colors">Get a Free Site Assessment</h4>
+<h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-rose transition-colors">Get a Free Site Assessment</h3>
 <p class="text-sm text-slate-600">Our team visits your office and provides a detailed facility management proposal within 48 hours.</p>
 </a>
 </div>

@@ -30,9 +30,9 @@ include 'templates/header.php';
 </div>
 <p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Goregaon</strong> that gives you Grade A infrastructure without the premium price tag? Goregaon has quietly become one of Mumbai's most practical commercial districts. With NESCO IT Park, Ackruti Trade Centre, and Oberoi Commerz anchoring the area, it offers modern office buildings at rates that make financial sense for growing companies. We handle everything — from sourcing the space to setting up your workplace.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">From ₹10,000/seat</h4><p class="text-xs text-slate-600 mt-1">Mumbai's most competitive all-inclusive pricing for Grade A offices.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h4><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">10-150+ Seats</h4><p class="text-xs text-slate-600 mt-1">Large floor plates available for scaling teams and BPO operations.</p></div>
+<div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">From ₹10,000/seat</h3><p class="text-xs text-slate-600 mt-1">Mumbai's most competitive all-inclusive pricing for Grade A offices.</p></div>
+    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h3><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
+    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">10-150+ Seats</h3><p class="text-xs text-slate-600 mt-1">Large floor plates available for scaling teams and BPO operations.</p></div>
 </div>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
@@ -61,17 +61,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-rupee-sign text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Best Value in Mumbai</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Best Value in Mumbai</h3>
 <p class="text-slate-600 leading-relaxed">Goregaon offers Grade A managed office space starting from ₹10,000/seat/month — significantly lower than BKC, Lower Parel, or even Andheri. For companies that need quality infrastructure but want to keep costs in check, Goregaon is the clear choice. The savings per seat add up fast when you are running a 50+ person team.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-road text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Western Express Highway Access</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Western Express Highway Access</h3>
 <p class="text-slate-600 leading-relaxed">Goregaon sits directly on the Western Express Highway, one of Mumbai's primary arterial roads. The airport is 20-25 minutes away. Goregaon railway station on the Western Line connects to Churchgate in under an hour. For teams spread across the western suburbs, commutes are manageable and predictable.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-server text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">IT and Business Park Ecosystem</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">IT and Business Park Ecosystem</h3>
 <p class="text-slate-600 leading-relaxed">NESCO IT Park, Ackruti Trade Centre, and Oberoi Commerz have established Goregaon as a legitimate commercial hub. These parks house major IT companies, BPOs, and corporate offices. The ecosystem means you get reliable internet infrastructure, multiple food options, and a professional environment without the premium district pricing.</p>
 </div>
 </div>
@@ -94,22 +94,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-code text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">IT Companies</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">IT Companies</h3>
 <p class="text-slate-600 leading-relaxed">Software companies, IT services firms, and SaaS businesses that need large floor plates for development teams. Goregaon's IT park ecosystem provides the infrastructure and talent proximity that tech companies rely on.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-headset text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">BPO and Operations</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">BPO and Operations</h3>
 <p class="text-slate-600 leading-relaxed">BPO companies and operations centers that need 50-150+ seats at competitive rates. The large floor plates, affordable pricing, and proximity to a workforce that lives in the western suburbs make Goregaon ideal for delivery centers.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-chart-bar text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Mid-Size Enterprises</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Mid-Size Enterprises</h3>
 <p class="text-slate-600 leading-relaxed">Companies with 30-80 employees who have outgrown coworking but do not want to overpay for a BKC or Lower Parel address. Goregaon gives you a professional Grade A office at a price point that makes sense for steady-growth businesses.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-blue/10 border border-brand-blue/30 rounded-xl flex items-center justify-center text-brand-blue mb-6"><i class="fas fa-expand-arrows-alt text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Companies Scaling Fast</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Companies Scaling Fast</h3>
 <p class="text-slate-600 leading-relaxed">Startups and mid-size firms that expect to double their team in the next 12 months. Goregaon's lower per-seat costs and larger available spaces mean you can scale without blowing your budget or relocating to a different district.</p>
 </div>
 </div>
@@ -151,22 +151,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <a href="/managed-office-space-mumbai" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-city text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space Mumbai</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space Mumbai</h3>
 <p class="text-sm text-slate-600">See all managed office locations across Mumbai including BKC, Lower Parel, Andheri, and more.</p>
 </a>
 <a href="/managed-office-bkc" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Managed Office in BKC</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Managed Office in BKC</h3>
 <p class="text-sm text-slate-600">Mumbai's financial nerve center. Premium Grade A offices from ₹18,000/seat for finance and consulting firms.</p>
 </a>
 <a href="/managed-office-andheri" class="glass-card p-8 hover:border-brand-violet/30 transition-all group">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-4 group-hover:bg-brand-violet group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Andheri</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-violet transition-colors">Managed Office in Andheri</h3>
 <p class="text-sm text-slate-600">Airport-adjacent offices with metro connectivity from ₹12,000/seat. Ideal for IT and traveling teams.</p>
 </a>
 <a href="/managed-office-lower-parel" class="glass-card p-8 hover:border-brand-emerald/30 transition-all group">
 <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-all"><i class="fas fa-map-marker-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">Managed Office in Lower Parel</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">Managed Office in Lower Parel</h3>
 <p class="text-sm text-slate-600">Mumbai's creative and media hub. Managed offices from ₹14,000/seat near Marathon Futurex.</p>
 </a>
 </div>

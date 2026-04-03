@@ -43,7 +43,7 @@ include 'templates/header.php';
 </div>
 <div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
 <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-green-500/10 border border-green-500/30 rounded-xl sm:rounded-2xl flex items-center justify-center text-green-500 shadow-[0_0_15px_rgba(34,197,94,0.1)] group-hover:bg-green-500 group-hover:text-white transition-all duration-500"><i class="fab fa-whatsapp text-xl sm:text-2xl"></i></div>
-<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">WhatsApp</p><a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20would%20like%20to%20discuss%20an%20office%20requirement." target="_blank" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-green-500 transition-colors">Chat With Us</a></div>
+<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">WhatsApp</p><a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20would%20like%20to%20discuss%20an%20office%20requirement." target="_blank" rel="noopener noreferrer" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-green-500 transition-colors">Chat With Us</a></div>
 </div>
 <div class="glass-card p-4 sm:p-6 border border-white/60">
 <p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-2 sm:mb-3">Our Office</p>

@@ -1,6 +1,6 @@
 <?php
 $page_id = 'managed';
-$page_title = 'Managed Office Space Mumbai | From ₹10,000/Seat | CorpEasy';
+$page_title = 'Managed Office Space in Mumbai | From ₹10,000/Seat | CorpEasy';
 $page_description = 'Managed office space in Mumbai from ₹10,000/seat/month. CorpEasy handles property search, setup & operations. BKC, Lower Parel, Goregaon, Andheri.';
 $page_keywords = 'managed office space Mumbai, managed workspace Mumbai, turnkey office Mumbai, office space per seat Mumbai, managed office BKC, managed office Lower Parel, managed office Goregaon, managed office Andheri, managed office space Mumbai 2026, fully managed office Mumbai, office space setup Mumbai, commercial office space Mumbai, private office space Mumbai';
 $page_canonical = 'https://www.corpeasy.in/managed-office-space-mumbai';
@@ -31,9 +31,9 @@ include 'templates/header.php';
 </div>
 <p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for <strong>managed office space in Mumbai</strong> without months of searching, negotiating, and setting up? We handle the entire process. From identifying the right commercial property to handing you a workspace that is ready when your team is.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">No Landlord Hassle</h4><p class="text-xs text-slate-600 mt-1">We negotiate with the landlord directly. You have one clean agreement with us.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Setup Included</h4><p class="text-xs text-slate-600 mt-1">Basic furniture, internet, and workspace essentials sorted before you move in.</p></div>
-<div class="glass-card p-5"><h4 class="text-base font-bold text-slate-900">Fixed Monthly Cost</h4><p class="text-xs text-slate-600 mt-1">A clear per seat fee for a fixed lease period. No surprises month to month.</p></div>
+<div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">No Landlord Hassle</h3><p class="text-xs text-slate-600 mt-1">We negotiate with the landlord directly. You have one clean agreement with us.</p></div>
+<div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Setup Included</h3><p class="text-xs text-slate-600 mt-1">Basic furniture, internet, and workspace essentials sorted before you move in.</p></div>
+<div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Fixed Monthly Cost</h3><p class="text-xs text-slate-600 mt-1">A clear per seat fee for a fixed lease period. No surprises month to month.</p></div>
 </div>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
@@ -71,17 +71,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 reveal">
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-blue/30 border border-brand-electric/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-electric shadow-[0_0_20px_rgba(0,240,255,0.2)]"><i class="fas fa-search-location"></i></div>
-<h4 class="text-2xl font-bold mb-4 text-slate-900">Property Search and Negotiation</h4>
+<h3 class="text-2xl font-bold mb-4 text-slate-900">Property Search and Negotiation</h3>
 <p class="text-slate-600 leading-relaxed">We identify suitable commercial properties across Mumbai based on your requirement, approach landlords, and negotiate the lease on your behalf.</p>
 </div>
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-cyan/20 border border-brand-cyan/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-cyan shadow-[0_0_20px_rgba(6,182,212,0.2)]"><i class="fas fa-tools"></i></div>
-<h4 class="text-2xl font-bold mb-4 text-slate-900">Workspace Setup and Readiness</h4>
+<h3 class="text-2xl font-bold mb-4 text-slate-900">Workspace Setup and Readiness</h3>
 <p class="text-slate-600 leading-relaxed">Once the space is secured, we manage the basic setup. Furniture, internet connection, and a clean functional working environment ready for Day 1.</p>
 </div>
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-violet/20 border border-brand-violet/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-violet shadow-[0_0_20px_rgba(139,92,246,0.2)]"><i class="fas fa-headset"></i></div>
-<h4 class="text-2xl font-bold mb-4 text-slate-900">Your Ongoing Point of Contact</h4>
+<h3 class="text-2xl font-bold mb-4 text-slate-900">Your Ongoing Point of Contact</h3>
 <p class="text-slate-600 leading-relaxed">After you move in, we remain available for any issues related to the space or the lease. You have a single point of contact.</p>
 </div>
 </div>
@@ -104,22 +104,22 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-8 relative">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric text-xl font-black mb-6">1</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Share Your Requirement</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Share Your Requirement</h3>
 <p class="text-slate-600 leading-relaxed">Tell us your team size, preferred locations in Mumbai, budget per seat, and move-in timeline. A 15-minute call is usually enough for us to understand what you need.</p>
 </div>
 <div class="glass-card p-8 relative">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan text-xl font-black mb-6">2</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">We Shortlist Properties</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">We Shortlist Properties</h3>
 <p class="text-slate-600 leading-relaxed">Within 48 hours, we send you 3-5 shortlisted commercial properties that match your criteria. Each option includes rent details, photos, floor plans, and our assessment of the space.</p>
 </div>
 <div class="glass-card p-8 relative">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet text-xl font-black mb-6">3</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Negotiate and Lock In</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Negotiate and Lock In</h3>
 <p class="text-slate-600 leading-relaxed">Once you pick a space, we negotiate the lease terms with the landlord, handle the legal paperwork, and finalize a clear per-seat monthly cost with no hidden charges.</p>
 </div>
 <div class="glass-card p-8 relative">
 <div class="w-12 h-12 bg-brand-gold/10 border border-brand-gold/30 rounded-xl flex items-center justify-center text-brand-gold text-xl font-black mb-6">4</div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Move In and Start Working</h4>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Move In and Start Working</h3>
 <p class="text-slate-600 leading-relaxed">We set up the workspace with furniture, internet, and essentials. You walk in on Day 1 to a ready office. Post move-in, we stay as your single point of contact for anything related to the space.</p>
 </div>
 </div>
@@ -132,27 +132,27 @@ include 'templates/header.php';
 <p class="text-lg text-slate-500 mb-16 text-center max-w-3xl mx-auto">We operate across Mumbai's key commercial districts. Each area has its own advantages depending on your industry, team size, and client base.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-3">BKC (Bandra Kurla Complex)</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">BKC (Bandra Kurla Complex)</h3>
 <p class="text-slate-600 leading-relaxed">Mumbai's premier business district. Ideal for financial services, consulting firms, and companies that need proximity to the Diamond Bourse, MMRDA, and major corporate headquarters. Per-seat costs range from ₹18,000 to ₹35,000/month depending on the building grade.</p>
 </div>
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-3">Lower Parel</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Lower Parel</h3>
 <p class="text-slate-600 leading-relaxed">The former mill district transformed into Mumbai's creative and tech hub. Home to media companies, advertising agencies, and tech startups. Well-connected by local train. Per-seat costs range from ₹14,000 to ₹28,000/month.</p>
 </div>
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-3">Goregaon</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Goregaon</h3>
 <p class="text-slate-600 leading-relaxed">A rapidly growing commercial hub on the Western Express Highway. Popular with IT companies, BPOs, and mid-size enterprises looking for good infrastructure at competitive rates. Per-seat costs range from ₹10,000 to ₹18,000/month.</p>
 </div>
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-3">Andheri East</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Andheri East</h3>
 <p class="text-slate-600 leading-relaxed">One of Mumbai's largest commercial zones with excellent metro connectivity and proximity to the airport. A practical choice for companies with teams that travel frequently or need airport access. Per-seat costs range from ₹12,000 to ₹22,000/month.</p>
 </div>
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-3">Powai</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Powai</h3>
 <p class="text-slate-600 leading-relaxed">Known for its tech ecosystem near IIT Bombay. Home to several large IT parks and a growing number of startups. Offers a quieter working environment compared to central Mumbai. Per-seat costs range from ₹12,000 to ₹20,000/month.</p>
 </div>
 <div class="glass-card p-8">
-<h4 class="text-xl font-bold text-slate-900 mb-3">Thane</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Thane</h3>
 <p class="text-slate-600 leading-relaxed">An emerging business destination with modern commercial buildings and significantly lower costs than Mumbai proper. Ideal for companies with teams based in Thane, Navi Mumbai, or the extended suburbs. Per-seat costs range from ₹8,000 to ₹15,000/month.</p>
 </div>
 </div>
@@ -194,17 +194,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-rocket text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Startups Scaling Up</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Startups Scaling Up</h3>
 <p class="text-slate-600 leading-relaxed">You have outgrown your coworking space and need a proper office, but you cannot afford to spend 3 months setting one up. A managed office lets you scale from 10 seats to 50 seats without operational headaches.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-globe text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">Companies Entering Mumbai</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">Companies Entering Mumbai</h3>
 <p class="text-slate-600 leading-relaxed">Businesses from Bangalore, Delhi, Pune, or international markets that need a Mumbai office quickly. A managed office gives you a ready workspace without knowing the local real estate market.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-users-cog text-xl"></i></div>
-<h4 class="text-xl font-bold text-slate-900 mb-3">SMEs Focused on Growth</h4>
+    <h3 class="text-xl font-bold text-slate-900 mb-3">SMEs Focused on Growth</h3>
 <p class="text-slate-600 leading-relaxed">Mid-size companies that want their leadership team focused on business, not on managing office vendors, AMC contracts, and building maintenance. Let someone else handle the workspace operations.</p>
 </div>
 </div>
@@ -260,17 +260,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <a href="/facility-management-mumbai" class="glass-card p-8 hover:border-brand-rose/30 transition-all group">
 <div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose mb-4 group-hover:bg-brand-rose group-hover:text-white transition-all"><i class="fas fa-tools text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-rose transition-colors">Facility Management</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-rose transition-colors">Facility Management</h3>
 <p class="text-sm text-slate-600">Already have an office? We handle housekeeping, security, AMC contracts, and daily operations.</p>
 </a>
 <a href="/office-space-for-rent-mumbai" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-search-location text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Find Office Space for Rent</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Find Office Space for Rent</h3>
 <p class="text-sm text-slate-600">Want to find and lease a space yourself? We help with property search and landlord negotiation.</p>
 </a>
 <a href="/contact" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-phone-alt text-lg"></i></div>
-<h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Talk to Our Team</h4>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Talk to Our Team</h3>
 <p class="text-sm text-slate-600">Not sure what you need? Schedule a free 15-minute consultation with our workspace experts.</p>
 </a>
 </div>

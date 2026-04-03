@@ -47,17 +47,17 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal delay-100">
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-gold/10 border border-brand-gold/30 rounded-xl flex items-center justify-center mb-3 text-brand-gold"><i class="fas fa-users text-sm"></i></div>
-<h4 class="text-base font-bold text-slate-900 mb-1">Vetted Tenants</h4>
+<h3 class="text-base font-bold text-slate-900 mb-1">Vetted Tenants</h3>
 <p class="text-xs text-slate-500 leading-relaxed">Only genuine, creditworthy businesses — not speculative enquiries</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-3 text-brand-electric"><i class="fas fa-file-signature text-sm"></i></div>
-<h4 class="text-base font-bold text-slate-900 mb-1">Lease Handled</h4>
+<h3 class="text-base font-bold text-slate-900 mb-1">Lease Handled</h3>
 <p class="text-xs text-slate-500 leading-relaxed">We manage negotiations, documentation, and agreement signing</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-3 text-brand-cyan"><i class="fas fa-shield-alt text-sm"></i></div>
-<h4 class="text-base font-bold text-slate-900 mb-1">No Broker Spam</h4>
+<h3 class="text-base font-bold text-slate-900 mb-1">No Broker Spam</h3>
 <p class="text-xs text-slate-500 leading-relaxed">We do the matchmaking ourselves — not a listing portal</p>
 </div>
 </div>
