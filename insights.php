@@ -91,7 +91,7 @@ foreach ($posts as $postSlug => $p) {
     $itemListElements[] = [
         '@type' => 'ListItem',
         'position' => $pos++,
-        'url' => 'https://www.corpeasy.in/blog/' . $postSlug,
+        'url' => 'https://www.corpeasy.in/insights/' . $postSlug,
         'name' => $p['title']
     ];
 }
@@ -99,7 +99,7 @@ foreach ($posts as $postSlug => $p) {
 $page_id = 'blog';
 $page_title = 'Managed Office Insights Mumbai | CorpEasy Blog';
 $page_description = 'Expert articles on managed office space, commercial real estate, and workspace decisions in Mumbai. Written for business owners and operations teams.';
-$page_canonical = 'https://www.corpeasy.in/blog';
+$page_canonical = 'https://www.corpeasy.in/insights';
 $page_og_image = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
 $page_schema = json_encode([
     '@type' => 'ItemList',
