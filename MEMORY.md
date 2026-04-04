@@ -42,7 +42,7 @@ Managed office space provider in Mumbai. Works **requirement-first** (no invento
 - [x] Created rent pages: BKC, Lower Parel, general Mumbai
 - [x] All pages have proper SEO variables ($page_title, $page_description, $page_keywords, $page_canonical, $page_schema)
 - [x] Schema markup implemented: FAQPage, Article, LocalBusiness, Organization
-- [x] Internal linking across all pages (blog → service → comparison → contact)
+- [x] Internal linking across all pages (insights → service → comparison → contact)
 - [x] sitemap.xml created and updated with all pages
 - [x] robots.txt configured with AI crawler rules
 - [x] Optimized press release with both founder details and company portrait
@@ -63,7 +63,7 @@ Managed office space provider in Mumbai. Works **requirement-first** (no invento
 - [x] templates/header.php and templates/footer.php used across all pages
 - [x] Tailwind CSS + glass-card components
 - [x] .webp images with -sm variants for logos
-- [x] Blog articles as standalone PHP files in blog/ directory
+- [x] Blog/Insights articles as standalone PHP files in root directory (moved from blog/ to fix 403)
 - [x] FAQ page with FAQPage schema
 - [x] Contact form
 - [x] About page
@@ -86,6 +86,18 @@ Managed office space provider in Mumbai. Works **requirement-first** (no invento
 ---
 
 ## Session Log
+
+### 2026-04-04 — Blog to Insights Migration (Session Recovery)
+- Recovered from crashed session that was migrating /blog/ to /insights/
+- Moved 4 article PHP files from blog/ folder to root (fixes 403 on Hostinger)
+- Renamed blog.php to insights.php with updated title/schema
+- Updated .htaccess with new /insights/ routes and 301 redirects from old /blog/ URLs
+- Deleted empty blog/ folder and blog/index.php
+- Updated ALL internal links from /blog/ to /insights/ across 17 PHP files
+- Updated canonical URLs and schema URLs in all article files
+- Updated blog-post.php redirect and social share URLs
+- Committed in 2 commits: f9fd19a (migration) + a3dd1f2 (link updates)
+- Branch is now 8 commits ahead of origin/main
 
 ### 2026-04-04 — Memory System Setup
 - Created MEMORY.md for persistent session memory
@@ -116,7 +128,9 @@ Managed office space provider in Mumbai. Works **requirement-first** (no invento
 - Images must be .webp format
 - No framework PHP — keep it simple and fast
 - Glass-card UI design system is the standard
-- Blog articles are standalone PHP files (not DB-driven for SEO articles)
+- Blog articles are standalone PHP files in root (not DB-driven for SEO articles)
+- URL structure: /insights/ for blog listing, /insights/{slug} for articles
+- All old /blog/ URLs 301 redirect to /insights/ equivalents
 - Location pages should target specific buildings/landmarks for long-tail SEO
 - Each location page needs: pricing, market context, target audience, FAQ, cross-links
 
