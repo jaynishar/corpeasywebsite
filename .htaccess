@@ -16,17 +16,12 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
 RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
 
 # ══════════════════════════════════════════════════════════════
-# URL ROUTING — all explicit before !-f/!-d
+# URL ROUTING
 # ══════════════════════════════════════════════════════════════
 
-# Blog listing page
-RewriteRule ^blog/?$ blog.php [L]
-
-# Blog articles — standalone PHP files at root level
-RewriteRule ^blog/mumbai-workspace-guide/?$ mumbai-workspace-guide.php [L]
-RewriteRule ^blog/bkc-vs-goregaon/?$ bkc-vs-goregaon.php [L]
-RewriteRule ^blog/managed-office-explainer/?$ managed-office-explainer.php [L]
-RewriteRule ^blog/gst-office-rental/?$ gst-office-rental.php [L]
+# Blog articles — served directly from blog/ folder (no rewrite needed)
+# blog/index.php serves the Insights listing page
+# blog/*.php serve individual articles
 
 # DB-driven blog posts (fallback for posts without standalone .php files)
 RewriteRule ^blog/([^/]+)/?$ blog-post.php?slug=$1 [L]
