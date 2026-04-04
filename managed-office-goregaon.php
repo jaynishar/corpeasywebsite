@@ -181,7 +181,7 @@ include 'templates/header.php';
 <p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-5">From Our Blog</p>
 <div class="flex flex-wrap justify-center gap-4">
 <a href="/blog/bkc-vs-goregaon" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">BKC or Goregaon? Choosing the Right Location</a>
-<a href="/blog/managed-office-vs-coworking-space" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Managed Office vs Coworking Space</a>
+<a href="/managed-office-vs-coworking" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Managed Office vs Coworking Space</a>
 <a href="/blog/managed-office-explainer" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">What Is a Managed Office?</a>
 </div>
 </div>

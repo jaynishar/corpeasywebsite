@@ -279,8 +279,8 @@ include 'templates/header.php';
 <div class="max-w-7xl mx-auto px-6 text-center">
 <p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-5">From Our Blog</p>
 <div class="flex flex-wrap justify-center gap-4">
-<a href="/blog/questions-before-renting-office-space-mumbai" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Questions to Ask Before Renting Office Space</a>
-<a href="/blog/how-much-does-office-space-cost-in-mumbai-2026" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Office Space Costs in Mumbai 2026</a>
+<a href="/faq" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Questions to Ask Before Renting Office Space</a>
+<a href="/office-space-cost-mumbai-2026" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Office Space Costs in Mumbai 2026</a>
 <a href="/blog/gst-office-rental" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">GST on Commercial Office Rentals</a>
 </div>
 </div>

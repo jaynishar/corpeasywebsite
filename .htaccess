@@ -24,11 +24,22 @@ RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
 # URL ROUTING
 # ══════════════════════════════════════════════════════════════
 
+# ── Explicit routes (bypass !-f/!-d checks) ──
+# These MUST come BEFORE the generic catch-all conditions.
+# Critical: blog/ directory exists as a real folder, so !-d would
+# block routing. We route blog/* explicitly before the conditions.
+RewriteRule ^blog/?$ blog.php [L]
+RewriteRule ^blog/([^/]+)/?$ blog-post.php?slug=$1 [L]
+RewriteRule ^managed-office-vs-coworking/?$ managed-office-vs-coworking.php [L]
+RewriteRule ^what-is-a-managed-office/?$ what-is-a-managed-office.php [L]
+RewriteRule ^office-space-cost-mumbai-2026/?$ office-space-cost-mumbai-2026.php [L]
+RewriteRule ^managed-office-powai/?$ managed-office-powai.php [L]
+RewriteRule ^managed-office-navi-mumbai/?$ managed-office-navi-mumbai.php [L]
+RewriteRule ^managed-office-thane/?$ managed-office-thane.php [L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteRule ^blog/?$ blog.php [L]
-RewriteRule ^blog/([^/]+)/?$ blog-post.php?slug=$1 [L]
 RewriteRule ^about/?$ about.php [L]
 RewriteRule ^contact/?$ contact.php [L]
 RewriteRule ^faq/?$ faq.php [L]

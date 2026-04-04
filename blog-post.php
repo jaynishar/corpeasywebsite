@@ -55,6 +55,18 @@ if (in_array($slug, $standaloneArticles, true)) {
     exit;
 }
 
+// Redirect DB-driven slugs that have standalone root-level pages
+$rootLevelPages = [
+    'managed-office-vs-coworking-space' => '/managed-office-vs-coworking',
+    'how-much-does-office-space-cost-in-mumbai-2026' => '/office-space-cost-mumbai-2026',
+    'questions-before-renting-office-space-mumbai' => '/faq',
+    'facility-management-guide-small-offices' => '/facility-management-mumbai',
+];
+if (isset($rootLevelPages[$slug])) {
+    header('Location: ' . $rootLevelPages[$slug], true, 301);
+    exit;
+}
+
 // Fallback to hardcoded posts
 if (!$post) {
     $fallbackPosts = [
