@@ -28,8 +28,18 @@ RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
 # These MUST come BEFORE the generic catch-all conditions.
 # Critical: blog/ directory exists as a real folder, so !-d would
 # block routing. We route blog/* explicitly before the conditions.
+
+# Standalone blog articles — serve .php files directly
+RewriteCond %{DOCUMENT_ROOT}/blog/$1.php -f
+RewriteRule ^blog/([^/]+)/?$ /blog/$1.php [L]
+
+# Blog listing page
 RewriteRule ^blog/?$ blog.php [L]
+
+# DB-driven blog posts (fallback for posts without standalone .php files)
 RewriteRule ^blog/([^/]+)/?$ blog-post.php?slug=$1 [L]
+
+# Root-level standalone pages
 RewriteRule ^managed-office-vs-coworking/?$ managed-office-vs-coworking.php [L]
 RewriteRule ^what-is-a-managed-office/?$ what-is-a-managed-office.php [L]
 RewriteRule ^office-space-cost-mumbai-2026/?$ office-space-cost-mumbai-2026.php [L]

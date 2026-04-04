@@ -43,15 +43,15 @@ try {
     // DB failed, fall through to hardcoded
 }
 
-// Redirect to standalone article pages for SEO
+// Redirect to standalone article pages for SEO (root-level .php files)
 $standaloneArticles = [
-    'mumbai-workspace-guide',
-    'bkc-vs-goregaon',
-    'managed-office-explainer',
-    'gst-office-rental',
+    'mumbai-workspace-guide' => '/blog/mumbai-workspace-guide',
+    'bkc-vs-goregaon' => '/blog/bkc-vs-goregaon',
+    'managed-office-explainer' => '/blog/managed-office-explainer',
+    'gst-office-rental' => '/blog/gst-office-rental',
 ];
-if (in_array($slug, $standaloneArticles, true)) {
-    header('Location: /blog/' . $slug, true, 301);
+if (isset($standaloneArticles[$slug])) {
+    header('Location: ' . $standaloneArticles[$slug], true, 301);
     exit;
 }
 
