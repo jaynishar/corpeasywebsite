@@ -3,7 +3,7 @@ $page_id = 'blog-mumbai-workspace-guide';
 $page_title = 'How to Find the Right Office Space in Mumbai: A Practical Guide for 2026';
 $page_description = 'Finding office space in Mumbai looks straightforward on paper but becomes complicated in practice. This guide walks through what the process actually looks like, where things go wrong, and how to avoid common mistakes.';
 $page_keywords = 'how to find office space Mumbai, office space guide Mumbai 2026, commercial office space Mumbai, finding office space Mumbai, office space tips Mumbai, best areas for office space Mumbai, office space checklist Mumbai, managed office space Mumbai';
-$page_canonical = 'https://www.corpeasy.in/blog/mumbai-workspace-guide';
+$page_canonical = 'https://www.corpeasy.in/insights/mumbai-workspace-guide';
 $page_schema = '{
   "@type": "Article",
   "headline": "How to Find the Right Office Space in Mumbai: A Practical Guide for 2026",
@@ -12,7 +12,7 @@ $page_schema = '{
   "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/"},
   "datePublished": "2026-01-15",
   "dateModified": "2026-04-03",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.corpeasy.in/blog/mumbai-workspace-guide"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.corpeasy.in/insights/mumbai-workspace-guide"}
 }';
 
 include 'templates/header.php';
@@ -102,7 +102,7 @@ include 'templates/header.php';
 <div class="mt-16 reveal">
 <h3 class="text-2xl font-bold text-slate-900 mb-8">Related Articles</h3>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-<a href="/blog/bkc-vs-goregaon" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
+<a href="/insights/bkc-vs-goregaon" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
 <p class="text-xs font-bold uppercase tracking-widest text-brand-cyan mb-3">Market Trends</p>
 <h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">BKC or Goregaon? Choosing the Right Mumbai Location</h4>
 </a>

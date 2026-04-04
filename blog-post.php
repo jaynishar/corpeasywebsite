@@ -51,7 +51,7 @@ $standaloneArticles = [
     'gst-office-rental',
 ];
 if (in_array($slug, $standaloneArticles, true)) {
-    header('Location: /blog/' . $slug, true, 301);
+    header('Location: /insights/' . $slug, true, 301);
     exit;
 }
 
@@ -131,7 +131,7 @@ $seoTitleOverrides = [
 ];
 $page_title = $seoTitleOverrides[$slug] ?? (htmlspecialchars(rtrim($post['title'], '.')) . ' | CorpEasy');
 $page_description = substr(strip_tags($post['content']), 0, 155);
-$page_canonical = 'https://www.corpeasy.in/blog/' . htmlspecialchars($slug);
+$page_canonical = 'https://www.corpeasy.in/insights/' . htmlspecialchars($slug);
 $page_lcp_image = $post['image']; // Preload hero image for LCP
 
 // Article schema
@@ -153,8 +153,8 @@ $page_schema = json_encode([
         '@id' => 'https://www.corpeasy.in/#organization'
     ],
     'image' => $post['image'],
-    'url' => 'https://www.corpeasy.in/blog/' . $slug,
-    'mainEntityOfPage' => 'https://www.corpeasy.in/blog/' . $slug,
+    'url' => 'https://www.corpeasy.in/insights/' . $slug,
+    'mainEntityOfPage' => 'https://www.corpeasy.in/insights/' . $slug,
     'inLanguage' => 'en-IN'
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
@@ -183,8 +183,8 @@ include 'templates/header.php';
         <div>
             <h4 class="text-xl font-bold text-slate-900 mb-4">Share this article</h4>
             <div class="flex gap-4">
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode('https://www.corpeasy.in/blog/' . $slug); ?>" target="_blank" rel="noopener" aria-label="Share on LinkedIn" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in text-lg"></i></a>
-                <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode('https://www.corpeasy.in/blog/' . $slug); ?>&text=<?php echo urlencode($post['title']); ?>" target="_blank" rel="noopener" aria-label="Share on Twitter" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-twitter text-lg"></i></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode('https://www.corpeasy.in/insights/' . $slug); ?>" target="_blank" rel="noopener" aria-label="Share on LinkedIn" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in text-lg"></i></a>
+                <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode('https://www.corpeasy.in/insights/' . $slug); ?>&text=<?php echo urlencode($post['title']); ?>" target="_blank" rel="noopener" aria-label="Share on Twitter" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-twitter text-lg"></i></a>
                 <a href="#" onclick="navigator.clipboard.writeText(window.location.href);showToast('Link copied!','success');return false;" aria-label="Copy link" class="w-12 h-12 bg-white/70 border border-white/80 rounded-xl flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fas fa-link text-lg"></i></a>
             </div>
         </div>
@@ -222,7 +222,7 @@ $related = array_slice(array_values($related), 0, 3);
 <h3 class="text-2xl font-black text-slate-900 mb-8 tracking-tight">Related Articles</h3>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
 <?php foreach ($related as $relSlug): if (!isset($allPostTitles[$relSlug])) continue; ?>
-<a href="/blog/<?php echo htmlspecialchars($relSlug); ?>" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
+<a href="/insights/<?php echo htmlspecialchars($relSlug); ?>" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
 <p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-3 group-hover:text-brand-blue transition-colors">Read Next</p>
 <h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors"><?php echo htmlspecialchars($allPostTitles[$relSlug]); ?></h4>
 </a>

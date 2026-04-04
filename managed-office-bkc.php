@@ -204,7 +204,7 @@ include 'templates/header.php';
 <div class="max-w-7xl mx-auto px-6 text-center">
 <p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-5">From Our Blog</p>
 <div class="flex flex-wrap justify-center gap-4">
-<a href="/blog/bkc-vs-goregaon" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">BKC or Goregaon? Choosing the Right Location</a>
+<a href="/insights/bkc-vs-goregaon" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">BKC or Goregaon? Choosing the Right Location</a>
 <a href="/managed-office-vs-coworking" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Managed Office vs Coworking Space</a>
 <a href="/office-space-cost-mumbai-2026" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Office Space Costs in Mumbai 2026</a>
 </div>

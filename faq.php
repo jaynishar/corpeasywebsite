@@ -67,7 +67,7 @@ include 'templates/header.php';
 <p class="text-xs font-bold uppercase tracking-widest text-brand-violet mb-2">Market Data</p>
 <h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">Office Space Cost in Mumbai 2026</h4>
 </a>
-<a href="/blog/gst-office-rental" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
+<a href="/insights/gst-office-rental" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block">
 <p class="text-xs font-bold uppercase tracking-widest text-brand-rose mb-2">Finance</p>
 <h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">GST on Commercial Office Rentals</h4>
 </a>

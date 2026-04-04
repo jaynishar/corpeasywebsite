@@ -3,7 +3,7 @@ $page_id = 'blog-gst-office-rental';
 $page_title = 'GST on Commercial Office Rentals in Mumbai: What You Need to Know';
 $page_description = 'Understanding GST on commercial office rentals in Mumbai — who pays it, how much, whether you can claim ITC, and how it affects your total office cost. Practical guide for businesses.';
 $page_keywords = 'GST on office rental Mumbai, GST commercial rent India, input tax credit office rent, 18% GST office space Mumbai, commercial property GST, office rent tax Mumbai, GST on managed office, commercial lease GST India';
-$page_canonical = 'https://www.corpeasy.in/blog/gst-office-rental';
+$page_canonical = 'https://www.corpeasy.in/insights/gst-office-rental';
 $page_schema = '{
   "@type": "Article",
   "headline": "GST on Commercial Office Rentals in Mumbai: What You Need to Know",
@@ -11,7 +11,7 @@ $page_schema = '{
   "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/"},
   "datePublished": "2026-03-01",
   "dateModified": "2026-04-03",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.corpeasy.in/blog/gst-office-rental"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.corpeasy.in/insights/gst-office-rental"}
 }';
 
 include 'templates/header.php';
@@ -127,7 +127,7 @@ include 'templates/header.php';
 <div class="mt-16 reveal">
 <h3 class="text-2xl font-bold text-slate-900 mb-8">Related Articles</h3>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-<a href="/blog/mumbai-workspace-guide" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block"><p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-3">Market Guide</p><h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">How to Find Office Space in Mumbai</h4></a>
+<a href="/insights/mumbai-workspace-guide" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block"><p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-3">Market Guide</p><h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">How to Find Office Space in Mumbai</h4></a>
 <a href="/office-space-cost-mumbai-2026" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block"><p class="text-xs font-bold uppercase tracking-widest text-brand-violet mb-3">Market Data</p><h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">Office Space Cost in Mumbai 2026</h4></a>
 <a href="/managed-office-vs-coworking" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block"><p class="text-xs font-bold uppercase tracking-widest text-brand-cyan mb-3">Comparison</p><h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">Managed Office vs Coworking Space</h4></a>
 </div>

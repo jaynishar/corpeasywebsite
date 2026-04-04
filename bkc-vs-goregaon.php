@@ -3,7 +3,7 @@ $page_id = 'blog-bkc-vs-goregaon';
 $page_title = 'BKC or Goregaon? Choosing the Right Mumbai Location for Your Office';
 $page_description = 'BKC vs Goregaon for your Mumbai office — rent comparison, connectivity, building quality, and which location suits your business type. Honest breakdown with 2026 data.';
 $page_keywords = 'BKC vs Goregaon office, office space BKC vs Goregaon, BKC office rent, Goregaon office space, NESCO complex Goregaon, Nirlon Knowledge Park, best location for office Mumbai, office space Goregaon East, Bandra Kurla Complex office';
-$page_canonical = 'https://www.corpeasy.in/blog/bkc-vs-goregaon';
+$page_canonical = 'https://www.corpeasy.in/insights/bkc-vs-goregaon';
 $page_schema = '{
   "@type": "Article",
   "headline": "BKC or Goregaon? Choosing the Right Mumbai Location for Your Office",
@@ -11,7 +11,7 @@ $page_schema = '{
   "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/"},
   "datePublished": "2026-02-01",
   "dateModified": "2026-04-03",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.corpeasy.in/blog/bkc-vs-goregaon"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.corpeasy.in/insights/bkc-vs-goregaon"}
 }';
 
 include 'templates/header.php';
@@ -113,7 +113,7 @@ include 'templates/header.php';
 <div class="mt-16 reveal">
 <h3 class="text-2xl font-bold text-slate-900 mb-8">Related Articles</h3>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-<a href="/blog/mumbai-workspace-guide" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block"><p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-3">Market Guide</p><h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">How to Find the Right Office Space in Mumbai</h4></a>
+<a href="/insights/mumbai-workspace-guide" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block"><p class="text-xs font-bold uppercase tracking-widest text-brand-electric mb-3">Market Guide</p><h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">How to Find the Right Office Space in Mumbai</h4></a>
 <a href="/managed-office-vs-coworking" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block"><p class="text-xs font-bold uppercase tracking-widest text-brand-cyan mb-3">Comparison</p><h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">Managed Office vs Coworking Space</h4></a>
 <a href="/office-space-cost-mumbai-2026" class="glass-card p-6 hover:border-brand-electric/50 transition-all group block"><p class="text-xs font-bold uppercase tracking-widest text-brand-violet mb-3">Market Data</p><h4 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-brand-electric transition-colors">Office Space Cost in Mumbai 2026</h4></a>
 </div>

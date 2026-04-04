@@ -125,7 +125,7 @@ include 'templates/header.php';
 </div>
 
 <?php if ($featured): ?>
-<a href="/blog/<?php echo htmlspecialchars($featuredKey); ?>" class="group cursor-pointer mb-24 reveal delay-100 block">
+<a href="/insights/<?php echo htmlspecialchars($featuredKey); ?>" class="group cursor-pointer mb-24 reveal delay-100 block">
 <div class="glass-card p-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 <div class="rounded-[2rem] overflow-hidden h-[450px]">
 <img fetchpriority="high" src="<?php echo htmlspecialchars($featured['image']); ?>" alt="<?php echo htmlspecialchars($featured['title']); ?>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90">
@@ -145,7 +145,7 @@ include 'templates/header.php';
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 <?php $i = 0; foreach ($gridPosts as $key => $p): $delayClass = $i === 1 ? 'delay-100' : ($i === 2 ? 'delay-200' : ''); ?>
-<a href="/blog/<?php echo htmlspecialchars($key); ?>" class="blog-card group cursor-pointer reveal <?php echo $delayClass; ?> block">
+<a href="/insights/<?php echo htmlspecialchars($key); ?>" class="blog-card group cursor-pointer reveal <?php echo $delayClass; ?> block">
 <div class="h-56 overflow-hidden rounded-t-[2rem]"><img loading="lazy" src="<?php echo htmlspecialchars($p['image']); ?>" alt="<?php echo htmlspecialchars($p['title']); ?>" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-80 group-hover:opacity-100"></div>
 <div class="p-8">
 <p class="text-xs font-medium <?php echo getCategoryColor($p['category']); ?> uppercase mb-3"><?php echo htmlspecialchars($p['category']); ?></p>

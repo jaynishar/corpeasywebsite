@@ -381,7 +381,7 @@ Your details are safe with us. No spam, ever.
 <p class="text-xl text-slate-500 max-w-2xl mx-auto">Practical articles on office space in Mumbai, commercial real estate, and workspace decisions. No fluff, no generic content.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
-<a href="/blog/mumbai-workspace-guide" class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer block">
+<a href="/insights/mumbai-workspace-guide" class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer block">
 <div class="w-14 h-14 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-6 text-brand-electric"><i class="fas fa-book-open text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-electric transition-colors">How to Find the Right Office Space in Mumbai: A Practical Guide for 2026.</h3>
 <p class="text-sm text-slate-600 leading-relaxed mb-4">Finding office space in Mumbai looks straightforward on paper but becomes complicated in practice. This guide walks through what the process actually looks like.</p>

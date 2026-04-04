@@ -283,7 +283,7 @@ include 'templates/header.php';
 <div class="flex flex-wrap justify-center gap-4">
 <a href="/managed-office-vs-coworking" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Managed Office vs Coworking Space</a>
 <a href="/office-space-cost-mumbai-2026" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">Office Space Costs in Mumbai 2026</a>
-<a href="/blog/managed-office-explainer" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">What Is a Managed Office?</a>
+<a href="/insights/managed-office-explainer" class="text-sm text-slate-700 hover:text-brand-electric font-medium underline underline-offset-4 transition-colors">What Is a Managed Office?</a>
 </div>
 </div>
 </section>
