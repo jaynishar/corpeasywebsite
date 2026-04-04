@@ -16,7 +16,7 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
 RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
 
 # ══════════════════════════════════════════════════════════════
-# URL ROUTING — all explicit, no !-f/!-d needed
+# URL ROUTING — all explicit before !-f/!-d
 # ══════════════════════════════════════════════════════════════
 
 # Blog listing page
