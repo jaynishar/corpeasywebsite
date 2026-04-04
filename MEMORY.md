@@ -96,8 +96,10 @@ Managed office space provider in Mumbai. Works **requirement-first** (no invento
 - Updated ALL internal links from /blog/ to /insights/ across 17 PHP files
 - Updated canonical URLs and schema URLs in all article files
 - Updated blog-post.php redirect and social share URLs
-- Committed in 2 commits: f9fd19a (migration) + a3dd1f2 (link updates)
-- Branch is now 8 commits ahead of origin/main
+- Committed in 3 commits: f9fd19a (migration) + a3dd1f2 (link updates) + 1b33e92 (memory)
+- Pushed all 9 commits to origin/main (1bd974f..1b33e92)
+- Live server needs manual .htaccess upload via Hostinger File Manager to match GitHub
+- Issue found: first 2 articles work, 3rd/4th redirect wrong because live .htaccess is outdated
 
 ### 2026-04-04 — Memory System Setup
 - Created MEMORY.md for persistent session memory
