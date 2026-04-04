@@ -1,40 +1,32 @@
 RewriteEngine On
 RewriteBase /
 
-# Force index.php as the homepage (not index.html)
 DirectoryIndex index.php index.html
 
 # ══════════════════════════════════════════════════════════════
-# CANONICAL REDIRECT — must be FIRST, before any routing rules
-# All variants → https://www.corpeasy.in in a SINGLE 301 hop
+# CANONICAL REDIRECT — must be FIRST
 # ══════════════════════════════════════════════════════════════
-
-# 1) Non-www (any protocol) → https://www — ONE hop, no chain
 RewriteCond %{HTTP_HOST} !^www\.corpeasy\.in$ [NC]
 RewriteCond %{HTTP_HOST} !^localhost [NC]
 RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
 
-# 2) http://www → https://www (Hostinger uses X-Forwarded-Proto)
 RewriteCond %{HTTP_HOST} ^www\.corpeasy\.in$ [NC]
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
 RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
 
 # ══════════════════════════════════════════════════════════════
-# URL ROUTING
+# URL ROUTING — all explicit, no !-f/!-d needed
 # ══════════════════════════════════════════════════════════════
-
-# ── Explicit routes (bypass !-f/!-d checks) ──
-# These MUST come BEFORE the generic catch-all conditions.
-# Critical: blog/ directory exists as a real folder, so !-d would
-# block routing. We route blog/* explicitly before the conditions.
-
-# Standalone blog articles — serve .php files directly
-RewriteCond %{DOCUMENT_ROOT}/blog/$1.php -f
-RewriteRule ^blog/([^/]+)/?$ /blog/$1.php [L]
 
 # Blog listing page
 RewriteRule ^blog/?$ blog.php [L]
+
+# Blog articles — standalone PHP files at root level
+RewriteRule ^blog/mumbai-workspace-guide/?$ mumbai-workspace-guide.php [L]
+RewriteRule ^blog/bkc-vs-goregaon/?$ bkc-vs-goregaon.php [L]
+RewriteRule ^blog/managed-office-explainer/?$ managed-office-explainer.php [L]
+RewriteRule ^blog/gst-office-rental/?$ gst-office-rental.php [L]
 
 # DB-driven blog posts (fallback for posts without standalone .php files)
 RewriteRule ^blog/([^/]+)/?$ blog-post.php?slug=$1 [L]
@@ -66,10 +58,7 @@ RewriteRule ^office-for-rent-bkc/?$ office-for-rent-bkc.php [L]
 RewriteRule ^office-for-rent-lower-parel/?$ office-for-rent-lower-parel.php [L]
 RewriteRule ^privacy-policy/?$ privacy-policy.php [L]
 
-# Prevent directory listing
 Options -Indexes
-
-# Proper 404 — returns real HTTP 404 (not soft-404 via index.php)
 ErrorDocument 404 /404.php
 
 # ── GZIP Compression ─────────────────────────────────────────
@@ -104,7 +93,6 @@ ErrorDocument 404 /404.php
 
 # ── Cache-Control & Security Headers ─────────────────────────
 <IfModule mod_headers.c>
-    # HTML — never cache (ensures fresh PHP on every request, kills FOUC from stale cache)
     <FilesMatch "\.php$">
         Header set Cache-Control "no-cache, must-revalidate"
         Header unset ETag
@@ -120,8 +108,6 @@ ErrorDocument 404 /404.php
     Header set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
     Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
-    # Mobile performance: enable early hints for faster page loads
-    Header set Accept-CH "Sec-CH-UA-Platform-Version, Sec-CH-UA-Model"
 </IfModule>
 
 # ── Block access to sensitive files ──────────────────────────
@@ -130,7 +116,6 @@ ErrorDocument 404 /404.php
     Deny from all
 </FilesMatch>
 
-# ── Block direct access to markdown/docs ──────────────────────
 <FilesMatch "\.md$">
     Order Allow,Deny
     Deny from all
