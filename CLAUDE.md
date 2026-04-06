@@ -76,36 +76,8 @@ Managed office space provider in Mumbai. Works **requirement-first** (no invento
 - [ ] Add 5 more location pages (Powai, Navi Mumbai, Thane, Worli, Chandivali)
 - [ ] Create and upload cost breakdown PDF to SlideShare
 
-## Memory System — MANDATORY RULES
-- **MEMORY.md** contains persistent session memory — completed tasks, decisions, lessons learned, and session logs
-- **ALWAYS read MEMORY.md at session start** to know what was done previously
-- **ALWAYS update MEMORY.md at session end** — this is NOT optional, NOT a suggestion
+## Memory System
+- **MEMORY.md** contains persistent session memory — read it at session start for context
+- **Update MEMORY.md only once at session end** — do NOT update it after every file change
+- Do NOT re-read MEMORY.md after updating it — that creates an infinite loop
 - This file is also loaded via opencode.json `instructions` field for automatic context loading
-
-### Auto-Memory Update Protocol (Execute Before Ending ANY Session)
-1. Read current MEMORY.md
-2. Append today's date and session summary under "## Session Log"
-3. Update "## Completed Tasks" — mark any newly finished items as [x]
-4. Update "## Pending / TODO" — add new pending items, remove completed ones
-5. Update "## Key Decisions & Patterns" — add any new decisions made
-6. Update "## Lessons Learned" — add any new insights
-7. Update "Project State (Last Updated: YYYY-MM-DD)" with today's date
-8. Write the updated MEMORY.md file
-
-### Trigger Conditions (Update MEMORY.md when ANY of these happen)
-- Any file was created, modified, or deleted
-- Any decision was made about architecture, design, or approach
-- Any new task was completed
-- Any error was encountered and resolved
-- User asks to save progress
-- Session is about to end (always do this)
-
-### Format for Session Log Entries
-```
-### YYYY-MM-DD — Brief Session Title
-- What was done (specific, not vague)
-- Files created/modified
-- Decisions made and why
-- Issues encountered and how they were resolved
-- Next steps identified
-```
