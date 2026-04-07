@@ -30,14 +30,14 @@ include 'templates/header.php';
 </div>
 <p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Lower Parel</strong> without the headache of property visits, landlord negotiations, and interior fit-outs? Lower Parel has transformed from Mumbai's historic mill district into one of the city's most dynamic commercial corridors. We handle everything — from sourcing space near Marathon Futurex or Peninsula Business Park to delivering a workspace that is ready when your team walks in on Day 1.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-<div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">From ₹14,000/seat</h3><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing across Grade A buildings in Lower Parel.</p></div>
-    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Move In 2-3 Weeks</h3><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
-    <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">10-100+ Seats</h3><p class="text-xs text-slate-600 mt-1">Flexible team sizes across a wide range of building options.</p></div>
+<div class="glass-card p-5"><p class="text-base font-bold text-slate-900">From ₹14,000/seat</p><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing across Grade A buildings in Lower Parel.</p></div>
+    <div class="glass-card p-5"><p class="text-base font-bold text-slate-900">Move In 2-3 Weeks</p><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
+    <div class="glass-card p-5"><p class="text-base font-bold text-slate-900">10-100+ Seats</p><p class="text-xs text-slate-600 mt-1">Flexible team sizes across a wide range of building options.</p></div>
 </div>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
 <div class="glass-card p-8 border-t-4 border-t-brand-electric shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-<h3 class="text-xl font-black text-slate-900 mb-6 flex items-center gap-3"><i class="fas fa-building text-brand-electric"></i> Tell Us Your Office Requirement</h3>
+<p class="text-xl font-black text-slate-900 mb-6 flex items-center gap-3"><i class="fas fa-building text-brand-electric"></i> Tell Us Your Office Requirement</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Full Name" class="input-premium" required>
 <input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>

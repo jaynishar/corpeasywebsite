@@ -46,24 +46,24 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal delay-100">
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center mb-3 text-brand-rose"><i class="fas fa-broom text-sm"></i></div>
-<h3 class="text-base font-bold text-slate-900 mb-1">Daily Operations</h3>
+<p class="text-base font-bold text-slate-900 mb-1">Daily Operations</p>
 <p class="text-xs text-slate-500 leading-relaxed">Housekeeping, pantry, and reception management</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-3 text-brand-electric"><i class="fas fa-file-contract text-sm"></i></div>
-<h3 class="text-base font-bold text-slate-900 mb-1">Vendor & AMC</h3>
+<p class="text-base font-bold text-slate-900 mb-1">Vendor & AMC</p>
 <p class="text-xs text-slate-500 leading-relaxed">AC, electrical, plumbing, and IT vendor contracts</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-3 text-brand-cyan"><i class="fas fa-shield-alt text-sm"></i></div>
-<h3 class="text-base font-bold text-slate-900 mb-1">Compliance & Safety</h3>
+<p class="text-base font-bold text-slate-900 mb-1">Compliance & Safety</p>
 <p class="text-xs text-slate-500 leading-relaxed">Fire NOC, statutory audits, and security management</p>
 </div>
 </div>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
 <div class="glass-card p-6 lg:p-8 border-t-4 border-t-brand-rose shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-<h3 class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-tools text-brand-rose"></i> Get a Facility Management Quote</h3>
+<p class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-tools text-brand-rose"></i> Get a Facility Management Quote</p>
 <p class="text-xs text-slate-500 mb-6 leading-relaxed">Tell us about your office. We will send a detailed proposal within 24 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4 relative">
 <input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>

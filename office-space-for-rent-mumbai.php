@@ -47,24 +47,24 @@ include 'templates/header.php';
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal delay-100">
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-3 text-brand-cyan"><i class="fas fa-map-marked-alt text-sm"></i></div>
-<h3 class="text-base font-bold text-slate-900 mb-1">We Know What's Available</h3>
+<p class="text-base font-bold text-slate-900 mb-1">We Know What's Available</p>
 <p class="text-xs text-slate-500 leading-relaxed">BKC, Lower Parel, Goregaon, Andheri, Powai — we track the market daily</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-3 text-brand-electric"><i class="fas fa-handshake text-sm"></i></div>
-<h3 class="text-base font-bold text-slate-900 mb-1">Landlord Negotiations</h3>
+<p class="text-base font-bold text-slate-900 mb-1">Landlord Negotiations</p>
 <p class="text-xs text-slate-500 leading-relaxed">We negotiate rent, deposit, and lease terms directly with the building</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-3 text-brand-violet"><i class="fas fa-file-contract text-sm"></i></div>
-<h3 class="text-base font-bold text-slate-900 mb-1">Lease Review</h3>
+<p class="text-base font-bold text-slate-900 mb-1">Lease Review</p>
 <p class="text-xs text-slate-500 leading-relaxed">We flag unfavorable clauses before you commit to anything</p>
 </div>
 </div>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
 <div class="glass-card p-6 lg:p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
-<h3 class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Tell Us What You Are Looking For</h3>
+<p class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Tell Us What You Are Looking For</p>
 <p class="text-xs text-slate-500 mb-6 leading-relaxed">Share your requirement and we will come back with verified options within 24–48 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4 relative">
 <input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>
