@@ -23,7 +23,8 @@ $page_lcp_image = $page_lcp_image ?? '';
     <meta name="geo.placename" content="Mumbai, Maharashtra">
     <meta name="geo.position" content="19.0176;72.8562">
     <meta name="ICBM" content="19.0176, 72.8562">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e3a8a'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='sans-serif' fill='white' font-weight='900'>CE</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="/CORPEASYLOGO-square.svg">
+    <link rel="apple-touch-icon" href="/CORPEASYHEADER-sm.png">
     <meta name="theme-color" content="#1e3a8a">
 
     <!-- CRITICAL CSS — above-the-fold only, eliminates render-blocking for FCP -->
@@ -181,12 +182,18 @@ $page_lcp_image = $page_lcp_image ?? '';
           "alternateName": "CorpEasy Enterprise Solutions",
           "description": "CorpEasy provides managed office spaces, tenant representation, lease advisory, and facility management services for startups, SMEs, and enterprises across Mumbai.",
           "url": "https://www.corpeasy.in/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png",
-            "width": 400,
-            "height": 225
-          },
+           "logo": {
+             "@type": "ImageObject",
+             "url": "https://www.corpeasy.in/CORPEASYLOGO-square.svg",
+             "width": 512,
+             "height": 512
+           },
+           "image": {
+             "@type": "ImageObject",
+             "url": "https://www.corpeasy.in/CORPEASYLOGO-square.png",
+             "width": 512,
+             "height": 512
+           },
           "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&h=630",
           "telephone": "+919833089993",
           "email": "devdoshi@corpeasy.in",
@@ -286,6 +293,37 @@ $page_lcp_image = $page_lcp_image ?? '';
           "name": "CorpEasy",
           "description": "Managed office space, commercial property search, and facility management in Mumbai.",
           "publisher": { "@id": "https://www.corpeasy.in/#organization" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.corpeasy.in/#publisher",
+          "name": "CorpEasy",
+          "alternateName": "CorpEasy Enterprise Solutions",
+          "description": "CorpEasy provides managed office spaces, tenant representation, lease advisory, and facility management services for startups, SMEs, and enterprises across Mumbai.",
+          "url": "https://www.corpeasy.in/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.corpeasy.in/CORPEASYLOGO-square.svg",
+            "width": 512,
+            "height": 512
+          },
+          "telephone": "+919833089993",
+          "email": "devdoshi@corpeasy.in",
+          "foundingDate": "2025-10",
+          "foundingLocation": "Mumbai, Maharashtra, India",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Office No. 30, 2nd Floor, Gopal Bhavan, Shamaldas Gandhi Marg, Marine Lines",
+            "addressLocality": "Mumbai",
+            "addressRegion": "Maharashtra",
+            "postalCode": "400002",
+            "addressCountry": "IN"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/corpeasy",
+            "https://www.instagram.com/corpeasy",
+            "https://twitter.com/corpeasy"
+          ]
         },
         {
           "@type": "BreadcrumbList",
