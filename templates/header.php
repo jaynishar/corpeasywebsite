@@ -135,29 +135,20 @@ $page_lcp_image = $page_lcp_image ?? '';
       });
       setTimeout(loadGA4,5000);
     })();
-    </script>
 
-    <!-- Google Ads Click ID (GCLID) Capture -->
-    <script>
-    (function(){
-      var params=new URLSearchParams(window.location.search);
-      var gclid=params.get('gclid');
-      var gbraid=params.get('gbraid');
-      var wbraid=params.get('wbraid');
-      if(gclid){try{localStorage.setItem('ce_gclid',JSON.stringify({v:gclid,e:Date.now()+7776e6}))}catch(e){}}
-      if(gbraid){try{localStorage.setItem('ce_gbraid',JSON.stringify({v:gbraid,e:Date.now()+7776e6}))}catch(e){}}
-      if(wbraid){try{localStorage.setItem('ce_wbraid',JSON.stringify({v:wbraid,e:Date.now()+7776e6}))}catch(e){}}
-      window.ceClickIds={};
-      try{
-        var g=JSON.parse(localStorage.getItem('ce_gclid'));if(g&&g.e>Date.now())window.ceClickIds.gclid=g.v;
-        var gb=JSON.parse(localStorage.getItem('ce_gbraid'));if(gb&&gb.e>Date.now())window.ceClickIds.gbraid=gb.v;
-        var wb=JSON.parse(localStorage.getItem('ce_wbraid'));if(wb&&wb.e>Date.now())window.ceClickIds.wbraid=wb.v;
-      }catch(e){}
-      if(window.ceClickIds.gclid){
-        window.dataLayer=window.dataLayer||[];
-        window.dataLayer.push({event:'gclid_captured',gclid:window.ceClickIds.gclid});
-      }
-    })();
+    // Google tag (gtag.js) - Conversion tracking helper
+    function gtagSendEvent(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion_event_default', {
+        'event_callback': callback,
+        'event_timeout': 2000
+      });
+      return false;
+    }
     </script>
 
     <!-- Open Graph -->
