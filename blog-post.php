@@ -1,4 +1,7 @@
 <?php
+// Block direct search engine indexing — content served via clean URLs only
+header('X-Robots-Tag: noindex, follow', true);
+
 $slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
 
 // Try to fetch post from database

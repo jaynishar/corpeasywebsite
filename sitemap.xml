@@ -93,59 +93,59 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog -->
+  <!-- Blog / Insights listing -->
   <url>
-    <loc>https://www.corpeasy.in/blog</loc>
+    <loc>https://www.corpeasy.in/insights</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Fallback / hardcoded posts -->
+  <!-- Blog Posts — standalone root-level PHP files (mapped via .htaccess) -->
   <url>
-    <loc>https://www.corpeasy.in/blog/mumbai-workspace-guide</loc>
+    <loc>https://www.corpeasy.in/insights/mumbai-workspace-guide</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.corpeasy.in/blog/bkc-vs-goregaon</loc>
+    <loc>https://www.corpeasy.in/insights/bkc-vs-goregaon</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.corpeasy.in/blog/managed-office-explainer</loc>
+    <loc>https://www.corpeasy.in/insights/managed-office-explainer</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.corpeasy.in/blog/gst-office-rental</loc>
+    <loc>https://www.corpeasy.in/insights/gst-office-rental</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- DB-driven posts -->
+  <!-- DB-driven posts (canonical = service pages, mapped via .htaccess) -->
   <url>
-    <loc>https://www.corpeasy.in/blog/how-much-does-office-space-cost-in-mumbai-2026</loc>
+    <loc>https://www.corpeasy.in/insights/how-much-does-office-space-cost-in-mumbai-2026</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.corpeasy.in/blog/managed-office-vs-coworking-space</loc>
+    <loc>https://www.corpeasy.in/insights/managed-office-vs-coworking-space</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.corpeasy.in/blog/facility-management-guide-small-offices</loc>
+    <loc>https://www.corpeasy.in/insights/facility-management-guide-small-offices</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.corpeasy.in/blog/questions-before-renting-office-space-mumbai</loc>
+    <loc>https://www.corpeasy.in/insights/questions-before-renting-office-space-mumbai</loc>
     <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
