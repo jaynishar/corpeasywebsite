@@ -105,37 +105,23 @@ $page_lcp_image = $page_lcp_image ?? '';
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="CorpEasy">
 
-    <!-- Google Tag Manager (deferred until user interaction or 5s idle — eliminates main-thread blocking) -->
-    <script>
-    (function(w,d,s,l,i){
-      w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-      function loadGTM(){var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);loaded=true}
-      var loaded=false;
-      ['mousemove','keydown','touchstart','scroll'].forEach(function(e){d.addEventListener(e,function(){if(!loaded){loaded=true;loadGTM()}},{once:true})});
-      setTimeout(function(){if(!loaded){loaded=true;loadGTM()}},5000);
-    })(window,document,'script','dataLayer','GTM-MNJ99CDR');
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MNJ99CDR');</script>
+    <!-- End Google Tag Manager -->
 
-    <!-- Google Analytics 4 (GA4) — deferred until user interaction or 5s idle -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SHF2TZQSEQ"></script>
     <script>
-    (function(){
-      function loadGA4(){
-        if(window.ga4loaded) return;
-        window.ga4loaded=true;
-        window.dataLayer=window.dataLayer||[];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js',new Date());
-        gtag('config','G-SHF2TZQSEQ',{send_page_view:true});
-        gtag('config','AW-17703392736',{send_page_view:false});
-        var s=document.createElement('script');s.async=true;
-        s.src='https://www.googletagmanager.com/gtag/js?id=G-SHF2TZQSEQ';
-        document.head.appendChild(s);
-      }
-      ['mousemove','keydown','touchstart','scroll'].forEach(function(e){
-        document.addEventListener(e,function(){loadGA4()},{once:true});
-      });
-      setTimeout(loadGA4,5000);
-    })();
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SHF2TZQSEQ');
+      gtag('config', 'AW-17703392736');
+    </script>
 
     // Google tag (gtag.js) - Conversion tracking helper
     function gtagSendEvent(url) {
