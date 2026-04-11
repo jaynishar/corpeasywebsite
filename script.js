@@ -266,6 +266,16 @@ formData.source_page = window.location.hash || '#home';
 btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...'; btn.disabled = true;
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({ event: 'generate_lead', form_type: formData.form_type, lead_source: 'website_form' });
+
+// Google Ads conversion tracking
+if (typeof gtag === 'function') {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-17703392736/SUBMIT_LEAD_FORM',
+    'event_category': 'lead',
+    'event_label': formData.form_type || 'website_form'
+  });
+}
+
 try {
 const response = await fetch('submit.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formData) });
 const result = await response.json();
