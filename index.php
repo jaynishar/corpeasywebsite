@@ -4,7 +4,8 @@ $page_title = 'CorpEasy — Managed Office Space Mumbai from ₹10,000/Seat';
 $page_description = 'CorpEasy finds, sets up & manages your office space in Mumbai from ₹10,000/seat/month. One contact. BKC, Lower Parel, Goregaon & Andheri.';
 $page_keywords = 'managed office space Mumbai, office space for rent Mumbai, commercial office space Mumbai, office space BKC, office space Lower Parel, office space Goregaon, managed workspace Mumbai, office space Andheri East, per seat office Mumbai, workspace solutions Mumbai, turnkey office Mumbai, office space Mumbai 2026, office on rent Mumbai, commercial property Mumbai';
 $page_canonical = 'https://www.corpeasy.in/';
-$page_lcp_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp';
+// LCP image preload disabled — on mobile the form is above the fold, not this image
+$page_lcp_image = '';
 $page_schema = '{
   "@type": "Review",
   "itemReviewed": {"@id": "https://www.corpeasy.in/#organization"},
@@ -72,7 +73,8 @@ Tell Us What You Need
 <input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
 <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
 </div>
-<select name="requirement" class="input-premium">
+<label for="requirement-select" class="sr-only">What are you looking for?</label>
+<select name="requirement" id="requirement-select" class="input-premium">
 <option value="">I am looking for...</option>
 <option>A managed office space (up to 50 seats)</option>
 <option>A managed office space (50 to 200 seats)</option>
@@ -94,7 +96,12 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-8 lg:py-12 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] sm:h-[400px] lg:h-[600px] reveal group">
-<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Modern workspace in Mumbai - collaborative office design" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105" width="1200" height="675" fetchpriority="high">
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800&fm=webp"
+     srcset="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=480&fm=webp 480w,
+             https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800&fm=webp 800w,
+             https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp 1200w"
+     sizes="100vw"
+     alt="Modern workspace in Mumbai - collaborative office design" class="absolute inset-0 w-full h-full object-cover hero-parallax-img transform scale-105" width="1200" height="675" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 <div class="absolute bottom-6 sm:bottom-10 left-6 sm:left-10 right-6 sm:right-10">
 <h2 class="text-2xl sm:text-3xl lg:text-5xl font-black text-white mb-2 sm:mb-4 drop-shadow-lg tracking-tight">Your team deserves a space <br class="hidden sm:block"/>that actually works.</h2>
@@ -360,7 +367,12 @@ Your details are safe with us. No spam, ever.
 </section>
 <section class="py-12 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative h-[350px] lg:h-[500px] reveal group border border-white/60">
-<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Commercial buildings in Mumbai BKC financial district" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700" loading="lazy" width="1920" height="1080">
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800&fm=webp"
+     srcset="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=480&fm=webp 480w,
+             https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800&fm=webp 800w,
+             https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp 1200w"
+     sizes="100vw"
+     alt="Commercial buildings in Mumbai BKC financial district" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700" loading="lazy" decoding="async" width="1200" height="675">
 <div class="absolute inset-0 bg-gradient-to-tr from-brand-cyan/30 via-transparent to-transparent"></div>
 <div class="absolute bottom-6 left-6 lg:bottom-10 lg:left-10 bg-white/95 px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3">
 <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>

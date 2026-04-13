@@ -72,7 +72,7 @@
         <a href="tel:+919833089993" id="fab-phone" class="fab-mini w-12 h-12 rounded-full bg-brand-electric text-white flex items-center justify-center shadow-lg opacity-0 translate-y-4 transition-all duration-300 hover:scale-110" aria-label="Call Us"><i class="fas fa-phone-alt text-lg"></i></a>
         <button id="fab-main" aria-label="Contact Us" class="w-16 h-16 rounded-full bg-brand-electric text-white flex items-center justify-center shadow-[0_0_30px_rgba(99,102,241,0.5)] hover:scale-110 transition-all duration-300 relative">
             <i id="fab-icon" class="fas fa-comments text-2xl transition-transform duration-300"></i>
-            <span class="absolute inset-0 rounded-full bg-brand-electric/40 animate-ping"></span>
+            <span class="absolute inset-0 rounded-full bg-brand-electric/40 animate-pulse"></span>
         </button>
     </div>
 

@@ -81,6 +81,8 @@ $page_lcp_image = $page_lcp_image ?? '';
         .glow-blob,.orb-drift{position:absolute;pointer-events:none;overflow:hidden}
         .fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}
         .inset-0{inset:0}.pointer-events-none{pointer-events:none}.overflow-hidden{overflow:hidden}.z-0{z-index:0}
+        /* Screen reader only (before Tailwind loads) */
+        .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
         /* Hide JS-controlled elements before Tailwind loads — prevents flash */
         /* transition:none!important blocks any CSS transition firing during async CSS load */
         #solutions-panel{opacity:0;visibility:hidden;transition:none!important}
@@ -107,37 +109,46 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link rel="alternate" type="text/plain" href="https://www.corpeasy.in/llms.txt" title="LLMs Context">
     <link rel="alternate" type="text/plain" href="https://www.corpeasy.in/llms-full.txt" title="LLMs Full Context">
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MNJ99CDR');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SHF2TZQSEQ"></script>
+    <!-- Analytics — deferred to avoid blocking FCP/LCP -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-SHF2TZQSEQ');
       gtag('config', 'AW-17703392736');
-    </script>
 
-    // Google tag (gtag.js) - Conversion tracking helper
-    function gtagSendEvent(url) {
-      var callback = function () {
-        if (typeof url === 'string') {
-          window.location = url;
+      function gtagSendEvent(url) {
+        var callback = function () {
+          if (typeof url === 'string') { window.location = url; }
+        };
+        gtag('event', 'conversion_event_default', {
+          'event_callback': callback,
+          'event_timeout': 2000
+        });
+        return false;
+      }
+
+      (function(){
+        var loaded = false;
+        function loadTracking(){
+          if (loaded) return;
+          loaded = true;
+          // GTM
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-MNJ99CDR');
+          // GA4
+          var gs=document.createElement('script');gs.async=true;
+          gs.src='https://www.googletagmanager.com/gtag/js?id=G-SHF2TZQSEQ';
+          document.head.appendChild(gs);
         }
-      };
-      gtag('event', 'conversion_event_default', {
-        'event_callback': callback,
-        'event_timeout': 2000
-      });
-      return false;
-    }
+        var t=setTimeout(loadTracking,3000);
+        ['scroll','click','touchstart','keydown'].forEach(function(e){
+          document.addEventListener(e,function(){clearTimeout(t);loadTracking();},{once:true,passive:true});
+        });
+      })();
     </script>
 
     <!-- Open Graph -->
@@ -334,9 +345,9 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 
-    <!-- Preload critical font (weight 800 for H1 LCP) — cuts 1-2s off LCP for text-based pages -->
+    <!-- Preload critical font (weight 800 for H1 LCP) -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" onload="this.rel='stylesheet'">
 
     <?php if (!empty($page_lcp_image)): ?>
@@ -350,12 +361,11 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link rel="stylesheet" href="/style.min.css?v=20260403" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="/style.min.css?v=20260403"></noscript>
 
-    <!-- Font (non-blocking) -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <!-- Font (non-blocking, reduced to 3 weights) -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet"></noscript>
 
-    <!-- Font Awesome — preload webfont so icons appear fast, not as boxes -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Font Awesome (non-blocking, icons load after FCP) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>

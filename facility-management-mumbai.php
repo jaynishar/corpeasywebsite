@@ -70,7 +70,8 @@ include 'templates/header.php';
 <input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
 <input type="email" name="email" placeholder="Work Email Address" class="input-premium" required>
 <input type="tel" name="phone" placeholder="+91 Phone Number" class="input-premium" required>
-<select name="requirement" class="input-premium" required>
+<label for="fm-requirement" class="sr-only">Office Size</label>
+<select name="requirement" id="fm-requirement" class="input-premium" required>
 <option value="" disabled selected>Office Size</option>
 <option>Small Office (Up to 20 seats)</option>
 <option>Mid-Size Office (20–100 seats)</option>
