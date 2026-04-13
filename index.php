@@ -60,7 +60,7 @@ Learn how it works <i class="fas fa-arrow-right text-sm"></i>
 </a>
 </div>
 <div class="order-1 lg:order-2 lg:sticky lg:top-[100px] self-start">
-<div class="hero-form glass-card p-6 lg:p-8 border-t-4 border-t-brand-electric shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+<div class="hero-form glass-card p-6 lg:p-8 border-t-4 border-t-brand-electric shadow-[0_20px_40px_rgba(0,0,0,0.08)]" style="transition:opacity 0.3s,transform 0.3s">
 <h2 class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3">
 <i class="fas fa-bolt text-brand-electric"></i>
 Tell Us What You Need
@@ -83,7 +83,8 @@ Tell Us What You Need
 <option>A tenant for my commercial property</option>
 <option>General information</option>
 </select>
-<input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
+<label for="website-hp" class="sr-only">Website</label>
+<input type="text" name="website" id="website-hp" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
 <button type="submit" class="w-full bg-brand-electric text-white py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all">Submit Your Requirement</button>
 </form>
 <p class="text-xs text-slate-500 text-center mt-3 flex items-center justify-center gap-2">
@@ -381,7 +382,6 @@ Your details are safe with us. No spam, ever.
 </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 
 <section class="py-24 relative bg-white/60">
 <div class="max-w-7xl mx-auto px-6">

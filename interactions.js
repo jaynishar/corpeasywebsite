@@ -117,14 +117,7 @@ function initRevealObserver() {
         });
     }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
 
-    document.querySelectorAll('.reveal').forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-            el.classList.add('active');
-        } else {
-            observer.observe(el);
-        }
-    });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
 
 /* ===== Count-Up Animation (uses RAF instead of setInterval) ===== */

@@ -81,8 +81,49 @@ $page_lcp_image = $page_lcp_image ?? '';
         .glow-blob,.orb-drift{position:absolute;pointer-events:none;overflow:hidden}
         .fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}
         .inset-0{inset:0}.pointer-events-none{pointer-events:none}.overflow-hidden{overflow:hidden}.z-0{z-index:0}
-        /* Screen reader only (before Tailwind loads) */
+        /* Screen reader only */
         .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+        /* Critical Tailwind classes for above-the-fold (avoids render-blocking Tailwind load) */
+        .max-w-7xl{max-width:80rem}.mx-auto{margin-left:auto;margin-right:auto}
+        .px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}
+        .py-3{padding-top:.75rem;padding-bottom:.75rem}.py-8{padding-top:2rem;padding-bottom:2rem}
+        .p-6{padding:1.5rem}.p-8{padding:2rem}.p-4{padding:1rem}.p-10{padding:2.5rem}
+        .mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}
+        .mt-1{margin-top:.25rem}.mt-6{margin-top:1.5rem}
+        .gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}
+        .space-y-4>:not(:first-child){margin-top:1rem}
+        .grid{display:grid}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
+        .text-xs{font-size:.75rem;line-height:1rem}.text-sm{font-size:.875rem;line-height:1.25rem}
+        .text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}
+        .text-xl{font-size:1.25rem;line-height:1.75rem}.text-2xl{font-size:1.5rem;line-height:2rem}
+        .text-3xl{font-size:1.875rem;line-height:2.25rem}
+        .font-medium{font-weight:500}.font-semibold{font-weight:600}.font-bold{font-weight:700}.font-black{font-weight:900}
+        .text-white{color:#fff}.text-slate-500{color:#64748b}.text-slate-600{color:#475569}.text-slate-700{color:#334155}.text-slate-800{color:#1e293b}.text-slate-900{color:#0f172a}
+        .text-brand-electric{color:#6366f1}
+        .bg-white{background-color:#fff}.bg-brand-electric{background-color:#6366f1}.bg-green-500{background-color:#22c55e}
+        .bg-brand-electric\/8{background-color:rgba(99,102,241,.08)}
+        .border{border-width:1px}.border-t-4{border-top-width:4px}.border-t-brand-electric{border-top-color:#6366f1}
+        .border-brand-electric\/20{border-color:rgba(99,102,241,.2)}
+        .rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}
+        .shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,.05)}
+        .leading-tight{line-height:1.25}.leading-relaxed{line-height:1.625}
+        .text-center{text-align:center}.uppercase{text-transform:uppercase}
+        .tracking-wide{letter-spacing:.025em}
+        .inline-flex{display:inline-flex}
+        .hidden{display:none}
+        .cursor-pointer{cursor:pointer}
+        .object-contain{object-fit:contain}.object-left{object-position:left}
+        .self-start{align-self:flex-start}
+        .order-1{order:1}.order-2{order:2}
+        .max-w-lg{max-width:32rem}
+        .animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+        .transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:150ms}
+        .transition-colors{transition-property:color,background-color,border-color;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:150ms}
+        @media(min-width:640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:h-14{height:3.5rem}.sm\:w-auto{width:auto}.sm\:flex-row{flex-direction:row}}
+        @media(min-width:768px){.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:h-20{height:5rem}.md\:pt-20{padding-top:5rem}}
+        @media(min-width:1024px){.lg\:grid-cols-\[1fr_400px\]{grid-template-columns:1fr 400px}.lg\:gap-12{gap:3rem}.lg\:py-16{padding-top:4rem;padding-bottom:4rem}.lg\:p-8{padding:2rem}.lg\:text-5xl{font-size:3rem;line-height:1}.lg\:text-lg{font-size:1.125rem}.lg\:text-xl{font-size:1.25rem}.lg\:mb-6{margin-bottom:1.5rem}.lg\:mb-8{margin-bottom:2rem}.lg\:order-1{order:1}.lg\:order-2{order:2}.lg\:sticky{position:sticky}.lg\:top-\[100px\]{top:100px}.lg\:h-20{height:5rem}.lg\:h-28{height:7rem}.lg\:pt-28{padding-top:7rem}}
+        @media(min-width:1280px){.xl\:flex{display:flex}.xl\:hidden{display:none}}
         /* Hide JS-controlled elements before Tailwind loads — prevents flash */
         /* transition:none!important blocks any CSS transition firing during async CSS load */
         #solutions-panel{opacity:0;visibility:hidden;transition:none!important}
@@ -355,8 +396,9 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link rel="preload" as="image" href="<?php echo htmlspecialchars($page_lcp_image); ?>" fetchpriority="high">
     <?php endif; ?>
 
-    <!-- Tailwind = render-blocking (controls all layout — async causes FOUC) -->
-    <link rel="stylesheet" href="/tailwind.min.css?v=20260403">
+    <!-- Tailwind (non-blocking — critical classes inlined above) -->
+    <link rel="stylesheet" href="/tailwind.min.css?v=20260413" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/tailwind.min.css?v=20260413"></noscript>
     <!-- Style.css = non-blocking (decorative animations, card styles, etc.) -->
     <link rel="stylesheet" href="/style.min.css?v=20260403" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="/style.min.css?v=20260403"></noscript>
@@ -440,8 +482,8 @@ $page_lcp_image = $page_lcp_image ?? '';
     <div id="mobile-menu" class="fixed inset-0 bg-white z-[90] hidden flex-col overflow-y-auto" style="padding-top: env(safe-area-inset-top, 0);">
         <div class="flex justify-between items-center px-6 py-4">
             <picture>
-                <source srcset="/CORPEASYHEADER.webp" type="image/webp">
-                <img src="/CORPEASYHEADER.png" alt="CorpEasy" class="h-10 w-auto" width="140" height="40">
+                <source srcset="/CORPEASYHEADER-sm.webp" type="image/webp">
+                <img src="/CORPEASYHEADER-sm.png" alt="CorpEasy" class="h-10 w-auto" width="140" height="40">
             </picture>
             <button onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.getElementById('mobile-menu').classList.remove('flex');" class="w-10 h-10 flex items-center justify-center text-slate-500 hover:text-slate-800 transition-colors">
                 <i class="fas fa-times text-xl"></i>
