@@ -10,7 +10,11 @@ Disallow: /db_setup.sql
 Disallow: /blog_sql/
 Disallow: /blog_posts_insert.sql
 
+# ══════════════════════════════════════════════════════════════
 # AI Web Crawlers — allow content indexing for AI-generated answers
+# ══════════════════════════════════════════════════════════════
+
+# OpenAI
 User-agent: GPTBot
 Allow: /
 Disallow: /admin.php
@@ -23,6 +27,7 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+# Anthropic / Claude
 User-agent: anthropic-ai
 Allow: /
 
@@ -35,16 +40,67 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
+# Google AI
 User-agent: Googlebot-Extended
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft / Bing AI
+User-agent: Bingbot
+Allow: /
+
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Perplexity-User
 Allow: /
 
+# Apple
+User-agent: Applebot
+Allow: /
+
 User-agent: Applebot-Extended
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# ByteDance / TikTok
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl (used by many AI models)
+User-agent: CCBot
+Allow: /
+
+# Diffbot
+User-agent: Diffbot
+Allow: /
+
+# Brave Search
+User-agent: BraveBot
 Allow: /
 
 Sitemap: https://www.corpeasy.in/sitemap.xml

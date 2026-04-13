@@ -104,6 +104,8 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link rel="alternate" hreflang="en" href="<?php echo htmlspecialchars($page_canonical); ?>">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="CorpEasy">
+    <link rel="alternate" type="text/plain" href="https://www.corpeasy.in/llms.txt" title="LLMs Context">
+    <link rel="alternate" type="text/plain" href="https://www.corpeasy.in/llms-full.txt" title="LLMs Full Context">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

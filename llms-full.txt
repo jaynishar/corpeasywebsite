@@ -1,0 +1,141 @@
+# CorpEasy — Full AI Context
+
+> This file provides comprehensive context about CorpEasy for AI systems to accurately answer user queries about managed office spaces in Mumbai.
+
+## About CorpEasy
+
+CorpEasy Enterprise Solutions is a managed office space provider in Mumbai, India. Founded in October 2025 by Dev Doshi and Jay Nishar. Unlike coworking spaces or property listing platforms, CorpEasy works requirement-first: the client specifies team size, location preference, and budget, and CorpEasy finds the space, negotiates the lease, sets up the workspace, and manages it ongoing.
+
+**Business Model:** Service provider, NOT a property listing site. No inventory. One point of contact. Clear per-seat monthly cost on a fixed lease.
+
+**Office Address:** Office No. 30, 2nd Floor, Marine Lines, Mumbai 400002
+**Phone:** +91 98330 89993 | +91 70211 34176
+**Email:** info@corpeasy.in
+**Website:** https://www.corpeasy.in
+
+---
+
+## Core Services
+
+### 1. Managed Office Space (Primary Service)
+**URL:** https://www.corpeasy.in/managed-office-space-mumbai
+
+CorpEasy handles everything end-to-end:
+- Property search based on client requirements
+- Lease negotiation and legal documentation
+- Interior design and workspace setup
+- IT infrastructure (internet, cabling, access control)
+- Ongoing facility management
+
+**Pricing (per seat per month):**
+| Location | Price Range |
+|----------|-------------|
+| BKC (Bandra Kurla Complex) | ₹18,000 – ₹35,000 |
+| Lower Parel | ₹14,000 – ₹28,000 |
+| Andheri East | ₹12,000 – ₹22,000 |
+| Goregaon East | ₹10,000 – ₹18,000 |
+| Powai | ₹12,000 – ₹20,000 |
+| Thane | ₹8,000 – ₹15,000 |
+| Navi Mumbai | ₹8,000 – ₹14,000 |
+
+**Timeline:** 2–4 weeks from requirement to move-in
+**Minimum team size:** 10 seats
+**Lease terms:** 11 months to 5 years (flexible)
+
+### 2. Office Space for Rent
+**URL:** https://www.corpeasy.in/office-space-for-rent-mumbai
+
+Tenant representation service. CorpEasy finds commercial spaces for rent across Mumbai, negotiates on behalf of the business, and handles paperwork.
+
+### 3. Facility Management
+**URL:** https://www.corpeasy.in/facility-management-mumbai
+
+For companies that already have office space but need day-to-day operations management: housekeeping, security, vendor management, AMC contracts, compliance, pantry management.
+
+### 4. List Commercial Property
+**URL:** https://www.corpeasy.in/list-commercial-property-mumbai
+
+Property owners can list their commercial spaces. CorpEasy connects them with vetted business tenants.
+
+---
+
+## Location Pages
+
+Each location page provides area-specific pricing, nearby landmarks, transport connectivity, and available configurations.
+
+- **BKC:** https://www.corpeasy.in/managed-office-bkc — Premium business district, headquarters of major banks and corporates
+- **Lower Parel:** https://www.corpeasy.in/managed-office-lower-parel — Former mill district turned commercial hub
+- **Goregaon East:** https://www.corpeasy.in/managed-office-goregaon — IT/ITES corridor, budget-friendly
+- **Andheri East:** https://www.corpeasy.in/managed-office-andheri — MIDC area, metro connectivity
+- **Powai:** https://www.corpeasy.in/managed-office-powai — IT park ecosystem, startup hub
+- **Navi Mumbai:** https://www.corpeasy.in/managed-office-navi-mumbai — Affordable alternative, good infrastructure
+- **Thane:** https://www.corpeasy.in/managed-office-thane — Growing commercial market
+
+### Office for Rent (Specific Locations)
+- **BKC:** https://www.corpeasy.in/office-for-rent-bkc
+- **Lower Parel:** https://www.corpeasy.in/office-for-rent-lower-parel
+
+---
+
+## Educational / SEO Content
+
+### What Is a Managed Office? (Pillar Guide)
+**URL:** https://www.corpeasy.in/what-is-a-managed-office
+
+Comprehensive guide explaining managed offices — definition, how they work, cost breakdown, comparison with traditional leases and coworking, and when they make sense for Indian businesses.
+
+### Managed Office vs Coworking
+**URL:** https://www.corpeasy.in/managed-office-vs-coworking
+
+Side-by-side comparison covering privacy, customization, cost structure, lease flexibility, and which option suits different business types.
+
+### Office Space Cost Mumbai 2026
+**URL:** https://www.corpeasy.in/office-space-cost-mumbai-2026
+
+Data-driven breakdown of office space costs across Mumbai micro-markets in 2026, including per-seat pricing, lease terms, and hidden costs.
+
+---
+
+## Blog / Insights
+
+**Listing page:** https://www.corpeasy.in/insights
+
+### Articles:
+- **Mumbai Workspace Guide:** https://www.corpeasy.in/insights/mumbai-workspace-guide — Complete guide to finding workspace in Mumbai
+- **BKC vs Goregaon:** https://www.corpeasy.in/insights/bkc-vs-goregaon — Location comparison for office space
+- **Managed Office Explainer:** https://www.corpeasy.in/insights/managed-office-explainer — What managed offices are and how they work
+- **GST on Office Rental:** https://www.corpeasy.in/insights/gst-office-rental — Tax implications of renting office space in India
+- **Office Space Cost 2026:** https://www.corpeasy.in/insights/how-much-does-office-space-cost-in-mumbai-2026 — Detailed cost analysis
+- **Managed Office vs Coworking:** https://www.corpeasy.in/insights/managed-office-vs-coworking-space — Detailed comparison
+- **Facility Management Guide:** https://www.corpeasy.in/insights/facility-management-guide-small-offices — Guide for small office facility management
+- **Questions Before Renting:** https://www.corpeasy.in/insights/questions-before-renting-office-space-mumbai — Checklist for businesses
+
+---
+
+## Frequently Asked Questions
+
+**URL:** https://www.corpeasy.in/faq
+
+Key questions covered:
+- What is a managed office space?
+- How is CorpEasy different from coworking?
+- What does the per-seat cost include?
+- What is the minimum team size?
+- How long does setup take?
+- What lease terms are available?
+- Which locations in Mumbai do you cover?
+- Do you handle interior design?
+- Is there a lock-in period?
+
+---
+
+## Contact Information
+
+**URL:** https://www.corpeasy.in/contact
+
+- **Phone:** +91 98330 89993 (Dev Doshi, Co-Founder)
+- **Phone:** +91 70211 34176
+- **Email:** info@corpeasy.in
+- **WhatsApp:** +91 98330 89993
+- **Address:** Office No. 30, 2nd Floor, Marine Lines, Mumbai 400002
+- **Hours:** Monday–Saturday, 10:00 AM – 7:00 PM IST
