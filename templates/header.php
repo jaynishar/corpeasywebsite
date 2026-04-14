@@ -25,7 +25,7 @@ $page_lcp_image = $page_lcp_image ?? '';
     <meta name="ICBM" content="19.0176, 72.8562">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
-    <link rel="icon" type="image/svg+xml" href="/CORPEASYLOGO-square.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
     <link rel="shortcut icon" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -228,15 +228,15 @@ $page_lcp_image = $page_lcp_image ?? '';
           "url": "https://www.corpeasy.in/",
            "logo": {
              "@type": "ImageObject",
-             "url": "https://www.corpeasy.in/CORPEASYLOGO-square.svg",
-             "width": 512,
-             "height": 512
+             "url": "https://www.corpeasy.in/favicon-192.png",
+             "width": 192,
+             "height": 192
            },
           "image": {
             "@type": "ImageObject",
-            "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&h=630",
+            "url": "https://www.corpeasy.in/corpeasy-logo.png",
             "width": 1200,
-            "height": 630
+            "height": 461
           },
           "telephone": "+919833089993",
           "email": "devdoshi@corpeasy.in",
@@ -354,9 +354,9 @@ $page_lcp_image = $page_lcp_image ?? '';
           "url": "https://www.corpeasy.in/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.corpeasy.in/CORPEASYLOGO-square.svg",
-            "width": 512,
-            "height": 512
+            "url": "https://www.corpeasy.in/favicon-192.png",
+            "width": 192,
+            "height": 192
           },
           "telephone": "+919833089993",
           "email": "devdoshi@corpeasy.in",

@@ -4,9 +4,15 @@
   "description": "Managed office spaces in BKC, Lower Parel, Goregaon & Andheri. One point of contact. Clear per-seat cost.",
   "start_url": "/",
   "display": "browser",
-  "background_color": "#1e3a8a",
+  "background_color": "#ffffff",
   "theme_color": "#1e3a8a",
   "icons": [
+    {
+      "src": "/favicon-16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/favicon-48.png",
       "sizes": "48x48",
@@ -20,10 +26,10 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/CORPEASYLOGO-square.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "src": "/corpeasy-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
