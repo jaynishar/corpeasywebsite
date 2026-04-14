@@ -1,6 +1,6 @@
 <?php
 $page_id = 'facility';
-$page_title = 'Facility Management Services Mumbai | CorpEasy';
+$page_title = 'Facility Management Mumbai | ₹800/Seat | CorpEasy';
 $page_description = 'Professional facility management for Mumbai offices from ₹800/seat/month. Housekeeping, security, AMC, fire safety & BMC compliance. Single invoice.';
 $page_keywords = 'facility management services Mumbai, office housekeeping services Mumbai, commercial building maintenance Mumbai, AMC management services, office security services Mumbai, facility management company Mumbai, office maintenance Mumbai, fire NOC Mumbai office, BMC compliance Mumbai, outsource facility management Mumbai, integrated facility management Mumbai';
 $page_canonical = 'https://www.corpeasy.in/facility-management-mumbai';

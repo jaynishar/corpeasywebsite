@@ -1,6 +1,6 @@
 <?php
 $page_id = 'list';
-$page_title = 'List Commercial Property Mumbai | CorpEasy';
+$page_title = 'List Office Space Mumbai | Find Tenants | CorpEasy';
 $page_description = 'List your commercial office in Mumbai with CorpEasy. We find pre-qualified business tenants, manage lease negotiations & place on fixed-term agreements.';
 $page_keywords = 'list commercial property Mumbai, find tenant for office space Mumbai, commercial property for lease Mumbai, office space landlord Mumbai, lease commercial property Mumbai, commercial office tenant Mumbai, rent out office space Mumbai, property owner Mumbai office';
 $page_canonical = 'https://www.corpeasy.in/list-commercial-property-mumbai';

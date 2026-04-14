@@ -1,6 +1,6 @@
 <?php
 $page_id = 'managed-bkc';
-$page_title = 'Managed Office Space in BKC Mumbai | From ₹18,000/Seat | CorpEasy';
+$page_title = 'Managed Office BKC Mumbai | ₹18,000/Seat | CorpEasy';
 $page_description = 'Fully managed office space in BKC Mumbai from ₹18,000/seat/month. Near Diamond Bourse, SEBI, MMRDA. Zero setup hassle. Move in 2–4 weeks.';
 $page_keywords = 'managed office space BKC, managed office Bandra Kurla Complex, office space BKC Mumbai, serviced office BKC, private office BKC Mumbai, office space near SEBI Mumbai, office space BKC 2026, office for teams BKC, BKC office cost per seat, Grade A office BKC Mumbai';
 $page_canonical = 'https://www.corpeasy.in/managed-office-bkc';

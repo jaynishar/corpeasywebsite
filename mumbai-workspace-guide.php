@@ -8,10 +8,11 @@ $page_schema = '{
   "@type": "Article",
   "headline": "How to Find the Right Office Space in Mumbai: A Practical Guide for 2026",
   "description": "A practical guide to finding the right office space in Mumbai, covering micro-market selection, cost breakdown, and the managed office alternative.",
-  "author": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/"},
-  "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/"},
+  "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
+  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
+  "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
   "datePublished": "2026-01-15",
-  "dateModified": "2026-04-03",
+  "dateModified": "2026-04-14",
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.corpeasy.in/insights/mumbai-workspace-guide"}
 }';
 
@@ -29,12 +30,12 @@ include 'templates/header.php';
 <div class="flex items-center gap-6 text-slate-600 text-sm font-medium">
 <span><i class="far fa-clock mr-2 text-brand-electric"></i> 8 Min Read</span>
 <span><i class="far fa-calendar-alt mr-2 text-brand-electric"></i> January 15, 2026</span>
-<span><i class="far fa-user mr-2 text-brand-electric"></i> CorpEasy Team</span>
+<span><i class="far fa-user mr-2 text-brand-electric"></i> Dev Doshi, Co-Founder</span>
 </div>
 </div>
 
 <div class="rounded-[2rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] h-[300px] lg:h-[450px] mb-16 border border-white/80 reveal">
-<img fetchpriority="high" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Modern office space in Mumbai - commercial workspace" class="w-full h-full object-cover">
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Modern office space in Mumbai - commercial workspace" class="w-full h-full object-cover" width="1200" height="550">
 </div>
 
 <div class="prose-content reveal">

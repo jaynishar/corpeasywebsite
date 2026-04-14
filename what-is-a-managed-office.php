@@ -8,10 +8,11 @@ $page_schema = '{
   "@type": "Article",
   "headline": "What Is a Managed Office? Complete Guide for Indian Businesses (2026)",
   "description": "A comprehensive guide explaining managed offices — what they are, how they work, what they cost, and when they make sense for Indian businesses.",
-  "author": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/"},
-  "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png"}},
+  "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
+  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
+  "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
   "datePublished": "2026-04-03",
-  "dateModified": "2026-04-03",
+  "dateModified": "2026-04-14",
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.corpeasy.in/what-is-a-managed-office"}
 }';
 
@@ -28,7 +29,7 @@ include 'templates/header.php';
 <div class="flex items-center gap-4 mt-6 text-sm text-slate-500">
 <span><i class="far fa-clock mr-1"></i> 8 Min Read</span>
 <span><i class="far fa-calendar mr-1"></i> April 3, 2026</span>
-<span><i class="far fa-user mr-1"></i> CorpEasy Team</span>
+<span><i class="far fa-user mr-1"></i> Dev Doshi, Co-Founder</span>
 </div>
 </div>
 
@@ -133,7 +134,7 @@ include 'templates/header.php';
 </table>
 </div>
 </div>
-<p class="text-slate-600 leading-relaxed">These are all-inclusive estimates covering rent, setup, and management. Exact costs depend on team size, lease term, and the specific property. <a href="/contact" class="text-brand-electric hover:underline">Contact us</a> for a precise quote based on your requirements.</p>
+<p class="text-slate-600 leading-relaxed">These are all-inclusive estimates covering rent, setup, and management. Exact costs depend on team size, lease term, and the specific property. <a href="/contact" class="text-brand-electric hover:underline">Contact us</a> for a precise quote based on your requirements. For a full area-by-area breakdown including traditional lease costs, see our <a href="/office-space-cost-mumbai-2026" class="text-brand-electric hover:underline">Mumbai office space cost guide for 2026</a>.</p>
 </div>
 
 <div id="who-for" class="mb-12 lg:mb-16 reveal">

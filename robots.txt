@@ -103,4 +103,29 @@ Allow: /
 User-agent: BraveBot
 Allow: /
 
+# Google Gemini
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: Gemini-Web
+Allow: /
+
+# xAI / Grok
+User-agent: Grok
+Allow: /
+
+User-agent: xAI
+Allow: /
+
+# Mistral AI
+User-agent: MistralBot
+Allow: /
+
+# Semrush / Ahrefs (SEO tools — allow for visibility)
+User-agent: SemrushBot
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
 Sitemap: https://www.corpeasy.in/sitemap.xml

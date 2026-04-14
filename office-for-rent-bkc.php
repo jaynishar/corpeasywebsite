@@ -4,6 +4,7 @@ $page_title = 'Office Space for Rent in BKC Mumbai | From ₹250/sq ft | CorpEas
 $page_description = 'Office space for rent in BKC Mumbai from ₹250/sqft/month. Verified properties in Platina, One BKC, Trade World. Free landlord negotiation & lease review.';
 $page_keywords = 'office space for rent BKC, commercial office BKC, office on rent Bandra Kurla Complex, commercial property BKC Mumbai, BKC office rent per sq ft, office lease BKC Mumbai, BKC commercial property 2026, office space near SEBI BKC, office rent Platina BKC, office rent One BKC';
 $page_canonical = 'https://www.corpeasy.in/office-for-rent-bkc';
+$page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
 $page_schema = '{
   "@type": "Service",
   "name": "Office Space for Rent in BKC",

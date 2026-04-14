@@ -7,10 +7,12 @@ $page_canonical = 'https://www.corpeasy.in/insights/bkc-vs-goregaon';
 $page_schema = '{
   "@type": "Article",
   "headline": "BKC or Goregaon? Choosing the Right Mumbai Location for Your Office",
-  "author": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/"},
-  "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/"},
+  "description": "BKC vs Goregaon for your Mumbai office — rent comparison, connectivity, building quality, and which location suits your business type. Honest breakdown with 2026 data.",
+  "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
+  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
+  "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
   "datePublished": "2026-02-01",
-  "dateModified": "2026-04-03",
+  "dateModified": "2026-04-14",
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.corpeasy.in/insights/bkc-vs-goregaon"}
 }';
 
@@ -26,12 +28,12 @@ include 'templates/header.php';
 <div class="flex items-center gap-6 text-slate-600 text-sm font-medium">
 <span><i class="far fa-clock mr-2 text-brand-electric"></i> 6 Min Read</span>
 <span><i class="far fa-calendar-alt mr-2 text-brand-electric"></i> February 1, 2026</span>
-<span><i class="far fa-user mr-2 text-brand-electric"></i> CorpEasy Team</span>
+<span><i class="far fa-user mr-2 text-brand-electric"></i> Dev Doshi, Co-Founder</span>
 </div>
 </div>
 
 <div class="rounded-[2rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] h-[300px] lg:h-[450px] mb-16 border border-white/80 reveal">
-<img fetchpriority="high" src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Mumbai skyline showing commercial buildings" class="w-full h-full object-cover">
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Mumbai skyline showing commercial buildings" class="w-full h-full object-cover" width="1200" height="550">
 </div>
 
 <div class="prose-content reveal">
@@ -97,6 +99,7 @@ include 'templates/header.php';
 <h3>Our Recommendation</h3>
 <p>Be honest about what matters. If your clients visit regularly and the address shapes their perception, BKC is worth the investment. If your team does the work and clients rarely visit, Goregaon gives you better space, better infrastructure, and significant cost savings. And if you are somewhere in between, Lower Parel is worth serious consideration.</p>
 <p>We have helped companies set up offices in all three locations. We know the buildings, the landlords, and the real costs. <a href="/contact" class="text-brand-electric hover:underline">Tell us your situation</a> and we will give you an honest recommendation — even if it is not the one you expected.</p>
+<p>Explore our managed office options by location: <a href="/managed-office-bkc" class="text-brand-electric hover:underline">Managed Office in BKC</a> | <a href="/managed-office-goregaon" class="text-brand-electric hover:underline">Managed Office in Goregaon</a> | <a href="/managed-office-space-mumbai" class="text-brand-electric hover:underline">All Mumbai Managed Offices</a></p>
 </div>
 
 <div class="mt-16 pt-12 border-t border-slate-200/60 reveal">

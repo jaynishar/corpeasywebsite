@@ -228,13 +228,12 @@ $page_lcp_image = $page_lcp_image ?? '';
              "width": 512,
              "height": 512
            },
-           "image": {
-             "@type": "ImageObject",
-             "url": "https://www.corpeasy.in/CORPEASYLOGO-square.png",
-             "width": 512,
-             "height": 512
-           },
-          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&h=630",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&h=630",
+            "width": 1200,
+            "height": 630
+          },
           "telephone": "+919833089993",
           "email": "devdoshi@corpeasy.in",
           "foundingDate": "2025-10",
@@ -332,7 +331,15 @@ $page_lcp_image = $page_lcp_image ?? '';
           "url": "https://www.corpeasy.in/",
           "name": "CorpEasy",
           "description": "Managed office space, commercial property search, and facility management in Mumbai.",
-          "publisher": { "@id": "https://www.corpeasy.in/#organization" }
+          "publisher": { "@id": "https://www.corpeasy.in/#organization" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.corpeasy.in/insights?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
         },
         {
           "@type": "Organization",

@@ -7,10 +7,12 @@ $page_canonical = 'https://www.corpeasy.in/insights/managed-office-explainer';
 $page_schema = '{
   "@type": "Article",
   "headline": "What Is a Managed Office Space and Is It Right for Your Business?",
-  "author": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/"},
-  "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/"},
+  "description": "The term managed office gets used loosely in Indian commercial real estate. Here is what it actually means, how it works, what it costs in Mumbai, and whether it is right for your business.",
+  "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
+  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
+  "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
   "datePublished": "2026-02-15",
-  "dateModified": "2026-04-03",
+  "dateModified": "2026-04-14",
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.corpeasy.in/insights/managed-office-explainer"}
 }';
 
@@ -26,12 +28,12 @@ include 'templates/header.php';
 <div class="flex items-center gap-6 text-slate-600 text-sm font-medium">
 <span><i class="far fa-clock mr-2 text-brand-electric"></i> 5 Min Read</span>
 <span><i class="far fa-calendar-alt mr-2 text-brand-electric"></i> February 15, 2026</span>
-<span><i class="far fa-user mr-2 text-brand-electric"></i> CorpEasy Team</span>
+<span><i class="far fa-user mr-2 text-brand-electric"></i> Dev Doshi, Co-Founder</span>
 </div>
 </div>
 
 <div class="rounded-[2rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] h-[300px] lg:h-[450px] mb-16 border border-white/80 reveal">
-<img fetchpriority="high" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Modern managed office space with workstations" class="w-full h-full object-cover">
+<img fetchpriority="high" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200&fm=webp" alt="Modern managed office space with workstations" class="w-full h-full object-cover" width="1200" height="550">
 </div>
 
 <div class="prose-content reveal">
