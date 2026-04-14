@@ -348,3 +348,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+/* ===== bfcache (Back/Forward Cache) Fix =====
+ * The page-overlay turns opaque (white) before navigating away.
+ * When Chrome restores a page from bfcache on back/forward navigation,
+ * event.persisted === true and the overlay is still white — causing the
+ * white screen. We reset it immediately on restore.
+ */
+window.addEventListener('pageshow', function(event) {
+    // Always reset the transition overlay — whether from bfcache or normal load
+    const overlay = document.getElementById('page-overlay');
+    if (overlay) {
+        overlay.style.opacity = '0';
+        overlay.style.pointerEvents = 'none';
+    }
+
+    if (event.persisted) {
+        // Page restored from bfcache — reset any UI state left from navigation
+        document.body.style.opacity = '1';
+        document.body.style.visibility = 'visible';
+
+        // Close mobile menu if it was open when user navigated away
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu) mobileMenu.classList.add('hidden');
+    }
+});
