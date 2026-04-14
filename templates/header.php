@@ -23,8 +23,12 @@ $page_lcp_image = $page_lcp_image ?? '';
     <meta name="geo.placename" content="Mumbai, Maharashtra">
     <meta name="geo.position" content="19.0176;72.8562">
     <meta name="ICBM" content="19.0176, 72.8562">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
     <link rel="icon" type="image/svg+xml" href="/CORPEASYLOGO-square.svg">
-    <link rel="apple-touch-icon" href="/CORPEASYHEADER-sm.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#1e3a8a">
 
     <!-- CRITICAL CSS — above-the-fold only, eliminates render-blocking for FCP -->
