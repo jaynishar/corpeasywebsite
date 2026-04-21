@@ -105,7 +105,7 @@ $page_lcp_image = $page_lcp_image ?? '';
         .text-white{color:#fff}.text-slate-500{color:#64748b}.text-slate-600{color:#475569}.text-slate-700{color:#334155}.text-slate-800{color:#1e293b}.text-slate-900{color:#0f172a}
         .text-brand-electric{color:#6366f1}
         .bg-white{background-color:#fff}.bg-brand-electric{background-color:#6366f1}.bg-green-500{background-color:#22c55e}
-        .bg-brand-electric\/8{background-color:rgba(99,102,241.08)}
+        .bg-brand-electric\/8{background-color:rgba(99,102,241,0.08)}
         .border{border-width:1px}.border-t-4{border-top-width:4px}.border-t-brand-electric{border-top-color:#6366f1}
         .border-brand-electric\/20{border-color:rgba(99,102,241.2)}
         .rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}
@@ -532,7 +532,7 @@ $page_lcp_image = $page_lcp_image ?? '';
     <div style="width:100%;background:linear-gradient(90deg,#0b1e3f 0%,#1e3a8a 60%,#2746a8 100%);border-bottom:2px solid #fbbf24;color:#fff;">
       <div style="max-width:80rem;margin:0 auto;padding:10px 16px;text-align:center;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
         <p style="margin:0;font-size:13px;line-height:1.4;letter-spacing:0.02em;">
-          <span style="color:#fca5a5;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;">We are <u>NOT</u> a coworking space.</span>
+          <span style="color:#fcd34d;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;">We are <u style="text-decoration-color:#fbbf24;text-decoration-thickness:2px;">NOT</u> a coworking space.</span>
           <span style="color:#93c5fd;margin:0 10px;display:inline-block;opacity:0.6;">|</span>
           <span style="color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">End to end office solutions for growing businesses.</span>
         </p>
