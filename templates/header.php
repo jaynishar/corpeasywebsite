@@ -529,12 +529,12 @@ $page_lcp_image = $page_lcp_image ?? '';
     <main class="flex-grow pt-16 md:pt-20 lg:pt-28 page-enter">
 
     <!-- ═══ NOT COWORKING BAR, inline styles to render instantly (Tailwind loads async) ═══ -->
-    <div style="width:100%;background:#000;border-bottom:2px solid #dc2626;color:#fff;">
+    <div style="width:100%;background:linear-gradient(90deg,#0b1e3f 0%,#1e3a8a 60%,#2746a8 100%);border-bottom:2px solid #fbbf24;color:#fff;">
       <div style="max-width:80rem;margin:0 auto;padding:10px 16px;text-align:center;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
         <p style="margin:0;font-size:13px;line-height:1.4;letter-spacing:0.02em;">
-          <span style="color:#f87171;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;">We are <u>NOT</u> a coworking space.</span>
-          <span style="color:#64748b;margin:0 8px;display:inline-block;">|</span>
-          <span style="color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">Your own private office, built &amp; run by CorpEasy.</span>
+          <span style="color:#fca5a5;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;">We are <u>NOT</u> a coworking space.</span>
+          <span style="color:#93c5fd;margin:0 10px;display:inline-block;opacity:0.6;">|</span>
+          <span style="color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">End to end office solutions for growing businesses.</span>
         </p>
       </div>
     </div>
