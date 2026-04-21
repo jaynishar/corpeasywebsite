@@ -42,17 +42,17 @@ include 'templates/header.php';
 <span class="text-xs font-semibold text-brand-electric">Trusted by First Abu Dhabi Bank &amp; 50+ businesses</span>
 </div>
 </div>
-<div class="flex flex-wrap items-center gap-3 mt-4 mb-2">
-  <div class="flex items-center gap-2 bg-red-50 border border-red-200 rounded-full px-3 py-1.5">
-    <i class="fas fa-times-circle text-red-500 text-xs"></i>
-    <span class="text-red-600 line-through text-xs font-bold">Coworking Space</span>
+<div style="margin:20px 0 16px;display:inline-flex;align-items:stretch;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.06);border:1px solid #e2e8f0;">
+  <div style="background:#f1f5f9;padding:10px 16px;display:flex;align-items:center;border-right:1px solid #e2e8f0;">
+    <span style="color:#64748b;font-weight:900;font-size:11px;text-transform:uppercase;letter-spacing:0.15em;text-decoration:line-through;text-decoration-color:#dc2626;text-decoration-thickness:2px;">Coworking</span>
   </div>
-  <span class="text-slate-400 font-black text-base">≠</span>
-  <div class="flex items-center gap-2 bg-green-50 border border-green-200 rounded-full px-3 py-1.5">
-    <i class="fas fa-check-circle text-green-600 text-xs"></i>
-    <span class="text-green-700 text-xs font-bold">Your Dedicated Managed Office</span>
+  <div style="background:#0f172a;padding:10px 16px;display:flex;align-items:center;">
+    <span style="color:#fff;font-weight:900;font-size:11px;text-transform:uppercase;letter-spacing:0.15em;">Managed Office</span>
   </div>
 </div>
+<p style="font-size:14px;color:#475569;max-width:32rem;margin:0 0 16px;font-weight:500;line-height:1.6;">
+  <strong style="color:#0f172a;font-weight:700;">We don't sell shared desks.</strong> We set up and operate your company's <strong style="color:#0f172a;font-weight:700;">own private office</strong> — one team, one space, one contact.
+</p>
 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 lg:mb-6 leading-tight">Managed Office Space<br><span id="hero-word" class="text-brand-electric">in Mumbai</span></h1>
 <p class="text-base lg:text-lg text-slate-600 max-w-lg mb-6 lg:mb-8 leading-relaxed">We find the space, negotiate the lease, set it up, and manage it — so your team moves in ready to work on Day 1. One contact. Clear per-seat cost from <strong class="text-slate-800">₹10,000/seat/month</strong>.</p>
 <div class="hero-buttons flex flex-col sm:flex-row gap-3 mb-6">
