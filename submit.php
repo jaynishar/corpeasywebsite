@@ -110,6 +110,13 @@ if (!$email) {
     exit;
 }
 
+// Reject company names that look like phone numbers (all digits/symbols, no letters)
+if (!empty($company_name) && preg_match('/^[\d\s\+\-\(\)\.]+$/', $company_name)) {
+    http_response_code(400);
+    echo json_encode(['success' => false, 'error' => 'Please enter your company name, not a phone number']);
+    exit;
+}
+
 // ── SPAM HONEYPOT CHECK ─────────────────────────
 if (!empty($data['website'])) { // hidden honeypot field
     http_response_code(200);

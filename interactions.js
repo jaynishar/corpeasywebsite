@@ -27,6 +27,32 @@ async function handleLead(e) {
     });
     formData.form_type = btn.innerText.trim().toLowerCase().replace(/\s+/g, '_').substring(0, 50);
     formData.source_page = window.location.pathname || '/';
+
+    // ── CLIENT-SIDE VALIDATION ────────────────────
+    // Full name: must be at least 2 chars
+    const nameVal = (formData.full_name || '').trim();
+    if (nameVal.length < 2) {
+        const nameField = form.querySelector('[name="full_name"]');
+        if (nameField) { nameField.style.borderColor = '#ef4444'; nameField.focus(); setTimeout(() => { nameField.style.borderColor = ''; }, 3000); }
+        showToast('Please enter your full name.', 'error');
+        return;
+    }
+    // Company name: must not look like a phone number (all digits/symbols)
+    const companyVal = (formData.company_name || '').trim();
+    if (companyVal && /^[\d\s\+\-\(\)\.]+$/.test(companyVal)) {
+        const companyField = form.querySelector('[name="company_name"]');
+        if (companyField) {
+            companyField.style.borderColor = '#ef4444';
+            companyField.value = '';
+            companyField.placeholder = 'Company name — not a phone number';
+            companyField.focus();
+            setTimeout(() => { companyField.style.borderColor = ''; companyField.placeholder = 'Company Name *'; }, 3000);
+        }
+        showToast('Company Name cannot be a phone number. Please enter your company name.', 'error');
+        return;
+    }
+    // ─────────────────────────────────────────────
+
     btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
     btn.disabled = true;
     window.dataLayer = window.dataLayer || [];

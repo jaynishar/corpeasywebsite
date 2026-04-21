@@ -527,3 +527,19 @@ $page_lcp_image = $page_lcp_image ?? '';
 
     <!-- MAIN CONTENT -->
     <main class="flex-grow pt-16 md:pt-20 lg:pt-28 page-enter">
+
+    <!-- ═══ NOT COWORKING BAR — visible on every page ═══ -->
+    <div class="w-full bg-slate-900 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-center">
+        <span class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-red-400">
+          <i class="fas fa-times-circle"></i>
+          <s>Coworking Space</s>
+        </span>
+        <span class="text-slate-600 font-bold text-sm">≠</span>
+        <span class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-green-400">
+          <i class="fas fa-check-circle"></i>
+          Your Own Private Managed Office
+        </span>
+        <span class="text-slate-500 hidden sm:inline text-xs">— We find it, set it up &amp; run it for you.</span>
+      </div>
+    </div>

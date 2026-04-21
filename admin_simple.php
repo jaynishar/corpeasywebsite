@@ -191,6 +191,11 @@ try {
             <input type="text" id="searchInput" placeholder="Search leads by name, email, company, or phone...">
         </div>
         
+        <div style="font-size:12px;color:#64748b;margin-bottom:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 16px;line-height:1.8;">
+            <strong style="color:#334155;">Required fields:</strong> Full Name, Email, Phone &nbsp;|&nbsp;
+            <strong style="color:#334155;">Optional:</strong> Company Name, Requirement, Message &nbsp;|&nbsp;
+            <strong style="color:#334155;">Auto-captured:</strong> Source Page, IP Address, Timestamp
+        </div>
         <div class="table-box">
             <?php if($total > 0): ?>
             <table id="leadsTable">

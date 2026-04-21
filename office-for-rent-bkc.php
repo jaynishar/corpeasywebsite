@@ -24,10 +24,10 @@ include 'templates/header.php';
 <h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Looking for Office Space in BKC?</h3>
 <p class="text-sm text-slate-600 mb-4 sm:mb-6">Share your team size and budget. We will send you verified BKC options within 48 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
-<input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
-<input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
+<input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required minlength="2" maxlength="80" pattern="[a-zA-Z\s\.\-']{2,}" title="Please enter your full name (letters only)">
+<input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required pattern=".*[a-zA-Z].*" minlength="2" maxlength="100" title="Please enter your company name (must contain letters, not a phone number)">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
+<input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required pattern="[0-9\s\+\-\(\)]{7,15}" title="Please enter a valid phone number (7â15 digits)">
 <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
 </div>
 <input type="text" name="requirement" placeholder="Your requirement (e.g. 3,000 sq ft, furnished)" class="input-premium">

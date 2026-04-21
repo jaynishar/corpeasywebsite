@@ -19,7 +19,7 @@ include 'templates/header.php';
 ?>
 
 <section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-16 items-start min-h-[calc(100vh-96px)]">
-<div class="order-2 lg:order-1 flex flex-col justify-center reveal">
+<div class="lg:order-1 flex flex-col justify-center reveal">
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full px-4 py-1.5 w-max">
 <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
 <span class="text-[9px] font-black uppercase tracking-[0.4em] text-brand-cyan">Find Office Space</span>
@@ -62,15 +62,15 @@ include 'templates/header.php';
 </div>
 </div>
 </div>
-<div class="order-1 lg:order-2 lg:sticky lg:top-[120px] self-start">
+<div class="lg:order-2 lg:sticky lg:top-[120px] self-start">
 <div class="glass-card p-6 lg:p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
 <p class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Tell Us What You Are Looking For</p>
 <p class="text-xs text-slate-500 mb-6 leading-relaxed">Share your requirement and we will come back with verified options within 24–48 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4 relative">
-<input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required>
-<input type="text" name="company_name" placeholder="Company Name" class="input-premium" required>
+<input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required minlength="2" maxlength="80" title="Please enter your full name">
+<input type="text" name="company_name" placeholder="Company Name" class="input-premium" required pattern=".*[a-zA-Z].*" minlength="2" maxlength="100" title="Please enter your company name (must contain letters, not a phone number)">
 <input type="email" name="email" placeholder="Work Email Address" class="input-premium" required>
-<input type="tel" name="phone" placeholder="+91 Phone Number" class="input-premium" required>
+<input type="tel" name="phone" placeholder="+91 Phone Number" class="input-premium" required pattern="[0-9\s\+\-\(\)]{7,15}" title="Please enter a valid phone number (7-15 digits)">
 <input type="text" name="requirement" placeholder="Requirement (e.g. BKC, 30 seats, ₹2L budget)" class="input-premium">
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
 <button type="submit" class="w-full bg-brand-cyan text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_20px_rgba(6,182,212,0.35)] hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] transition-all">Find My Office Space</button>

@@ -34,13 +34,24 @@ include 'templates/header.php';
 </div>
 <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 lg:py-16">
 <div class="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-8 lg:gap-12 items-start">
-<div class="reveal order-2 lg:order-1">
+<div class="reveal lg:order-1">
 <div class="glow-blob w-96 h-96 bg-brand-electric -top-20 -left-20 opacity-20"></div>
 <div class="mb-4 lg:mb-6">
 <div class="inline-flex items-center gap-2 bg-brand-electric/8 border border-brand-electric/20 rounded-full px-4 py-1.5">
 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
 <span class="text-xs font-semibold text-brand-electric">Trusted by First Abu Dhabi Bank &amp; 50+ businesses</span>
 </div>
+</div>
+<div class="flex flex-wrap items-center gap-3 mt-4 mb-2">
+  <div class="flex items-center gap-2 bg-red-50 border border-red-200 rounded-full px-3 py-1.5">
+    <i class="fas fa-times-circle text-red-500 text-xs"></i>
+    <span class="text-red-600 line-through text-xs font-bold">Coworking Space</span>
+  </div>
+  <span class="text-slate-400 font-black text-base">≠</span>
+  <div class="flex items-center gap-2 bg-green-50 border border-green-200 rounded-full px-3 py-1.5">
+    <i class="fas fa-check-circle text-green-600 text-xs"></i>
+    <span class="text-green-700 text-xs font-bold">Your Dedicated Managed Office</span>
+  </div>
 </div>
 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 lg:mb-6 leading-tight">Managed Office Space<br><span id="hero-word" class="text-brand-electric">in Mumbai</span></h1>
 <p class="text-base lg:text-lg text-slate-600 max-w-lg mb-6 lg:mb-8 leading-relaxed">We find the space, negotiate the lease, set it up, and manage it — so your team moves in ready to work on Day 1. One contact. Clear per-seat cost from <strong class="text-slate-800">₹10,000/seat/month</strong>.</p>
@@ -59,7 +70,7 @@ include 'templates/header.php';
 Learn how it works <i class="fas fa-arrow-right text-sm"></i>
 </a>
 </div>
-<div class="order-1 lg:order-2 lg:sticky lg:top-[100px] self-start">
+<div class="lg:order-2 lg:sticky lg:top-[100px] self-start">
 <div class="hero-form glass-card p-6 lg:p-8 border-t-4 border-t-brand-electric shadow-[0_20px_40px_rgba(0,0,0,0.08)]" style="transition:opacity 0.3s,transform 0.3s">
 <h2 class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3">
 <i class="fas fa-bolt text-brand-electric"></i>
@@ -67,10 +78,10 @@ Tell Us What You Need
 </h2>
 <p class="text-sm text-slate-600 mb-4 lg:mb-6">Share your requirement. We respond within <strong>24 hours</strong> with a clear proposal — no broker jargon, no hidden charges. No obligation.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
-<input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
-<input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required>
+<input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required minlength="2" maxlength="80" pattern="[a-zA-Z\s\.\-']{2,}" title="Please enter your full name (letters only)">
+<input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required pattern=".*[a-zA-Z].*" minlength="2" maxlength="100" title="Please enter your company name (must contain letters, not a phone number)">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
+<input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required pattern="[0-9\s\+\-\(\)]{7,15}" title="Please enter a valid phone number (7–15 digits)">
 <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
 </div>
 <label for="requirement-select" class="sr-only">What are you looking for?</label>
