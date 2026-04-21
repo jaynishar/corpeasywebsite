@@ -1,5 +1,5 @@
 <?php
-// Block direct search engine indexing — content served via clean URLs only
+// Block direct search engine indexing, content served via clean URLs only
 header('X-Robots-Tag: noindex, follow', true);
 
 $slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
@@ -197,7 +197,7 @@ include 'templates/header.php';
 </section>
 
 <?php
-// Related articles — curated by topic
+// Related articles, curated by topic
 $relatedBySlug = [
     'mumbai-workspace-guide' => ['managed-office-vs-coworking-space', 'how-much-does-office-space-cost-in-mumbai-2026', 'bkc-vs-goregaon'],
     'bkc-vs-goregaon' => ['mumbai-workspace-guide', 'managed-office-vs-coworking-space', 'how-much-does-office-space-cost-in-mumbai-2026'],

@@ -45,7 +45,7 @@ include 'templates/header.php';
 <section class="py-20 bg-white/40">
 <div class="max-w-7xl mx-auto px-6">
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-6 text-center">Why <span class="text-gradient-vibrant">Lower Parel?</span></h2>
-<p class="text-lg text-slate-500 mb-16 text-center max-w-3xl mx-auto">Lower Parel has transformed from Mumbai's old mill district into one of the city's most vibrant commercial hubs — a favourite among tech companies, creative agencies, and fast-growing startups.</p>
+<p class="text-lg text-slate-500 mb-16 text-center max-w-3xl mx-auto">Lower Parel has transformed from Mumbai's old mill district into one of the city's most vibrant commercial hubs, a favourite among tech companies, creative agencies, and fast-growing startups.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
 <div class="glass-card p-6 sm:p-8 reveal">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-6 text-brand-cyan"><i class="fas fa-train text-xl"></i></div>
@@ -60,7 +60,7 @@ include 'templates/header.php';
 <div class="glass-card p-6 sm:p-8 reveal delay-200">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-6 text-brand-violet"><i class="fas fa-tags text-xl"></i></div>
 <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-3">Better Value Than BKC</h3>
-<p class="text-slate-600 leading-relaxed text-sm">Grade A office space in Lower Parel costs 30-40% less than equivalent space in BKC. You get the same building quality — Marathon Futurex, Peninsula Business Park, One World Center — at ₹150-280 per sq ft versus BKC's ₹250-380 range.</p>
+<p class="text-slate-600 leading-relaxed text-sm">Grade A office space in Lower Parel costs 30-40% less than equivalent space in BKC. You get the same building quality, Marathon Futurex, Peninsula Business Park, One World Center, at ₹150-280 per sq ft versus BKC's ₹250-380 range.</p>
 </div>
 </div>
 </div>
@@ -70,7 +70,7 @@ include 'templates/header.php';
 <div class="max-w-4xl mx-auto px-6">
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Lower Parel Office Rental<br><span class="text-gradient-vibrant">Market Overview.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Commercial rent in Lower Parel ranges from <strong>₹150 to ₹280 per sq ft per month</strong>. Premium buildings like One World Center and the upper floors of Peninsula Business Park command the higher end, while buildings slightly off the main Senapati Bapat Marg stretch offer rates closer to ₹150.</p>
-<p class="text-lg text-slate-600 leading-relaxed mb-6">Key buildings include <strong>Marathon Futurex, Peninsula Business Park, One World Center, Lodha Excelus, Kamala Mills compound, and Indiabulls Finance Centre</strong>. Each has its own character — Marathon Futurex is popular with IT companies, Peninsula attracts financial firms, and the Kamala Mills area has a more startup-friendly vibe.</p>
+<p class="text-lg text-slate-600 leading-relaxed mb-6">Key buildings include <strong>Marathon Futurex, Peninsula Business Park, One World Center, Lodha Excelus, Kamala Mills compound, and Indiabulls Finance Centre</strong>. Each has its own character, Marathon Futurex is popular with IT companies, Peninsula attracts financial firms, and the Kamala Mills area has a more startup-friendly vibe.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Typical office sizes range from 1,500 to 15,000 sq ft. A 3,000 sq ft furnished office (roughly 40 seats) in a building like Marathon Futurex costs approximately ₹6-7 lakh per month in rent, plus ₹60,000-1 lakh in maintenance charges and parking. Lower Parel's total occupancy costs are substantially lower than BKC for comparable quality.</p>
 <p class="text-lg text-slate-600 leading-relaxed">Security deposits here are typically <strong>3 to 6 months</strong> of rent. Many landlords in Lower Parel are more flexible than BKC landlords on deposit amounts and lock-in periods, especially for startups and smaller companies taking furnished space.</p>
 </div>
@@ -85,7 +85,7 @@ include 'templates/header.php';
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-warehouse text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Bare Shell</h3>
 <p class="text-xs text-brand-electric font-bold uppercase tracking-wider mb-3">₹150 - ₹200 per sq ft/month</p>
-<p class="text-slate-600 leading-relaxed mb-3">Raw commercial space with basic structure. You build out the interiors from scratch — false ceiling, partitions, AC, furniture, and IT infrastructure. Lowest rent but 3-6 months to occupy. Fit-out costs range from ₹2,000-3,500 per sq ft.</p>
+<p class="text-slate-600 leading-relaxed mb-3">Raw commercial space with basic structure. You build out the interiors from scratch, false ceiling, partitions, AC, furniture, and IT infrastructure. Lowest rent but 3-6 months to occupy. Fit-out costs range from ₹2,000-3,500 per sq ft.</p>
 <p class="text-sm text-brand-electric font-semibold">Best for: Companies wanting a fully custom workspace</p>
 </div>
 <div class="glass-card p-8">
@@ -117,7 +117,7 @@ include 'templates/header.php';
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-parking text-sm"></i></div>
-<div><h3 class="text-lg font-bold text-slate-900 mb-1">Parking Is More Affordable</h3><p class="text-slate-600 leading-relaxed">Parking in Lower Parel costs ₹5,000 to ₹10,000 per spot per month — significantly cheaper than BKC. Most buildings allocate 1 spot per 1,000 sq ft. Since many employees use the railway station, you may need fewer parking spots than you think. Negotiate a mix of reserved and on-demand spots.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Parking Is More Affordable</h3><p class="text-slate-600 leading-relaxed">Parking in Lower Parel costs ₹5,000 to ₹10,000 per spot per month, significantly cheaper than BKC. Most buildings allocate 1 spot per 1,000 sq ft. Since many employees use the railway station, you may need fewer parking spots than you think. Negotiate a mix of reserved and on-demand spots.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-money-bill-wave text-sm"></i></div>
@@ -167,7 +167,7 @@ include 'templates/header.php';
 <a href="/office-space-for-rent-mumbai" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-city text-lg"></i></div>
 <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Office Space in Mumbai</h3>
-<p class="text-sm text-slate-600">Explore all commercial zones across Mumbai — BKC, Andheri, Goregaon, Powai, Thane, and more.</p>
+<p class="text-sm text-slate-600">Explore all commercial zones across Mumbai, BKC, Andheri, Goregaon, Powai, Thane, and more.</p>
 </a>
 <a href="/office-for-rent-bkc" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-landmark text-lg"></i></div>

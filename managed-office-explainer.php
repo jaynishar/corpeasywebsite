@@ -41,13 +41,13 @@ include 'templates/header.php';
 
 <h3>What a Managed Office Actually Is</h3>
 <p>A <strong>managed office space</strong> is a commercially leased workspace that has been sourced, set up, and is maintained on your behalf by a workspace operator. Instead of you finding the property, negotiating with the landlord, coordinating workspace setup, and managing facility issues, all of that is handled by the operator.</p>
-<p>You pay a single monthly fee per seat and get a space that is ready to work in from Day 1. Furniture, internet, housekeeping, maintenance — everything is included. The key distinction from coworking is exclusivity: in a coworking space, you share with other companies. In a managed office, the space is yours alone. Your branding, your layout, your team.</p>
+<p>You pay a single monthly fee per seat and get a space that is ready to work in from Day 1. Furniture, internet, housekeeping, maintenance, everything is included. The key distinction from coworking is exclusivity: in a coworking space, you share with other companies. In a managed office, the space is yours alone. Your branding, your layout, your team.</p>
 
 <h3>How the Managed Office Model Works</h3>
 <p>The process typically follows three stages:</p>
-<p><strong>1. Requirement gathering.</strong> You tell the provider your team size, preferred location in Mumbai, budget range, and any specific needs — meeting rooms, cabin configuration, parking. A good provider asks detailed questions to understand what will actually work for your team.</p>
-<p><strong>2. Property sourcing, negotiation, and setup.</strong> The provider identifies suitable commercial properties, negotiates the lease with the landlord, and arranges the workspace setup — furniture, internet, electrical work, branding. You are presented with a clear per-seat monthly cost before committing to anything.</p>
-<p><strong>3. Move in and ongoing management.</strong> Your team moves into a fully functional office. The provider continues to manage the space — housekeeping, maintenance, vendor coordination, and any changes your team needs as it grows. You have one point of contact for everything.</p>
+<p><strong>1. Requirement gathering.</strong> You tell the provider your team size, preferred location in Mumbai, budget range, and any specific needs, meeting rooms, cabin configuration, parking. A good provider asks detailed questions to understand what will actually work for your team.</p>
+<p><strong>2. Property sourcing, negotiation, and setup.</strong> The provider identifies suitable commercial properties, negotiates the lease with the landlord, and arranges the workspace setup, furniture, internet, electrical work, branding. You are presented with a clear per-seat monthly cost before committing to anything.</p>
+<p><strong>3. Move in and ongoing management.</strong> Your team moves into a fully functional office. The provider continues to manage the space, housekeeping, maintenance, vendor coordination, and any changes your team needs as it grows. You have one point of contact for everything.</p>
 
 <h3>What Is Included in the Per-Seat Cost</h3>
 <p>While inclusions vary by provider, a typical managed office in Mumbai includes:</p>
@@ -66,36 +66,36 @@ include 'templates/header.php';
 
 <h3>Managed Office vs Coworking Space</h3>
 <p>This is the most common comparison, and the answer depends on your team size and needs:</p>
-<p><strong>Coworking</strong> works well for 1–10 people. You get a desk or small cabin in a shared space. It is flexible and low-commitment. But meeting rooms get booked out, phone calls happen in corridors, and your team never quite feels like they have "their" space.</p>
-<p><strong>Managed offices</strong> make sense for 10+ employees. You get a private, dedicated space with your branding, your layout, and your culture. The per-seat cost becomes competitive with coworking at this size, and you get significantly more value — privacy, professional image, and dedicated facilities.</p>
+<p><strong>Coworking</strong> works well for 1-10 people. You get a desk or small cabin in a shared space. It is flexible and low-commitment. But meeting rooms get booked out, phone calls happen in corridors, and your team never quite feels like they have "their" space.</p>
+<p><strong>Managed offices</strong> make sense for 10+ employees. You get a private, dedicated space with your branding, your layout, and your culture. The per-seat cost becomes competitive with coworking at this size, and you get significantly more value, privacy, professional image, and dedicated facilities.</p>
 <p><a href="/managed-office-vs-coworking" class="text-brand-electric hover:underline">Read our full Managed Office vs Coworking comparison →</a></p>
 
 <h3>How Much Does It Cost in Mumbai?</h3>
 <p>Managed office costs in Mumbai vary by location:</p>
 <ul>
-<li><strong>BKC:</strong> ₹35,000–₹40,000 per seat/month</li>
-<li><strong>Lower Parel / Worli:</strong> ₹30,000–₹40,000 per seat/month</li>
-<li><strong>Andheri East:</strong> ₹16,000–₹20,000 per seat/month</li>
-<li><strong>Goregaon:</strong> ₹12,000–₹18,000 per seat/month</li>
-<li><strong>Powai:</strong> ₹10,000–₹15,000 per seat/month</li>
+<li><strong>BKC:</strong> ₹35,000-₹40,000 per seat/month</li>
+<li><strong>Lower Parel / Worli:</strong> ₹30,000-₹40,000 per seat/month</li>
+<li><strong>Andheri East:</strong> ₹16,000-₹20,000 per seat/month</li>
+<li><strong>Goregaon:</strong> ₹12,000-₹18,000 per seat/month</li>
+<li><strong>Powai:</strong> ₹10,000-₹15,000 per seat/month</li>
 </ul>
-<p>These are all-inclusive costs. Compare this to a traditional lease where you pay rent + CAM + GST + setup costs (₹800–₹2,000/sq ft) + furniture (₹50,000–₹1,00,000 per workstation) + ongoing maintenance separately.</p>
+<p>These are all-inclusive costs. Compare this to a traditional lease where you pay rent + CAM + GST + setup costs (₹800-₹2,000/sq ft) + furniture (₹50,000-₹1,00,000 per workstation) + ongoing maintenance separately.</p>
 <p><a href="/office-space-cost-mumbai-2026" class="text-brand-electric hover:underline">See the complete cost breakdown for all Mumbai areas →</a></p>
 
 <h3>Who Should Choose a Managed Office?</h3>
 <p>Managed offices work best for:</p>
 <ul>
-<li><strong>Growing companies (10–200+ employees)</strong> that have outgrown coworking but do not want the hassle of a full traditional lease</li>
-<li><strong>Startups scaling rapidly</strong> that need to move fast and cannot afford 3–6 months of property hunting and setup</li>
+<li><strong>Growing companies (10-200+ employees)</strong> that have outgrown coworking but do not want the hassle of a full traditional lease</li>
+<li><strong>Startups scaling rapidly</strong> that need to move fast and cannot afford 3-6 months of property hunting and setup</li>
 <li><strong>Established businesses opening a Mumbai office</strong> that want a professional presence without local property expertise</li>
-<li><strong>Companies wanting predictable costs</strong> — one clear monthly invoice instead of managing multiple vendors</li>
-<li><strong>Teams that value privacy and brand identity</strong> — their own space, their branding, professional environment for client meetings</li>
+<li><strong>Companies wanting predictable costs</strong>, one clear monthly invoice instead of managing multiple vendors</li>
+<li><strong>Teams that value privacy and brand identity</strong>, their own space, their branding, professional environment for client meetings</li>
 </ul>
 
 <h3>When a Managed Office Is Not the Right Fit</h3>
 <p>Be honest about your situation. A managed office may not be ideal if:</p>
 <ul>
-<li>Your team is 1–5 people (coworking is genuinely more cost-effective at this size)</li>
+<li>Your team is 1-5 people (coworking is genuinely more cost-effective at this size)</li>
 <li>You need a space for less than 3 months (coworking offers more flexibility)</li>
 <li>You want complete control over every aspect of the interior design and building selection</li>
 <li>You have a very specialised requirement that standard managed office providers cannot accommodate</li>
@@ -103,7 +103,7 @@ include 'templates/header.php';
 <p>A good provider will tell you this honestly. If a provider tries to sell you a managed office for a 3-person team on a 2-month timeline, they are not being transparent with you.</p>
 
 <h3>Getting Started</h3>
-<p>If a managed office sounds like it could work for your business, the next step is simple: tell us your team size, preferred location in Mumbai, and budget. We will give you an honest recommendation — even if it is not a managed office. No pressure, no broker jargon.</p>
+<p>If a managed office sounds like it could work for your business, the next step is simple: tell us your team size, preferred location in Mumbai, and budget. We will give you an honest recommendation, even if it is not a managed office. No pressure, no broker jargon.</p>
 <p><a href="/contact" class="text-brand-electric hover:underline">Tell us what you need →</a></p>
 </div>
 

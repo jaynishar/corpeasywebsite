@@ -1,7 +1,7 @@
 <?php
 $page_id = 'managed-lower-parel';
 $page_title = 'Managed Office Lower Parel | ₹14,000/Seat | CorpEasy';
-$page_description = 'Managed office space in Lower Parel Mumbai from ₹14,000/seat/month. Near Marathon Futurex, Peninsula Business Park. Full setup. Move in 2–4 weeks.';
+$page_description = 'Managed office space in Lower Parel Mumbai from ₹14,000/seat/month. Near Marathon Futurex, Peninsula Business Park. Full setup. Move in 2-4 weeks.';
 $page_keywords = 'managed office space Lower Parel, office space Lower Parel Mumbai, serviced office Lower Parel, private office Lower Parel, managed office Lower Parel 2026, office near Marathon Futurex, office near Peninsula Business Park, Lower Parel office cost per seat, commercial office Lower Parel';
 $page_canonical = 'https://www.corpeasy.in/managed-office-lower-parel';
 $page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
@@ -28,7 +28,7 @@ include 'templates/header.php';
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> Complete workspace setup handled end to end. Zero contractors to coordinate.</p>
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> One all-inclusive per seat cost. No hidden charges, no surprises.</p>
 </div>
-<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Lower Parel</strong> without the headache of property visits, landlord negotiations, and interior fit-outs? Lower Parel has transformed from Mumbai's historic mill district into one of the city's most dynamic commercial corridors. We handle everything — from sourcing space near Marathon Futurex or Peninsula Business Park to delivering a workspace that is ready when your team walks in on Day 1.</p>
+<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Lower Parel</strong> without the headache of property visits, landlord negotiations, and interior fit-outs? Lower Parel has transformed from Mumbai's historic mill district into one of the city's most dynamic commercial corridors. We handle everything, from sourcing space near Marathon Futurex or Peninsula Business Park to delivering a workspace that is ready when your team walks in on Day 1.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
 <div class="glass-card p-5"><p class="text-base font-bold text-slate-900">From ₹14,000/seat</p><p class="text-xs text-slate-600 mt-1">All-inclusive monthly pricing across Grade A buildings in Lower Parel.</p></div>
     <div class="glass-card p-5"><p class="text-base font-bold text-slate-900">Move In 2-3 Weeks</p><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
@@ -81,8 +81,8 @@ include 'templates/header.php';
 
 <section class="py-20">
 <div class="max-w-4xl mx-auto px-6">
-<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Lower Parel Office Market —<br><span class="text-gradient-vibrant">What to Expect.</span></h2>
-<p class="text-lg text-slate-600 leading-relaxed mb-6">Lower Parel sits in a sweet spot between South Mumbai's premium pricing and the suburbs' affordability. Per-seat costs for a managed office in Lower Parel typically range from <strong>₹14,000 to ₹28,000 per month</strong>. The variation depends on the building — a seat in Peninsula Business Park or One World Center will cost more than one in a smaller commercial complex off the main road.</p>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Lower Parel Office Market , <br><span class="text-gradient-vibrant">What to Expect.</span></h2>
+<p class="text-lg text-slate-600 leading-relaxed mb-6">Lower Parel sits in a sweet spot between South Mumbai's premium pricing and the suburbs' affordability. Per-seat costs for a managed office in Lower Parel typically range from <strong>₹14,000 to ₹28,000 per month</strong>. The variation depends on the building, a seat in Peninsula Business Park or One World Center will cost more than one in a smaller commercial complex off the main road.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Managed offices in Lower Parel are available in configurations from <strong>10 to 100+ seats</strong>. The area has a healthy inventory of both pre-fitted and bare shell spaces. Pre-fitted offices can be ready in 7-10 days. For bare shell setups with custom interiors, expect a 3-4 week timeline. We handle the entire fit-out process including furniture, networking, electrical work, and access systems.</p>
 <p class="text-lg text-slate-600 leading-relaxed">Standard lease terms start at <strong>11-12 months</strong>, with many landlords offering 24-month agreements for managed office tenants. Security deposits typically range from 3-6 months. We negotiate lock-in periods and exit clauses to protect your flexibility, especially important for growing companies that may need to scale up within 12-18 months.</p>
 </div>
@@ -100,7 +100,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-shopping-cart text-xl"></i></div>
     <h3 class="text-xl font-bold text-slate-900 mb-3">E-Commerce Brands</h3>
-<p class="text-slate-600 leading-relaxed">D2C brands and e-commerce companies find Lower Parel ideal. The area offers a balance of prestige and practicality — close to logistics hubs, well-connected for vendor meetings, and attractive enough to draw top marketing and tech talent.</p>
+<p class="text-slate-600 leading-relaxed">D2C brands and e-commerce companies find Lower Parel ideal. The area offers a balance of prestige and practicality, close to logistics hubs, well-connected for vendor meetings, and attractive enough to draw top marketing and tech talent.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-laptop-code text-xl"></i></div>

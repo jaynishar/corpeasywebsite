@@ -28,7 +28,7 @@ include 'templates/header.php';
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> Full workspace setup handled end to end. You coordinate zero contractors.</p>
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> Mumbai's best value per-seat pricing. No hidden charges, no surprises.</p>
 </div>
-<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Goregaon</strong> that gives you Grade A infrastructure without the premium price tag? Goregaon has quietly become one of Mumbai's most practical commercial districts. With NESCO IT Park, Ackruti Trade Centre, and Oberoi Commerz anchoring the area, it offers modern office buildings at rates that make financial sense for growing companies. We handle everything — from sourcing the space to setting up your workplace.</p>
+<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Goregaon</strong> that gives you Grade A infrastructure without the premium price tag? Goregaon has quietly become one of Mumbai's most practical commercial districts. With NESCO IT Park, Ackruti Trade Centre, and Oberoi Commerz anchoring the area, it offers modern office buildings at rates that make financial sense for growing companies. We handle everything, from sourcing the space to setting up your workplace.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
 <div class="glass-card p-5"><p class="text-base font-bold text-slate-900">From ₹10,000/seat</p><p class="text-xs text-slate-600 mt-1">Mumbai's most competitive all-inclusive pricing for Grade A offices.</p></div>
     <div class="glass-card p-5"><p class="text-base font-bold text-slate-900">Move In 2-3 Weeks</p><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
@@ -62,7 +62,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-rupee-sign text-xl"></i></div>
     <h3 class="text-xl font-bold text-slate-900 mb-3">Best Value in Mumbai</h3>
-<p class="text-slate-600 leading-relaxed">Goregaon offers Grade A managed office space starting from ₹10,000/seat/month — significantly lower than BKC, Lower Parel, or even Andheri. For companies that need quality infrastructure but want to keep costs in check, Goregaon is the clear choice. The savings per seat add up fast when you are running a 50+ person team.</p>
+<p class="text-slate-600 leading-relaxed">Goregaon offers Grade A managed office space starting from ₹10,000/seat/month, significantly lower than BKC, Lower Parel, or even Andheri. For companies that need quality infrastructure but want to keep costs in check, Goregaon is the clear choice. The savings per seat add up fast when you are running a 50+ person team.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-road text-xl"></i></div>
@@ -75,16 +75,16 @@ include 'templates/header.php';
 <p class="text-slate-600 leading-relaxed">NESCO IT Park, Ackruti Trade Centre, and Oberoi Commerz have established Goregaon as a legitimate commercial hub. These parks house major IT companies, BPOs, and corporate offices. The ecosystem means you get reliable internet infrastructure, multiple food options, and a professional environment without the premium district pricing.</p>
 </div>
 </div>
-<p class="text-lg text-slate-600 leading-relaxed mt-12 max-w-4xl mx-auto text-center">Goregaon has also seen significant residential development in recent years, which means a growing local talent pool. Many employees in IT and operations roles live in or near Goregaon, Kandivali, and Malad — reducing commute times and improving retention for companies based here.</p>
+<p class="text-lg text-slate-600 leading-relaxed mt-12 max-w-4xl mx-auto text-center">Goregaon has also seen significant residential development in recent years, which means a growing local talent pool. Many employees in IT and operations roles live in or near Goregaon, Kandivali, and Malad, reducing commute times and improving retention for companies based here.</p>
 </div>
 </section>
 
 <section class="py-20">
 <div class="max-w-4xl mx-auto px-6">
-<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Goregaon Office Market —<br><span class="text-gradient-vibrant">What to Expect.</span></h2>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Goregaon Office Market , <br><span class="text-gradient-vibrant">What to Expect.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Goregaon is one of the most affordable managed office markets in Mumbai for Grade A space. Per-seat costs range from <strong>₹10,000 to ₹18,000 per month</strong>, all-inclusive. At the lower end, you get well-maintained commercial buildings with standard amenities. At the higher end, you are looking at premium floors in NESCO IT Park or Oberoi Commerz with top-tier infrastructure.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">The area is especially strong for larger teams. Floor plates in Goregaon tend to be bigger than in BKC or Lower Parel, which means you can fit <strong>50 to 150+ seats</strong> on a single floor. This matters for BPOs, IT delivery centers, and companies that want their entire team in one space without splitting across floors. We also accommodate smaller teams of 10-30 seats in shared commercial buildings.</p>
-<p class="text-lg text-slate-600 leading-relaxed">Lease terms in Goregaon typically start at <strong>11 months</strong>, with most landlords open to 12-24 month agreements. Security deposits are usually 3-4 months — lower than what you would see in BKC or South Mumbai. We negotiate favorable lock-in and exit terms so you have room to scale up or relocate if your needs change.</p>
+<p class="text-lg text-slate-600 leading-relaxed">Lease terms in Goregaon typically start at <strong>11 months</strong>, with most landlords open to 12-24 month agreements. Security deposits are usually 3-4 months, lower than what you would see in BKC or South Mumbai. We negotiate favorable lock-in and exit terms so you have room to scale up or relocate if your needs change.</p>
 </div>
 </section>
 

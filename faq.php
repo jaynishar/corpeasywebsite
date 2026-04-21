@@ -1,15 +1,15 @@
 <?php
 $page_id = 'faq';
-$page_title = 'Managed Office Space Mumbai — FAQ & Pricing Guide | CorpEasy';
-$page_description = 'Common questions about managed office space in Mumbai — pricing by location, how the process works, facility management costs and areas covered.';
+$page_title = 'Managed Office Space Mumbai, FAQ & Pricing Guide | CorpEasy';
+$page_description = 'Common questions about managed office space in Mumbai, pricing by location, how the process works, facility management costs and areas covered.';
 $page_keywords = 'managed office space FAQ Mumbai, office space Mumbai cost, managed office pricing Mumbai, facility management Mumbai FAQ, office space questions Mumbai, how to get office space Mumbai, managed office vs coworking';
 $page_canonical = 'https://www.corpeasy.in/faq';
 $page_og_image = 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
 $page_schema = json_encode([
   "@type" => "WebPage",
-  "name" => "Managed Office Space Mumbai — FAQ",
+  "name" => "Managed Office Space Mumbai, FAQ",
   "url" => "https://www.corpeasy.in/faq",
-  "description" => "Common questions about managed office space in Mumbai — pricing by location, how the process works, facility management costs and areas covered.",
+  "description" => "Common questions about managed office space in Mumbai, pricing by location, how the process works, facility management costs and areas covered.",
   "breadcrumb" => [
     "@type" => "BreadcrumbList",
     "itemListElement" => [
@@ -28,7 +28,7 @@ include 'templates/header.php';
 <div class="inline-flex items-center space-x-2 mb-6 bg-brand-electric/10 border border-brand-electric/30 rounded-full px-4 py-1.5">
 <span class="text-xs font-semibold uppercase tracking-wide text-brand-electric">Common Questions</span>
 </div>
-<h1 class="text-5xl font-black text-slate-900 mb-4">Managed Office Space Mumbai — FAQ</h1>
+<h1 class="text-5xl font-black text-slate-900 mb-4">Managed Office Space Mumbai, FAQ</h1>
 <p class="text-xl text-slate-500">Straight answers about how CorpEasy works and what we actually do.</p>
 </div>
 <div class="max-w-3xl mx-auto">
@@ -42,7 +42,7 @@ include 'templates/header.php';
 <div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">What does the workspace setup include?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">We handle the basics. Functional furniture, internet connectivity, and a clean professional working environment. The exact scope depends on the property and your requirement. We are transparent about what is and is not included in your per-seat cost before you agree to anything.</p></div></div>
 <div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">I own a commercial property. Can CorpEasy find me a tenant?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">Yes. We work with property owners across Mumbai who are looking for reliable business tenants. If you have a commercial space available, get in touch with us. We will review whether it fits our active client requirements and discuss next steps.</p></div></div>
 <div><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Are you a broker, a portal, or something else?</span><i class="fas fa-plus text-brand-electric transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">Neither, strictly speaking. We are a workspace solutions company. We find the right commercial property, take the lease, handle the setup, and offer the space to you on a managed basis. We are not a listing portal and we are not a traditional broker. We stay involved through the entire process. From the first conversation to the day you move in.</p></div></div>
-<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Do you offer facility management for existing offices?</span><i class="fas fa-plus text-brand-rose transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">Yes. CorpEasy Facility Management is designed for companies that already have their own office space but want to outsource day-to-day operations — including housekeeping, security, vendor management, AMC contracts, and compliance. We handle everything under one monthly invoice so your team can focus entirely on your business.</p></div></div>
+<div class="border-b border-white/60"><div class="flex items-center justify-between py-6 cursor-pointer" onclick="toggleFAQ(this)"><span class="text-lg font-bold text-slate-900 pr-8">Do you offer facility management for existing offices?</span><i class="fas fa-plus text-brand-rose transition-transform duration-300 flex-shrink-0"></i></div><div class="faq-answer overflow-hidden transition-all duration-500" style="max-height:0px"><p class="text-slate-600 pb-6 leading-relaxed">Yes. CorpEasy Facility Management is designed for companies that already have their own office space but want to outsource day-to-day operations, including housekeeping, security, vendor management, AMC contracts, and compliance. We handle everything under one monthly invoice so your team can focus entirely on your business.</p></div></div>
 </div>
 <div class="text-center mt-16">
 <p class="text-slate-600 mb-6">Have a question that is not answered here?</p>

@@ -1,7 +1,7 @@
 <?php
 $page_id = 'managed-thane';
 $page_title = 'Managed Office Space in Thane | From ₹8,000/Seat | CorpEasy';
-$page_description = 'Managed office space in Thane from ₹8,000/seat/month. Lodha Supremus, Ashar IT Park, Hiranandani Estate. Affordable Grade A space. Move in 2–4 weeks.';
+$page_description = 'Managed office space in Thane from ₹8,000/seat/month. Lodha Supremus, Ashar IT Park, Hiranandani Estate. Affordable Grade A space. Move in 2-4 weeks.';
 $page_keywords = 'managed office space Thane, managed office Lodha Supremus, office space Thane Mumbai, serviced office Thane, private office Thane, office space Thane 2026, affordable office space Thane, managed workspace Thane, Ashar IT Park office, Hiranandani Estate Thane office';
 $page_canonical = 'https://www.corpeasy.in/managed-office-thane';
 $page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
@@ -28,7 +28,7 @@ include 'templates/header.php';
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> Workspace setup handled end to end. You coordinate zero contractors.</p>
 <p class="flex items-center gap-3 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-electric"></i> One all-inclusive per seat cost. No hidden charges, no surprises.</p>
 </div>
-<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Thane</strong> with modern infrastructure at affordable prices? Thane has emerged as one of Mumbai's fastest-growing commercial destinations — with Grade A buildings in Lodha Supremus, Ashar IT Park, and Hiranandani Estate at 50-60% lower costs than South Mumbai. We source the right space and deliver a workspace that is ready when your team walks in on Day 1.</p>
+<p class="text-lg text-slate-600 mt-4 leading-relaxed">Looking for a <strong>managed office space in Thane</strong> with modern infrastructure at affordable prices? Thane has emerged as one of Mumbai's fastest-growing commercial destinations, with Grade A buildings in Lodha Supremus, Ashar IT Park, and Hiranandani Estate at 50-60% lower costs than South Mumbai. We source the right space and deliver a workspace that is ready when your team walks in on Day 1.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
 <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">From ₹8,000/seat</h3><p class="text-xs text-slate-600 mt-1">Most affordable Grade A managed office pricing in the Mumbai metro.</p></div>
 <div class="glass-card p-5"><h3 class="text-base font-bold text-slate-900">Move In 2-4 Weeks</h3><p class="text-xs text-slate-600 mt-1">Pre-fitted spaces available for faster move-in within 7-10 days.</p></div>
@@ -62,7 +62,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-building text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Modern IT Parks</h3>
-<p class="text-slate-600 leading-relaxed">Lodha Supremus, Ashar IT Park, Hiranandani Estate, and Vasant Vihar offer Grade A commercial infrastructure with modern lobbies, high-speed elevators, 24/7 power backup, and ample parking. These buildings rival anything in BKC or Lower Parel — at a fraction of the cost.</p>
+<p class="text-slate-600 leading-relaxed">Lodha Supremus, Ashar IT Park, Hiranandani Estate, and Vasant Vihar offer Grade A commercial infrastructure with modern lobbies, high-speed elevators, 24/7 power backup, and ample parking. These buildings rival anything in BKC or Lower Parel, at a fraction of the cost.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-road text-xl"></i></div>
@@ -81,10 +81,10 @@ include 'templates/header.php';
 
 <section class="py-20 bg-white/40">
 <div class="max-w-4xl mx-auto px-6">
-<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Thane Office Market —<br><span class="text-gradient-vibrant">What to Expect.</span></h2>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Thane Office Market , <br><span class="text-gradient-vibrant">What to Expect.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Thane offers some of the most competitive managed office pricing in the Mumbai metropolitan region. Per-seat costs typically range from <strong>₹8,000 to ₹15,000 per month</strong>. Buildings in Lodha Supremus and Hiranandani Estate are at the higher end (₹10,000-15,000), while those in the older Thane West commercial belt offer rates starting from ₹8,000/seat.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Managed offices in Thane are available in configurations from <strong>10 to 150+ seats</strong>. The area has a healthy mix of modern IT parks and well-maintained commercial complexes. Pre-fitted spaces can be ready in 7-10 days, while bare shell setups with custom interiors take 3-4 weeks.</p>
-<p class="text-lg text-slate-600 leading-relaxed">Lease terms typically start at <strong>11-12 months</strong>. Security deposits are 2-4 months of rent — significantly lower than mainland Mumbai. We negotiate favourable terms on your behalf, including lock-in flexibility and expansion options for growing teams.</p>
+<p class="text-lg text-slate-600 leading-relaxed">Lease terms typically start at <strong>11-12 months</strong>. Security deposits are 2-4 months of rent, significantly lower than mainland Mumbai. We negotiate favourable terms on your behalf, including lock-in flexibility and expansion options for growing teams.</p>
 </div>
 </section>
 

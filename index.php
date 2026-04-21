@@ -4,7 +4,7 @@ $page_title = 'Managed Office Space Mumbai from ₹10,000/Seat | CorpEasy';
 $page_description = 'CorpEasy finds, sets up & manages your office space in Mumbai from ₹10,000/seat/month. One contact. BKC, Lower Parel, Goregaon & Andheri.';
 $page_keywords = 'managed office space Mumbai, office space for rent Mumbai, commercial office space Mumbai, office space BKC, office space Lower Parel, office space Goregaon, managed workspace Mumbai, office space Andheri East, per seat office Mumbai, workspace solutions Mumbai, turnkey office Mumbai, office space Mumbai 2026, office on rent Mumbai, commercial property Mumbai';
 $page_canonical = 'https://www.corpeasy.in/';
-// LCP image preload disabled — on mobile the form is above the fold, not this image
+// LCP image preload disabled, on mobile the form is above the fold, not this image
 $page_lcp_image = '';
 $page_schema = '{
   "@type": "Review",
@@ -51,10 +51,10 @@ include 'templates/header.php';
   </div>
 </div>
 <p style="font-size:14px;color:#475569;max-width:32rem;margin:0 0 16px;font-weight:500;line-height:1.6;">
-  <strong style="color:#0f172a;font-weight:700;">We don't sell shared desks.</strong> We set up and operate your company's <strong style="color:#0f172a;font-weight:700;">own private office</strong> — one team, one space, one contact.
+  <strong style="color:#0f172a;font-weight:700;">We don't sell shared desks.</strong> We find, set up and run a <strong style="color:#0f172a;font-weight:700;">private office</strong> just for your team. No shared floors, no hot desks, no strangers in your meetings.
 </p>
 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 lg:mb-6 leading-tight">Managed Office Space<br><span id="hero-word" class="text-brand-electric">in Mumbai</span></h1>
-<p class="text-base lg:text-lg text-slate-600 max-w-lg mb-6 lg:mb-8 leading-relaxed">We find the space, negotiate the lease, set it up, and manage it — so your team moves in ready to work on Day 1. One contact. Clear per-seat cost from <strong class="text-slate-800">₹10,000/seat/month</strong>.</p>
+<p class="text-base lg:text-lg text-slate-600 max-w-lg mb-6 lg:mb-8 leading-relaxed">We find the space, handle the lease, set up the office and run it day to day. Your team walks in on Day 1 ready to work. You deal with one person at CorpEasy. Clear per seat cost from <strong class="text-slate-800">₹10,000/seat/month</strong>.</p>
 <div class="hero-buttons flex flex-col sm:flex-row gap-3 mb-6">
 <a href="/contact" class="bg-brand-electric text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all w-full sm:w-auto text-center">Get a Free Consultation</a>
 <a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20looking%20for%20office%20space%20in%20Mumbai." target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-green-600 transition-all flex items-center justify-center gap-2 w-full sm:w-auto">
@@ -76,12 +76,12 @@ Learn how it works <i class="fas fa-arrow-right text-sm"></i>
 <i class="fas fa-bolt text-brand-electric"></i>
 Tell Us What You Need
 </h2>
-<p class="text-sm text-slate-600 mb-4 lg:mb-6">Share your requirement. We respond within <strong>24 hours</strong> with a clear proposal — no broker jargon, no hidden charges. No obligation.</p>
+<p class="text-sm text-slate-600 mb-4 lg:mb-6">Share your requirement. We respond within <strong>24 hours</strong> with a clear proposal, no broker jargon, no hidden charges. No obligation.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required minlength="2" maxlength="80" pattern="[a-zA-Z\s\.\-']{2,}" title="Please enter your full name (letters only)">
 <input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required pattern=".*[a-zA-Z].*" minlength="2" maxlength="100" title="Please enter your company name (must contain letters, not a phone number)">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required pattern="[0-9\s\+\-\(\)]{7,15}" title="Please enter a valid phone number (7–15 digits)">
+<input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required pattern="[0-9\s\+\-\(\)]{7,15}" title="Please enter a valid phone number (7-15 digits)">
 <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
 </div>
 <label for="requirement-select" class="sr-only">What are you looking for?</label>
@@ -117,7 +117,7 @@ Your details are safe with us. No spam, ever.
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 <div class="absolute bottom-6 sm:bottom-10 left-6 sm:left-10 right-6 sm:right-10">
 <h2 class="text-2xl sm:text-3xl lg:text-5xl font-black text-white mb-2 sm:mb-4 drop-shadow-lg tracking-tight">Your team deserves a space <br class="hidden sm:block"/>that actually works.</h2>
-<p class="text-white/90 text-base sm:text-lg lg:text-xl max-w-2xl drop-shadow hidden sm:block">We handle the hard stuff — finding the right property, setting it up, running it — so you can focus on building your business.</p>
+<p class="text-white/90 text-base sm:text-lg lg:text-xl max-w-2xl drop-shadow hidden sm:block">We handle the hard stuff, finding the right property, setting it up, running it, so you can focus on building your business.</p>
 </div>
 </div>
 </section>
@@ -132,17 +132,17 @@ Your details are safe with us. No spam, ever.
 <div class="glass-card p-10 reveal delay-100">
 <div class="w-14 h-14 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-8 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-tools text-2xl"></i></div>
 <h3 class="text-xl font-bold mb-4 text-slate-900">We Set It Up. You Move In.</h3>
-<p class="text-slate-600 leading-relaxed">Once we have the space locked in, we get it ready — furniture, internet, everything your team needs on Day 1. No vendor calls, no delays, no headaches. Just walk in and start working.</p>
+<p class="text-slate-600 leading-relaxed">Once we have the space locked in, we get it ready, furniture, internet, everything your team needs on Day 1. No vendor calls, no delays, no headaches. Just walk in and start working.</p>
 </div>
 <div class="glass-card p-10 reveal delay-200">
 <div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-8 text-brand-violet shadow-[0_0_15px_rgba(139,92,246,0.2)]"><i class="fas fa-receipt text-2xl"></i></div>
 <h3 class="text-xl font-bold mb-4 text-slate-900">One Clear Cost. Fixed Lease.</h3>
-<p class="text-slate-600 leading-relaxed">Before you commit, we share the exact per-seat monthly cost — rent, setup, maintenance, everything included. What you see is what you pay. Every month. No fine print, no surprises down the road.</p>
+<p class="text-slate-600 leading-relaxed">Before you commit, we share the exact per-seat monthly cost, rent, setup, maintenance, everything included. What you see is what you pay. Every month. No fine print, no surprises down the road.</p>
 </div>
 <div class="glass-card p-10 reveal delay-300">
 <div class="w-14 h-14 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center mb-8 text-brand-rose shadow-[0_0_15px_rgba(244,63,94,0.15)]"><i class="fas fa-tools text-2xl"></i></div>
 <h3 class="text-xl font-bold mb-4 text-slate-900">Facility Management</h3>
-<p class="text-slate-600 leading-relaxed">Already have an office? We run it for you. Housekeeping, vendors, compliance — one team, one invoice.</p>
+<p class="text-slate-600 leading-relaxed">Already have an office? We run it for you. Housekeeping, vendors, compliance, one team, one invoice.</p>
 <a href="/facility-management-mumbai" class="inline-flex items-center gap-2 mt-6 text-xs font-black uppercase tracking-widest text-brand-rose hover:gap-4 transition-all cursor-pointer">Explore Facility Management <i class="fas fa-arrow-right"></i></a>
 </div>
 </div>
@@ -189,7 +189,7 @@ Your details are safe with us. No spam, ever.
 <div class="w-16 h-16 bg-brand-cyan/10 border border-brand-cyan/30 rounded-2xl flex items-center justify-center mb-6 text-brand-cyan shadow-[0_0_15px_rgba(6,182,212,0.2)]"><i class="fas fa-drafting-compass text-2xl"></i></div>
 <p class="text-xs font-semibold uppercase tracking-wide text-brand-electric mb-4">Step 02: We Source, Negotiate, Set Up</p>
 <h3 class="text-2xl font-bold text-slate-900 mb-4">We Handle the Hard Part</h3>
-<p class="text-slate-600 leading-relaxed relative z-10">This is where most companies get stuck — chasing brokers, negotiating leases, coordinating fit-outs. We take all of that off your plate. We find the right property, close the deal, and get the space ready so your team can move in.</p>
+<p class="text-slate-600 leading-relaxed relative z-10">This is where most companies get stuck, chasing brokers, negotiating leases, coordinating fit-outs. We take all of that off your plate. We find the right property, close the deal, and get the space ready so your team can move in.</p>
 </div>
 <div class="glass-card p-10 reveal delay-200 relative overflow-hidden">
 <span class="absolute text-[180px] font-black opacity-5 text-slate-900 top-4 right-6 leading-none select-none">03</span>
@@ -326,23 +326,23 @@ Your details are safe with us. No spam, ever.
 <div class="max-w-7xl mx-auto px-6 text-center">
 <div class="mb-20 reveal">
 <h2 class="text-6xl text-slate-900 mb-8 font-black leading-tight">Why Companies Come to Us.</h2>
-<p class="text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">Getting a commercial office sorted in Mumbai usually takes longer than anyone plans for. Between brokers, landlords, fit-out vendors, and IT providers — it adds up fast. Here is what we do differently.</p>
+<p class="text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">Getting a commercial office sorted in Mumbai usually takes longer than anyone plans for. Between brokers, landlords, fit-out vendors, and IT providers, it adds up fast. Here is what we do differently.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal delay-100">
 <div class="glass-card p-12 group hover:border-brand-electric/50 transition-all text-left">
 <div class="w-16 h-16 bg-brand-electric/10 rounded-2xl flex items-center justify-center mb-8 text-brand-electric group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-map-marked-alt text-2xl"></i></div>
 <h3 class="text-2xl font-black mb-4 text-slate-900">We Know the Mumbai Market</h3>
-<p class="text-slate-600 leading-relaxed font-medium">We have walked these buildings ourselves. We know which ones have good lifts, reliable power, and reasonable landlords — and which ones look great online but waste your time. That saves you weeks of visits.</p>
+<p class="text-slate-600 leading-relaxed font-medium">We have walked these buildings ourselves. We know which ones have good lifts, reliable power, and reasonable landlords, and which ones look great online but waste your time. That saves you weeks of visits.</p>
 </div>
 <div class="glass-card p-12 group hover:border-brand-cyan/50 transition-all text-left">
 <div class="w-16 h-16 bg-brand-cyan/10 rounded-2xl flex items-center justify-center mb-8 text-brand-cyan group-hover:bg-brand-cyan group-hover:text-white transition-all duration-500"><i class="fas fa-user-tie text-2xl"></i></div>
 <h3 class="text-2xl font-black mb-4 text-slate-900">One Point of Contact</h3>
-<p class="text-slate-600 leading-relaxed font-medium">Most companies end up juggling 4-5 different people just to get an office ready. With us, you have one person to call. We coordinate everything behind the scenes — you just get updates and make decisions.</p>
+<p class="text-slate-600 leading-relaxed font-medium">Most companies end up juggling 4-5 different people just to get an office ready. With us, you have one person to call. We coordinate everything behind the scenes, you just get updates and make decisions.</p>
 </div>
 <div class="glass-card p-12 group hover:border-brand-violet/50 transition-all text-left">
 <div class="w-16 h-16 bg-brand-violet/10 rounded-2xl flex items-center justify-center mb-8 text-brand-violet group-hover:bg-brand-violet group-hover:text-white transition-all duration-500"><i class="fas fa-file-invoice-dollar text-2xl"></i></div>
 <h3 class="text-2xl font-black mb-4 text-slate-900">Clear, Predictable Costs</h3>
-<p class="text-slate-600 leading-relaxed font-medium">Before you sign anything, you will see the exact monthly cost per seat — including rent, setup, and maintenance. No vague "starting from" pricing. What we quote is what you pay, every month, for the full lease term.</p>
+<p class="text-slate-600 leading-relaxed font-medium">Before you sign anything, you will see the exact monthly cost per seat, including rent, setup, and maintenance. No vague "starting from" pricing. What we quote is what you pay, every month, for the full lease term.</p>
 </div>
 </div>
 </div>
@@ -419,7 +419,7 @@ Your details are safe with us. No spam, ever.
 <a href="/office-space-cost-mumbai-2026" class="glass-card p-8 group hover:border-brand-electric/40 cursor-pointer block">
 <div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center mb-6 text-brand-violet"><i class="fas fa-chart-bar text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-electric transition-colors">Office Space Cost in Mumbai 2026: Complete Area-by-Area Breakdown.</h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4">Real numbers — not "starting from" estimates. Detailed breakdown of rents, managed office costs, and hidden charges across Mumbai.</p>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">Real numbers, not "starting from" estimates. Detailed breakdown of rents, managed office costs, and hidden charges across Mumbai.</p>
 <span class="text-xs font-semibold text-brand-violet flex items-center gap-2 group-hover:gap-4 transition-all">See the Numbers <i class="fas fa-arrow-right"></i></span>
 </a>
 </div>

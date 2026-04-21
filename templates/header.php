@@ -31,7 +31,7 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#1e3a8a">
 
-    <!-- CRITICAL CSS — above-the-fold only, eliminates render-blocking for FCP -->
+    <!-- CRITICAL CSS, above-the-fold only, eliminates render-blocking for FCP -->
     <style>
         *,*::before,*::after{box-sizing:border-box}
         html{max-width:100vw;overflow-x:hidden;scroll-behavior:smooth}
@@ -47,42 +47,42 @@ $page_lcp_image = $page_lcp_image ?? '';
         /* Layout */
         .flex{display:flex}.flex-col{flex-direction:column}.min-h-screen{min-height:100vh}.flex-grow{flex-grow:1}.items-center{align-items:center}.justify-between{justify-content:space-between}.w-full{width:100%}
         /* Background */
-        .bg-tech-mesh{background-color:#f8fafc;background-image:radial-gradient(circle at 15% 50%,rgba(99,102,241,.12),transparent 30%),radial-gradient(circle at 85% 30%,rgba(6,182,212,.12),transparent 30%),linear-gradient(rgba(15,23,42,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.03) 1px,transparent 1px);background-size:100% 100%,100% 100%,30px 30px,30px 30px}
+        .bg-tech-mesh{background-color:#f8fafc;background-image:radial-gradient(circle at 15% 50%,rgba(99,102,241.12),transparent 30%),radial-gradient(circle at 85% 30%,rgba(6,182,212.12),transparent 30%),linear-gradient(rgba(15,23,42.03) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42.03) 1px,transparent 1px);background-size:100% 100%,100% 100%,30px 30px,30px 30px}
         /* Typography */
         h1,h2,h3{letter-spacing:-.03em;line-height:1.1;font-weight:800;word-break:break-word;overflow-wrap:break-word}
         @media(max-width:640px){h1{font-size:clamp(2rem,10vw,3rem)!important;line-height:1.1!important}h2{font-size:clamp(1.75rem,8vw,2.5rem)!important}}
         /* Glass card (hero form visible immediately) */
-        .glass-card{background:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,1);border-radius:2.5rem;box-shadow:0 10px 30px -10px rgba(15,23,42,.05),inset 0 0 0 1px rgba(255,255,255,.5)}
+        .glass-card{background:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,1);border-radius:2.5rem;box-shadow:0 10px 30px -10px rgba(15,23,42.05),inset 0 0 0 1px rgba(255,255,255.5)}
         /* Input */
         .input-premium{background:rgba(255,255,255,0.8);border:1px solid rgba(203,213,225,0.8);padding:1.25rem 1.5rem;border-radius:1rem;width:100%;color:#0f172a;font-weight:500;font-size:1rem;transition:all .3s ease}
         @media(max-width:768px){.input-premium{font-size:16px;padding:1rem 1.25rem}}
         /* Text gradients */
         .text-gradient-vibrant{background:linear-gradient(135deg,#6366f1 0%,#06b6d4 50%,#8b5cf6 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
         .text-gradient{background:linear-gradient(135deg,#334155 0%,#0f172a 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-        /* Reveal animation — GPU-only properties, subtle 16px lift */
-        .reveal{opacity:0;transform:translateY(16px);transition:opacity 0.65s cubic-bezier(.16,1,.3,1),transform 0.65s cubic-bezier(.16,1,.3,1)}
+        /* Reveal animation, GPU-only properties, subtle 16px lift */
+        .reveal{opacity:0;transform:translateY(16px);transition:opacity 0.65s cubic-bezier(.16,1.3,1),transform 0.65s cubic-bezier(.16,1.3,1)}
         .reveal.active{opacity:1;transform:translateY(0)}
         .delay-100{transition-delay:100ms}.delay-200{transition-delay:200ms}.delay-300{transition-delay:300ms}
-        /* Page entrance — fires on every load, cinematic fade-up */
+        /* Page entrance, fires on every load, cinematic fade-up */
         @keyframes pageEnter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-        .page-enter{animation:pageEnter 0.45s cubic-bezier(.16,1,.3,1) 0.04s both}
+        .page-enter{animation:pageEnter 0.45s cubic-bezier(.16,1.3,1) 0.04s both}
         /* Scroll progress bar */
-        #scroll-line{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,#6366f1,#06b6d4,#8b5cf6);z-index:1000;width:0;transition:width .1s;box-shadow:0 0 15px rgba(99,102,241,.5)}
-        /* Font Awesome — block display prevents icon boxes; icons invisible until loaded */
+        #scroll-line{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,#6366f1,#06b6d4,#8b5cf6);z-index:1000;width:0;transition:width .1s;box-shadow:0 0 15px rgba(99,102,241.5)}
+        /* Font Awesome, block display prevents icon boxes; icons invisible until loaded */
         @font-face{font-family:'Font Awesome 6 Free';font-display:block}
         @font-face{font-family:'Font Awesome 6 Brands';font-display:block}
         @font-face{font-family:'Font Awesome 6 Free';font-style:normal;font-weight:900;font-display:block}
-        /* Plus Jakarta Sans fallback — prevents font-swap layout shift */
+        /* Plus Jakarta Sans fallback, prevents font-swap layout shift */
         @font-face{font-family:'Plus Jakarta Sans';font-display:optional}
         /* Prevent image overflow */
         img,video,iframe,canvas,svg{max-width:100%}
         section{max-width:100vw;overflow-x:hidden}
-        /* Logo fixed size — prevents FOUC/enlarge before tailwind.min.css loads */
+        /* Logo fixed size, prevents FOUC/enlarge before tailwind.min.css loads */
         .logo-img{height:2.5rem!important;width:auto!important}
         @media(min-width:640px){.logo-img{height:3.5rem!important;width:auto!important}}
         @media(min-width:1024px){.logo-img{height:5rem!important;width:auto!important}}
         /* Prevent CLS: ensure positioning classes work before Tailwind loads */
-        .glow-blob,.orb-drift{position:absolute;pointer-events:none;overflow:hidden}
+        .glow-blob.orb-drift{position:absolute;pointer-events:none;overflow:hidden}
         .fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}
         .inset-0{inset:0}.pointer-events-none{pointer-events:none}.overflow-hidden{overflow:hidden}.z-0{z-index:0}
         /* Screen reader only */
@@ -105,11 +105,11 @@ $page_lcp_image = $page_lcp_image ?? '';
         .text-white{color:#fff}.text-slate-500{color:#64748b}.text-slate-600{color:#475569}.text-slate-700{color:#334155}.text-slate-800{color:#1e293b}.text-slate-900{color:#0f172a}
         .text-brand-electric{color:#6366f1}
         .bg-white{background-color:#fff}.bg-brand-electric{background-color:#6366f1}.bg-green-500{background-color:#22c55e}
-        .bg-brand-electric\/8{background-color:rgba(99,102,241,.08)}
+        .bg-brand-electric\/8{background-color:rgba(99,102,241.08)}
         .border{border-width:1px}.border-t-4{border-top-width:4px}.border-t-brand-electric{border-top-color:#6366f1}
-        .border-brand-electric\/20{border-color:rgba(99,102,241,.2)}
+        .border-brand-electric\/20{border-color:rgba(99,102,241.2)}
         .rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}
-        .shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,.05)}
+        .shadow-sm{box-shadow:0 1px 2px rgba(0,0,0.05)}
         .leading-tight{line-height:1.25}.leading-relaxed{line-height:1.625}
         .text-center{text-align:center}.uppercase{text-transform:uppercase}
         .tracking-wide{letter-spacing:.025em}
@@ -120,15 +120,15 @@ $page_lcp_image = $page_lcp_image ?? '';
         .self-start{align-self:flex-start}
         .order-1{order:1}.order-2{order:2}
         .max-w-lg{max-width:32rem}
-        .animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}
+        .animate-pulse{animation:pulse 2s cubic-bezier(.4,0.6,1) infinite}
         @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
-        .transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:150ms}
-        .transition-colors{transition-property:color,background-color,border-color;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:150ms}
+        .transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0.2,1);transition-duration:150ms}
+        .transition-colors{transition-property:color,background-color,border-color;transition-timing-function:cubic-bezier(.4,0.2,1);transition-duration:150ms}
         @media(min-width:640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:h-14{height:3.5rem}.sm\:w-auto{width:auto}.sm\:flex-row{flex-direction:row}}
         @media(min-width:768px){.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:h-20{height:5rem}.md\:pt-20{padding-top:5rem}}
         @media(min-width:1024px){.lg\:grid-cols-\[1fr_400px\]{grid-template-columns:1fr 400px}.lg\:gap-12{gap:3rem}.lg\:py-16{padding-top:4rem;padding-bottom:4rem}.lg\:p-8{padding:2rem}.lg\:text-5xl{font-size:3rem;line-height:1}.lg\:text-lg{font-size:1.125rem}.lg\:text-xl{font-size:1.25rem}.lg\:mb-6{margin-bottom:1.5rem}.lg\:mb-8{margin-bottom:2rem}.lg\:order-1{order:1}.lg\:order-2{order:2}.lg\:sticky{position:sticky}.lg\:top-\[100px\]{top:100px}.lg\:h-20{height:5rem}.lg\:h-28{height:7rem}.lg\:pt-28{padding-top:7rem}}
         @media(min-width:1280px){.xl\:flex{display:flex}.xl\:hidden{display:none}}
-        /* Hide JS-controlled elements before Tailwind loads — prevents flash */
+        /* Hide JS-controlled elements before Tailwind loads, prevents flash */
         /* transition:none!important blocks any CSS transition firing during async CSS load */
         #solutions-panel{opacity:0;visibility:hidden;transition:none!important}
         #fab-container{opacity:0;pointer-events:none;transition:none!important}
@@ -154,7 +154,7 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link rel="alternate" type="text/plain" href="https://www.corpeasy.in/llms.txt" title="LLMs Context">
     <link rel="alternate" type="text/plain" href="https://www.corpeasy.in/llms-full.txt" title="LLMs Full Context">
 
-    <!-- Analytics — deferred to avoid blocking FCP/LCP -->
+    <!-- Analytics, deferred to avoid blocking FCP/LCP -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -403,11 +403,11 @@ $page_lcp_image = $page_lcp_image ?? '';
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" onload="this.rel='stylesheet'">
 
     <?php if (!empty($page_lcp_image)): ?>
-    <!-- LCP image preload — tells browser to fetch hero image immediately -->
+    <!-- LCP image preload, tells browser to fetch hero image immediately -->
     <link rel="preload" as="image" href="<?php echo htmlspecialchars($page_lcp_image); ?>" fetchpriority="high">
     <?php endif; ?>
 
-    <!-- Tailwind (non-blocking — critical classes inlined above) -->
+    <!-- Tailwind (non-blocking, critical classes inlined above) -->
     <link rel="stylesheet" href="/tailwind.min.css?v=20260413" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="/tailwind.min.css?v=20260413"></noscript>
     <!-- Style.css = non-blocking (decorative animations, card styles, etc.) -->
@@ -528,13 +528,13 @@ $page_lcp_image = $page_lcp_image ?? '';
     <!-- MAIN CONTENT -->
     <main class="flex-grow pt-16 md:pt-20 lg:pt-28 page-enter">
 
-    <!-- ═══ NOT COWORKING BAR — inline styles to render instantly (Tailwind loads async) ═══ -->
+    <!-- ═══ NOT COWORKING BAR, inline styles to render instantly (Tailwind loads async) ═══ -->
     <div style="width:100%;background:#000;border-bottom:2px solid #dc2626;color:#fff;">
       <div style="max-width:80rem;margin:0 auto;padding:10px 16px;text-align:center;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
         <p style="margin:0;font-size:13px;line-height:1.4;letter-spacing:0.02em;">
           <span style="color:#f87171;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;">We are <u>NOT</u> a coworking space.</span>
           <span style="color:#64748b;margin:0 8px;display:inline-block;">|</span>
-          <span style="color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">Your own private office — built &amp; run by CorpEasy.</span>
+          <span style="color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">Your own private office, built &amp; run by CorpEasy.</span>
         </p>
       </div>
     </div>

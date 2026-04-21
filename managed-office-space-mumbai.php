@@ -99,7 +99,7 @@ include 'templates/header.php';
 
 <section class="py-20">
 <div class="max-w-7xl mx-auto px-6">
-<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-6 text-center">How It Works — 4 Simple Steps.</h2>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-6 text-center">How It Works, 4 Simple Steps.</h2>
 <p class="text-lg text-slate-500 mb-16 text-center max-w-3xl mx-auto">From your first call to moving in, here is exactly what happens.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="glass-card p-8 relative">
@@ -174,7 +174,7 @@ include 'templates/header.php';
 </tr>
 </thead>
 <tbody class="text-sm text-slate-600">
-<tr class="border-b border-slate-100"><td class="py-4 px-4 font-semibold">Private Space</td><td class="py-4 px-4 text-green-600 font-bold">Yes — dedicated office</td><td class="py-4 px-4">Shared / hot desks</td><td class="py-4 px-4">Yes — your own lease</td></tr>
+<tr class="border-b border-slate-100"><td class="py-4 px-4 font-semibold">Private Space</td><td class="py-4 px-4 text-green-600 font-bold">Yes, dedicated office</td><td class="py-4 px-4">Shared / hot desks</td><td class="py-4 px-4">Yes, your own lease</td></tr>
 <tr class="border-b border-slate-100"><td class="py-4 px-4 font-semibold">Setup Time</td><td class="py-4 px-4 text-green-600 font-bold">2-4 weeks</td><td class="py-4 px-4">1 day</td><td class="py-4 px-4">3-6 months</td></tr>
 <tr class="border-b border-slate-100"><td class="py-4 px-4 font-semibold">Upfront Cost</td><td class="py-4 px-4 text-green-600 font-bold">Low (deposit only)</td><td class="py-4 px-4">Very low</td><td class="py-4 px-4">High (deposit + interior + furniture)</td></tr>
 <tr class="border-b border-slate-100"><td class="py-4 px-4 font-semibold">Monthly Cost (per seat)</td><td class="py-4 px-4">₹10,000 - ₹35,000</td><td class="py-4 px-4">₹5,000 - ₹15,000</td><td class="py-4 px-4">₹8,000 - ₹30,000 + overheads</td></tr>
@@ -241,7 +241,7 @@ include 'templates/header.php';
 <h3 class="text-lg font-bold text-slate-900">Can I put my company branding in a managed office?</h3>
 <i class="fas fa-chevron-down text-brand-electric faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Yes. Unlike coworking spaces, a managed office is your dedicated space. You can add your company signage, brand colors, and logo at the entrance and within the office. The space looks and feels like your own office — because it is.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Yes. Unlike coworking spaces, a managed office is your dedicated space. You can add your company signage, brand colors, and logo at the entrance and within the office. The space looks and feels like your own office, because it is.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">

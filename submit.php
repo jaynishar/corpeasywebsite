@@ -1,29 +1,29 @@
 <?php
 /*
  * ═══════════════════════════════════════════════════════════
- * CORPEASY — HOSTINGER DEPLOYMENT GUIDE
+ * CORPEASY, HOSTINGER DEPLOYMENT GUIDE
  * ═══════════════════════════════════════════════════════════
  * 
- * STEP 1 — DATABASE SETUP:
+ * STEP 1, DATABASE SETUP:
  *   a. Login to Hostinger hPanel → Hosting → Manage
  *   b. Go to Databases → MySQL Databases
  *   c. Create a new database and note the credentials
  *   d. Click phpMyAdmin → Select your database → SQL tab
  *   e. Paste contents of db_setup.sql and click Go
  * 
- * STEP 2 — CONFIGURE THIS FILE:
+ * STEP 2, CONFIGURE THIS FILE:
  *   a. Edit submit.php lines 48-56 with your real DB credentials
  *   b. Edit admin.php lines 10-13 with same DB credentials
  *   c. Change NOTIFICATION_EMAIL to your real email
  *   d. Change ALLOWED_ORIGIN to your real domain
  * 
- * STEP 3 — CREATE ADMIN USER:
+ * STEP 3, CREATE ADMIN USER:
  *   a. Upload all files to Hostinger via File Manager or FTP
  *   b. Visit: https://www.corpeasy.in/admin.php?setup=1
  *   c. Create your admin username and password
  *   d. Login at: https://www.corpeasy.in/admin.php
  * 
- * STEP 4 — SECURITY:
+ * STEP 4, SECURITY:
  *   a. Add this to your .htaccess to block direct DB file access:
  *      <Files "leads_backup.json">
  *        Order deny,allow
@@ -31,7 +31,7 @@
  *      </Files>
  *   b. Replace GTM-XXXXXXX in index.html with real GTM ID
  * 
- * STEP 5 — HOSTINGER EMAIL:
+ * STEP 5, HOSTINGER EMAIL:
  *   If PHP mail() doesn't work on Hostinger, go to hPanel →
  *   Email → Create an email account (e.g. no-reply@corpeasy.in)
  *   Then use Hostinger's SMTP settings in submit.php instead.
@@ -201,10 +201,10 @@ if (!$saved_to_db) {
 }
 
 // ── EMAIL NOTIFICATION ───────────────────────────
-$subject = "🏢 New Lead: {$form_type} | {$company_name} — CorpEasy";
+$subject = "🏢 New Lead: {$form_type} | {$company_name}, CorpEasy";
 $body = "
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-NEW LEAD RECEIVED — CORPEASY
+NEW LEAD RECEIVED, CORPEASY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Form Type:    {$form_type}

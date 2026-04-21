@@ -1,7 +1,7 @@
 <?php
 $page_id = 'managed-bkc';
 $page_title = 'Managed Office BKC Mumbai | ₹18,000/Seat | CorpEasy';
-$page_description = 'Fully managed office space in BKC Mumbai from ₹18,000/seat/month. Near Diamond Bourse, SEBI, MMRDA. Zero setup hassle. Move in 2–4 weeks.';
+$page_description = 'Fully managed office space in BKC Mumbai from ₹18,000/seat/month. Near Diamond Bourse, SEBI, MMRDA. Zero setup hassle. Move in 2-4 weeks.';
 $page_keywords = 'managed office space BKC, managed office Bandra Kurla Complex, office space BKC Mumbai, serviced office BKC, private office BKC Mumbai, office space near SEBI Mumbai, office space BKC 2026, office for teams BKC, BKC office cost per seat, Grade A office BKC Mumbai';
 $page_canonical = 'https://www.corpeasy.in/managed-office-bkc';
 $page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
@@ -87,7 +87,7 @@ include 'templates/header.php';
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-blue/30 border border-brand-electric/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-electric shadow-[0_0_20px_rgba(0,240,255,0.2)]"><i class="fas fa-couch"></i></div>
 <h3 class="text-2xl font-bold mb-4 text-slate-900">Fully Set Up Workspace</h3>
-<p class="text-slate-600 leading-relaxed">We source commercial space in BKC, negotiate the lease, and set up your office with furniture, internet, electrical fittings, and access control. You walk into a workspace that is ready from Day 1 — desks, chairs, meeting rooms, and pantry included.</p>
+<p class="text-slate-600 leading-relaxed">We source commercial space in BKC, negotiate the lease, and set up your office with furniture, internet, electrical fittings, and access control. You walk into a workspace that is ready from Day 1, desks, chairs, meeting rooms, and pantry included.</p>
 </div>
 <div class="glass-card p-10">
 <div class="w-16 h-16 bg-brand-cyan/20 border border-brand-cyan/50 rounded-2xl flex items-center justify-center text-3xl mb-8 text-brand-cyan shadow-[0_0_20px_rgba(6,182,212,0.2)]"><i class="fas fa-file-invoice-dollar"></i></div>
@@ -105,7 +105,7 @@ include 'templates/header.php';
 
 <section class="py-20 bg-white/40">
 <div class="max-w-4xl mx-auto px-6">
-<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">BKC Office Market —<br><span class="text-gradient-vibrant">What to Expect.</span></h2>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">BKC Office Market , <br><span class="text-gradient-vibrant">What to Expect.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">BKC is a premium micro-market, and pricing reflects that. Per-seat costs for a managed office in Bandra Kurla Complex typically range from <strong>₹18,000 to ₹35,000 per month</strong>. The wide range depends on several factors: the specific building, the floor level, whether the space is pre-fitted or bare shell, and the size of your team. Larger teams (40+ seats) generally get better per-seat rates because the fixed costs are spread across more people.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Most managed offices in BKC are available in configurations of <strong>15 to 80 seats</strong>. You will find options in well-known commercial complexes near Platina, One BKC, Trade World, Crescenzo, and the NESCO area. Some buildings offer pre-fitted floors that can be ready within 7-10 days, while bare shell spaces take 3-4 weeks for setup.</p>
 <p class="text-lg text-slate-600 leading-relaxed">Lease terms in BKC usually start at <strong>12 months</strong>, with most landlords preferring 24-36 month commitments for managed office setups. We negotiate lock-in periods and exit clauses on your behalf to build in reasonable flexibility. Security deposits are typically 3-6 months of rent, which we work to minimize during negotiations.</p>
@@ -163,7 +163,7 @@ include 'templates/header.php';
 <h3 class="text-lg font-bold text-slate-900">Which buildings in BKC does CorpEasy operate in?</h3>
 <i class="fas fa-chevron-down text-brand-electric faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">We source spaces across BKC including buildings near Platina, One BKC, Trade World, Crescenzo, and surrounding commercial complexes. The specific building depends on your requirements — team size, budget, and floor preferences. We shortlist 3-5 options for you to evaluate before making a decision.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">We source spaces across BKC including buildings near Platina, One BKC, Trade World, Crescenzo, and surrounding commercial complexes. The specific building depends on your requirements, team size, budget, and floor preferences. We shortlist 3-5 options for you to evaluate before making a decision.</div>
 </div>
 </div>
 </div>

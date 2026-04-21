@@ -72,7 +72,7 @@ include 'templates/header.php';
 <p class="text-lg text-slate-600 leading-relaxed mb-6">BKC commands the highest commercial rents in Mumbai, ranging from <strong>₹250 to ₹380 per sq ft per month</strong> depending on the building, floor level, and furnishing status. Premium towers like One BKC and Maker Maxity sit at the top end, while slightly older buildings and lower floors start closer to ₹250.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Typical office sizes in BKC range from <strong>2,000 to 20,000 sq ft</strong>. A 5,000 sq ft office (roughly 60-70 seats) in a mid-range BKC building costs approximately ₹15-17 lakh per month in rent alone. Add CAM charges of ₹25-40 per sq ft and parking at ₹10,000-15,000 per spot, and the total occupancy cost is significantly higher than the base rent.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Despite the premium pricing, vacancy rates in BKC remain low. Most available inventory is absorbed within 2-3 months of hitting the market. If you are seriously looking, acting quickly on verified options matters more here than in any other Mumbai micro-market.</p>
-<p class="text-lg text-slate-600 leading-relaxed">Security deposits in BKC are typically <strong>4 to 6 months</strong> of rent (interest-free), with lease terms of 3-5 years and a standard rent escalation of 5% per annum. Some landlords in premium buildings push for 6-month deposits — this is negotiable, and we help you bring it down.</p>
+<p class="text-lg text-slate-600 leading-relaxed">Security deposits in BKC are typically <strong>4 to 6 months</strong> of rent (interest-free), with lease terms of 3-5 years and a standard rent escalation of 5% per annum. Some landlords in premium buildings push for 6-month deposits, this is negotiable, and we help you bring it down.</p>
 </div>
 </section>
 
@@ -117,15 +117,15 @@ include 'templates/header.php';
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-parking text-sm"></i></div>
-<div><h3 class="text-lg font-bold text-slate-900 mb-1">Parking Is a Premium</h3><p class="text-slate-600 leading-relaxed">Parking in BKC commercial buildings costs ₹10,000 to ₹15,000 per spot per month. Most buildings allocate 1 spot per 1,000-1,500 sq ft. If you need additional spots, negotiate them into the lease before signing — adding them later is expensive or impossible.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Parking Is a Premium</h3><p class="text-slate-600 leading-relaxed">Parking in BKC commercial buildings costs ₹10,000 to ₹15,000 per spot per month. Most buildings allocate 1 spot per 1,000-1,500 sq ft. If you need additional spots, negotiate them into the lease before signing, adding them later is expensive or impossible.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-money-bill-wave text-sm"></i></div>
-<div><h3 class="text-lg font-bold text-slate-900 mb-1">Deposit Negotiation</h3><p class="text-slate-600 leading-relaxed">Standard security deposit in BKC is 4-6 months rent (interest-free). On a ₹15 lakh/month office, that is ₹60-90 lakh locked up. Some landlords start at 6 months — we typically negotiate this down to 4 months for our clients, freeing up working capital.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Deposit Negotiation</h3><p class="text-slate-600 leading-relaxed">Standard security deposit in BKC is 4-6 months rent (interest-free). On a ₹15 lakh/month office, that is ₹60-90 lakh locked up. Some landlords start at 6 months, we typically negotiate this down to 4 months for our clients, freeing up working capital.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-lock text-sm"></i></div>
-<div><h3 class="text-lg font-bold text-slate-900 mb-1">Lock-in and Escalation</h3><p class="text-slate-600 leading-relaxed">Most BKC leases have a 24-36 month lock-in and 5% annual escalation. If you are a growing company, negotiate a right of first refusal for adjacent floors and ensure the escalation clause is capped. Some landlords try to apply escalation on CAM as well — push back on this.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Lock-in and Escalation</h3><p class="text-slate-600 leading-relaxed">Most BKC leases have a 24-36 month lock-in and 5% annual escalation. If you are a growing company, negotiate a right of first refusal for adjacent floors and ensure the escalation clause is capped. Some landlords try to apply escalation on CAM as well, push back on this.</p></div>
 </div>
 </div>
 </div>
@@ -167,7 +167,7 @@ include 'templates/header.php';
 <a href="/office-space-for-rent-mumbai" class="glass-card p-8 hover:border-brand-cyan/30 transition-all group">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-4 group-hover:bg-brand-cyan group-hover:text-white transition-all"><i class="fas fa-city text-lg"></i></div>
 <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">Office Space in Mumbai</h3>
-<p class="text-sm text-slate-600">Explore all commercial zones across Mumbai — BKC, Lower Parel, Andheri, Goregaon, Powai, and more.</p>
+<p class="text-sm text-slate-600">Explore all commercial zones across Mumbai, BKC, Lower Parel, Andheri, Goregaon, Powai, and more.</p>
 </a>
 <a href="/office-for-rent-lower-parel" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-building text-lg"></i></div>

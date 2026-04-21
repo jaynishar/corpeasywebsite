@@ -1,7 +1,7 @@
 <?php
 $page_id = 'about';
 $page_title = 'About CorpEasy | Managed Office Space Experts Mumbai';
-$page_description = 'CorpEasy is Mumbai\'s managed office space company — founded by Dev Doshi & Jay Nishar. We find, set up, and manage office space for growing businesses.';
+$page_description = 'CorpEasy is Mumbai\'s managed office space company, founded by Dev Doshi & Jay Nishar. We find, set up, and manage office space for growing businesses.';
 $page_keywords = 'about CorpEasy, CorpEasy Mumbai, workspace solutions company Mumbai, managed office company Mumbai, office space solutions Mumbai, Dev Doshi CorpEasy, Jay Nishar CorpEasy, commercial real estate Mumbai startup';
 $page_canonical = 'https://www.corpeasy.in/about';
 $page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
@@ -88,7 +88,7 @@ include 'templates/header.php';
 <div class="relative pl-16">
 <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-brand-electric z-10"></div>
 <h3 class="text-gradient-vibrant text-2xl font-black mb-2">2026 and Beyond</h3>
-<div class="glass-card p-6 reveal delay-300">Building our client base across Mumbai. Helping startups, growing teams, and property owners navigate the city's commercial office market. We are early, and we are focused.</div>
+<div class="glass-card p-6 reveal delay-300">Building our client base across Mumbai. Helping startups, growing teams and property owners find the right commercial office in the city. We are early, and we are focused.</div>
 </div>
 </div>
 </div>
@@ -103,25 +103,25 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-building text-xl"></i></div>
 <h3 class="text-xl font-black text-slate-900 mb-3">Managed Office Space</h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4">We find the right commercial space in Mumbai, negotiate the lease, set up the office end-to-end, and handle ongoing management. You pay a single monthly fee per seat. Move-in ready in 2–4 weeks.</p>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">We find the right commercial space in Mumbai, negotiate the lease, set up the office end-to-end, and handle ongoing management. You pay a single monthly fee per seat. Move-in ready in 2-4 weeks.</p>
 <a href="/managed-office-space-mumbai" class="text-brand-electric text-sm font-semibold hover:underline">Explore Managed Office Space →</a>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-search text-xl"></i></div>
 <h3 class="text-xl font-black text-slate-900 mb-3">Office for Rent</h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4">For companies that want to lease their own space, we handle the search, shortlisting, landlord negotiations, and lease review. Free for tenants — we are paid by the landlord on successful placement.</p>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">For companies that want to lease their own space, we handle the search, shortlisting, landlord negotiations, and lease review. Free for tenants, we are paid by the landlord on successful placement.</p>
 <a href="/office-space-for-rent-mumbai" class="text-brand-electric text-sm font-semibold hover:underline">Find Office Space for Rent →</a>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-cogs text-xl"></i></div>
 <h3 class="text-xl font-black text-slate-900 mb-3">Facility Management</h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4">We manage day-to-day office operations for businesses in Mumbai — housekeeping, maintenance, vendor management, security, and IT support — from ₹2,500 per seat per month.</p>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">We manage day-to-day office operations for businesses in Mumbai, housekeeping, maintenance, vendor management, security, and IT support, from ₹2,500 per seat per month.</p>
 <a href="/facility-management-mumbai" class="text-brand-electric text-sm font-semibold hover:underline">View Facility Management Services →</a>
 </div>
 </div>
 <div class="glass-card p-8 lg:p-12 text-center">
 <h3 class="text-2xl font-black text-slate-900 mb-4">Why Businesses Choose CorpEasy for Managed Office Space in Mumbai</h3>
-<p class="text-slate-600 leading-relaxed max-w-3xl mx-auto mb-6">Setting up an office in Mumbai involves multiple decision points — the right micro-market, the right building, lease terms that do not trap you, furniture procurement, IT setup, and then ongoing maintenance. Most companies spend 3–6 months on this process and still get parts of it wrong. CorpEasy exists to make that process simple. We have worked with teams ranging from 10 seats to over 100 seats, across BKC, Lower Parel, Goregaon, and Andheri. Every engagement is handled directly by our founding team.</p>
+<p class="text-slate-600 leading-relaxed max-w-3xl mx-auto mb-6">Setting up an office in Mumbai involves multiple decision points, the right micro-market, the right building, lease terms that do not trap you, furniture procurement, IT setup, and then ongoing maintenance. Most companies spend 3-6 months on this process and still get parts of it wrong. CorpEasy exists to make that process simple. We have worked with teams ranging from 10 seats to over 100 seats, across BKC, Lower Parel, Goregaon, and Andheri. Every engagement is handled directly by our founding team.</p>
 <a href="/contact" class="bg-brand-electric text-white px-8 py-4 rounded-lg font-semibold text-sm hover:scale-105 transition-all inline-block">Talk to Our Team</a>
 </div>
 </div>

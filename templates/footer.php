@@ -13,7 +13,7 @@
                             <img src="/CORPEASYFOOTER-sm.png" alt="CorpEasy Footer Logo" class="logo-img h-32 lg:h-44 w-auto object-contain object-left" width="220" height="124" loading="lazy">
                         </picture>
                     </div>
-                    <p class="text-slate-600 text-lg font-medium leading-relaxed max-w-sm mb-10">We help businesses across Mumbai find, set up, and run their office spaces — without the usual headaches. One team, one monthly cost, and a workspace that is ready when you are.</p>
+                    <p class="text-slate-600 text-lg font-medium leading-relaxed max-w-sm mb-10">We help businesses across Mumbai find, set up, and run their office spaces, without the usual headaches. One team, one monthly cost, and a workspace that is ready when you are.</p>
                     <div class="flex space-x-4">
                         <a href="https://www.linkedin.com/company/corpeasy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 bg-white/70 rounded-lg flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://www.instagram.com/corpeasy" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 bg-white/70 rounded-lg flex items-center justify-center hover:bg-brand-electric hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
@@ -109,7 +109,7 @@
       </div>
     </div>
 
-    <!-- Interactions JS (deferred — non-blocking) -->
+    <!-- Interactions JS (deferred, non-blocking) -->
     <script src="/interactions.min.js?v=20260403" defer></script>
 </body>
 </html>

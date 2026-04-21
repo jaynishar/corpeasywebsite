@@ -131,8 +131,8 @@ try {
         .header { background: #667eea; color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
         .header h1 { font-size: 20px; }
         .header-actions { display: flex; gap: 10px; }
-        .logout, .export-btn { background: rgba(255,255,255,0.2); color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; font-size: 14px; }
-        .logout:hover, .export-btn:hover { background: rgba(255,255,255,0.3); }
+        .logout.export-btn { background: rgba(255,255,255,0.2); color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; font-size: 14px; }
+        .logout:hover.export-btn:hover { background: rgba(255,255,255,0.3); }
         .container { max-width: 1400px; margin: 30px auto; padding: 0 20px; }
         .stats { display: flex; gap: 20px; margin-bottom: 30px; }
         .stat-box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex: 1; text-align: center; }

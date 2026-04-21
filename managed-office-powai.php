@@ -1,7 +1,7 @@
 <?php
 $page_id = 'managed-powai';
 $page_title = 'Managed Office Space in Powai Mumbai | From ₹10,000/Seat | CorpEasy';
-$page_description = 'Fully managed office space in Powai Mumbai from ₹10,000/seat/month. Near IIT Bombay, Hiranandani Business Park. Zero setup hassle. Move in 2–4 weeks.';
+$page_description = 'Fully managed office space in Powai Mumbai from ₹10,000/seat/month. Near IIT Bombay, Hiranandani Business Park. Zero setup hassle. Move in 2-4 weeks.';
 $page_keywords = 'managed office space Powai, managed office Hiranandani, office space Powai Mumbai, serviced office Powai, private office Powai Mumbai, office space near IIT Bombay, office space Powai 2026, office for teams Powai, Powai office cost per seat, Grade A office Powai Mumbai, managed workspace Powai';
 $page_canonical = 'https://www.corpeasy.in/managed-office-powai';
 $page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
@@ -56,7 +56,7 @@ include 'templates/header.php';
 <div class="max-w-7xl mx-auto px-6 relative z-10">
 <div class="text-center">
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-6">Why Powai for Your Office?</h2>
-<p class="text-xl text-slate-500 mb-16 max-w-3xl mx-auto">Powai is Mumbai's tech and innovation hub. Home to IIT Bombay, Hiranandani Business Park, and a thriving startup ecosystem — it offers a campus-style work environment at competitive prices.</p>
+<p class="text-xl text-slate-500 mb-16 max-w-3xl mx-auto">Powai is Mumbai's tech and innovation hub. Home to IIT Bombay, Hiranandani Business Park, and a thriving startup ecosystem, it offers a campus-style work environment at competitive prices.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
 <div class="glass-card p-8">
@@ -67,12 +67,12 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-tree text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Campus-Style Environment</h3>
-<p class="text-slate-600 leading-relaxed">Hiranandani Business Park offers a planned, pedestrian-friendly campus with tree-lined streets, restaurants, cafes, and retail. It feels more like a Silicon Valley campus than a typical Mumbai commercial district — which matters for employee satisfaction and retention.</p>
+<p class="text-slate-600 leading-relaxed">Hiranandani Business Park offers a planned, pedestrian-friendly campus with tree-lined streets, restaurants, cafes, and retail. It feels more like a Silicon Valley campus than a typical Mumbai commercial district, which matters for employee satisfaction and retention.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-rupee-sign text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Best Value in Mumbai</h3>
-<p class="text-slate-600 leading-relaxed">Powai offers Grade A office space at ₹115 to ₹310 per sq ft — significantly lower than BKC or Lower Parel while maintaining comparable infrastructure quality. For companies that want premium space without premium pricing, Powai is the smartest choice in Mumbai.</p>
+<p class="text-slate-600 leading-relaxed">Powai offers Grade A office space at ₹115 to ₹310 per sq ft, significantly lower than BKC or Lower Parel while maintaining comparable infrastructure quality. For companies that want premium space without premium pricing, Powai is the smartest choice in Mumbai.</p>
 </div>
 </div>
 <p class="text-lg text-slate-600 leading-relaxed mt-12 max-w-4xl mx-auto text-center">Powai is also well-connected via the Eastern Express Highway and is just 15 minutes from the airport via the JVLR. The upcoming Metro Line 6 (Powai to Vikhroli) will further improve connectivity. Companies like Deloitte, Cognizant, and several unicorns have chosen Powai for their offices.</p>
@@ -105,7 +105,7 @@ include 'templates/header.php';
 
 <section class="py-20 bg-white/40">
 <div class="max-w-4xl mx-auto px-6">
-<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Powai Office Market —<br><span class="text-gradient-vibrant">What to Expect.</span></h2>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Powai Office Market , <br><span class="text-gradient-vibrant">What to Expect.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Powai offers some of the most competitive pricing for Grade A office space in Mumbai. Per-seat costs for a managed office in Powai typically range from <strong>₹10,000 to ₹20,000 per month</strong>. The range depends on the specific building, floor level, and whether the space is pre-fitted or bare shell. Buildings in Hiranandani Business Park command slightly higher rates than those in the surrounding Powai area.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Managed offices in Powai are available in configurations from <strong>10 to 100+ seats</strong>. You will find options in Chromium Tower, Powai Plaza, Hiranandani Business Park, and nearby commercial complexes. Pre-fitted spaces can be ready in 7-10 days, while bare shell setups with custom interiors take 3-4 weeks.</p>
 <p class="text-lg text-slate-600 leading-relaxed">Lease terms in Powai usually start at <strong>11-12 months</strong>, with most landlords preferring 24-36 month commitments. We negotiate lock-in periods and exit clauses on your behalf. Security deposits are typically 3-5 months of rent, which we work to minimize during negotiations.</p>
@@ -134,7 +134,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-blue/10 border border-brand-blue/30 rounded-xl flex items-center justify-center text-brand-blue mb-6"><i class="fas fa-piggy-bank text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Cost-Conscious Teams</h3>
-<p class="text-slate-600 leading-relaxed">Companies that want Grade A infrastructure without BKC or Lower Parel pricing. Powai delivers the best value proposition in Mumbai's commercial real estate market — premium space at practical costs.</p>
+<p class="text-slate-600 leading-relaxed">Companies that want Grade A infrastructure without BKC or Lower Parel pricing. Powai delivers the best value proposition in Mumbai's commercial real estate market, premium space at practical costs.</p>
 </div>
 </div>
 </div>

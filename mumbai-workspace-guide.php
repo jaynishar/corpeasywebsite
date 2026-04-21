@@ -53,34 +53,34 @@ include 'templates/header.php';
 <h3>What Office Space in Mumbai Actually Costs</h3>
 <p>The headline rent is rarely the full cost. Here is what you actually need to budget for:</p>
 <ul>
-<li><strong>Base rent:</strong> ₹100–₹750 per sq ft/month depending on area</li>
-<li><strong>Security deposit:</strong> 3–6 months' rent paid upfront (this is your biggest single cash outlay)</li>
-<li><strong>Maintenance charges (CAM):</strong> ₹15–₹60 per sq ft/month on top of rent</li>
+<li><strong>Base rent:</strong> ₹100-₹750 per sq ft/month depending on area</li>
+<li><strong>Security deposit:</strong> 3-6 months' rent paid upfront (this is your biggest single cash outlay)</li>
+<li><strong>Maintenance charges (CAM):</strong> ₹15-₹60 per sq ft/month on top of rent</li>
 <li><strong>GST:</strong> 18% on rent + CAM (claimable as ITC for most registered businesses)</li>
-<li><strong>Parking:</strong> ₹3,000–₹12,000 per car/month</li>
-<li><strong>Interior setup:</strong> ₹800–₹2,000 per sq ft (one-time, for bare shells)</li>
-<li><strong>Furniture:</strong> ₹50,000–₹1,00,000 per workstation</li>
+<li><strong>Parking:</strong> ₹3,000-₹12,000 per car/month</li>
+<li><strong>Interior setup:</strong> ₹800-₹2,000 per sq ft (one-time, for bare shells)</li>
+<li><strong>Furniture:</strong> ₹50,000-₹1,00,000 per workstation</li>
 </ul>
-<p>If you take a bare shell and do your own fit-out, add ₹800 to ₹2,000 per sq ft and three to six months of setup time. For a 2,000 sq ft office, that is ₹16–₹40 lakhs in setup costs before you even start paying rent.</p>
+<p>If you take a bare shell and do your own fit-out, add ₹800 to ₹2,000 per sq ft and three to six months of setup time. For a 2,000 sq ft office, that is ₹16-₹40 lakhs in setup costs before you even start paying rent.</p>
 <p><a href="/office-space-cost-mumbai-2026" class="text-brand-electric hover:underline">Read our complete cost breakdown for all Mumbai areas →</a></p>
 
 <h3>Why the Managed Office Model Is Growing</h3>
-<p>The managed office model exists because the traditional route is genuinely time-consuming. When a company sorts its own office, it typically deals with: 3–5 brokers showing unsuitable properties, 2–3 rounds of lease negotiations, an interior designer who delivers late and over budget, an IT vendor who needs to be coordinated separately, and a housekeeping agency that needs to be found and managed.</p>
-<p>A managed office provider handles all of this. You tell them your team size, preferred location, and budget. They find the right property, negotiate the lease, set up the workspace, and manage it going forward. You pay one monthly per-seat cost that covers everything — rent, furniture, internet, housekeeping, and maintenance.</p>
-<p>For teams of 10 or more, the managed office model typically saves 2–4 months of setup time and reduces the number of vendors you manage from 5+ to just 1.</p>
+<p>The managed office model exists because the traditional route is genuinely time-consuming. When a company sorts its own office, it typically deals with: 3-5 brokers showing unsuitable properties, 2-3 rounds of lease negotiations, an interior designer who delivers late and over budget, an IT vendor who needs to be coordinated separately, and a housekeeping agency that needs to be found and managed.</p>
+<p>A managed office provider handles all of this. You tell them your team size, preferred location, and budget. They find the right property, negotiate the lease, set up the workspace, and manage it going forward. You pay one monthly per-seat cost that covers everything, rent, furniture, internet, housekeeping, and maintenance.</p>
+<p>For teams of 10 or more, the managed office model typically saves 2-4 months of setup time and reduces the number of vendors you manage from 5+ to just 1.</p>
 <p><a href="/what-is-a-managed-office" class="text-brand-electric hover:underline">Learn exactly what a managed office is and how it works →</a></p>
 
 <h3>The Process: What to Expect Step by Step</h3>
 <p>Whether you go the traditional route or the managed office route, the process follows the same basic structure:</p>
-<p><strong>Week 1–2: Requirement definition.</strong> Team size, budget, preferred locations, must-haves vs nice-to-haves. The more specific you are here, the faster everything moves.</p>
-<p><strong>Week 2–6: Property search and shortlisting.</strong> Visiting properties, comparing building quality, checking commute times for your team. This is where most companies lose the most time.</p>
-<p><strong>Week 4–8: Lease negotiation.</strong> Lock-in period, escalation clauses, security deposit terms, exit clauses. Get a lawyer to review the agreement before signing.</p>
-<p><strong>Week 6–14: Setup and fit-out.</strong> Furniture, internet, electrical work, branding. If you are doing a managed office, this is handled for you. If you are doing it yourself, this is where projects typically go over budget and over timeline.</p>
-<p><strong>Week 10–16: Move in.</strong> The earliest realistic timeline for a traditional lease. A managed office can compress this to 4–8 weeks total.</p>
+<p><strong>Week 1-2: Requirement definition.</strong> Team size, budget, preferred locations, must-haves vs nice-to-haves. The more specific you are here, the faster everything moves.</p>
+<p><strong>Week 2-6: Property search and shortlisting.</strong> Visiting properties, comparing building quality, checking commute times for your team. This is where most companies lose the most time.</p>
+<p><strong>Week 4-8: Lease negotiation.</strong> Lock-in period, escalation clauses, security deposit terms, exit clauses. Get a lawyer to review the agreement before signing.</p>
+<p><strong>Week 6-14: Setup and fit-out.</strong> Furniture, internet, electrical work, branding. If you are doing a managed office, this is handled for you. If you are doing it yourself, this is where projects typically go over budget and over timeline.</p>
+<p><strong>Week 10-16: Move in.</strong> The earliest realistic timeline for a traditional lease. A managed office can compress this to 4-8 weeks total.</p>
 
 <h3>Common Mistakes to Avoid</h3>
 <p><strong>Choosing based on rent alone.</strong> The cheapest office is not the cheapest overall. A ₹150/sq ft office in a poorly connected area costs your team hours in commute time every week, which is far more expensive than the rent saving.</p>
-<p><strong>Underestimating setup time.</strong> Most companies budget 4 weeks for setup. Reality is 8–12 weeks for a bare shell. Plan for the longer timeline.</p>
+<p><strong>Underestimating setup time.</strong> Most companies budget 4 weeks for setup. Reality is 8-12 weeks for a bare shell. Plan for the longer timeline.</p>
 <p><strong>Not reading the lease carefully.</strong> Lock-in periods, escalation clauses, and exit penalties matter. A 3-year lock-in with 15% annual escalation sounds fine until your team shrinks.</p>
 <p><strong>Ignoring future growth.</strong> If you expect to grow from 20 to 50 employees in the next year, make sure the building has available space on adjacent floors or nearby.</p>
 
@@ -92,7 +92,7 @@ include 'templates/header.php';
 <div class="mt-16 pt-12 border-t border-slate-200/60 reveal">
 <div class="glass-card p-8 bg-gradient-to-br from-brand-electric/5 to-brand-cyan/5 border-brand-electric/20">
 <h3 class="text-xl font-bold text-slate-900 mb-4">Need Help Finding the Right Office Space?</h3>
-<p class="text-slate-600 leading-relaxed mb-6">Tell us your team size, preferred location, and budget. We will find the right space, negotiate the best terms, and have your team working within weeks — not months.</p>
+<p class="text-slate-600 leading-relaxed mb-6">Tell us your team size, preferred location, and budget. We will find the right space, negotiate the best terms, and have your team working within weeks, not months.</p>
 <div class="flex flex-col sm:flex-row gap-4">
 <a href="/contact" class="bg-brand-electric text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all text-center">Get a Free Consultation</a>
 <a href="/managed-office-space-mumbai" class="glass-card px-6 py-3 rounded-lg font-medium text-sm text-slate-700 hover:text-brand-electric transition-colors text-center">Explore Managed Offices</a>

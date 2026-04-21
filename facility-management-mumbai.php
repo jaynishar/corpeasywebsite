@@ -24,11 +24,11 @@ include 'templates/header.php';
 <span class="text-[9px] font-black uppercase tracking-[0.4em] text-brand-rose">Facility Management</span>
 </div>
 <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 tracking-tighter mb-6 leading-none">Facility Management Services<br><span class="text-gradient-vibrant">in Mumbai.</span></h1>
-<p class="text-base lg:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg">Stop letting office management distract your team from real work. CorpEasy takes over the complete day-to-day operations of your existing office — from housekeeping and security to vendor contracts and compliance — so you never have to think about it again.</p>
+<p class="text-base lg:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg">Stop letting office management distract your team from real work. CorpEasy takes over the complete day-to-day operations of your existing office, from housekeeping and security to vendor contracts and compliance, so you never have to think about it again.</p>
 <div class="space-y-3 mb-8">
 <div class="flex items-center gap-3">
 <div class="w-5 h-5 rounded-full bg-brand-rose/10 border border-brand-rose/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-rose text-[9px]"></i></div>
-<p class="text-sm font-semibold text-slate-700">Housekeeping, security & pantry — fully managed</p>
+<p class="text-sm font-semibold text-slate-700">Housekeeping, security & pantry, fully managed</p>
 </div>
 <div class="flex items-center gap-3">
 <div class="w-5 h-5 rounded-full bg-brand-rose/10 border border-brand-rose/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-rose text-[9px]"></i></div>
@@ -40,7 +40,7 @@ include 'templates/header.php';
 </div>
 <div class="flex items-center gap-3">
 <div class="w-5 h-5 rounded-full bg-brand-rose/10 border border-brand-rose/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-rose text-[9px]"></i></div>
-<p class="text-sm font-semibold text-slate-700">Single monthly invoice — no vendor chaos</p>
+<p class="text-sm font-semibold text-slate-700">Single monthly invoice, no vendor chaos</p>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal delay-100">
@@ -74,8 +74,8 @@ include 'templates/header.php';
 <select name="requirement" id="fm-requirement" class="input-premium" required>
 <option value="" disabled selected>Office Size</option>
 <option>Small Office (Up to 20 seats)</option>
-<option>Mid-Size Office (20–100 seats)</option>
-<option>Large Office (100–500 seats)</option>
+<option>Mid-Size Office (20-100 seats)</option>
+<option>Large Office (100-500 seats)</option>
 <option>Enterprise Campus (500+ seats)</option>
 </select>
 <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
@@ -107,7 +107,7 @@ include 'templates/header.php';
 <section class="py-20 relative">
 <div class="max-w-5xl mx-auto px-4 lg:px-6 text-center reveal">
 <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-6">Built for Companies That Are Done<br><span class="text-gradient-vibrant">Thinking About Their Office.</span></h2>
-<p class="text-lg text-slate-500 mb-12 max-w-2xl mx-auto">If your HR team is handling AMC complaints, your finance team is chasing vendor invoices, or your ops head is managing housekeeping — you need CorpEasy Facility Management.</p>
+<p class="text-lg text-slate-500 mb-12 max-w-2xl mx-auto">If your HR team is handling AMC complaints, your finance team is chasing vendor invoices, or your ops head is managing housekeeping, you need CorpEasy Facility Management.</p>
 <a href="/contact" class="inline-flex items-center gap-3 bg-brand-rose text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_25px_rgba(244,63,94,0.35)] hover:scale-105 transition-all">Talk to Our Team <i class="fas fa-arrow-right"></i></a>
 </div>
 </section>
@@ -125,9 +125,9 @@ include 'templates/header.php';
 <section class="py-20 bg-white/40">
 <div class="max-w-4xl mx-auto px-6">
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Why Outsource Your<br><span class="text-gradient-vibrant">Facility Management?</span></h2>
-<p class="text-lg text-slate-600 leading-relaxed mb-6">Most companies with 20-200 employees do not have a dedicated facility management team. Instead, the responsibility falls on HR managers, admin assistants, or even founders — people whose actual job has nothing to do with managing AC vendors or tracking fire safety compliance.</p>
+<p class="text-lg text-slate-600 leading-relaxed mb-6">Most companies with 20-200 employees do not have a dedicated facility management team. Instead, the responsibility falls on HR managers, admin assistants, or even founders, people whose actual job has nothing to do with managing AC vendors or tracking fire safety compliance.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">The result: vendor invoices pile up, AMC renewals get missed, housekeeping quality drops, and small maintenance issues become expensive problems. A leaking AC unit ignored for two weeks can damage ceiling panels worth ₹50,000. A missed fire NOC renewal can result in a ₹1,00,000 penalty from the BMC.</p>
-<p class="text-lg text-slate-600 leading-relaxed">Outsourcing facility management to CorpEasy means one team handles everything — from daily cleaning to annual compliance audits. Your team gets back the 15-20 hours per week they currently spend on office operations. And you get a single monthly invoice instead of chasing 8-12 different vendors.</p>
+<p class="text-lg text-slate-600 leading-relaxed">Outsourcing facility management to CorpEasy means one team handles everything, from daily cleaning to annual compliance audits. Your team gets back the 15-20 hours per week they currently spend on office operations. And you get a single monthly invoice instead of chasing 8-12 different vendors.</p>
 </div>
 </section>
 
@@ -182,7 +182,7 @@ include 'templates/header.php';
 <div class="glass-card p-8 text-center">
 <div class="w-14 h-14 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mx-auto mb-6"><i class="fas fa-building text-2xl"></i></div>
 <h3 class="text-lg font-bold text-slate-900 mb-2">Coworking Spaces</h3>
-<p class="text-sm text-slate-600 leading-relaxed">We partner with coworking operators to handle back-end operations — cleaning, security, maintenance — so you focus on community and growth.</p>
+<p class="text-sm text-slate-600 leading-relaxed">We partner with coworking operators to handle back-end operations, cleaning, security, maintenance, so you focus on community and growth.</p>
 </div>
 </div>
 </div>

@@ -103,7 +103,7 @@ $page_canonical = 'https://www.corpeasy.in/insights';
 $page_og_image = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
 $page_schema = json_encode([
     '@type' => 'ItemList',
-    'name' => 'CorpEasy Blog — Mumbai Office Space Insights',
+    'name' => 'CorpEasy Blog, Mumbai Office Space Insights',
     'description' => 'Practical articles on office space in Mumbai, commercial real estate, and workspace decisions.',
     'url' => 'https://www.corpeasy.in/blog',
     'itemListElement' => $itemListElements
@@ -171,7 +171,7 @@ include 'templates/header.php';
 <div class="glass-card p-6">
 <i class="fas fa-map-marker-alt text-brand-cyan mb-4 text-xl"></i>
 <h3 class="font-black text-slate-900 mb-2">Mumbai Micro-Markets</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Honest breakdowns of BKC, Lower Parel, Goregaon, Andheri, and Powai — rent levels, building quality, commute dynamics, and who each area suits.</p>
+<p class="text-sm text-slate-600 leading-relaxed">Honest breakdowns of BKC, Lower Parel, Goregaon, Andheri, and Powai, rent levels, building quality, commute dynamics, and who each area suits.</p>
 </div>
 <div class="glass-card p-6">
 <i class="fas fa-file-contract text-brand-violet mb-4 text-xl"></i>
@@ -181,7 +181,7 @@ include 'templates/header.php';
 <div class="glass-card p-6">
 <i class="fas fa-tools text-brand-gold mb-4 text-xl"></i>
 <h3 class="font-black text-slate-900 mb-2">Facility Management</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Practical guides for managing office operations, vendor coordination, maintenance schedules, and running a productive 20–200 seat office in Mumbai.</p>
+<p class="text-sm text-slate-600 leading-relaxed">Practical guides for managing office operations, vendor coordination, maintenance schedules, and running a productive 20-200 seat office in Mumbai.</p>
 </div>
 </div>
 <div class="text-center">

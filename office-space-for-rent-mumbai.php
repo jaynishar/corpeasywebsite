@@ -1,7 +1,7 @@
 <?php
 $page_id = 'find';
 $page_title = 'Office Space for Rent Mumbai | Managed Office Options | CorpEasy';
-$page_description = 'Find office space for rent in Mumbai — BKC, Lower Parel, Goregaon, Andheri. Also explore managed office solutions from ₹10,000/seat. Tenant representation free.';
+$page_description = 'Find office space for rent in Mumbai, BKC, Lower Parel, Goregaon, Andheri. Also explore managed office solutions from ₹10,000/seat. Tenant representation free.';
 $page_keywords = 'office space for rent in Mumbai, commercial office space Mumbai, office space BKC rent, office space Lower Parel rent, commercial property for lease Mumbai, office on rent Mumbai, office space Mumbai 2026, commercial office rent BKC, office space Andheri rent, find office space Mumbai, tenant representation Mumbai, commercial property search Mumbai';
 $page_canonical = 'https://www.corpeasy.in/office-space-for-rent-mumbai';
 $page_og_image = 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1200&fm=webp';
@@ -25,15 +25,15 @@ include 'templates/header.php';
 <span class="text-[9px] font-black uppercase tracking-[0.4em] text-brand-cyan">Find Office Space</span>
 </div>
 <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 tracking-tighter mb-6 leading-none">Office Space for Rent<br><span class="text-gradient-vibrant">in Mumbai.</span></h1>
-<p class="text-base lg:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg">Looking for <strong>commercial office space for rent in Mumbai</strong>? Tell us your team size, preferred location, and budget. We shortlist verified, available spaces within 48 hours — and negotiate the lease on your behalf.</p>
+<p class="text-base lg:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg">Looking for <strong>commercial office space for rent in Mumbai</strong>? Tell us your team size, preferred location, and budget. We shortlist verified, available spaces within 48 hours, and negotiate the lease on your behalf.</p>
 <div class="space-y-3 mb-8">
 <div class="flex items-center gap-3">
 <div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
-<p class="text-sm font-semibold text-slate-700">Free for tenants — we are compensated by the landlord</p>
+<p class="text-sm font-semibold text-slate-700">Free for tenants, we are compensated by the landlord</p>
 </div>
 <div class="flex items-center gap-3">
 <div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
-<p class="text-sm font-semibold text-slate-700">Curated shortlist of 3–5 verified properties within 48 hours</p>
+<p class="text-sm font-semibold text-slate-700">Curated shortlist of 3-5 verified properties within 48 hours</p>
 </div>
 <div class="flex items-center gap-3">
 <div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
@@ -41,14 +41,14 @@ include 'templates/header.php';
 </div>
 <div class="flex items-center gap-3">
 <div class="w-5 h-5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-brand-cyan text-[9px]"></i></div>
-<p class="text-sm font-semibold text-slate-700">Lease reviewed before you sign — no surprises</p>
+<p class="text-sm font-semibold text-slate-700">Lease reviewed before you sign, no surprises</p>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal delay-100">
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center mb-3 text-brand-cyan"><i class="fas fa-map-marked-alt text-sm"></i></div>
 <p class="text-base font-bold text-slate-900 mb-1">We Know What's Available</p>
-<p class="text-xs text-slate-500 leading-relaxed">BKC, Lower Parel, Goregaon, Andheri, Powai — we track the market daily</p>
+<p class="text-xs text-slate-500 leading-relaxed">BKC, Lower Parel, Goregaon, Andheri, Powai, we track the market daily</p>
 </div>
 <div class="glass-card p-5">
 <div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center mb-3 text-brand-electric"><i class="fas fa-handshake text-sm"></i></div>
@@ -65,7 +65,7 @@ include 'templates/header.php';
 <div class="lg:order-2 lg:sticky lg:top-[120px] self-start">
 <div class="glass-card p-6 lg:p-8 border-t-4 border-t-brand-cyan shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
 <p class="text-lg lg:text-xl font-black text-slate-900 mb-2 flex items-center gap-3"><i class="fas fa-search-location text-brand-cyan"></i> Tell Us What You Are Looking For</p>
-<p class="text-xs text-slate-500 mb-6 leading-relaxed">Share your requirement and we will come back with verified options within 24–48 hours.</p>
+<p class="text-xs text-slate-500 mb-6 leading-relaxed">Share your requirement and we will come back with verified options within 24-48 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4 relative">
 <input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required minlength="2" maxlength="80" title="Please enter your full name">
 <input type="text" name="company_name" placeholder="Company Name" class="input-premium" required pattern=".*[a-zA-Z].*" minlength="2" maxlength="100" title="Please enter your company name (must contain letters, not a phone number)">
@@ -85,8 +85,8 @@ include 'templates/header.php';
 <h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Mumbai Office Rental<br><span class="text-gradient-vibrant">Market in 2026.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Mumbai's commercial real estate market remains one of India's most active, with over 75 million square feet of Grade A office space across the city. Despite new supply from areas like Thane and Navi Mumbai, demand for prime locations like BKC, Lower Parel, and Andheri continues to outpace availability.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Average commercial rent in Mumbai ranges from ₹80 per sq ft/month in emerging areas like Thane to ₹350+ per sq ft/month in BKC's premium towers. For a 2,000 sq ft office (roughly 30 seats), monthly rent alone can range from ₹1.6 lakh to ₹7 lakh depending on the location and building grade.</p>
-<p class="text-lg text-slate-600 leading-relaxed mb-6">The biggest challenge for businesses looking for office space in Mumbai is not finding available properties — it is finding the right one. Most commercial listings on portals like 99Acres and MagicBricks are outdated, duplicated, or posted by brokers who add their own commission. The actual rent and terms often differ significantly from what is advertised online.</p>
-<p class="text-lg text-slate-600 leading-relaxed">This is where working with a tenant representative like CorpEasy makes a difference. We deal directly with landlords and building managers, verify availability in real-time, and negotiate terms that protect your interests — not the landlord's.</p>
+<p class="text-lg text-slate-600 leading-relaxed mb-6">The biggest challenge for businesses looking for office space in Mumbai is not finding available properties, it is finding the right one. Most commercial listings on portals like 99Acres and MagicBricks are outdated, duplicated, or posted by brokers who add their own commission. The actual rent and terms often differ significantly from what is advertised online.</p>
+<p class="text-lg text-slate-600 leading-relaxed">This is where working with a tenant representative like CorpEasy makes a difference. We deal directly with landlords and building managers, verify availability in real-time, and negotiate terms that protect your interests, not the landlord's.</p>
 </div>
 </section>
 
@@ -165,7 +165,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-warehouse text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Bare Shell</h3>
-<p class="text-slate-600 leading-relaxed mb-3">A raw space with basic structure — walls, flooring, and electrical points. You handle all interior work: false ceiling, partitions, furniture, AC ducting, and IT infrastructure. Lowest rent but highest setup cost and longest move-in time (3-6 months).</p>
+<p class="text-slate-600 leading-relaxed mb-3">A raw space with basic structure, walls, flooring, and electrical points. You handle all interior work: false ceiling, partitions, furniture, AC ducting, and IT infrastructure. Lowest rent but highest setup cost and longest move-in time (3-6 months).</p>
 <p class="text-sm text-brand-electric font-semibold">Best for: Large enterprises with specific design requirements</p>
 </div>
 <div class="glass-card p-8">
@@ -191,7 +191,7 @@ include 'templates/header.php';
 <div class="space-y-6">
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-rupee-sign text-sm"></i></div>
-<div><h3 class="text-lg font-bold text-slate-900 mb-1">Rent Escalation Clause</h3><p class="text-slate-600 leading-relaxed">Most Mumbai leases include a 5% annual rent increase, but some landlords push for 10-15%. Negotiate this upfront — over a 5-year lease, the difference between 5% and 10% escalation is massive.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Rent Escalation Clause</h3><p class="text-slate-600 leading-relaxed">Most Mumbai leases include a 5% annual rent increase, but some landlords push for 10-15%. Negotiate this upfront, over a 5-year lease, the difference between 5% and 10% escalation is massive.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-lock text-sm"></i></div>
@@ -199,7 +199,7 @@ include 'templates/header.php';
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-money-bill-wave text-sm"></i></div>
-<div><h3 class="text-lg font-bold text-slate-900 mb-1">Security Deposit</h3><p class="text-slate-600 leading-relaxed">Typical security deposits in Mumbai are 3-6 months rent (interest-free). Some landlords ask for 10-12 months. Always negotiate this — a 6-month deposit on a ₹5 lakh/month rent means ₹30 lakh locked up doing nothing.</p></div>
+<div><h3 class="text-lg font-bold text-slate-900 mb-1">Security Deposit</h3><p class="text-slate-600 leading-relaxed">Typical security deposits in Mumbai are 3-6 months rent (interest-free). Some landlords ask for 10-12 months. Always negotiate this, a 6-month deposit on a ₹5 lakh/month rent means ₹30 lakh locked up doing nothing.</p></div>
 </div>
 <div class="glass-card p-6 flex items-start gap-4">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan flex-shrink-0"><i class="fas fa-parking text-sm"></i></div>
@@ -218,21 +218,21 @@ include 'templates/header.php';
 <h3 class="text-lg font-bold text-slate-900">Do you charge the tenant a fee?</h3>
 <i class="fas fa-chevron-down text-brand-cyan faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">No. Our service is free for tenants. We are compensated by the landlord as part of the transaction. You pay nothing extra — the rent and terms you get through us are the same (often better) than going directly to the landlord.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">No. Our service is free for tenants. We are compensated by the landlord as part of the transaction. You pay nothing extra, the rent and terms you get through us are the same (often better) than going directly to the landlord.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">
 <h3 class="text-lg font-bold text-slate-900">How is CorpEasy different from 99Acres or MagicBricks?</h3>
 <i class="fas fa-chevron-down text-brand-cyan faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Portals show you listings — often outdated or duplicated. We are a tenant representation service. We personally verify availability, accompany you on visits, negotiate terms on your behalf, and review the lease agreement before you sign. Think of us as your real estate advisor, not a property search engine.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Portals show you listings, often outdated or duplicated. We are a tenant representation service. We personally verify availability, accompany you on visits, negotiate terms on your behalf, and review the lease agreement before you sign. Think of us as your real estate advisor, not a property search engine.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">
 <h3 class="text-lg font-bold text-slate-900">What areas in Mumbai do you cover?</h3>
 <i class="fas fa-chevron-down text-brand-cyan faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">We cover all major commercial zones in Mumbai: BKC, Lower Parel, Andheri East, Goregaon, Powai, Malad, Vikhroli, Thane, and Navi Mumbai. If you have a specific area in mind that is not listed, ask us — we likely have contacts there as well.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">We cover all major commercial zones in Mumbai: BKC, Lower Parel, Andheri East, Goregaon, Powai, Malad, Vikhroli, Thane, and Navi Mumbai. If you have a specific area in mind that is not listed, ask us, we likely have contacts there as well.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">
@@ -259,7 +259,7 @@ include 'templates/header.php';
 <a href="/managed-office-space-mumbai" class="glass-card p-8 hover:border-brand-electric/30 transition-all group">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-4 group-hover:bg-brand-electric group-hover:text-white transition-all"><i class="fas fa-building text-lg"></i></div>
 <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand-electric transition-colors">Managed Office Space</h3>
-<p class="text-sm text-slate-600">Don't want to deal with setup and operations? We handle everything — from finding the space to managing it daily.</p>
+<p class="text-sm text-slate-600">Don't want to deal with setup and operations? We handle everything, from finding the space to managing it daily.</p>
 </a>
 <a href="/facility-management-mumbai" class="glass-card p-8 hover:border-brand-rose/30 transition-all group">
 <div class="w-12 h-12 bg-brand-rose/10 border border-brand-rose/30 rounded-xl flex items-center justify-center text-brand-rose mb-4 group-hover:bg-brand-rose group-hover:text-white transition-all"><i class="fas fa-tools text-lg"></i></div>

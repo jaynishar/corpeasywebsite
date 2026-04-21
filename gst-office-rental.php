@@ -1,13 +1,13 @@
 <?php
 $page_id = 'blog-gst-office-rental';
 $page_title = 'GST on Commercial Office Rentals in Mumbai: What You Need to Know';
-$page_description = 'Understanding GST on commercial office rentals in Mumbai — who pays it, how much, whether you can claim ITC, and how it affects your total office cost. Practical guide for businesses.';
+$page_description = 'Understanding GST on commercial office rentals in Mumbai, who pays it, how much, whether you can claim ITC, and how it affects your total office cost. Practical guide for businesses.';
 $page_keywords = 'GST on office rental Mumbai, GST commercial rent India, input tax credit office rent, 18% GST office space Mumbai, commercial property GST, office rent tax Mumbai, GST on managed office, commercial lease GST India';
 $page_canonical = 'https://www.corpeasy.in/insights/gst-office-rental';
 $page_schema = '{
   "@type": "Article",
   "headline": "GST on Commercial Office Rentals in Mumbai: What You Need to Know",
-  "description": "Understanding GST on commercial office rentals in Mumbai — who pays it, how much, whether you can claim ITC, and how it affects your total office cost.",
+  "description": "Understanding GST on commercial office rentals in Mumbai, who pays it, how much, whether you can claim ITC, and how it affects your total office cost.",
   "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
   "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
   "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
@@ -51,9 +51,9 @@ include 'templates/header.php';
 <p>GST does <strong>not</strong> apply to residential rentals or to the security deposit (unless the deposit is treated as an advance payment, which is uncommon for standard commercial leases).</p>
 
 <h3>Can You Claim Input Tax Credit (ITC)?</h3>
-<p>This is where things get interesting — and where many businesses misunderstand their actual cost.</p>
+<p>This is where things get interesting, and where many businesses misunderstand their actual cost.</p>
 <p>If your company is <strong>GST-registered</strong> and uses the office for business purposes (not for exempt supplies), you are generally eligible to claim <strong>Input Tax Credit</strong> on the GST paid on rent. This means the GST you pay on rent offsets your outward GST liability rather than being a pure additional cost.</p>
-<p><strong>Example:</strong> If your company pays ₹36,000 in GST on rent and has ₹2,00,000 in outward GST liability from your sales, you can deduct the ₹36,000, reducing your net GST payment to ₹1,64,000. The effective cost of the GST on rent is zero — it is a cash flow timing issue, not an additional expense.</p>
+<p><strong>Example:</strong> If your company pays ₹36,000 in GST on rent and has ₹2,00,000 in outward GST liability from your sales, you can deduct the ₹36,000, reducing your net GST payment to ₹1,64,000. The effective cost of the GST on rent is zero, it is a cash flow timing issue, not an additional expense.</p>
 <p><strong>Who can claim ITC:</strong></p>
 <ul>
 <li>GST-registered businesses using the office for taxable supplies</li>
@@ -71,10 +71,10 @@ include 'templates/header.php';
 <p>The GST treatment differs slightly between the two models:</p>
 <p><strong>Traditional lease:</strong> You pay 18% GST on rent + CAM to the landlord. You need a GST invoice from the landlord to claim ITC. Make sure your landlord is GST-registered and provides proper invoices.</p>
 <p><strong>Managed office:</strong> The per-seat monthly fee includes rent, furniture, internet, housekeeping, and maintenance. GST at 18% applies to the total fee. The managed office provider issues a single GST invoice covering all services, which simplifies ITC claims since you are dealing with one supplier instead of multiple vendors.</p>
-<p>From a compliance perspective, managed offices are simpler — one invoice, one GST payment, one ITC claim. Traditional leases may involve separate GST invoices from the landlord, CAM provider, housekeeping agency, and IT provider.</p>
+<p>From a compliance perspective, managed offices are simpler, one invoice, one GST payment, one ITC claim. Traditional leases may involve separate GST invoices from the landlord, CAM provider, housekeeping agency, and IT provider.</p>
 
 <h3>Common GST Mistakes to Avoid</h3>
-<p><strong>Not verifying the landlord's GST registration.</strong> If your landlord is not GST-registered, they cannot charge GST — but they also cannot provide a GST invoice for you to claim ITC. This is a problem if you were counting on the ITC.</p>
+<p><strong>Not verifying the landlord's GST registration.</strong> If your landlord is not GST-registered, they cannot charge GST, but they also cannot provide a GST invoice for you to claim ITC. This is a problem if you were counting on the ITC.</p>
 <p><strong>Confusing residential and commercial GST rates.</strong> Residential rentals are exempt from GST (up to ₹20 lakh annual rent). Commercial rentals attract 18% regardless of the rent amount. Do not assume the same rules apply.</p>
 <p><strong>Not including GST in your budget.</strong> Even if you can claim ITC, you still need to pay the GST upfront and claim it later. This affects your monthly cash flow. Budget for the gross amount (rent + GST), not just the base rent.</p>
 <p><strong>Missing ITC claim deadlines.</strong> ITC must be claimed within the return filing timeline. Missing deadlines means losing the credit, which turns GST from a cash flow item into a real cost.</p>
@@ -105,13 +105,13 @@ include 'templates/header.php';
 <li><strong>Always ask for a GST-compliant invoice</strong> from your landlord or managed office provider</li>
 <li><strong>Verify the GSTIN</strong> on the invoice matches the landlord's registered GST number</li>
 <li><strong>File your GSTR-3B on time</strong> to ensure ITC claims are processed without delay</li>
-<li><strong>Consult your CA</strong> about your specific eligibility for ITC — the rules can change and your situation may have nuances</li>
+<li><strong>Consult your CA</strong> about your specific eligibility for ITC, the rules can change and your situation may have nuances</li>
 <li><strong>Include GST in your budget</strong> even if you plan to claim ITC, because the cash outflow happens before the credit is received</li>
 </ul>
 
 <h3>How CorpEasy Handles GST</h3>
-<p>At CorpEasy, we provide a single GST-compliant invoice for your managed office per-seat fee. This covers rent, furniture, internet, housekeeping, and maintenance — all in one invoice with a clear GST breakdown. This simplifies your accounting and makes ITC claims straightforward.</p>
-<p>We also share the exact cost breakdown before you commit, so you know exactly what the base cost is and what the GST component will be. No surprises. This same simplicity applies to our <a href="/facility-management-mumbai" class="text-brand-electric hover:underline">facility management service</a> — one invoice for all facility-related services.</p>
+<p>At CorpEasy, we provide a single GST-compliant invoice for your managed office per-seat fee. This covers rent, furniture, internet, housekeeping, and maintenance, all in one invoice with a clear GST breakdown. This simplifies your accounting and makes ITC claims straightforward.</p>
+<p>We also share the exact cost breakdown before you commit, so you know exactly what the base cost is and what the GST component will be. No surprises. This same simplicity applies to our <a href="/facility-management-mumbai" class="text-brand-electric hover:underline">facility management service</a>, one invoice for all facility-related services.</p>
 <p><a href="/managed-office-space-mumbai" class="text-brand-electric hover:underline">Explore managed office options in Mumbai →</a></p>
 <p><a href="/contact" class="text-brand-electric hover:underline">Get a detailed cost breakdown for your requirement →</a></p>
 </div>
@@ -119,7 +119,7 @@ include 'templates/header.php';
 <div class="mt-16 pt-12 border-t border-slate-200/60 reveal">
 <div class="glass-card p-8 bg-gradient-to-br from-brand-electric/5 to-brand-cyan/5 border-brand-electric/20">
 <h3 class="text-xl font-bold text-slate-900 mb-4">Need Help Understanding Your Total Office Cost?</h3>
-<p class="text-slate-600 leading-relaxed mb-6">We will give you a clear, all-inclusive cost breakdown — base cost, GST, and everything else. No hidden charges, no fine print.</p>
+<p class="text-slate-600 leading-relaxed mb-6">We will give you a clear, all-inclusive cost breakdown, base cost, GST, and everything else. No hidden charges, no fine print.</p>
 <div class="flex flex-col sm:flex-row gap-4">
 <a href="/contact" class="bg-brand-electric text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-brand-blue transition-all text-center">Get a Cost Breakdown</a>
 <a href="/office-space-cost-mumbai-2026" class="glass-card px-6 py-3 rounded-lg font-medium text-sm text-slate-700 hover:text-brand-electric transition-colors text-center">See Mumbai Office Costs</a>

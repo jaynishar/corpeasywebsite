@@ -1,6 +1,6 @@
 <?php
 $page_id = 'privacy';
-$page_title = 'Privacy Policy | CorpEasy — Managed Office Space Mumbai';
+$page_title = 'Privacy Policy | CorpEasy, Managed Office Space Mumbai';
 $page_description = 'CorpEasy privacy policy covering data collection, use, cookies, and your rights regarding personal information shared through our website.';
 $page_keywords = 'CorpEasy privacy policy, data protection, GDPR, cookies policy';
 $page_canonical = 'https://www.corpeasy.in/privacy-policy';

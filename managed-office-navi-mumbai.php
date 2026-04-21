@@ -1,7 +1,7 @@
 <?php
 $page_id = 'managed-navi-mumbai';
 $page_title = 'Managed Office Space in Navi Mumbai | From ₹8,000/Seat | CorpEasy';
-$page_description = 'Managed office space in Navi Mumbai from ₹8,000/seat/month. Belapur, Vashi, Nerul. Affordable Grade A space with excellent connectivity. Move in 2–4 weeks.';
+$page_description = 'Managed office space in Navi Mumbai from ₹8,000/seat/month. Belapur, Vashi, Nerul. Affordable Grade A space with excellent connectivity. Move in 2-4 weeks.';
 $page_keywords = 'managed office space Navi Mumbai, managed office Belapur, office space Vashi, serviced office Navi Mumbai, private office Navi Mumbai, office space Navi Mumbai 2026, affordable office space Navi Mumbai, managed workspace Navi Mumbai, office space Nerul, CBD Belapur office';
 $page_canonical = 'https://www.corpeasy.in/managed-office-navi-mumbai';
 $page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
@@ -62,7 +62,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-6"><i class="fas fa-rupee-sign text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Lowest Costs in Mumbai Metro</h3>
-<p class="text-slate-600 leading-relaxed">Commercial rent in Navi Mumbai ranges from ₹100 to ₹160 per sq ft — less than half of BKC rates. For a 2,000 sq ft office, the monthly rent saving compared to BKC can be ₹3-4 lakhs. That is real money that goes directly into your business growth.</p>
+<p class="text-slate-600 leading-relaxed">Commercial rent in Navi Mumbai ranges from ₹100 to ₹160 per sq ft, less than half of BKC rates. For a 2,000 sq ft office, the monthly rent saving compared to BKC can be ₹3-4 lakhs. That is real money that goes directly into your business growth.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-6"><i class="fas fa-train text-xl"></i></div>
@@ -72,7 +72,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-violet/10 border border-brand-violet/30 rounded-xl flex items-center justify-center text-brand-violet mb-6"><i class="fas fa-city text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Planned Infrastructure</h3>
-<p class="text-slate-600 leading-relaxed">Unlike Mumbai's congested commercial districts, Navi Mumbai was designed as a planned city. Wide 12-lane roads, organized commercial nodes, ample parking, and modern buildings. The quality of life for employees is significantly better — less commute stress, more space.</p>
+<p class="text-slate-600 leading-relaxed">Unlike Mumbai's congested commercial districts, Navi Mumbai was designed as a planned city. Wide 12-lane roads, organized commercial nodes, ample parking, and modern buildings. The quality of life for employees is significantly better, less commute stress, more space.</p>
 </div>
 </div>
 <p class="text-lg text-slate-600 leading-relaxed mt-12 max-w-4xl mx-auto text-center">Navi Mumbai is also home to the upcoming Navi Mumbai International Airport, the Mumbai Trans Harbour Link (MTHL) connecting to South Mumbai in 20 minutes, and a growing IT corridor in Taloja and Kharghar. Companies like Reliance, L&T, and several BPOs have large operations here.</p>
@@ -81,10 +81,10 @@ include 'templates/header.php';
 
 <section class="py-20 bg-white/40">
 <div class="max-w-4xl mx-auto px-6">
-<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Navi Mumbai Office Market —<br><span class="text-gradient-vibrant">What to Expect.</span></h2>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter mb-8 text-center">Navi Mumbai Office Market , <br><span class="text-gradient-vibrant">What to Expect.</span></h2>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Navi Mumbai offers the most affordable managed office pricing in the Mumbai metropolitan region. Per-seat costs typically range from <strong>₹8,000 to ₹16,000 per month</strong>. CBD Belapur and Vashi command slightly higher rates due to their railway station proximity, while Nerul, Kharghar, and Taloja offer even more competitive pricing.</p>
 <p class="text-lg text-slate-600 leading-relaxed mb-6">Managed offices in Navi Mumbai are available in configurations from <strong>10 to 200+ seats</strong>. The area has large floor plates suitable for BPOs, IT companies, and shared service centres. Pre-fitted spaces can be ready in 7-10 days, while bare shell setups take 3-4 weeks.</p>
-<p class="text-lg text-slate-600 leading-relaxed">Lease terms typically start at <strong>11-12 months</strong>. Security deposits are 2-4 months of rent — lower than mainland Mumbai. We negotiate favourable terms on your behalf, including lock-in flexibility and expansion options for growing teams.</p>
+<p class="text-lg text-slate-600 leading-relaxed">Lease terms typically start at <strong>11-12 months</strong>. Security deposits are 2-4 months of rent, lower than mainland Mumbai. We negotiate favourable terms on your behalf, including lock-in flexibility and expansion options for growing teams.</p>
 </div>
 </section>
 
@@ -110,7 +110,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-12 h-12 bg-brand-blue/10 border border-brand-blue/30 rounded-xl flex items-center justify-center text-brand-blue mb-6"><i class="fas fa-chart-line text-xl"></i></div>
 <h3 class="text-xl font-bold text-slate-900 mb-3">Cost-Optimising Businesses</h3>
-<p class="text-slate-600 leading-relaxed">Companies that want to reduce their real estate costs without sacrificing office quality. The Mumbai Trans Harbour Link now makes Navi Mumbai just 20 minutes from South Mumbai — the connectivity gap is closing fast.</p>
+<p class="text-slate-600 leading-relaxed">Companies that want to reduce their real estate costs without sacrificing office quality. The Mumbai Trans Harbour Link now makes Navi Mumbai just 20 minutes from South Mumbai, the connectivity gap is closing fast.</p>
 </div>
 </div>
 </div>
@@ -125,7 +125,7 @@ include 'templates/header.php';
 <h3 class="text-lg font-bold text-slate-900">How much does a managed office cost in Navi Mumbai?</h3>
 <i class="fas fa-chevron-down text-brand-electric faq-icon transition-transform"></i>
 </div>
-<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Per-seat costs in Navi Mumbai range from ₹8,000 to ₹16,000/month — the most affordable in the Mumbai metro region. CBD Belapur and Vashi are at the higher end (₹10,000-16,000), while Nerul, Kharghar, and Taloja offer rates starting from ₹8,000/seat. This all-inclusive price covers rent, furniture, internet, and maintenance.</div>
+<div class="faq-answer hidden mt-4 text-slate-600 leading-relaxed">Per-seat costs in Navi Mumbai range from ₹8,000 to ₹16,000/month, the most affordable in the Mumbai metro region. CBD Belapur and Vashi are at the higher end (₹10,000-16,000), while Nerul, Kharghar, and Taloja offer rates starting from ₹8,000/seat. This all-inclusive price covers rent, furniture, internet, and maintenance.</div>
 </div>
 <div class="glass-card p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');">
 <div class="flex justify-between items-center">
