@@ -55,30 +55,51 @@ async function handleLead(e) {
 
     btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
     btn.disabled = true;
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'generate_lead', form_type: formData.form_type, lead_source: 'website_form' });
     try {
         const response = await fetch('submit.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formData) });
         const result = await response.json();
         if (result.success) {
-            btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Received. We will be in touch within 24 hours.';
+            // ── CONVERSION TRACKING (fires only after a confirmed server save) ──
+            // GA4 key event
+            if (typeof gtag === 'function') {
+                gtag('event', 'generate_lead', {
+                    'currency': 'INR',
+                    'value': 5000,
+                    'form_type': formData.form_type,
+                    'lead_source': 'website_form',
+                    'source_page': formData.source_page
+                });
+                // Google Ads conversion. The send_to label is read from
+                // window.CORPEASY_ADS_CONVERSION set in templates/header.php.
+                if (window.CORPEASY_ADS_CONVERSION) {
+                    gtag('event', 'conversion', {
+                        'send_to': window.CORPEASY_ADS_CONVERSION,
+                        'value': 5000,
+                        'currency': 'INR',
+                        'transaction_id': (result.reference || Date.now().toString())
+                    });
+                }
+            }
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'generate_lead',
+                'form_type': formData.form_type,
+                'lead_source': 'website_form',
+                'value': 5000,
+                'currency': 'INR',
+                'lead_reference': result.reference || ''
+            });
+            // ──────────────────────────────────────────────────────────────────
+            btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Received. Redirecting...';
             btn.classList.remove('bg-brand-electric', 'bg-brand-gold', 'bg-brand-cyan', 'bg-brand-rose', 'bg-transparent', 'text-brand-electric');
             btn.classList.add('bg-green-500', 'text-white', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 'border-transparent');
-            if (result.reference) {
-                const refEl = document.createElement('p');
-                refEl.className = 'text-center text-xs text-slate-500 mt-3 font-mono';
-                refEl.textContent = 'Reference: ' + result.reference;
-                btn.parentNode.insertBefore(refEl, btn.nextSibling);
-            }
+            // Redirect to thank-you page, this is the most reliable conversion
+            // signal because it is a URL based pageview Google Ads can track
+            // even if a specific event tag fails.
             setTimeout(() => {
-                form.reset();
-                btn.innerHTML = btn.getAttribute('data-original-text') || 'Send My Requirement';
-                btn.disabled = false;
-                btn.classList.remove('bg-green-500', 'shadow-[0_0_20px_rgba(34,197,94,0.5)]', 'border-transparent');
-                btn.classList.add('bg-brand-electric');
-                const refEl = form.querySelector('.font-mono');
-                if (refEl) refEl.remove();
-            }, 8000);
+                const ref = result.reference ? ('?ref=' + encodeURIComponent(result.reference)) : '';
+                window.location.href = '/thank-you' + ref;
+            }, 900);
         } else {
             throw new Error(result.error || 'Submission failed');
         }

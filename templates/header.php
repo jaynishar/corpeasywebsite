@@ -162,6 +162,17 @@ $page_lcp_image = $page_lcp_image ?? '';
       gtag('config', 'G-SHF2TZQSEQ');
       gtag('config', 'AW-17703392736');
 
+      /* ── Google Ads conversion label ──────────────────────────────────────
+         Set this to your "Submit lead form" conversion action label once you
+         create it in Google Ads. Find it in:
+           Goals → Conversions → Summary → click "Submit lead form" →
+           Tag setup → Use Google tag → copy the send_to value.
+         Format is "AW-17703392736/XXXXXXXXXXXXX".
+         Leave as null until you have the real label, conversions still
+         track via the /thank-you page URL.
+      ─────────────────────────────────────────────────────────────────────── */
+      window.CORPEASY_ADS_CONVERSION = null;
+
       function gtagSendEvent(url) {
         var callback = function () {
           if (typeof url === 'string') { window.location = url; }

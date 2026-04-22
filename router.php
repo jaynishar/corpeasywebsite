@@ -33,6 +33,7 @@ $routes = [
     '/contact'                             => '/contact.php',
     '/faq'                                 => '/faq.php',
     '/submit'                              => '/submit.php',
+    '/thank-you'                           => '/thank-you.php',
     '/list-commercial-property-mumbai'     => '/list-commercial-property-mumbai.php',
     '/office-space-for-rent-mumbai'        => '/office-space-for-rent-mumbai.php',
     '/facility-management-mumbai'          => '/facility-management-mumbai.php',
