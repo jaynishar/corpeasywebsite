@@ -40,7 +40,7 @@ include 'templates/header.php';
 <h3 class="text-xl font-black text-slate-900 mb-6 flex items-center gap-3"><i class="fas fa-building text-brand-electric"></i> Tell Us Your Office Requirement</h3>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Full Name" class="input-premium" required minlength="2" maxlength="80" title="Please enter your full name">
-<input type="text" name="company_name" placeholder="Company Name" class="input-premium" required pattern=".*[a-zA-Z].*" minlength="2" maxlength="100" title="Please enter your company name (must contain letters, not a phone number)">
+<input type="text" name="company_name" placeholder="Company Name (optional)" class="input-premium">
 <input type="email" name="email" placeholder="Work Email" class="input-premium" required>
 <input type="tel" name="phone" placeholder="Phone Number" class="input-premium" required pattern="[0-9\s\+\-\(\)]{7,15}" title="Please enter a valid phone number (7-15 digits)">
 <input type="text" name="requirement" placeholder="Team size (e.g. 40 seats in Thane)" class="input-premium">

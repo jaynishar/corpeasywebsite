@@ -46,7 +46,7 @@ async function handleLead(e) {
             companyField.value = '';
             companyField.placeholder = 'Company name — not a phone number';
             companyField.focus();
-            setTimeout(() => { companyField.style.borderColor = ''; companyField.placeholder = 'Company Name *'; }, 3000);
+            setTimeout(() => { companyField.style.borderColor = ''; companyField.placeholder = 'Company Name (optional)'; }, 3000);
         }
         showToast('Company Name cannot be a phone number. Please enter your company name.', 'error');
         return;
@@ -351,6 +351,63 @@ function initMobileMenu() {
     });
 }
 
+/* ===== Mobile Persistent WhatsApp FAB (show below the fold) ===== */
+function initMobileWhatsAppFab() {
+    const fab = document.getElementById('mobile-whatsapp-fab');
+    if (!fab) return;
+    let shown = false;
+    function onScroll() {
+        const y = window.scrollY;
+        const show = y > 240; // below the fold
+        if (show !== shown) {
+            shown = show;
+            fab.style.opacity = show ? '1' : '0';
+            fab.style.pointerEvents = show ? 'auto' : 'none';
+            fab.style.transform = show ? 'translateY(0)' : 'translateY(16px)';
+        }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+}
+
+/* ===== Exit-Intent Popup (desktop only, once per session) ===== */
+function initExitIntent() {
+    if (window.innerWidth < 1024) return; // desktop only
+    const popup = document.getElementById('exit-intent-popup');
+    if (!popup) return;
+    if (sessionStorage.getItem('ce_exit_shown')) return;
+    const card = popup.querySelector('div');
+    const closeBtn = document.getElementById('exit-intent-close');
+    let fired = false;
+
+    function open() {
+        if (fired) return;
+        fired = true;
+        sessionStorage.setItem('ce_exit_shown', '1');
+        popup.classList.remove('hidden');
+        popup.classList.add('flex');
+        requestAnimationFrame(() => {
+            popup.style.opacity = '1';
+            if (card) card.style.transform = 'translateY(0) scale(1)';
+        });
+        (window.dataLayer = window.dataLayer || []).push({ event: 'exit_intent_shown' });
+    }
+    function close() {
+        popup.style.opacity = '0';
+        if (card) card.style.transform = 'translateY(16px) scale(0.98)';
+        setTimeout(() => {
+            popup.classList.add('hidden');
+            popup.classList.remove('flex');
+        }, 300);
+    }
+    document.addEventListener('mouseout', (e) => {
+        if (!e.relatedTarget && e.clientY <= 0) open();
+    });
+    closeBtn?.addEventListener('click', close);
+    popup.addEventListener('click', (e) => { if (e.target === popup) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !popup.classList.contains('hidden')) close(); });
+}
+
 /* ===== DOMContentLoaded Initialization ===== */
 document.addEventListener('DOMContentLoaded', () => {
     // Mark JS as loaded — unlocks CSS transitions
@@ -377,6 +434,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initSolutionsDropdown();
     initMobileMenu();
     initPageTransitions();
+    initMobileWhatsAppFab();
+    initExitIntent();
 
     // Cookie banner
     const cookieBanner = document.getElementById('cookie-banner');

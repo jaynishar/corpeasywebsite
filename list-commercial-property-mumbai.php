@@ -68,7 +68,7 @@ include 'templates/header.php';
 <p class="text-xs text-slate-500 mb-6 leading-relaxed">Share your property details and we will get back to you within 24 hours.</p>
 <form onsubmit="handleLead(event)" class="space-y-4 relative">
 <input type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required minlength="2" maxlength="80" title="Please enter your full name">
-<input type="text" name="company_name" placeholder="Company or Property Owner Name" class="input-premium" pattern=".*[a-zA-Z].*" minlength="2" maxlength="100" title="Please enter your company name (must contain letters, not a phone number)">
+<input type="text" name="company_name" placeholder="Company Name (optional)" class="input-premium">
 <input type="email" name="email" placeholder="Work Email Address" class="input-premium" required>
 <input type="tel" name="phone" placeholder="+91 Phone Number" class="input-premium" required pattern="[0-9\s\+\-\(\)]{7,15}" title="Please enter a valid phone number (7-15 digits)">
 <input type="text" name="property_location" placeholder="Property Address or Area" class="input-premium" required>

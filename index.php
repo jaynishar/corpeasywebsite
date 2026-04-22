@@ -71,7 +71,7 @@ Tell Us What You Need
 <p class="text-sm text-slate-600 mb-4 lg:mb-6">Share your requirement. We respond within <strong>24 hours</strong> with a clear proposal, no broker jargon, no hidden charges. No obligation.</p>
 <form onsubmit="handleLead(event)" class="space-y-4">
 <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required minlength="2" maxlength="80" pattern="[a-zA-Z\s\.\-']{2,}" title="Please enter your full name (letters only)">
-<input type="text" name="company_name" placeholder="Company Name *" class="input-premium" required pattern=".*[a-zA-Z].*" minlength="2" maxlength="100" title="Please enter your company name (must contain letters, not a phone number)">
+<input type="text" name="company_name" placeholder="Company Name (optional)" class="input-premium">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 <input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required pattern="[0-9\s\+\-\(\)]{7,15}" title="Please enter a valid phone number (7-15 digits)">
 <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
