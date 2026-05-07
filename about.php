@@ -49,14 +49,14 @@ include 'templates/header.php';
 <div class="mt-16 text-center">
 <h2 class="text-2xl font-black text-slate-900 mb-2">Our Founder</h2>
 <p class="text-slate-500 max-w-2xl mx-auto mb-10 uppercase tracking-widest font-bold text-[10px]">Direct accountability. No layers. No friction.</p>
-<div class="max-w-sm mx-auto">
-<div class="glass-card p-8 group bg-white/50 border border-white/60">
-<div class="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-xl transition-transform duration-500 group-hover:scale-105 grayscale-[50%] group-hover:grayscale-0 bg-white">
-<img src="/dev-doshi.jpg?v=11" alt="Dev Doshi Founder CorpEasy" class="w-full h-full object-cover object-[center_25%] scale-105" loading="lazy" title="Click to enlarge">
+<div class="max-w-[280px] mx-auto">
+<div class="glass-card p-5 group bg-white/50 border border-white/60 text-left">
+<div class="w-full bg-slate-50 rounded-2xl p-3 mb-5 overflow-hidden flex items-center justify-center">
+<img src="/dev-doshi.jpg?v=12" alt="Dev Doshi Founder CorpEasy" class="w-full h-auto max-h-[320px] object-contain rounded-lg shadow-sm grayscale-[30%] group-hover:grayscale-0 transition-all duration-500 cursor-zoom-in" loading="lazy" title="Click to enlarge">
 </div>
 <h3 class="text-xl font-black text-slate-900 mb-1">Dev Doshi</h3>
 <p class="text-brand-electric text-[10px] font-semibold uppercase mb-4">Founder: Business Development & Strategy</p>
-<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
+<p class="text-xs text-slate-600 leading-relaxed border-t border-white/40 pt-4">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
 </div>
 </div>
 </div>
