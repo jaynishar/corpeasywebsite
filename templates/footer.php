@@ -51,7 +51,7 @@
                     <div class="space-y-2 mb-4">
                         <a href="tel:+919833089993" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'phone_click', location: 'footer'});" class="text-lg font-bold text-slate-900 tracking-tight hover:text-brand-electric transition-colors cursor-pointer block">Dev Doshi: +91 98330 89993</a>
                     </div>
-                    <a href="mailto:devdoshi@corpeasy.in" class="text-base font-bold text-brand-electric hover:text-slate-900 transition-colors">devdoshi@corpeasy.in</a>
+                    <a href="mailto:office@corpeasy.in" class="text-base font-bold text-brand-electric hover:text-slate-900 transition-colors">office@corpeasy.in</a>
                 </div>
             </div>
             <div class="pt-10 border-t border-white/80 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-500">

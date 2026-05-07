@@ -22,7 +22,7 @@ include 'templates/header.php';
   <div>
     <h2 class="text-2xl font-bold text-slate-900 mb-4">1. Who We Are</h2>
     <p>CorpEasy Enterprise Solutions ("CorpEasy", "we", "us", "our") operates the website at <a href="https://www.corpeasy.in" class="text-brand-electric hover:underline">www.corpeasy.in</a>. We provide managed office space, commercial property listing, and facility management services in Mumbai.</p>
-    <p class="mt-3"><strong>Contact:</strong> Office No. 30, 2nd Floor, Gopal Bhavan, Shamaldas Gandhi Marg, Marine Lines, Mumbai 400002 | <a href="mailto:devdoshi@corpeasy.in" class="text-brand-electric">devdoshi@corpeasy.in</a></p>
+    <p class="mt-3"><strong>Contact:</strong> Office No. 30, 2nd Floor, Gopal Bhavan, Shamaldas Gandhi Marg, Marine Lines, Mumbai 400002 | <a href="mailto:office@corpeasy.in" class="text-brand-electric">office@corpeasy.in</a></p>
   </div>
 
   <div>
@@ -77,7 +77,7 @@ include 'templates/header.php';
       <li>Request deletion of your data</li>
       <li>Withdraw consent to marketing communications at any time</li>
     </ul>
-    <p class="mt-3">To exercise any of these rights, email us at <a href="mailto:devdoshi@corpeasy.in" class="text-brand-electric hover:underline">devdoshi@corpeasy.in</a> with "Privacy Request" in the subject line. We will respond within 30 days.</p>
+    <p class="mt-3">To exercise any of these rights, email us at <a href="mailto:office@corpeasy.in" class="text-brand-electric hover:underline">office@corpeasy.in</a> with "Privacy Request" in the subject line. We will respond within 30 days.</p>
   </div>
 
   <div>
