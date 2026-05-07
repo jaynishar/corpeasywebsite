@@ -408,6 +408,45 @@ function initExitIntent() {
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !popup.classList.contains('hidden')) close(); });
 }
 
+/* ===== Lightbox / Image Enlarge ===== */
+function initFounderLightbox() {
+    const founderImg = document.querySelector('img[alt*="Dev Doshi Founder"]');
+    if (!founderImg) return;
+
+    founderImg.style.cursor = 'zoom-in';
+    founderImg.addEventListener('click', () => {
+        const overlay = document.createElement('div');
+        overlay.className = 'fixed inset-0 z-[1000] bg-slate-900/90 backdrop-blur-md flex items-center justify-center p-4 cursor-zoom-out opacity-0 transition-opacity duration-300';
+        
+        const img = document.createElement('img');
+        img.src = founderImg.src.split('?')[0]; // Use base image without versioning for full view
+        img.className = 'max-w-full max-h-[90vh] rounded-2xl shadow-2xl transform scale-95 transition-transform duration-300 object-contain';
+        
+        const closeBtn = document.createElement('button');
+        closeBtn.innerHTML = '<i class="fas fa-times text-2xl"></i>';
+        closeBtn.className = 'absolute top-6 right-6 text-white/70 hover:text-white transition-colors';
+        
+        overlay.appendChild(img);
+        overlay.appendChild(closeBtn);
+        document.body.appendChild(overlay);
+        
+        // Trigger animations
+        requestAnimationFrame(() => {
+            overlay.classList.remove('opacity-0');
+            img.classList.remove('scale-95');
+        });
+        
+        const close = () => {
+            overlay.classList.add('opacity-0');
+            img.classList.add('scale-95');
+            setTimeout(() => overlay.remove(), 300);
+        };
+        
+        overlay.addEventListener('click', close);
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); }, { once: true });
+    });
+}
+
 /* ===== DOMContentLoaded Initialization ===== */
 document.addEventListener('DOMContentLoaded', () => {
     // Mark JS as loaded — unlocks CSS transitions
@@ -436,6 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPageTransitions();
     initMobileWhatsAppFab();
     initExitIntent();
+    initFounderLightbox();
 
     // Cookie banner
     const cookieBanner = document.getElementById('cookie-banner');
