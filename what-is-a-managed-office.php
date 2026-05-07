@@ -9,7 +9,7 @@ $page_schema = '{
   "headline": "What Is a Managed Office? Complete Guide for Indian Businesses (2026)",
   "description": "A comprehensive guide explaining managed offices, what they are, how they work, what they cost, and when they make sense for Indian businesses.",
   "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
-  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
+  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Founder, CorpEasy"},
   "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
   "datePublished": "2026-04-03",
   "dateModified": "2026-04-14",
@@ -29,7 +29,7 @@ include 'templates/header.php';
 <div class="flex items-center gap-4 mt-6 text-sm text-slate-500">
 <span><i class="far fa-clock mr-1"></i> 8 Min Read</span>
 <span><i class="far fa-calendar mr-1"></i> April 3, 2026</span>
-<span><i class="far fa-user mr-1"></i> Dev Doshi, Co-Founder</span>
+<span><i class="far fa-user mr-1"></i> Dev Doshi, Founder</span>
 </div>
 </div>
 

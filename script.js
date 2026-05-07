@@ -975,28 +975,20 @@ about: `
 <div class="glass-card p-4 sm:p-6 lg:p-10 group hover:border-brand-rose/50"><p class="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-black text-slate-900 mb-2 sm:mb-4 lg:mb-6 tracking-tighter group-hover:text-brand-rose transition-colors">2025</p><p class="text-[9px] sm:text-[10px] lg:text-[11px] font-bold text-slate-600 uppercase tracking-wider lg:tracking-widest">Founded</p></div>
 </div>
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] lg:h-[500px] mt-24 reveal group">
-<img src="professional_team.png" alt="CorpEasy team Mumbai" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="500">
+<img src="professional_team.png" alt="Dev Doshi, founder of CorpEasy, in a modern Mumbai office" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="500">
 <div class="absolute inset-0 bg-brand-electric/10 mix-blend-multiply"></div>
 </div>
 <div class="mt-32 text-center">
-<h3 class="text-4xl font-black text-slate-900 mb-4">Our Founders</h3>
+<h3 class="text-4xl font-black text-slate-900 mb-4">Our Founder</h3>
 <p class="text-slate-500 max-w-2xl mx-auto mb-16 uppercase tracking-[0.2em] font-bold text-xs">Direct accountability. No layers. No friction.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+<div class="max-w-xl mx-auto">
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="https://ui-avatars.com/api/?name=Dev+Doshi&background=0D9488&color=fff&size=256" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
+<img src="https://ui-avatars.com/api/?name=Dev+Doshi&background=0D9488&color=fff&size=256" alt="Dev Doshi Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h4>
-<p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Business Development & Strategy</p>
+<p class="text-brand-electric text-xs font-semibold uppercase mb-4">Founder: Business Development & Strategy</p>
 <p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
-</div>
-<div class="glass-card p-10 group bg-white/50 border border-white/60">
-<div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="https://ui-avatars.com/api/?name=Jay+Nishar&background=6366F1&color=fff&size=256" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
-</div>
-<h4 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h4>
-<p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Operations & Growth</p>
-<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Jay manages CorpEasy's operational processes and client delivery. He ensures that every commitment made to a client is followed through reliably and on time.</p>
 </div>
 </div>
 </div>
@@ -1059,11 +1051,7 @@ contact: `
 <div class="space-y-4 sm:space-y-6 lg:space-y-10">
 <div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
 <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/70 border border-white/80 rounded-xl sm:rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-lg sm:text-xl"></i></div>
-<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">Email Dev</p><a href="mailto:devdoshi@corpeasy.in" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-brand-electric transition-colors">devdoshi@corpeasy.in</a></div>
-</div>
-<div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
-<div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/70 border border-white/80 rounded-xl sm:rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-lg sm:text-xl"></i></div>
-<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">Email Jay</p><a href="mailto:jaynishar@corpeasy.in" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-brand-electric transition-colors">jaynishar@corpeasy.in</a></div>
+<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">Email Our Team</p><a href="mailto:devdoshi@corpeasy.in" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-brand-electric transition-colors">devdoshi@corpeasy.in</a></div>
 </div>
 <div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
 <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-green-500/10 border border-green-500/30 rounded-xl sm:rounded-2xl flex items-center justify-center text-green-500 shadow-[0_0_15px_rgba(34,197,94,0.1)] group-hover:bg-green-500 group-hover:text-white transition-all duration-500"><i class="fab fa-whatsapp text-xl sm:text-2xl"></i></div>

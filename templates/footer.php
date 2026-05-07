@@ -50,7 +50,6 @@
                     <p class="text-sm text-slate-600 lg:text-right leading-loose mb-4">Office No. 30, 2nd Floor, Gopal Bhavan,<br>Shamaldas Gandhi Marg, Marine Lines East,<br>Mumbai, Maharashtra 400002</p>
                     <div class="space-y-2 mb-4">
                         <a href="tel:+919833089993" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'phone_click', location: 'footer'});" class="text-lg font-bold text-slate-900 tracking-tight hover:text-brand-electric transition-colors cursor-pointer block">Dev Doshi: +91 98330 89993</a>
-                        <a href="tel:+917021134176" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'phone_click', location: 'footer'});" class="text-lg font-bold text-slate-900 tracking-tight hover:text-brand-electric transition-colors cursor-pointer block">Jay Nishar: +91 70211 34176</a>
                     </div>
                     <a href="mailto:devdoshi@corpeasy.in" class="text-base font-bold text-brand-electric hover:text-slate-900 transition-colors">devdoshi@corpeasy.in</a>
                 </div>

@@ -9,7 +9,7 @@ $page_schema = '{
   "headline": "What Is a Managed Office Space and Is It Right for Your Business?",
   "description": "The term managed office gets used loosely in Indian commercial real estate. Here is what it actually means, how it works, what it costs in Mumbai, and whether it is right for your business.",
   "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
-  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
+  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Founder, CorpEasy"},
   "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
   "datePublished": "2026-02-15",
   "dateModified": "2026-04-14",
@@ -28,7 +28,7 @@ include 'templates/header.php';
 <div class="flex items-center gap-6 text-slate-600 text-sm font-medium">
 <span><i class="far fa-clock mr-2 text-brand-electric"></i> 5 Min Read</span>
 <span><i class="far fa-calendar-alt mr-2 text-brand-electric"></i> February 15, 2026</span>
-<span><i class="far fa-user mr-2 text-brand-electric"></i> Dev Doshi, Co-Founder</span>
+<span><i class="far fa-user mr-2 text-brand-electric"></i> Dev Doshi, Founder</span>
 </div>
 </div>
 

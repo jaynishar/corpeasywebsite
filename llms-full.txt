@@ -4,12 +4,12 @@
 
 ## About CorpEasy
 
-CorpEasy Enterprise Solutions is a managed office space provider in Mumbai, India. Founded in October 2025 by Dev Doshi and Jay Nishar. Unlike coworking spaces or property listing platforms, CorpEasy works requirement-first: the client specifies team size, location preference, and budget, and CorpEasy finds the space, negotiates the lease, sets up the workspace, and manages it ongoing.
+CorpEasy Enterprise Solutions is a managed office space provider in Mumbai, India. Founded in October 2025 by Dev Doshi. Unlike coworking spaces or property listing platforms, CorpEasy works requirement-first: the client specifies team size, location preference, and budget, and CorpEasy finds the space, negotiates the lease, sets up the workspace, and manages it ongoing.
 
 **Business Model:** Service provider, NOT a property listing site. No inventory. One point of contact. Clear per-seat monthly cost on a fixed lease.
 
 **Office Address:** Office No. 30, 2nd Floor, Marine Lines, Mumbai 400002
-**Phone:** +91 98330 89993 | +91 70211 34176
+**Phone:** +91 98330 89993
 **Email:** info@corpeasy.in
 **Website:** https://www.corpeasy.in
 
@@ -133,8 +133,7 @@ Key questions covered:
 
 **URL:** https://www.corpeasy.in/contact
 
-- **Phone:** +91 98330 89993 (Dev Doshi, Co-Founder)
-- **Phone:** +91 70211 34176
+- **Phone:** +91 98330 89993 (Dev Doshi, Founder)
 - **Email:** info@corpeasy.in
 - **WhatsApp:** +91 98330 89993
 - **Address:** Office No. 30, 2nd Floor, Marine Lines, Mumbai 400002

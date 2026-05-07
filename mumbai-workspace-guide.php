@@ -9,7 +9,7 @@ $page_schema = '{
   "headline": "How to Find the Right Office Space in Mumbai: A Practical Guide for 2026",
   "description": "A practical guide to finding the right office space in Mumbai, covering micro-market selection, cost breakdown, and the managed office alternative.",
   "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
-  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
+  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Founder, CorpEasy"},
   "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
   "datePublished": "2026-01-15",
   "dateModified": "2026-04-14",
@@ -30,7 +30,7 @@ include 'templates/header.php';
 <div class="flex items-center gap-6 text-slate-600 text-sm font-medium">
 <span><i class="far fa-clock mr-2 text-brand-electric"></i> 8 Min Read</span>
 <span><i class="far fa-calendar-alt mr-2 text-brand-electric"></i> January 15, 2026</span>
-<span><i class="far fa-user mr-2 text-brand-electric"></i> Dev Doshi, Co-Founder</span>
+<span><i class="far fa-user mr-2 text-brand-electric"></i> Dev Doshi, Founder</span>
 </div>
 </div>
 

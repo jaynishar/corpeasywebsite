@@ -9,7 +9,7 @@ $page_schema = '{
   "headline": "Office Space Cost in Mumbai 2026: Complete Area-by-Area Breakdown",
   "description": "How much does office space cost in Mumbai in 2026? Detailed breakdown by area, BKC, Lower Parel, Goregaon, Andheri, Powai, with rent per sq ft and managed office per-seat costs.",
   "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
-  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
+  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Founder, CorpEasy"},
   "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
   "datePublished": "2026-04-03",
   "dateModified": "2026-04-14",

@@ -9,7 +9,7 @@ $page_schema = '{
   "headline": "BKC or Goregaon? Choosing the Right Mumbai Location for Your Office",
   "description": "BKC vs Goregaon for your Mumbai office, rent comparison, connectivity, building quality, and which location suits your business type. Honest breakdown with 2026 data.",
   "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
-  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
+  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Founder, CorpEasy"},
   "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
   "datePublished": "2026-02-01",
   "dateModified": "2026-04-14",
@@ -28,7 +28,7 @@ include 'templates/header.php';
 <div class="flex items-center gap-6 text-slate-600 text-sm font-medium">
 <span><i class="far fa-clock mr-2 text-brand-electric"></i> 6 Min Read</span>
 <span><i class="far fa-calendar-alt mr-2 text-brand-electric"></i> February 1, 2026</span>
-<span><i class="far fa-user mr-2 text-brand-electric"></i> Dev Doshi, Co-Founder</span>
+<span><i class="far fa-user mr-2 text-brand-electric"></i> Dev Doshi, Founder</span>
 </div>
 </div>
 

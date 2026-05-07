@@ -35,11 +35,7 @@ include 'templates/header.php';
 <div class="space-y-4 sm:space-y-6 lg:space-y-10">
 <div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
 <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/70 border border-white/80 rounded-xl sm:rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-lg sm:text-xl"></i></div>
-<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">Email Dev</p><a href="mailto:devdoshi@corpeasy.in" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-brand-electric transition-colors">devdoshi@corpeasy.in</a></div>
-</div>
-<div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
-<div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/70 border border-white/80 rounded-xl sm:rounded-2xl flex items-center justify-center text-brand-electric shadow-[0_0_15px_rgba(0,240,255,0.1)] group-hover:bg-brand-electric group-hover:text-white transition-all duration-500"><i class="fas fa-envelope text-lg sm:text-xl"></i></div>
-<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">Email Jay</p><a href="mailto:jaynishar@corpeasy.in" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-brand-electric transition-colors">jaynishar@corpeasy.in</a></div>
+<div><p class="text-[10px] sm:text-xs text-slate-500 font-medium mb-1">Email Our Team</p><a href="mailto:devdoshi@corpeasy.in" class="text-base sm:text-lg lg:text-xl font-bold text-slate-900 hover:text-brand-electric transition-colors">devdoshi@corpeasy.in</a></div>
 </div>
 <div class="flex items-center gap-4 sm:gap-6 lg:gap-8 group glass-card p-4 sm:p-6 border border-white/60">
 <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-green-500/10 border border-green-500/30 rounded-xl sm:rounded-2xl flex items-center justify-center text-green-500 shadow-[0_0_15px_rgba(34,197,94,0.1)] group-hover:bg-green-500 group-hover:text-white transition-all duration-500"><i class="fab fa-whatsapp text-xl sm:text-2xl"></i></div>
@@ -102,7 +98,7 @@ include 'templates/header.php';
 <div class="glass-card p-8">
 <div class="w-10 h-10 bg-brand-electric/10 border border-brand-electric/30 rounded-xl flex items-center justify-center text-brand-electric mb-5"><span class="font-black text-sm">1</span></div>
 <h3 class="text-lg font-black text-slate-900 mb-3">We Review Your Requirement</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Within 24 hours (usually faster), one of the founders reviews your enquiry personally. No call centres, no automated responses, your message goes directly to Dev or Jay.</p>
+<p class="text-sm text-slate-600 leading-relaxed">Within 24 hours (usually faster), the founder reviews your enquiry personally. No call centres, no automated responses, your message goes directly to Dev.</p>
 </div>
 <div class="glass-card p-8">
 <div class="w-10 h-10 bg-brand-cyan/10 border border-brand-cyan/30 rounded-xl flex items-center justify-center text-brand-cyan mb-5"><span class="font-black text-sm">2</span></div>

@@ -1,8 +1,8 @@
 <?php
 $page_id = 'about';
 $page_title = 'About CorpEasy | Managed Office Space Experts Mumbai';
-$page_description = 'CorpEasy is Mumbai\'s managed office space company, founded by Dev Doshi & Jay Nishar. We find, set up, and manage office space for growing businesses.';
-$page_keywords = 'about CorpEasy, CorpEasy Mumbai, workspace solutions company Mumbai, managed office company Mumbai, office space solutions Mumbai, Dev Doshi CorpEasy, Jay Nishar CorpEasy, commercial real estate Mumbai startup';
+$page_description = 'CorpEasy is Mumbai\'s managed office space company, founded by Dev Doshi. We find, set up, and manage office space for growing businesses.';
+$page_keywords = 'about CorpEasy, CorpEasy Mumbai, workspace solutions company Mumbai, managed office company Mumbai, office space solutions Mumbai, Dev Doshi CorpEasy, commercial real estate Mumbai startup';
 $page_canonical = 'https://www.corpeasy.in/about';
 $page_og_image = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&fm=webp&h=630';
 $page_schema = implode(',', array_map(fn($s) => json_encode($s, JSON_UNESCAPED_SLASHES), [
@@ -17,15 +17,7 @@ $page_schema = implode(',', array_map(fn($s) => json_encode($s, JSON_UNESCAPED_S
     "@type" => "Person",
     "@id" => "https://www.corpeasy.in/#dev-doshi",
     "name" => "Dev Doshi",
-    "jobTitle" => "Co-Founder, Business Development & Strategy",
-    "worksFor" => ["@id" => "https://www.corpeasy.in/#organization"],
-    "url" => "https://www.corpeasy.in/about"
-  ],
-  [
-    "@type" => "Person",
-    "@id" => "https://www.corpeasy.in/#jay-nishar",
-    "name" => "Jay Nishar",
-    "jobTitle" => "Co-Founder, Operations & Growth",
+    "jobTitle" => "Founder, Business Development & Strategy",
     "worksFor" => ["@id" => "https://www.corpeasy.in/#organization"],
     "url" => "https://www.corpeasy.in/about"
   ]
@@ -50,29 +42,21 @@ include 'templates/header.php';
 <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl relative h-[300px] lg:h-[500px] mt-24 reveal group">
 <picture>
     <source srcset="/professional_team.webp" type="image/webp">
-    <img src="/professional_team.png" alt="Dev Doshi and Jay Nishar, co-founders of CorpEasy, in a modern Mumbai office" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="500">
+    <img src="/professional_team.png" alt="Dev Doshi, founder of CorpEasy, in a modern Mumbai office" class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]" loading="lazy" width="1200" height="500">
 </picture>
 <div class="absolute inset-0 bg-brand-electric/10 mix-blend-multiply"></div>
 </div>
 <div class="mt-32 text-center">
-<h2 class="text-4xl font-black text-slate-900 mb-4">Our Founders</h2>
+<h2 class="text-4xl font-black text-slate-900 mb-4">Our Founder</h2>
 <p class="text-slate-500 max-w-2xl mx-auto mb-16 uppercase tracking-[0.2em] font-bold text-xs">Direct accountability. No layers. No friction.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+<div class="max-w-xl mx-auto">
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="https://ui-avatars.com/api/?name=Dev+Doshi&background=0D9488&color=fff&size=256" alt="Dev Doshi Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
+<img src="https://ui-avatars.com/api/?name=Dev+Doshi&background=0D9488&color=fff&size=256" alt="Dev Doshi Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
 </div>
 <h3 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h3>
-<p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Business Development & Strategy</p>
+<p class="text-brand-electric text-xs font-semibold uppercase mb-4">Founder: Business Development & Strategy</p>
 <p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
-</div>
-<div class="glass-card p-10 group bg-white/50 border border-white/60">
-<div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="https://ui-avatars.com/api/?name=Jay+Nishar&background=6366F1&color=fff&size=256" alt="Jay Nishar Co-Founder CorpEasy" class="w-full h-full object-cover" loading="lazy" width="128" height="128">
-</div>
-<h3 class="text-2xl font-black text-slate-900 mb-2">Jay Nishar</h3>
-<p class="text-brand-electric text-xs font-semibold uppercase mb-4">Co Founder: Operations & Growth</p>
-<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Jay manages CorpEasy's operational processes and client delivery. He ensures that every commitment made to a client is followed through reliably and on time.</p>
 </div>
 </div>
 </div>

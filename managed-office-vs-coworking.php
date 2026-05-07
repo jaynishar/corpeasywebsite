@@ -9,7 +9,7 @@ $page_schema = '{
   "headline": "Managed Office vs Coworking Space Mumbai: Which Is Right for Your Business?",
   "description": "Managed office vs coworking in Mumbai, cost comparison, privacy, scalability, and when to choose each. Honest breakdown for businesses with 10-200+ employees.",
   "image": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER.png", "width": 1200, "height": 630},
-  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Co-Founder, CorpEasy"},
+  "author": {"@type": "Person", "name": "Dev Doshi", "url": "https://www.linkedin.com/in/dev-doshi", "jobTitle": "Founder, CorpEasy"},
   "publisher": {"@type": "Organization", "name": "CorpEasy", "url": "https://www.corpeasy.in/", "logo": {"@type": "ImageObject", "url": "https://www.corpeasy.in/CORPEASYHEADER-sm.png", "width": 400, "height": 225}},
   "datePublished": "2026-04-03",
   "dateModified": "2026-04-14",

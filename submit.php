@@ -56,7 +56,7 @@ define('DB_PASS', 'C0rpeasy1');                      // Your DB password
 define('DB_PORT', 3306);
 
 // Your email for receiving lead notifications
-define('NOTIFICATION_EMAIL', 'jaynishar@corpeasy.in');       // CHANGE THIS
+define('NOTIFICATION_EMAIL', 'devdoshi@corpeasy.in');       // CHANGE THIS
 
 define('SITE_NAME', 'CorpEasy');
 

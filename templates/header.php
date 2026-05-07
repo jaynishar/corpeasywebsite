@@ -254,8 +254,7 @@ $page_lcp_image = $page_lcp_image ?? '';
           "foundingDate": "2025-10",
           "foundingLocation": "Mumbai, Maharashtra, India",
           "founder": [
-            { "@type": "Person", "name": "Dev Doshi", "jobTitle": "Co-Founder, Business Development & Strategy" },
-            { "@type": "Person", "name": "Jay Nishar", "jobTitle": "Co-Founder, Operations & Growth" }
+            { "@type": "Person", "name": "Dev Doshi", "jobTitle": "Founder, Business Development & Strategy" }
           ],
           "address": {
             "@type": "PostalAddress",
@@ -290,13 +289,6 @@ $page_lcp_image = $page_lcp_image ?? '';
                 "opens": "09:00",
                 "closes": "19:00"
               }
-            },
-            {
-              "@type": "ContactPoint",
-              "telephone": "+917021134176",
-              "contactType": "customer service",
-              "areaServed": "IN",
-              "availableLanguage": ["English", "Hindi"]
             }
           ],
           "priceRange": "₹10,000 - ₹40,000 per seat/month",
@@ -527,10 +519,6 @@ $page_lcp_image = $page_lcp_image ?? '';
                 <a href="tel:+919833089993" class="flex items-center gap-3 min-h-[48px] py-2 text-slate-700 font-medium">
                     <i class="fas fa-phone-alt text-brand-electric"></i>
                     Dev Doshi: +91 98330 89993
-                </a>
-                <a href="tel:+917021134176" class="flex items-center gap-3 min-h-[48px] py-2 text-slate-700 font-medium">
-                    <i class="fas fa-phone-alt text-brand-cyan"></i>
-                    Jay Nishar: +91 70211 34176
                 </a>
             </div>
         </nav>
