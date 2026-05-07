@@ -46,17 +46,17 @@ include 'templates/header.php';
 </picture>
 <div class="absolute inset-0 bg-brand-electric/10 mix-blend-multiply"></div>
 </div>
-<div class="mt-32 text-center">
-<h2 class="text-4xl font-black text-slate-900 mb-4">Our Founder</h2>
-<p class="text-slate-500 max-w-2xl mx-auto mb-16 uppercase tracking-[0.2em] font-bold text-xs">Direct accountability. No layers. No friction.</p>
-<div class="max-w-xl mx-auto">
+<div class="mt-16 text-center">
+<h2 class="text-3xl font-black text-slate-900 mb-2">Our Founder</h2>
+<p class="text-slate-500 max-w-2xl mx-auto mb-8 uppercase tracking-wider font-bold text-[10px]">Direct accountability. No layers. No friction.</p>
+<div class="max-w-[380px] mx-auto">
 <div class="bg-white rounded-[24px] p-4 shadow-xl border border-slate-100 overflow-visible group transition-all duration-500 hover:shadow-2xl">
-<div class="w-full flex items-center justify-center bg-white rounded-[16px] p-2 overflow-visible mb-4">
-<img src="/dev-doshi.jpg?v=3" alt="Dev Doshi Founder CorpEasy" class="w-full h-auto max-h-[210px] object-contain object-top rounded-[12px] block grayscale-[50%] group-hover:grayscale-0 transition-all duration-500" loading="lazy">
+<div class="w-full flex items-center justify-center bg-white rounded-[16px] p-[10px] overflow-visible mb-4">
+<img src="/dev-doshi.jpg?v=3" alt="Dev Doshi Founder CorpEasy" class="w-full h-auto max-h-[220px] object-contain object-top rounded-[12px] block grayscale-[50%] group-hover:grayscale-0 transition-all duration-500" loading="lazy">
 </div>
-<h3 class="text-xl font-black text-slate-900 mb-1">Dev Doshi</h3>
+<h3 class="text-[20px] font-black text-slate-900 mb-1">Dev Doshi</h3>
 <p class="text-brand-electric text-[10px] font-semibold uppercase mb-2">Founder: Business Development & Strategy</p>
-<p class="text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-4">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
+<p class="text-[13px] text-slate-600 leading-[1.6] border-t border-slate-100 pt-3">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
 </div>
 </div>
 </div>
