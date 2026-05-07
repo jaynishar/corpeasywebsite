@@ -52,7 +52,7 @@ include 'templates/header.php';
 <div class="max-w-sm mx-auto">
 <div class="glass-card p-8 group bg-white/50 border border-white/60">
 <div class="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-xl transition-transform duration-500 group-hover:scale-105 grayscale-[50%] group-hover:grayscale-0 bg-white">
-<img src="/dev-doshi.jpg?v=3" alt="Dev Doshi Founder CorpEasy" class="w-full h-full object-cover object-[center_45%]" loading="lazy">
+<img src="/dev-doshi.jpg?v=10" alt="Dev Doshi Founder CorpEasy" class="w-full h-full object-cover object-[center_55%]" loading="lazy">
 </div>
 <h3 class="text-xl font-black text-slate-900 mb-1">Dev Doshi</h3>
 <p class="text-brand-electric text-[10px] font-semibold uppercase mb-4">Founder: Business Development & Strategy</p>

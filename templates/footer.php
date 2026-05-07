@@ -153,6 +153,6 @@
     </div>
 
     <!-- Interactions JS (deferred, non-blocking) -->
-    <script src="/interactions.min.js?v=20260422" defer></script>
+    <script src="/interactions.min.js?v=20260424" defer></script>
 </body>
 </html>
