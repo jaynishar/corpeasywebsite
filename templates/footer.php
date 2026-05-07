@@ -64,6 +64,50 @@
         </div>
     </footer>
 
+    <!-- Persistent WhatsApp FAB (mobile only, always visible below the fold) -->
+    <a id="mobile-whatsapp-fab"
+       href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20interested%20in%20a%20managed%20office%20space%20in%20Mumbai.%20Please%20get%20in%20touch."
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Chat on WhatsApp"
+       onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',location:'mobile_fab'});"
+       class="lg:hidden fixed bottom-5 right-5 z-[60] w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-[0_8px_24px_rgba(34,197,94,0.45)] hover:scale-110 transition-transform duration-300"
+       style="opacity:0;pointer-events:none;transform:translateY(16px);transition:opacity .35s ease, transform .35s ease">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="absolute inset-0 rounded-full bg-green-400/40 animate-pulse"></span>
+    </a>
+
+    <!-- Exit-Intent Popup (desktop only) -->
+    <div id="exit-intent-popup"
+         class="hidden fixed inset-0 z-[300] items-center justify-center bg-slate-900/60 backdrop-blur-sm p-6"
+         style="opacity:0;transition:opacity .3s ease">
+        <div class="relative bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 border-t-4 border-t-brand-electric"
+             style="transform:translateY(16px) scale(0.98);transition:transform .35s cubic-bezier(.16,1.3,1)">
+            <button id="exit-intent-close" aria-label="Close"
+                    class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 transition-all flex items-center justify-center">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex items-center gap-3 mb-3">
+                <span class="w-10 h-10 rounded-full bg-brand-electric/10 text-brand-electric flex items-center justify-center">
+                    <i class="fas fa-gift"></i>
+                </span>
+                <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand-electric">Before you go</p>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 leading-tight mb-3">Get a free office-space consultation.</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Tell us your team size and preferred location. We will send a shortlist of managed offices within 24 hours. No obligation.</p>
+            <form onsubmit="handleLead(event)" class="space-y-3">
+                <input type="hidden" name="form_type" value="exit_intent">
+                <input type="text" name="full_name" placeholder="Full Name *" class="input-premium" required>
+                <input type="tel" name="phone" placeholder="Phone Number *" class="input-premium" required>
+                <input type="email" name="email" placeholder="Email ID *" class="input-premium" required>
+                <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+                <button type="submit" class="w-full bg-brand-electric text-white font-bold py-3.5 rounded-xl shadow-[0_0_20px_rgba(99,102,241,0.35)] hover:scale-[1.02] transition-transform">
+                    Send My Free Consultation
+                </button>
+            </form>
+            <p class="text-[11px] text-slate-400 text-center mt-4">We respect your inbox. No spam, ever.</p>
+        </div>
+    </div>
+
     <!-- Floating Action Button -->
     <div id="fab-container" class="fixed bottom-8 right-8 z-50 flex flex-col items-center gap-3 opacity-0 pointer-events-none transition-all duration-500" style="transform: translateY(20px)">
         <a href="https://wa.me/919833089993?text=Hi%20CorpEasy%2C%20I%20am%20interested%20in%20a%20managed%20office%20space%20in%20Mumbai.%20Please%20get%20in%20touch." target="_blank" rel="noopener noreferrer" id="fab-whatsapp" class="fab-mini w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg opacity-0 translate-y-4 transition-all duration-300 hover:scale-110" aria-label="WhatsApp"><i class="fab fa-whatsapp text-xl"></i></a>
@@ -109,6 +153,6 @@
     </div>
 
     <!-- Interactions JS (deferred, non-blocking) -->
-    <script src="/interactions.min.js?v=20260403" defer></script>
+    <script src="/interactions.min.js?v=20260422" defer></script>
 </body>
 </html>

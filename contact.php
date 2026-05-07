@@ -57,7 +57,7 @@ include 'templates/header.php';
 <label class="sr-only" for="full_name">Your Full Name</label>
 <input id="full_name" type="text" name="full_name" placeholder="Your Full Name" class="input-premium" required autocomplete="name" minlength="2" maxlength="80" title="Please enter your full name">
 <label class="sr-only" for="company_name">Company Name</label>
-<input id="company_name" type="text" name="company_name" placeholder="Company Name" class="input-premium" required autocomplete="organization" pattern=".*[a-zA-Z].*" minlength="2" maxlength="100" title="Please enter your company name (must contain letters, not a phone number)">
+<input id="company_name" type="text" name="company_name" placeholder="Company Name (optional)" class="input-premium" autocomplete="organization">
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
 <label class="sr-only" for="email">Email Address</label>
