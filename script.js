@@ -982,13 +982,13 @@ about: `
 <h3 class="text-4xl font-black text-slate-900 mb-4">Our Founder</h3>
 <p class="text-slate-500 max-w-2xl mx-auto mb-16 uppercase tracking-[0.2em] font-bold text-xs">Direct accountability. No layers. No friction.</p>
 <div class="max-w-xl mx-auto">
-<div class="glass-card p-10 group bg-white/50 border border-white/60">
-<div class="w-56 h-56 sm:w-64 sm:h-64 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-105 grayscale-[50%] group-hover:grayscale-0 bg-white">
-<img src="/dev-doshi.jpg?v=3" alt="Dev Doshi Founder CorpEasy" class="w-full h-full object-cover object-[center_20%]" loading="lazy" width="256" height="256">
+<div class="bg-white rounded-[24px] p-6 shadow-xl border border-slate-100 overflow-visible group transition-all duration-500 hover:shadow-2xl">
+<div class="w-full flex items-center justify-center bg-white rounded-[16px] p-4 overflow-visible mb-8">
+<img src="/dev-doshi.jpg?v=3" alt="Dev Doshi Founder CorpEasy" class="w-full h-auto max-h-[420px] object-contain object-top rounded-[12px] block grayscale-[50%] group-hover:grayscale-0 transition-all duration-500" loading="lazy">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h4>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Founder: Business Development & Strategy</p>
-<p class="text-sm text-slate-600 leading-relaxed border-t border-white/40 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
+<p class="text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-6">Dev brings experience in partnerships, business development, and building relationships across sectors. He leads CorpEasy's client facing work and strategic direction.</p>
 </div>
 </div>
 </div>
