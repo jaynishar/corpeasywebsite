@@ -51,8 +51,8 @@ include 'templates/header.php';
 <p class="text-slate-500 max-w-2xl mx-auto mb-16 uppercase tracking-[0.2em] font-bold text-xs">Direct accountability. No layers. No friction.</p>
 <div class="max-w-xl mx-auto">
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
-<div class="w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="/dev-doshi.jpg" alt="Dev Doshi Founder CorpEasy" class="w-full h-full object-cover object-[center_30%]" loading="lazy" width="256" height="256">
+<div class="w-72 h-72 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
+<img src="/dev-doshi.jpg?v=2" alt="Dev Doshi Founder CorpEasy" class="w-full h-full object-cover object-[center_10%]" loading="lazy" width="288" height="288">
 </div>
 <h3 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h3>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Founder: Business Development & Strategy</p>
