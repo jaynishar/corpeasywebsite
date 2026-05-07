@@ -984,7 +984,7 @@ about: `
 <div class="max-w-xl mx-auto">
 <div class="glass-card p-10 group bg-white/50 border border-white/60">
 <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-110 grayscale-[50%] group-hover:grayscale-0">
-<img src="/dev-doshi.jpg" alt="Dev Doshi Founder CorpEasy" class="w-full h-full object-cover object-[center_15%]" loading="lazy" width="224" height="224">
+<img src="/dev-doshi.jpg" alt="Dev Doshi Founder CorpEasy" class="w-full h-full object-cover object-top" loading="lazy" width="224" height="224">
 </div>
 <h4 class="text-2xl font-black text-slate-900 mb-2">Dev Doshi</h4>
 <p class="text-brand-electric text-xs font-semibold uppercase mb-4">Founder: Business Development & Strategy</p>
