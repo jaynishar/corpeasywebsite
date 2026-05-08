@@ -981,10 +981,10 @@ about: `
 <div class="mt-16 text-center">
 <h3 class="text-2xl font-black text-slate-900 mb-2">Our Founder</h3>
 <p class="text-slate-500 max-w-2xl mx-auto mb-10 uppercase tracking-widest font-bold text-[10px]">Direct accountability. No layers. No friction.</p>
-<div class="max-w-[280px] mx-auto">
+<div class="founder-card-wrapper">
 <div class="glass-card p-5 group bg-white/50 border border-white/60 text-left">
 <div class="w-full bg-slate-50 rounded-2xl p-3 mb-5 overflow-hidden flex items-center justify-center">
-<img src="/dev-doshi.jpg?v=12" alt="Dev Doshi Founder CorpEasy" class="w-full h-auto max-h-[320px] object-contain rounded-lg shadow-sm grayscale-[30%] group-hover:grayscale-0 transition-all duration-500 cursor-zoom-in" loading="lazy" title="Click to enlarge">
+<img src="/dev-doshi.jpg?v=12" alt="Dev Doshi Founder CorpEasy" class="w-full h-auto max-h-[160px] object-contain rounded-lg shadow-sm grayscale-[30%] group-hover:grayscale-0 transition-all duration-500 cursor-zoom-in" loading="lazy" title="Click to enlarge">
 </div>
 <h4 class="text-xl font-black text-slate-900 mb-1">Dev Doshi</h4>
 <p class="text-brand-electric text-[10px] font-semibold uppercase mb-4">Founder: Business Development & Strategy</p>

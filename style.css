@@ -255,6 +255,18 @@ html.js-loaded #solutions-nav.is-open #solutions-panel {
     filter: brightness(1) contrast(1);
 }
 
+/* Founder Photo Sizing Fix */
+.founder-card-wrapper {
+    max-width: 160px !important;
+    margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+    .founder-card-wrapper {
+        max-width: 200px !important;
+    }
+}
+
 /* Mobile touch improvements */
 @media (max-width: 768px) {
     .input-premium {
