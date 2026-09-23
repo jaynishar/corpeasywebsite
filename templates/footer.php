@@ -56,12 +56,12 @@
             </div>
             <div class="pt-10 border-t border-white/80 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-500 text-center md:text-left">
                 <p>&copy; 2026 JAYDEV Enterprise / CorpEasy. All Rights Reserved.</p>
-                <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mt-6 md:mt-0">
-                    <a href="/privacy-policy" class="hover:text-slate-900 transition-colors cursor-pointer">Privacy Policy</a>
-                    <span class="hidden md:inline">&middot;</span>
-                    <a href="/terms" class="hover:text-slate-900 transition-colors cursor-pointer">Terms & Conditions</a>
-                    <span class="hidden md:inline">&middot;</span>
-                    <a href="/contact" class="hover:text-slate-900 transition-colors cursor-pointer">Contact Us</a>
+                <div class="flex flex-col md:flex-row items-center mt-6 md:mt-0 w-full md:w-auto">
+                    <a href="/privacy-policy" class="w-full md:w-auto py-3 md:py-0 md:px-4 hover:text-brand-electric hover:underline transition-all cursor-pointer">Privacy Policy</a>
+                    <span class="hidden md:inline text-slate-300">|</span>
+                    <a href="/terms" class="w-full md:w-auto py-3 md:py-0 md:px-4 hover:text-brand-electric hover:underline transition-all cursor-pointer">Terms & Conditions</a>
+                    <span class="hidden md:inline text-slate-300">|</span>
+                    <a href="/contact" class="w-full md:w-auto py-3 md:py-0 md:px-4 hover:text-brand-electric hover:underline transition-all cursor-pointer">Contact Us</a>
                 </div>
             </div>
         </div>
