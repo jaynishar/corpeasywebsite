@@ -1,0 +1,128 @@
+RewriteEngine On
+RewriteBase /
+
+DirectoryIndex index.php index.html
+
+# ══════════════════════════════════════════════════════════════
+# CANONICAL REDIRECT
+# ══════════════════════════════════════════════════════════════
+RewriteCond %{HTTP_HOST} !^www\.corpeasy\.in$ [NC]
+RewriteCond %{HTTP_HOST} !^localhost [NC]
+RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www\.corpeasy\.in$ [NC]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteRule ^(.*)$ https://www.corpeasy.in/$1 [L,R=301]
+
+# ══════════════════════════════════════════════════════════════
+# URL ROUTING — all explicit, no !-f/!-d conflicts
+# ══════════════════════════════════════════════════════════════
+
+# Insights (blog) listing page
+RewriteRule ^insights/?$ insights.php [L]
+
+# Blog article slugs → root-level standalone PHP files
+RewriteRule ^insights/mumbai-workspace-guide/?$ mumbai-workspace-guide.php [L]
+RewriteRule ^insights/bkc-vs-goregaon/?$ bkc-vs-goregaon.php [L]
+RewriteRule ^insights/managed-office-explainer/?$ managed-office-explainer.php [L]
+RewriteRule ^insights/gst-office-rental/?$ gst-office-rental.php [L]
+
+# DB-driven blog posts fallback
+RewriteRule ^insights/([^/]+)/?$ blog-post.php?slug=$1 [L]
+
+# Old /blog URLs → redirect to /insights (preserve SEO)
+RewriteRule ^blog/?$ /insights [L,R=301]
+RewriteRule ^blog/mumbai-workspace-guide/?$ /insights/mumbai-workspace-guide [L,R=301]
+RewriteRule ^blog/bkc-vs-goregaon/?$ /insights/bkc-vs-goregaon [L,R=301]
+RewriteRule ^blog/managed-office-explainer/?$ /insights/managed-office-explainer [L,R=301]
+RewriteRule ^blog/gst-office-rental/?$ /insights/gst-office-rental [L,R=301]
+
+# Root-level standalone pages
+RewriteRule ^managed-office-vs-coworking/?$ managed-office-vs-coworking.php [L]
+RewriteRule ^what-is-a-managed-office/?$ what-is-a-managed-office.php [L]
+RewriteRule ^office-space-cost-mumbai-2026/?$ office-space-cost-mumbai-2026.php [L]
+RewriteRule ^managed-office-powai/?$ managed-office-powai.php [L]
+RewriteRule ^managed-office-navi-mumbai/?$ managed-office-navi-mumbai.php [L]
+RewriteRule ^managed-office-thane/?$ managed-office-thane.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^about/?$ about.php [L]
+RewriteRule ^contact/?$ contact.php [L]
+RewriteRule ^faq/?$ faq.php [L]
+RewriteRule ^submit/?$ submit.php [L]
+RewriteRule ^thank-you/?$ thank-you.php [L]
+RewriteRule ^list-commercial-property-mumbai/?$ list-commercial-property-mumbai.php [L]
+RewriteRule ^office-space-for-rent-mumbai/?$ office-space-for-rent-mumbai.php [L]
+RewriteRule ^facility-management-mumbai/?$ facility-management-mumbai.php [L]
+RewriteRule ^managed-office-space-mumbai/?$ managed-office-space-mumbai.php [L]
+RewriteRule ^managed-office-bkc/?$ managed-office-bkc.php [L]
+RewriteRule ^managed-office-lower-parel/?$ managed-office-lower-parel.php [L]
+RewriteRule ^managed-office-goregaon/?$ managed-office-goregaon.php [L]
+RewriteRule ^managed-office-andheri/?$ managed-office-andheri.php [L]
+RewriteRule ^office-for-rent-bkc/?$ office-for-rent-bkc.php [L]
+RewriteRule ^office-for-rent-lower-parel/?$ office-for-rent-lower-parel.php [L]
+RewriteRule ^privacy-policy/?$ privacy-policy.php [L]
+
+Options -Indexes
+ErrorDocument 404 /404.php
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE application/json image/svg+xml font/woff font/woff2
+    AddOutputFilterByType DEFLATE application/rss+xml
+</IfModule>
+
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css
+    AddOutputFilterByType BROTLI_COMPRESS text/javascript application/javascript application/x-javascript
+    AddOutputFilterByType BROTLI_COMPRESS application/json image/svg+xml font/woff font/woff2
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html                 "access plus 0 seconds"
+    ExpiresByType text/css                  "access plus 1 year"
+    ExpiresByType application/javascript    "access plus 1 year"
+    ExpiresByType text/javascript           "access plus 1 year"
+    ExpiresByType image/jpeg                "access plus 1 year"
+    ExpiresByType image/png                 "access plus 1 year"
+    ExpiresByType image/webp                "access plus 1 year"
+    ExpiresByType image/svg+xml             "access plus 1 year"
+    ExpiresByType font/woff                 "access plus 1 year"
+    ExpiresByType font/woff2                "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.php$">
+        Header set Cache-Control "private, no-cache"
+    </FilesMatch>
+    <FilesMatch "\.(css|js|woff|woff2)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "public, max-age=31536000"
+    </FilesMatch>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Remove server signature
+ServerSignature Off
+
+<FilesMatch "(db_config\.php|leads_backup\.json|\.env|resize-logos\.php)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.md$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
