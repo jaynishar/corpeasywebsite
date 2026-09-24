@@ -56,7 +56,7 @@ define('DB_PASS', 'C0rpeasy1');                      // Your DB password
 define('DB_PORT', 3306);
 
 // Your email for receiving lead notifications
-define('NOTIFICATION_EMAIL', 'devdoshi@corpeasy.in');       // CHANGE THIS
+define('NOTIFICATION_EMAIL', 'office@corpeasy.in');       // CHANGE THIS
 
 define('SITE_NAME', 'CorpEasy');
 
@@ -257,7 +257,7 @@ What happens next:
 
 If you need immediate assistance:
 📞 +91 98330 89993 (Dev Doshi)
-📧 devdoshi@corpeasy.in
+📧 office@corpeasy.in
 🏢 Office No. 30, 2nd Floor, Gopal Bhavan,
     Shamaldas Gandhi Marg, Marine Lines East,
     Mumbai, Maharashtra 400002
@@ -268,8 +268,8 @@ Mumbai's Premium Managed Workspace Operator
 www.corpeasy.in
 ";
 
-$auto_headers = "From: devdoshi@corpeasy.in\r\n";
-$auto_headers .= "Reply-To: devdoshi@corpeasy.in\r\n";
+$auto_headers = "From: office@corpeasy.in\r\n";
+$auto_headers .= "Reply-To: office@corpeasy.in\r\n";
 
 @mail($email, $auto_subject, $auto_body, $auto_headers);
 

@@ -250,7 +250,7 @@ $page_lcp_image = $page_lcp_image ?? '';
             "height": 461
           },
           "telephone": "+919833089993",
-          "email": "devdoshi@corpeasy.in",
+          "email": "office@corpeasy.in",
           "foundingDate": "2025-10",
           "foundingLocation": "Mumbai, Maharashtra, India",
           "founder": [
@@ -362,7 +362,7 @@ $page_lcp_image = $page_lcp_image ?? '';
             "height": 192
           },
           "telephone": "+919833089993",
-          "email": "devdoshi@corpeasy.in",
+          "email": "office@corpeasy.in",
           "foundingDate": "2025-10",
           "foundingLocation": "Mumbai, Maharashtra, India",
           "address": {

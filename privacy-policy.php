@@ -27,7 +27,7 @@ include 'templates/header.php';
         <li><strong>Legal Entity:</strong> JAYDEV Enterprise</li>
         <li><strong>Brand:</strong> CorpEasy</li>
         <li><strong>Website:</strong> <a href="https://www.corpeasy.in" class="text-brand-electric hover:underline">www.corpeasy.in</a></li>
-        <li><strong>Contact:</strong> <a href="mailto:devdoshi@corpeasy.in" class="text-brand-electric hover:underline">devdoshi@corpeasy.in</a></li>
+        <li><strong>Contact:</strong> <a href="mailto:office@corpeasy.in" class="text-brand-electric hover:underline">office@corpeasy.in</a></li>
         <li class="text-yellow-600 font-medium"><strong>3RD FLOOR, FLAT NO 11, SHYAM SADAN, PATAN JAIN MANDIR ROAD, OFF NETAJI SUBHASH ROAD, MARINE DRIVE, MUMBAI</strong></li>
       </ul>
     </div>
@@ -83,7 +83,7 @@ include 'templates/header.php';
     <!-- 6. Marketing Communications -->
     <div>
       <h2 class="text-2xl font-bold text-slate-900 mb-4">5. Marketing Communications</h2>
-      <p>CorpEasy may use your contact information to communicate about services, workplace solutions, events, and relevant business information where permitted by applicable law. You may opt out of these communications at any time by using any unsubscribe mechanism provided in our emails or by contacting us at <a href="mailto:devdoshi@corpeasy.in" class="text-brand-electric hover:underline">devdoshi@corpeasy.in</a>.</p>
+      <p>CorpEasy may use your contact information to communicate about services, workplace solutions, events, and relevant business information where permitted by applicable law. You may opt out of these communications at any time by using any unsubscribe mechanism provided in our emails or by contacting us at <a href="mailto:office@corpeasy.in" class="text-brand-electric hover:underline">office@corpeasy.in</a>.</p>
       <p class="mt-3">Please note there is a clear distinction between responding to your specific enquiry and sending future marketing communications. Where additional consent is required for marketing, it will be obtained separately.</p>
     </div>
 
@@ -179,7 +179,7 @@ include 'templates/header.php';
         <li>Opt out of marketing communications</li>
         <li>Raise a privacy-related concern or complaint</li>
       </ul>
-      <p class="mt-4">Direct all privacy requests to <a href="mailto:devdoshi@corpeasy.in" class="text-brand-electric hover:underline">devdoshi@corpeasy.in</a>.</p>
+      <p class="mt-4">Direct all privacy requests to <a href="mailto:office@corpeasy.in" class="text-brand-electric hover:underline">office@corpeasy.in</a>.</p>
     </div>
     
     <!-- 16. Grievance Mechanism (Swapped to keep numeric ordering logical) -->
@@ -209,7 +209,7 @@ include 'templates/header.php';
         <p class="mb-4 text-sm text-slate-500">(operating under the brand name CorpEasy)</p>
         <ul class="space-y-3">
           <li><strong>Website:</strong> <a href="https://www.corpeasy.in" class="text-brand-electric hover:underline">www.corpeasy.in</a></li>
-          <li><strong>Email:</strong> <a href="mailto:devdoshi@corpeasy.in" class="text-brand-electric hover:underline">devdoshi@corpeasy.in</a></li>
+          <li><strong>Email:</strong> <a href="mailto:office@corpeasy.in" class="text-brand-electric hover:underline">office@corpeasy.in</a></li>
           <li><strong>Registered Address:</strong> Office No. 30, 2nd Floor, Gopal Bhavan, Shamaldas Gandhi Marg, Marine Lines East, Mumbai, Maharashtra 400002</li>
         </ul>
       </div>
